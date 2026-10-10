@@ -169,8 +169,8 @@ jobs:
       - name: Commit results to sanskriti-data branch
         run: |
           N=$(find all_results -name "*.json" 2>/dev/null | wc -l | tr -d ' ')
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name  "sans-2186"
+          git config user.email "sut230001@utdallas.edu"
           git fetch origin sanskriti-data || true
           git checkout -B sanskriti-data origin/sanskriti-data 2>/dev/null \
             || git checkout -b sanskriti-data
