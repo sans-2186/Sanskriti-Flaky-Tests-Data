@@ -1,5 +1,5 @@
 {
   "project_idx_filter": "",
-  "_triggered": "2026-10-11T15:42:00Z",
+  "_triggered": "2026-10-11T17:49:00Z",
   "_comment": "Push a change to this file (update _triggered) to launch the full FlakeSync run. Set project_idx_filter to a comma-separated list of indices (e.g. '0,1,2') to run only specific projects."
 }
