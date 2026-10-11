@@ -25,6 +25,7 @@ jobs:
     outputs:
       shard_size: ${{ steps.cfg.outputs.shard_size }}
       max_shards: ${{ steps.cfg.outputs.max_shards }}
+      shard_ids:  ${{ steps.cfg.outputs.shard_ids }}
 
     steps:
       - uses: actions/checkout@v4
@@ -41,13 +42,20 @@ jobs:
           if [ -z "$MAX_SHARDS" ] && [ -f .github/run_config.json ]; then
             MAX_SHARDS=$(jq -r '.max_shards // 0' .github/run_config.json)
           fi
+          # Optional comma-separated list of shard indices to run (e.g. "4,39").
+          # Empty means run all shards (subject to max_shards).
+          SHARD_IDS=""
+          if [ -f .github/run_config.json ]; then
+            SHARD_IDS=$(jq -r '.shard_ids // ""' .github/run_config.json)
+          fi
 
           SHARD_SIZE="${SHARD_SIZE:-8}"
           MAX_SHARDS="${MAX_SHARDS:-0}"
 
           echo "shard_size=$SHARD_SIZE" >> "$GITHUB_OUTPUT"
           echo "max_shards=$MAX_SHARDS"  >> "$GITHUB_OUTPUT"
-          echo "Config: shard_size=$SHARD_SIZE  max_shards=$MAX_SHARDS"
+          echo "shard_ids=$SHARD_IDS"    >> "$GITHUB_OUTPUT"
+          echo "Config: shard_size=$SHARD_SIZE  max_shards=$MAX_SHARDS  shard_ids=${SHARD_IDS:-all}"
 
   # ── 2. DETECT: 100 parallel shards ─────────────────────────────────────────
   # All 100 shard jobs start. Each one checks its own index against max_shards
@@ -69,10 +77,16 @@ jobs:
           SHARD=${{ matrix.shard }}
           SHARD_SIZE=${{ needs.prep.outputs.shard_size }}
           MAX_SHARDS=${{ needs.prep.outputs.max_shards }}
+          SHARD_IDS="${{ needs.prep.outputs.shard_ids }}"
 
-          # Exit early if this shard is outside the requested range.
-          # MAX_SHARDS=0 means "run all".
-          if [ "$MAX_SHARDS" != "0" ] && [ "$SHARD" -ge "$MAX_SHARDS" ]; then
+          # If shard_ids is set, only run those specific shards.
+          if [ -n "$SHARD_IDS" ]; then
+            if ! echo ",$SHARD_IDS," | grep -q ",$SHARD,"; then
+              echo "Shard $SHARD not in shard_ids filter ($SHARD_IDS), skipping."
+              exit 0
+            fi
+          # Otherwise apply the max_shards limit (0 = run all).
+          elif [ "$MAX_SHARDS" != "0" ] && [ "$SHARD" -ge "$MAX_SHARDS" ]; then
             echo "Shard $SHARD is beyond max_shards=$MAX_SHARDS — nothing to do."
             exit 0
           fi
