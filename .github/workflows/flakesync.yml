@@ -26,9 +26,9 @@ jobs:
       - name: Count unique projects in flakesync_input.csv
         id: count
         run: |
-          curl -fsSL \
-            "https://raw.githubusercontent.com/sans-2186/sanskriti-flaky-tests-data/sanskriti-data/flakesync_input.csv" \
-            -o flakesync_input.csv
+          # Use git show to bypass CDN caching on raw.githubusercontent.com
+          git fetch origin sanskriti-data
+          git show origin/sanskriti-data:flakesync_input.csv > flakesync_input.csv
           N=$(awk -F',' 'NR>1 {print $1}' flakesync_input.csv | sort -u | wc -l | tr -d ' ')
           echo "n_projects=$N" >> "$GITHUB_OUTPUT"
           echo "Unique projects with flaky tests: $N"
@@ -82,9 +82,9 @@ jobs:
           echo "FlakeSync installed to local Maven repo"
 
           # ── Download data files ──────────────────────────────────────────────
-          curl -fsSL \
-            "https://raw.githubusercontent.com/sans-2186/sanskriti-flaky-tests-data/sanskriti-data/flakesync_input.csv" \
-            -o flakesync_input.csv
+          # Use git show to bypass CDN caching (raw.githubusercontent.com can lag minutes)
+          git fetch origin sanskriti-data
+          git show origin/sanskriti-data:flakesync_input.csv > flakesync_input.csv
           curl -fsSL \
             "https://raw.githubusercontent.com/TestingResearchIllinois/idoft/main/pr-data.csv" \
             -o pr-data.csv
@@ -193,10 +193,22 @@ jobs:
           N=$(find all_results -name "*_flakesync.json" 2>/dev/null | wc -l | tr -d ' ')
           git config user.name  "sans-2186"
           git config user.email "sut230001@utdallas.edu"
-          git fetch origin sanskriti-data || true
-          git checkout -B sanskriti-data origin/sanskriti-data 2>/dev/null \
-            || git checkout -b sanskriti-data
+          git fetch origin sanskriti-data
+          git checkout -B sanskriti-data origin/sanskriti-data
+
+          # Safety check: verify existing flakesync_input.csv has the full dataset.
+          # If it has fewer than 200 projects something went wrong — abort rather than
+          # overwrite good data with bad.
+          EXISTING_PROJECTS=$(awk -F',' 'NR>1{print $1}' flakesync_input.csv \
+            | sort -u | wc -l | tr -d ' ')
+          echo "Existing sanskriti-data has $EXISTING_PROJECTS unique projects in flakesync_input.csv"
+          if [ "$EXISTING_PROJECTS" -lt 200 ]; then
+            echo "ERROR: sanskriti-data flakesync_input.csv looks truncated ($EXISTING_PROJECTS < 200 projects). Aborting push to avoid data loss."
+            exit 1
+          fi
+
           cp -r flakesync_out/. .
+          # Only stage FlakeSync-specific output — never touch detection CSVs
           git add Sanskriti_Tiwari_flakesync.csv flakesync_REPORT.md 2>/dev/null || true
           git diff --cached --stat
           git commit -m "ci: FlakeSync results ($N projects) [$(date -u +%Y-%m-%dT%H:%M:%SZ)]" \
