@@ -188,7 +188,24 @@ jobs:
           git fetch origin sanskriti-data || true
           git checkout -B sanskriti-data origin/sanskriti-data 2>/dev/null \
             || git checkout -b sanskriti-data
+
+          # Remember how many projects exist in the current sanskriti-data
+          EXISTING=$(awk -F',' 'NR>1{print $1}' flakesync_input.csv \
+            | sort -u | wc -l | tr -d ' ' 2>/dev/null || echo 0)
+          echo "Existing sanskriti-data: $EXISTING unique projects in flakesync_input.csv"
+
           cp -r sanskriti/. .
+
+          # Restore flakesync_input.csv if the new one has fewer projects than what
+          # was already committed (happens on partial re-runs of a subset of shards).
+          NEW=$(awk -F',' 'NR>1{print $1}' flakesync_input.csv \
+            | sort -u | wc -l | tr -d ' ' 2>/dev/null || echo 0)
+          echo "New results have $NEW unique projects"
+          if [ "$NEW" -lt "$EXISTING" ]; then
+            echo "New results are a subset ($NEW < $EXISTING) — restoring existing flakesync_input.csv to avoid data loss"
+            git checkout HEAD -- flakesync_input.csv
+          fi
+
           git add Sanskriti_Tiwari_idflakies.csv Sanskriti_Tiwari_nondex.csv \
                   summary.csv flakesync_input.csv REPORT.md 2>/dev/null || true
           git diff --cached --stat
