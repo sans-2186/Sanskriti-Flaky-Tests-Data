@@ -16,15 +16,18 @@ set -euo pipefail
 PROJECT_URL="${1:?Usage: run_flakesync_project.sh PROJECT_URL SHA TESTS_FILE RESULTS_DIR}"
 SHA="${2:?}"
 TESTS_FILE="${3:?}"
-RESULTS_DIR="${4:?}"
+_RAW_RESULTS_DIR="${4:?}"
 
 NAME="$(basename "$PROJECT_URL" .git)"
 SHA7="${SHA:0:7}"
+
+# Resolve to absolute paths before any cd
+mkdir -p "$_RAW_RESULTS_DIR" projects
+RESULTS_DIR="$(cd "$_RAW_RESULTS_DIR" && pwd)"
 CLONE_DIR="$(pwd)/projects/${NAME}_${SHA7}"
+TESTS_FILE="$(cd "$(dirname "$TESTS_FILE")" && pwd)/$(basename "$TESTS_FILE")"
 OUT_JSON="${RESULTS_DIR}/${NAME}_${SHA7}_flakesync.json"
 RESULTS_TSV="${RESULTS_DIR}/${NAME}_${SHA7}_flakesync.tsv"
-
-mkdir -p "$RESULTS_DIR" projects
 
 FS_PLUGIN="edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT"
 
