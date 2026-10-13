@@ -1,0 +1,8 @@
+{
+  "shard_size": 8,
+  "max_shards": 0,
+  "shard_ids": "4,39",
+  "jdk": "8",
+  "_triggered": "2026-10-11T04:41:00Z",
+  "_comment": "RE-RUN: only shards 4 and 39 (cancelled/killed in full run). Remove shard_ids for next full run."
+}
