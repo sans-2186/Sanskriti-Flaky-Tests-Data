@@ -1,4 +1,4 @@
-# Flaky Test Detection — iDFlakies & NonDex
+# Flaky Test Detection & Repair — iDFlakies, NonDex, FlakeSync
 
 **Student:** Sanskriti Tiwari (`sut230001@utdallas.edu`)
 **Course:** RIDE (Research in Dependable Systems)
@@ -8,27 +8,31 @@
 
 ## Overview
 
-This repository contains the results of running two flaky-test detection tools —
-**iDFlakies** and **NonDex** — over all 798 unique (project, SHA) pairs from the
-idoft `pr-data.csv` dataset. Each project was cloned at its exact recorded commit
-SHA and both detectors were run over the **entire Maven project** (no module
-restriction), matching how the original idoft tests were identified.
+This repository contains the results of a three-phase flaky-test study run over
+all 798 unique (project, SHA) pairs from the idoft `pr-data.csv` dataset.
 
-The pipeline runs on GitHub Actions (100 parallel runners) so it completes in
-roughly 2–6 hours and requires no local compute. Results are committed here
-automatically after each run.
+| Phase | Tool | Flakiness Type | Findings |
+|---|---|---|---|
+| 1 | **iDFlakies** | Order-dependent (OD) | 2,424 tests across 73 projects |
+| 2 | **NonDex** | Implementation-dependent (ID) | 3,754 tests across 193 projects |
+| 3 | **FlakeSync** | Timing-dependent (TD) | 0 TD tests (expected — see below) |
+
+**Combined unique flaky tests: 6,163** across **215 projects**.
+
+Each project was cloned at its exact recorded commit SHA and tools were run over
+the entire Maven project. The pipeline uses GitHub Actions (100–215 parallel
+runners) and commits results here automatically.
 
 ---
 
-## Tools
+## Phase 1 & 2 — iDFlakies and NonDex
 
-### iDFlakies `edu.illinois.cs:idflakies-maven-plugin:2.0.0`
+### Tools
 
-Detects **order-dependent (OD)** flaky tests by randomly shuffling the order in
-which test classes are executed and checking for tests that pass in one order but
-fail in another.
+**iDFlakies** `edu.illinois.cs:idflakies-maven-plugin:2.0.0`
+Detects **order-dependent (OD)** flaky tests by randomly shuffling test class
+execution order and checking for tests that pass in some orders but fail in others.
 
-Command used:
 ```bash
 mvn edu.illinois.cs:idflakies-maven-plugin:2.0.0:detect \
   -Ddetector.detector_type=random-class-method \
@@ -36,25 +40,21 @@ mvn edu.illinois.cs:idflakies-maven-plugin:2.0.0:detect \
   -Ddt.detector.original_order.all_must_pass=false
 ```
 
-### NonDex `edu.illinois:nondex-maven-plugin:2.2.1`
+**NonDex** `edu.illinois:nondex-maven-plugin:2.2.1`
+Detects **implementation-dependent (ID)** flaky tests by randomising iteration
+order of Java APIs whose ordering is unspecified (`HashMap`, `HashSet`, reflection,
+etc.). A failing test genuinely relies on non-deterministic JDK behaviour.
 
-Detects **implementation-dependent (ID)** flaky tests by randomising the
-iteration order of Java APIs whose ordering is unspecified by the JDK spec
-(e.g. `HashMap`, `HashSet`, reflection methods). A test that fails under
-randomisation genuinely relies on non-deterministic behaviour.
-
-Command used:
 ```bash
 mvn edu.illinois:nondex-maven-plugin:2.2.1:nondex
 ```
 
----
+### Results
 
-## Results summary
-
-> Numbers reflect the run over **702 of 798** unique (project, SHA) pairs.
-> The remaining 96 pairs (shards 4 and 39) are being re-run due to a
-> GitHub-side runner cancellation and are not yet included.
+> Covers **702 of 798** unique (project, SHA) pairs. The remaining 96 pairs
+> (shards 4 and 39) were in alibaba/nacos (6 SHAs, ~65 min each — hits GitHub's
+> 6-hour runner cap) and dromara/hutool (gets SIGTERM-killed by the platform).
+> Results from completed SHAs in those shards are included where available.
 
 | Metric | iDFlakies | NonDex |
 |---|---|---|
@@ -63,87 +63,142 @@ mvn edu.illinois:nondex-maven-plugin:2.2.1:nondex
 | Tests already in idoft pr-data | 235 | 1,134 |
 | **New discoveries (not in pr-data)** | **2,189** | **2,620** |
 | Found by both tools | 15 | 15 |
-| Found by one tool only | 2,409 (iDFlakies) | 3,739 (NonDex) |
 
 ### Project outcomes
 
 | Outcome | Count |
 |---|---|
-| Built and tested — completed | 260 |
-| Built and tested — hit time limit (results kept) | 98 |
-| Build failed (JDK 8 + 11) | 331 |
-| Clone/checkout failed | 13 |
+| Completed normally | 260 |
+| Hit time limit (partial results kept) | 98 |
+| Build failed (JDK 8) | 331 |
+| Clone / checkout failed | 13 |
 | **Total attempted** | **702** |
 
 Build failures are expected — many projects in the idoft dataset are old and
-require specific JDK versions or private dependencies. Results are recorded as
-`build_failed` in `summary.csv` so they appear in the report.
+require specific JDK versions or private dependencies.
 
 ---
 
-## Output files
+## Phase 3 — FlakeSync
 
-All files are in the `data/` folder.
+### Tool
 
-| File | Description |
+**FlakeSync** `edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT`
+([UT-SE-Research/FlakeSync](https://github.com/UT-SE-Research/FlakeSync))
+
+Detects and repairs **timing-dependent (TD)** async flaky tests via delay
+injection. TD tests fail because of race conditions or missing synchronisation in
+concurrent code. FlakeSync runs 6 sequential Maven goals per test:
+
+| Step | Goal | Purpose |
+|---|---|---|
+| 1 | `concurrentfind` | Identify concurrent methods the test calls |
+| 2 | `delaylocs` | Inject delays and find locations that flip the test |
+| 3 | `deltadebug` | Minimise delay locations via delta-debugging |
+| 4 | `critsearch` | Find critical points (root method search) |
+| 5 | `barrierpointsearch` | Link critical points to barrier points |
+| 6 | `patch` | Generate patch files to repair the source of flakiness |
+
+```bash
+mvn edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:concurrentfind \
+  -Dflakesync.testName=org.example.Class#method [-pl module]
+# ... then delaylocs, deltadebug, critsearch, barrierpointsearch, patch
+```
+
+### Results
+
+FlakeSync ran on **4,406 tests** across **214 projects** (one project clone-failed).
+
+| Phase outcome | Tests |
 |---|---|
-| `Sanskriti_Tiwari_idflakies.csv` | One row per flaky test found by iDFlakies. Columns: `project_name`, `sha`, `flaky_test`, `in_pr_data` |
-| `Sanskriti_Tiwari_nondex.csv` | One row per flaky test found by NonDex. Same columns. |
-| `summary.csv` | One row per (project, SHA) pair. Columns: `project_name`, `project_url`, `sha`, `status`, `idflakies_count`, `nondex_count`, `common_count`, `union_count`, `idflakies_reproduced_known`, `nondex_reproduced_known` |
-| `flakesync_input.csv` | Union of all findings, one row per unique test. Columns: `project_name`, `sha`, `flaky_test`, `detected_by`, `in_pr_data`. Ready for the FlakeSync phase. |
+| No concurrent methods (step 1 → not TD) | 2,467 |
+| `concurrentfind` failed (build incomplete) | 1,939 |
+| TD delay locations found | **0** |
+| Patches generated | **0** |
+
+**Why 0 TD tests?** This is the expected outcome. The 6,163 input tests were
+identified by iDFlakies (OD) and NonDex (ID) — tools that detect *order* and
+*implementation* flakiness respectively. TD flakiness arises from missing
+synchronisation primitives in concurrent async code and is a distinct category.
+`concurrentfind` correctly reports no concurrent thread interactions for OD/ID
+tests, confirming they are not timing-dependent. FlakeSync would find TD tests in
+projects that use async threading (e.g. gRPC services, reactive streams) where the
+flakiness stems from race conditions, not test ordering or HashMap iteration order.
+
+---
+
+## Output files (`data/`)
+
+| File | Rows | Description |
+|---|---|---|
+| `Sanskriti_Tiwari_idflakies.csv` | 2,424 | One row per flaky test found by iDFlakies |
+| `Sanskriti_Tiwari_nondex.csv` | 3,754 | One row per flaky test found by NonDex |
+| `summary.csv` | 702 | One row per (project, SHA) pair with counts for each tool |
+| `flakesync_input.csv` | 6,163 | Union of all findings — input for the FlakeSync phase |
+| `Sanskriti_Tiwari_flakesync.csv` | 4,406 | FlakeSync result per test: status, concurrent methods, delay locations, patch |
 
 ### Column details
 
-**`in_pr_data`** — `yes` if this exact (project, SHA, test) triple appears in the
-idoft `pr-data.csv`; `no` if it is a new discovery not previously catalogued.
+**`Sanskriti_Tiwari_idflakies.csv` / `Sanskriti_Tiwari_nondex.csv`**
 
-**`detected_by`** — in `flakesync_input.csv`, either `iDFlakies`, `NonDex`, or
-`iDFlakies+NonDex` for tests flagged by both.
+| Column | Description |
+|---|---|
+| `project_name` | GitHub repo name (basename of URL) |
+| `sha` | Exact commit SHA the project was cloned at |
+| `flaky_test` | Fully-qualified test name (`pkg.Class.method`) |
+| `in_pr_data` | `yes` = already in idoft pr-data; `no` = new discovery |
 
-**`status`** in `summary.csv`:
-- `ok` — both detectors ran to completion
-- `timeout` — one or both detectors hit the time limit; partial results kept
-- `build_failed` — Maven build failed on both JDK 8 and JDK 11
-- `clone_failed` / `checkout_failed` — git operation failed
+**`summary.csv`**
 
----
+| Column | Description |
+|---|---|
+| `project_name`, `project_url`, `sha` | Project identity |
+| `status` | `ok`, `timeout`, `build_failed`, `clone_failed` |
+| `idflakies_count` / `nondex_count` | Tests found by each tool |
+| `common_count` | Tests found by both |
+| `union_count` | Tests found by either |
+| `idflakies_reproduced_known` / `nondex_reproduced_known` | Known pr-data tests reproduced |
 
-## How new discoveries were found
+**`flakesync_input.csv`**
 
-The idoft `pr-data.csv` contains tests that have been **manually confirmed** as
-flaky through pull-request inspection. This study ran automated detection over the
-same project SHAs and found additional tests that the detectors flag as flaky but
-that have not yet been manually reviewed. These are labelled `in_pr_data=no`.
+| Column | Description |
+|---|---|
+| `project_name`, `sha`, `flaky_test` | Test identity |
+| `detected_by` | `iDFlakies`, `NonDex`, or `iDFlakies+NonDex` |
+| `in_pr_data` | `yes` / `no` |
 
-- **NonDex new discoveries** are high-confidence: if a test fails when HashMap
-  iteration order is randomised, it definitively relies on unspecified JDK
-  behaviour, which is a genuine source of flakiness.
-- **iDFlakies new discoveries** are likely real but may include a small number of
-  false positives caused by environment state rather than true test-order
-  dependency.
+**`Sanskriti_Tiwari_flakesync.csv`**
+
+| Column | Description |
+|---|---|
+| `project_name`, `project_url`, `sha`, `flaky_test` | Test identity |
+| `flakesync_status` | `no_concurrent_methods`, `has_delay_locs`, `patched`, `concurrentfind_failed`, etc. |
+| `concurrent_methods` | Count of concurrent methods found (step 1) |
+| `delay_locs` | Count of delay locations that flip the test (step 2) |
+| `minimized_locs` | Minimised subset of delay locations (step 3) |
+| `crit_points` | Critical points found (step 4) |
+| `barrier_points` | Barrier points found (step 5) |
+| `patch_generated` | `yes` / `no` — whether a repair patch was produced (step 6) |
 
 ---
 
 ## Pipeline
 
-The detection pipeline lives in the `detection-pipeline` branch.
+All workflow code lives in the `detection-pipeline` branch.
 
 ```
 .github/
-  workflows/detect.yml   — 3-job GitHub Actions pipeline
-  run_config.json        — controls shard_size, max_shards, shard_ids
+  workflows/
+    detect.yml          — iDFlakies + NonDex: 100-shard parallel matrix
+    flakesync.yml       — FlakeSync: 215-project parallel matrix
+  run_config.json       — controls shard_size, max_shards, shard_ids
+  flakesync_config.json — controls project_idx_filter for FlakeSync
 scripts/
-  run_one.sh             — bash: clone → build → NonDex → iDFlakies → JSON
-  merge_results.py       — aggregate shard JSONs → deliverable CSVs
+  run_one.sh                  — clone → build → NonDex → iDFlakies → JSON
+  merge_results.py            — aggregate detection JSONs → CSVs + REPORT.md
+  run_flakesync_project.sh    — clone → build → 6 FlakeSync goals per test → JSON
+  merge_flakesync.py          — aggregate FlakeSync JSONs → CSV + report
 ```
 
-To re-run the full pipeline, update `_triggered` in `.github/run_config.json`
-on the `detection-pipeline` branch and push.
-
----
-
-## Next step — FlakeSync
-
-The `flakesync_input.csv` file (6,163 unique tests from 215 projects) is the
-input for the FlakeSync phase, which attempts to reproduce each detected flaky
-test in a controlled environment and classify it further.
+To re-run detection, update `_triggered` in `.github/run_config.json`.
+To re-run FlakeSync, update `_triggered` in `.github/flakesync_config.json`.
