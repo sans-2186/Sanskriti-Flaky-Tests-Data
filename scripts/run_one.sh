@@ -100,19 +100,31 @@ log() { echo "[$(ts)] $*" >&2; }
 write_json() {
   # write_json STATUS IDF_JSON ND_JSON IDF_PASS_JSON ND_PASS_JSON MESSAGE
   local status="$1" idf="$2" nd="$3" idf_pass="${4:-{}}" nd_pass="${5:-{}}" msg="${6:-}"
-  python3 - <<PYEOF
-import json
+  local pass_trials=0
+  if [ -n "${PASS_RATE_TRIALS:-}" ]; then
+    pass_trials="$PASS_RATE_TRIALS"
+  fi
+  WJ_NAME="$NAME" WJ_URL="$PROJECT_URL" WJ_SHA="$SHA" WJ_STATUS="$status" \
+    WJ_MSG="$msg" WJ_TRIALS="$pass_trials" \
+    python3 - "$idf" "$nd" "$idf_pass" "$nd_pass" <<'PYEOF'
+import json, os, sys
+
+def loads_json(raw, default):
+    if not raw:
+        return default
+    return json.loads(raw)
+
 d = {
-  "project": "$NAME",
-  "url": "$PROJECT_URL",
-  "sha": "$SHA",
-  "status": "$status",
-  "idflakies": $idf,
-  "nondex": $nd,
-  "idflakies_pass": $idf_pass,
-  "nondex_pass": $nd_pass,
-  "pass_trials": $( [ -n "${PASS_RATE_TRIALS:-}" ] && echo "$PASS_RATE_TRIALS" || echo 0 ),
-  "message": "$msg"
+    "project": os.environ["WJ_NAME"],
+    "url": os.environ["WJ_URL"],
+    "sha": os.environ["WJ_SHA"],
+    "status": os.environ["WJ_STATUS"],
+    "idflakies": loads_json(sys.argv[1], []),
+    "nondex": loads_json(sys.argv[2], []),
+    "idflakies_pass": loads_json(sys.argv[3], {}),
+    "nondex_pass": loads_json(sys.argv[4], {}),
+    "pass_trials": int(os.environ.get("WJ_TRIALS") or "0"),
+    "message": os.environ.get("WJ_MSG", ""),
 }
 print(json.dumps(d, indent=2))
 PYEOF
