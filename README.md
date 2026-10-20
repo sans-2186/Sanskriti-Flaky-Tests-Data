@@ -36,3 +36,4 @@ New counts are rows with `in_pr_data=no` in the linked CSVs. Per-project counts:
 | [flakesync_input.csv](data/flakesync_input.csv) | Union of findings (`detected_by`, `in_pr_data`) |
 | [Sanskriti_Tiwari_flakesync.csv](data/Sanskriti_Tiwari_flakesync.csv) | FlakeSync status and counts per test |
 | [summary.csv](data/summary.csv) | One row per (project, SHA): tool **counts** (not pass/trial rates) |
+| [Sanskriti_Tiwari_sheet_upload.csv](data/Sanskriti_Tiwari_sheet_upload.csv) | Course sheet import: all columns filled except **Flaky Result** (add `pass XX/100` later) |
