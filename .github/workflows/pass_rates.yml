@@ -1,0 +1,151 @@
+name: Pass rates (215 projects, 100 trials)
+
+concurrency:
+  group: pass-rates-215
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_idx_filter:
+        description: "Comma-separated project indices (empty=all)"
+        required: false
+        default: ""
+  push:
+    branches:
+      - detection-pipeline
+      - cursor/pass-rates-215-4d64
+    paths:
+      - ".github/pass_rates_config.json"
+      - ".github/workflows/pass_rates.yml"
+      - "scripts/run_one.sh"
+      - "scripts/parse_pass_rates.py"
+
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    outputs:
+      n_projects: ${{ steps.count.outputs.n_projects }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Count projects in flakesync_input.csv
+        id: count
+        run: |
+          git fetch origin sanskriti-data
+          git show origin/sanskriti-data:flakesync_input.csv > flakesync_input.csv
+          N=$(awk -F',' 'NR>1 {print $1}' flakesync_input.csv | sort -u | wc -l | tr -d ' ')
+          echo "n_projects=$N" >> "$GITHUB_OUTPUT"
+          echo "Projects: $N"
+
+  pass_rates:
+    needs: prep
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        project_idx: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Detect with pass rates (project ${{ matrix.project_idx }})
+        run: |
+          IDX=${{ matrix.project_idx }}
+          N_PROJECTS=${{ needs.prep.outputs.n_projects }}
+          if [ "$IDX" -ge "$N_PROJECTS" ]; then exit 0; fi
+
+          FILTER="${{ github.event.inputs.project_idx_filter }}"
+          if [ -n "$FILTER" ] && ! echo ",$FILTER," | grep -q ",$IDX,"; then exit 0; fi
+
+          if [ -n "${JAVA_HOME_8_X64:-}" ]; then
+            export JAVA_HOME="$JAVA_HOME_8_X64"
+            export PATH="$JAVA_HOME/bin:$PATH"
+          fi
+          java -version
+
+          git fetch origin sanskriti-data
+          git show origin/sanskriti-data:flakesync_input.csv > flakesync_input.csv
+          curl -fsSL \
+            "https://raw.githubusercontent.com/TestingResearchIllinois/idoft/main/pr-data.csv" \
+            -o pr-data.csv
+
+          PROJECT_NAME=$(awk -F',' 'NR>1 {print $1}' flakesync_input.csv \
+            | sort -u | awk -v n="$((IDX + 1))" 'NR==n {print; exit}')
+          [ -n "$PROJECT_NAME" ] || exit 0
+
+          PROJECT_URL=$(awk -F',' -v n="$PROJECT_NAME" '
+            NR>1 {
+              url=$1; gsub(/\r/,"",url)
+              name=url; sub(/.*\//,"",name); sub(/\.git$/,"",name)
+              if (name == n) { print url; exit }
+            }
+          ' pr-data.csv)
+          SHA=$(awk -F',' -v n="$PROJECT_NAME" '
+            NR>1 && $1==n { sha=$2; gsub(/\r/,"",sha); print sha; exit }
+          ' flakesync_input.csv)
+
+          echo "Project [$IDX]: $PROJECT_NAME @ $SHA"
+          mkdir -p results projects
+          chmod +x scripts/run_one.sh
+          export PASS_RATE_TRIALS=100
+          bash scripts/run_one.sh "$PROJECT_URL" "$SHA" results/ 8
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pass-rates-${{ matrix.project_idx }}
+          path: results/
+          if-no-files-found: warn
+          retention-days: 30
+
+  merge:
+    needs: pass_rates
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: pass-rates-*
+          path: all_results/
+          merge-multiple: true
+
+      - name: Merge CSVs with pass counts
+        run: |
+          curl -fsSL \
+            "https://raw.githubusercontent.com/TestingResearchIllinois/idoft/main/pr-data.csv" \
+            -o pr-data.csv
+          python3 scripts/merge_results.py \
+            --results-dir all_results \
+            --pr-data pr-data.csv \
+            --out-dir pass_rates_out
+
+      - name: Commit to sanskriti-data
+        run: |
+          N=$(find all_results -name "*.json" 2>/dev/null | wc -l | tr -d ' ')
+          git config user.name  "sans-2186"
+          git config user.email "sut230001@utdallas.edu"
+          git fetch origin sanskriti-data
+          git checkout -B sanskriti-data origin/sanskriti-data
+          cp pass_rates_out/Sanskriti_Tiwari_idflakies.csv Sanskriti_Tiwari_idflakies_pass100.csv
+          cp pass_rates_out/Sanskriti_Tiwari_nondex.csv Sanskriti_Tiwari_nondex_pass100.csv
+          cp pass_rates_out/summary.csv summary_pass100.csv
+          git add Sanskriti_Tiwari_idflakies_pass100.csv Sanskriti_Tiwari_nondex_pass100.csv summary_pass100.csv
+          git commit -m "ci: pass-rate rerun ($N projects, 100 trials) [$(date -u +%Y-%m-%dT%H:%M:%SZ)]" \
+            || echo "Nothing to commit"
+          git push --force origin sanskriti-data
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pass-rates-final
+          path: pass_rates_out/
+          retention-days: 90

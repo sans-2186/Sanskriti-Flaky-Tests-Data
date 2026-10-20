@@ -15,6 +15,19 @@ SHA="${2:?}"
 RESULTS_DIR="${3:?}"
 JDK="${4:-8}"
 
+# When set (e.g. 100), use 100 NonDex seeds / iDFlakies rounds and record pass X/trials.
+if [ -n "${PASS_RATE_TRIALS:-}" ]; then
+  NONDEX_RUNS="$PASS_RATE_TRIALS"
+  IDF_ROUNDS="$PASS_RATE_TRIALS"
+  NONDEX_TIMEOUT=7200
+  IDF_TIMEOUT=7200
+else
+  NONDEX_RUNS=5
+  IDF_ROUNDS=10
+  NONDEX_TIMEOUT=1200
+  IDF_TIMEOUT=2700
+fi
+
 NAME="$(basename "$PROJECT_URL" .git)"
 SHA7="${SHA:0:7}"
 CLONE_DIR="$(pwd)/projects/${NAME}_${SHA7}"
@@ -85,18 +98,33 @@ ts() { date -u +"%Y-%m-%dT%H:%M:%SZ"; }
 log() { echo "[$(ts)] $*" >&2; }
 
 write_json() {
-  # write_json STATUS IDF_TESTS ND_TESTS MESSAGE
-  local status="$1" idf="$2" nd="$3" msg="${4:-}"
-  python3 - <<PYEOF
-import json, sys
+  # write_json STATUS IDF_JSON ND_JSON IDF_PASS_JSON ND_PASS_JSON MESSAGE
+  local status="$1" idf="$2" nd="$3" idf_pass="${4:-\{\}}" nd_pass="${5:-\{\}}" msg="${6:-}"
+  local pass_trials=0
+  if [ -n "${PASS_RATE_TRIALS:-}" ]; then
+    pass_trials="$PASS_RATE_TRIALS"
+  fi
+  WJ_NAME="$NAME" WJ_URL="$PROJECT_URL" WJ_SHA="$SHA" WJ_STATUS="$status" \
+    WJ_MSG="$msg" WJ_TRIALS="$pass_trials" \
+    python3 - "$idf" "$nd" "$idf_pass" "$nd_pass" <<'PYEOF'
+import json, os, sys
+
+def loads_json(raw, default):
+    if not raw:
+        return default
+    return json.loads(raw)
+
 d = {
-  "project": "$NAME",
-  "url": "$PROJECT_URL",
-  "sha": "$SHA",
-  "status": "$status",
-  "idflakies": $idf,
-  "nondex": $nd,
-  "message": "$msg"
+    "project": os.environ["WJ_NAME"],
+    "url": os.environ["WJ_URL"],
+    "sha": os.environ["WJ_SHA"],
+    "status": os.environ["WJ_STATUS"],
+    "idflakies": loads_json(sys.argv[1], []),
+    "nondex": loads_json(sys.argv[2], []),
+    "idflakies_pass": loads_json(sys.argv[3], {}),
+    "nondex_pass": loads_json(sys.argv[4], {}),
+    "pass_trials": int(os.environ.get("WJ_TRIALS") or "0"),
+    "message": os.environ.get("WJ_MSG", ""),
 }
 print(json.dumps(d, indent=2))
 PYEOF
@@ -217,7 +245,7 @@ else
   rm -rf "$CLONE_DIR"
   if ! timeout 300 git clone --filter=blob:none --quiet "$PROJECT_URL" "$CLONE_DIR"; then
     log "Clone failed"
-    write_json "clone_failed" "[]" "[]" "" > "$OUT_JSON"
+    write_json "clone_failed" "[]" "[]" "{}" "{}" "" > "$OUT_JSON"
     exit 0
   fi
 fi
@@ -225,7 +253,7 @@ fi
 # Checkout
 if ! (cd "$CLONE_DIR" && git checkout --quiet "$SHA" 2>&1); then
   log "Checkout failed"
-  write_json "checkout_failed" "[]" "[]" "" > "$OUT_JSON"
+  write_json "checkout_failed" "[]" "[]" "{}" "{}" "" > "$OUT_JSON"
   exit 0
 fi
 
@@ -248,12 +276,12 @@ if ! timeout 600 "${MVN[@]}" install -DskipTests "${SKIP_FLAGS[@]}" \
     if ! timeout 600 "${MVN[@]}" install -DskipTests "${SKIP_FLAGS[@]}" \
           -f "$CLONE_DIR/pom.xml" >> "$BUILD_LOG" 2>&1; then
       log "Build failed with JDK 11 too"
-      write_json "build_failed" "[]" "[]" "" > "$OUT_JSON"
+      write_json "build_failed" "[]" "[]" "{}" "{}" "" > "$OUT_JSON"
       exit 0
     fi
   else
     log "Build failed"
-    write_json "build_failed" "[]" "[]" "" > "$OUT_JSON"
+    write_json "build_failed" "[]" "[]" "{}" "{}" "" > "$OUT_JSON"
     exit 0
   fi
 fi
@@ -263,8 +291,8 @@ log "Build succeeded"
 log "Running NonDex..."
 ND_LOG="$CLONE_DIR/nondex.log"
 ND_EXIT=0
-timeout 1200 "${MVN[@]}" "$NONDEX" "${SKIP_FLAGS[@]}" \
-  -DnondexRuns=5 \
+timeout "$NONDEX_TIMEOUT" "${MVN[@]}" "$NONDEX" "${SKIP_FLAGS[@]}" \
+  -DnondexRuns="$NONDEX_RUNS" \
   -DfailIfNoTests=false \
   -DfailIfNoSpecifiedTests=false \
   -f "$CLONE_DIR/pom.xml" > "$ND_LOG" 2>&1 || ND_EXIT=$?
@@ -274,9 +302,9 @@ log "NonDex exit: $ND_EXIT"
 log "Running iDFlakies..."
 IDF_LOG="$CLONE_DIR/idflakies.log"
 IDF_EXIT=0
-timeout 2700 "${MVN[@]}" "$IDFLAKIES" "${SKIP_FLAGS[@]}" \
+timeout "$IDF_TIMEOUT" "${MVN[@]}" "$IDFLAKIES" "${SKIP_FLAGS[@]}" \
   -Ddetector.detector_type=random-class-method \
-  -Ddt.randomize.rounds=10 \
+  -Ddt.randomize.rounds="$IDF_ROUNDS" \
   -Ddt.detector.original_order.all_must_pass=false \
   -f "$CLONE_DIR/pom.xml" > "$IDF_LOG" 2>&1 || IDF_EXIT=$?
 log "iDFlakies exit: $IDF_EXIT"
@@ -286,6 +314,17 @@ log "Parsing results..."
 IDF_TESTS="$(parse_idflakies "$CLONE_DIR")"
 ND_TESTS="$(parse_nondex "$CLONE_DIR" "$ND_LOG")"
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ -n "$PASS_RATE_TRIALS" ]; then
+  IDF_PASS="$(python3 "$SCRIPT_DIR/parse_pass_rates.py" idflakies "$CLONE_DIR" "$PASS_RATE_TRIALS")"
+  ND_PASS="$(python3 "$SCRIPT_DIR/parse_pass_rates.py" nondex "$CLONE_DIR" "$ND_LOG" "$PASS_RATE_TRIALS")"
+  IDF_TESTS="$(echo "$IDF_PASS" | python3 -c "import sys,json; print(json.dumps(sorted(json.load(sys.stdin).keys())))")"
+  ND_TESTS="$(echo "$ND_PASS" | python3 -c "import sys,json; print(json.dumps(sorted(json.load(sys.stdin).keys())))")"
+else
+  IDF_PASS="{}"
+  ND_PASS="{}"
+fi
+
 IDF_COUNT=$(echo "$IDF_TESTS" | python3 -c "import sys,json; print(len(json.load(sys.stdin)))")
 ND_COUNT=$(echo "$ND_TESTS" | python3 -c "import sys,json; print(len(json.load(sys.stdin)))")
 
@@ -293,6 +332,6 @@ STATUS="ok"
 [ "$IDF_EXIT" -eq 124 ] || [ "$ND_EXIT" -eq 124 ] && STATUS="timeout"
 
 log "Done: iDFlakies=$IDF_COUNT NonDex=$ND_COUNT status=$STATUS"
-write_json "$STATUS" "$IDF_TESTS" "$ND_TESTS" "" > "$OUT_JSON"
+write_json "$STATUS" "$IDF_TESTS" "$ND_TESTS" "$IDF_PASS" "$ND_PASS" "" > "$OUT_JSON"
 
 exit 0
