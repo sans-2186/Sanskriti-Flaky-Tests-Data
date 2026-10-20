@@ -1,5 +1,5 @@
 {
   "pass_rate_trials": 100,
-  "_triggered": "2026-10-20T19:50:00Z",
+  "_triggered": "2026-10-20T19:55:00Z",
   "_comment": "Push/update _triggered to launch 215-project pass-rate detection (PASS_RATE_TRIALS=100)."
 }
