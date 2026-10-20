@@ -1,5 +1,9 @@
 name: Pass rates (215 projects, 100 trials)
 
+concurrency:
+  group: pass-rates-215
+  cancel-in-progress: true
+
 on:
   workflow_dispatch:
     inputs:
