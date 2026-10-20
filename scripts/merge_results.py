@@ -102,12 +102,26 @@ def main():
         status = rec.get("status", "unknown")
         status_counts[status] += 1
 
+        idf_pass_map = rec.get("idflakies_pass") or {}
+        nd_pass_map = rec.get("nondex_pass") or {}
         idf_tests = [canon(t) for t in rec.get("idflakies", [])]
         nd_tests = [canon(t) for t in rec.get("nondex", [])]
+        if idf_pass_map:
+            idf_tests = sorted({canon(t) for t in idf_pass_map.keys()} | set(idf_tests))
+        if nd_pass_map:
+            nd_tests = sorted({canon(t) for t in nd_pass_map.keys()} | set(nd_tests))
+
+        def pass_cols(tmap, t):
+            if t not in tmap and canon(t) in tmap:
+                t = canon(t)
+            if t in tmap and isinstance(tmap[t], dict):
+                return tmap[t].get("pass", ""), tmap[t].get("trials", "")
+            return "", ""
 
         for t in idf_tests:
             in_pr = (name, sha, t) in known_exact
-            idf_rows.append((name, sha, t, "yes" if in_pr else "no"))
+            p, tr = pass_cols(idf_pass_map, t)
+            idf_rows.append((name, sha, t, "yes" if in_pr else "no", p, tr))
             idf_set.add((name, sha, t))
             if in_pr:
                 idf_reproduced += 1
@@ -116,7 +130,8 @@ def main():
 
         for t in nd_tests:
             in_pr = (name, sha, t) in known_exact
-            nd_rows.append((name, sha, t, "yes" if in_pr else "no"))
+            p, tr = pass_cols(nd_pass_map, t)
+            nd_rows.append((name, sha, t, "yes" if in_pr else "no", p, tr))
             nd_set.add((name, sha, t))
             if in_pr:
                 nd_reproduced += 1
@@ -134,18 +149,29 @@ def main():
     common_set = idf_set & nd_set
 
     # deduplicate rows
-    idf_rows_dedup = sorted({(r[0], r[1], r[2], r[3]) for r in idf_rows})
-    nd_rows_dedup = sorted({(r[0], r[1], r[2], r[3]) for r in nd_rows})
+    has_pass = any(
+        (rec.get("idflakies_pass") or rec.get("nondex_pass")) for rec in records
+    )
+    if has_pass:
+        idf_rows_dedup = sorted({(r[0], r[1], r[2], r[3], r[4], r[5]) for r in idf_rows})
+        nd_rows_dedup = sorted({(r[0], r[1], r[2], r[3], r[4], r[5]) for r in nd_rows})
+        idf_header = ["project_name", "sha", "flaky_test", "in_pr_data", "pass_count", "pass_trials"]
+        nd_header = idf_header
+    else:
+        idf_rows_dedup = sorted({(r[0], r[1], r[2], r[3]) for r in idf_rows})
+        nd_rows_dedup = sorted({(r[0], r[1], r[2], r[3]) for r in nd_rows})
+        idf_header = ["project_name", "sha", "flaky_test", "in_pr_data"]
+        nd_header = idf_header
 
     # ---- write CSVs ----
     write_csv(
         os.path.join(args.out_dir, IDFLAKIES_CSV),
-        ["project_name", "sha", "flaky_test", "in_pr_data"],
+        idf_header,
         idf_rows_dedup,
     )
     write_csv(
         os.path.join(args.out_dir, NONDEX_CSV),
-        ["project_name", "sha", "flaky_test", "in_pr_data"],
+        nd_header,
         nd_rows_dedup,
     )
 
