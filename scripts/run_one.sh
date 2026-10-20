@@ -99,7 +99,7 @@ log() { echo "[$(ts)] $*" >&2; }
 
 write_json() {
   # write_json STATUS IDF_JSON ND_JSON IDF_PASS_JSON ND_PASS_JSON MESSAGE
-  local status="$1" idf="$2" nd="$3" idf_pass="${4:-{}}" nd_pass="${5:-{}}" msg="${6:-}"
+  local status="$1" idf="$2" nd="$3" idf_pass="${4:-\{\}}" nd_pass="${5:-\{\}}" msg="${6:-}"
   local pass_trials=0
   if [ -n "${PASS_RATE_TRIALS:-}" ]; then
     pass_trials="$PASS_RATE_TRIALS"
