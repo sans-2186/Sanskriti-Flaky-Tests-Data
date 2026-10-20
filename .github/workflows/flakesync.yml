@@ -1,0 +1,223 @@
+name: FlakeSync (Timing-Dependent Test Repair)
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_idx_filter:
+        description: "Comma-separated project indices to run (empty=all 215)"
+        required: false
+        default: ""
+  push:
+    branches:
+      - detection-pipeline
+    paths:
+      - ".github/flakesync_config.json"
+
+jobs:
+  # ── 1. PREP: count unique projects so each shard knows its bounds ───────────
+  prep:
+    runs-on: ubuntu-latest
+    outputs:
+      n_projects: ${{ steps.count.outputs.n_projects }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Count unique projects in flakesync_input.csv
+        id: count
+        run: |
+          # Use git show to bypass CDN caching on raw.githubusercontent.com
+          git fetch origin sanskriti-data
+          git show origin/sanskriti-data:flakesync_input.csv > flakesync_input.csv
+          N=$(awk -F',' 'NR>1 {print $1}' flakesync_input.csv | sort -u | wc -l | tr -d ' ')
+          echo "n_projects=$N" >> "$GITHUB_OUTPUT"
+          echo "Unique projects with flaky tests: $N"
+
+  # ── 2. FLAKESYNC: one job per project (215 jobs) ────────────────────────────
+  flakesync:
+    needs: prep
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      matrix:
+        project_idx: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run FlakeSync for project ${{ matrix.project_idx }}
+        run: |
+          IDX=${{ matrix.project_idx }}
+          N_PROJECTS=${{ needs.prep.outputs.n_projects }}
+
+          # Skip if beyond the actual project count
+          if [ "$IDX" -ge "$N_PROJECTS" ]; then
+            echo "Project index $IDX >= $N_PROJECTS — nothing to do."
+            exit 0
+          fi
+
+          # Optional filter: only run specific project indices
+          FILTER="${{ github.event.inputs.project_idx_filter }}"
+          if [ -n "$FILTER" ]; then
+            if ! echo ",$FILTER," | grep -q ",$IDX,"; then
+              echo "Index $IDX not in filter ($FILTER), skipping."
+              exit 0
+            fi
+          fi
+
+          # Java setup (use Java 11 — FlakeSync requires 8+; 11 is safer)
+          if [ -n "${JAVA_HOME_11_X64:-}" ]; then
+            export JAVA_HOME="$JAVA_HOME_11_X64"
+            export PATH="$JAVA_HOME/bin:$PATH"
+          fi
+          java -version
+
+          # ── Build FlakeSync from source ──────────────────────────────────────
+          echo "=== Building FlakeSync plugin ==="
+          git clone --depth=1 https://github.com/UT-SE-Research/FlakeSync FlakeSync_src
+          cd FlakeSync_src
+          mvn -B -q clean install -U -DskipTests
+          cd ..
+          echo "FlakeSync installed to local Maven repo"
+
+          # ── Download data files ──────────────────────────────────────────────
+          # Use git show to bypass CDN caching (raw.githubusercontent.com can lag minutes)
+          git fetch origin sanskriti-data
+          git show origin/sanskriti-data:flakesync_input.csv > flakesync_input.csv
+          curl -fsSL \
+            "https://raw.githubusercontent.com/TestingResearchIllinois/idoft/main/pr-data.csv" \
+            -o pr-data.csv
+
+          # ── Identify this project ────────────────────────────────────────────
+          PROJECT_NAME=$(awk -F',' 'NR>1 {print $1}' flakesync_input.csv \
+            | sort -u \
+            | awk -v n="$((IDX + 1))" 'NR==n {print; exit}')
+
+          if [ -z "$PROJECT_NAME" ]; then
+            echo "ERROR: could not determine project name for index $IDX"
+            exit 0
+          fi
+          echo "Project [$IDX]: $PROJECT_NAME"
+
+          # Get project URL from pr-data.csv (match basename of URL to name)
+          PROJECT_URL=$(awk -F',' -v n="$PROJECT_NAME" '
+            NR>1 {
+              url=$1; gsub(/\r/,"",url)
+              name=url; sub(/.*\//,"",name); sub(/\.git$/,"",name)
+              if (name == n) { print url; exit }
+            }
+          ' pr-data.csv)
+
+          if [ -z "$PROJECT_URL" ]; then
+            echo "ERROR: no URL found for $PROJECT_NAME in pr-data.csv"
+            exit 0
+          fi
+          echo "URL: $PROJECT_URL"
+
+          # SHA is same for all rows of this project in flakesync_input.csv
+          SHA=$(awk -F',' -v n="$PROJECT_NAME" '
+            NR>1 && $1==n { sha=$2; gsub(/\r/,"",sha); print sha; exit }
+          ' flakesync_input.csv)
+          echo "SHA: $SHA"
+
+          # ── Build test→module mapping from pr-data.csv ───────────────────────
+          # pr-data.csv: col1=URL, col2=SHA, col3=module, col4=FQTN
+          # flakesync_input.csv: col1=name, col2=sha, col3=test (dot-sep)
+          # Produce: test_fqn TAB module (module may be empty)
+          awk -F',' -v proj="$PROJECT_NAME" '
+            NR==FNR {
+              if (NR==1) next
+              url=$1; sha=$2; module=$3; test=$4
+              gsub(/\r/,"",url); gsub(/\r/,"",sha)
+              gsub(/\r/,"",module); gsub(/\r/,"",test)
+              n=split(url,parts,"/"); name=parts[n]; sub(/\.git$/,"",name)
+              # canonicalize: drop parens, normalize # → .
+              gsub(/\([^)]*\)/,"",test); gsub(/#/,".",test)
+              mod[name SUBSEP sha SUBSEP test] = module
+              next
+            }
+            FNR==1 { next }
+            $1==proj {
+              name=$1; sha=$2; test=$3
+              gsub(/\r/,"",sha); gsub(/\r/,"",test)
+              key = name SUBSEP sha SUBSEP test
+              module = (key in mod) ? mod[key] : ""
+              print test "\t" module
+            }
+          ' pr-data.csv flakesync_input.csv | sort -u > tests_for_project.tsv
+
+          NTEST=$(wc -l < tests_for_project.tsv | tr -d ' ')
+          echo "Tests to analyze: $NTEST"
+
+          mkdir -p results projects
+          chmod +x scripts/run_flakesync_project.sh
+          bash scripts/run_flakesync_project.sh \
+            "$PROJECT_URL" "$SHA" tests_for_project.tsv results/
+
+      - name: Upload project results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: flakesync-${{ matrix.project_idx }}
+          path: results/
+          if-no-files-found: warn
+          retention-days: 30
+
+  # ── 3. MERGE: aggregate all JSON results into CSV + commit ─────────────────
+  merge:
+    needs: flakesync
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all project results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: flakesync-*
+          path: all_results/
+          merge-multiple: true
+
+      - name: Merge results into CSVs
+        run: |
+          python3 scripts/merge_flakesync.py \
+            --results-dir all_results \
+            --out-dir flakesync_out
+
+      - name: Commit results to sanskriti-data branch
+        run: |
+          N=$(find all_results -name "*_flakesync.json" 2>/dev/null | wc -l | tr -d ' ')
+          git config user.name  "sans-2186"
+          git config user.email "sut230001@utdallas.edu"
+          git fetch origin sanskriti-data
+          git checkout -B sanskriti-data origin/sanskriti-data
+
+          # Safety check: verify existing flakesync_input.csv has the full dataset.
+          # If it has fewer than 200 projects something went wrong — abort rather than
+          # overwrite good data with bad.
+          EXISTING_PROJECTS=$(awk -F',' 'NR>1{print $1}' flakesync_input.csv \
+            | sort -u | wc -l | tr -d ' ')
+          echo "Existing sanskriti-data has $EXISTING_PROJECTS unique projects in flakesync_input.csv"
+          if [ "$EXISTING_PROJECTS" -lt 200 ]; then
+            echo "ERROR: sanskriti-data flakesync_input.csv looks truncated ($EXISTING_PROJECTS < 200 projects). Aborting push to avoid data loss."
+            exit 1
+          fi
+
+          cp -r flakesync_out/. .
+          # Only stage FlakeSync-specific output — never touch detection CSVs
+          git add Sanskriti_Tiwari_flakesync.csv flakesync_REPORT.md 2>/dev/null || true
+          git diff --cached --stat
+          git commit -m "ci: FlakeSync results ($N projects) [$(date -u +%Y-%m-%dT%H:%M:%SZ)]" \
+            || echo "Nothing to commit"
+          git push --force origin sanskriti-data
+
+      - name: Upload final FlakeSync results
+        uses: actions/upload-artifact@v4
+        with:
+          name: flakesync-final
+          path: flakesync_out/
+          retention-days: 90

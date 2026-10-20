@@ -1,0 +1,221 @@
+name: Flaky Test Detection (iDFlakies + NonDex)
+
+on:
+  workflow_dispatch:
+    inputs:
+      shard_size:
+        description: "Projects per shard (leave blank to use run_config.json)"
+        required: false
+        default: ""
+      max_shards:
+        description: "Max shards to run (0=all, 1=pilot; leave blank to use run_config.json)"
+        required: false
+        default: ""
+  push:
+    branches:
+      - detection-pipeline
+      - main
+    paths:
+      - ".github/run_config.json"
+
+jobs:
+  # ── 1. PREP: read run_config.json, export shard_size and max_shards ────────
+  prep:
+    runs-on: ubuntu-latest
+    outputs:
+      shard_size: ${{ steps.cfg.outputs.shard_size }}
+      max_shards: ${{ steps.cfg.outputs.max_shards }}
+      shard_ids:  ${{ steps.cfg.outputs.shard_ids }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read config
+        id: cfg
+        run: |
+          SHARD_SIZE="${{ github.event.inputs.shard_size }}"
+          MAX_SHARDS="${{ github.event.inputs.max_shards }}"
+
+          if [ -z "$SHARD_SIZE" ] && [ -f .github/run_config.json ]; then
+            SHARD_SIZE=$(jq -r '.shard_size // 8' .github/run_config.json)
+          fi
+          if [ -z "$MAX_SHARDS" ] && [ -f .github/run_config.json ]; then
+            MAX_SHARDS=$(jq -r '.max_shards // 0' .github/run_config.json)
+          fi
+          # Optional comma-separated list of shard indices to run (e.g. "4,39").
+          # Empty means run all shards (subject to max_shards).
+          SHARD_IDS=""
+          if [ -f .github/run_config.json ]; then
+            SHARD_IDS=$(jq -r '.shard_ids // ""' .github/run_config.json)
+          fi
+
+          SHARD_SIZE="${SHARD_SIZE:-8}"
+          MAX_SHARDS="${MAX_SHARDS:-0}"
+
+          echo "shard_size=$SHARD_SIZE" >> "$GITHUB_OUTPUT"
+          echo "max_shards=$MAX_SHARDS"  >> "$GITHUB_OUTPUT"
+          echo "shard_ids=$SHARD_IDS"    >> "$GITHUB_OUTPUT"
+          echo "Config: shard_size=$SHARD_SIZE  max_shards=$MAX_SHARDS  shard_ids=${SHARD_IDS:-all}"
+
+  # ── 2. DETECT: 100 parallel shards ─────────────────────────────────────────
+  # All 100 shard jobs start. Each one checks its own index against max_shards
+  # at the top of the run step and exits early if it's out of range.
+  detect:
+    needs: prep
+    runs-on: ubuntu-latest
+    timeout-minutes: 390
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run shard ${{ matrix.shard }}
+        run: |
+          SHARD=${{ matrix.shard }}
+          SHARD_SIZE=${{ needs.prep.outputs.shard_size }}
+          MAX_SHARDS=${{ needs.prep.outputs.max_shards }}
+          SHARD_IDS="${{ needs.prep.outputs.shard_ids }}"
+
+          # If shard_ids is set, only run those specific shards.
+          if [ -n "$SHARD_IDS" ]; then
+            if ! echo ",$SHARD_IDS," | grep -q ",$SHARD,"; then
+              echo "Shard $SHARD not in shard_ids filter ($SHARD_IDS), skipping."
+              exit 0
+            fi
+          # Otherwise apply the max_shards limit (0 = run all).
+          elif [ "$MAX_SHARDS" != "0" ] && [ "$SHARD" -ge "$MAX_SHARDS" ]; then
+            echo "Shard $SHARD is beyond max_shards=$MAX_SHARDS — nothing to do."
+            exit 0
+          fi
+
+          # Install Java 8
+          sudo apt-get install -y -q temurin-8-jdk 2>/dev/null || true
+          # Use setup-java approach via SDKMAN or whatever is on the runner.
+          # GitHub ubuntu-latest ships Temurin 8 as JAVA_HOME_8_X64.
+          if [ -n "${JAVA_HOME_8_X64:-}" ]; then
+            export JAVA_HOME="$JAVA_HOME_8_X64"
+            export PATH="$JAVA_HOME/bin:$PATH"
+          fi
+          java -version
+
+          # Pre-warm Maven plugin cache (best-effort — failures are ignored)
+          mvn -B -q dependency:get \
+            -Dartifact=edu.illinois.cs:idflakies-maven-plugin:2.0.0 2>/dev/null || true
+          mvn -B -q dependency:get \
+            -Dartifact=edu.illinois:nondex-maven-plugin:2.2.1 2>/dev/null || true
+
+          # Download the full dataset
+          curl -fsSL \
+            "https://raw.githubusercontent.com/TestingResearchIllinois/idoft/main/pr-data.csv" \
+            -o pr-data.csv
+
+          # Deduplicate to unique (URL, SHA) pairs — columns 1 & 2, skip header
+          awk -F',' 'NR>1 {
+            url=$1; sha=$2
+            gsub(/\r/, "", sha)
+            key = url "," sha
+            if (!seen[key]++) print url "," sha
+          }' pr-data.csv > unique_pairs.csv
+
+          TOTAL=$(wc -l < unique_pairs.csv)
+          echo "Total unique (URL, SHA) pairs: $TOTAL"
+
+          # Slice this shard (1-indexed into unique_pairs.csv)
+          START=$(( SHARD * SHARD_SIZE + 1 ))
+          END=$(( START + SHARD_SIZE - 1 ))
+          awk -v s="$START" -v e="$END" 'NR>=s && NR<=e' unique_pairs.csv > shard_rows.csv
+
+          NROWS=$(wc -l < shard_rows.csv)
+          echo "Shard $SHARD: rows $START-$END → $NROWS project(s)"
+          cat shard_rows.csv
+
+          mkdir -p results projects
+          chmod +x scripts/run_one.sh
+
+          while IFS=, read -r url sha; do
+            [ -z "$url" ] && continue
+            bash scripts/run_one.sh "$url" "$sha" results/ 8
+          done < shard_rows.csv
+
+      - name: Upload shard results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shard-${{ matrix.shard }}
+          path: results/
+          if-no-files-found: warn
+          retention-days: 30
+
+  # ── 3. MERGE: combine all shard JSONs into deliverable CSVs ────────────────
+  merge:
+    needs: detect
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all shard artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: shard-*
+          path: all_results/
+          merge-multiple: true
+
+      - name: Download pr-data.csv
+        run: |
+          curl -fsSL \
+            "https://raw.githubusercontent.com/TestingResearchIllinois/idoft/main/pr-data.csv" \
+            -o pr-data.csv
+
+      - name: Merge results into CSVs
+        run: |
+          python3 scripts/merge_results.py \
+            --results-dir all_results \
+            --pr-data pr-data.csv \
+            --out-dir sanskriti
+
+      - name: Commit results to sanskriti-data branch
+        run: |
+          N=$(find all_results -name "*.json" 2>/dev/null | wc -l | tr -d ' ')
+          git config user.name  "sans-2186"
+          git config user.email "sut230001@utdallas.edu"
+          git fetch origin sanskriti-data || true
+          git checkout -B sanskriti-data origin/sanskriti-data 2>/dev/null \
+            || git checkout -b sanskriti-data
+
+          # Remember how many projects exist in the current sanskriti-data
+          EXISTING=$(awk -F',' 'NR>1{print $1}' flakesync_input.csv \
+            | sort -u | wc -l | tr -d ' ' 2>/dev/null || echo 0)
+          echo "Existing sanskriti-data: $EXISTING unique projects in flakesync_input.csv"
+
+          cp -r sanskriti/. .
+
+          # Restore flakesync_input.csv if the new one has fewer projects than what
+          # was already committed (happens on partial re-runs of a subset of shards).
+          NEW=$(awk -F',' 'NR>1{print $1}' flakesync_input.csv \
+            | sort -u | wc -l | tr -d ' ' 2>/dev/null || echo 0)
+          echo "New results have $NEW unique projects"
+          if [ "$NEW" -lt "$EXISTING" ]; then
+            echo "New results are a subset ($NEW < $EXISTING) — restoring existing flakesync_input.csv to avoid data loss"
+            git checkout HEAD -- flakesync_input.csv
+          fi
+
+          git add Sanskriti_Tiwari_idflakies.csv Sanskriti_Tiwari_nondex.csv \
+                  summary.csv flakesync_input.csv REPORT.md 2>/dev/null || true
+          git diff --cached --stat
+          git commit -m "ci: detection results ($N projects) [$(date -u +%Y-%m-%dT%H:%M:%SZ)]" \
+            || echo "Nothing to commit"
+          git push --force origin sanskriti-data
+
+      - name: Upload final CSVs as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: final-results
+          path: sanskriti/
+          retention-days: 90
