@@ -17,6 +17,7 @@ on:
       - cursor/pass-rates-215-4d64
     paths:
       - ".github/pass_rates_config.json"
+      - ".github/workflows/pass_rates.yml"
       - "scripts/run_one.sh"
       - "scripts/parse_pass_rates.py"
 
