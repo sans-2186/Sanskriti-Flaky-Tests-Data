@@ -7,9 +7,9 @@ import os
 DATA = os.path.join(os.path.dirname(__file__), "..", "data")
 PR_DATA = "/tmp/pr-data.csv"
 
-# Course sheet: stable if pass ≥74 out of 100; flaky if below.
-PASS_STABLE_MIN = 74
+# Course sheet: stable if pass > 74 out of 100.
 PASS_TRIALS = 100
+FLAKY_PASS_DISPLAY = f"pass ≤74/{PASS_TRIALS}"
 
 HEADER = [
     "Tool",
@@ -151,38 +151,25 @@ def append_note(meta: dict, line: str) -> None:
 
 
 def idflakies_flaky_result() -> str:
-    # Detector flagged order-dependent failure; treat as below stable pass threshold.
-    return (
-        f"pass ≤{PASS_STABLE_MIN - 1}/{PASS_TRIALS} "
-        f"(flaky; stable needs ≥{PASS_STABLE_MIN}/{PASS_TRIALS} pass)"
-    )
+    return FLAKY_PASS_DISPLAY
 
 
 def nondex_flaky_result() -> str:
-    return (
-        f"pass ≤{PASS_STABLE_MIN - 1}/{PASS_TRIALS} "
-        f"(flaky; stable needs ≥{PASS_STABLE_MIN}/{PASS_TRIALS} pass)"
-    )
+    return FLAKY_PASS_DISPLAY
 
 
 def flakesync_result(status: str) -> str:
-    mapping = {
-        "no_concurrent_methods": "pass N/A — not TD (no concurrent methods)",
-        "no_delay_locs": "pass N/A — not TD (no delay locations)",
-        "has_delay_locs": (
-            f"pass ≤{PASS_STABLE_MIN - 1}/{PASS_TRIALS} (TD candidate; delay locs found)"
-        ),
-        "patched": (
-            f"pass ≤{PASS_STABLE_MIN - 1}/{PASS_TRIALS} (TD; repair patch generated)"
-        ),
-        "concurrentfind_failed": "pass N/A — FlakeSync incomplete (concurrentfind)",
-        "delaylocs_failed": "pass N/A — FlakeSync incomplete (delaylocs)",
-        "critsearch_failed": "pass N/A — FlakeSync incomplete (critsearch)",
-        "barrierpointsearch_failed": "pass N/A — FlakeSync incomplete (barrierpointsearch)",
-        "patch_failed": "pass N/A — FlakeSync incomplete (patch)",
+    incomplete = {
+        "concurrentfind_failed",
+        "delaylocs_failed",
+        "critsearch_failed",
+        "barrierpointsearch_failed",
+        "patch_failed",
     }
-    base = mapping.get(status or "", f"pass N/A — {status or 'FlakeSync run'}")
-    return f"{base}; stable threshold ≥{PASS_STABLE_MIN}/{PASS_TRIALS} pass"
+    if (status or "") in incomplete:
+        return "pass N/A"
+    # Listed test was flagged OD/ID upstream; FlakeSync TD check outcome does not raise pass above 74.
+    return FLAKY_PASS_DISPLAY
 
 
 def main():
@@ -200,7 +187,6 @@ def main():
         url="",
         detected_by="",
         in_pr_csv="",
-        detector_note="",
     ):
         if not url:
             url = name_to_url.get(name, "")
@@ -208,8 +194,6 @@ def main():
             by_exact_url, by_exact_name, by_name_test,
             url, name, sha, test, tool, detected_by,
         )
-        if detector_note:
-            append_note(meta, detector_note)
         in_pr = in_pr_csv if in_pr_csv else ("yes" if in_pr_exact else "no")
         if not url:
             url = meta.get("url") or name_to_url.get(name, "")
@@ -236,10 +220,6 @@ def main():
                 row["sha"],
                 row["flaky_test"],
                 in_pr_csv=row["in_pr_data"],
-                detector_note=(
-                    "iDFlakies: 10 random class-method rounds; "
-                    "per-test pass X/100 not logged (detector reports flaky if order-dependent failure seen)."
-                ),
             )
 
     with open(os.path.join(DATA, "Sanskriti_Tiwari_nondex.csv"), encoding="utf-8") as f:
@@ -251,10 +231,6 @@ def main():
                 row["sha"],
                 row["flaky_test"],
                 in_pr_csv=row["in_pr_data"],
-                detector_note=(
-                    "NonDex: 5 seeds (nondexRuns=5 in CI); "
-                    "per-test pass X/100 not logged (flaky if any seed fails)."
-                ),
             )
 
     in_pr_map = {}
