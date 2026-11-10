@@ -32,10 +32,15 @@ SKIP=(
 )
 
 pick_java() {
-  local v="$1" var="JAVA_HOME_${v}_X64" jh="${!var:-}"
-  local c
+  local v="$1" name="JAVA_HOME_${v}_X64" jh="" c
+  if [ -n "${!name+x}" ]; then
+    jh="${!name}"
+  fi
   for c in "$jh" "/usr/lib/jvm/temurin-${v}-jdk-amd64" "/usr/lib/jvm/java-${v}-openjdk-amd64"; do
-    [ -n "$c" ] && [ -x "$c/bin/java" ] && { echo "$c"; return 0; }
+    if [ -n "$c" ] && [ -x "$c/bin/java" ]; then
+      echo "$c"
+      return 0
+    fi
   done
   echo ""
 }

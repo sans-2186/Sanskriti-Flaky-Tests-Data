@@ -16,6 +16,8 @@ Outputs land in `Sanskriti_Tiwari/` after the workflow **RIDE module flow** fini
 
 The counts can differ from the sample. The order of work is the same.
 
+This first run is 100 modules so the logs and FlakeSync delay counts can be checked against the sample. More modules are added later by appending rows to `inputs/modules.csv`. The workflow reads that file, so the next run picks them up.
+
 ## Earlier whole-repository run
 
 `data/` is the previous run over entire repositories, with FlakeSync pointed at those iDFlakies/NonDex tests. That is why it reported thousands of tests and zero delay reproductions. It is not the result of this flow.

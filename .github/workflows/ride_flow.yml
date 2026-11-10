@@ -18,14 +18,22 @@ jobs:
     outputs:
       n_modules: ${{ steps.bounds.outputs.n_modules }}
       n_groups: ${{ steps.bounds.outputs.n_groups }}
+      detect_idxs: ${{ steps.bounds.outputs.detect_idxs }}
+      group_idxs: ${{ steps.bounds.outputs.group_idxs }}
     steps:
       - uses: actions/checkout@v4
       - id: bounds
         run: |
           NM=$(($(wc -l < inputs/modules.csv) - 1))
           NG=$(($(wc -l < inputs/nod_groups.csv) - 1))
-          echo "n_modules=$NM" >> "$GITHUB_OUTPUT"
-          echo "n_groups=$NG" >> "$GITHUB_OUTPUT"
+          python3 - "$NM" "$NG" >> "$GITHUB_OUTPUT" << 'PY'
+          import json, sys
+          nm, ng = int(sys.argv[1]), int(sys.argv[2])
+          print(f"n_modules={nm}")
+          print(f"n_groups={ng}")
+          print(f"detect_idxs={json.dumps(list(range(nm)))}")
+          print(f"group_idxs={json.dumps(list(range(ng)))}")
+          PY
           echo "modules=$NM nod_groups=$NG"
 
   detect:
@@ -35,7 +43,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        idx: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99]
+        idx: ${{ fromJson(needs.prep.outputs.detect_idxs) }}
     steps:
       - uses: actions/checkout@v4
       - name: Detect module ${{ matrix.idx }}
@@ -88,7 +96,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        idx: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106]
+        idx: ${{ fromJson(needs.prep.outputs.group_idxs) }}
     steps:
       - uses: actions/checkout@v4
       - name: FlakeSync NOD group ${{ matrix.idx }}
@@ -102,8 +110,8 @@ jobs:
             export PATH="$JAVA_HOME/bin:$PATH"
           fi
           git clone --filter=blob:none https://github.com/UT-SE-Research/FlakeSync.git FlakeSync_src
-          git -C FlakeSync_src fetch --depth=1 origin 54ebfa3b5e
-          git -C FlakeSync_src checkout 54ebfa3b5e
+          git -C FlakeSync_src fetch --depth=1 origin 54ebfa3b5ee2d8b11fbe421f2c2ff83b3829c64e
+          git -C FlakeSync_src checkout 54ebfa3b5ee2d8b11fbe421f2c2ff83b3829c64e
           mvn -B -DskipTests install -f FlakeSync_src/pom.xml
           mkdir -p work logs results
           python3 - "$IDX" << 'PY'
@@ -182,4 +190,5 @@ jobs:
           git config user.email "sut230001@utdallas.edu"
           git add Sanskriti_Tiwari
           git commit -m "results: module-scoped iDFlakies/NonDex and NOD FlakeSync" || echo "nothing to commit"
-          git push
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
