@@ -1,0 +1,164 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.bitness: 64
+[INFO] os.detected.version: 7.0
+[INFO] os.detected.version.major: 7
+[INFO] os.detected.version.minor: 0
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 26.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Pulsar Build Tools                                                 [jar]
+[INFO] Pulsar                                                             [pom]
+[INFO] Pulsar Test Mocks                                                  [jar]
+[INFO] Pulsar Client :: API                                               [jar]
+[INFO] Pulsar Client Admin :: API                                         [jar]
+[INFO] Pulsar Common                                                      [jar]
+[INFO] Apache Pulsar :: jetcd-core shaded                                 [jar]
+[INFO] Pulsar Metadata                                                    [jar]
+[INFO] Pulsar Broker Common                                               [jar]
+[INFO] Pulsar OpenTelemetry                                               [jar]
+[INFO] Managed Ledger                                                     [jar]
+[INFO] Apache Pulsar :: Bouncy Castle :: Parent                           [pom]
+[INFO] Apache Pulsar :: Bouncy Castle :: BC                               [jar]
+[INFO] Pulsar Client Messagecrypto BC                                     [jar]
+[INFO] Pulsar Functions :: Parent                                         [pom]
+[INFO] Pulsar Functions :: Proto                                          [jar]
+[INFO] Pulsar Client Java Original                                        [jar]
+[INFO] Pulsar Documentation Generators                                    [jar]
+[INFO] Pulsar WebSocket                                                   [jar]
+[INFO] Apache Pulsar :: Package Management                                [pom]
+[INFO] Apache Pulsar :: Package Management :: Core                        [jar]
+[INFO] Pulsar Client Admin Original                                       [jar]
+[INFO] Pulsar CLI Utils                                                   [jar]
+[INFO] Pulsar Transaction :: Parent                                       [pom]
+[INFO] Pulsar Transaction :: Common                                       [jar]
+[INFO] Pulsar Functions :: API                                            [jar]
+[INFO] Pulsar IO :: Parent                                                [pom]
+[INFO] Pulsar IO :: IO                                                    [jar]
+[INFO] Pulsar IO :: Batch Discovery Triggerers                            [jar]
+[INFO] Pulsar Config Validation                                           [jar]
+[INFO] Pulsar Functions :: Utils                                          [jar]
+[INFO] Pulsar Functions :: Secrets                                        [jar]
+[INFO] Pulsar Functions :: Instance                                       [jar]
+[INFO] Pulsar Functions :: Runtime                                        [jar]
+[INFO] Pulsar IO :: Cassandra                                             [jar]
+[INFO] Pulsar IO :: IO Common                                             [jar]
+[INFO] Pulsar IO :: Twitter                                               [jar]
+[INFO] Pulsar Functions :: API Examples                                   [jar]
+[INFO] Pulsar Functions :: API Examples (NAR)                             [jar]
+[INFO] Pulsar Functions :: Worker                                         [jar]
+[INFO] Pulsar Functions :: Local Runner original                          [jar]
+[INFO] Pulsar IO :: Batch Data Generator                                  [jar]
+[INFO] Pulsar IO :: Data Generator                                        [jar]
+[INFO] Pulsar Transaction :: Coordinator                                  [jar]
+[INFO] Apache Pulsar :: Package Management :: Filesystem Storage          [jar]
+[INFO] Pulsar Broker                                                      [jar]
+[INFO] 
+[INFO] --------------------< org.apache.pulsar:buildtools >--------------------
+[INFO] Building Pulsar Build Tools 4.2.0-SNAPSHOT                        [1/46]
+[INFO]   from buildtools/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) > test-compile @ buildtools >>>
+[INFO] 
+[INFO] --- enforcer:3.5.0:enforce (enforce-maven-version) @ buildtools ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- enforcer:3.5.0:enforce (enforce-java-version) @ buildtools ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] 
+[INFO] --- remote-resources:3.3.0:process (process-resource-bundles) @ buildtools ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.7
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ buildtools ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ buildtools ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ buildtools ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.yyu94yzoBG/repo/buildtools/src/test/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ buildtools ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) < test-compile @ buildtools <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) @ buildtools ---
+INFO: Running BarrierPointSearchMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Pulsar 4.2.0-SNAPSHOT:
+[INFO] 
+[INFO] Pulsar Build Tools ................................. FAILURE [  0.976 s]
+[INFO] Pulsar ............................................. SKIPPED
+[INFO] Pulsar Test Mocks .................................. SKIPPED
+[INFO] Pulsar Client :: API ............................... SKIPPED
+[INFO] Pulsar Client Admin :: API ......................... SKIPPED
+[INFO] Pulsar Common ...................................... SKIPPED
+[INFO] Apache Pulsar :: jetcd-core shaded ................. SKIPPED
+[INFO] Pulsar Metadata .................................... SKIPPED
+[INFO] Pulsar Broker Common ............................... SKIPPED
+[INFO] Pulsar OpenTelemetry ............................... SKIPPED
+[INFO] Managed Ledger ..................................... SKIPPED
+[INFO] Apache Pulsar :: Bouncy Castle :: Parent ........... SKIPPED
+[INFO] Apache Pulsar :: Bouncy Castle :: BC ............... SKIPPED
+[INFO] Pulsar Client Messagecrypto BC ..................... SKIPPED
+[INFO] Pulsar Functions :: Parent ......................... SKIPPED
+[INFO] Pulsar Functions :: Proto .......................... SKIPPED
+[INFO] Pulsar Client Java Original ........................ SKIPPED
+[INFO] Pulsar Documentation Generators .................... SKIPPED
+[INFO] Pulsar WebSocket ................................... SKIPPED
+[INFO] Apache Pulsar :: Package Management ................ SKIPPED
+[INFO] Apache Pulsar :: Package Management :: Core ........ SKIPPED
+[INFO] Pulsar Client Admin Original ....................... SKIPPED
+[INFO] Pulsar CLI Utils ................................... SKIPPED
+[INFO] Pulsar Transaction :: Parent ....................... SKIPPED
+[INFO] Pulsar Transaction :: Common ....................... SKIPPED
+[INFO] Pulsar Functions :: API ............................ SKIPPED
+[INFO] Pulsar IO :: Parent ................................ SKIPPED
+[INFO] Pulsar IO :: IO .................................... SKIPPED
+[INFO] Pulsar IO :: Batch Discovery Triggerers ............ SKIPPED
+[INFO] Pulsar Config Validation ........................... SKIPPED
+[INFO] Pulsar Functions :: Utils .......................... SKIPPED
+[INFO] Pulsar Functions :: Secrets ........................ SKIPPED
+[INFO] Pulsar Functions :: Instance ....................... SKIPPED
+[INFO] Pulsar Functions :: Runtime ........................ SKIPPED
+[INFO] Pulsar IO :: Cassandra ............................. SKIPPED
+[INFO] Pulsar IO :: IO Common ............................. SKIPPED
+[INFO] Pulsar IO :: Twitter ............................... SKIPPED
+[INFO] Pulsar Functions :: API Examples ................... SKIPPED
+[INFO] Pulsar Functions :: API Examples (NAR) ............. SKIPPED
+[INFO] Pulsar Functions :: Worker ......................... SKIPPED
+[INFO] Pulsar Functions :: Local Runner original .......... SKIPPED
+[INFO] Pulsar IO :: Batch Data Generator .................. SKIPPED
+[INFO] Pulsar IO :: Data Generator ........................ SKIPPED
+[INFO] Pulsar Transaction :: Coordinator .................. SKIPPED
+[INFO] Apache Pulsar :: Package Management :: Filesystem Storage SKIPPED
+[INFO] Pulsar Broker ...................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.740 s
+[INFO] Finished at: 2026-11-10T18:56:24Z
+[INFO] ------------------------------------------------------------------------
+[INFO] 0 goals, 0 executed
+[ERROR] Failed to execute goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch (default-cli) on project buildtools: Execution default-cli of goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch failed: java.io.FileNotFoundException: /tmp/tmp.yyu94yzoBG/repo/buildtools/.flakesync/Results-CritSearch/org.apache.pulsar.broker.loadbalance.extensions.scheduler.TransferShedderTest.testBundlesWithIsolationPolicies-CriticalPoints.csv (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

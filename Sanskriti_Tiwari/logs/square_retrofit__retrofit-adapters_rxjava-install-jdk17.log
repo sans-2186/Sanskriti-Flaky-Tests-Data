@@ -1,0 +1,124 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:retrofit:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 78, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:adapter-guava:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 51, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:adapter-java8:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 68, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:adapter-rxjava:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 56, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:adapter-rxjava2:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 56, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:adapter-scala:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 72, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:converter-gson:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 51, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:converter-guava:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 51, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:converter-protobuf:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 51, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:converter-jackson:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 51, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:converter-java8:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 63, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:converter-wire:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 62, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:converter-simplexml:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 51, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:converter-scalars:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 47, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:converter-moshi:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 51, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:converter-jaxb:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 51, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:retrofit-mock:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 47, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.squareup.retrofit2:samples:jar:2.4.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-deploy-plugin is missing. @ line 65, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Retrofit (Parent)                                                  [pom]
+[INFO] Retrofit                                                           [jar]
+[INFO] Adapters                                                           [pom]
+[INFO] Adapter: RxJava                                                    [jar]
+[INFO] 
+[INFO] -------------------< com.squareup.retrofit2:parent >--------------------
+[INFO] Building Retrofit (Parent) 2.4.1-SNAPSHOT                          [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- animal-sniffer:1.14:check (default) @ parent ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- javadoc:2.10.3:jar (attach-javadocs) @ parent ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- checkstyle:2.17:checkstyle (default) @ parent ---
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ parent ---
+[INFO] Installing /tmp/tmp.Q9VZUSHo5z/repo/pom.xml to /home/runner/.m2/repository/com/squareup/retrofit2/parent/2.4.1-SNAPSHOT/parent-2.4.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------< com.squareup.retrofit2:retrofit >-------------------
+[INFO] Building Retrofit 2.4.1-SNAPSHOT                                   [2/4]
+[INFO]   from retrofit/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ retrofit ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ retrofit ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.6.1:compile (default-compile) @ retrofit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 44 source files to /tmp/tmp.Q9VZUSHo5z/repo/retrofit/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Retrofit (Parent) 2.4.1-SNAPSHOT:
+[INFO] 
+[INFO] Retrofit (Parent) .................................. SUCCESS [  1.724 s]
+[INFO] Retrofit ........................................... FAILURE [  0.601 s]
+[INFO] Adapters ........................................... SKIPPED
+[INFO] Adapter: RxJava .................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.551 s
+[INFO] Finished at: 2026-11-10T19:20:30Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.6.1:compile (default-compile) on project retrofit: Fatal error compiling: CompilerException: InvocationTargetException: java.nio.file.NotDirectoryException: /usr/lib/jvm/temurin-17-jdk-amd64/lib/modules -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :retrofit

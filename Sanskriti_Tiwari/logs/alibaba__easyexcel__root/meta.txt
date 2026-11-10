@@ -1,0 +1,3 @@
+url=https://github.com/alibaba/easyexcel
+sha=756f16e42fbd7bc5c7fa18426cbc02fc81a42057
+module=<root>

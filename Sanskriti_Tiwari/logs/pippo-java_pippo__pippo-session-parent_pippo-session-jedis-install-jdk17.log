@@ -1,0 +1,140 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Pippo Parent                                                       [pom]
+[INFO] Pippo Core                                                         [jar]
+[INFO] Pippo Session Parent                                               [pom]
+[INFO] Pippo Session                                                      [jar]
+[INFO] Pippo Session Jedis                                                [jar]
+[INFO] 
+[INFO] -----------------------< ro.pippo:pippo-parent >------------------------
+[INFO] Building Pippo Parent 1.12.0-SNAPSHOT                              [1/5]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ pippo-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- javadoc:2.8:jar (default) @ pippo-parent ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] >>> source:2.2:jar (default) > generate-sources @ pippo-parent >>>
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ pippo-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] <<< source:2.2:jar (default) < generate-sources @ pippo-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:2.2:jar (default) @ pippo-parent ---
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ pippo-parent ---
+[INFO] Installing /tmp/tmp.jetf2ZVurV/repo/pom.xml to /home/runner/.m2/repository/ro/pippo/pippo-parent/1.12.0-SNAPSHOT/pippo-parent-1.12.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------------< ro.pippo:pippo-core >-------------------------
+[INFO] Building Pippo Core 1.12.0-SNAPSHOT                                [2/5]
+[INFO]   from pippo-core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ pippo-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ pippo-core ---
+[INFO] Copying 11 resources from src/main/resources to target/classes
+[INFO] The encoding used to copy filtered properties files has not been set. This means that the same encoding will be used to copy filtered properties files as when copying other filtered resources. This might not be what you want! Run your build with --debug to see which files might be affected. Read more at https://maven.apache.org/plugins/maven-resources-plugin/examples/filtering-properties-files.html
+[INFO] 
+[INFO] --- compiler:2.5.1:compile (default-compile) @ pippo-core ---
+[INFO] Compiling 103 source files to /tmp/tmp.jetf2ZVurV/repo/pippo-core/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] bootstrap class path not set in conjunction with -source 8
+/tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Error.java:[24,32] error: package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Error.java:[25,32] error: package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Error.java:[26,32] error: package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Error.java:[31,1] error: cannot find symbol
+[ERROR]   symbol: class XmlRootElement
+/tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Error.java:[32,1] error: cannot find symbol
+[ERROR]   symbol: class XmlAccessorType
+/tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Error.java:[32,17] error: cannot find symbol
+[ERROR]   symbol: variable XmlAccessType
+/tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Application.java:[188,47] [deprecation] newInstance() in Class has been deprecated
+[ERROR]   where T is a type-variable:
+    T extends Object declared in class Class
+/tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Request.java:[233,32] [deprecation] newInstance() in Class has been deprecated
+[ERROR]   where T is a type-variable:
+    T extends Object declared in class Class
+/tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Request.java:[254,26] [deprecation] isAccessible() in AccessibleObject has been deprecated
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/ParameterValue.java:[426,40] [deprecation] newInstance() in Class has been deprecated
+[ERROR]   where T is a type-variable:
+    T extends Object declared in class Class
+/tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/ContentTypeEngines.java:[94,32] [deprecation] newInstance() in Class has been deprecated
+[ERROR]   where T is a type-variable:
+    T extends Object declared in class Class
+/tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/reload/ReloadClassLoader.java:[54,20] [deprecation] getPackage(String) in ClassLoader has been deprecated
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/PippoServlet.java:[158,56] [deprecation] newInstance() in Class has been deprecated
+[ERROR]   where T is a type-variable:
+    T extends Object declared in class Class
+/tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/PippoFilter.java:[268,56] [deprecation] newInstance() in Class has been deprecated
+[ERROR]   where T is a type-variable:
+    T extends Object declared in class Class
+/tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Pippo.java:[287,56] [deprecation] newInstance() in Class has been deprecated
+[INFO] 15 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Pippo Parent 1.12.0-SNAPSHOT:
+[INFO] 
+[INFO] Pippo Parent ....................................... SUCCESS [  1.020 s]
+[INFO] Pippo Core ......................................... FAILURE [  2.526 s]
+[INFO] Pippo Session Parent ............................... SKIPPED
+[INFO] Pippo Session ...................................... SKIPPED
+[INFO] Pippo Session Jedis ................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.937 s
+[INFO] Finished at: 2026-11-10T19:14:16Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.5.1:compile (default-compile) on project pippo-core: Compilation failure: Compilation failure: 
+[ERROR] bootstrap class path not set in conjunction with -source 8
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Error.java:[24,32] error: package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Error.java:[25,32] error: package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Error.java:[26,32] error: package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Error.java:[31,1] error: cannot find symbol
+[ERROR]   symbol: class XmlRootElement
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Error.java:[32,1] error: cannot find symbol
+[ERROR]   symbol: class XmlAccessorType
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Error.java:[32,17] error: cannot find symbol
+[ERROR]   symbol: variable XmlAccessType
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Application.java:[188,47] [deprecation] newInstance() in Class has been deprecated
+[ERROR]   where T is a type-variable:
+[ERROR]     T extends Object declared in class Class
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Request.java:[233,32] [deprecation] newInstance() in Class has been deprecated
+[ERROR]   where T is a type-variable:
+[ERROR]     T extends Object declared in class Class
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Request.java:[254,26] [deprecation] isAccessible() in AccessibleObject has been deprecated
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/ParameterValue.java:[426,40] [deprecation] newInstance() in Class has been deprecated
+[ERROR]   where T is a type-variable:
+[ERROR]     T extends Object declared in class Class
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/ContentTypeEngines.java:[94,32] [deprecation] newInstance() in Class has been deprecated
+[ERROR]   where T is a type-variable:
+[ERROR]     T extends Object declared in class Class
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/reload/ReloadClassLoader.java:[54,20] [deprecation] getPackage(String) in ClassLoader has been deprecated
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/PippoServlet.java:[158,56] [deprecation] newInstance() in Class has been deprecated
+[ERROR]   where T is a type-variable:
+[ERROR]     T extends Object declared in class Class
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/PippoFilter.java:[268,56] [deprecation] newInstance() in Class has been deprecated
+[ERROR]   where T is a type-variable:
+[ERROR]     T extends Object declared in class Class
+[ERROR] /tmp/tmp.jetf2ZVurV/repo/pippo-core/src/main/java/ro/pippo/core/Pippo.java:[287,56] [deprecation] newInstance() in Class has been deprecated
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :pippo-core

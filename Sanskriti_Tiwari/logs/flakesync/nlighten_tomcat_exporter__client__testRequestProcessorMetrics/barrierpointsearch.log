@@ -1,0 +1,40 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 2 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 2 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Prometheus Tomcat Exporter                                         [pom]
+[INFO] Prometheus client for Apache Tomcat                                [jar]
+[INFO] 
+[INFO] --------------------< nl.nlighten:tomcat_exporter >---------------------
+[INFO] Building Prometheus Tomcat Exporter 0.0.15-SNAPSHOT                [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) > test-compile @ tomcat_exporter >>>
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) < test-compile @ tomcat_exporter <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) @ tomcat_exporter ---
+INFO: Running BarrierPointSearchMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Prometheus Tomcat Exporter 0.0.15-SNAPSHOT:
+[INFO] 
+[INFO] Prometheus Tomcat Exporter ......................... FAILURE [  0.115 s]
+[INFO] Prometheus client for Apache Tomcat ................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.992 s
+[INFO] Finished at: 2026-11-10T19:33:46Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch (default-cli) on project tomcat_exporter: Execution default-cli of goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch failed: java.io.FileNotFoundException: /tmp/tmp.ODd6gYtoxR/repo/.flakesync/Results-CritSearch/nl.nlighten.prometheus.tomcat.TomcatGenericExportsTest.testRequestProcessorMetrics-CriticalPoints.csv (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

@@ -1,0 +1,3 @@
+url=https://github.com/alibaba/jetcache
+sha=d28019640ac3eb6ac167dd0dc582adac7656226e
+module=jetcache-test

@@ -1,0 +1,67 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Helidon Build Tools Project                                        [pom]
+[INFO] Helidon Build Tools Common Project                                 [pom]
+[INFO] Helidon Build Tools Common Test Utils                              [jar]
+[INFO] Helidon Build Tools Common                                         [jar]
+[INFO] Helidon Build Tools Common Ansi                                    [jar]
+[INFO] Helidon Build Tools Common XML                                     [jar]
+[INFO] Helidon Archetype Project                                          [pom]
+[INFO] Helidon Archetype Engine                                           [jar]
+[INFO] 
+[INFO] ---------< io.helidon.build-tools:helidon-build-tools-project >---------
+[INFO] Building Helidon Build Tools Project 4.0.0-SNAPSHOT                [1/8]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) > test-compile @ helidon-build-tools-project >>>
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ helidon-build-tools-project ---
+[INFO] ShortRevision tag detected. The value is '8'.
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kvXgALFVZA/repo' && 'git' 'rev-parse' '--verify' '--short=8' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kvXgALFVZA/repo
+[INFO] Storing buildNumber: c60640f0 at timestamp: 2026-11-10 19:19:52 UTC
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] ShortRevision tag detected. The value is '8'.
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kvXgALFVZA/repo' && 'git' 'rev-parse' '--verify' '--short=8' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kvXgALFVZA/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- resources:2.7:copy-resources (copy-license) @ helidon-build-tools-project ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource to META-INF/
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) < test-compile @ helidon-build-tools-project <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) @ helidon-build-tools-project ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running BarrierPointSearchMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Helidon Build Tools Project 4.0.0-SNAPSHOT:
+[INFO] 
+[INFO] Helidon Build Tools Project ........................ FAILURE [  0.945 s]
+[INFO] Helidon Build Tools Common Project ................. SKIPPED
+[INFO] Helidon Build Tools Common Test Utils .............. SKIPPED
+[INFO] Helidon Build Tools Common ......................... SKIPPED
+[INFO] Helidon Build Tools Common Ansi .................... SKIPPED
+[INFO] Helidon Build Tools Common XML ..................... SKIPPED
+[INFO] Helidon Archetype Project .......................... SKIPPED
+[INFO] Helidon Archetype Engine ........................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.283 s
+[INFO] Finished at: 2026-11-10T19:19:52Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch (default-cli) on project helidon-build-tools-project: Execution default-cli of goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch failed: java.io.FileNotFoundException: /tmp/tmp.kvXgALFVZA/repo/.flakesync/Results-CritSearch/io.helidon.build.archetype.engine.v2.util.InputPermutationsTest.testE2e-CriticalPoints.csv (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

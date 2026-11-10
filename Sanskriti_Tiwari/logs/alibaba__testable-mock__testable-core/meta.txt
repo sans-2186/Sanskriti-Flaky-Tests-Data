@@ -1,0 +1,3 @@
+url=https://github.com/alibaba/testable-mock
+sha=80b0f3b8789921d46103d9af14a52e75406b92af
+module=testable-core

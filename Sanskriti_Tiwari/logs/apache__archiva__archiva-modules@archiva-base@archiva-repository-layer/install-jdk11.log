@@ -1,0 +1,20 @@
+=== JDK 11 JAVA_HOME=/usr/lib/jvm/temurin-11-jdk-amd64 ===
+[INFO] Scanning for projects...
+[INFO] Downloading from jetty.snapshots: https://oss.sonatype.org/content/repositories/jetty-snapshots/org/apache/archiva/archiva-parent/19-SNAPSHOT/maven-metadata.xml
+[INFO] Downloading from archiva.snapshots: https://archiva-repository.apache.org/archiva/repository/snapshots/org/apache/archiva/archiva-parent/19-SNAPSHOT/maven-metadata.xml
+[INFO] Downloading from archiva.snapshots: https://archiva-repository.apache.org/archiva/repository/snapshots/org/apache/archiva/archiva-parent/19-SNAPSHOT/archiva-parent-19-SNAPSHOT.pom
+[INFO] Downloading from jetty.snapshots: https://oss.sonatype.org/content/repositories/jetty-snapshots/org/apache/archiva/archiva-parent/19-SNAPSHOT/archiva-parent-19-SNAPSHOT.pom
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for org.apache.archiva:archiva:3.0.0-SNAPSHOT: The following artifacts could not be resolved: org.apache.archiva:archiva-parent:pom:19-SNAPSHOT (absent): Could not find artifact org.apache.archiva:archiva-parent:pom:19-SNAPSHOT in archiva.snapshots (https://archiva-repository.apache.org/archiva/repository/snapshots) and 'parent.relativePath' points at wrong local POM @ line 23, column 11
+ @ 
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]   
+[ERROR]   The project org.apache.archiva:archiva:3.0.0-SNAPSHOT (/tmp/tmp.2kGMs4nUaK/repo/pom.xml) has 1 error
+[ERROR]     Non-resolvable parent POM for org.apache.archiva:archiva:3.0.0-SNAPSHOT: The following artifacts could not be resolved: org.apache.archiva:archiva-parent:pom:19-SNAPSHOT (absent): Could not find artifact org.apache.archiva:archiva-parent:pom:19-SNAPSHOT in archiva.snapshots (https://archiva-repository.apache.org/archiva/repository/snapshots) and 'parent.relativePath' points at wrong local POM @ line 23, column 11 -> [Help 2]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/UnresolvableModelException

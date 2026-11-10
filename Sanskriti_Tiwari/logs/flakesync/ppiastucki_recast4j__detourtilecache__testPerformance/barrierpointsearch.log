@@ -1,0 +1,67 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.recast4j:recast:jar:1.0.8-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.recast4j:parent:1.0.8-SNAPSHOT, /tmp/tmp.Ky0jE5SyKx/repo/pom.xml, line 64, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.recast4j:detour:jar:1.0.8-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.recast4j:parent:1.0.8-SNAPSHOT, /tmp/tmp.Ky0jE5SyKx/repo/pom.xml, line 64, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.recast4j:detour-crowd:jar:1.0.8-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.recast4j:parent:1.0.8-SNAPSHOT, /tmp/tmp.Ky0jE5SyKx/repo/pom.xml, line 64, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.recast4j:detour-tile-cache:jar:1.0.8-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.recast4j:parent:1.0.8-SNAPSHOT, /tmp/tmp.Ky0jE5SyKx/repo/pom.xml, line 64, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.recast4j:detour-extras:jar:1.0.8-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.recast4j:parent:1.0.8-SNAPSHOT, /tmp/tmp.Ky0jE5SyKx/repo/pom.xml, line 64, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.recast4j:parent:pom:1.0.8-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 64, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] Inspecting build with total of 4 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 4 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Recast and Detour for Java                                         [pom]
+[INFO] recast                                                             [jar]
+[INFO] detour                                                             [jar]
+[INFO] detour-tile-cache                                                  [jar]
+[INFO] 
+[INFO] ------------------------< org.recast4j:parent >-------------------------
+[INFO] Building Recast and Detour for Java 1.0.8-SNAPSHOT                 [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) > test-compile @ parent >>>
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) < test-compile @ parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) @ parent ---
+INFO: Running BarrierPointSearchMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Recast and Detour for Java 1.0.8-SNAPSHOT:
+[INFO] 
+[INFO] Recast and Detour for Java ......................... FAILURE [  0.326 s]
+[INFO] recast ............................................. SKIPPED
+[INFO] detour ............................................. SKIPPED
+[INFO] detour-tile-cache .................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.071 s
+[INFO] Finished at: 2026-11-10T19:40:12Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch (default-cli) on project parent: Execution default-cli of goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch failed: java.io.FileNotFoundException: /tmp/tmp.Ky0jE5SyKx/repo/.flakesync/Results-CritSearch/org.recast4j.detour.tilecache.TileCacheTest.testPerformance-CriticalPoints.csv (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

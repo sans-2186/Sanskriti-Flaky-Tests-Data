@@ -1,0 +1,3 @@
+url=https://github.com/airlift/airlift
+sha=75d88c2b13117000ac38c2eb582a7d539ddb9633
+module=json

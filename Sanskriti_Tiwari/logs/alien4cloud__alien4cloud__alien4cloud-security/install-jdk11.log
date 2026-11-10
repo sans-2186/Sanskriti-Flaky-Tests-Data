@@ -1,0 +1,112 @@
+=== JDK 11 JAVA_HOME=/usr/lib/jvm/temurin-11-jdk-amd64 ===
+[INFO] Scanning for projects...
+[INFO] Downloading from sonatype-snapshot: https://oss.sonatype.org/content/repositories/snapshots/org/springframework/boot/spring-boot-dependencies/1.4.0.RELEASE/spring-boot-dependencies-1.4.0.RELEASE.pom
+[INFO] Downloading from jcenter-snapshots: https://jcenter.bintray.com/org/springframework/boot/spring-boot-dependencies/1.4.0.RELEASE/spring-boot-dependencies-1.4.0.RELEASE.pom
+[INFO] Downloaded from jcenter-snapshots: https://jcenter.bintray.com/org/springframework/boot/spring-boot-dependencies/1.4.0.RELEASE/spring-boot-dependencies-1.4.0.RELEASE.pom (87 kB at 314 kB/s)
+[INFO] Downloading from sonatype-snapshot: https://oss.sonatype.org/content/repositories/snapshots/org/springframework/spring-framework-bom/4.3.2.RELEASE/spring-framework-bom-4.3.2.RELEASE.pom
+[INFO] Downloading from jcenter-snapshots: https://jcenter.bintray.com/org/springframework/spring-framework-bom/4.3.2.RELEASE/spring-framework-bom-4.3.2.RELEASE.pom
+[INFO] Downloaded from jcenter-snapshots: https://jcenter.bintray.com/org/springframework/spring-framework-bom/4.3.2.RELEASE/spring-framework-bom-4.3.2.RELEASE.pom (5.1 kB at 122 kB/s)
+[INFO] Downloading from sonatype-snapshot: https://oss.sonatype.org/content/repositories/snapshots/org/springframework/data/spring-data-releasetrain/Hopper-SR2/spring-data-releasetrain-Hopper-SR2.pom
+[INFO] Downloading from jcenter-snapshots: https://jcenter.bintray.com/org/springframework/data/spring-data-releasetrain/Hopper-SR2/spring-data-releasetrain-Hopper-SR2.pom
+[INFO] Downloaded from jcenter-snapshots: https://jcenter.bintray.com/org/springframework/data/spring-data-releasetrain/Hopper-SR2/spring-data-releasetrain-Hopper-SR2.pom (4.4 kB at 113 kB/s)
+[INFO] Downloading from sonatype-snapshot: https://oss.sonatype.org/content/repositories/snapshots/org/springframework/data/build/spring-data-build/1.8.2.RELEASE/spring-data-build-1.8.2.RELEASE.pom
+[INFO] Downloading from jcenter-snapshots: https://jcenter.bintray.com/org/springframework/data/build/spring-data-build/1.8.2.RELEASE/spring-data-build-1.8.2.RELEASE.pom
+[INFO] Downloaded from jcenter-snapshots: https://jcenter.bintray.com/org/springframework/data/build/spring-data-build/1.8.2.RELEASE/spring-data-build-1.8.2.RELEASE.pom (5.4 kB at 139 kB/s)
+[INFO] Downloading from sonatype-snapshot: https://oss.sonatype.org/content/repositories/snapshots/org/springframework/integration/spring-integration-bom/4.3.1.RELEASE/spring-integration-bom-4.3.1.RELEASE.pom
+[INFO] Downloading from jcenter-snapshots: https://jcenter.bintray.com/org/springframework/integration/spring-integration-bom/4.3.1.RELEASE/spring-integration-bom-4.3.1.RELEASE.pom
+[INFO] Downloaded from jcenter-snapshots: https://jcenter.bintray.com/org/springframework/integration/spring-integration-bom/4.3.1.RELEASE/spring-integration-bom-4.3.1.RELEASE.pom (8.5 kB at 202 kB/s)
+[INFO] Downloading from sonatype-snapshot: https://oss.sonatype.org/content/repositories/snapshots/org/springframework/security/spring-security-bom/4.1.1.RELEASE/spring-security-bom-4.1.1.RELEASE.pom
+[INFO] Downloading from jcenter-snapshots: https://jcenter.bintray.com/org/springframework/security/spring-security-bom/4.1.1.RELEASE/spring-security-bom-4.1.1.RELEASE.pom
+[INFO] Downloaded from jcenter-snapshots: https://jcenter.bintray.com/org/springframework/security/spring-security-bom/4.1.1.RELEASE/spring-security-bom-4.1.1.RELEASE.pom (4.3 kB at 39 kB/s)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Application LIfecycle ENabler parent project.                      [pom]
+[INFO] Alien 4 Cloud Common                                               [jar]
+[INFO] Alien 4 Cloud Dao                                                  [jar]
+[INFO] Alien 4 Cloud Security                                             [jar]
+[INFO] 
+[INFO] -------------------< alien4cloud:alien4cloud-parent >-------------------
+[INFO] Building Application LIfecycle ENabler parent project. 2.1.0-SNAPSHOT [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] Downloading from repo.opensource.fastconnect.org: https://fastconnect.org/maven/content/repositories/opensource/org/apache/maven/plugins/maven-javadoc-plugin/2.9/maven-javadoc-plugin-2.9.pom
+[WARNING] Checksum validation failed, expected '<!DOCTYPE' (REMOTE_EXTERNAL) but is actually 'f9d9055e9878723a12063b47d4a1a5f58c3eb1e9' from repo.opensource.fastconnect.org for https://fastconnect.org/maven/content/repositories/opensource/org/apache/maven/plugins/maven-javadoc-plugin/2.9/maven-javadoc-plugin-2.9.pom
+[WARNING] Could not validate integrity of download from https://fastconnect.org/maven/content/repositories/opensource/org/apache/maven/plugins/maven-javadoc-plugin/2.9/maven-javadoc-plugin-2.9.pom
+org.eclipse.aether.transfer.ChecksumFailureException: Checksum validation failed, expected '<!DOCTYPE' (REMOTE_EXTERNAL) but is actually 'f9d9055e9878723a12063b47d4a1a5f58c3eb1e9'
+    at org.eclipse.aether.connector.basic.ChecksumValidator.validateExternalChecksums (ChecksumValidator.java:179)
+    at org.eclipse.aether.connector.basic.ChecksumValidator.validate (ChecksumValidator.java:109)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask (BasicRepositoryConnector.java:486)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run (BasicRepositoryConnector.java:416)
+    at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get (BasicRepositoryConnector.java:260)
+    at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads (DefaultArtifactResolver.java:550)
+    at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve (DefaultArtifactResolver.java:450)
+    at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts (DefaultArtifactResolver.java:261)
+    at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact (DefaultArtifactResolver.java:243)
+    at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom (DefaultArtifactDescriptorReader.java:243)
+    at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.readArtifactDescriptor (DefaultArtifactDescriptorReader.java:183)
+    at org.eclipse.aether.internal.impl.DefaultRepositorySystem.readArtifactDescriptor (DefaultRepositorySystem.java:269)
+    at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve (DefaultPluginDependenciesResolver.java:109)
+    at org.apache.maven.plugin.internal.DefaultMavenPluginManager.lambda$getPluginDescriptor$0 (DefaultMavenPluginManager.java:188)
+    at org.apache.maven.plugin.DefaultPluginDescriptorCache.get (DefaultPluginDescriptorCache.java:77)
+    at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor (DefaultMavenPluginManager.java:186)
+    at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor (DefaultMavenPluginManager.java:276)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor (DefaultBuildPluginManager.java:214)
+    at org.apache.maven.lifecycle.internal.DefaultLifecycleMappingDelegate.calculateLifecycleMappings (DefaultLifecycleMappingDelegate.java:101)
+    at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.calculateLifecycleMappings (DefaultLifecycleExecutionPlanCalculator.java:239)
+    at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.calculateMojoExecutions (DefaultLifecycleExecutionPlanCalculator.java:197)
+    at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.calculateExecutionPlan (DefaultLifecycleExecutionPlanCalculator.java:119)
+    at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.calculateExecutionPlan (DefaultLifecycleExecutionPlanCalculator.java:135)
+    at org.apache.maven.lifecycle.internal.builder.BuilderCommon.resolveBuildPlan (BuilderCommon.java:93)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:100)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:919)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:285)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:207)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:566)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[WARNING] Checksum validation failed, expected '<!DOCTYPE' (REMOTE_EXTERNAL) but is actually 'f9d9055e9878723a12063b47d4a1a5f58c3eb1e9' from repo.opensource.fastconnect.org for https://fastconnect.org/maven/content/repositories/opensource/org/apache/maven/plugins/maven-javadoc-plugin/2.9/maven-javadoc-plugin-2.9.pom
+[INFO] Downloaded from repo.opensource.fastconnect.org: https://fastconnect.org/maven/content/repositories/opensource/org/apache/maven/plugins/maven-javadoc-plugin/2.9/maven-javadoc-plugin-2.9.pom (114 B at 1.1 kB/s)
+[WARNING] The POM for org.apache.maven.plugins:maven-javadoc-plugin:jar:2.9 is invalid, transitive dependencies (if any) will not be available: 4 problems were encountered while building the effective model for ::
+[ERROR] 'modelVersion' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'groupId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'artifactId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'version' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Application LIfecycle ENabler parent project. 2.1.0-SNAPSHOT:
+[INFO] 
+[INFO] Application LIfecycle ENabler parent project. ...... FAILURE [  0.114 s]
+[INFO] Alien 4 Cloud Common ............................... SKIPPED
+[INFO] Alien 4 Cloud Dao .................................. SKIPPED
+[INFO] Alien 4 Cloud Security ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.762 s
+[INFO] Finished at: 2026-11-10T18:37:56Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Plugin org.apache.maven.plugins:maven-javadoc-plugin:2.9 or one of its dependencies could not be resolved:
+[ERROR] 	4 problems were encountered while building the effective model for ::
+[ERROR] [ERROR] 'modelVersion' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] [ERROR] 'groupId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] [ERROR] 'artifactId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] [ERROR] 'version' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException

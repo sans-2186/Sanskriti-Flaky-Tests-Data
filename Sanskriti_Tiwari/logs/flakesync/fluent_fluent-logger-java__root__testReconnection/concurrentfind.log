@@ -1,0 +1,65 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< org.fluentd:fluent-logger >----------------------
+[INFO] Building Fluent Logger for Java 0.3.4-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ fluent-logger >>>
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.16.1-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ fluent-logger ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ fluent-logger ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.TfLPSPjRzQ/repo/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ fluent-logger ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ fluent-logger ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ fluent-logger ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ fluent-logger <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ fluent-logger ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Surefire report directory: /tmp/tmp.TfLPSPjRzQ/repo/.flakesync/clean_cBGMmua+N+WMuXrf8c0NEWKHRHwaBYKYpgJK0tYdFU=
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.8.1/surefire-junit4-2.8.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.8.1/surefire-junit4-2.8.1.pom (2.6 kB at 10 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.8.1/surefire-providers-2.8.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.8.1/surefire-providers-2.8.1.pom (2.3 kB at 57 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.8.1/surefire-junit4-2.8.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.8.1/surefire-junit4-2.8.1.jar (33 kB at 608 kB/s)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.fluentd.logger.TestFluentLogger
+2026-11-10 18:56:59,416 DEBUG [pool-1-thread-1] Started MockFluentd port:43411
+2026-11-10 18:57:00,385 INFO  [main] Closing the current fluentd instance
+2026-11-10 18:57:00,389 DEBUG [pool-1-thread-1] Terminated MockFluentd port:43411
+2026-11-10 18:57:00,896 ERROR [main] org.fluentd.logger.sender.RawSocketSender
+java.net.SocketException: Connection reset by peer (Write failed)
+2026-11-10 18:57:01,649 ERROR [main] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2026-11-10 18:57:02,402 ERROR [main] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2026-11-10 18:57:02,403 DEBUG [pool-1-thread-2] Started MockFluentd port:43411
+2026-11-10 18:57:05,555 DEBUG [pool-1-thread-2] Terminated MockFluentd port:43411
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.787 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.332 s
+[INFO] Finished at: 2026-11-10T18:57:07Z
+[INFO] ------------------------------------------------------------------------

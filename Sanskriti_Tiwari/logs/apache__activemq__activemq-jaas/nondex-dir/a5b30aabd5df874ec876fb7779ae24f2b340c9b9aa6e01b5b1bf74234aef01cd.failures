@@ -1,0 +1,5 @@
+org.apache.activemq.jaas.LDAPModuleRoleExpansionTest#testRoleExpansion
+org.apache.activemq.jaas.LDAPLoginModuleTest#testEncryptedLogin
+org.apache.activemq.jaas.LDAPLoginModuleTest#testAESEncryptedLogin
+org.apache.activemq.jaas.LDAPLoginModuleTest#testLogin
+org.apache.activemq.jaas.LDAPLoginModuleTest#testAuthenticatedOkViaBindOnAnonConnection

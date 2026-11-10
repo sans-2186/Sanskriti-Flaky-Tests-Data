@@ -1,0 +1,57 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Undertow                                                           [pom]
+[INFO] Undertow Parser Generator                                          [jar]
+[INFO] Undertow Core                                                      [jar]
+[INFO] 
+[INFO] --------------------< io.undertow:undertow-parent >---------------------
+[INFO] Building Undertow 2.0.14.Final-SNAPSHOT                            [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) > test-compile @ undertow-parent >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M2:enforce (enforce-java-version) @ undertow-parent ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M2:enforce (enforce-maven-version) @ undertow-parent ---
+[INFO] 
+[INFO] --- buildnumber:1.4:create (get-scm-revision) @ undertow-parent ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.QR67vYSrAk/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.QR67vYSrAk/repo
+[INFO] Storing buildNumber: d0efffad5d2034bb07525cac9b299dac72c3045d at timestamp: 1794339546929
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.QR67vYSrAk/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.QR67vYSrAk/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- checkstyle:3.0.0:checkstyle (check-style) @ undertow-parent ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) < test-compile @ undertow-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) @ undertow-parent ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running BarrierPointSearchMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Undertow 2.0.14.Final-SNAPSHOT:
+[INFO] 
+[INFO] Undertow ........................................... FAILURE [  0.984 s]
+[INFO] Undertow Parser Generator .......................... SKIPPED
+[INFO] Undertow Core ...................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.168 s
+[INFO] Finished at: 2026-11-10T19:39:07Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch (default-cli) on project undertow-parent: Execution default-cli of goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch failed: java.io.FileNotFoundException: /tmp/tmp.QR67vYSrAk/repo/.flakesync/Results-CritSearch/io.undertow.server.handlers.proxy.LoadBalancingProxyHttpsTestCase.testMaxRetries-CriticalPoints.csv (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

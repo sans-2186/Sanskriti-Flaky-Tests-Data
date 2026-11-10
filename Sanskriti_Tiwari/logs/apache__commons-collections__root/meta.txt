@@ -1,0 +1,3 @@
+url=https://github.com/apache/commons-collections
+sha=371313a2e4d1da5e0776419ce94bb8b644158a20
+module=<root>

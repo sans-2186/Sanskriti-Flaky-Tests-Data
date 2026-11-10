@@ -1,0 +1,25 @@
+[INFO] Scanning for projects...
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[ERROR] Non-resolvable import POM: The following artifacts could not be resolved: io.vertx:vertx-dependencies:pom:4.0.0-SNAPSHOT (absent): io.vertx:vertx-dependencies:pom:4.0.0-SNAPSHOT was not found in https://oss.sonatype.org/content/repositories/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced @ line 23, column 19
+[ERROR] 'dependencies.dependency.version' for io.vertx:vertx-core:jar is missing. @ line 34, column 17
+[ERROR] 'dependencies.dependency.version' for io.vertx:vertx-codegen:jar is missing. @ line 38, column 17
+[ERROR] 'dependencies.dependency.version' for io.vertx:vertx-docgen:jar is missing. @ line 43, column 17
+[ERROR] 'dependencies.dependency.version' for io.vertx:vertx-core:test-jar is missing. @ line 72, column 17
+[ERROR] 'dependencies.dependency.version' for io.vertx:vertx-unit:jar is missing. @ line 78, column 17
+ @ 
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]   
+[ERROR]   The project io.vertx:vertx-rabbitmq-client:4.0.0-SNAPSHOT (/tmp/tmp.Wm1mx3MciR/repo/pom.xml) has 6 errors
+[ERROR]     Non-resolvable import POM: The following artifacts could not be resolved: io.vertx:vertx-dependencies:pom:4.0.0-SNAPSHOT (absent): io.vertx:vertx-dependencies:pom:4.0.0-SNAPSHOT was not found in https://oss.sonatype.org/content/repositories/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of sonatype-nexus-snapshots has elapsed or updates are forced @ line 23, column 19 -> [Help 2]
+[ERROR]     'dependencies.dependency.version' for io.vertx:vertx-core:jar is missing. @ line 34, column 17
+[ERROR]     'dependencies.dependency.version' for io.vertx:vertx-codegen:jar is missing. @ line 38, column 17
+[ERROR]     'dependencies.dependency.version' for io.vertx:vertx-docgen:jar is missing. @ line 43, column 17
+[ERROR]     'dependencies.dependency.version' for io.vertx:vertx-core:test-jar is missing. @ line 72, column 17
+[ERROR]     'dependencies.dependency.version' for io.vertx:vertx-unit:jar is missing. @ line 78, column 17
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/UnresolvableModelException

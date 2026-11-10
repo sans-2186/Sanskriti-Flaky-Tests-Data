@@ -1,0 +1,685 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache CloudStack Developer Tools - Checkstyle Configuration       [jar]
+[INFO] Apache CloudStack                                                  [pom]
+[INFO] Apache CloudStack Framework - Managed Context                      [jar]
+[INFO] Apache CloudStack Framework                                        [pom]
+[INFO] Apache CloudStack Framework - Certificate Authority                [jar]
+[INFO] Apache CloudStack Utils                                            [jar]
+[INFO] Apache CloudStack Framework - Database                             [jar]
+[INFO] Apache CloudStack Framework - Configuration                        [jar]
+[INFO] Apache CloudStack Framework - Direct Download to Primary Storage   [jar]
+[INFO] Apache CloudStack API                                              [jar]
+[INFO] Apache CloudStack Framework - REST                                 [jar]
+[INFO] Apache CloudStack Framework - IPC                                  [jar]
+[INFO] Apache CloudStack Cloud Engine                                     [pom]
+[INFO] Apache CloudStack Cloud Engine API                                 [jar]
+[INFO] Apache CloudStack Cloud Engine Schema Component                    [jar]
+[INFO] 
+[INFO] ------------------< org.apache.cloudstack:checkstyle >------------------
+[INFO] Building Apache CloudStack Developer Tools - Checkstyle Configuration 4.19.0.0-SNAPSHOT [1/15]
+[INFO]   from tools/checkstyle/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ checkstyle ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ checkstyle ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ checkstyle ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.HqyI7ATXYy/repo/tools/checkstyle/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ checkstyle ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ checkstyle ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ checkstyle ---
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ checkstyle ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/tools/checkstyle/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/checkstyle/4.19.0.0-SNAPSHOT/checkstyle-4.19.0.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/tools/checkstyle/target/checkstyle-4.19.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/cloudstack/checkstyle/4.19.0.0-SNAPSHOT/checkstyle-4.19.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] ------------------< org.apache.cloudstack:cloudstack >------------------
+[INFO] Building Apache CloudStack 4.19.0.0-SNAPSHOT                      [2/15]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- remote-resources:1.3:process (default) @ cloudstack ---
+[INFO] 
+[INFO] --- site:3.8.2:attach-descriptor (attach-descriptor) @ cloudstack ---
+[INFO] No site descriptor found: nothing to attach.
+[INFO] 
+[INFO] --- install:2.3.1:install (default-install) @ cloudstack ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/cloudstack/4.19.0.0-SNAPSHOT/cloudstack-4.19.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -------< org.apache.cloudstack:cloud-framework-managed-context >--------
+[INFO] Building Apache CloudStack Framework - Managed Context 4.19.0.0-SNAPSHOT [3/15]
+[INFO]   from framework/managed-context/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.1.0:check (cloudstack-checkstyle) @ cloud-framework-managed-context ---
+[INFO] 
+[INFO] --- remote-resources:1.3:process (default) @ cloud-framework-managed-context ---
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ cloud-framework-managed-context ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.HqyI7ATXYy/repo/framework/managed-context/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cloud-framework-managed-context ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ cloud-framework-managed-context ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.HqyI7ATXYy/repo/framework/managed-context/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cloud-framework-managed-context ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ cloud-framework-managed-context ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ cloud-framework-managed-context ---
+[INFO] Building jar: /tmp/tmp.HqyI7ATXYy/repo/framework/managed-context/target/cloud-framework-managed-context-4.19.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.8.2:attach-descriptor (attach-descriptor) @ cloud-framework-managed-context ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- install:2.3.1:install (default-install) @ cloud-framework-managed-context ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/managed-context/target/cloud-framework-managed-context-4.19.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-managed-context/4.19.0.0-SNAPSHOT/cloud-framework-managed-context-4.19.0.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/managed-context/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-managed-context/4.19.0.0-SNAPSHOT/cloud-framework-managed-context-4.19.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------< org.apache.cloudstack:cloudstack-framework >-------------
+[INFO] Building Apache CloudStack Framework 4.19.0.0-SNAPSHOT            [4/15]
+[INFO]   from framework/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- remote-resources:1.3:process (default) @ cloudstack-framework ---
+[INFO] 
+[INFO] --- site:3.8.2:attach-descriptor (attach-descriptor) @ cloudstack-framework ---
+[INFO] No site descriptor found: nothing to attach.
+[INFO] 
+[INFO] --- install:2.3.1:install (default-install) @ cloudstack-framework ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/cloudstack-framework/4.19.0.0-SNAPSHOT/cloudstack-framework-4.19.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------< org.apache.cloudstack:cloud-framework-ca >--------------
+[INFO] Building Apache CloudStack Framework - Certificate Authority 4.19.0.0-SNAPSHOT [5/15]
+[INFO]   from framework/ca/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.1.0:check (cloudstack-checkstyle) @ cloud-framework-ca ---
+[INFO] 
+[INFO] --- remote-resources:1.3:process (default) @ cloud-framework-ca ---
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ cloud-framework-ca ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.HqyI7ATXYy/repo/framework/ca/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cloud-framework-ca ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ cloud-framework-ca ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.HqyI7ATXYy/repo/framework/ca/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cloud-framework-ca ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ cloud-framework-ca ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ cloud-framework-ca ---
+[INFO] Building jar: /tmp/tmp.HqyI7ATXYy/repo/framework/ca/target/cloud-framework-ca-4.19.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.8.2:attach-descriptor (attach-descriptor) @ cloud-framework-ca ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- install:2.3.1:install (default-install) @ cloud-framework-ca ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/ca/target/cloud-framework-ca-4.19.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-ca/4.19.0.0-SNAPSHOT/cloud-framework-ca-4.19.0.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/ca/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-ca/4.19.0.0-SNAPSHOT/cloud-framework-ca-4.19.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.cloudstack:cloud-utils >------------------
+[INFO] Building Apache CloudStack Utils 4.19.0.0-SNAPSHOT                [6/15]
+[INFO]   from utils/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.1.0:check (cloudstack-checkstyle) @ cloud-utils ---
+[INFO] 
+[INFO] --- remote-resources:1.3:process (default) @ cloud-utils ---
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ cloud-utils ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cloud-utils ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ cloud-utils ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cloud-utils ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ cloud-utils ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ cloud-utils ---
+[INFO] Building jar: /tmp/tmp.HqyI7ATXYy/repo/utils/target/cloud-utils-4.19.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.8.2:attach-descriptor (attach-descriptor) @ cloud-utils ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- jar:3.2.0:test-jar (default) @ cloud-utils ---
+[INFO] Building jar: /tmp/tmp.HqyI7ATXYy/repo/utils/target/cloud-utils-4.19.0.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- shade:3.0.0:shade (rebuild-war) @ cloud-utils ---
+[INFO] Excluding org.apache.cloudstack:cloud-framework-managed-context:jar:4.19.0.0-SNAPSHOT from the shaded jar.
+[INFO] Excluding org.apache.cloudstack:cloud-framework-ca:jar:4.19.0.0-SNAPSHOT from the shaded jar.
+[INFO] Excluding org.springframework:spring-context:jar:5.3.26 from the shaded jar.
+[INFO] Excluding org.springframework:spring-aop:jar:5.3.26 from the shaded jar.
+[INFO] Excluding org.springframework:spring-beans:jar:5.3.26 from the shaded jar.
+[INFO] Excluding org.springframework:spring-core:jar:5.3.26 from the shaded jar.
+[INFO] Excluding org.springframework:spring-jcl:jar:5.3.26 from the shaded jar.
+[INFO] Excluding org.springframework:spring-expression:jar:5.3.26 from the shaded jar.
+[INFO] Excluding org.aspectj:aspectjweaver:jar:1.8.13 from the shaded jar.
+[INFO] Including ch.qos.reload4j:reload4j:jar:1.2.25 in the shaded jar.
+[INFO] Excluding cglib:cglib-nodep:jar:3.3.0 from the shaded jar.
+[INFO] Excluding commons-validator:commons-validator:jar:1.6 from the shaded jar.
+[INFO] Excluding commons-beanutils:commons-beanutils:jar:1.9.2 from the shaded jar.
+[INFO] Excluding commons-digester:commons-digester:jar:1.8.1 from the shaded jar.
+[INFO] Excluding commons-logging:commons-logging:jar:1.2 from the shaded jar.
+[INFO] Excluding commons-collections:commons-collections:jar:3.2.2 from the shaded jar.
+[INFO] Including commons-codec:commons-codec:jar:1.15 in the shaded jar.
+[INFO] Excluding org.bouncycastle:bcprov-jdk15on:jar:1.70 from the shaded jar.
+[INFO] Excluding org.bouncycastle:bcpkix-jdk15on:jar:1.70 from the shaded jar.
+[INFO] Excluding org.bouncycastle:bcutil-jdk15on:jar:1.70 from the shaded jar.
+[INFO] Excluding org.bouncycastle:bctls-jdk15on:jar:1.70 from the shaded jar.
+[INFO] Excluding com.jcraft:jsch:jar:0.1.55 from the shaded jar.
+[INFO] Including org.jasypt:jasypt:jar:1.9.3 in the shaded jar.
+[INFO] Excluding org.jenkins-ci:trilead-ssh2:jar:build-217-jenkins-27 from the shaded jar.
+[INFO] Excluding net.i2p.crypto:eddsa:jar:0.3.0 from the shaded jar.
+[INFO] Excluding org.connectbot.jbcrypt:jbcrypt:jar:1.0.0 from the shaded jar.
+[INFO] Excluding com.amazonaws:aws-java-sdk-core:jar:1.12.439 from the shaded jar.
+[INFO] Excluding org.apache.httpcomponents:httpclient:jar:4.5.14 from the shaded jar.
+[INFO] Excluding org.apache.httpcomponents:httpcore:jar:4.4.16 from the shaded jar.
+[INFO] Excluding software.amazon.ion:ion-java:jar:1.0.2 from the shaded jar.
+[INFO] Excluding com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:jar:2.12.6 from the shaded jar.
+[INFO] Excluding joda-time:joda-time:jar:2.12.5 from the shaded jar.
+[INFO] Excluding com.amazonaws:aws-java-sdk-s3:jar:1.12.439 from the shaded jar.
+[INFO] Excluding com.amazonaws:aws-java-sdk-kms:jar:1.12.439 from the shaded jar.
+[INFO] Excluding com.amazonaws:jmespath-java:jar:1.12.439 from the shaded jar.
+[INFO] Excluding log4j:apache-log4j-extras:jar:1.2.17 from the shaded jar.
+[INFO] Excluding com.googlecode.java-ipv6:java-ipv6:jar:0.17 from the shaded jar.
+[INFO] Excluding commons-configuration:commons-configuration:jar:1.10 from the shaded jar.
+[INFO] Excluding commons-lang:commons-lang:jar:2.6 from the shaded jar.
+[INFO] Excluding javax.annotation:javax.annotation-api:jar:1.3.2 from the shaded jar.
+[INFO] Excluding com.cronutils:cron-utils:jar:9.2.0 from the shaded jar.
+[INFO] Excluding org.slf4j:slf4j-api:jar:1.7.30 from the shaded jar.
+[INFO] Excluding org.glassfish:jakarta.el:jar:3.0.4 from the shaded jar.
+[INFO] Including com.google.protobuf:protobuf-java:jar:3.6.1 in the shaded jar.
+[INFO] Excluding commons-io:commons-io:jar:2.8.0 from the shaded jar.
+[INFO] Including org.apache.commons:commons-lang3:jar:3.11 in the shaded jar.
+[INFO] Excluding org.reflections:reflections:jar:0.10.2 from the shaded jar.
+[INFO] Excluding org.javassist:javassist:jar:3.27.0-GA from the shaded jar.
+[INFO] Excluding com.google.code.findbugs:jsr305:jar:3.0.2 from the shaded jar.
+[INFO] Excluding org.owasp.esapi:esapi:jar:2.1.0.1 from the shaded jar.
+[INFO] Excluding commons-fileupload:commons-fileupload:jar:1.4 from the shaded jar.
+[INFO] Excluding xom:xom:jar:1.2.5 from the shaded jar.
+[INFO] Excluding xerces:xercesImpl:jar:2.8.0 from the shaded jar.
+[INFO] Excluding xalan:xalan:jar:2.7.0 from the shaded jar.
+[INFO] Excluding org.beanshell:bsh-core:jar:2.0b4 from the shaded jar.
+[INFO] Excluding org.owasp.antisamy:antisamy:jar:1.5.3 from the shaded jar.
+[INFO] Excluding net.sourceforge.nekohtml:nekohtml:jar:1.9.16 from the shaded jar.
+[INFO] Excluding commons-httpclient:commons-httpclient:jar:3.1 from the shaded jar.
+[INFO] Excluding org.apache.xmlgraphics:batik-css:jar:1.14 from the shaded jar.
+[INFO] Excluding org.apache.xmlgraphics:batik-shared-resources:jar:1.14 from the shaded jar.
+[INFO] Excluding org.apache.xmlgraphics:batik-util:jar:1.14 from the shaded jar.
+[INFO] Excluding org.apache.xmlgraphics:batik-constants:jar:1.14 from the shaded jar.
+[INFO] Excluding org.apache.xmlgraphics:batik-i18n:jar:1.14 from the shaded jar.
+[INFO] Excluding org.apache.xmlgraphics:xmlgraphics-commons:jar:2.6 from the shaded jar.
+[INFO] Excluding org.opensaml:opensaml:jar:2.6.6 from the shaded jar.
+[INFO] Excluding org.opensaml:openws:jar:1.5.6 from the shaded jar.
+[INFO] Excluding org.opensaml:xmltooling:jar:1.4.6 from the shaded jar.
+[INFO] Excluding ca.juliusdavies:not-yet-commons-ssl:jar:0.3.9 from the shaded jar.
+[INFO] Excluding org.apache.velocity:velocity:jar:1.7 from the shaded jar.
+[INFO] Excluding org.apache.santuario:xmlsec:jar:1.5.7 from the shaded jar.
+[INFO] Excluding commons-net:commons-net:jar:3.7.2 from the shaded jar.
+[INFO] Excluding com.google.code.gson:gson:jar:1.7.2 from the shaded jar.
+[INFO] Excluding com.google.guava:guava-testlib:jar:18.0 from the shaded jar.
+[INFO] Excluding com.google.guava:guava:jar:31.1-jre from the shaded jar.
+[INFO] Excluding com.google.guava:failureaccess:jar:1.0.1 from the shaded jar.
+[INFO] Excluding com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava from the shaded jar.
+[INFO] Excluding org.checkerframework:checker-qual:jar:3.12.0 from the shaded jar.
+[INFO] Excluding com.google.errorprone:error_prone_annotations:jar:2.11.0 from the shaded jar.
+[INFO] Excluding com.google.j2objc:j2objc-annotations:jar:1.3 from the shaded jar.
+[INFO] Excluding com.google.truth:truth:jar:0.23 from the shaded jar.
+[INFO] Excluding com.fasterxml.jackson.core:jackson-databind:jar:2.13.3 from the shaded jar.
+[INFO] Excluding com.fasterxml.jackson.core:jackson-annotations:jar:2.13.3 from the shaded jar.
+[INFO] Excluding com.fasterxml.jackson.core:jackson-core:jar:2.13.3 from the shaded jar.
+[INFO] Excluding org.apache.commons:commons-compress:jar:1.21 from the shaded jar.
+[INFO] Excluding javax.mail:mail:jar:1.5.0-b01 from the shaded jar.
+[INFO] Excluding javax.activation:activation:jar:1.1 from the shaded jar.
+[INFO] Excluding org.apache.commons:commons-email:jar:1.5 from the shaded jar.
+[INFO] Excluding com.sun.mail:javax.mail:jar:1.5.6 from the shaded jar.
+[INFO] Excluding org.openjdk.nashorn:nashorn-core:jar:15.3 from the shaded jar.
+[INFO] Excluding org.ow2.asm:asm:jar:7.3.1 from the shaded jar.
+[INFO] Excluding org.ow2.asm:asm-commons:jar:7.3.1 from the shaded jar.
+[INFO] Excluding org.ow2.asm:asm-analysis:jar:7.3.1 from the shaded jar.
+[INFO] Excluding org.ow2.asm:asm-tree:jar:7.3.1 from the shaded jar.
+[INFO] Excluding org.ow2.asm:asm-util:jar:7.3.1 from the shaded jar.
+[INFO] Including commons-cli:commons-cli:jar:1.5.0 in the shaded jar.
+[INFO] Including com.google.crypto.tink:tink:jar:1.7.0 in the shaded jar.
+[INFO] Excluding javax.inject:javax.inject:jar:1 from the shaded jar.
+[INFO] Replacing /tmp/tmp.HqyI7ATXYy/repo/utils/target/cloud-utils-4.19.0.0-SNAPSHOT-bundled.jar with /tmp/tmp.HqyI7ATXYy/repo/utils/target/cloud-utils-4.19.0.0-SNAPSHOT-shaded.jar
+[INFO] 
+[INFO] --- install:2.3.1:install (default-install) @ cloud-utils ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/utils/target/cloud-utils-4.19.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/cloudstack/cloud-utils/4.19.0.0-SNAPSHOT/cloud-utils-4.19.0.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/utils/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/cloud-utils/4.19.0.0-SNAPSHOT/cloud-utils-4.19.0.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/utils/target/cloud-utils-4.19.0.0-SNAPSHOT-tests.jar to /home/runner/.m2/repository/org/apache/cloudstack/cloud-utils/4.19.0.0-SNAPSHOT/cloud-utils-4.19.0.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --------------< org.apache.cloudstack:cloud-framework-db >--------------
+[INFO] Building Apache CloudStack Framework - Database 4.19.0.0-SNAPSHOT [7/15]
+[INFO]   from framework/db/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.1.0:check (cloudstack-checkstyle) @ cloud-framework-db ---
+[INFO] 
+[INFO] --- remote-resources:1.3:process (default) @ cloud-framework-db ---
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ cloud-framework-db ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cloud-framework-db ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ cloud-framework-db ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cloud-framework-db ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ cloud-framework-db ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ cloud-framework-db ---
+[INFO] Building jar: /tmp/tmp.HqyI7ATXYy/repo/framework/db/target/cloud-framework-db-4.19.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.8.2:attach-descriptor (attach-descriptor) @ cloud-framework-db ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- install:2.3.1:install (default-install) @ cloud-framework-db ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/db/target/cloud-framework-db-4.19.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-db/4.19.0.0-SNAPSHOT/cloud-framework-db-4.19.0.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/db/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-db/4.19.0.0-SNAPSHOT/cloud-framework-db-4.19.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------< org.apache.cloudstack:cloud-framework-config >------------
+[INFO] Building Apache CloudStack Framework - Configuration 4.19.0.0-SNAPSHOT [8/15]
+[INFO]   from framework/config/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.1.0:check (cloudstack-checkstyle) @ cloud-framework-config ---
+[INFO] 
+[INFO] --- remote-resources:1.3:process (default) @ cloud-framework-config ---
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ cloud-framework-config ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cloud-framework-config ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ cloud-framework-config ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.HqyI7ATXYy/repo/framework/config/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cloud-framework-config ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ cloud-framework-config ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ cloud-framework-config ---
+[INFO] Building jar: /tmp/tmp.HqyI7ATXYy/repo/framework/config/target/cloud-framework-config-4.19.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.8.2:attach-descriptor (attach-descriptor) @ cloud-framework-config ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- install:2.3.1:install (default-install) @ cloud-framework-config ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/config/target/cloud-framework-config-4.19.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-config/4.19.0.0-SNAPSHOT/cloud-framework-config-4.19.0.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/config/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-config/4.19.0.0-SNAPSHOT/cloud-framework-config-4.19.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -------< org.apache.cloudstack:cloud-framework-direct-download >--------
+[INFO] Building Apache CloudStack Framework - Direct Download to Primary Storage 4.19.0.0-SNAPSHOT [9/15]
+[INFO]   from framework/direct-download/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.1.0:check (cloudstack-checkstyle) @ cloud-framework-direct-download ---
+[INFO] 
+[INFO] --- remote-resources:1.3:process (default) @ cloud-framework-direct-download ---
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ cloud-framework-direct-download ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.HqyI7ATXYy/repo/framework/direct-download/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cloud-framework-direct-download ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ cloud-framework-direct-download ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.HqyI7ATXYy/repo/framework/direct-download/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cloud-framework-direct-download ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ cloud-framework-direct-download ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ cloud-framework-direct-download ---
+[INFO] Building jar: /tmp/tmp.HqyI7ATXYy/repo/framework/direct-download/target/cloud-framework-direct-download-4.19.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.8.2:attach-descriptor (attach-descriptor) @ cloud-framework-direct-download ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- install:2.3.1:install (default-install) @ cloud-framework-direct-download ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/direct-download/target/cloud-framework-direct-download-4.19.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-direct-download/4.19.0.0-SNAPSHOT/cloud-framework-direct-download-4.19.0.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/direct-download/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-direct-download/4.19.0.0-SNAPSHOT/cloud-framework-direct-download-4.19.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------< org.apache.cloudstack:cloud-api >-------------------
+[INFO] Building Apache CloudStack API 4.19.0.0-SNAPSHOT                 [10/15]
+[INFO]   from api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.1.0:check (cloudstack-checkstyle) @ cloud-api ---
+[INFO] 
+[INFO] --- remote-resources:1.3:process (default) @ cloud-api ---
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ cloud-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cloud-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ cloud-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cloud-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ cloud-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ cloud-api ---
+[INFO] Building jar: /tmp/tmp.HqyI7ATXYy/repo/api/target/cloud-api-4.19.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.8.2:attach-descriptor (attach-descriptor) @ cloud-api ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- jar:3.2.0:test-jar (default) @ cloud-api ---
+[INFO] Building jar: /tmp/tmp.HqyI7ATXYy/repo/api/target/cloud-api-4.19.0.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- install:2.3.1:install (default-install) @ cloud-api ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/api/target/cloud-api-4.19.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/cloudstack/cloud-api/4.19.0.0-SNAPSHOT/cloud-api-4.19.0.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/api/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/cloud-api/4.19.0.0-SNAPSHOT/cloud-api-4.19.0.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/api/target/cloud-api-4.19.0.0-SNAPSHOT-tests.jar to /home/runner/.m2/repository/org/apache/cloudstack/cloud-api/4.19.0.0-SNAPSHOT/cloud-api-4.19.0.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] -------------< org.apache.cloudstack:cloud-framework-rest >-------------
+[INFO] Building Apache CloudStack Framework - REST 4.19.0.0-SNAPSHOT    [11/15]
+[INFO]   from framework/rest/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.1.0:check (cloudstack-checkstyle) @ cloud-framework-rest ---
+[INFO] 
+[INFO] --- remote-resources:1.3:process (default) @ cloud-framework-rest ---
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ cloud-framework-rest ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.HqyI7ATXYy/repo/framework/rest/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cloud-framework-rest ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ cloud-framework-rest ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.HqyI7ATXYy/repo/framework/rest/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cloud-framework-rest ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ cloud-framework-rest ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ cloud-framework-rest ---
+[INFO] Building jar: /tmp/tmp.HqyI7ATXYy/repo/framework/rest/target/cloud-framework-rest-4.19.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.8.2:attach-descriptor (attach-descriptor) @ cloud-framework-rest ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- install:2.3.1:install (default-install) @ cloud-framework-rest ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/rest/target/cloud-framework-rest-4.19.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-rest/4.19.0.0-SNAPSHOT/cloud-framework-rest-4.19.0.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/rest/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-rest/4.19.0.0-SNAPSHOT/cloud-framework-rest-4.19.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------< org.apache.cloudstack:cloud-framework-ipc >--------------
+[INFO] Building Apache CloudStack Framework - IPC 4.19.0.0-SNAPSHOT     [12/15]
+[INFO]   from framework/ipc/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.1.0:check (cloudstack-checkstyle) @ cloud-framework-ipc ---
+[INFO] 
+[INFO] --- remote-resources:1.3:process (default) @ cloud-framework-ipc ---
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ cloud-framework-ipc ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cloud-framework-ipc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ cloud-framework-ipc ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cloud-framework-ipc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ cloud-framework-ipc ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ cloud-framework-ipc ---
+[INFO] Building jar: /tmp/tmp.HqyI7ATXYy/repo/framework/ipc/target/cloud-framework-ipc-4.19.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.8.2:attach-descriptor (attach-descriptor) @ cloud-framework-ipc ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default) @ cloud-framework-ipc ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- install:2.3.1:install (default-install) @ cloud-framework-ipc ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/ipc/target/cloud-framework-ipc-4.19.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-ipc/4.19.0.0-SNAPSHOT/cloud-framework-ipc-4.19.0.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/framework/ipc/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/cloud-framework-ipc/4.19.0.0-SNAPSHOT/cloud-framework-ipc-4.19.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.cloudstack:cloud-engine >-----------------
+[INFO] Building Apache CloudStack Cloud Engine 4.19.0.0-SNAPSHOT        [13/15]
+[INFO]   from engine/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- remote-resources:1.3:process (default) @ cloud-engine ---
+[INFO] 
+[INFO] --- site:3.8.2:attach-descriptor (attach-descriptor) @ cloud-engine ---
+[INFO] No site descriptor found: nothing to attach.
+[INFO] 
+[INFO] --- install:2.3.1:install (default-install) @ cloud-engine ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/engine/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/cloud-engine/4.19.0.0-SNAPSHOT/cloud-engine-4.19.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------< org.apache.cloudstack:cloud-engine-api >---------------
+[INFO] Building Apache CloudStack Cloud Engine API 4.19.0.0-SNAPSHOT    [14/15]
+[INFO]   from engine/api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.1.0:check (cloudstack-checkstyle) @ cloud-engine-api ---
+[INFO] 
+[INFO] --- remote-resources:1.3:process (default) @ cloud-engine-api ---
+[INFO] 
+[INFO] --- resources:2.5:resources (default-resources) @ cloud-engine-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cloud-engine-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.5:testResources (default-testResources) @ cloud-engine-api ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.HqyI7ATXYy/repo/engine/api/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cloud-engine-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ cloud-engine-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ cloud-engine-api ---
+[INFO] Building jar: /tmp/tmp.HqyI7ATXYy/repo/engine/api/target/cloud-engine-api-4.19.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.8.2:attach-descriptor (attach-descriptor) @ cloud-engine-api ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- install:2.3.1:install (default-install) @ cloud-engine-api ---
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/engine/api/target/cloud-engine-api-4.19.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/cloudstack/cloud-engine-api/4.19.0.0-SNAPSHOT/cloud-engine-api-4.19.0.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.HqyI7ATXYy/repo/engine/api/pom.xml to /home/runner/.m2/repository/org/apache/cloudstack/cloud-engine-api/4.19.0.0-SNAPSHOT/cloud-engine-api-4.19.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------< org.apache.cloudstack:cloud-engine-schema >--------------
+[INFO] Building Apache CloudStack Cloud Engine Schema Component 4.19.0.0-SNAPSHOT [15/15]
+[INFO]   from engine/schema/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.1.0:check (cloudstack-checkstyle) @ cloud-engine-schema ---
+[INFO] 
+[INFO] --- groovy:1.5:execute (setproperty) @ cloud-engine-schema ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache CloudStack 4.19.0.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache CloudStack Developer Tools - Checkstyle Configuration SUCCESS [  0.902 s]
+[INFO] Apache CloudStack .................................. SUCCESS [  1.135 s]
+[INFO] Apache CloudStack Framework - Managed Context ...... SUCCESS [  0.610 s]
+[INFO] Apache CloudStack Framework ........................ SUCCESS [  0.030 s]
+[INFO] Apache CloudStack Framework - Certificate Authority  SUCCESS [  0.063 s]
+[INFO] Apache CloudStack Utils ............................ SUCCESS [  1.494 s]
+[INFO] Apache CloudStack Framework - Database ............. SUCCESS [  0.415 s]
+[INFO] Apache CloudStack Framework - Configuration ........ SUCCESS [  0.339 s]
+[INFO] Apache CloudStack Framework - Direct Download to Primary Storage SUCCESS [  0.301 s]
+[INFO] Apache CloudStack API .............................. SUCCESS [  0.824 s]
+[INFO] Apache CloudStack Framework - REST ................. SUCCESS [  0.248 s]
+[INFO] Apache CloudStack Framework - IPC .................. SUCCESS [  0.413 s]
+[INFO] Apache CloudStack Cloud Engine ..................... SUCCESS [  0.020 s]
+[INFO] Apache CloudStack Cloud Engine API ................. SUCCESS [  0.568 s]
+[INFO] Apache CloudStack Cloud Engine Schema Component .... FAILURE [  0.488 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.611 s
+[INFO] Finished at: 2026-11-10T18:44:36Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.gmaven:gmaven-plugin:1.5:execute (setproperty) on project cloud-engine-schema: Execution setproperty of goal org.codehaus.gmaven:gmaven-plugin:1.5:execute failed: An API incompatibility was encountered while executing org.codehaus.gmaven:gmaven-plugin:1.5:execute: java.lang.ExceptionInInitializerError: null
+[ERROR] -----------------------------------------------------
+[ERROR] realm =    plugin>org.codehaus.gmaven:gmaven-plugin:1.5
+[ERROR] strategy = org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy
+[ERROR] urls[0] = file:/home/runner/.m2/repository/org/codehaus/gmaven/gmaven-plugin/1.5/gmaven-plugin-1.5.jar
+[ERROR] urls[1] = file:/home/runner/.m2/repository/org/codehaus/gmaven/runtime/gmaven-runtime-api/1.5/gmaven-runtime-api-1.5.jar
+[ERROR] urls[2] = file:/home/runner/.m2/repository/org/codehaus/gmaven/feature/gmaven-feature-api/1.5/gmaven-feature-api-1.5.jar
+[ERROR] urls[3] = file:/home/runner/.m2/repository/org/codehaus/gmaven/runtime/gmaven-runtime-loader/1.5/gmaven-runtime-loader-1.5.jar
+[ERROR] urls[4] = file:/home/runner/.m2/repository/org/codehaus/gmaven/feature/gmaven-feature-support/1.5/gmaven-feature-support-1.5.jar
+[ERROR] urls[5] = file:/home/runner/.m2/repository/org/codehaus/gmaven/runtime/gmaven-runtime-support/1.5/gmaven-runtime-support-1.5.jar
+[ERROR] urls[6] = file:/home/runner/.m2/repository/org/sonatype/gshell/gshell-io/2.4/gshell-io-2.4.jar
+[ERROR] urls[7] = file:/home/runner/.m2/repository/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+[ERROR] urls[8] = file:/home/runner/.m2/repository/com/thoughtworks/qdox/qdox/1.12/qdox-1.12.jar
+[ERROR] urls[9] = file:/home/runner/.m2/repository/org/apache/maven/shared/file-management/1.2.1/file-management-1.2.1.jar
+[ERROR] urls[10] = file:/home/runner/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+[ERROR] urls[11] = file:/home/runner/.m2/repository/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar
+[ERROR] urls[12] = file:/home/runner/.m2/repository/log4j/log4j/1.2.12/log4j-1.2.12.jar
+[ERROR] urls[13] = file:/home/runner/.m2/repository/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+[ERROR] urls[14] = file:/home/runner/.m2/repository/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+[ERROR] urls[15] = file:/home/runner/.m2/repository/org/apache/maven/reporting/maven-reporting-impl/2.0.4.1/maven-reporting-impl-2.0.4.1.jar
+[ERROR] urls[16] = file:/home/runner/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.1/plexus-interpolation-1.1.jar
+[ERROR] urls[17] = file:/home/runner/.m2/repository/commons-validator/commons-validator/1.2.0/commons-validator-1.2.0.jar
+[ERROR] urls[18] = file:/home/runner/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar
+[ERROR] urls[19] = file:/home/runner/.m2/repository/commons-digester/commons-digester/1.6/commons-digester-1.6.jar
+[ERROR] urls[20] = file:/home/runner/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar
+[ERROR] urls[21] = file:/home/runner/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar
+[ERROR] urls[22] = file:/home/runner/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
+[ERROR] urls[23] = file:/home/runner/.m2/repository/org/apache/maven/doxia/doxia-core/1.0-alpha-10/doxia-core-1.0-alpha-10.jar
+[ERROR] urls[24] = file:/home/runner/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-10/doxia-sink-api-1.0-alpha-10.jar
+[ERROR] urls[25] = file:/home/runner/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.0.4/maven-reporting-api-2.0.4.jar
+[ERROR] urls[26] = file:/home/runner/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.0-alpha-10/doxia-site-renderer-1.0-alpha-10.jar
+[ERROR] urls[27] = file:/home/runner/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.jar
+[ERROR] urls[28] = file:/home/runner/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.jar
+[ERROR] urls[29] = file:/home/runner/.m2/repository/org/apache/velocity/velocity/1.5/velocity-1.5.jar
+[ERROR] urls[30] = file:/home/runner/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.0-alpha-10/doxia-decoration-model-1.0-alpha-10.jar
+[ERROR] urls[31] = file:/home/runner/.m2/repository/commons-collections/commons-collections/3.2/commons-collections-3.2.jar
+[ERROR] urls[32] = file:/home/runner/.m2/repository/org/apache/maven/doxia/doxia-module-apt/1.0-alpha-10/doxia-module-apt-1.0-alpha-10.jar
+[ERROR] urls[33] = file:/home/runner/.m2/repository/org/apache/maven/doxia/doxia-module-fml/1.0-alpha-10/doxia-module-fml-1.0-alpha-10.jar
+[ERROR] urls[34] = file:/home/runner/.m2/repository/org/apache/maven/doxia/doxia-module-xdoc/1.0-alpha-10/doxia-module-xdoc-1.0-alpha-10.jar
+[ERROR] urls[35] = file:/home/runner/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.0-alpha-10/doxia-module-xhtml-1.0-alpha-10.jar
+[ERROR] urls[36] = file:/home/runner/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+[ERROR] urls[37] = file:/home/runner/.m2/repository/org/sonatype/gossip/gossip/1.2/gossip-1.2.jar
+[ERROR] Number of foreign imports: 1
+[ERROR] import: Entry[import  from realm ClassRealm[maven.api, parent: null]]
+[ERROR] 
+[ERROR] -----------------------------------------------------: Unable to make protected void java.lang.Object.finalize() throws java.lang.Throwable accessible: module java.base does not "opens java.lang" to unnamed module @25ca56de
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginContainerException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :cloud-engine-schema

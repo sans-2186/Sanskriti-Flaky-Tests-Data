@@ -1,0 +1,3 @@
+url=https://github.com/apache/accumulo
+sha=7e6ad2d3636e361a402aae207666a4bf690a1fd6
+module=server/base

@@ -1,0 +1,430 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Hadoop Main                                                 [pom]
+[INFO] Apache Hadoop Build Tools                                          [jar]
+[INFO] Apache Hadoop Project POM                                          [pom]
+[INFO] Apache Hadoop Annotations                                          [jar]
+[INFO] Apache Hadoop Project Dist POM                                     [pom]
+[INFO] Apache Hadoop Maven Plugins                               [maven-plugin]
+[INFO] Apache Hadoop MiniKDC                                              [jar]
+[INFO] Apache Hadoop Auth                                                 [jar]
+[INFO] Apache Hadoop Common                                               [jar]
+[INFO] Apache Hadoop KMS                                                  [jar]
+[INFO] Apache Hadoop HDFS Client                                          [jar]
+[INFO] Apache Hadoop HDFS                                                 [jar]
+[INFO] Apache Hadoop YARN                                                 [pom]
+[INFO] Apache Hadoop YARN API                                             [jar]
+[INFO] Apache Hadoop YARN Common                                          [jar]
+[INFO] Apache Hadoop YARN Registry                                        [jar]
+[INFO] Apache Hadoop YARN Server                                          [pom]
+[INFO] Apache Hadoop YARN Server Common                                   [jar]
+[INFO] Apache Hadoop YARN NodeManager                                     [jar]
+[INFO] Apache Hadoop YARN Web Proxy                                       [jar]
+[INFO] Apache Hadoop YARN ApplicationHistoryService                       [jar]
+[INFO] Apache Hadoop YARN Timeline Service                                [jar]
+[INFO] Apache Hadoop YARN ResourceManager                                 [jar]
+[INFO] Apache Hadoop YARN Server Tests                                    [jar]
+[INFO] Apache Hadoop YARN Client                                          [jar]
+[INFO] Apache Hadoop MapReduce Client                                     [pom]
+[INFO] Apache Hadoop MapReduce Core                                       [jar]
+[INFO] 
+[INFO] -------------------< org.apache.hadoop:hadoop-main >--------------------
+[INFO] Building Apache Hadoop Main 3.3.0-SNAPSHOT                        [1/27]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (default) @ hadoop-main ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-property) @ hadoop-main ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- site:3.6:attach-descriptor (attach-descriptor) @ hadoop-main ---
+[INFO] No site descriptor found: nothing to attach.
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ hadoop-main ---
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/pom.xml to /home/runner/.m2/repository/org/apache/hadoop/hadoop-main/3.3.0-SNAPSHOT/hadoop-main-3.3.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------< org.apache.hadoop:hadoop-build-tools >----------------
+[INFO] Building Apache Hadoop Build Tools 3.3.0-SNAPSHOT                 [2/27]
+[INFO]   from hadoop-build-tools/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.0.1:copy-resources (copy-resources) @ hadoop-build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- antrun:1.7:run (dummy) @ hadoop-build-tools ---
+[INFO] No ant target defined - SKIPPED
+[INFO] 
+[INFO] --- resources:3.0.1:resources (default-resources) @ hadoop-build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- remote-resources:1.5:bundle (default) @ hadoop-build-tools ---
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ hadoop-build-tools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.0.1:testResources (default-testResources) @ hadoop-build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.CmNSIyvPmq/repo/hadoop-build-tools/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ hadoop-build-tools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ hadoop-build-tools ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ hadoop-build-tools ---
+[INFO] Building jar: /tmp/tmp.CmNSIyvPmq/repo/hadoop-build-tools/target/hadoop-build-tools-3.3.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.6:attach-descriptor (attach-descriptor) @ hadoop-build-tools ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ hadoop-build-tools ---
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-build-tools/pom.xml to /home/runner/.m2/repository/org/apache/hadoop/hadoop-build-tools/3.3.0-SNAPSHOT/hadoop-build-tools-3.3.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-build-tools/target/hadoop-build-tools-3.3.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/hadoop/hadoop-build-tools/3.3.0-SNAPSHOT/hadoop-build-tools-3.3.0-SNAPSHOT.jar
+[INFO] 
+[INFO] ------------------< org.apache.hadoop:hadoop-project >------------------
+[INFO] Building Apache Hadoop Project POM 3.3.0-SNAPSHOT                 [3/27]
+[INFO]   from hadoop-project/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-project ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:1.5:process (default) @ hadoop-project ---
+[INFO] 
+[INFO] --- site:3.6:attach-descriptor (attach-descriptor) @ hadoop-project ---
+[INFO] Attaching 'src/site/site.xml' site descriptor with classifier 'site'.
+[INFO] 
+[INFO] --- animal-sniffer:1.16:check (signature-check) @ hadoop-project ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (depcheck) @ hadoop-project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- install:2.5.1:install (default-install) @ hadoop-project ---
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-project/pom.xml to /home/runner/.m2/repository/org/apache/hadoop/hadoop-project/3.3.0-SNAPSHOT/hadoop-project-3.3.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-project/target/hadoop-project-3.3.0-SNAPSHOT-site.xml to /home/runner/.m2/repository/org/apache/hadoop/hadoop-project/3.3.0-SNAPSHOT/hadoop-project-3.3.0-SNAPSHOT-site.xml
+[INFO] 
+[INFO] ----------------< org.apache.hadoop:hadoop-annotations >----------------
+[INFO] Building Apache Hadoop Annotations 3.3.0-SNAPSHOT                 [4/27]
+[INFO]   from hadoop-common-project/hadoop-annotations/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-annotations ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:1.5:process (default) @ hadoop-annotations ---
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-annotations/src/main/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ hadoop-annotations ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-annotations/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ hadoop-annotations ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.21.0:test (default-test) @ hadoop-annotations ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:2.5:jar (default-jar) @ hadoop-annotations ---
+[INFO] Building jar: /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-annotations/target/hadoop-annotations-3.3.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.6:attach-descriptor (attach-descriptor) @ hadoop-annotations ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- animal-sniffer:1.16:check (signature-check) @ hadoop-annotations ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (depcheck) @ hadoop-annotations ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- install:2.5.1:install (default-install) @ hadoop-annotations ---
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-annotations/target/hadoop-annotations-3.3.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/hadoop/hadoop-annotations/3.3.0-SNAPSHOT/hadoop-annotations-3.3.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-annotations/pom.xml to /home/runner/.m2/repository/org/apache/hadoop/hadoop-annotations/3.3.0-SNAPSHOT/hadoop-annotations-3.3.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------< org.apache.hadoop:hadoop-project-dist >----------------
+[INFO] Building Apache Hadoop Project Dist POM 3.3.0-SNAPSHOT            [5/27]
+[INFO]   from hadoop-project-dist/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-project-dist ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:1.5:process (default) @ hadoop-project-dist ---
+[INFO] 
+[INFO] --- jar:2.5:jar (prepare-jar) @ hadoop-project-dist ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] 
+[INFO] --- jar:2.5:test-jar (prepare-test-jar) @ hadoop-project-dist ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] 
+[INFO] --- site:3.6:attach-descriptor (attach-descriptor) @ hadoop-project-dist ---
+[INFO] No site descriptor found: nothing to attach.
+[INFO] 
+[INFO] --- animal-sniffer:1.16:check (signature-check) @ hadoop-project-dist ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (depcheck) @ hadoop-project-dist ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- install:2.5.1:install (default-install) @ hadoop-project-dist ---
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-project-dist/pom.xml to /home/runner/.m2/repository/org/apache/hadoop/hadoop-project-dist/3.3.0-SNAPSHOT/hadoop-project-dist-3.3.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-project-dist/target/hadoop-project-dist-3.3.0-SNAPSHOT-tests.jar to /home/runner/.m2/repository/org/apache/hadoop/hadoop-project-dist/3.3.0-SNAPSHOT/hadoop-project-dist-3.3.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] ---------------< org.apache.hadoop:hadoop-maven-plugins >---------------
+[INFO] Building Apache Hadoop Maven Plugins 3.3.0-SNAPSHOT               [6/27]
+[INFO]   from hadoop-maven-plugins/pom.xml
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-maven-plugins ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:1.5:process (default) @ hadoop-maven-plugins ---
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-maven-plugins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.CmNSIyvPmq/repo/hadoop-maven-plugins/src/main/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ hadoop-maven-plugins ---
+[INFO] Compiling 2 source files to /tmp/tmp.CmNSIyvPmq/repo/hadoop-maven-plugins/target/classes
+[INFO] 
+[INFO] --- plugin:3.5.1:descriptor (default-descriptor) @ hadoop-maven-plugins ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 7 mojo descriptors.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-maven-plugins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.CmNSIyvPmq/repo/hadoop-maven-plugins/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ hadoop-maven-plugins ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.21.0:test (default-test) @ hadoop-maven-plugins ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:2.5:jar (default-jar) @ hadoop-maven-plugins ---
+[INFO] Building jar: /tmp/tmp.CmNSIyvPmq/repo/hadoop-maven-plugins/target/hadoop-maven-plugins-3.3.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.6:attach-descriptor (attach-descriptor) @ hadoop-maven-plugins ---
+[INFO] Skipping because packaging 'maven-plugin' is not pom.
+[INFO] 
+[INFO] --- animal-sniffer:1.16:check (signature-check) @ hadoop-maven-plugins ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (depcheck) @ hadoop-maven-plugins ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- install:2.5.1:install (default-install) @ hadoop-maven-plugins ---
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-maven-plugins/target/hadoop-maven-plugins-3.3.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/hadoop/hadoop-maven-plugins/3.3.0-SNAPSHOT/hadoop-maven-plugins-3.3.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-maven-plugins/pom.xml to /home/runner/.m2/repository/org/apache/hadoop/hadoop-maven-plugins/3.3.0-SNAPSHOT/hadoop-maven-plugins-3.3.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------< org.apache.hadoop:hadoop-minikdc >------------------
+[INFO] Building Apache Hadoop MiniKDC 3.3.0-SNAPSHOT                     [7/27]
+[INFO]   from hadoop-common-project/hadoop-minikdc/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-minikdc ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:1.5:process (default) @ hadoop-minikdc ---
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-minikdc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ hadoop-minikdc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-minikdc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-minikdc/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ hadoop-minikdc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.21.0:test (default-test) @ hadoop-minikdc ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:2.5:jar (default-jar) @ hadoop-minikdc ---
+[INFO] Building jar: /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-minikdc/target/hadoop-minikdc-3.3.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.6:attach-descriptor (attach-descriptor) @ hadoop-minikdc ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- animal-sniffer:1.16:check (signature-check) @ hadoop-minikdc ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (depcheck) @ hadoop-minikdc ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- install:2.5.1:install (default-install) @ hadoop-minikdc ---
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-minikdc/target/hadoop-minikdc-3.3.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/hadoop/hadoop-minikdc/3.3.0-SNAPSHOT/hadoop-minikdc-3.3.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-minikdc/pom.xml to /home/runner/.m2/repository/org/apache/hadoop/hadoop-minikdc/3.3.0-SNAPSHOT/hadoop-minikdc-3.3.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------------< org.apache.hadoop:hadoop-auth >--------------------
+[INFO] Building Apache Hadoop Auth 3.3.0-SNAPSHOT                        [8/27]
+[INFO]   from hadoop-common-project/hadoop-auth/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-auth ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- remote-resources:1.5:process (default) @ hadoop-auth ---
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-auth ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-auth/src/main/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ hadoop-auth ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-auth ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-auth/src/test/resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ hadoop-auth ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.21.0:test (default-test) @ hadoop-auth ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] >>> source:2.3:jar (default) > generate-sources @ hadoop-auth >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-auth ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] <<< source:2.3:jar (default) < generate-sources @ hadoop-auth <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:2.3:jar (default) @ hadoop-auth ---
+[INFO] Building jar: /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-auth/target/hadoop-auth-3.3.0-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- jar:2.5:jar (prepare-jar) @ hadoop-auth ---
+[INFO] Building jar: /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-auth/target/hadoop-auth-3.3.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- jar:2.5:test-jar (prepare-test-jar) @ hadoop-auth ---
+[INFO] Building jar: /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-auth/target/hadoop-auth-3.3.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- jar:2.5:jar (default-jar) @ hadoop-auth ---
+[INFO] 
+[INFO] --- site:3.6:attach-descriptor (attach-descriptor) @ hadoop-auth ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- animal-sniffer:1.16:check (signature-check) @ hadoop-auth ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java18:1.0
+[INFO] /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/util/KerberosUtil.java:365: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.limit(int) has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.limit(int)
+[INFO] /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-auth/src/main/java/org/apache/hadoop/security/authentication/util/KerberosUtil.java:366: Covariant return type change detected: java.nio.Buffer java.nio.ByteBuffer.position(int) has been changed to java.nio.ByteBuffer java.nio.ByteBuffer.position(int)
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (depcheck) @ hadoop-auth ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- install:2.5.1:install (default-install) @ hadoop-auth ---
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-auth/target/hadoop-auth-3.3.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/hadoop/hadoop-auth/3.3.0-SNAPSHOT/hadoop-auth-3.3.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-auth/pom.xml to /home/runner/.m2/repository/org/apache/hadoop/hadoop-auth/3.3.0-SNAPSHOT/hadoop-auth-3.3.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-auth/target/hadoop-auth-3.3.0-SNAPSHOT-sources.jar to /home/runner/.m2/repository/org/apache/hadoop/hadoop-auth/3.3.0-SNAPSHOT/hadoop-auth-3.3.0-SNAPSHOT-sources.jar
+[INFO] Installing /tmp/tmp.CmNSIyvPmq/repo/hadoop-common-project/hadoop-auth/target/hadoop-auth-3.3.0-SNAPSHOT-tests.jar to /home/runner/.m2/repository/org/apache/hadoop/hadoop-auth/3.3.0-SNAPSHOT/hadoop-auth-3.3.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] ------------------< org.apache.hadoop:hadoop-common >-------------------
+[INFO] Building Apache Hadoop Common 3.3.0-SNAPSHOT                      [9/27]
+[INFO]   from hadoop-common-project/hadoop-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-common ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- hadoops:3.3.0-SNAPSHOT:protoc (compile-protoc) @ hadoop-common ---
+[WARNING] [protoc, --version] failed: java.io.IOException: Cannot run program "protoc": error=2, No such file or directory
+[ERROR] stdout: []
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache Hadoop Main 3.3.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache Hadoop Main ................................. SUCCESS [  0.581 s]
+[INFO] Apache Hadoop Build Tools .......................... SUCCESS [  0.640 s]
+[INFO] Apache Hadoop Project POM .......................... SUCCESS [  0.750 s]
+[INFO] Apache Hadoop Annotations .......................... SUCCESS [  0.511 s]
+[INFO] Apache Hadoop Project Dist POM ..................... SUCCESS [  0.223 s]
+[INFO] Apache Hadoop Maven Plugins ........................ SUCCESS [  1.839 s]
+[INFO] Apache Hadoop MiniKDC .............................. SUCCESS [  0.421 s]
+[INFO] Apache Hadoop Auth ................................. SUCCESS [  1.023 s]
+[INFO] Apache Hadoop Common ............................... FAILURE [  0.081 s]
+[INFO] Apache Hadoop KMS .................................. SKIPPED
+[INFO] Apache Hadoop HDFS Client .......................... SKIPPED
+[INFO] Apache Hadoop HDFS ................................. SKIPPED
+[INFO] Apache Hadoop YARN ................................. SKIPPED
+[INFO] Apache Hadoop YARN API ............................. SKIPPED
+[INFO] Apache Hadoop YARN Common .......................... SKIPPED
+[INFO] Apache Hadoop YARN Registry ........................ SKIPPED
+[INFO] Apache Hadoop YARN Server .......................... SKIPPED
+[INFO] Apache Hadoop YARN Server Common ................... SKIPPED
+[INFO] Apache Hadoop YARN NodeManager ..................... SKIPPED
+[INFO] Apache Hadoop YARN Web Proxy ....................... SKIPPED
+[INFO] Apache Hadoop YARN ApplicationHistoryService ....... SKIPPED
+[INFO] Apache Hadoop YARN Timeline Service ................ SKIPPED
+[INFO] Apache Hadoop YARN ResourceManager ................. SKIPPED
+[INFO] Apache Hadoop YARN Server Tests .................... SKIPPED
+[INFO] Apache Hadoop YARN Client .......................... SKIPPED
+[INFO] Apache Hadoop MapReduce Client ..................... SKIPPED
+[INFO] Apache Hadoop MapReduce Core ....................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.870 s
+[INFO] Finished at: 2026-11-10T18:47:27Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.hadoop:hadoop-maven-plugins:3.3.0-SNAPSHOT:protoc (compile-protoc) on project hadoop-common: org.apache.maven.plugin.MojoExecutionException: 'protoc --version' did not return a version -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :hadoop-common

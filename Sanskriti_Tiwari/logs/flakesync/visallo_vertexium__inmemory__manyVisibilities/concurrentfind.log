@@ -1,0 +1,236 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Vertexium                                                          [pom]
+[INFO] Vertexium: Core                                                    [jar]
+[INFO] Vertexium: Security                                                [jar]
+[INFO] Vertexium: Test                                                    [jar]
+[INFO] Vertexium: In-memory                                               [jar]
+[INFO] 
+[INFO] --------------------< org.vertexium:vertexium-root >--------------------
+[INFO] Building Vertexium 4.4.2-SNAPSHOT                                  [1/5]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ vertexium-root >>>
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ vertexium-root ---
+[INFO] 
+[INFO] --- buildnumber:1.2:create (create-build-number) @ vertexium-root ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.NxEdH8er9A/repo && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.NxEdH8er9A/repo
+[INFO] Storing buildNumber: f1fd59e23610312cf0ec6756ea01baaf56cdb74e at timestamp: 1794338469408
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.NxEdH8er9A/repo && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.NxEdH8er9A/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber:1.2:create-timestamp (create-formatted-timestamp) @ vertexium-root ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ vertexium-root <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ vertexium-root ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] 
+[INFO] --------------------< org.vertexium:vertexium-core >--------------------
+[INFO] Building Vertexium: Core 4.4.2-SNAPSHOT                            [2/5]
+[INFO]   from core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ vertexium-core >>>
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ vertexium-core ---
+[INFO] 
+[INFO] --- buildnumber:1.2:create (create-build-number) @ vertexium-core ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.NxEdH8er9A/repo/core && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.NxEdH8er9A/repo/core
+[INFO] Storing buildNumber: f1fd59e23610312cf0ec6756ea01baaf56cdb74e at timestamp: 1794338469987
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.NxEdH8er9A/repo/core && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.NxEdH8er9A/repo/core
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber:1.2:create-timestamp (create-formatted-timestamp) @ vertexium-core ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ vertexium-core ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.NxEdH8er9A/repo/core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ vertexium-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ vertexium-core ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.NxEdH8er9A/repo/core/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:testCompile (default-testCompile) @ vertexium-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ vertexium-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ vertexium-core ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] ------------------< org.vertexium:vertexium-security >------------------
+[INFO] Building Vertexium: Security 4.4.2-SNAPSHOT                        [3/5]
+[INFO]   from security/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ vertexium-security >>>
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ vertexium-security ---
+[INFO] 
+[INFO] --- buildnumber:1.2:create (create-build-number) @ vertexium-security ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.NxEdH8er9A/repo/security && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.NxEdH8er9A/repo/security
+[INFO] Storing buildNumber: f1fd59e23610312cf0ec6756ea01baaf56cdb74e at timestamp: 1794338470377
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.NxEdH8er9A/repo/security && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.NxEdH8er9A/repo/security
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber:1.2:create-timestamp (create-formatted-timestamp) @ vertexium-security ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ vertexium-security ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.NxEdH8er9A/repo/security/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ vertexium-security ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to /tmp/tmp.NxEdH8er9A/repo/security/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[WARNING] /tmp/tmp.NxEdH8er9A/repo/security/src/main/java/org/vertexium/security/FastByteComparisons.java:[20,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.NxEdH8er9A/repo/security/src/main/java/org/vertexium/security/FastByteComparisons.java:[116,26] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.NxEdH8er9A/repo/security/src/main/java/org/vertexium/security/FastByteComparisons.java:[124,30] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.NxEdH8er9A/repo/security/src/main/java/org/vertexium/security/FastByteComparisons.java:[129,47] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ vertexium-security ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.NxEdH8er9A/repo/security/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:testCompile (default-testCompile) @ vertexium-security ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ vertexium-security <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ vertexium-security ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] 
+[INFO] --------------------< org.vertexium:vertexium-test >--------------------
+[INFO] Building Vertexium: Test 4.4.2-SNAPSHOT                            [4/5]
+[INFO]   from test/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ vertexium-test >>>
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ vertexium-test ---
+[INFO] 
+[INFO] --- buildnumber:1.2:create (create-build-number) @ vertexium-test ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.NxEdH8er9A/repo/test && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.NxEdH8er9A/repo/test
+[INFO] Storing buildNumber: f1fd59e23610312cf0ec6756ea01baaf56cdb74e at timestamp: 1794338471296
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.NxEdH8er9A/repo/test && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.NxEdH8er9A/repo/test
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber:1.2:create-timestamp (create-formatted-timestamp) @ vertexium-test ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ vertexium-test ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.NxEdH8er9A/repo/test/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ vertexium-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ vertexium-test ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.NxEdH8er9A/repo/test/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:testCompile (default-testCompile) @ vertexium-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ vertexium-test <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ vertexium-test ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] ------------------< org.vertexium:vertexium-inmemory >------------------
+[INFO] Building Vertexium: In-memory 4.4.2-SNAPSHOT                       [5/5]
+[INFO]   from inmemory/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ vertexium-inmemory >>>
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ vertexium-inmemory ---
+[INFO] 
+[INFO] --- buildnumber:1.2:create (create-build-number) @ vertexium-inmemory ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.NxEdH8er9A/repo/inmemory && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.NxEdH8er9A/repo/inmemory
+[INFO] Storing buildNumber: f1fd59e23610312cf0ec6756ea01baaf56cdb74e at timestamp: 1794338471351
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.NxEdH8er9A/repo/inmemory && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.NxEdH8er9A/repo/inmemory
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber:1.2:create-timestamp (create-formatted-timestamp) @ vertexium-inmemory ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ vertexium-inmemory ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.NxEdH8er9A/repo/inmemory/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ vertexium-inmemory ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ vertexium-inmemory ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.5.1:testCompile (default-testCompile) @ vertexium-inmemory ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ vertexium-inmemory <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ vertexium-inmemory ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.pom (3.3 kB at 15 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.19.1/surefire-providers-2.19.1.pom (2.6 kB at 116 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.19.1/surefire-junit4-2.19.1.jar (75 kB at 1.7 MB/s)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.vertexium.inmemory.InMemoryGraphTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.119 sec - in org.vertexium.inmemory.InMemoryGraphTest
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Vertexium 4.4.2-SNAPSHOT:
+[INFO] 
+[INFO] Vertexium .......................................... SUCCESS [  1.115 s]
+[INFO] Vertexium: Core .................................... SUCCESS [  0.442 s]
+[INFO] Vertexium: Security ................................ SUCCESS [  0.909 s]
+[INFO] Vertexium: Test .................................... SUCCESS [  0.060 s]
+[INFO] Vertexium: In-memory ............................... SUCCESS [  1.643 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.428 s
+[INFO] Finished at: 2026-11-10T19:21:12Z
+[INFO] ------------------------------------------------------------------------

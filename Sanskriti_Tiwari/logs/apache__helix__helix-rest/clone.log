@@ -1,0 +1,20 @@
+Cloning into '/tmp/tmp.ZLBIr7Dhhf/repo'...
+Updating files:  39% (860/2152)Updating files:  40% (861/2152)Updating files:  41% (883/2152)Updating files:  42% (904/2152)Updating files:  43% (926/2152)Updating files:  44% (947/2152)Updating files:  45% (969/2152)Updating files:  46% (990/2152)Updating files:  47% (1012/2152)Updating files:  48% (1033/2152)Updating files:  49% (1055/2152)Updating files:  50% (1076/2152)Updating files:  51% (1098/2152)Updating files:  52% (1120/2152)Updating files:  53% (1141/2152)Updating files:  54% (1163/2152)Updating files:  55% (1184/2152)Updating files:  56% (1206/2152)Updating files:  57% (1227/2152)Updating files:  58% (1249/2152)Updating files:  59% (1270/2152)Updating files:  60% (1292/2152)Updating files:  61% (1313/2152)Updating files:  62% (1335/2152)Updating files:  63% (1356/2152)Updating files:  64% (1378/2152)Updating files:  65% (1399/2152)Updating files:  66% (1421/2152)Updating files:  67% (1442/2152)Updating files:  68% (1464/2152)Updating files:  69% (1485/2152)Updating files:  70% (1507/2152)Updating files:  71% (1528/2152)Updating files:  72% (1550/2152)Updating files:  73% (1571/2152)Updating files:  74% (1593/2152)Updating files:  75% (1614/2152)Updating files:  76% (1636/2152)Updating files:  77% (1658/2152)Updating files:  78% (1679/2152)Updating files:  79% (1701/2152)Updating files:  80% (1722/2152)Updating files:  81% (1744/2152)Updating files:  82% (1765/2152)Updating files:  83% (1787/2152)Updating files:  84% (1808/2152)Updating files:  85% (1830/2152)Updating files:  86% (1851/2152)Updating files:  87% (1873/2152)Updating files:  88% (1894/2152)Updating files:  89% (1916/2152)Updating files:  90% (1937/2152)Updating files:  91% (1959/2152)Updating files:  92% (1980/2152)Updating files:  93% (2002/2152)Updating files:  94% (2023/2152)Updating files:  95% (2045/2152)Updating files:  96% (2066/2152)Updating files:  97% (2088/2152)Updating files:  98% (2109/2152)Updating files:  99% (2131/2152)Updating files: 100% (2152/2152)Updating files: 100% (2152/2152), done.
+Note: switching to '917b786e4da9a615c5177f27256e170feae2298f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 917b786e4 Remove revision variable in pom.xml and update bump-up.sh (#2308)

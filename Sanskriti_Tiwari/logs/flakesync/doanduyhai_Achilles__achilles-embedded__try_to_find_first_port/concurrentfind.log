@@ -1,0 +1,217 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:achilles-model:jar:6.0.1-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: info.archinnov:achilles-junit:jar -> duplicate declaration of version ${project.version} @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 189, column 25
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:achilles-common:jar:6.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:achilles-core:jar:6.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-resources-plugin is missing. @ line 161, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:achilles-embedded:jar:6.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:achilles-junit:jar:6.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-resources-plugin is missing. @ line 91, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:achilles-schema-generator:jar:6.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-shade-plugin is missing. @ line 59, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:integration-test-2_1:jar:6.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:integration-test-2_2:jar:6.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:integration-test-3_0:jar:6.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:integration-test-3_2:jar:6.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:integration-test-3_6:jar:6.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:integration-test-3_7:jar:6.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:integration-test-3_8:jar:6.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:integration-test-3_10:jar:6.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ info.archinnov:achilles:6.0.1-SNAPSHOT, /tmp/tmp.RB467tFjd9/repo/pom.xml, line 591, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for info.archinnov:achilles:pom:6.0.1-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: info.archinnov:achilles-junit:jar -> duplicate declaration of version ${project.version} @ line 189, column 25
+[WARNING] 'build.plugins.plugin.version' for org.apache.felix:maven-bundle-plugin is missing. @ line 591, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Achilles                                                           [pom]
+[INFO] Achilles Model                                                     [jar]
+[INFO] Achilles Common                                                    [jar]
+[INFO] Achilles Embedded                                                  [jar]
+[WARNING] Could not transfer metadata org.apache.felix:maven-bundle-plugin/maven-metadata.xml from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [central (http://repo1.maven.org/maven2, default, releases)]
+[INFO] 
+[INFO] ----------------------< info.archinnov:achilles >-----------------------
+[INFO] Building Achilles 6.0.1-SNAPSHOT                                   [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ achilles >>>
+[INFO] 
+[INFO] --- enforcer:1.0.1:enforce (enforce-maven) @ achilles ---
+[INFO] 
+[INFO] --- enforcer:1.0.1:enforce (enforce-versions) @ achilles ---
+[INFO] 
+[INFO] --- bundle:6.2.0:manifest (bundle-manifest) @ achilles ---
+[WARNING] Ignoring project type pom - supportedProjectTypes = [jar, bundle]
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ achilles <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ achilles ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] 
+[INFO] -------------------< info.archinnov:achilles-model >--------------------
+[INFO] Building Achilles Model 6.0.1-SNAPSHOT                             [2/4]
+[INFO]   from achilles-model/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ achilles-model >>>
+[INFO] 
+[INFO] --- enforcer:1.0.1:enforce (enforce-maven) @ achilles-model ---
+[INFO] 
+[INFO] --- enforcer:1.0.1:enforce (enforce-versions) @ achilles-model ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ achilles-model ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.RB467tFjd9/repo/achilles-model/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.3:compile (default-compile) @ achilles-model ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- bundle:6.2.0:manifest (bundle-manifest) @ achilles-model ---
+[INFO] Writing manifest: /tmp/tmp.RB467tFjd9/repo/achilles-model/target/classes/META-INF/MANIFEST.MF
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ achilles-model ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.RB467tFjd9/repo/achilles-model/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.3:testCompile (default-testCompile) @ achilles-model ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ achilles-model <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ achilles-model ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] 
+[INFO] -------------------< info.archinnov:achilles-common >-------------------
+[INFO] Building Achilles Common 6.0.1-SNAPSHOT                            [3/4]
+[INFO]   from achilles-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ achilles-common >>>
+[INFO] 
+[INFO] --- enforcer:1.0.1:enforce (enforce-maven) @ achilles-common ---
+[INFO] 
+[INFO] --- enforcer:1.0.1:enforce (enforce-versions) @ achilles-common ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ achilles-common ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.RB467tFjd9/repo/achilles-common/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.3:compile (default-compile) @ achilles-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- bundle:6.2.0:manifest (bundle-manifest) @ achilles-common ---
+[INFO] Writing manifest: /tmp/tmp.RB467tFjd9/repo/achilles-common/target/classes/META-INF/MANIFEST.MF
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ achilles-common ---
+[INFO] Copying 2 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.3:testCompile (default-testCompile) @ achilles-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ achilles-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ achilles-common ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] ------------------< info.archinnov:achilles-embedded >------------------
+[INFO] Building Achilles Embedded 6.0.1-SNAPSHOT                          [4/4]
+[INFO]   from achilles-embedded/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ achilles-embedded >>>
+[INFO] 
+[INFO] --- enforcer:1.0.1:enforce (enforce-maven) @ achilles-embedded ---
+[INFO] 
+[INFO] --- enforcer:1.0.1:enforce (enforce-versions) @ achilles-embedded ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ achilles-embedded ---
+[INFO] Copying 22 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.3:compile (default-compile) @ achilles-embedded ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- bundle:6.2.0:manifest (bundle-manifest) @ achilles-embedded ---
+[INFO] Writing manifest: /tmp/tmp.RB467tFjd9/repo/achilles-embedded/target/classes/META-INF/MANIFEST.MF
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ achilles-embedded ---
+[INFO] Copying 23 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.3:testCompile (default-testCompile) @ achilles-embedded ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ achilles-embedded <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ achilles-embedded ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Surefire report directory: /tmp/tmp.RB467tFjd9/repo/achilles-embedded/.flakesync/clean_zqG9Oc8g97kpRNm8JdMNGTnrWXnowOo0G4tNcZ2MgQ=
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.13/surefire-junit4-2.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.13/surefire-junit4-2.13.pom (2.5 kB at 7.5 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.13/surefire-providers-2.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.13/surefire-providers-2.13.pom (2.4 kB at 68 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.13/surefire-junit4-2.13.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.13/surefire-junit4-2.13.jar (79 kB at 1.4 MB/s)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running info.archinnov.achilles.embedded.PortFinderTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.21 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Achilles 6.0.1-SNAPSHOT:
+[INFO] 
+[INFO] Achilles ........................................... SUCCESS [  1.255 s]
+[INFO] Achilles Model ..................................... SUCCESS [  0.997 s]
+[INFO] Achilles Common .................................... SUCCESS [  0.173 s]
+[INFO] Achilles Embedded .................................. SUCCESS [  1.879 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.602 s
+[INFO] Finished at: 2026-11-10T18:51:17Z
+[INFO] ------------------------------------------------------------------------

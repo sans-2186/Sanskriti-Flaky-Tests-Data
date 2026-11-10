@@ -1,0 +1,8 @@
+800
+com/codingchili/Model/ElasticWriter#186
+com/codingchili/Model/ElasticWriter#59
+com/codingchili/Model/ElasticWriter#182
+com/codingchili/Model/ElasticWriter#63
+com/codingchili/Model/ElasticWriter#184
+com/codingchili/Model/ElasticWriter#61
+com/codingchili/Model/ElasticWriter#181

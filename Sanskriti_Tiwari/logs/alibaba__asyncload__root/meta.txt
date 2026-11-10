@@ -1,0 +1,3 @@
+url=https://github.com/alibaba/asyncload
+sha=9891e7086bff81ebdd4991435d21b549e48e874d
+module=<root>

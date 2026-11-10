@@ -1,0 +1,131 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Undertow                                                           [pom]
+[INFO] Undertow Parser Generator                                          [jar]
+[INFO] Undertow Core                                                      [jar]
+[INFO] 
+[INFO] --------------------< io.undertow:undertow-parent >---------------------
+[INFO] Building Undertow 2.0.14.Final-SNAPSHOT                            [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ undertow-parent >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M2:enforce (enforce-java-version) @ undertow-parent ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M2:enforce (enforce-maven-version) @ undertow-parent ---
+[INFO] 
+[INFO] --- buildnumber:1.4:create (get-scm-revision) @ undertow-parent ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.QR67vYSrAk/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.QR67vYSrAk/repo
+[INFO] Storing buildNumber: d0efffad5d2034bb07525cac9b299dac72c3045d at timestamp: 1794339549114
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.QR67vYSrAk/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.QR67vYSrAk/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- checkstyle:3.0.0:checkstyle (check-style) @ undertow-parent ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ undertow-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ undertow-parent ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running PatchingMojo
+[INFO] 
+[INFO] ---------------< io.undertow:undertow-parser-generator >----------------
+[INFO] Building Undertow Parser Generator 2.0.14.Final-SNAPSHOT           [2/3]
+[INFO]   from parser-generator/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ undertow-parser-generator >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M2:enforce (enforce-java-version) @ undertow-parser-generator ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M2:enforce (enforce-maven-version) @ undertow-parser-generator ---
+[INFO] 
+[INFO] --- buildnumber:1.4:create (get-scm-revision) @ undertow-parser-generator ---
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ undertow-parser-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ undertow-parser-generator ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- checkstyle:3.0.0:checkstyle (check-style) @ undertow-parser-generator ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ undertow-parser-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.QR67vYSrAk/repo/parser-generator/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ undertow-parser-generator ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ undertow-parser-generator <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ undertow-parser-generator ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.QR67vYSrAk/repo/parser-generator/.flakesync/Results-BarrierSearch/io.undertow.server.handlers.proxy.LoadBalancingProxyHttpsTestCase.testMaxRetries-BarrierPoints.csv (No such file or directory)
+[INFO] 
+[INFO] ---------------------< io.undertow:undertow-core >----------------------
+[INFO] Building Undertow Core 2.0.14.Final-SNAPSHOT                       [3/3]
+[INFO]   from core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ undertow-core >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M2:enforce (enforce-java-version) @ undertow-core ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M2:enforce (enforce-maven-version) @ undertow-core ---
+[INFO] 
+[INFO] --- buildnumber:1.4:create (get-scm-revision) @ undertow-core ---
+[INFO] 
+[INFO] --- dependencypath:1.1.1:set (set-all) @ undertow-core ---
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ undertow-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ undertow-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- checkstyle:3.0.0:checkstyle (check-style) @ undertow-core ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- bundle:3.2.0:manifest (generate-manifest) @ undertow-core ---
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ undertow-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 14 resources
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ undertow-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ undertow-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ undertow-core ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.QR67vYSrAk/repo/core/.flakesync/Results-BarrierSearch/io.undertow.server.handlers.proxy.LoadBalancingProxyHttpsTestCase.testMaxRetries-BarrierPoints.csv (No such file or directory)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Undertow 2.0.14.Final-SNAPSHOT:
+[INFO] 
+[INFO] Undertow ........................................... SUCCESS [  0.965 s]
+[INFO] Undertow Parser Generator .......................... SUCCESS [  0.602 s]
+[INFO] Undertow Core ...................................... SUCCESS [  6.032 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.786 s
+[INFO] Finished at: 2026-11-10T19:39:16Z
+[INFO] ------------------------------------------------------------------------

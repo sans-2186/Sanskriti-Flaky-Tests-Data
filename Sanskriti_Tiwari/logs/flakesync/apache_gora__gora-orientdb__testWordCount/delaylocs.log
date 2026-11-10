@@ -1,0 +1,769 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Gora                                                        [pom]
+[INFO] Apache Gora :: Core                                             [bundle]
+[INFO] Apache Gora :: OrientDB                                         [bundle]
+[INFO] 
+[INFO] ------------------------< org.apache.gora:gora >------------------------
+[INFO] Building Apache Gora 1.0-SNAPSHOT                                  [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:delaylocs (default-cli) > test-compile @ gora >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora ---
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:delaylocs (default-cli) < test-compile @ gora <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:delaylocs (default-cli) @ gora ---
+INFO: Running RunWithDelaysMojo
+Inside createWhiteList
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] 
+[INFO] ---------------------< org.apache.gora:gora-core >----------------------
+[INFO] Building Apache Gora :: Core 1.0-SNAPSHOT                          [2/3]
+[INFO]   from gora-core/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:delaylocs (default-cli) > test-compile @ gora-core >>>
+[WARNING] 1 problem was encountered while building the effective model for org.apache.hadoop:hadoop-annotations:jar:2.5.2 during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.19.0-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora-core ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora-core ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora-core ---
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora-core ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ gora-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.liFAUKNsmG/repo/gora-core/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ gora-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 101 source files to /tmp/tmp.liFAUKNsmG/repo/gora-core/target/classes
+[INFO] 
+[INFO] --- build-helper:1.7:add-test-source (default) @ gora-core ---
+[INFO] Test Source directory: /tmp/tmp.liFAUKNsmG/repo/gora-core/src/examples/java added.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ gora-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:delaylocs (default-cli) < test-compile @ gora-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:delaylocs (default-cli) @ gora-core ---
+INFO: Running RunWithDelaysMojo
+Inside createWhiteList
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------< org.apache.gora:gora-orientdb >--------------------
+[INFO] Building Apache Gora :: OrientDB 1.0-SNAPSHOT                      [3/3]
+[INFO]   from gora-orientdb/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:delaylocs (default-cli) > test-compile @ gora-orientdb >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora-orientdb ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora-orientdb ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora-orientdb ---
+[INFO] 
+[INFO] --- build-helper:1.7:add-source (default) @ gora-orientdb ---
+[INFO] Source directory: /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/examples/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora-orientdb ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ gora-orientdb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ gora-orientdb ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[254,39] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[280,41] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[313,32] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[347,32] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[349,32] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[368,41] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[404,61] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ gora-orientdb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora-orientdb ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:delaylocs (default-cli) < test-compile @ gora-orientdb <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:delaylocs (default-cli) @ gora-orientdb ---
+INFO: Running RunWithDelaysMojo
+Inside createWhiteList
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Nov 10, 2026 6:55:31 PM com.orientechnologies.common.log.OLogManager log
+INFO: Detected limit of amount of simultaneously open files is 65536,  limit of open files for disk cache will be set to 32256
+Nov 10, 2026 6:55:31 PM com.orientechnologies.common.log.OLogManager log
+WARNING: Value of limit of simultaneously open files is too small, recommended value is 262144
+
+2026-11-10 18:55:31:820 INFO  Loading configuration from input stream [OServerConfigurationLoaderXml]
+2026-11-10 18:55:32:188 INFO  OrientDB Server v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) is starting up... [OServer]
+2026-11-10 18:55:32:270 INFO  16759439360 B/15983 MB/15 GB of physical memory were detected on machine [ONative]
+2026-11-10 18:55:32:270 INFO  Soft memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:55:32:271 INFO  Hard memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:55:32:271 INFO  Detected memory limit for current process is 16759439360 B/15983 MB/15 GB [ONative]
+2026-11-10 18:55:32:273 INFO  JVM can use maximum 3996MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:55:32:273 INFO  Because OrientDB is running outside a container 12% of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:55:32:273 INFO  OrientDB auto-config DISKCACHE=10,069MB (heap=3,996MB os=15,983MB) [orientechnologies]
+2026-11-10 18:55:32:274 INFO  System is started under an effective user : `runner` [OEngineLocalPaginated]
+2026-11-10 18:55:32:274 INFO  Allocation of 153048 pages. [OEngineLocalPaginated]
+2026-11-10 18:55:32:953 INFO  WAL maximum segment size is set to 6,144 MB [OrientDBEmbedded]
+2026-11-10 18:55:32:954 INFO  Databases directory: /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases [OServer]
+2026-11-10 18:55:33:012 INFO  Direct IO for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is allowed with block size 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:55:33:012 INFO  Page size for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is set to 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:55:33:153 INFO  Storage 'plocal:/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem' is opened under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [OLocalPaginatedStorage]
+2026-11-10 18:55:33:360 INFO  [OVariableParser.resolveVariables] Property not found: ORIENTDB_HOME [orientechnologies]
+2026-11-10 18:55:33:360 SEVER ODefaultServerSecurity.loadConfig() Could not access the security JSON file: /config/security.json [ODefaultServerSecurity]
+2026-11-10 18:55:33:416 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.37, socket=default) [OServerNetworkListener]
+2026-11-10 18:55:33:419 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2026-11-10 18:55:33:420 INFO  Found ORIENTDB_ROOT_PASSWORD variable, using this value as root's password [OServer]
+2026-11-10 18:55:33:517 WARNI onAfterDynamicPlugins() Configuration document is empty [ODefaultServerSecurity]
+2026-11-10 18:55:33:520 INFO  OrientDB Studio available at http://10.1.0.244:2480/studio/index.html [OServer]
+2026-11-10 18:55:33:520 INFO  OrientDB Server is active v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN). [OServer]
+2026-11-10 18:55:33:763 INFO  Storage 'memory:gora' is created under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [ODirectMemoryStorage]
+2026-11-10 18:55:34:141 INFO  Created database 'gora' of type 'memory' [OConnectionBinaryExecutor]
+2026-11-10 18:55:36:567 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:36:627 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:36:680 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:36:726 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:36:767 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:36:814 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:36:853 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:36:892 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:36:966 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:37:035 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:37:182 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:37:183 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:37:184 INFO  OrientDB Server is shutting down... [OServer]
+2026-11-10 18:55:37:184 INFO  Shutting down listeners: [OServer]
+2026-11-10 18:55:37:185 INFO  - ONetworkProtocolBinary /0.0.0.0:2424: [OServer]
+2026-11-10 18:55:37:185 INFO  - ONetworkProtocolHttpDb /0.0.0.0:2480: [OServer]
+2026-11-10 18:55:37:186 INFO  Shutting down protocols [OServer]
+2026-11-10 18:55:37:190 INFO  Shutting down plugins: [OServerPluginManager]
+2026-11-10 18:55:37:190 INFO  Shutting down databases: [OServer]
+2026-11-10 18:55:37:191 INFO  Orient Engine is shutting down... [Orient]
+2026-11-10 18:55:37:192 INFO  - shutdown storage: OSystem... [OrientDBEmbedded]
+2026-11-10 18:55:37:219 INFO  - shutdown storage: gora... [OrientDBEmbedded]
+2026-11-10 18:55:37:224 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:37:225 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:37:226 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:37:227 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:37:304 INFO  Clearing byte buffer pool [Orient]
+2026-11-10 18:55:37:332 INFO  OrientDB Engine shutdown complete [Orient]
+2026-11-10 18:55:37:333 INFO  OrientDB Server shutdown complete
+ [OServer][INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.737 s - in org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Nov 10, 2026 6:55:38 PM com.orientechnologies.common.log.OLogManager log
+INFO: Detected limit of amount of simultaneously open files is 65536,  limit of open files for disk cache will be set to 32256
+Nov 10, 2026 6:55:38 PM com.orientechnologies.common.log.OLogManager log
+WARNING: Value of limit of simultaneously open files is too small, recommended value is 262144
+
+2026-11-10 18:55:39:014 INFO  Loading configuration from input stream [OServerConfigurationLoaderXml]
+2026-11-10 18:55:39:344 INFO  OrientDB Server v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) is starting up... [OServer]
+2026-11-10 18:55:39:435 INFO  16759439360 B/15983 MB/15 GB of physical memory were detected on machine [ONative]
+2026-11-10 18:55:39:435 INFO  Soft memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:55:39:436 INFO  Hard memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:55:39:436 INFO  Detected memory limit for current process is 16759439360 B/15983 MB/15 GB [ONative]
+2026-11-10 18:55:39:438 INFO  JVM can use maximum 3996MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:55:39:438 INFO  Because OrientDB is running outside a container 12% of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:55:39:438 INFO  OrientDB auto-config DISKCACHE=10,069MB (heap=3,996MB os=15,983MB) [orientechnologies]
+2026-11-10 18:55:39:439 INFO  System is started under an effective user : `runner` [OEngineLocalPaginated]
+2026-11-10 18:55:39:439 INFO  Allocation of 153048 pages. [OEngineLocalPaginated]
+2026-11-10 18:55:40:087 INFO  WAL maximum segment size is set to 6,144 MB [OrientDBEmbedded]
+2026-11-10 18:55:40:088 INFO  Databases directory: /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases [OServer]
+2026-11-10 18:55:40:150 INFO  Direct IO for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is allowed with block size 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:55:40:151 INFO  Page size for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is set to 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:55:40:333 INFO  Storage 'plocal:/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem' is opened under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [OLocalPaginatedStorage]
+2026-11-10 18:55:40:535 INFO  [OVariableParser.resolveVariables] Property not found: ORIENTDB_HOME [orientechnologies]
+2026-11-10 18:55:40:536 SEVER ODefaultServerSecurity.loadConfig() Could not access the security JSON file: /config/security.json [ODefaultServerSecurity]
+2026-11-10 18:55:40:575 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.37, socket=default) [OServerNetworkListener]
+2026-11-10 18:55:40:578 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2026-11-10 18:55:40:578 INFO  Found ORIENTDB_ROOT_PASSWORD variable, using this value as root's password [OServer]
+2026-11-10 18:55:40:677 WARNI onAfterDynamicPlugins() Configuration document is empty [ODefaultServerSecurity]
+2026-11-10 18:55:40:680 INFO  OrientDB Studio available at http://10.1.0.244:2480/studio/index.html [OServer]
+2026-11-10 18:55:40:680 INFO  OrientDB Server is active v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN). [OServer]
+2026-11-10 18:55:40:916 INFO  Storage 'memory:gora' is created under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [ODirectMemoryStorage]
+2026-11-10 18:55:41:246 INFO  Created database 'gora' of type 'memory' [OConnectionBinaryExecutor]
+2026-11-10 18:55:43:242 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:301 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:351 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:391 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:434 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:477 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:522 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:562 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:602 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:643 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:783 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:786 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:787 INFO  OrientDB Server is shutting down... [OServer]
+2026-11-10 18:55:43:787 INFO  Shutting down listeners: [OServer]
+2026-11-10 18:55:43:787 INFO  - ONetworkProtocolBinary /0.0.0.0:2424: [OServer]
+2026-11-10 18:55:43:787 INFO  - ONetworkProtocolHttpDb /0.0.0.0:2480: [OServer]
+2026-11-10 18:55:43:787 INFO  Shutting down protocols [OServer]
+2026-11-10 18:55:43:794 INFO  Shutting down plugins: [OServerPluginManager]
+2026-11-10 18:55:43:794 INFO  Shutting down databases: [OServer]
+2026-11-10 18:55:43:794 INFO  Orient Engine is shutting down... [Orient]
+2026-11-10 18:55:43:795 INFO  - shutdown storage: OSystem... [OrientDBEmbedded]
+2026-11-10 18:55:43:838 INFO  - shutdown storage: gora... [OrientDBEmbedded]
+2026-11-10 18:55:43:844 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:845 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:846 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:847 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:43:921 INFO  Clearing byte buffer pool [Orient]
+2026-11-10 18:55:43:947 INFO  OrientDB Engine shutdown complete [Orient]
+2026-11-10 18:55:43:947 INFO  OrientDB Server shutdown complete
+ [OServer][INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.696 s - in org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Nov 10, 2026 6:55:45 PM com.orientechnologies.common.log.OLogManager log
+INFO: Detected limit of amount of simultaneously open files is 65536,  limit of open files for disk cache will be set to 32256
+Nov 10, 2026 6:55:45 PM com.orientechnologies.common.log.OLogManager log
+WARNING: Value of limit of simultaneously open files is too small, recommended value is 262144
+
+2026-11-10 18:55:45:583 INFO  Loading configuration from input stream [OServerConfigurationLoaderXml]
+2026-11-10 18:55:45:884 INFO  OrientDB Server v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) is starting up... [OServer]
+2026-11-10 18:55:45:975 INFO  16759439360 B/15983 MB/15 GB of physical memory were detected on machine [ONative]
+2026-11-10 18:55:45:975 INFO  Soft memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:55:45:976 INFO  Hard memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:55:45:976 INFO  Detected memory limit for current process is 16759439360 B/15983 MB/15 GB [ONative]
+2026-11-10 18:55:45:977 INFO  JVM can use maximum 3996MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:55:45:978 INFO  Because OrientDB is running outside a container 12% of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:55:45:978 INFO  OrientDB auto-config DISKCACHE=10,069MB (heap=3,996MB os=15,983MB) [orientechnologies]
+2026-11-10 18:55:45:979 INFO  System is started under an effective user : `runner` [OEngineLocalPaginated]
+2026-11-10 18:55:45:979 INFO  Allocation of 153048 pages. [OEngineLocalPaginated]
+2026-11-10 18:55:46:635 INFO  WAL maximum segment size is set to 6,144 MB [OrientDBEmbedded]
+2026-11-10 18:55:46:636 INFO  Databases directory: /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases [OServer]
+2026-11-10 18:55:46:767 INFO  Direct IO for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is allowed with block size 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:55:46:768 INFO  Page size for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is set to 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:55:46:907 INFO  Storage 'plocal:/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem' is opened under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [OLocalPaginatedStorage]
+2026-11-10 18:55:47:091 INFO  [OVariableParser.resolveVariables] Property not found: ORIENTDB_HOME [orientechnologies]
+2026-11-10 18:55:47:092 SEVER ODefaultServerSecurity.loadConfig() Could not access the security JSON file: /config/security.json [ODefaultServerSecurity]
+2026-11-10 18:55:47:138 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.37, socket=default) [OServerNetworkListener]
+2026-11-10 18:55:47:141 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2026-11-10 18:55:47:142 INFO  Found ORIENTDB_ROOT_PASSWORD variable, using this value as root's password [OServer]
+2026-11-10 18:55:47:219 WARNI onAfterDynamicPlugins() Configuration document is empty [ODefaultServerSecurity]
+2026-11-10 18:55:47:221 INFO  OrientDB Studio available at http://10.1.0.244:2480/studio/index.html [OServer]
+2026-11-10 18:55:47:221 INFO  OrientDB Server is active v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN). [OServer]
+2026-11-10 18:55:47:460 INFO  Storage 'memory:gora' is created under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [ODirectMemoryStorage]
+2026-11-10 18:55:47:803 INFO  Created database 'gora' of type 'memory' [OConnectionBinaryExecutor]
+2026-11-10 18:55:49:725 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:49:773 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:49:818 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:49:862 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:49:905 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:49:951 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:49:990 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:50:037 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:50:081 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:50:134 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:50:325 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:50:327 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:50:328 INFO  OrientDB Server is shutting down... [OServer]
+2026-11-10 18:55:50:328 INFO  Shutting down listeners: [OServer]
+2026-11-10 18:55:50:329 INFO  - ONetworkProtocolBinary /0.0.0.0:2424: [OServer]
+2026-11-10 18:55:50:329 INFO  - ONetworkProtocolHttpDb /0.0.0.0:2480: [OServer]
+2026-11-10 18:55:50:329 INFO  Shutting down protocols [OServer]
+2026-11-10 18:55:50:334 INFO  Shutting down plugins: [OServerPluginManager]
+2026-11-10 18:55:50:334 INFO  Shutting down databases: [OServer]
+2026-11-10 18:55:50:334 INFO  Orient Engine is shutting down... [Orient]
+2026-11-10 18:55:50:335 INFO  - shutdown storage: OSystem... [OrientDBEmbedded]
+2026-11-10 18:55:50:386 INFO  - shutdown storage: gora... [OrientDBEmbedded]
+2026-11-10 18:55:50:392 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:50:396 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:50:397 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:50:398 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:50:480 INFO  Clearing byte buffer pool [Orient]
+2026-11-10 18:55:50:509 INFO  OrientDB Engine shutdown complete [Orient]
+2026-11-10 18:55:50:510 INFO  OrientDB Server shutdown complete
+ [OServer][INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.674 s - in org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Nov 10, 2026 6:55:52 PM com.orientechnologies.common.log.OLogManager log
+INFO: Detected limit of amount of simultaneously open files is 65536,  limit of open files for disk cache will be set to 32256
+Nov 10, 2026 6:55:52 PM com.orientechnologies.common.log.OLogManager log
+WARNING: Value of limit of simultaneously open files is too small, recommended value is 262144
+
+2026-11-10 18:55:52:107 INFO  Loading configuration from input stream [OServerConfigurationLoaderXml]
+2026-11-10 18:55:52:390 INFO  OrientDB Server v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) is starting up... [OServer]
+2026-11-10 18:55:52:470 INFO  16759439360 B/15983 MB/15 GB of physical memory were detected on machine [ONative]
+2026-11-10 18:55:52:471 INFO  Soft memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:55:52:471 INFO  Hard memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:55:52:472 INFO  Detected memory limit for current process is 16759439360 B/15983 MB/15 GB [ONative]
+2026-11-10 18:55:52:473 INFO  JVM can use maximum 3996MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:55:52:473 INFO  Because OrientDB is running outside a container 12% of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:55:52:474 INFO  OrientDB auto-config DISKCACHE=10,069MB (heap=3,996MB os=15,983MB) [orientechnologies]
+2026-11-10 18:55:52:474 INFO  System is started under an effective user : `runner` [OEngineLocalPaginated]
+2026-11-10 18:55:52:474 INFO  Allocation of 153048 pages. [OEngineLocalPaginated]
+2026-11-10 18:55:53:112 INFO  WAL maximum segment size is set to 6,144 MB [OrientDBEmbedded]
+2026-11-10 18:55:53:113 INFO  Databases directory: /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases [OServer]
+2026-11-10 18:55:53:211 INFO  Direct IO for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is allowed with block size 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:55:53:211 INFO  Page size for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is set to 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:55:53:353 INFO  Storage 'plocal:/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem' is opened under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [OLocalPaginatedStorage]
+2026-11-10 18:55:53:549 INFO  [OVariableParser.resolveVariables] Property not found: ORIENTDB_HOME [orientechnologies]
+2026-11-10 18:55:53:550 SEVER ODefaultServerSecurity.loadConfig() Could not access the security JSON file: /config/security.json [ODefaultServerSecurity]
+2026-11-10 18:55:53:598 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.37, socket=default) [OServerNetworkListener]
+2026-11-10 18:55:53:601 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2026-11-10 18:55:53:601 INFO  Found ORIENTDB_ROOT_PASSWORD variable, using this value as root's password [OServer]
+2026-11-10 18:55:53:697 WARNI onAfterDynamicPlugins() Configuration document is empty [ODefaultServerSecurity]
+2026-11-10 18:55:53:700 INFO  OrientDB Studio available at http://10.1.0.244:2480/studio/index.html [OServer]
+2026-11-10 18:55:53:700 INFO  OrientDB Server is active v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN). [OServer]
+2026-11-10 18:55:53:951 INFO  Storage 'memory:gora' is created under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [ODirectMemoryStorage]
+2026-11-10 18:55:54:298 INFO  Created database 'gora' of type 'memory' [OConnectionBinaryExecutor]
+2026-11-10 18:55:56:355 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:429 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:476 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:520 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:565 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:612 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:711 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:750 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:789 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:834 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:919 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:921 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:922 INFO  OrientDB Server is shutting down... [OServer]
+2026-11-10 18:55:56:922 INFO  Shutting down listeners: [OServer]
+2026-11-10 18:55:56:922 INFO  - ONetworkProtocolBinary /0.0.0.0:2424: [OServer]
+2026-11-10 18:55:56:923 INFO  - ONetworkProtocolHttpDb /0.0.0.0:2480: [OServer]
+2026-11-10 18:55:56:923 INFO  Shutting down protocols [OServer]
+2026-11-10 18:55:56:926 INFO  Shutting down plugins: [OServerPluginManager]
+2026-11-10 18:55:56:926 INFO  Shutting down databases: [OServer]
+2026-11-10 18:55:56:927 INFO  Orient Engine is shutting down... [Orient]
+2026-11-10 18:55:56:928 INFO  - shutdown storage: OSystem... [OrientDBEmbedded]
+2026-11-10 18:55:56:977 INFO  - shutdown storage: gora... [OrientDBEmbedded]
+2026-11-10 18:55:56:981 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:982 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:983 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:56:983 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:55:57:052 INFO  Clearing byte buffer pool [Orient]
+2026-11-10 18:55:57:082 INFO  OrientDB Engine shutdown complete [Orient]
+2026-11-10 18:55:57:083 INFO  OrientDB Server shutdown complete
+ [OServer][INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.714 s - in org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Nov 10, 2026 6:55:58 PM com.orientechnologies.common.log.OLogManager log
+INFO: Detected limit of amount of simultaneously open files is 65536,  limit of open files for disk cache will be set to 32256
+Nov 10, 2026 6:55:58 PM com.orientechnologies.common.log.OLogManager log
+WARNING: Value of limit of simultaneously open files is too small, recommended value is 262144
+
+2026-11-10 18:55:58:737 INFO  Loading configuration from input stream [OServerConfigurationLoaderXml]
+2026-11-10 18:55:59:039 INFO  OrientDB Server v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) is starting up... [OServer]
+2026-11-10 18:55:59:119 INFO  16759439360 B/15983 MB/15 GB of physical memory were detected on machine [ONative]
+2026-11-10 18:55:59:120 INFO  Soft memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:55:59:120 INFO  Hard memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:55:59:121 INFO  Detected memory limit for current process is 16759439360 B/15983 MB/15 GB [ONative]
+2026-11-10 18:55:59:122 INFO  JVM can use maximum 3996MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:55:59:122 INFO  Because OrientDB is running outside a container 12% of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:55:59:123 INFO  OrientDB auto-config DISKCACHE=10,069MB (heap=3,996MB os=15,983MB) [orientechnologies]
+2026-11-10 18:55:59:124 INFO  System is started under an effective user : `runner` [OEngineLocalPaginated]
+2026-11-10 18:55:59:124 INFO  Allocation of 153048 pages. [OEngineLocalPaginated]
+2026-11-10 18:55:59:779 INFO  WAL maximum segment size is set to 6,144 MB [OrientDBEmbedded]
+2026-11-10 18:55:59:780 INFO  Databases directory: /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases [OServer]
+2026-11-10 18:55:59:844 INFO  Direct IO for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is allowed with block size 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:55:59:844 INFO  Page size for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is set to 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:55:59:999 INFO  Storage 'plocal:/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem' is opened under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [OLocalPaginatedStorage]
+2026-11-10 18:56:00:250 INFO  [OVariableParser.resolveVariables] Property not found: ORIENTDB_HOME [orientechnologies]
+2026-11-10 18:56:00:250 SEVER ODefaultServerSecurity.loadConfig() Could not access the security JSON file: /config/security.json [ODefaultServerSecurity]
+2026-11-10 18:56:00:292 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.37, socket=default) [OServerNetworkListener]
+2026-11-10 18:56:00:294 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2026-11-10 18:56:00:295 INFO  Found ORIENTDB_ROOT_PASSWORD variable, using this value as root's password [OServer]
+2026-11-10 18:56:00:379 WARNI onAfterDynamicPlugins() Configuration document is empty [ODefaultServerSecurity]
+2026-11-10 18:56:00:381 INFO  OrientDB Studio available at http://10.1.0.244:2480/studio/index.html [OServer]
+2026-11-10 18:56:00:381 INFO  OrientDB Server is active v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN). [OServer]
+2026-11-10 18:56:00:665 INFO  Storage 'memory:gora' is created under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [ODirectMemoryStorage]
+2026-11-10 18:56:01:041 INFO  Created database 'gora' of type 'memory' [OConnectionBinaryExecutor]
+2026-11-10 18:56:03:062 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:122 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:172 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:223 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:280 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:329 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:371 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:415 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:460 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:510 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:624 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:626 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:627 INFO  OrientDB Server is shutting down... [OServer]
+2026-11-10 18:56:03:628 INFO  Shutting down listeners: [OServer]
+2026-11-10 18:56:03:628 INFO  - ONetworkProtocolBinary /0.0.0.0:2424: [OServer]
+2026-11-10 18:56:03:628 INFO  - ONetworkProtocolHttpDb /0.0.0.0:2480: [OServer]
+2026-11-10 18:56:03:628 INFO  Shutting down protocols [OServer]
+2026-11-10 18:56:03:633 INFO  Shutting down plugins: [OServerPluginManager]
+2026-11-10 18:56:03:633 INFO  Shutting down databases: [OServer]
+2026-11-10 18:56:03:634 INFO  Orient Engine is shutting down... [Orient]
+2026-11-10 18:56:03:635 INFO  - shutdown storage: OSystem... [OrientDBEmbedded]
+2026-11-10 18:56:03:689 INFO  - shutdown storage: gora... [OrientDBEmbedded]
+2026-11-10 18:56:03:695 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:696 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:697 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:698 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:03:775 INFO  Clearing byte buffer pool [Orient]
+2026-11-10 18:56:03:805 INFO  OrientDB Engine shutdown complete [Orient]
+2026-11-10 18:56:03:805 INFO  OrientDB Server shutdown complete
+ [OServer][INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.801 s - in org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Nov 10, 2026 6:56:05 PM com.orientechnologies.common.log.OLogManager log
+INFO: Detected limit of amount of simultaneously open files is 65536,  limit of open files for disk cache will be set to 32256
+Nov 10, 2026 6:56:05 PM com.orientechnologies.common.log.OLogManager log
+WARNING: Value of limit of simultaneously open files is too small, recommended value is 262144
+
+2026-11-10 18:56:05:437 INFO  Loading configuration from input stream [OServerConfigurationLoaderXml]
+2026-11-10 18:56:05:705 INFO  OrientDB Server v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) is starting up... [OServer]
+2026-11-10 18:56:05:798 INFO  16759439360 B/15983 MB/15 GB of physical memory were detected on machine [ONative]
+2026-11-10 18:56:05:798 INFO  Soft memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:56:05:798 INFO  Hard memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:56:05:799 INFO  Detected memory limit for current process is 16759439360 B/15983 MB/15 GB [ONative]
+2026-11-10 18:56:05:800 INFO  JVM can use maximum 3996MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:56:05:801 INFO  Because OrientDB is running outside a container 12% of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:56:05:801 INFO  OrientDB auto-config DISKCACHE=10,069MB (heap=3,996MB os=15,983MB) [orientechnologies]
+2026-11-10 18:56:05:802 INFO  System is started under an effective user : `runner` [OEngineLocalPaginated]
+2026-11-10 18:56:05:803 INFO  Allocation of 153048 pages. [OEngineLocalPaginated]
+2026-11-10 18:56:06:452 INFO  WAL maximum segment size is set to 6,144 MB [OrientDBEmbedded]
+2026-11-10 18:56:06:453 INFO  Databases directory: /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases [OServer]
+2026-11-10 18:56:06:562 INFO  Direct IO for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is allowed with block size 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:56:06:562 INFO  Page size for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is set to 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:56:06:703 INFO  Storage 'plocal:/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem' is opened under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [OLocalPaginatedStorage]
+2026-11-10 18:56:06:894 INFO  [OVariableParser.resolveVariables] Property not found: ORIENTDB_HOME [orientechnologies]
+2026-11-10 18:56:06:895 SEVER ODefaultServerSecurity.loadConfig() Could not access the security JSON file: /config/security.json [ODefaultServerSecurity]
+2026-11-10 18:56:06:946 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.37, socket=default) [OServerNetworkListener]
+2026-11-10 18:56:06:949 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2026-11-10 18:56:06:950 INFO  Found ORIENTDB_ROOT_PASSWORD variable, using this value as root's password [OServer]
+2026-11-10 18:56:07:045 WARNI onAfterDynamicPlugins() Configuration document is empty [ODefaultServerSecurity]
+2026-11-10 18:56:07:048 INFO  OrientDB Studio available at http://10.1.0.244:2480/studio/index.html [OServer]
+2026-11-10 18:56:07:048 INFO  OrientDB Server is active v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN). [OServer]
+2026-11-10 18:56:07:309 INFO  Storage 'memory:gora' is created under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [ODirectMemoryStorage]
+2026-11-10 18:56:07:671 INFO  Created database 'gora' of type 'memory' [OConnectionBinaryExecutor]
+2026-11-10 18:56:09:745 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:09:804 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:09:850 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:09:893 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:09:935 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:09:976 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:10:012 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:10:083 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:10:127 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:10:169 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:10:320 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:10:322 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:10:323 INFO  OrientDB Server is shutting down... [OServer]
+2026-11-10 18:56:10:323 INFO  Shutting down listeners: [OServer]
+2026-11-10 18:56:10:323 INFO  - ONetworkProtocolBinary /0.0.0.0:2424: [OServer]
+2026-11-10 18:56:10:324 INFO  - ONetworkProtocolHttpDb /0.0.0.0:2480: [OServer]
+2026-11-10 18:56:10:324 INFO  Shutting down protocols [OServer]
+2026-11-10 18:56:10:328 INFO  Shutting down plugins: [OServerPluginManager]
+2026-11-10 18:56:10:328 INFO  Shutting down databases: [OServer]
+2026-11-10 18:56:10:328 INFO  Orient Engine is shutting down... [Orient]
+2026-11-10 18:56:10:329 INFO  - shutdown storage: OSystem... [OrientDBEmbedded]
+2026-11-10 18:56:10:377 INFO  - shutdown storage: gora... [OrientDBEmbedded]
+2026-11-10 18:56:10:382 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:10:383 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:10:384 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:10:384 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:10:464 INFO  Clearing byte buffer pool [Orient]
+2026-11-10 18:56:10:493 INFO  OrientDB Engine shutdown complete [Orient]
+2026-11-10 18:56:10:493 INFO  OrientDB Server shutdown complete
+ [OServer][INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.831 s - in org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Nov 10, 2026 6:56:12 PM com.orientechnologies.common.log.OLogManager log
+INFO: Detected limit of amount of simultaneously open files is 65536,  limit of open files for disk cache will be set to 32256
+Nov 10, 2026 6:56:12 PM com.orientechnologies.common.log.OLogManager log
+WARNING: Value of limit of simultaneously open files is too small, recommended value is 262144
+
+2026-11-10 18:56:12:065 INFO  Loading configuration from input stream [OServerConfigurationLoaderXml]
+2026-11-10 18:56:12:356 INFO  OrientDB Server v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) is starting up... [OServer]
+2026-11-10 18:56:12:438 INFO  16759439360 B/15983 MB/15 GB of physical memory were detected on machine [ONative]
+2026-11-10 18:56:12:439 INFO  Soft memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:56:12:439 INFO  Hard memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:56:12:440 INFO  Detected memory limit for current process is 16759439360 B/15983 MB/15 GB [ONative]
+2026-11-10 18:56:12:441 INFO  JVM can use maximum 3996MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:56:12:441 INFO  Because OrientDB is running outside a container 12% of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:56:12:442 INFO  OrientDB auto-config DISKCACHE=10,069MB (heap=3,996MB os=15,983MB) [orientechnologies]
+2026-11-10 18:56:12:442 INFO  System is started under an effective user : `runner` [OEngineLocalPaginated]
+2026-11-10 18:56:12:443 INFO  Allocation of 153048 pages. [OEngineLocalPaginated]
+2026-11-10 18:56:13:087 INFO  WAL maximum segment size is set to 6,144 MB [OrientDBEmbedded]
+2026-11-10 18:56:13:088 INFO  Databases directory: /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases [OServer]
+2026-11-10 18:56:13:152 INFO  Direct IO for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is allowed with block size 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:56:13:153 INFO  Page size for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is set to 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:56:13:337 INFO  Storage 'plocal:/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem' is opened under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [OLocalPaginatedStorage]
+2026-11-10 18:56:13:530 INFO  [OVariableParser.resolveVariables] Property not found: ORIENTDB_HOME [orientechnologies]
+2026-11-10 18:56:13:531 SEVER ODefaultServerSecurity.loadConfig() Could not access the security JSON file: /config/security.json [ODefaultServerSecurity]
+2026-11-10 18:56:13:580 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.37, socket=default) [OServerNetworkListener]
+2026-11-10 18:56:13:583 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2026-11-10 18:56:13:583 INFO  Found ORIENTDB_ROOT_PASSWORD variable, using this value as root's password [OServer]
+2026-11-10 18:56:13:684 WARNI onAfterDynamicPlugins() Configuration document is empty [ODefaultServerSecurity]
+2026-11-10 18:56:13:686 INFO  OrientDB Studio available at http://10.1.0.244:2480/studio/index.html [OServer]
+2026-11-10 18:56:13:687 INFO  OrientDB Server is active v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN). [OServer]
+2026-11-10 18:56:13:939 INFO  Storage 'memory:gora' is created under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [ODirectMemoryStorage]
+2026-11-10 18:56:14:294 INFO  Created database 'gora' of type 'memory' [OConnectionBinaryExecutor]
+2026-11-10 18:56:16:240 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:308 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:408 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:450 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:490 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:539 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:579 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:637 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:676 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:742 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:828 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:830 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:831 INFO  OrientDB Server is shutting down... [OServer]
+2026-11-10 18:56:16:832 INFO  Shutting down listeners: [OServer]
+2026-11-10 18:56:16:832 INFO  - ONetworkProtocolBinary /0.0.0.0:2424: [OServer]
+2026-11-10 18:56:16:832 INFO  - ONetworkProtocolHttpDb /0.0.0.0:2480: [OServer]
+2026-11-10 18:56:16:833 INFO  Shutting down protocols [OServer]
+2026-11-10 18:56:16:836 INFO  Shutting down plugins: [OServerPluginManager]
+2026-11-10 18:56:16:837 INFO  Shutting down databases: [OServer]
+2026-11-10 18:56:16:837 INFO  Orient Engine is shutting down... [Orient]
+2026-11-10 18:56:16:839 INFO  - shutdown storage: OSystem... [OrientDBEmbedded]
+2026-11-10 18:56:16:868 INFO  - shutdown storage: gora... [OrientDBEmbedded]
+2026-11-10 18:56:16:874 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:876 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:877 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:878 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:16:959 INFO  Clearing byte buffer pool [Orient]
+2026-11-10 18:56:16:994 INFO  OrientDB Engine shutdown complete [Orient]
+2026-11-10 18:56:16:995 INFO  OrientDB Server shutdown complete
+ [OServer][INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.675 s - in org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Nov 10, 2026 6:56:18 PM com.orientechnologies.common.log.OLogManager log
+INFO: Detected limit of amount of simultaneously open files is 65536,  limit of open files for disk cache will be set to 32256
+Nov 10, 2026 6:56:18 PM com.orientechnologies.common.log.OLogManager log
+WARNING: Value of limit of simultaneously open files is too small, recommended value is 262144
+
+2026-11-10 18:56:18:556 INFO  Loading configuration from input stream [OServerConfigurationLoaderXml]
+2026-11-10 18:56:18:822 INFO  OrientDB Server v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) is starting up... [OServer]
+2026-11-10 18:56:18:904 INFO  16759439360 B/15983 MB/15 GB of physical memory were detected on machine [ONative]
+2026-11-10 18:56:18:904 INFO  Soft memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:56:18:905 INFO  Hard memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:56:18:905 INFO  Detected memory limit for current process is 16759439360 B/15983 MB/15 GB [ONative]
+2026-11-10 18:56:18:906 INFO  JVM can use maximum 3996MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:56:18:906 INFO  Because OrientDB is running outside a container 12% of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:56:18:907 INFO  OrientDB auto-config DISKCACHE=10,069MB (heap=3,996MB os=15,983MB) [orientechnologies]
+2026-11-10 18:56:18:908 INFO  System is started under an effective user : `runner` [OEngineLocalPaginated]
+2026-11-10 18:56:18:908 INFO  Allocation of 153048 pages. [OEngineLocalPaginated]
+2026-11-10 18:56:19:550 INFO  WAL maximum segment size is set to 6,144 MB [OrientDBEmbedded]
+2026-11-10 18:56:19:551 INFO  Databases directory: /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases [OServer]
+2026-11-10 18:56:19:658 INFO  Direct IO for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is allowed with block size 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:56:19:658 INFO  Page size for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is set to 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:56:19:792 INFO  Storage 'plocal:/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem' is opened under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [OLocalPaginatedStorage]
+2026-11-10 18:56:19:988 INFO  [OVariableParser.resolveVariables] Property not found: ORIENTDB_HOME [orientechnologies]
+2026-11-10 18:56:19:989 SEVER ODefaultServerSecurity.loadConfig() Could not access the security JSON file: /config/security.json [ODefaultServerSecurity]
+2026-11-10 18:56:20:037 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.37, socket=default) [OServerNetworkListener]
+2026-11-10 18:56:20:041 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2026-11-10 18:56:20:042 INFO  Found ORIENTDB_ROOT_PASSWORD variable, using this value as root's password [OServer]
+2026-11-10 18:56:20:130 WARNI onAfterDynamicPlugins() Configuration document is empty [ODefaultServerSecurity]
+2026-11-10 18:56:20:133 INFO  OrientDB Studio available at http://10.1.0.244:2480/studio/index.html [OServer]
+2026-11-10 18:56:20:133 INFO  OrientDB Server is active v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN). [OServer]
+2026-11-10 18:56:20:378 INFO  Storage 'memory:gora' is created under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [ODirectMemoryStorage]
+2026-11-10 18:56:20:710 INFO  Created database 'gora' of type 'memory' [OConnectionBinaryExecutor]
+2026-11-10 18:56:22:730 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:22:798 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:22:849 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:22:892 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:22:935 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:22:983 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:23:022 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:23:068 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:23:110 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:23:156 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:23:267 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:23:268 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:23:269 INFO  OrientDB Server is shutting down... [OServer]
+2026-11-10 18:56:23:270 INFO  Shutting down listeners: [OServer]
+2026-11-10 18:56:23:270 INFO  - ONetworkProtocolBinary /0.0.0.0:2424: [OServer]
+2026-11-10 18:56:23:270 INFO  - ONetworkProtocolHttpDb /0.0.0.0:2480: [OServer]
+2026-11-10 18:56:23:270 INFO  Shutting down protocols [OServer]
+2026-11-10 18:56:23:275 INFO  Shutting down plugins: [OServerPluginManager]
+2026-11-10 18:56:23:275 INFO  Shutting down databases: [OServer]
+2026-11-10 18:56:23:276 INFO  Orient Engine is shutting down... [Orient]
+2026-11-10 18:56:23:277 INFO  - shutdown storage: OSystem... [OrientDBEmbedded]
+2026-11-10 18:56:23:319 INFO  - shutdown storage: gora... [OrientDBEmbedded]
+2026-11-10 18:56:23:323 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:23:324 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:23:325 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:23:326 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:23:398 INFO  Clearing byte buffer pool [Orient]
+2026-11-10 18:56:23:428 INFO  OrientDB Engine shutdown complete [Orient]
+2026-11-10 18:56:23:428 INFO  OrientDB Server shutdown complete
+ [OServer][INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.614 s - in org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache Gora 1.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache Gora ........................................ SUCCESS [  1.056 s]
+[INFO] Apache Gora :: Core ................................ SUCCESS [  5.015 s]
+[INFO] Apache Gora :: OrientDB ............................ SUCCESS [ 57.664 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:04 min
+[INFO] Finished at: 2026-11-10T18:56:23Z
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,3 @@
+url=https://github.com/apache/hbase
+sha=7d0a687e5798a2f4ca3190b409169f7e17a75b34
+module=hbase-common

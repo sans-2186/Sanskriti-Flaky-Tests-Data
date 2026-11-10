@@ -1,0 +1,3 @@
+url=https://github.com/alibaba/alibabacloud-tairjedis-sdk
+sha=f6215930b9e21a5252c95296d9924b3c4524d9f6
+module=<root>

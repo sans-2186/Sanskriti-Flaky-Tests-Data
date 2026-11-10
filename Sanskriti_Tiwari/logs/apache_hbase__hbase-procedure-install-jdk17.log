@@ -1,0 +1,486 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 7.0
+[INFO] os.detected.version.major: 7
+[INFO] os.detected.version.minor: 0
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 26.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache HBase                                                       [pom]
+[INFO] Apache HBase - Checkstyle                                          [jar]
+[INFO] Apache HBase - Annotations                                         [jar]
+[INFO] Apache HBase - Build Configuration                                 [pom]
+[INFO] Apache HBase - Shaded Protocol                                     [jar]
+[INFO] Apache HBase - Common                                              [jar]
+[INFO] Apache HBase - Metrics API                                         [jar]
+[INFO] Apache HBase - Procedure                                           [jar]
+[INFO] 
+[INFO] -----------------------< org.apache.hbase:hbase >-----------------------
+[INFO] Building Apache HBase 3.0.0-SNAPSHOT                               [1/8]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[WARNING] Parameter 'customBundle' is unknown for plugin 'maven-site-plugin:3.4:attach-descriptor (attach-descriptor)'
+[INFO] 
+[INFO] --- build-helper:3.0.0:bsh-property (negate-license-bundles-property) @ hbase ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (hadoop-profile-min-maven-min-java-banned-xerces) @ hbase ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-jsr305) @ hbase ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-scala) @ hbase ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-hbase-spark) @ hbase ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create-timestamp (default) @ hbase ---
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ hbase ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (check-aggregate-license) @ hbase ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- site:3.4:attach-descriptor (attach-descriptor) @ hbase ---
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ hbase ---
+[INFO] Installing /tmp/tmp.JyBgxvyIar/repo/pom.xml to /home/runner/.m2/repository/org/apache/hbase/hbase/3.0.0-SNAPSHOT/hbase-3.0.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.JyBgxvyIar/repo/target/hbase-3.0.0-SNAPSHOT-site.xml to /home/runner/.m2/repository/org/apache/hbase/hbase/3.0.0-SNAPSHOT/hbase-3.0.0-SNAPSHOT-site.xml
+[INFO] 
+[INFO] -----------------< org.apache.hbase:hbase-checkstyle >------------------
+[INFO] Building Apache HBase - Checkstyle 3.0.0-SNAPSHOT                  [2/8]
+[INFO]   from hbase-checkstyle/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper:3.0.0:bsh-property (negate-license-bundles-property) @ hbase-checkstyle ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (hadoop-profile-min-maven-min-java-banned-xerces) @ hbase-checkstyle ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-jsr305) @ hbase-checkstyle ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-scala) @ hbase-checkstyle ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-hbase-spark) @ hbase-checkstyle ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create-timestamp (default) @ hbase-checkstyle ---
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ hbase-checkstyle ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ hbase-checkstyle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (check-aggregate-license) @ hbase-checkstyle ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- compiler:3.6.1:compile (default-compile) @ hbase-checkstyle ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ hbase-checkstyle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.JyBgxvyIar/repo/hbase-checkstyle/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.1:testCompile (default-testCompile) @ hbase-checkstyle ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.21.0:test (default-test) @ hbase-checkstyle ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- surefire:2.21.0:test (secondPartTestsExecution) @ hbase-checkstyle ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.0.0:test-jar (default) @ hbase-checkstyle ---
+[INFO] Building jar: /tmp/tmp.JyBgxvyIar/repo/hbase-checkstyle/target/hbase-checkstyle-3.0.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- jar:3.0.0:jar (default-jar) @ hbase-checkstyle ---
+[INFO] Building jar: /tmp/tmp.JyBgxvyIar/repo/hbase-checkstyle/target/hbase-checkstyle-3.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ hbase-checkstyle ---
+[INFO] Installing /tmp/tmp.JyBgxvyIar/repo/hbase-checkstyle/target/hbase-checkstyle-3.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/hbase/hbase-checkstyle/3.0.0-SNAPSHOT/hbase-checkstyle-3.0.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.JyBgxvyIar/repo/hbase-checkstyle/pom.xml to /home/runner/.m2/repository/org/apache/hbase/hbase-checkstyle/3.0.0-SNAPSHOT/hbase-checkstyle-3.0.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.JyBgxvyIar/repo/hbase-checkstyle/target/hbase-checkstyle-3.0.0-SNAPSHOT-tests.jar to /home/runner/.m2/repository/org/apache/hbase/hbase-checkstyle/3.0.0-SNAPSHOT/hbase-checkstyle-3.0.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] -----------------< org.apache.hbase:hbase-annotations >-----------------
+[INFO] Building Apache HBase - Annotations 3.0.0-SNAPSHOT                 [3/8]
+[INFO]   from hbase-annotations/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper:3.0.0:bsh-property (negate-license-bundles-property) @ hbase-annotations ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (hadoop-profile-min-maven-min-java-banned-xerces) @ hbase-annotations ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-jsr305) @ hbase-annotations ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-scala) @ hbase-annotations ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-hbase-spark) @ hbase-annotations ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create-timestamp (default) @ hbase-annotations ---
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ hbase-annotations ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ hbase-annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.JyBgxvyIar/repo/hbase-annotations/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (check-aggregate-license) @ hbase-annotations ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- compiler:3.6.1:compile (default-compile) @ hbase-annotations ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ hbase-annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.JyBgxvyIar/repo/hbase-annotations/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.1:testCompile (default-testCompile) @ hbase-annotations ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- warbucks:1.1.0:check (run-warbucks) @ hbase-annotations ---
+[INFO] Rule 0: Class Matches: 0
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- surefire:2.21.0:test (default-test) @ hbase-annotations ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- surefire:2.21.0:test (secondPartTestsExecution) @ hbase-annotations ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.0.0:test-jar (default) @ hbase-annotations ---
+[INFO] Building jar: /tmp/tmp.JyBgxvyIar/repo/hbase-annotations/target/hbase-annotations-3.0.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- jar:3.0.0:jar (default-jar) @ hbase-annotations ---
+[INFO] Building jar: /tmp/tmp.JyBgxvyIar/repo/hbase-annotations/target/hbase-annotations-3.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ hbase-annotations ---
+[INFO] Installing /tmp/tmp.JyBgxvyIar/repo/hbase-annotations/target/hbase-annotations-3.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/hbase/hbase-annotations/3.0.0-SNAPSHOT/hbase-annotations-3.0.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.JyBgxvyIar/repo/hbase-annotations/pom.xml to /home/runner/.m2/repository/org/apache/hbase/hbase-annotations/3.0.0-SNAPSHOT/hbase-annotations-3.0.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.JyBgxvyIar/repo/hbase-annotations/target/hbase-annotations-3.0.0-SNAPSHOT-tests.jar to /home/runner/.m2/repository/org/apache/hbase/hbase-annotations/3.0.0-SNAPSHOT/hbase-annotations-3.0.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] -------------< org.apache.hbase:hbase-build-configuration >-------------
+[INFO] Building Apache HBase - Build Configuration 3.0.0-SNAPSHOT         [4/8]
+[INFO]   from hbase-build-configuration/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[WARNING] 2 problems were encountered while building the effective model for org.apache.yetus:audience-annotations:jar:0.5.0 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- build-helper:3.0.0:bsh-property (negate-license-bundles-property) @ hbase-build-configuration ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (hadoop-profile-min-maven-min-java-banned-xerces) @ hbase-build-configuration ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-jsr305) @ hbase-build-configuration ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-scala) @ hbase-build-configuration ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-hbase-spark) @ hbase-build-configuration ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create-timestamp (default) @ hbase-build-configuration ---
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ hbase-build-configuration ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (check-aggregate-license) @ hbase-build-configuration ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ hbase-build-configuration ---
+[INFO] Installing /tmp/tmp.JyBgxvyIar/repo/hbase-build-configuration/pom.xml to /home/runner/.m2/repository/org/apache/hbase/hbase-build-configuration/3.0.0-SNAPSHOT/hbase-build-configuration-3.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------< org.apache.hbase:hbase-protocol-shaded >---------------
+[INFO] Building Apache HBase - Shaded Protocol 3.0.0-SNAPSHOT             [5/8]
+[INFO]   from hbase-protocol-shaded/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper:3.0.0:bsh-property (negate-license-bundles-property) @ hbase-protocol-shaded ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (hadoop-profile-min-maven-min-java-banned-xerces) @ hbase-protocol-shaded ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-jsr305) @ hbase-protocol-shaded ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-scala) @ hbase-protocol-shaded ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (banned-hbase-spark) @ hbase-protocol-shaded ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create-timestamp (default) @ hbase-protocol-shaded ---
+[INFO] 
+[INFO] --- protobuf:0.5.0:compile (compile-protoc) @ hbase-protocol-shaded ---
+[INFO] Skipping compilation because target directory newer than sources.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (default) @ hbase-protocol-shaded ---
+[INFO] Replacement run on 33 files.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ hbase-protocol-shaded ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ hbase-protocol-shaded ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 33 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (check-aggregate-license) @ hbase-protocol-shaded ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- compiler:3.6.1:compile (default-compile) @ hbase-protocol-shaded ---
+[INFO] Compiling 34 source files to /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/classes
+[INFO] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java: Recompile with -Xlint:deprecation for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[2240,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[1080,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[2571,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[1525,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[81,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[527,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[518,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[1628,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[3288,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[3546,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[3790,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[4070,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[4374,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[4756,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[5137,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[5436,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[5730,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[5852,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[6235,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[6817,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[7339,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[7893,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/RPCProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/RPCProtos.java:[56,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[986,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[4623,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[321,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[5126,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[619,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[11782,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[3356,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[10400,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[1460,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[12075,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[3748,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[10747,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/RPCProtos.java:[403,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[3552,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[3946,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[4747,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[5172,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[5895,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[6385,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[7372,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[7766,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[16770,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[17089,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[8532,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[8801,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[9151,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[9476,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[9968,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[10303,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[10751,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[11120,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[11665,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[12034,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[12586,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[13001,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/SnapshotProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/SnapshotProtos.java:[123,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[4300,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/SnapshotProtos.java:[820,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[5450,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[4420,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[4739,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[72,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[702,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[3002,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[3297,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[2339,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[2672,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[1389,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[1815,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[13540,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[14059,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[15376,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[16029,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[17844,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[18276,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[19120,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[19514,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[20326,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[20756,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[9094,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[9453,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[21648,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[22147,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[23230,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[23572,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[24038,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[24493,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[25217,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[25796,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[26730,20] package javax.annotation does not exist
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache HBase 3.0.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache HBase ....................................... SUCCESS [  0.918 s]
+[INFO] Apache HBase - Checkstyle .......................... SUCCESS [  0.419 s]
+[INFO] Apache HBase - Annotations ......................... SUCCESS [  0.177 s]
+[INFO] Apache HBase - Build Configuration ................. SUCCESS [  0.042 s]
+[INFO] Apache HBase - Shaded Protocol ..................... FAILURE [ 10.209 s]
+[INFO] Apache HBase - Common .............................. SKIPPED
+[INFO] Apache HBase - Metrics API ......................... SKIPPED
+[INFO] Apache HBase - Procedure ........................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.698 s
+[INFO] Finished at: 2026-11-10T18:47:55Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.6.1:compile (default-compile) on project hbase-protocol-shaded: Compilation failure: Compilation failure: 
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[2240,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[1080,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[2571,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[1525,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[81,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ErrorHandlingProtos.java:[527,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[518,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[1628,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[3288,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[3546,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[3790,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[4070,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[4374,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[4756,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[5137,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[5436,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[5730,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[5852,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[6235,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[6817,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[7339,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/ProcedureProtos.java:[7893,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/RPCProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/RPCProtos.java:[56,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[986,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[4623,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[321,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[5126,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[619,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[11782,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[3356,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[10400,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[1460,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[12075,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[3748,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[10747,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/RPCProtos.java:[403,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[3552,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[3946,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[4747,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[5172,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[5895,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[6385,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[7372,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[7766,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[16770,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[17089,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[8532,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[8801,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[9151,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[9476,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[9968,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[10303,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[10751,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[11120,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[11665,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[12034,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[12586,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[13001,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/SnapshotProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/SnapshotProtos.java:[123,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[6,18] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[4300,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/SnapshotProtos.java:[820,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[5450,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[4420,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[4739,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[72,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[702,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[3002,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[3297,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[2339,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[2672,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[1389,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/AccessControlProtos.java:[1815,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[13540,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[14059,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[15376,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[16029,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[17844,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[18276,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[19120,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[19514,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[20326,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[20756,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[9094,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/HBaseProtos.java:[9453,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[21648,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[22147,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[23230,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[23572,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[24038,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[24493,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[25217,20] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[25796,22] package javax.annotation does not exist
+[ERROR] /tmp/tmp.JyBgxvyIar/repo/hbase-protocol-shaded/target/generated-sources/protobuf/java/org/apache/hadoop/hbase/shaded/protobuf/generated/MasterProcedureProtos.java:[26730,20] package javax.annotation does not exist
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :hbase-protocol-shaded

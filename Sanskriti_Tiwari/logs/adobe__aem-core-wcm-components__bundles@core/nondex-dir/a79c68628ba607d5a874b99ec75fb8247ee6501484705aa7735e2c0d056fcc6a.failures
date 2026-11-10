@@ -1,0 +1,12 @@
+com.adobe.cq.wcm.core.components.internal.models.v1.contentfragment.ContentFragmentImplTest#structured
+com.adobe.cq.wcm.core.components.internal.models.v1.contentfragment.ContentFragmentImplTest#structuredNestedModel
+com.adobe.cq.wcm.core.components.internal.models.v3.NextgenDMImageURIBuilderTest#testUriWithDefaultValues
+com.adobe.cq.wcm.core.components.internal.models.v2.PageImplTest#testPage
+com.adobe.cq.wcm.core.components.internal.models.v2.PageImplTest#testPageWithDeprecatedCaconfig
+com.adobe.cq.wcm.core.components.internal.servlets.contentfragment.ElementsDataSourceServletTest#testFragmentPathOverride
+com.adobe.cq.wcm.core.components.internal.models.v3.PageImplTest#testPage
+com.adobe.cq.wcm.core.components.internal.models.v3.PageImplTest#testPageWithDeprecatedCaconfig
+com.adobe.cq.wcm.core.components.internal.models.v1.ClientLibrariesImplTest#testGetCategoriesWithInjectedResourceTypesAndInheritance
+com.adobe.cq.wcm.core.components.internal.models.v3.ImageImplTest#testNgdmImage
+com.adobe.cq.wcm.core.components.internal.models.v3.ImageImplTest#testNgdmImageWithResizeWidth
+com.adobe.cq.wcm.core.components.internal.models.v2.TeaserImplTest#testTeaserWithNgdmImage

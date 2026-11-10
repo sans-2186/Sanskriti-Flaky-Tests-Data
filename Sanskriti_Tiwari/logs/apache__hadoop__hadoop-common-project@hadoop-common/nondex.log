@@ -1,0 +1,1217 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.hadoop:hadoop-common:jar:3.3.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.assertj:assertj-core:jar -> duplicate declaration of version (?) @ line 351, column 17
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 7.0
+[INFO] os.detected.version.major: 7
+[INFO] os.detected.version.minor: 0
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 26.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Hadoop Main                                                 [pom]
+[INFO] Apache Hadoop Build Tools                                          [jar]
+[INFO] Apache Hadoop Project POM                                          [pom]
+[INFO] Apache Hadoop Annotations                                          [jar]
+[INFO] Apache Hadoop Project Dist POM                                     [pom]
+[INFO] Apache Hadoop Maven Plugins                               [maven-plugin]
+[INFO] Apache Hadoop MiniKDC                                              [jar]
+[INFO] Apache Hadoop Auth                                                 [jar]
+[INFO] Apache Hadoop Common                                               [jar]
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom (5.2 kB at 21 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom (7.2 kB at 217 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar (41 kB at 1.1 MB/s)
+[INFO] 
+[INFO] -------------------< org.apache.hadoop:hadoop-main >--------------------
+[INFO] Building Apache Hadoop Main 3.3.0-SNAPSHOT                         [1/9]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ hadoop-main >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (default) @ hadoop-main ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-property) @ hadoop-main ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ hadoop-main <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ hadoop-main ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom (3.4 kB at 102 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom (2.2 kB at 69 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom (9.3 kB at 309 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.4/plexus-component-annotations-1.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.4/plexus-component-annotations-1.5.4.pom (815 B at 25 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.4/plexus-containers-1.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.5.4/plexus-containers-1.5.4.pom (4.2 kB at 151 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom (8.3 kB at 296 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom (24 kB at 798 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom (4.0 kB at 144 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom (1.8 kB at 59 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom (2.6 kB at 82 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom (1.7 kB at 61 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom (1.5 kB at 53 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom (1.9 kB at 63 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom (2.1 kB at 76 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom (2.7 kB at 108 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom (4.2 kB at 160 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom (14 kB at 443 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom (2.6 kB at 85 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom (14 kB at 450 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom (3.1 kB at 116 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom (5.7 kB at 227 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom (7.7 kB at 265 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom (4.0 kB at 144 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom (1.8 kB at 65 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom (29 kB at 978 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom (2.0 kB at 76 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom (2.1 kB at 82 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom (3.4 kB at 116 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom (6.1 kB at 226 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom (7.3 kB at 272 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom (2.6 kB at 94 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom (20 kB at 650 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom (8.1 kB at 290 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/5/jvnet-parent-5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/5/jvnet-parent-5.pom (8.9 kB at 277 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom (4.0 kB at 134 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom (1.5 kB at 47 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar (63 kB at 2.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar (12 kB at 221 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar (27 kB at 325 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar (44 kB at 482 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar (15 kB at 140 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar (55 kB at 487 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar (43 kB at 365 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar (177 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar (638 kB at 4.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar (67 kB at 429 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar (31 kB at 170 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar (147 kB at 773 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar (136 kB at 689 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar (173 kB at 874 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar (378 kB at 1.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar (62 kB at 265 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar (424 kB at 1.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar (2.3 MB at 9.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar (205 kB at 802 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar (47 kB at 183 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar (35 kB at 124 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar (164 kB at 569 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar (128 kB at 442 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar (563 kB at 1.9 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar (2.1 kB at 7.1 kB/s)
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_K+hsMpV+7DNhGLgwsuCxJa8flMGChm6NF0eI1wOVfMc=
+nondexLogging=CONFIG
+test=
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.pom (6.5 kB at 127 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.20/surefire-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.20/surefire-2.20.pom (21 kB at 378 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.jar (53 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.pom (9.4 kB at 247 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom (1.6 kB at 45 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom (13 kB at 333 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.pom (3.7 kB at 93 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.pom (2.0 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.pom (3.2 kB at 78 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.jar (331 kB at 6.9 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar (14 kB at 468 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.jar (13 kB at 390 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.jar (182 kB at 5.2 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.jar (50 kB at 1.3 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar (51 kB at 1.1 MB/s)
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/.nondex
+nondexExecid=GiyO2sO4NXxxOdELo0hULLOjhdFjJLEqnhCK8NGAUIg=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/.nondex
+nondexExecid=MlhRIVYG5NmrvRNor6ZzkTH7PMt5tJrb48gcihkcSw=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/.nondex
+nondexExecid=5VK7xmRk5bB1EmTfgs4FKWzNx52U8Y+GcbP1SCsjEs=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/.nondex" -DnondexExecid=GiyO2sO4NXxxOdELo0hULLOjhdFjJLEqnhCK8NGAUIg= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/.nondex" -DnondexExecid=MlhRIVYG5NmrvRNor6ZzkTH7PMt5tJrb48gcihkcSw= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/.nondex" -DnondexExecid=5VK7xmRk5bB1EmTfgs4FKWzNx52U8Y+GcbP1SCsjEs= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.QfC3g8V1Sb/repo/.nondex/GiyO2sO4NXxxOdELo0hULLOjhdFjJLEqnhCK8NGAUIg=/test_results.html
+[INFO] [NonDex] The id of this run is: GiyO2sO4NXxxOdELo0hULLOjhdFjJLEqnhCK8NGAUIg=
+[INFO] 
+[INFO] ----------------< org.apache.hadoop:hadoop-build-tools >----------------
+[INFO] Building Apache Hadoop Build Tools 3.3.0-SNAPSHOT                  [2/9]
+[INFO]   from hadoop-build-tools/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ hadoop-build-tools >>>
+[INFO] 
+[INFO] --- resources:3.0.1:copy-resources (copy-resources) @ hadoop-build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- antrun:1.7:run (dummy) @ hadoop-build-tools ---
+[INFO] No ant target defined - SKIPPED
+[INFO] 
+[INFO] --- resources:3.0.1:resources (default-resources) @ hadoop-build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- remote-resources:1.5:bundle (default) @ hadoop-build-tools ---
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ hadoop-build-tools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.0.1:testResources (default-testResources) @ hadoop-build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ hadoop-build-tools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ hadoop-build-tools <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ hadoop-build-tools ---
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_0q2PFkGRlvIGTfh24U1cJh79ZUvgvrti3wnhJP5zpCo=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'disableXmlReport' (user property 'disableXmlReport') is deprecated: Instead use disable within statelessTestsetReporter since of 3.0.0-M6.
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex
+nondexExecid=uDxIoJhEy9eJAcJC4OTk3C0okswbDC1Y46OHDYRmr1g=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'disableXmlReport' (user property 'disableXmlReport') is deprecated: Instead use disable within statelessTestsetReporter since of 3.0.0-M6.
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex
+nondexExecid=ohh04+OimgW76JsvtvLWlH5lerc3gb9gxF0rtsLRVA=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'disableXmlReport' (user property 'disableXmlReport') is deprecated: Instead use disable within statelessTestsetReporter since of 3.0.0-M6.
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex
+nondexExecid=cJUPmBcFSkNqsozKdgLnGte8OKKY7uuUApNT2xDhA=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'disableXmlReport' (user property 'disableXmlReport') is deprecated: Instead use disable within statelessTestsetReporter since of 3.0.0-M6.
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex" -DnondexExecid=uDxIoJhEy9eJAcJC4OTk3C0okswbDC1Y46OHDYRmr1g= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex" -DnondexExecid=ohh04+OimgW76JsvtvLWlH5lerc3gb9gxF0rtsLRVA= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex" -DnondexExecid=cJUPmBcFSkNqsozKdgLnGte8OKKY7uuUApNT2xDhA= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.QfC3g8V1Sb/repo/hadoop-build-tools/.nondex/uDxIoJhEy9eJAcJC4OTk3C0okswbDC1Y46OHDYRmr1g=/test_results.html
+[INFO] [NonDex] The id of this run is: uDxIoJhEy9eJAcJC4OTk3C0okswbDC1Y46OHDYRmr1g=
+[INFO] 
+[INFO] ------------------< org.apache.hadoop:hadoop-project >------------------
+[INFO] Building Apache Hadoop Project POM 3.3.0-SNAPSHOT                  [3/9]
+[INFO]   from hadoop-project/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ hadoop-project >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-project ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ hadoop-project <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ hadoop-project ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_cPIrgotBsuGoTu82eHEQNapOT8Pq7ECRELp5WKJ9Vk=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex
+nondexExecid=FGhQ3+dHLNtPK8mQqRcVrHOV9NVrydeD8Juu2UaKicE=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex
+nondexExecid=3StO9h1B8GtCgSJviBnabmai2sdqis65b5IljQuaN4=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex
+nondexExecid=P3W4EgURspDjdEuCrb3azfjPiDmcmRkypxujoRGu2g=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex" -DnondexExecid=FGhQ3+dHLNtPK8mQqRcVrHOV9NVrydeD8Juu2UaKicE= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex" -DnondexExecid=3StO9h1B8GtCgSJviBnabmai2sdqis65b5IljQuaN4= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex" -DnondexExecid=P3W4EgURspDjdEuCrb3azfjPiDmcmRkypxujoRGu2g= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.QfC3g8V1Sb/repo/hadoop-project/.nondex/FGhQ3+dHLNtPK8mQqRcVrHOV9NVrydeD8Juu2UaKicE=/test_results.html
+[INFO] [NonDex] The id of this run is: FGhQ3+dHLNtPK8mQqRcVrHOV9NVrydeD8Juu2UaKicE=
+[INFO] 
+[INFO] ----------------< org.apache.hadoop:hadoop-annotations >----------------
+[INFO] Building Apache Hadoop Annotations 3.3.0-SNAPSHOT                  [4/9]
+[INFO]   from hadoop-common-project/hadoop-annotations/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ hadoop-annotations >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-annotations ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ hadoop-annotations ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ hadoop-annotations ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ hadoop-annotations <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ hadoop-annotations ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_SKrL3lF0Zw7ItEPgBU7FXIIiKAf7JRl0pIZsxkfOsRY=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex
+nondexExecid=Hp0d6LP8NiCBXzym92+1dE9yn5alerGY9f8mwMuLDck=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex
+nondexExecid=Vr+u3LEApG71hs7ZrT7OJQjfHSQHb4H58gsjZz7F0w=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex
+nondexExecid=25NW8C2rljKSZq3lbG3FWHqKkM7cRi68LC7TMdAqwOQ=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex" -DnondexExecid=Hp0d6LP8NiCBXzym92+1dE9yn5alerGY9f8mwMuLDck= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex" -DnondexExecid=Vr+u3LEApG71hs7ZrT7OJQjfHSQHb4H58gsjZz7F0w= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex" -DnondexExecid=25NW8C2rljKSZq3lbG3FWHqKkM7cRi68LC7TMdAqwOQ= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-annotations/.nondex/Hp0d6LP8NiCBXzym92+1dE9yn5alerGY9f8mwMuLDck=/test_results.html
+[INFO] [NonDex] The id of this run is: Hp0d6LP8NiCBXzym92+1dE9yn5alerGY9f8mwMuLDck=
+[INFO] 
+[INFO] ---------------< org.apache.hadoop:hadoop-project-dist >----------------
+[INFO] Building Apache Hadoop Project Dist POM 3.3.0-SNAPSHOT             [5/9]
+[INFO]   from hadoop-project-dist/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ hadoop-project-dist >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-project-dist ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ hadoop-project-dist <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ hadoop-project-dist ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_zT9z7Uc1er46R7diu0PoRSWkOWL8bhTSRfgRargNGk=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex
+nondexExecid=BaSebLQvMOF+gSpeBK4JRJmKhnCyXiTMny1heieJj8=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex
+nondexExecid=UH4bnGMSWelZedx505ZjkGgfBwY0I6wuTyIBrNkw+M=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex
+nondexExecid=AzB81iWMHmpngUBfjtHcxD14MURJK8Tqm5GabCiq8=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex" -DnondexExecid=BaSebLQvMOF+gSpeBK4JRJmKhnCyXiTMny1heieJj8= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex" -DnondexExecid=UH4bnGMSWelZedx505ZjkGgfBwY0I6wuTyIBrNkw+M= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex" -DnondexExecid=AzB81iWMHmpngUBfjtHcxD14MURJK8Tqm5GabCiq8= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.QfC3g8V1Sb/repo/hadoop-project-dist/.nondex/BaSebLQvMOF+gSpeBK4JRJmKhnCyXiTMny1heieJj8=/test_results.html
+[INFO] [NonDex] The id of this run is: BaSebLQvMOF+gSpeBK4JRJmKhnCyXiTMny1heieJj8=
+[INFO] 
+[INFO] ---------------< org.apache.hadoop:hadoop-maven-plugins >---------------
+[INFO] Building Apache Hadoop Maven Plugins 3.3.0-SNAPSHOT                [6/9]
+[INFO]   from hadoop-maven-plugins/pom.xml
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ hadoop-maven-plugins >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-maven-plugins ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-maven-plugins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ hadoop-maven-plugins ---
+[INFO] Compiling 2 source files to /tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/target/classes
+[INFO] 
+[INFO] --- plugin:3.6.0:descriptor (default-descriptor) @ hadoop-maven-plugins ---
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] java-annotations mojo extractor found 7 mojo descriptors.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-maven-plugins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ hadoop-maven-plugins ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ hadoop-maven-plugins <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ hadoop-maven-plugins ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_5Opd7BkN7WoJVCHIwFQ8cra5DgXTufQXOB9tzj8j6dQ=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex
+nondexExecid=bWnwkJj6L9nbT+0makNckdIeoOpMVrs2GfuURYuUGXM=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex
+nondexExecid=PnX7ENBV4KSzXJKc8BX7TxRUVRMWdTzb6GTFvQtIE=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex
+nondexExecid=a9aZW3AGnW3GG85baZmeYiJG09fWFHh3JeNX1O6KLY=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex" -DnondexExecid=bWnwkJj6L9nbT+0makNckdIeoOpMVrs2GfuURYuUGXM= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex" -DnondexExecid=PnX7ENBV4KSzXJKc8BX7TxRUVRMWdTzb6GTFvQtIE= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex" -DnondexExecid=a9aZW3AGnW3GG85baZmeYiJG09fWFHh3JeNX1O6KLY= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.QfC3g8V1Sb/repo/hadoop-maven-plugins/.nondex/bWnwkJj6L9nbT+0makNckdIeoOpMVrs2GfuURYuUGXM=/test_results.html
+[INFO] [NonDex] The id of this run is: bWnwkJj6L9nbT+0makNckdIeoOpMVrs2GfuURYuUGXM=
+[INFO] 
+[INFO] ------------------< org.apache.hadoop:hadoop-minikdc >------------------
+[INFO] Building Apache Hadoop MiniKDC 3.3.0-SNAPSHOT                      [7/9]
+[INFO]   from hadoop-common-project/hadoop-minikdc/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ hadoop-minikdc >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-minikdc ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-minikdc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ hadoop-minikdc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-minikdc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ hadoop-minikdc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ hadoop-minikdc <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ hadoop-minikdc ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_dAL0uC+knapPj7HfHWovx4CrTYbTtZoQ7H76F5SeT4=
+nondexLogging=CONFIG
+test=
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M1/surefire-junit4-3.0.0-M1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M1/surefire-junit4-3.0.0-M1.jar (17 kB at 351 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M1/surefire-junit4-3.0.0-M1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M1/surefire-junit4-3.0.0-M1.pom (1.7 kB at 46 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M1/surefire-providers-3.0.0-M1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M1/surefire-providers-3.0.0-M1.pom (2.5 kB at 59 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M1/common-junit4-3.0.0-M1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M1/common-junit4-3.0.0-M1.pom (2.1 kB at 56 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M1/common-junit3-3.0.0-M1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M1/common-junit3-3.0.0-M1.pom (1.6 kB at 39 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M1/common-java5-3.0.0-M1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M1/common-java5-3.0.0-M1.pom (3.1 kB at 71 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M1/common-junit4-3.0.0-M1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M1/common-java5-3.0.0-M1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M1/common-junit3-3.0.0-M1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M1/common-junit3-3.0.0-M1.jar (12 kB at 375 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M1/common-java5-3.0.0-M1.jar (32 kB at 802 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M1/common-junit4-3.0.0-M1.jar (28 kB at 673 kB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.hadoop.minikdc.TestMiniKdc
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.542 s - in org.apache.hadoop.minikdc.TestMiniKdc
+[INFO] Running org.apache.hadoop.minikdc.TestChangeOrgNameAndDomain
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.487 s - in org.apache.hadoop.minikdc.TestChangeOrgNameAndDomain
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex
+nondexExecid=awhjoL+wkxvx5FWlGankrihKMGy+6aRhdsFD2j1kELY=
+nondexLogging=CONFIG
+test=
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M1/surefire-junit47-3.0.0-M1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M1/surefire-junit47-3.0.0-M1.jar (93 kB at 2.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M1/surefire-junit47-3.0.0-M1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M1/surefire-junit47-3.0.0-M1.pom (7.3 kB at 166 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M1/common-junit48-3.0.0-M1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M1/common-junit48-3.0.0-M1.pom (2.4 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M1/surefire-grouper-3.0.0-M1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M1/surefire-grouper-3.0.0-M1.pom (2.6 kB at 73 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M1/common-junit48-3.0.0-M1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M1/surefire-grouper-3.0.0-M1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M1/common-junit48-3.0.0-M1.jar (22 kB at 617 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M1/surefire-grouper-3.0.0-M1.jar (40 kB at 1.1 MB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.hadoop.minikdc.TestMiniKdc
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.458 s - in org.apache.hadoop.minikdc.TestMiniKdc
+[INFO] Running org.apache.hadoop.minikdc.TestChangeOrgNameAndDomain
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.469 s - in org.apache.hadoop.minikdc.TestChangeOrgNameAndDomain
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex
+nondexExecid=GsiVfvrnbpYXFFWmVEkxqtSNRBbjODW7Z3wOLnbMqbc=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.hadoop.minikdc.TestMiniKdc
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.439 s - in org.apache.hadoop.minikdc.TestMiniKdc
+[INFO] Running org.apache.hadoop.minikdc.TestChangeOrgNameAndDomain
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.439 s - in org.apache.hadoop.minikdc.TestChangeOrgNameAndDomain
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex
+nondexExecid=OSFowlfAhjxJgMXwPJjTsxfjUxh7rwIZs3h2EABod50=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.hadoop.minikdc.TestMiniKdc
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.442 s - in org.apache.hadoop.minikdc.TestMiniKdc
+[INFO] Running org.apache.hadoop.minikdc.TestChangeOrgNameAndDomain
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.44 s - in org.apache.hadoop.minikdc.TestChangeOrgNameAndDomain
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex" -DnondexExecid=awhjoL+wkxvx5FWlGankrihKMGy+6aRhdsFD2j1kELY= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex" -DnondexExecid=GsiVfvrnbpYXFFWmVEkxqtSNRBbjODW7Z3wOLnbMqbc= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex" -DnondexJarDir="/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex" -DnondexExecid=OSFowlfAhjxJgMXwPJjTsxfjUxh7rwIZs3h2EABod50= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-minikdc/.nondex/awhjoL+wkxvx5FWlGankrihKMGy+6aRhdsFD2j1kELY=/test_results.html
+[INFO] [NonDex] The id of this run is: awhjoL+wkxvx5FWlGankrihKMGy+6aRhdsFD2j1kELY=
+[INFO] 
+[INFO] -------------------< org.apache.hadoop:hadoop-auth >--------------------
+[INFO] Building Apache Hadoop Auth 3.3.0-SNAPSHOT                         [8/9]
+[INFO]   from hadoop-common-project/hadoop-auth/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ hadoop-auth >>>
+[WARNING] 2 problems were encountered while building the effective model for org.apache.yetus:audience-annotations:jar:0.5.0 during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-auth ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-auth ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-auth/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ hadoop-auth ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-auth ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-auth/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ hadoop-auth ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ hadoop-auth <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ hadoop-auth ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-auth/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_G8zGm5SAaYGgM1hpMbJGGgA+D9dBCa1HoyoAGgaIFw=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.hadoop.security.authentication.client.TestAuthenticatedURL
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.621 s - in org.apache.hadoop.security.authentication.client.TestAuthenticatedURL
+[INFO] Running org.apache.hadoop.security.authentication.client.TestPseudoAuthenticator
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.508 s - in org.apache.hadoop.security.authentication.client.TestPseudoAuthenticator
+[INFO] Running org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.32 s - in org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator
+[INFO] Running org.apache.hadoop.security.authentication.server.TestJWTRedirectAuthenticationHandler
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.429 s - in org.apache.hadoop.security.authentication.server.TestJWTRedirectAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestAuthenticationToken
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.apache.hadoop.security.authentication.server.TestAuthenticationToken
+[INFO] Running org.apache.hadoop.security.authentication.server.TestPseudoAuthenticationHandler
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.498 s - in org.apache.hadoop.security.authentication.server.TestPseudoAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestAltKerberosAuthenticationHandler
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.132 s - in org.apache.hadoop.security.authentication.server.TestAltKerberosAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestLdapAuthenticationHandler
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.46 s - in org.apache.hadoop.security.authentication.server.TestLdapAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestAuthenticationFilter
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.828 s - in org.apache.hadoop.security.authentication.server.TestAuthenticationFilter
+[INFO] Running org.apache.hadoop.security.authentication.server.TestMultiSchemeAuthenticationHandler
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.446 s - in org.apache.hadoop.security.authentication.server.TestMultiSchemeAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestKerberosAuthenticationHandler
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.1 s - in org.apache.hadoop.security.authentication.server.TestKerberosAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.util.TestStringSignerSecretProvider
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.apache.hadoop.security.authentication.util.TestStringSignerSecretProvider
+[INFO] Running org.apache.hadoop.security.authentication.util.TestCertificateUtil
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 s - in org.apache.hadoop.security.authentication.util.TestCertificateUtil
+[INFO] Running org.apache.hadoop.security.authentication.util.TestKerberosUtil
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 s - in org.apache.hadoop.security.authentication.util.TestKerberosUtil
+[INFO] Running org.apache.hadoop.security.authentication.util.TestAuthToken
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.193 s - in org.apache.hadoop.security.authentication.util.TestAuthToken
+[INFO] Running org.apache.hadoop.security.authentication.util.TestFileSignerSecretProvider
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in org.apache.hadoop.security.authentication.util.TestFileSignerSecretProvider
+[INFO] Running org.apache.hadoop.security.authentication.util.TestJaasConfiguration
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.apache.hadoop.security.authentication.util.TestJaasConfiguration
+[INFO] Running org.apache.hadoop.security.authentication.util.TestRandomSignerSecretProvider
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.217 s - in org.apache.hadoop.security.authentication.util.TestRandomSignerSecretProvider
+[INFO] Running org.apache.hadoop.security.authentication.util.TestZKSignerSecretProvider
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.46 s - in org.apache.hadoop.security.authentication.util.TestZKSignerSecretProvider
+[INFO] Running org.apache.hadoop.security.authentication.util.TestKerberosName
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 s - in org.apache.hadoop.security.authentication.util.TestKerberosName
+[INFO] Running org.apache.hadoop.security.authentication.util.TestSigner
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 s - in org.apache.hadoop.security.authentication.util.TestSigner
+[INFO] Running org.apache.hadoop.security.authentication.util.TestRolloverSignerSecretProvider
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.151 s - in org.apache.hadoop.security.authentication.util.TestRolloverSignerSecretProvider
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 140, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-auth/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-auth/.nondex
+nondexExecid=bAQls27QfrnWF+zZaN7OJEm4EegLUk1lvLyQ2HmLwoc=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.hadoop.security.authentication.client.TestAuthenticatedURL
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.751 s - in org.apache.hadoop.security.authentication.client.TestAuthenticatedURL
+[INFO] Running org.apache.hadoop.security.authentication.client.TestPseudoAuthenticator
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.503 s - in org.apache.hadoop.security.authentication.client.TestPseudoAuthenticator
+[INFO] Running org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.335 s - in org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator
+[INFO] Running org.apache.hadoop.security.authentication.server.TestJWTRedirectAuthenticationHandler
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.39 s - in org.apache.hadoop.security.authentication.server.TestJWTRedirectAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestAuthenticationToken
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.apache.hadoop.security.authentication.server.TestAuthenticationToken
+[INFO] Running org.apache.hadoop.security.authentication.server.TestPseudoAuthenticationHandler
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.48 s - in org.apache.hadoop.security.authentication.server.TestPseudoAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestAltKerberosAuthenticationHandler
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.147 s - in org.apache.hadoop.security.authentication.server.TestAltKerberosAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestLdapAuthenticationHandler
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.738 s - in org.apache.hadoop.security.authentication.server.TestLdapAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestAuthenticationFilter
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.871 s - in org.apache.hadoop.security.authentication.server.TestAuthenticationFilter
+[INFO] Running org.apache.hadoop.security.authentication.server.TestMultiSchemeAuthenticationHandler
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.844 s - in org.apache.hadoop.security.authentication.server.TestMultiSchemeAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestKerberosAuthenticationHandler
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.081 s - in org.apache.hadoop.security.authentication.server.TestKerberosAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.util.TestStringSignerSecretProvider
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.hadoop.security.authentication.util.TestStringSignerSecretProvider
+[INFO] Running org.apache.hadoop.security.authentication.util.TestCertificateUtil
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.apache.hadoop.security.authentication.util.TestCertificateUtil
+[INFO] Running org.apache.hadoop.security.authentication.util.TestKerberosUtil
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 s - in org.apache.hadoop.security.authentication.util.TestKerberosUtil
+[INFO] Running org.apache.hadoop.security.authentication.util.TestAuthToken
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 s - in org.apache.hadoop.security.authentication.util.TestAuthToken
+[INFO] Running org.apache.hadoop.security.authentication.util.TestFileSignerSecretProvider
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.hadoop.security.authentication.util.TestFileSignerSecretProvider
+[INFO] Running org.apache.hadoop.security.authentication.util.TestJaasConfiguration
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.hadoop.security.authentication.util.TestJaasConfiguration
+[INFO] Running org.apache.hadoop.security.authentication.util.TestRandomSignerSecretProvider
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.111 s - in org.apache.hadoop.security.authentication.util.TestRandomSignerSecretProvider
+[INFO] Running org.apache.hadoop.security.authentication.util.TestZKSignerSecretProvider
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.227 s - in org.apache.hadoop.security.authentication.util.TestZKSignerSecretProvider
+[INFO] Running org.apache.hadoop.security.authentication.util.TestKerberosName
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 s - in org.apache.hadoop.security.authentication.util.TestKerberosName
+[INFO] Running org.apache.hadoop.security.authentication.util.TestSigner
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s - in org.apache.hadoop.security.authentication.util.TestSigner
+[INFO] Running org.apache.hadoop.security.authentication.util.TestRolloverSignerSecretProvider
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.108 s - in org.apache.hadoop.security.authentication.util.TestRolloverSignerSecretProvider
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 140, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-auth/.nondex
+nondexJarDir=/tmp/tmp.QfC3g8V1Sb/repo/hadoop-common-project/hadoop-auth/.nondex
+nondexExecid=G8c0657SLXPpmaUKcPClI6Vl9X5byIBZazgwZ+knoGQ=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.hadoop.security.authentication.client.TestAuthenticatedURL
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.585 s - in org.apache.hadoop.security.authentication.client.TestAuthenticatedURL
+[INFO] Running org.apache.hadoop.security.authentication.client.TestPseudoAuthenticator
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.493 s - in org.apache.hadoop.security.authentication.client.TestPseudoAuthenticator
+[INFO] Running org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.327 s - in org.apache.hadoop.security.authentication.client.TestKerberosAuthenticator
+[INFO] Running org.apache.hadoop.security.authentication.server.TestJWTRedirectAuthenticationHandler
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.162 s - in org.apache.hadoop.security.authentication.server.TestJWTRedirectAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestAuthenticationToken
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.hadoop.security.authentication.server.TestAuthenticationToken
+[INFO] Running org.apache.hadoop.security.authentication.server.TestPseudoAuthenticationHandler
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.51 s - in org.apache.hadoop.security.authentication.server.TestPseudoAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestAltKerberosAuthenticationHandler
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.255 s - in org.apache.hadoop.security.authentication.server.TestAltKerberosAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestLdapAuthenticationHandler
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.736 s - in org.apache.hadoop.security.authentication.server.TestLdapAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestAuthenticationFilter
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.867 s - in org.apache.hadoop.security.authentication.server.TestAuthenticationFilter
+[INFO] Running org.apache.hadoop.security.authentication.server.TestMultiSchemeAuthenticationHandler
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.8 s - in org.apache.hadoop.security.authentication.server.TestMultiSchemeAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.server.TestKerberosAuthenticationHandler
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.11 s - in org.apache.hadoop.security.authentication.server.TestKerberosAuthenticationHandler
+[INFO] Running org.apache.hadoop.security.authentication.util.TestStringSignerSecretProvider
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.hadoop.security.authentication.util.TestStringSignerSecretProvider
+[INFO] Running org.apache.hadoop.security.authentication.util.TestCertificateUtil
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in org.apache.hadoop.security.authentication.util.TestCertificateUtil
+[INFO] Running org.apache.hadoop.security.authentication.util.TestKerberosUtil
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 s - in org.apache.hadoop.security.authentication.util.TestKerberosUtil
+[INFO] Running org.apache.hadoop.security.authentication.util.TestAuthToken
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 s - in org.apache.hadoop.security.authentication.util.TestAuthToken
+[INFO] Running org.apache.hadoop.security.authentication.util.TestFileSignerSecretProvider
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.hadoop.security.authentication.util.TestFileSignerSecretProvider
+[INFO] Running org.apache.hadoop.security.authentication.util.TestJaasConfiguration
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.apache.hadoop.security.authentication.util.TestJaasConfiguration
+[INFO] Running org.apache.hadoop.security.authentication.util.TestRandomSignerSecretProvider
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.123 s - in org.apache.hadoop.security.authentication.util.TestRandomSignerSecretProvider
+[INFO] Running org.apache.hadoop.security.authentication.util.TestZKSignerSecretProvider
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.253 s - in org.apache.hadoop.security.authentication.util.TestZKSignerSecretProvider
+[INFO] Running org.apache.hadoop.security.authentication.util.TestKerberosName
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 s - in org.apache.hadoop.security.authentication.util.TestKerberosName
+[INFO] Running org.apache.hadoop.security.authentication.util.TestSigner
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 s - in org.apache.hadoop.security.authentication.util.TestSigner
+[INFO] Running org.apache.hadoop.security.authentication.util.TestRolloverSignerSecretProvider

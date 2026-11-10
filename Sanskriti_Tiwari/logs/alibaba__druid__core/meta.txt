@@ -1,0 +1,3 @@
+url=https://github.com/alibaba/druid
+sha=4ccecebe8da73df3ae22124fc5add3015fd1a8f1
+module=core

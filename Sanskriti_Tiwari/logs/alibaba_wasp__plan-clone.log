@@ -1,0 +1,20 @@
+Cloning into '/tmp/tmp.m4Q7Wuzfo7/repo'...
+Updating files:  27% (195/708)Updating files:  28% (199/708)Updating files:  29% (206/708)Updating files:  30% (213/708)Updating files:  31% (220/708)Updating files:  32% (227/708)Updating files:  33% (234/708)Updating files:  34% (241/708)Updating files:  35% (248/708)Updating files:  36% (255/708)Updating files:  37% (262/708)Updating files:  38% (270/708)Updating files:  39% (277/708)Updating files:  40% (284/708)Updating files:  41% (291/708)Updating files:  42% (298/708)Updating files:  43% (305/708)Updating files:  44% (312/708)Updating files:  45% (319/708)Updating files:  46% (326/708)Updating files:  47% (333/708)Updating files:  48% (340/708)Updating files:  49% (347/708)Updating files:  50% (354/708)Updating files:  51% (362/708)Updating files:  52% (369/708)Updating files:  53% (376/708)Updating files:  54% (383/708)Updating files:  55% (390/708)Updating files:  56% (397/708)Updating files:  57% (404/708)Updating files:  58% (411/708)Updating files:  59% (418/708)Updating files:  60% (425/708)Updating files:  61% (432/708)Updating files:  62% (439/708)Updating files:  63% (447/708)Updating files:  64% (454/708)Updating files:  65% (461/708)Updating files:  66% (468/708)Updating files:  67% (475/708)Updating files:  68% (482/708)Updating files:  69% (489/708)Updating files:  70% (496/708)Updating files:  71% (503/708)Updating files:  72% (510/708)Updating files:  73% (517/708)Updating files:  74% (524/708)Updating files:  75% (531/708)Updating files:  76% (539/708)Updating files:  77% (546/708)Updating files:  78% (553/708)Updating files:  79% (560/708)Updating files:  80% (567/708)Updating files:  81% (574/708)Updating files:  82% (581/708)Updating files:  83% (588/708)Updating files:  84% (595/708)Updating files:  85% (602/708)Updating files:  86% (609/708)Updating files:  87% (616/708)Updating files:  88% (624/708)Updating files:  89% (631/708)Updating files:  90% (638/708)Updating files:  91% (645/708)Updating files:  92% (652/708)Updating files:  93% (659/708)Updating files:  94% (666/708)Updating files:  95% (673/708)Updating files:  96% (680/708)Updating files:  97% (687/708)Updating files:  98% (694/708)Updating files:  99% (701/708)Updating files: 100% (708/708)Updating files: 100% (708/708), done.
+Note: switching to 'b2593d8e4b31ca6da0cd2f3e18356338d9b6dace'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at b2593d8 Merge pull request #24 from haosdent/master

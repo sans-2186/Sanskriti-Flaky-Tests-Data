@@ -1,0 +1,3 @@
+url=https://github.com/alien4cloud/alien4cloud
+sha=eb57d0feca6c37e0a4aafc3feef494e43e02ecda
+module=alien4cloud-security

@@ -1,0 +1,1759 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ignite-bytecode                                                    [jar]
+[INFO] ignite-core                                                        [jar]
+[INFO] ignite-configuration-api                                           [jar]
+[INFO] ignite-configuration-annotation-processor                          [jar]
+[INFO] ignite-api                                                         [jar]
+[INFO] ignite-rest-api                                                    [jar]
+[INFO] ignite-configuration                                               [jar]
+[INFO] ignite-rocksdb-common                                              [jar]
+[INFO] ignite-network-api                                                 [jar]
+[INFO] ignite-network-annotation-processor                                [jar]
+[INFO] ignite-network                                                     [jar]
+[INFO] ignite-raft-client                                                 [jar]
+[INFO] ignite-extended-api                                                [jar]
+[INFO] ignite-binary-tuple                                                [jar]
+[INFO] ignite-schema                                                      [jar]
+[INFO] ignite-transactions                                                [jar]
+[INFO] ignite-storage-api                                                 [jar]
+[INFO] ignite-storage-rocksdb                                             [jar]
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.pom (3.0 kB at 12 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies/2.0.0/idflakies-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies/2.0.0/idflakies-2.0.0.pom (7.1 kB at 159 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.jar (35 kB at 666 kB/s)
+[INFO] 
+[INFO] -----------------< org.apache.ignite:ignite-bytecode >------------------
+[INFO] Building ignite-bytecode 3.0.0-SNAPSHOT                           [1/18]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-bytecode >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-bytecode ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-bytecode ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/bytecode/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-bytecode ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-bytecode ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/bytecode/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-bytecode ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-bytecode ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/bytecode/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-bytecode ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-bytecode:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-bytecode ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-bytecode ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/bytecode/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/bytecode/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-bytecode ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-bytecode ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-bytecode <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-bytecode ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.pom (5.3 kB at 137 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.pom (4.6 kB at 114 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner/1.2.1/testrunner-1.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner/1.2.1/testrunner-1.2.1.pom (7.4 kB at 176 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.pom (2.5 kB at 56 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.5/gson-parent-2.8.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.5/gson-parent-2.8.5.pom (3.8 kB at 90 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.pom (8.5 kB at 237 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.5.4/maven-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.5.4/maven-3.5.4.pom (23 kB at 650 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.pom (4.0 kB at 115 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.pom (1.8 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.pom (2.6 kB at 65 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.pom (1.5 kB at 41 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.pom (1.9 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.pom (2.1 kB at 47 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.pom (2.9 kB at 75 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.pom (3.1 kB at 87 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.pom (7.8 kB at 169 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/25.1-jre/guava-parent-25.1-jre.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/25.1-jre/guava-parent-25.1-jre.pom (10 kB at 221 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.0.pom (4.2 kB at 117 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.pom (4.1 kB at 113 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.pom (1.9 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.1.1/maven-resolver-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.1.1/maven-resolver-1.1.1.pom (16 kB at 401 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.pom (2.1 kB at 52 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.pom (2.2 kB at 57 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.pom (3.5 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.2.0/guice-4.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.2.0/guice-4.2.0.pom (11 kB at 313 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice-parent/4.2.0/guice-parent-4.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice-parent/4.2.0/guice-parent-4.2.0.pom (16 kB at 393 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.22.0/maven-surefire-plugin-2.22.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.22.0/maven-surefire-plugin-2.22.0.pom (5.0 kB at 144 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.22.0/surefire-2.22.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.22.0/surefire-2.22.0.pom (27 kB at 569 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.22.0/maven-surefire-common-2.22.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.22.0/maven-surefire-common-2.22.0.pom (11 kB at 299 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5/maven-plugin-annotations-3.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5/maven-plugin-annotations-3.5.pom (1.7 kB at 27 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.5/maven-plugin-tools-3.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.5/maven-plugin-tools-3.5.pom (16 kB at 368 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.pom (3.5 kB at 89 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.pom (2.0 kB at 56 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.pom (7.4 kB at 210 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.pom (3.3 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/0.9.8/plexus-java-0.9.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/0.9.8/plexus-java-0.9.8.pom (2.4 kB at 57 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/0.9.8/plexus-languages-0.9.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/0.9.8/plexus-languages-0.9.8.pom (2.2 kB at 56 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.1.1/asm-6.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.1.1/asm-6.1.1.pom (2.9 kB at 72 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.pom (16 kB at 323 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.pom (1.6 kB at 42 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.6/xmlunit-1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.6/xmlunit-1.6.pom (3.0 kB at 65 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.pom (2.2 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.pom (1.2 kB at 22 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.pom (2.4 kB at 56 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.pom (2.0 kB at 43 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.pom (1.7 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.3/opencsv-4.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.3/opencsv-4.3.pom (20 kB at 522 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.pom (28 kB at 546 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.pom (14 kB at 230 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/45/commons-parent-45.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/45/commons-parent-45.pom (73 kB at 1.9 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.pom (15 kB at 366 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.pom (9.3 kB at 207 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.pom (2.4 kB at 58 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.pom (7.3 kB at 174 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-parent/3.6.10/javaparser-parent-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-parent/3.6.10/javaparser-parent-3.6.10.pom (13 kB at 354 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.pom (5.0 kB at 95 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.pom (4.9 kB at 102 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.pom (9.7 kB at 216 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.pom (4.7 kB at 116 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.pom (9.4 kB at 246 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit-parent/4.10.0.201712302008-r/org.eclipse.jgit-parent-4.10.0.201712302008-r.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit-parent/4.10.0.201712302008-r/org.eclipse.jgit-parent-4.10.0.201712302008-r.pom (29 kB at 518 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.pom (3.2 kB at 72 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/6/oss-parent-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/6/oss-parent-6.pom (4.8 kB at 127 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.pom (6.0 kB at 126 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/5/oss-parent-5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/5/oss-parent-5.pom (4.1 kB at 120 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom (6.4 kB at 164 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom (16 kB at 392 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/7/project-7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/7/project-7.pom (27 kB at 634 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom (5.5 kB at 153 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom (13 kB at 307 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.pom (12 kB at 312 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/32/commons-parent-32.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/32/commons-parent-32.pom (53 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom (2.7 kB at 63 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.2/slf4j-parent-1.7.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.2/slf4j-parent-1.7.2.pom (12 kB at 236 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.pom (6.3 kB at 166 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.5.3/maven-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.5.3/maven-3.5.3.pom (23 kB at 632 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.3/maven-settings-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.3/maven-settings-3.5.3.pom (1.8 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.3/maven-settings-builder-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.3/maven-settings-builder-3.5.3.pom (2.6 kB at 67 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.3/maven-builder-support-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.3/maven-builder-support-3.5.3.pom (1.5 kB at 25 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.3/maven-core-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.3/maven-core-3.5.3.pom (8.5 kB at 208 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.3/maven-model-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.3/maven-model-3.5.3.pom (4.0 kB at 103 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.3/maven-repository-metadata-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.3/maven-repository-metadata-3.5.3.pom (1.9 kB at 51 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.pom (2.1 kB at 66 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.3/maven-plugin-api-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.3/maven-plugin-api-3.5.3.pom (2.9 kB at 75 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.3/maven-model-builder-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.3/maven-model-builder-3.5.3.pom (3.1 kB at 90 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.3/maven-resolver-provider-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.3/maven-resolver-provider-3.5.3.pom (4.1 kB at 110 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.pom (4.2 kB at 107 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.pom (11 kB at 268 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.pom (2.5 kB at 69 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.pom (2.7 kB at 70 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.pom (6.4 kB at 182 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.jar (115 kB at 2.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.jar (45 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24.jar (79 kB at 962 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.jar (43 kB at 440 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.jar (15 kB at 118 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.jar (130 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.jar (27 kB at 202 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.jar (165 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.jar (55 kB at 331 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.jar (630 kB at 3.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.jar (48 kB at 282 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.jar (67 kB at 372 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.jar (177 kB at 905 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.jar (146 kB at 703 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.3/org.eclipse.sisu.inject-0.3.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.jar (36 kB at 170 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.2.0/guice-4.2.0-no_aop.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.jar (185 kB at 859 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.22.0/maven-surefire-plugin-2.22.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.jar (159 kB at 700 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.22.0/maven-surefire-common-2.22.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.jar (205 kB at 838 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5/maven-plugin-annotations-3.5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.22.0/maven-surefire-plugin-2.22.0.jar (41 kB at 163 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.3/org.eclipse.sisu.inject-0.3.3.jar (379 kB at 1.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.2.0/guice-4.2.0-no_aop.jar (521 kB at 1.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.jar (13 kB at 47 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.22.0/maven-surefire-common-2.22.0.jar (524 kB at 1.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/0.9.8/plexus-java-0.9.8.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5/maven-plugin-annotations-3.5.jar (14 kB at 48 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.1.1/asm-6.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.jar (186 kB at 615 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar (38 kB at 116 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.jar (273 kB at 829 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.6/xmlunit-1.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/0.9.8/plexus-java-0.9.8.jar (35 kB at 105 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.1.1/asm-6.1.1.jar (108 kB at 315 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.jar (315 kB at 885 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.6/xmlunit-1.6.jar (101 kB at 274 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar (80 kB at 215 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar (2.2 kB at 5.7 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.3/opencsv-4.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar (90 kB at 227 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.jar (77 kB at 189 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar (6.6 kB at 16 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.3/opencsv-4.3.jar (164 kB at 390 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.jar (5.3 MB at 12 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar (246 kB at 548 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.jar (183 kB at 407 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.jar (502 kB at 1.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.jar (170 kB at 360 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.jar (1.1 MB at 2.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.jar (17 kB at 35 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.jar (366 kB at 736 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.jar (7.6 kB at 15 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar (740 kB at 1.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar (281 kB at 534 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.jar (2.7 MB at 5.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.jar (166 kB at 311 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar (327 kB at 578 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.jar (264 kB at 466 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar (26 kB at 46 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar (737 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.jar (98 kB at 171 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.jar (54 kB at 89 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.jar (13 kB at 22 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar (28 kB at 45 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar (193 kB at 315 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.jar (810 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar (14 kB at 21 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar (242 kB at 374 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar (8.8 kB at 13 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar (3.5 kB at 5.2 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.jar (2.7 MB at 4.0 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.jar (315 kB at 456 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar (324 kB at 464 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.jar (7.1 MB at 9.3 MB/s)
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-bytecode:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 43 tests. Time taken: 0.10500001907348633 seconds
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/bytecode/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/bytecode/.dtfixingtools/original-order
+[INFO] Getting original results (43 tests).
+---------------------------------------------------
+java.lang.RuntimeException: Set of executed tests is not equal to test list that should have been executed (40 tests executed, 43 tests expected). Missing tests are: Set(com.facebook.presto.bytecode.expression.TestArrayBytecodeExpressions#testNewArray(), com.facebook.presto.bytecode.expression.TestArrayBytecodeExpressions#testNewArrayPrefilled(), com.facebook.presto.bytecode.expression.TestArrayBytecodeExpressions#testGetElement())
+	at edu.illinois.cs.testrunner.runner.SmartRunner.$anonfun$run$1(SmartRunner.scala:40)
+	at scala.util.Success.flatMap(Try.scala:247)
+	at edu.illinois.cs.testrunner.runner.SmartRunner.run(SmartRunner.scala:33)
+	at edu.illinois.cs.testrunner.runner.Runner.runList(Runner.scala:28)
+	at edu.illinois.cs.testrunner.runner.Runner.runList$(Runner.scala:27)
+	at edu.illinois.cs.testrunner.runner.SmartRunner.runList(SmartRunner.scala:21)
+	at edu.illinois.cs.dt.tools.detection.DetectorUtil.originalResults(DetectorUtil.java:35)
+	at edu.illinois.cs.dt.tools.detection.detectors.RandomDetector.<init>(RandomDetector.java:29)
+	at edu.illinois.cs.dt.tools.detection.detectors.DetectorFactory.makeDetector(DetectorFactory.java:20)
+	at edu.illinois.cs.dt.tools.plugin.DetectorMojo.detectorExecute(DetectorMojo.java:268)
+	at edu.illinois.cs.dt.tools.plugin.DetectorMojo.lambda$execute$5(DetectorMojo.java:204)
+	at edu.illinois.cs.dt.tools.utility.ErrorLogger.runAndLogError(ErrorLogger.java:17)
+	at edu.illinois.cs.dt.tools.plugin.DetectorMojo.execute(DetectorMojo.java:204)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] -------------------< org.apache.ignite:ignite-core >--------------------
+[INFO] Building ignite-core 3.0.0-SNAPSHOT                               [2/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-core >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-core ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-core ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-core ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-core ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] The encoding used to copy filtered properties files have not been set. This means that the same encoding will be used to copy filtered properties files as when copying other filtered resources. This might not be what you want! Run your build with --debug to see which files might be affected. Read more at https://maven.apache.org/plugins/maven-resources-plugin/examples/filtering-properties-files.html
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-core ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-core:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 88 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/core/target/classes
+[WARNING] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/main/java/org/apache/ignite/internal/util/GridUnsafe.java:[39,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/main/java/org/apache/ignite/internal/util/GridUnsafe.java:[62,26] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/main/java/org/apache/ignite/internal/util/GridUnsafe.java:[1580,20] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/main/java/org/apache/ignite/internal/util/GridUnsafe.java:[1582,20] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/main/java/org/apache/ignite/internal/util/GridUnsafe.java:[1586,55] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/main/java/org/apache/ignite/internal/util/GridUnsafe.java:[1588,36] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/main/java/org/apache/ignite/internal/util/GridUnsafe.java:[1589,43] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/main/java/org/apache/ignite/internal/util/GridUnsafe.java:[1593,41] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/main/java/org/apache/ignite/internal/util/ByteUtils.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/main/java/org/apache/ignite/internal/util/ByteUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/main/java/org/apache/ignite/internal/util/IgniteConcurrentMultiPairQueue.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/main/java/org/apache/ignite/internal/util/IgniteConcurrentMultiPairQueue.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 46 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/core/target/test-classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/testFixtures/java/org/apache/ignite/internal/testframework/IgniteTestUtils.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/testFixtures/java/org/apache/ignite/internal/testframework/IgniteTestUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/testFixtures/java/org/apache/ignite/internal/testframework/IgniteTestUtils.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/core/src/testFixtures/java/org/apache/ignite/internal/testframework/IgniteTestUtils.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-core ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-core ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-core:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 186 tests. Time taken: 0.18899989128112793 seconds
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/core/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/core/.dtfixingtools/original-order
+[INFO] Getting original results (186 tests).
+INFO: No passing order for tests (3 runs). Continuing anyway with last run.
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (28.2 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (28.3 seconds elapsed (56.2 total), 42.4 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (56.2 seconds elapsed (84.1 total), 37.4 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (84.1 seconds elapsed (112.3 total), 21.0 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (112.3 seconds elapsed (140.3 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.eG4F7bLCsA/repo/modules/core/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.eG4F7bLCsA/repo/modules/core/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] -------------< org.apache.ignite:ignite-configuration-api >-------------
+[INFO] Building ignite-configuration-api 3.0.0-SNAPSHOT                  [3/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-configuration-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-configuration-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-configuration-api ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-api/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-configuration-api ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-configuration-api ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-api/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-configuration-api ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-configuration-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-configuration-api ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-configuration-api:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-configuration-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 42 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-api/target/classes
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-configuration-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-api/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-api/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-configuration-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-configuration-api ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-configuration-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-configuration-api ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-configuration-api:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Module is not using a supported test framework (probably not JUnit), or there is no test.
+---------------------------------------------------
+Message was:
+Module is not using a supported test framework (probably not JUnit), or there is no test.
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ----< org.apache.ignite:ignite-configuration-annotation-processor >-----
+[INFO] Building ignite-configuration-annotation-processor 3.0.0-SNAPSHOT [4/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-configuration-annotation-processor >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-configuration-annotation-processor ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-configuration-annotation-processor ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-configuration-annotation-processor ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-configuration-annotation-processor ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-configuration-annotation-processor ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-configuration-annotation-processor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-configuration-annotation-processor ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-configuration-annotation-processor:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-configuration-annotation-processor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/target/classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/src/main/java/org/apache/ignite/internal/configuration/processor/ConfigurationProcessor.java: /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/src/main/java/org/apache/ignite/internal/configuration/processor/ConfigurationProcessor.java uses unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/src/main/java/org/apache/ignite/internal/configuration/processor/ConfigurationProcessor.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (compile-project) @ ignite-configuration-annotation-processor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/target/classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/src/main/java/org/apache/ignite/internal/configuration/processor/ConfigurationProcessor.java: /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/src/main/java/org/apache/ignite/internal/configuration/processor/ConfigurationProcessor.java uses unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/src/main/java/org/apache/ignite/internal/configuration/processor/ConfigurationProcessor.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-configuration-annotation-processor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/src/test/resources
+[INFO] Copying 68 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-configuration-annotation-processor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/target/test-classes
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-configuration-annotation-processor ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-configuration-annotation-processor <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-configuration-annotation-processor ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-configuration-annotation-processor:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 0 tests. Time taken: 0.042999982833862305 seconds
+INFO: Locating tests...
+INFO: Located 17 tests. Time taken: 0.06500005722045898 seconds
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/.dtfixingtools/original-order
+[INFO] Getting original results (17 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (5.7 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (5.7 seconds elapsed (11.6 total), 8.6 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (11.6 seconds elapsed (17.7 total), 7.8 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (17.7 seconds elapsed (23.5 total), 4.4 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (23.5 seconds elapsed (29.5 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.eG4F7bLCsA/repo/modules/configuration-annotation-processor/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] --------------------< org.apache.ignite:ignite-api >--------------------
+[INFO] Building ignite-api 3.0.0-SNAPSHOT                                [5/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-api ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/api/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-api ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-api ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/api/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-api ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-api ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-api:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 107 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/api/target/classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/api/src/main/java/org/apache/ignite/lang/IgniteException.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/api/src/main/java/org/apache/ignite/lang/IgniteException.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/api/src/main/java/org/apache/ignite/table/mapper/PojoMapperImpl.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/api/src/main/java/org/apache/ignite/table/mapper/PojoMapperImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/api/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/api/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/api/target/test-classes
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-api ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-api ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-api:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 2 tests. Time taken: 0.03600001335144043 seconds
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/api/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/api/.dtfixingtools/original-order
+[INFO] Getting original results (2 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (0.7 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (0.7 seconds elapsed (1.4 total), 1.0 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (1.4 seconds elapsed (2.0 total), 0.9 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (2.0 seconds elapsed (2.7 total), 0.5 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (2.7 seconds elapsed (3.4 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.eG4F7bLCsA/repo/modules/api/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.eG4F7bLCsA/repo/modules/api/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] -----------------< org.apache.ignite:ignite-rest-api >------------------
+[INFO] Building ignite-rest-api 3.0.0-SNAPSHOT                           [6/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-rest-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-rest-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-rest-api ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-rest-api ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-rest-api ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-rest-api ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-rest-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-rest-api ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-rest-api:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-rest-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 24 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/target/classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/src/main/java/org/apache/ignite/internal/rest/api/Problem.java: /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/src/main/java/org/apache/ignite/internal/rest/api/Problem.java uses unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/src/main/java/org/apache/ignite/internal/rest/api/Problem.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-rest-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-rest-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/target/test-classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/src/test/java/org/apache/ignite/internal/rest/exception/handler/IgniteExceptionHandlerTest.java: /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/src/test/java/org/apache/ignite/internal/rest/exception/handler/IgniteExceptionHandlerTest.java uses or overrides a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/rest-api/src/test/java/org/apache/ignite/internal/rest/exception/handler/IgniteExceptionHandlerTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-rest-api ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-rest-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-rest-api ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-rest-api:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 0 tests. Time taken: 0.008999824523925781 seconds
+INFO: Module is not using a supported test framework (probably not JUnit), or there is no test.
+---------------------------------------------------
+Message was:
+Module is not using a supported test framework (probably not JUnit), or there is no test.
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ---------------< org.apache.ignite:ignite-configuration >---------------
+[INFO] Building ignite-configuration 3.0.0-SNAPSHOT                      [7/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-configuration >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-configuration ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-configuration ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-configuration ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-configuration ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-configuration ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-configuration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-configuration ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-configuration:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-configuration ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 71 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/target/classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/src/main/java/org/apache/ignite/internal/configuration/ConfigurationChanger.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/src/main/java/org/apache/ignite/internal/configuration/ConfigurationChanger.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/src/main/java/org/apache/ignite/internal/configuration/tree/InnerNode.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/src/main/java/org/apache/ignite/internal/configuration/tree/InnerNode.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-configuration ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-configuration ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 48 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/target/test-classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/target/generated-test-sources/test-annotations/org/apache/ignite/internal/configuration/hocon/HoconRootConfiguration.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/target/generated-test-sources/test-annotations/org/apache/ignite/internal/configuration/hocon/HoconRootConfiguration.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-configuration ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-configuration <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-configuration ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-configuration:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 191 tests. Time taken: 1.870999813079834 seconds
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/configuration/.dtfixingtools/original-order
+[INFO] Getting original results (191 tests).
+---------------------------------------------------
+java.lang.Exception: Non-zero exit code (output in /home/runner/work/Sanskriti-Flaky-Tests-Data/Sanskriti-Flaky-Tests-Data/failing-test-output-1794338113135-914c0bf8-c457-42ac-96d2-2ebde4b268aa): 2
+	at edu.illinois.cs.testrunner.runner.Runner.$anonfun$runWithCp$3(Runner.scala:71)
+	at edu.illinois.cs.testrunner.util.TempFiles$.$anonfun$withProperties$2(TempFiles.scala:38)
+	at edu.illinois.cs.testrunner.util.autoClose.$anonfun$autoCloseTry$1(autoClose.scala:7)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.util.autoClose.autoCloseTry(autoClose.scala:7)
+	at edu.illinois.cs.testrunner.util.autoClose.apply(autoClose.scala:24)
+	at edu.illinois.cs.testrunner.util.TempFiles$.$anonfun$withProperties$1(TempFiles.scala:36)
+	at edu.illinois.cs.testrunner.util.TempFiles$.$anonfun$withTempFile$1(TempFiles.scala:17)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.util.TempFiles$.withTempFile(TempFiles.scala:17)
+	at edu.illinois.cs.testrunner.util.TempFiles$.withProperties(TempFiles.scala:36)
+	at edu.illinois.cs.testrunner.runner.Runner.$anonfun$runWithCp$2(Runner.scala:50)
+	at edu.illinois.cs.testrunner.util.TempFiles$.$anonfun$withTempFile$1(TempFiles.scala:17)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.util.TempFiles$.withTempFile(TempFiles.scala:17)
+	at edu.illinois.cs.testrunner.runner.Runner.$anonfun$runWithCp$1(Runner.scala:49)
+	at edu.illinois.cs.testrunner.util.TempFiles$.$anonfun$withSeq$1(TempFiles.scala:31)
+	at edu.illinois.cs.testrunner.util.TempFiles$.$anonfun$withTempFile$1(TempFiles.scala:17)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.util.TempFiles$.withTempFile(TempFiles.scala:17)
+	at edu.illinois.cs.testrunner.util.TempFiles$.withSeq(TempFiles.scala:25)
+	at edu.illinois.cs.testrunner.runner.Runner.runWithCp(Runner.scala:48)
+	at edu.illinois.cs.testrunner.runner.Runner.runWithCp$(Runner.scala:47)
+	at edu.illinois.cs.testrunner.runner.SmartRunner.runWithCp(SmartRunner.scala:21)
+	at edu.illinois.cs.dt.tools.runner.InstrumentingSmartRunner.lambda$runWithCp$0(InstrumentingSmartRunner.java:58)
+	at edu.illinois.cs.testrunner.util.TempFiles$.$anonfun$withTempFile$1(TempFiles.scala:17)
+	at scala.util.Try$.apply(Try.scala:209)
+	at edu.illinois.cs.testrunner.util.TempFiles$.withTempFile(TempFiles.scala:17)
+	at edu.illinois.cs.testrunner.util.TempFiles.withTempFile(TempFiles.scala)
+	at edu.illinois.cs.dt.tools.runner.InstrumentingSmartRunner.runWithCp(InstrumentingSmartRunner.java:54)
+	at edu.illinois.cs.testrunner.runner.Runner.run(Runner.scala:33)
+	at edu.illinois.cs.testrunner.runner.Runner.run$(Runner.scala:33)
+	at edu.illinois.cs.testrunner.runner.SmartRunner.run(SmartRunner.scala:28)
+	at edu.illinois.cs.testrunner.runner.Runner.runList(Runner.scala:28)
+	at edu.illinois.cs.testrunner.runner.Runner.runList$(Runner.scala:27)
+	at edu.illinois.cs.testrunner.runner.SmartRunner.runList(SmartRunner.scala:21)
+	at edu.illinois.cs.dt.tools.detection.DetectorUtil.originalResults(DetectorUtil.java:35)
+	at edu.illinois.cs.dt.tools.detection.detectors.RandomDetector.<init>(RandomDetector.java:29)
+	at edu.illinois.cs.dt.tools.detection.detectors.DetectorFactory.makeDetector(DetectorFactory.java:20)
+	at edu.illinois.cs.dt.tools.plugin.DetectorMojo.detectorExecute(DetectorMojo.java:268)
+	at edu.illinois.cs.dt.tools.plugin.DetectorMojo.lambda$execute$5(DetectorMojo.java:204)
+	at edu.illinois.cs.dt.tools.utility.ErrorLogger.runAndLogError(ErrorLogger.java:17)
+	at edu.illinois.cs.dt.tools.plugin.DetectorMojo.execute(DetectorMojo.java:204)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] --------------< org.apache.ignite:ignite-rocksdb-common >---------------
+[INFO] Building ignite-rocksdb-common 3.0.0-SNAPSHOT                     [8/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/rocksdb-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-rocksdb-common >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-rocksdb-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-rocksdb-common ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/rocksdb-common/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-rocksdb-common ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-rocksdb-common ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/rocksdb-common/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-rocksdb-common ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-rocksdb-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/rocksdb-common/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-rocksdb-common ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-rocksdb-common:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-rocksdb-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/rocksdb-common/target/classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/rocksdb-common/src/main/java/org/apache/ignite/internal/rocksdb/snapshot/RocksSnapshotManager.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/rocksdb-common/src/main/java/org/apache/ignite/internal/rocksdb/snapshot/RocksSnapshotManager.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-rocksdb-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/rocksdb-common/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/rocksdb-common/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-rocksdb-common ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-rocksdb-common ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-rocksdb-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-rocksdb-common ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-rocksdb-common:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Module is not using a supported test framework (probably not JUnit), or there is no test.
+---------------------------------------------------
+Message was:
+Module is not using a supported test framework (probably not JUnit), or there is no test.
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ----------------< org.apache.ignite:ignite-network-api >----------------
+[INFO] Building ignite-network-api 3.0.0-SNAPSHOT                        [9/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/network-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-network-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-network-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-network-api ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/network-api/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-network-api ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-network-api ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/network-api/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-network-api ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-network-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/network-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-network-api ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-network-api:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-network-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 25 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/network-api/target/classes
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-network-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/network-api/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/network-api/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-network-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /tmp/tmp.eG4F7bLCsA/repo/modules/network-api/target/test-classes
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-network-api ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-network-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-network-api ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-network-api:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 5 tests. Time taken: 0.0019998550415039062 seconds
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/network-api/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/network-api/.dtfixingtools/original-order
+[INFO] Getting original results (5 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (0.6 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (0.6 seconds elapsed (1.2 total), 0.9 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (1.2 seconds elapsed (1.8 total), 0.8 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (1.8 seconds elapsed (2.4 total), 0.4 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (2.4 seconds elapsed (3.0 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.eG4F7bLCsA/repo/modules/network-api/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.eG4F7bLCsA/repo/modules/network-api/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] -------< org.apache.ignite:ignite-network-annotation-processor >--------
+[INFO] Building ignite-network-annotation-processor 3.0.0-SNAPSHOT      [10/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/network-annotation-processor/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-network-annotation-processor >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-network-annotation-processor ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-network-annotation-processor ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/network-annotation-processor/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-network-annotation-processor ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-network-annotation-processor ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/network-annotation-processor/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-network-annotation-processor ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-network-annotation-processor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-network-annotation-processor ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-network-annotation-processor:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-network-annotation-processor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/network-annotation-processor/target/classes
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (compile-project) @ ignite-network-annotation-processor ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/network-annotation-processor/target/classes
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-network-annotation-processor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/network-annotation-processor/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/network-annotation-processor/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-network-annotation-processor ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-network-annotation-processor ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-network-annotation-processor <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-network-annotation-processor ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-network-annotation-processor:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 0 tests. Time taken: 0.0 seconds
+INFO: Locating tests...
+INFO: Located 0 tests. Time taken: 0.0 seconds
+INFO: Module is not using a supported test framework (probably not JUnit), or there is no test.
+---------------------------------------------------
+Message was:
+Module is not using a supported test framework (probably not JUnit), or there is no test.
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ------------------< org.apache.ignite:ignite-network >------------------
+[INFO] Building ignite-network 3.0.0-SNAPSHOT                           [11/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/network/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-network >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-network ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-network ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/network/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-network ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-network ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/network/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-network ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-network ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/network/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-network ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-network:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-network ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 136 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/network/target/classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/network/src/main/java/org/apache/ignite/internal/network/serialization/SerializationType.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/network/src/main/java/org/apache/ignite/internal/network/serialization/SerializationType.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/network/src/main/java/org/apache/ignite/internal/network/serialization/ClassDescriptorFactory.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/network/src/main/java/org/apache/ignite/internal/network/serialization/ClassDescriptorFactory.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-network ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 11 resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/network/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-network ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 71 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/network/target/test-classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/network/src/test/java/org/apache/ignite/internal/network/serialization/marshal/DefaultUserObjectMarshallerWithSerializableTest.java: /tmp/tmp.eG4F7bLCsA/repo/modules/network/src/test/java/org/apache/ignite/internal/network/serialization/marshal/DefaultUserObjectMarshallerWithSerializableTest.java uses or overrides a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/network/src/test/java/org/apache/ignite/internal/network/serialization/marshal/DefaultUserObjectMarshallerWithSerializableTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/network/src/test/java/org/apache/ignite/network/serialization/MessageSerializationRegistryImplTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/network/src/test/java/org/apache/ignite/network/serialization/MessageSerializationRegistryImplTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-network ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-network <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-network ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-network:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 0 tests. Time taken: 1.4759998321533203 seconds
+INFO: Locating tests...
+INFO: Located 390 tests. Time taken: 1.5199999809265137 seconds
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/network/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/network/.dtfixingtools/original-order
+[INFO] Getting original results (390 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (12.4 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (12.4 seconds elapsed (24.3 total), 18.6 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (24.3 seconds elapsed (36.4 total), 16.2 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (36.4 seconds elapsed (48.9 total), 9.1 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (48.9 seconds elapsed (64.4 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.eG4F7bLCsA/repo/modules/network/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.eG4F7bLCsA/repo/modules/network/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ----------------< org.apache.ignite:ignite-raft-client >----------------
+[INFO] Building ignite-raft-client 3.0.0-SNAPSHOT                       [12/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/raft-client/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-raft-client >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-raft-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-raft-client ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/raft-client/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-raft-client ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-raft-client ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/raft-client/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-raft-client ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-raft-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/raft-client/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-raft-client ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-raft-client:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-raft-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/raft-client/target/classes
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-raft-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/raft-client/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/raft-client/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-raft-client ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-raft-client ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-raft-client <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-raft-client ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-raft-client:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 0 tests. Time taken: 0.0 seconds
+INFO: Module is not using a supported test framework (probably not JUnit), or there is no test.
+---------------------------------------------------
+Message was:
+Module is not using a supported test framework (probably not JUnit), or there is no test.
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ---------------< org.apache.ignite:ignite-extended-api >----------------
+[INFO] Building ignite-extended-api 3.0.0-SNAPSHOT                      [13/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/extended-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-extended-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-extended-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-extended-api ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/extended-api/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-extended-api ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-extended-api ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/extended-api/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-extended-api ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-extended-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/extended-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-extended-api ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-extended-api:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-extended-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/extended-api/target/classes
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-extended-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/extended-api/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/extended-api/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-extended-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-extended-api ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-extended-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-extended-api ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-extended-api:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Module is not using a supported test framework (probably not JUnit), or there is no test.
+---------------------------------------------------
+Message was:
+Module is not using a supported test framework (probably not JUnit), or there is no test.
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ---------------< org.apache.ignite:ignite-binary-tuple >----------------
+[INFO] Building ignite-binary-tuple 3.0.0-SNAPSHOT                      [14/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-binary-tuple >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-binary-tuple ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-binary-tuple ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-binary-tuple ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-binary-tuple ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-binary-tuple ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-binary-tuple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-binary-tuple ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-binary-tuple:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-binary-tuple ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/target/classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/src/main/java/org/apache/ignite/internal/binarytuple/BinaryTupleCommon.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/src/main/java/org/apache/ignite/internal/binarytuple/BinaryTupleCommon.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-binary-tuple ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-binary-tuple ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/target/test-classes
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-binary-tuple ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-binary-tuple <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-binary-tuple ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-binary-tuple:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 19 tests. Time taken: 0.003000020980834961 seconds
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/.dtfixingtools/original-order
+[INFO] Getting original results (19 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (0.7 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (0.7 seconds elapsed (1.4 total), 1.1 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (1.4 seconds elapsed (2.2 total), 1.0 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (2.2 seconds elapsed (2.9 total), 0.5 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (2.9 seconds elapsed (3.6 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.eG4F7bLCsA/repo/modules/binary-tuple/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ------------------< org.apache.ignite:ignite-schema >-------------------
+[INFO] Building ignite-schema 3.0.0-SNAPSHOT                            [15/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/schema/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-schema >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-schema ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-schema ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/schema/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-schema ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-schema ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/schema/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-schema ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-schema ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-schema ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-schema:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-schema ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 76 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/schema/target/classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/schema/src/main/java/org/apache/ignite/internal/schema/SchemaException.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/schema/src/main/java/org/apache/ignite/internal/schema/SchemaException.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/schema/src/main/java/org/apache/ignite/internal/schema/marshaller/reflection/KvMarshallerImpl.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/schema/src/main/java/org/apache/ignite/internal/schema/marshaller/reflection/KvMarshallerImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-schema ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/schema/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/schema/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-schema ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 76 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/schema/target/test-classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/schema/src/test/java/org/apache/ignite/internal/schema/marshaller/KvMarshallerTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/schema/src/test/java/org/apache/ignite/internal/schema/marshaller/KvMarshallerTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-schema ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-schema <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-schema ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-schema:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 107 tests. Time taken: 0.3469998836517334 seconds
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/schema/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/schema/.dtfixingtools/original-order
+[INFO] Getting original results (107 tests).
+INFO: No passing order for tests (3 runs). Continuing anyway with last run.
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (5.6 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (5.6 seconds elapsed (11.3 total), 8.3 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (11.3 seconds elapsed (17.0 total), 7.5 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (17.0 seconds elapsed (22.6 total), 4.3 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (22.6 seconds elapsed (28.3 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.eG4F7bLCsA/repo/modules/schema/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.eG4F7bLCsA/repo/modules/schema/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ---------------< org.apache.ignite:ignite-transactions >----------------
+[INFO] Building ignite-transactions 3.0.0-SNAPSHOT                      [16/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-transactions >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-transactions ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-transactions ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-transactions ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-transactions ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-transactions ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-transactions ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-transactions ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-transactions:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-transactions ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/target/classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/src/main/java/org/apache/ignite/internal/tx/LockException.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/src/main/java/org/apache/ignite/internal/tx/LockException.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-transactions ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-transactions ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/target/test-classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/src/test/java/org/apache/ignite/internal/tx/AbstractLockManagerTest.java: /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/src/test/java/org/apache/ignite/internal/tx/AbstractLockManagerTest.java uses or overrides a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/src/test/java/org/apache/ignite/internal/tx/AbstractLockManagerTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-transactions ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-transactions <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-transactions ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-transactions:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 28 tests. Time taken: 0.029999971389770508 seconds
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/.dtfixingtools/original-order
+[INFO] Getting original results (28 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (16.6 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (16.6 seconds elapsed (33.2 total), 24.9 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (33.2 seconds elapsed (49.9 total), 22.1 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (49.9 seconds elapsed (66.5 total), 12.5 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (66.5 seconds elapsed (83.0 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.eG4F7bLCsA/repo/modules/transactions/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ----------------< org.apache.ignite:ignite-storage-api >----------------
+[INFO] Building ignite-storage-api 3.0.0-SNAPSHOT                       [17/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-storage-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-storage-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-storage-api ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-storage-api ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-storage-api ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-storage-api ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-storage-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-storage-api ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-storage-api:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-storage-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 38 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/target/classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/src/main/java/org/apache/ignite/internal/storage/TxIdMismatchException.java: /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/src/main/java/org/apache/ignite/internal/storage/TxIdMismatchException.java uses or overrides a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/src/main/java/org/apache/ignite/internal/storage/TxIdMismatchException.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/src/main/java/org/apache/ignite/internal/storage/DataStorageModules.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/src/main/java/org/apache/ignite/internal/storage/DataStorageModules.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-storage-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 2 resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-storage-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 24 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/target/test-classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/src/testFixtures/java/org/apache/ignite/internal/storage/BaseMvStoragesTest.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/src/testFixtures/java/org/apache/ignite/internal/storage/BaseMvStoragesTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/src/testFixtures/java/org/apache/ignite/internal/storage/index/impl/TestIndexRow.java: /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/src/testFixtures/java/org/apache/ignite/internal/storage/index/impl/TestIndexRow.java uses unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/src/testFixtures/java/org/apache/ignite/internal/storage/index/impl/TestIndexRow.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-storage-api ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-storage-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-storage-api ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-storage-api:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 94 tests. Time taken: 0.21399998664855957 seconds
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/.dtfixingtools/original-order
+[INFO] Getting original results (94 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (3.0 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (3.0 seconds elapsed (6.1 total), 4.6 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (6.1 seconds elapsed (9.2 total), 4.1 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (9.2 seconds elapsed (12.2 total), 2.3 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (12.2 seconds elapsed (15.1 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.eG4F7bLCsA/repo/modules/storage-api/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] --------------< org.apache.ignite:ignite-storage-rocksdb >--------------
+[INFO] Building ignite-storage-rocksdb 3.0.0-SNAPSHOT                   [18/18]
+[INFO]   from /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ ignite-storage-rocksdb >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ ignite-storage-rocksdb ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-source) @ ignite-storage-rocksdb ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/src/integrationTest/java added.
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-resource (add-test-resource) @ ignite-storage-rocksdb ---
+[INFO] 
+[INFO] --- build-helper:3.2.0:add-test-source (add-test-fixtures) @ ignite-storage-rocksdb ---
+[INFO] Test Source directory: /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/src/testFixtures/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ ignite-storage-rocksdb ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ ignite-storage-rocksdb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- flatten:1.2.2:flatten (flatten) @ ignite-storage-rocksdb ---
+[INFO] Generating flattened POM of project org.apache.ignite:ignite-storage-rocksdb:jar:3.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ ignite-storage-rocksdb ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 19 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/target/classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/src/main/java/org/apache/ignite/internal/storage/rocksdb/RocksDbMvPartitionStorage.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/src/main/java/org/apache/ignite/internal/storage/rocksdb/RocksDbMvPartitionStorage.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/target/generated-sources/annotations/org/apache/ignite/internal/storage/rocksdb/configuration/schema/RocksDbStorageEngineConfiguration.java: /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/target/generated-sources/annotations/org/apache/ignite/internal/storage/rocksdb/configuration/schema/RocksDbStorageEngineConfiguration.java uses unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/target/generated-sources/annotations/org/apache/ignite/internal/storage/rocksdb/configuration/schema/RocksDbStorageEngineConfiguration.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ ignite-storage-rocksdb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/src/test/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/src/integrationTest/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ ignite-storage-rocksdb ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/target/test-classes
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/src/test/java/org/apache/ignite/internal/storage/rocksdb/RocksDbMvTableStorageTest.java: /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/src/test/java/org/apache/ignite/internal/storage/rocksdb/RocksDbMvTableStorageTest.java uses or overrides a deprecated API.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/src/test/java/org/apache/ignite/internal/storage/rocksdb/RocksDbMvTableStorageTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/src/test/java/org/apache/ignite/internal/storage/rocksdb/configuration/RocksDbDataRegionValidatorImplTest.java: /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/src/test/java/org/apache/ignite/internal/storage/rocksdb/configuration/RocksDbDataRegionValidatorImplTest.java uses unchecked or unsafe operations.
+[INFO] /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/src/test/java/org/apache/ignite/internal/storage/rocksdb/configuration/RocksDbDataRegionValidatorImplTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- modernizer:2.3.0:modernizer (modernizer) @ ignite-storage-rocksdb ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ ignite-storage-rocksdb <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ ignite-storage-rocksdb ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.ignite:ignite-storage-rocksdb:3.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 87 tests. Time taken: 0.06299996376037598 seconds
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/.dtfixingtools/original-order
+[INFO] Getting original results (87 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (5.7 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (5.7 seconds elapsed (11.4 total), 8.6 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (11.4 seconds elapsed (17.1 total), 7.6 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (17.1 seconds elapsed (23.1 total), 4.3 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (23.1 seconds elapsed (28.7 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.eG4F7bLCsA/repo/modules/storage-rocksdb/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for ignite-bytecode 3.0.0-SNAPSHOT:
+[INFO] 
+[INFO] ignite-bytecode .................................... SUCCESS [  7.311 s]
+[INFO] ignite-core ........................................ SUCCESS [03:48 min]
+[INFO] ignite-configuration-api ........................... SUCCESS [  0.140 s]
+[INFO] ignite-configuration-annotation-processor .......... SUCCESS [ 36.007 s]
+[INFO] ignite-api ......................................... SUCCESS [  5.007 s]
+[INFO] ignite-rest-api .................................... SUCCESS [  0.879 s]
+[INFO] ignite-configuration ............................... SUCCESS [  5.976 s]
+[INFO] ignite-rocksdb-common .............................. SUCCESS [  0.094 s]
+[INFO] ignite-network-api ................................. SUCCESS [  3.758 s]
+[INFO] ignite-network-annotation-processor ................ SUCCESS [  0.330 s]
+[INFO] ignite-network ..................................... SUCCESS [01:23 min]
+[INFO] ignite-raft-client ................................. SUCCESS [  0.138 s]
+[INFO] ignite-extended-api ................................ SUCCESS [  0.171 s]
+[INFO] ignite-binary-tuple ................................ SUCCESS [  4.734 s]
+[INFO] ignite-schema ...................................... SUCCESS [ 47.703 s]
+[INFO] ignite-transactions ................................ SUCCESS [01:40 min]
+[INFO] ignite-storage-api ................................. SUCCESS [ 19.097 s]
+[INFO] ignite-storage-rocksdb ............................. SUCCESS [ 35.302 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  09:40 min
+[INFO] Finished at: 2026-11-10T19:20:08Z
+[INFO] ------------------------------------------------------------------------

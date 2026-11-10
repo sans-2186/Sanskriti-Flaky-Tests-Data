@@ -1,0 +1,3 @@
+url=https://github.com/apache/fury
+sha=9295e58ae706a3734f6fa80704c41502ba73131e
+module=fury-core

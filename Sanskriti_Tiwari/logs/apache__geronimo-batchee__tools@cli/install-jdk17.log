@@ -1,0 +1,123 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] BatchEE                                                            [pom]
+[INFO] BatchEE :: JBatch                                                  [jar]
+[INFO] BatchEE :: Tools                                                   [pom]
+[INFO] BatchEE :: GUI                                                     [pom]
+[INFO] BatchEE :: GUI :: JAXRS                                            [pom]
+[INFO] BatchEE :: GUI :: JAXRS :: Common                                  [jar]
+[INFO] BatchEE :: GUI :: JAXRS :: Client                                  [jar]
+[INFO] BatchEE :: Tools :: CLI                                            [jar]
+[INFO] 
+[INFO] ---------------------< org.apache.batchee:batchee >---------------------
+[INFO] Building BatchEE 0.6-SNAPSHOT                                      [1/8]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:1.1.1:enforce (enforce-java) @ batchee ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat:0.10:check (default) @ batchee ---
+[INFO] 57 implicit excludes (use -debug for more details).
+[INFO] Exclude: **/*/MANIFEST.MF
+[INFO] Exclude: .git
+[INFO] Exclude: .gitignore
+[INFO] Exclude: derby.log
+[INFO] Exclude: **/META-INF/services/*
+[INFO] Exclude: **/bootstrap-*
+[INFO] Exclude: **/js/jquery-*
+[INFO] Exclude: **/*.json
+[INFO] Exclude: **/batchee-site-generated/*.md
+[INFO] 10 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 10 licence.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ batchee ---
+[INFO] 
+[INFO] --- checkstyle:2.12:check (verify-style) @ batchee ---
+[INFO] 
+[INFO] --- site:3.5.1:attach-descriptor (attach-descriptor) @ batchee ---
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ batchee ---
+[INFO] Installing /tmp/tmp.YsrRCVjMBn/repo/pom.xml to /home/runner/.m2/repository/org/apache/batchee/batchee/0.6-SNAPSHOT/batchee-0.6-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.YsrRCVjMBn/repo/target/batchee-0.6-SNAPSHOT-site.xml to /home/runner/.m2/repository/org/apache/batchee/batchee/0.6-SNAPSHOT/batchee-0.6-SNAPSHOT-site.xml
+[INFO] 
+[INFO] -----------------< org.apache.batchee:batchee-jbatch >------------------
+[INFO] Building BatchEE :: JBatch 0.6-SNAPSHOT                            [2/8]
+[INFO]   from jbatch/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:1.1.1:enforce (enforce-java) @ batchee-jbatch ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- apache-rat:0.10:check (default) @ batchee-jbatch ---
+[INFO] 51 implicit excludes (use -debug for more details).
+[INFO] Exclude: **/*/MANIFEST.MF
+[INFO] Exclude: .git
+[INFO] Exclude: .gitignore
+[INFO] Exclude: derby.log
+[INFO] Exclude: **/META-INF/services/*
+[INFO] Exclude: **/bootstrap-*
+[INFO] Exclude: **/js/jquery-*
+[INFO] Exclude: **/*.json
+[INFO] Exclude: **/batchee-site-generated/*.md
+[INFO] 238 resources included (use -debug for more details)
+[INFO] Rat check: Summary of files. Unapproved: 0 unknown: 0 generated: 0 approved: 206 licence.
+[INFO] 
+[INFO] --- templating:1.0.0:filter-sources (filter-src) @ batchee-jbatch ---
+[INFO] Coping files with filtering to temporary directory.
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] No files needs to be copied to output directory. Up to date: /tmp/tmp.YsrRCVjMBn/repo/jbatch/target/generated-sources/java-templates
+[INFO] Source directory: /tmp/tmp.YsrRCVjMBn/repo/jbatch/target/generated-sources/java-templates added.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ batchee-jbatch ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ batchee-jbatch ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to xsd
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ batchee-jbatch ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 195 source files to /tmp/tmp.YsrRCVjMBn/repo/jbatch/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] Source option 6 is no longer supported. Use 7 or later.
+[ERROR] Target option 6 is no longer supported. Use 7 or later.
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for BatchEE 0.6-SNAPSHOT:
+[INFO] 
+[INFO] BatchEE ............................................ SUCCESS [  3.123 s]
+[INFO] BatchEE :: JBatch .................................. FAILURE [  1.877 s]
+[INFO] BatchEE :: Tools ................................... SKIPPED
+[INFO] BatchEE :: GUI ..................................... SKIPPED
+[INFO] BatchEE :: GUI :: JAXRS ............................ SKIPPED
+[INFO] BatchEE :: GUI :: JAXRS :: Common .................. SKIPPED
+[INFO] BatchEE :: GUI :: JAXRS :: Client .................. SKIPPED
+[INFO] BatchEE :: Tools :: CLI ............................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.321 s
+[INFO] Finished at: 2026-11-10T19:02:56Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project batchee-jbatch: Compilation failure: Compilation failure: 
+[ERROR] Source option 6 is no longer supported. Use 7 or later.
+[ERROR] Target option 6 is no longer supported. Use 7 or later.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :batchee-jbatch

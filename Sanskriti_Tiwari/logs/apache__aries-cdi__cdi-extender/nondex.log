@@ -1,0 +1,1961 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Aries CDI - OSGi CDI Integration Project                    [pom]
+[INFO] Apache Aries CDI - Extra Annotations                               [jar]
+[INFO] Apache Aries CDI - SPI                                             [jar]
+[INFO] Apache Aries CDI - SPI classes for Portable Extensions             [jar]
+[INFO] Apache Aries CDI - CDI Component Runtime (CCR)                     [jar]
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom (5.2 kB at 21 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom (7.2 kB at 298 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar (41 kB at 1.4 MB/s)
+[INFO] 
+[INFO] -------------< org.apache.aries.cdi:org.apache.aries.cdi >--------------
+[INFO] Building Apache Aries CDI - OSGi CDI Integration Project 1.1.5-SNAPSHOT [1/5]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ org.apache.aries.cdi >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ org.apache.aries.cdi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ org.apache.aries.cdi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ org.apache.aries.cdi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ org.apache.aries.cdi ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ org.apache.aries.cdi <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ org.apache.aries.cdi ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom (3.4 kB at 177 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom (18 kB at 839 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom (2.2 kB at 89 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom (9.3 kB at 515 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom (2.3 kB at 115 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom (8.3 kB at 436 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom (24 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom (4.0 kB at 224 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom (22 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom (1.8 kB at 96 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom (2.6 kB at 138 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom (1.7 kB at 83 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom (748 B at 42 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom (3.8 kB at 251 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom (22 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom (1.9 kB at 111 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom (2.1 kB at 102 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom (2.7 kB at 149 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom (4.2 kB at 208 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom (14 kB at 654 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom (2.6 kB at 125 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom (14 kB at 655 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom (3.1 kB at 150 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom (5.7 kB at 283 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom (7.7 kB at 452 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom (4.0 kB at 224 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom (1.8 kB at 83 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom (29 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom (2.0 kB at 99 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom (2.1 kB at 96 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom (3.4 kB at 168 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom (6.1 kB at 381 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom (7.3 kB at 333 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom (2.6 kB at 138 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom (20 kB at 720 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom (8.1 kB at 352 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom (4.9 kB at 289 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.0/all-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.0/all-1.2.0.pom (18 kB at 855 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom (4.7 kB at 314 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom (4.0 kB at 167 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom (1.5 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar (63 kB at 2.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar (10 kB at 360 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar (15 kB at 323 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar (12 kB at 198 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar (27 kB at 359 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar (55 kB at 696 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar (44 kB at 504 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar (638 kB at 7.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar (43 kB at 453 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar (177 kB at 1.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar (31 kB at 269 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar (67 kB at 586 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar (173 kB at 1.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar (136 kB at 1.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar (205 kB at 1.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar (147 kB at 966 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar (424 kB at 2.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar (378 kB at 2.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar (4.3 kB at 26 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar (47 kB at 259 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar (2.3 MB at 12 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar (435 kB at 2.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar (247 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar (164 kB at 837 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar (35 kB at 172 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar (128 kB at 619 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar (2.1 kB at 10 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar (563 kB at 2.6 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar (57 kB at 251 kB/s)
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_355Egeub1A8FREoxIHIFjNOq5a9uID2RLAoJ2H3Zyzo=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/.nondex/clean_355Egeub1A8FREoxIHIFjNOq5a9uID2RLAoJ2H3Zyzo=
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12/surefire-junit3-2.12.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12/surefire-junit3-2.12.pom (1.7 kB at 90 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12/surefire-providers-2.12.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12/surefire-providers-2.12.pom (2.3 kB at 78 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12/surefire-junit3-2.12.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit3/2.12/surefire-junit3-2.12.jar (26 kB at 424 kB/s)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/.nondex
+nondexExecid=RgFCD3E33FUCJ5M4LhPZqJ5vl0BMrJhW+FzOr1FPR+4=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/.nondex/RgFCD3E33FUCJ5M4LhPZqJ5vl0BMrJhW+FzOr1FPR+4=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/.nondex
+nondexExecid=fq7JnufVDGIK2Z8qkbwqkV4ue0mgpecBqDqKzZ0ujY=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/.nondex/fq7JnufVDGIK2Z8qkbwqkV4ue0mgpecBqDqKzZ0ujY=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/.nondex
+nondexExecid=kB29a1yfrkysgPIDaRNjAmk2Q8isjuLVab3Xd6gs7g=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/.nondex/kB29a1yfrkysgPIDaRNjAmk2Q8isjuLVab3Xd6gs7g=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/.nondex" -DnondexExecid=RgFCD3E33FUCJ5M4LhPZqJ5vl0BMrJhW+FzOr1FPR+4= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/.nondex" -DnondexExecid=fq7JnufVDGIK2Z8qkbwqkV4ue0mgpecBqDqKzZ0ujY= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/.nondex" -DnondexExecid=kB29a1yfrkysgPIDaRNjAmk2Q8isjuLVab3Xd6gs7g= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.65HmStx8qY/repo/.nondex/RgFCD3E33FUCJ5M4LhPZqJ5vl0BMrJhW+FzOr1FPR+4=/test_results.html
+[INFO] [NonDex] The id of this run is: RgFCD3E33FUCJ5M4LhPZqJ5vl0BMrJhW+FzOr1FPR+4=
+[INFO] 
+[INFO] ----------< org.apache.aries.cdi:org.apache.aries.cdi.extra >-----------
+[INFO] Building Apache Aries CDI - Extra Annotations 1.1.5-SNAPSHOT       [2/5]
+[INFO]   from cdi-extra/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ org.apache.aries.cdi.extra >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ org.apache.aries.cdi.extra ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ org.apache.aries.cdi.extra ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ org.apache.aries.cdi.extra ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ org.apache.aries.cdi.extra ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ org.apache.aries.cdi.extra ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.65HmStx8qY/repo/cdi-extra/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ org.apache.aries.cdi.extra ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- bnd:5.3.0:bnd-process (bnd-process) @ org.apache.aries.cdi.extra ---
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ org.apache.aries.cdi.extra <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ org.apache.aries.cdi.extra ---
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_hwdNjsARL14w58p6Jpk3lQ11SLjSVVC7nYBjeBksJg=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex/clean_hwdNjsARL14w58p6Jpk3lQ11SLjSVVC7nYBjeBksJg=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex
+nondexExecid=DuIdZizKLmWOomw6DZ1a9Qrf+1zbfdS4OvAKhpkViTw=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex/DuIdZizKLmWOomw6DZ1a9Qrf+1zbfdS4OvAKhpkViTw=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex
+nondexExecid=oRMNsPEclarAE8Cj4Y+BbQ0QAbqZRcTzjHWKoSEzN8=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex/oRMNsPEclarAE8Cj4Y+BbQ0QAbqZRcTzjHWKoSEzN8=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex
+nondexExecid=TSMQzUnAyOlfpionrLNP0BbYFsnWenlvmgsDFaMNWEw=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex/TSMQzUnAyOlfpionrLNP0BbYFsnWenlvmgsDFaMNWEw=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex" -DnondexExecid=DuIdZizKLmWOomw6DZ1a9Qrf+1zbfdS4OvAKhpkViTw= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex" -DnondexExecid=oRMNsPEclarAE8Cj4Y+BbQ0QAbqZRcTzjHWKoSEzN8= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex" -DnondexExecid=TSMQzUnAyOlfpionrLNP0BbYFsnWenlvmgsDFaMNWEw= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.65HmStx8qY/repo/cdi-extra/.nondex/DuIdZizKLmWOomw6DZ1a9Qrf+1zbfdS4OvAKhpkViTw=/test_results.html
+[INFO] [NonDex] The id of this run is: DuIdZizKLmWOomw6DZ1a9Qrf+1zbfdS4OvAKhpkViTw=
+[INFO] 
+[INFO] -----------< org.apache.aries.cdi:org.apache.aries.cdi.spi >------------
+[INFO] Building Apache Aries CDI - SPI 1.1.5-SNAPSHOT                     [3/5]
+[INFO]   from cdi-spi/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ org.apache.aries.cdi.spi >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ org.apache.aries.cdi.spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ org.apache.aries.cdi.spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ org.apache.aries.cdi.spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ org.apache.aries.cdi.spi ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ org.apache.aries.cdi.spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.65HmStx8qY/repo/cdi-spi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ org.apache.aries.cdi.spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- bnd:5.3.0:bnd-process (bnd-process) @ org.apache.aries.cdi.spi ---
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ org.apache.aries.cdi.spi <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ org.apache.aries.cdi.spi ---
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_z9FuN0oLaD7CJ5ixw1sqNB8z5UuWnzYJQjYQnq+zc=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex/clean_z9FuN0oLaD7CJ5ixw1sqNB8z5UuWnzYJQjYQnq+zc=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex
+nondexExecid=k32HVeyo4nTvNBvnxxYKVmdkARsKdfZGgTcsHx3NGQo=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex/k32HVeyo4nTvNBvnxxYKVmdkARsKdfZGgTcsHx3NGQo=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex
+nondexExecid=HKA8tcgKvXGaUm3YcLKDLJPTr4JurqoFIa3uSpKo8=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex/HKA8tcgKvXGaUm3YcLKDLJPTr4JurqoFIa3uSpKo8=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex
+nondexExecid=TiqJb4skQnWmRy42Vu6y1F8piYSilCcENdBRdfHPzk=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex/TiqJb4skQnWmRy42Vu6y1F8piYSilCcENdBRdfHPzk=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex" -DnondexExecid=k32HVeyo4nTvNBvnxxYKVmdkARsKdfZGgTcsHx3NGQo= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex" -DnondexExecid=HKA8tcgKvXGaUm3YcLKDLJPTr4JurqoFIa3uSpKo8= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex" -DnondexExecid=TiqJb4skQnWmRy42Vu6y1F8piYSilCcENdBRdfHPzk= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.65HmStx8qY/repo/cdi-spi/.nondex/k32HVeyo4nTvNBvnxxYKVmdkARsKdfZGgTcsHx3NGQo=/test_results.html
+[INFO] [NonDex] The id of this run is: k32HVeyo4nTvNBvnxxYKVmdkARsKdfZGgTcsHx3NGQo=
+[INFO] 
+[INFO] ------< org.apache.aries.cdi:org.apache.aries.cdi.extension.spi >-------
+[INFO] Building Apache Aries CDI - SPI classes for Portable Extensions 1.1.5-SNAPSHOT [4/5]
+[INFO]   from cdi-extension-spi/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ org.apache.aries.cdi.extension.spi >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ org.apache.aries.cdi.extension.spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ org.apache.aries.cdi.extension.spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ org.apache.aries.cdi.extension.spi ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ org.apache.aries.cdi.extension.spi ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ org.apache.aries.cdi.extension.spi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ org.apache.aries.cdi.extension.spi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- bnd:5.3.0:bnd-process (bnd-process) @ org.apache.aries.cdi.extension.spi ---
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ org.apache.aries.cdi.extension.spi <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ org.apache.aries.cdi.extension.spi ---
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_pc3uwoyvfPwrjFgdxm5dt2aba7DCJa8pWmNmwbIPjQ=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex/clean_pc3uwoyvfPwrjFgdxm5dt2aba7DCJa8pWmNmwbIPjQ=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex
+nondexExecid=fyVXHG1hf9tgB2n+kzOZbx3ldX4M6xOCZIDx4OPMkGM=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex/fyVXHG1hf9tgB2n+kzOZbx3ldX4M6xOCZIDx4OPMkGM=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex
+nondexExecid=83eOUuklYfLYd69d5m4KQHZLXawpMTUYmGauujquVhY=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex/83eOUuklYfLYd69d5m4KQHZLXawpMTUYmGauujquVhY=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex
+nondexExecid=msUBAdEPT82bqkJ5PPdE+6oTyx1cs884eDefErMZN08=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex/msUBAdEPT82bqkJ5PPdE+6oTyx1cs884eDefErMZN08=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex" -DnondexExecid=fyVXHG1hf9tgB2n+kzOZbx3ldX4M6xOCZIDx4OPMkGM= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex" -DnondexExecid=83eOUuklYfLYd69d5m4KQHZLXawpMTUYmGauujquVhY= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex" -DnondexExecid=msUBAdEPT82bqkJ5PPdE+6oTyx1cs884eDefErMZN08= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.65HmStx8qY/repo/cdi-extension-spi/.nondex/fyVXHG1hf9tgB2n+kzOZbx3ldX4M6xOCZIDx4OPMkGM=/test_results.html
+[INFO] [NonDex] The id of this run is: fyVXHG1hf9tgB2n+kzOZbx3ldX4M6xOCZIDx4OPMkGM=
+[INFO] 
+[INFO] ---------< org.apache.aries.cdi:org.apache.aries.cdi.extender >---------
+[INFO] Building Apache Aries CDI - CDI Component Runtime (CCR) 1.1.5-SNAPSHOT [5/5]
+[INFO]   from cdi-extender/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ org.apache.aries.cdi.extender >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ org.apache.aries.cdi.extender ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ org.apache.aries.cdi.extender ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ org.apache.aries.cdi.extender ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ org.apache.aries.cdi.extender ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ org.apache.aries.cdi.extender ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.65HmStx8qY/repo/cdi-extender/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ org.apache.aries.cdi.extender ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- bnd:5.3.0:bnd-process (bnd-process) @ org.apache.aries.cdi.extender ---
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ org.apache.aries.cdi.extender ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ org.apache.aries.cdi.extender ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ org.apache.aries.cdi.extender <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ org.apache.aries.cdi.extender ---
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_Aa9BiMjh+KDYPuyJX2CCSXuSBCq5GxbaKYpWiYLKw0=
+nondexLogging=CONFIG
+test=
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex/clean_Aa9BiMjh+KDYPuyJX2CCSXuSBCq5GxbaKYpWiYLKw0=
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12/surefire-junit4-2.12.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12/surefire-junit4-2.12.pom (2.4 kB at 38 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12/surefire-junit4-2.12.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12/surefire-junit4-2.12.jar (34 kB at 554 kB/s)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.aries.cdi.container.test.ContainerListenerTest
+--------- TEST: class org.apache.aries.cdi.container.test.ContainerListenerTest#ensureListenerIsCalledForFailedStop [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.test.ContainerListenerTest#ensureListenerIsCalledForSuccesses [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.test.ContainerListenerTest#ensureListenerIsCalledForFailedStartup [PASSED]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.978 sec
+Running org.apache.aries.cdi.container.internal.phase.ConfigurationListenerTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ConfigurationListenerTest#configuration_tracking [PASSED]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.674 sec
+Running org.apache.aries.cdi.container.internal.phase.ContainerBootstrapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.005 sec
+Running org.apache.aries.cdi.container.internal.phase.ExtensionPhaseTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ExtensionPhaseTest#extensions_tracking [PASSED]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec
+Running org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#extensions_invalidsyntax [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#extensions_simple [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#initial [PASSED]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+Running org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest#test_D_R_M_U_Service [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest#test_S_R_M_U_Service [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest#reference_tracking [PASSED]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.668 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withoutServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_optional_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withoutServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_optional_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_optional [PASSED]
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 sec
+Running org.apache.aries.cdi.container.internal.model.MapsTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.MapsTest#checkMerge_1 [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.MapsTest#checkMerge_2 [PASSED]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_instanceWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#instanceWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#instanceWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_instanceWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_wrongtype [PASSED]
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withServiceDefined_wrongtype [PASSED]
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithoutServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wildcard_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithoutServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#instanceWithServiceType [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithServiceType_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_supertype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_A [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_B [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_C [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_D [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_E [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_F [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wildcard_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithServiceType_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithoutServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithoutServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#instanceWithoutServiceType [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_A [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_B [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_C [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_D [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_E [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_F [PASSED]
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withServiceDefined [PASSED]
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorListFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooBar [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorCollectionFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooOptional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooFooNamed [PASSED]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec
+Running org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorListFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooBar [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorCollectionFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooOptional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooFooNamed [PASSED]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec
+Running org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorListFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooBar [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorCollectionFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooOptional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooFooNamed [PASSED]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 sec
+Running org.apache.aries.cdi.container.internal.util.AnnotatesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+
+Results :
+
+Tests run: 222, Failures: 0, Errors: 0, Skipped: 1
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex
+nondexExecid=emOPOO5euipOSV3Wf1yCcPgL++D4dka8HAavXBbs8s=
+nondexLogging=CONFIG
+test=
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex/emOPOO5euipOSV3Wf1yCcPgL++D4dka8HAavXBbs8s=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.aries.cdi.container.internal.util.AnnotatesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_instanceWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#instanceWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#instanceWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_instanceWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_wrongtype [PASSED]
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withServiceDefined [PASSED]
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withoutServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_optional_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withoutServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_optional_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_optional [PASSED]
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withServiceDefined_wrongtype [PASSED]
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+Running org.apache.aries.cdi.container.internal.model.MapsTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.MapsTest#checkMerge_1 [FAILED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.MapsTest#checkMerge_2 [PASSED]
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.087 sec <<< FAILURE!
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithoutServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wildcard_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithoutServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#instanceWithServiceType [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithServiceType_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_supertype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_A [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_B [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_C [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_D [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_E [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_F [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wildcard_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithServiceType_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithoutServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithoutServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#instanceWithoutServiceType [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_A [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_B [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_C [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_D [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_E [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_F [PASSED]
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Running org.apache.aries.cdi.container.internal.phase.ConfigurationListenerTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ConfigurationListenerTest#configuration_tracking [PASSED]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.515 sec
+Running org.apache.aries.cdi.container.internal.phase.ContainerBootstrapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 sec
+Running org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest#test_D_R_M_U_Service [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest#test_S_R_M_U_Service [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest#reference_tracking [PASSED]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.708 sec
+Running org.apache.aries.cdi.container.internal.phase.ExtensionPhaseTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ExtensionPhaseTest#extensions_tracking [PASSED]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 sec
+Running org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#extensions_invalidsyntax [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#extensions_simple [FAILED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#initial [PASSED]
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.086 sec <<< FAILURE!
+Running org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorListFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooBar [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorCollectionFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooOptional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooFooNamed [PASSED]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 sec
+Running org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorListFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooBar [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorCollectionFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooOptional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooFooNamed [PASSED]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 sec
+Running org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorListFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooBar [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorCollectionFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooOptional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooFooNamed [PASSED]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.316 sec
+Running org.apache.aries.cdi.container.test.ContainerListenerTest
+--------- TEST: class org.apache.aries.cdi.container.test.ContainerListenerTest#ensureListenerIsCalledForFailedStop [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.test.ContainerListenerTest#ensureListenerIsCalledForSuccesses [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.test.ContainerListenerTest#ensureListenerIsCalledForFailedStartup [PASSED]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec
+
+Results :
+
+Failed tests:   checkMerge_1(org.apache.aries.cdi.container.internal.model.MapsTest): expected:<{a=[foo, bar, baz], b=[1, 1, 1, 2, 2], c=true, cpt3=true}> but was:<{cpt3=true, b=[2, 2, 1, 1, 1], c=true, a=[baz, foo, bar]}>
+  extensions_simple(org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest): expected:<(&(f[oo=name])(service.bundleid=1...> but was:<(&(f[um=bar])(service.bundleid=1...>
+
+Tests run: 222, Failures: 2, Errors: 0, Skipped: 1
+
+INFO: Surefire failed when running tests for emOPOO5euipOSV3Wf1yCcPgL++D4dka8HAavXBbs8s=
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex
+nondexExecid=D+3xSmUXsdzmtAuwS2Ef1JkQy9tjFcM2BwFyjTzyIP0=
+nondexLogging=CONFIG
+test=
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex/D+3xSmUXsdzmtAuwS2Ef1JkQy9tjFcM2BwFyjTzyIP0=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorListFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooBar [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorCollectionFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooOptional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooFooNamed [PASSED]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.09 sec
+Running org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorListFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooBar [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorCollectionFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooOptional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooFooNamed [PASSED]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.265 sec
+Running org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorListFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooBar [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorCollectionFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooOptional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooFooNamed [PASSED]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.239 sec
+Running org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#extensions_invalidsyntax [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#extensions_simple [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#initial [PASSED]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec
+Running org.apache.aries.cdi.container.internal.phase.ConfigurationListenerTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ConfigurationListenerTest#configuration_tracking [PASSED]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.684 sec
+Running org.apache.aries.cdi.container.internal.phase.ContainerBootstrapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec
+Running org.apache.aries.cdi.container.internal.phase.ExtensionPhaseTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ExtensionPhaseTest#extensions_tracking [PASSED]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 sec
+Running org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest#test_D_R_M_U_Service [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest#test_S_R_M_U_Service [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest#reference_tracking [PASSED]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.692 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withoutServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_optional_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withoutServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_optional_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_optional [PASSED]
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_instanceWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#instanceWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#instanceWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_instanceWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_wrongtype [PASSED]
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withServiceDefined_wrongtype [PASSED]
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+Running org.apache.aries.cdi.container.internal.model.MapsTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.MapsTest#checkMerge_1 [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.MapsTest#checkMerge_2 [PASSED]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withServiceDefined [PASSED]
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithoutServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wildcard_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithoutServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#instanceWithServiceType [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithServiceType_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_supertype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_A [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_B [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_C [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_D [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_E [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_F [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wildcard_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithServiceType_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithoutServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithoutServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#instanceWithoutServiceType [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_A [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_B [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_C [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_D [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_E [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_F [PASSED]
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Running org.apache.aries.cdi.container.internal.util.AnnotatesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running org.apache.aries.cdi.container.test.ContainerListenerTest
+--------- TEST: class org.apache.aries.cdi.container.test.ContainerListenerTest#ensureListenerIsCalledForFailedStop [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.test.ContainerListenerTest#ensureListenerIsCalledForSuccesses [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.test.ContainerListenerTest#ensureListenerIsCalledForFailedStartup [PASSED]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.08 sec
+
+Results :
+
+Tests run: 222, Failures: 0, Errors: 0, Skipped: 1
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex
+nondexJarDir=/tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex
+nondexExecid=0dUJeSN8QPlnNBjePZzwfnaK5we3YjepSsKdzMcAE=
+nondexLogging=CONFIG
+test=
+[INFO] Surefire report directory: /tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex/0dUJeSN8QPlnNBjePZzwfnaK5we3YjepSsKdzMcAE=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.aries.cdi.container.internal.phase.ExtensionPhaseTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ExtensionPhaseTest#extensions_tracking [PASSED]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.99 sec
+Running org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#extensions_invalidsyntax [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#extensions_simple [FAILED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#initial [PASSED]
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.112 sec <<< FAILURE!
+Running org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest#test_D_R_M_U_Service [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest#test_S_R_M_U_Service [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ContainerReferencesTest#reference_tracking [PASSED]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.739 sec
+Running org.apache.aries.cdi.container.internal.phase.ConfigurationListenerTest
+--------- TEST: class org.apache.aries.cdi.container.internal.phase.ConfigurationListenerTest#configuration_tracking [PASSED]
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.65 sec
+Running org.apache.aries.cdi.container.internal.phase.ContainerBootstrapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.001 sec
+Running org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorListFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooBar [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorCollectionFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooOptional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_dynamic_reluctant_Test#test_CtorFooFooNamed [PASSED]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 sec
+Running org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorListFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooBar [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorCollectionFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooOptional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_reluctant_Test#test_CtorFooFooNamed [PASSED]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec
+Running org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorListFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooBar [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorCollectionFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooOptional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFoo [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.container.Discovery_Ctor_static_greedy_Test#test_CtorFooFooNamed [PASSED]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.204 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithoutServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wildcard_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithoutServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#instanceWithServiceType [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithServiceType_typed_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithServiceType_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_supertype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_A [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_B [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_C [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_D [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_E [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wrongKeyType_F [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_wildcard_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithServiceType_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#listWithoutServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#collectionWithoutServiceType_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#instanceWithoutServiceType [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_A [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_B [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_C [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_D [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_E [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_TupleTest#withoutServiceType_wrongKeyType_F [PASSED]
+Tests run: 34, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+Running org.apache.aries.cdi.container.internal.model.MapsTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.MapsTest#checkMerge_1 [FAILED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.MapsTest#checkMerge_2 [PASSED]
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec <<< FAILURE!
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_listWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#withoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithoutServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#listWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_collectionWithServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#collectionWithServiceDefined_b [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_PropertiesTest#p_withServiceDefined [PASSED]
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_instanceWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#instanceWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#instanceWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_instanceWithoutServiceDefined [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_BeanServiceObjectsTest#p_withServiceDefined_wrongtype [PASSED]
+Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withoutServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_listwithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#listwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withServiceDefined_optional_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#collectionwithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#withoutServiceDefined_optional [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_optional_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_collectionwithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceTest#p_withServiceDefined_optional [PASSED]
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+Running org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithoutServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_listWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithoutServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#withoutServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withServiceDefined_raw [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_collectionWithServiceDefined_typed [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#listWithServiceDefined_wildcard [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#collectionWithServiceDefined_wrongtype [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.internal.model.ReferenceModel_ServiceReferenceTest#p_withServiceDefined_wrongtype [PASSED]
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec
+Running org.apache.aries.cdi.container.internal.util.AnnotatesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running org.apache.aries.cdi.container.test.ContainerListenerTest
+--------- TEST: class org.apache.aries.cdi.container.test.ContainerListenerTest#ensureListenerIsCalledForFailedStop [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.test.ContainerListenerTest#ensureListenerIsCalledForSuccesses [PASSED]
+--------- TEST: class org.apache.aries.cdi.container.test.ContainerListenerTest#ensureListenerIsCalledForFailedStartup [PASSED]
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec
+
+Results :
+
+Failed tests:   extensions_simple(org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest): expected:<(&(f[oo=name])(service.bundleid=1...> but was:<(&(f[um=bar])(service.bundleid=1...>
+  checkMerge_1(org.apache.aries.cdi.container.internal.model.MapsTest): expected:<{a=[foo, bar, baz], b=[1, 1, 1, 2, 2], c=true, cpt3=true}> but was:<{b=[2, 2, 1, 1, 1], cpt3=true, c=true, a=[baz, foo, bar]}>
+
+Tests run: 222, Failures: 2, Errors: 0, Skipped: 1
+
+INFO: Surefire failed when running tests for 0dUJeSN8QPlnNBjePZzwfnaK5we3YjepSsKdzMcAE=
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex" -DnondexExecid=emOPOO5euipOSV3Wf1yCcPgL++D4dka8HAavXBbs8s= -DnondexLogging=CONFIG
+[WARNING] org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#extensions_simple
+[WARNING] org.apache.aries.cdi.container.internal.model.MapsTest#checkMerge_1
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex" -DnondexExecid=D+3xSmUXsdzmtAuwS2Ef1JkQy9tjFcM2BwFyjTzyIP0= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex" -DnondexJarDir="/tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex" -DnondexExecid=0dUJeSN8QPlnNBjePZzwfnaK5we3YjepSsKdzMcAE= -DnondexLogging=CONFIG
+[WARNING] org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#extensions_simple
+[WARNING] org.apache.aries.cdi.container.internal.model.MapsTest#checkMerge_1
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] org.apache.aries.cdi.container.internal.phase.CDIBundlePhaseTest#extensions_simple
+[INFO] org.apache.aries.cdi.container.internal.model.MapsTest#checkMerge_1
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex/emOPOO5euipOSV3Wf1yCcPgL++D4dka8HAavXBbs8s=/test_results.html
+[INFO] [NonDex] The id of this run is: emOPOO5euipOSV3Wf1yCcPgL++D4dka8HAavXBbs8s=
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache Aries CDI - OSGi CDI Integration Project 1.1.5-SNAPSHOT:
+[INFO] 
+[INFO] Apache Aries CDI - OSGi CDI Integration Project .... SUCCESS [  3.640 s]
+[INFO] Apache Aries CDI - Extra Annotations ............... SUCCESS [  1.678 s]
+[INFO] Apache Aries CDI - SPI ............................. SUCCESS [  1.071 s]
+[INFO] Apache Aries CDI - SPI classes for Portable Extensions SUCCESS [  1.136 s]
+[INFO] Apache Aries CDI - CDI Component Runtime (CCR) ..... FAILURE [ 19.303 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  27.679 s
+[INFO] Finished at: 2026-11-10T18:50:31Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.illinois:nondex-maven-plugin:2.2.1:nondex (default-cli) on project org.apache.aries.cdi.extender: Unable to execute mojo: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /tmp/tmp.65HmStx8qY/repo/cdi-extender/.nondex/emOPOO5euipOSV3Wf1yCcPgL++D4dka8HAavXBbs8s= for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :org.apache.aries.cdi.extender

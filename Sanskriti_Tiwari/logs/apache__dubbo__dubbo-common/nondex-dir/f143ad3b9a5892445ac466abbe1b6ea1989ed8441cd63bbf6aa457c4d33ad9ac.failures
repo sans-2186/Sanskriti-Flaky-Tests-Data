@@ -1,0 +1,4 @@
+org.apache.dubbo.common.bytecode.WrapperTest#test_getMethodNames_ContainExtendsParentMethods
+org.apache.dubbo.common.utils.AnnotationUtilsTest#testGetAllDeclaredAnnotations
+org.apache.dubbo.common.utils.AnnotationUtilsTest#testGetAllMetaAnnotations
+org.apache.dubbo.common.utils.AnnotationUtilsTest#testGetDeclaredAnnotations

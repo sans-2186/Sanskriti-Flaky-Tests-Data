@@ -1,0 +1,147 @@
+[INFO] Scanning for projects...
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+[ERROR] Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+[ERROR] Unknown packaging: carbon-feature @ line 12, column 13
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+[ERROR] Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+[ERROR] Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+[ERROR] Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+[ERROR] Unknown packaging: carbon-feature @ line 29, column 16
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+[ERROR] Unknown packaging: carbon-feature @ line 29, column 16
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+[ERROR] Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+[ERROR] Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+[ERROR] Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+[ERROR] Unknown packaging: carbon-feature @ line 12, column 16
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+[ERROR] Unknown packaging: carbon-feature @ line 28, column 16
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+[ERROR] Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+ @ 
+ @ 
+[ERROR] The build could not read 14 projects -> [Help 1]
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.carbon.apimgt.core.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/features/apimgt/org.wso2.carbon.apimgt.core.feature/pom.xml) has 2 errors
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR]     Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.carbon.apimgt.rest.api.commons.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/features/apimgt/org.wso2.carbon.apimgt.rest.api.commons.feature/pom.xml) has 2 errors
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR]     Unknown packaging: carbon-feature @ line 12, column 13
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.carbon.apimgt.rest.api.publisher.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/features/apimgt/org.wso2.carbon.apimgt.rest.api.publisher.feature/pom.xml) has 2 errors
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR]     Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.carbon.apimgt.rest.api.store.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/features/apimgt/org.wso2.carbon.apimgt.rest.api.store.feature/pom.xml) has 2 errors
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR]     Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.carbon.apimgt.rest.api.admin.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/features/apimgt/org.wso2.carbon.apimgt.rest.api.admin.feature/pom.xml) has 2 errors
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR]     Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.carbon.apimgt.publisher.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/features/apimgt/org.wso2.carbon.apimgt.publisher.feature/pom.xml) has 2 errors
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR]     Unknown packaging: carbon-feature @ line 29, column 16
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.carbon.apimgt.store.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/features/apimgt/org.wso2.carbon.apimgt.store.feature/pom.xml) has 2 errors
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR]     Unknown packaging: carbon-feature @ line 29, column 16
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.carbon.apimgt.rest.api.core.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/features/apimgt/org.wso2.carbon.apimgt.rest.api.core.feature/pom.xml) has 2 errors
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR]     Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.carbon.apimgt.rest.api.authenticator.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/features/apimgt/org.wso2.carbon.apimgt.rest.api.authenticator.feature/pom.xml) has 2 errors
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR]     Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.carbon.apimgt.rest.api.configurations.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/features/apimgt/org.wso2.carbon.apimgt.rest.api.configurations.feature/pom.xml) has 2 errors
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR]     Unknown packaging: carbon-feature @ line 30, column 16
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.carbon.apimgt.admin.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/features/apimgt/org.wso2.carbon.apimgt.admin.feature/pom.xml) has 2 errors
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR]     Unknown packaging: carbon-feature @ line 12, column 16
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.carbon.apimgt.rest.api.analytics.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/features/apimgt/org.wso2.carbon.apimgt.rest.api.analytics.feature/pom.xml) has 2 errors
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR]     Unknown packaging: carbon-feature @ line 28, column 16
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.apimgt.analytics.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/analyzer-modules/org.wso2.apimgt.analytics.feature/pom.xml) has 1 error
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR]   
+[ERROR]   The project org.wso2.carbon.apimgt:org.wso2.apimgt.throttling.feature:7.0.240-SNAPSHOT (/tmp/tmp.7TVHaGT6NA/repo/analyzer-modules/org.wso2.apimgt.throttling.feature/pom.xml) has 1 error
+[ERROR]     Unresolveable build extension: Plugin org.wso2.carbon.maven:carbon-feature-plugin:3.1.3 or one of its dependencies could not be resolved:
+[ERROR]     	Failed to read artifact descriptor for org.wso2.carbon.maven:carbon-feature-plugin:jar:3.1.3
+[ERROR]     -> [Help 2]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/PluginManagerException

@@ -1,0 +1,19 @@
+Cloning into '/tmp/tmp.DqWqrDq9BN/repo'...
+Note: switching to 'efb7a8d92f5e3c38e7f29c25d3793b00583a113e'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at efb7a8d for release 0.4.0 (#850)

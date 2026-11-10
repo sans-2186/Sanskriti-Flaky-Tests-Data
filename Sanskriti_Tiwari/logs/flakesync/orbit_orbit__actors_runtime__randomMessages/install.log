@@ -1,0 +1,760 @@
+[INFO] Scanning for projects...
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/cloud/orbit/orbit-java-parent/2/orbit-java-parent-2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/cloud/orbit/orbit-java-parent/2/orbit-java-parent-2.pom (3.1 kB at 7.7 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/cloud/orbit/orbit-parent/2/orbit-parent-2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/cloud/orbit/orbit-parent/2/orbit-parent-2.pom (5.9 kB at 16 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.8.11.20180608/jackson-bom-2.8.11.20180608.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.8.11.20180608/jackson-bom-2.8.11.20180608.pom (11 kB at 273 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.8/jackson-parent-2.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-parent/2.8/jackson-parent-2.8.pom (8.0 kB at 199 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/27/oss-parent-27.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/27/oss-parent-27.pom (20 kB at 221 kB/s)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Orbit Internal Parent                                              [pom]
+[INFO] Orbit Commons                                                      [jar]
+[INFO] Orbit Actors                                                       [pom]
+[INFO] Orbit Core                                                         [jar]
+[INFO] Orbit Default Cluster                                              [jar]
+[INFO] Orbit Runtime                                                      [jar]
+[INFO] 
+[INFO] -----------------< cloud.orbit:orbit-internal-parent >------------------
+[INFO] Building Orbit Internal Parent 1.10.2-SNAPSHOT                     [1/6]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ orbit-internal-parent ---
+[INFO] Installing /tmp/tmp.Eh737M18qU/repo/pom.xml to /home/runner/.m2/repository/cloud/orbit/orbit-internal-parent/1.10.2-SNAPSHOT/orbit-internal-parent-1.10.2-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------------< cloud.orbit:orbit-commons >----------------------
+[INFO] Building Orbit Commons 1.10.2-SNAPSHOT                             [2/6]
+[INFO]   from commons/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.pom (24 kB at 578 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom (766 B at 15 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom (2.0 kB at 27 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.jar (315 kB at 4.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar (45 kB at 1.1 MB/s)
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ orbit-commons ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.Eh737M18qU/repo/commons/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ orbit-commons ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 34 source files to /tmp/tmp.Eh737M18qU/repo/commons/target/classes
+[INFO] /tmp/tmp.Eh737M18qU/repo/commons/src/main/java/cloud/orbit/reflect/ClassDescriptor.java: /tmp/tmp.Eh737M18qU/repo/commons/src/main/java/cloud/orbit/reflect/ClassDescriptor.java uses or overrides a deprecated API.
+[INFO] /tmp/tmp.Eh737M18qU/repo/commons/src/main/java/cloud/orbit/reflect/ClassDescriptor.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ orbit-commons ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ orbit-commons ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /tmp/tmp.Eh737M18qU/repo/commons/target/test-classes
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ orbit-commons ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ orbit-commons ---
+[INFO] Building jar: /tmp/tmp.Eh737M18qU/repo/commons/target/orbit-commons-1.10.2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ orbit-commons ---
+[INFO] Installing /tmp/tmp.Eh737M18qU/repo/commons/pom.xml to /home/runner/.m2/repository/cloud/orbit/orbit-commons/1.10.2-SNAPSHOT/orbit-commons-1.10.2-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.Eh737M18qU/repo/commons/target/orbit-commons-1.10.2-SNAPSHOT.jar to /home/runner/.m2/repository/cloud/orbit/orbit-commons/1.10.2-SNAPSHOT/orbit-commons-1.10.2-SNAPSHOT.jar
+[INFO] 
+[INFO] ------------------< cloud.orbit:orbit-actors-parent >-------------------
+[INFO] Building Orbit Actors 1.10.2-SNAPSHOT                              [3/6]
+[INFO]   from actors/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/ea/async/ea-async-maven-plugin/1.2.1/ea-async-maven-plugin-1.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/ea/async/ea-async-maven-plugin/1.2.1/ea-async-maven-plugin-1.2.1.pom (5.1 kB at 28 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/ea/async/ea-async-parent/1.2.1/ea-async-parent-1.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/ea/async/ea-async-parent/1.2.1/ea-async-parent-1.2.1.pom (11 kB at 51 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/ea/async/ea-async-maven-plugin/1.2.1/ea-async-maven-plugin-1.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/ea/async/ea-async-maven-plugin/1.2.1/ea-async-maven-plugin-1.2.1.jar (14 kB at 71 kB/s)
+[INFO] 
+[INFO] >>> ea-async:1.2.1:instrument (default) > process-classes @ orbit-actors-parent >>>
+[INFO] 
+[INFO] <<< ea-async:1.2.1:instrument (default) < process-classes @ orbit-actors-parent <<<
+[INFO] 
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/ea/async/ea-async/1.2.1/ea-async-1.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/ea/async/ea-async/1.2.1/ea-async-1.2.1.pom (3.6 kB at 40 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom (3.8 kB at 104 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.25/slf4j-parent-1.7.25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.25/slf4j-parent-1.7.25.pom (14 kB at 214 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/intellij/annotations/12.0/annotations-12.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/intellij/annotations/12.0/annotations-12.0.pom (1.6 kB at 42 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/ea/async/ea-async/1.2.1/ea-async-1.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/ea/async/ea-async/1.2.1/ea-async-1.2.1.jar (374 kB at 2.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/intellij/annotations/12.0/annotations-12.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar (41 kB at 936 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/intellij/annotations/12.0/annotations-12.0.jar (20 kB at 243 kB/s)
+[INFO] 
+[INFO] --- ea-async:1.2.1:instrument (default) @ orbit-actors-parent ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.pom (2.1 kB at 57 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.5.3/maven-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.5.3/maven-3.5.3.pom (23 kB at 709 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.pom (4.7 kB at 141 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.pom (23 kB at 778 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/41/commons-parent-41.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/41/commons-parent-41.pom (65 kB at 1.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.3/maven-plugin-api-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.3/maven-plugin-api-3.5.3.pom (2.9 kB at 82 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.3/maven-model-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.3/maven-model-3.5.3.pom (4.0 kB at 144 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.pom (4.2 kB at 144 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.3/sisu-plexus-0.3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.3/sisu-plexus-0.3.3.pom (14 kB at 416 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.3/org.eclipse.sisu.inject-0.3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.3/org.eclipse.sisu.inject-0.3.3.pom (2.6 kB at 85 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.3/sisu-inject-0.3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.3/sisu-inject-0.3.3.pom (14 kB at 424 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.3/maven-core-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.3/maven-core-3.5.3.pom (8.5 kB at 275 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.3/maven-settings-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.3/maven-settings-3.5.3.pom (1.8 kB at 48 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.3/maven-settings-builder-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.3/maven-settings-builder-3.5.3.pom (2.6 kB at 71 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.3/maven-builder-support-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.3/maven-builder-support-3.5.3.pom (1.5 kB at 57 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24.pom (2.6 kB at 77 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom (3.0 kB at 102 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.3/maven-repository-metadata-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.3/maven-repository-metadata-3.5.3.pom (1.9 kB at 68 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.3/maven-model-builder-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.3/maven-model-builder-3.5.3.pom (3.1 kB at 105 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/20.0/guava-20.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/20.0/guava-20.0.pom (6.8 kB at 244 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/20.0/guava-parent-20.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/20.0/guava-parent-20.0.pom (9.9 kB at 330 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.3/maven-resolver-provider-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.3/maven-resolver-provider-3.5.3.pom (4.1 kB at 132 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.pom (1.9 kB at 48 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.1.1/maven-resolver-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.1.1/maven-resolver-1.1.1.pom (16 kB at 456 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.pom (2.1 kB at 59 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.pom (2.2 kB at 60 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.pom (3.5 kB at 119 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.6.0/plexus-archiver-3.6.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.6.0/plexus-archiver-3.6.0.pom (4.8 kB at 123 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/5.0/plexus-5.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/5.0/plexus-5.0.pom (21 kB at 520 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.0.1/plexus-io-3.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.0.1/plexus-io-3.0.1.pom (4.5 kB at 142 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.pom (14 kB at 475 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.pom (16 kB at 504 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/43/commons-parent-43.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/43/commons-parent-43.pom (70 kB at 2.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.pom (2.8 kB at 96 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/2.6/objenesis-parent-2.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/2.6/objenesis-parent-2.6.pom (17 kB at 551 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.8/xz-1.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.8/xz-1.8.pom (1.9 kB at 53 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.jar (55 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.3/maven-plugin-api-3.5.3.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.3/maven-model-3.5.3.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.3/maven-plugin-api-3.5.3.jar (48 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.3/maven-core-3.5.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.jar (262 kB at 4.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.3/maven-settings-3.5.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.3/maven-settings-3.5.3.jar (45 kB at 518 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.3/maven-settings-builder-3.5.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.3/maven-core-3.5.3.jar (631 kB at 6.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.3/maven-settings-builder-3.5.3.jar (43 kB at 376 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.3/maven-model-3.5.3.jar (165 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.3/maven-builder-support-3.5.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.jar (205 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.3/maven-repository-metadata-3.5.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24.jar (79 kB at 552 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.3/maven-model-builder-3.5.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar (480 kB at 3.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.3/maven-resolver-provider-3.5.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar (28 kB at 176 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.3/maven-repository-metadata-3.5.3.jar (27 kB at 163 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.3/maven-builder-support-3.5.3.jar (15 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.3/maven-resolver-provider-3.5.3.jar (67 kB at 353 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.3/maven-model-builder-3.5.3.jar (178 kB at 930 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.3/org.eclipse.sisu.inject-0.3.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.jar (185 kB at 942 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/20.0/guava-20.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.jar (36 kB at 172 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.7.1/plexus-component-annotations-1.7.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.jar (146 kB at 700 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.6.0/plexus-archiver-3.6.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.7.1/plexus-component-annotations-1.7.1.jar (4.3 kB at 18 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.0.1/plexus-io-3.0.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.3/org.eclipse.sisu.inject-0.3.3.jar (379 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.jar (159 kB at 626 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/3.6.0/plexus-archiver-3.6.0.jar (191 kB at 753 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.8/xz-1.8.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/3.0.1/plexus-io-3.0.1.jar (74 kB at 263 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/tukaani/xz/1.8/xz-1.8.jar (109 kB at 368 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/20.0/guava-20.0.jar (2.4 MB at 8.3 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.jar (56 kB at 183 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.jar (560 kB at 1.7 MB/s)
+[INFO] Skipping instrumentation of the main-classes
+[INFO] 
+[INFO] >>> ea-async:1.2.1:instrument-test (default) > process-test-classes @ orbit-actors-parent >>>
+[INFO] 
+[INFO] >>> ea-async:1.2.1:instrument (default) > process-classes @ orbit-actors-parent >>>
+[INFO] 
+[INFO] <<< ea-async:1.2.1:instrument (default) < process-classes @ orbit-actors-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- ea-async:1.2.1:instrument (default) @ orbit-actors-parent ---
+[INFO] Skipping instrumentation of the main-classes
+[INFO] 
+[INFO] <<< ea-async:1.2.1:instrument-test (default) < process-test-classes @ orbit-actors-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- ea-async:1.2.1:instrument-test (default) @ orbit-actors-parent ---
+[INFO] Skipping instrumentation of the test-classes
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ orbit-actors-parent ---
+[INFO] Installing /tmp/tmp.Eh737M18qU/repo/actors/pom.xml to /home/runner/.m2/repository/cloud/orbit/orbit-actors-parent/1.10.2-SNAPSHOT/orbit-actors-parent-1.10.2-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------------< cloud.orbit:orbit-core >-----------------------
+[INFO] Building Orbit Core 1.10.2-SNAPSHOT                                [4/6]
+[INFO]   from actors/core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.1.1/maven-shade-plugin-3.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.1.1/maven-shade-plugin-3.1.1.pom (9.4 kB at 234 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/31/maven-plugins-31.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/31/maven-plugins-31.pom (10 kB at 254 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.1.1/maven-shade-plugin-3.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-shade-plugin/3.1.1/maven-shade-plugin-3.1.1.jar (114 kB at 2.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/googlecode/gentyref/gentyref/1.2.0/gentyref-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/googlecode/gentyref/gentyref/1.2.0/gentyref-1.2.0.pom (4.3 kB at 94 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.23.1-GA/javassist-3.23.1-GA.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.23.1-GA/javassist-3.23.1-GA.pom (10 kB at 297 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/github/lukehutch/fast-classpath-scanner/3.1.9/fast-classpath-scanner-3.1.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/github/lukehutch/fast-classpath-scanner/3.1.9/fast-classpath-scanner-3.1.9.pom (9.3 kB at 178 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.2.1/asm-6.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.2.1/asm-6.2.1.pom (2.9 kB at 72 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.21/snakeyaml-1.21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.21/snakeyaml-1.21.pom (38 kB at 840 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/googlecode/gentyref/gentyref/1.2.0/gentyref-1.2.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/googlecode/gentyref/gentyref/1.2.0/gentyref-1.2.0.jar (23 kB at 594 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.23.1-GA/javassist-3.23.1-GA.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/github/lukehutch/fast-classpath-scanner/3.1.9/fast-classpath-scanner-3.1.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.2.1/asm-6.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.2.1/asm-6.2.1.jar (113 kB at 2.8 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar (299 kB at 6.2 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.23.1-GA/javassist-3.23.1-GA.jar (770 kB at 14 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/github/lukehutch/fast-classpath-scanner/3.1.9/fast-classpath-scanner-3.1.9.jar (374 kB at 4.8 MB/s)
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ orbit-core ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ orbit-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 84 source files to /tmp/tmp.Eh737M18qU/repo/actors/core/target/classes
+[INFO] /tmp/tmp.Eh737M18qU/repo/actors/core/src/main/java/cloud/orbit/actors/runtime/AbstractActor.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.Eh737M18qU/repo/actors/core/src/main/java/cloud/orbit/actors/runtime/AbstractActor.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.Eh737M18qU/repo/actors/core/src/main/java/cloud/orbit/actors/runtime/ActorFactoryGenerator.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.Eh737M18qU/repo/actors/core/src/main/java/cloud/orbit/actors/runtime/ActorFactoryGenerator.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>> ea-async:1.2.1:instrument (default) > process-classes @ orbit-core >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ orbit-core ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ orbit-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< ea-async:1.2.1:instrument (default) < process-classes @ orbit-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- ea-async:1.2.1:instrument (default) @ orbit-core ---
+[INFO] instrumented: cloud/orbit/actors/Actor.class
+[INFO] Orbit Async main-classes instrumented: 1
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ orbit-core ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.Eh737M18qU/repo/actors/core/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ orbit-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /tmp/tmp.Eh737M18qU/repo/actors/core/target/test-classes
+[INFO] 
+[INFO] >>> ea-async:1.2.1:instrument-test (default) > process-test-classes @ orbit-core >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ orbit-core ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ orbit-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> ea-async:1.2.1:instrument (default) > process-classes @ orbit-core >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ orbit-core ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ orbit-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< ea-async:1.2.1:instrument (default) < process-classes @ orbit-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- ea-async:1.2.1:instrument (default) @ orbit-core ---
+[INFO] Orbit Async main-classes instrumented: 0
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ orbit-core ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.Eh737M18qU/repo/actors/core/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ orbit-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< ea-async:1.2.1:instrument-test (default) < process-test-classes @ orbit-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- ea-async:1.2.1:instrument-test (default) @ orbit-core ---
+[INFO] Orbit Async test-classes instrumented: 0
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ orbit-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ orbit-core ---
+[INFO] Building jar: /tmp/tmp.Eh737M18qU/repo/actors/core/target/orbit-core-1.10.2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- shade:3.1.1:shade (default) @ orbit-core ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.9.1/maven-artifact-transfer-0.9.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.9.1/maven-artifact-transfer-0.9.1.pom (7.6 kB at 238 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.pom (4.8 kB at 124 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom (4.1 kB at 133 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom (11 kB at 319 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom (2.7 kB at 93 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.5/slf4j-parent-1.7.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.5/slf4j-parent-1.7.5.pom (12 kB at 337 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.0/asm-6.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.0/asm-6.0.pom (1.9 kB at 55 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-parent/6.0/asm-parent-6.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-parent/6.0/asm-parent-6.0.pom (5.5 kB at 157 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/6.0/asm-commons-6.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/6.0/asm-commons-6.0.pom (2.1 kB at 70 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/6.0/asm-tree-6.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/6.0/asm-tree-6.0.pom (2.1 kB at 61 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6/jdom2-2.0.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6/jdom2-2.0.6.pom (4.6 kB at 139 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.2/maven-dependency-tree-2.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.2/maven-dependency-tree-2.2.pom (7.3 kB at 220 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/20/maven-shared-components-20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/20/maven-shared-components-20.pom (5.1 kB at 49 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/24/maven-parent-24.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/24/maven-parent-24.pom (37 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/14/apache-14.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/14/apache-14.pom (15 kB at 490 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.pom (2.0 kB at 68 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/0.9.0.M2/aether-0.9.0.M2.pom (28 kB at 961 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/1.2/jdependency-1.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/1.2/jdependency-1.2.pom (11 kB at 399 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/6.0_BETA/asm-analysis-6.0_BETA.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/6.0_BETA/asm-analysis-6.0_BETA.pom (2.1 kB at 28 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/6.0_BETA/asm-tree-6.0_BETA.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/6.0_BETA/asm-tree-6.0_BETA.pom (2.1 kB at 43 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/6.0_BETA/asm-commons-6.0_BETA.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/6.0_BETA/asm-commons-6.0_BETA.pom (2.1 kB at 60 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/6.0_BETA/asm-util-6.0_BETA.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/6.0_BETA/asm-util-6.0_BETA.pom (2.1 kB at 75 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/19.0/guava-19.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/19.0/guava-19.0.pom (6.8 kB at 194 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/19.0/guava-parent-19.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/19.0/guava-parent-19.0.pom (9.9 kB at 260 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.9.1/maven-artifact-transfer-0.9.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-artifact-transfer/0.9.1/maven-artifact-transfer-0.9.1.jar (123 kB at 3.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.0/asm-6.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/6.0/asm-commons-6.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.jar (61 kB at 2.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/6.0/asm-tree-6.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.0/asm-6.0.jar (95 kB at 2.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6/jdom2-2.0.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/6.0/asm-commons-6.0.jar (77 kB at 2.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.2/maven-dependency-tree-2.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar (233 kB at 4.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar (26 kB at 466 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/1.2/jdependency-1.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/6.0/asm-tree-6.0.jar (48 kB at 845 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/6.0_BETA/asm-analysis-6.0_BETA.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-dependency-tree/2.2/maven-dependency-tree-2.2.jar (64 kB at 815 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/6.0_BETA/asm-util-6.0_BETA.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom2/2.0.6/jdom2-2.0.6.jar (305 kB at 3.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/19.0/guava-19.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/6.0_BETA/asm-analysis-6.0_BETA.jar (21 kB at 234 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/vafer/jdependency/1.2/jdependency-1.2.jar (22 kB at 242 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar (134 kB at 1.2 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/6.0_BETA/asm-util-6.0_BETA.jar (47 kB at 365 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/19.0/guava-19.0.jar (2.3 MB at 14 MB/s)
+[INFO] Excluding cloud.orbit:orbit-commons:jar:1.10.2-SNAPSHOT from the shaded jar.
+[INFO] Excluding org.slf4j:slf4j-api:jar:1.7.25 from the shaded jar.
+[INFO] Including com.googlecode.gentyref:gentyref:jar:1.2.0 in the shaded jar.
+[INFO] Including org.javassist:javassist:jar:3.23.1-GA in the shaded jar.
+[INFO] Including io.github.lukehutch:fast-classpath-scanner:jar:3.1.9 in the shaded jar.
+[INFO] Including org.ow2.asm:asm:jar:6.2.1 in the shaded jar.
+[INFO] Including org.yaml:snakeyaml:jar:1.21 in the shaded jar.
+[INFO] Excluding com.ea.async:ea-async:jar:1.2.1 from the shaded jar.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /tmp/tmp.Eh737M18qU/repo/actors/core/target/orbit-core-1.10.2-SNAPSHOT.jar with /tmp/tmp.Eh737M18qU/repo/actors/core/target/orbit-core-1.10.2-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /tmp/tmp.Eh737M18qU/repo/actors/core/dependency-reduced-pom.xml
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ orbit-core ---
+[INFO] Installing /tmp/tmp.Eh737M18qU/repo/actors/core/dependency-reduced-pom.xml to /home/runner/.m2/repository/cloud/orbit/orbit-core/1.10.2-SNAPSHOT/orbit-core-1.10.2-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.Eh737M18qU/repo/actors/core/target/orbit-core-1.10.2-SNAPSHOT.jar to /home/runner/.m2/repository/cloud/orbit/orbit-core/1.10.2-SNAPSHOT/orbit-core-1.10.2-SNAPSHOT.jar
+[INFO] 
+[INFO] ----------------< cloud.orbit:orbit-infinispan-cluster >----------------
+[INFO] Building Orbit Default Cluster 1.10.2-SNAPSHOT                     [5/6]
+[INFO]   from actors/infinispan-cluster/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-core/9.3.0.Final/infinispan-core-9.3.0.Final.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-core/9.3.0.Final/infinispan-core-9.3.0.Final.pom (9.9 kB at 268 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-parent/9.3.0.Final/infinispan-parent-9.3.0.Final.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-parent/9.3.0.Final/infinispan-parent-9.3.0.Final.pom (129 kB at 2.9 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-bom/9.3.0.Final/infinispan-bom-9.3.0.Final.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-bom/9.3.0.Final/infinispan-bom-9.3.0.Final.pom (33 kB at 729 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.22.Final/netty-bom-4.1.22.Final.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.22.Final/netty-bom-4.1.22.Final.pom (7.9 kB at 208 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.2.4/shrinkwrap-resolver-bom-2.2.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.2.4/shrinkwrap-resolver-bom-2.2.4.pom (5.3 kB at 132 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/arquillian/arquillian-bom/1.1.13.Final/arquillian-bom-1.1.13.Final.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/arquillian/arquillian-bom/1.1.13.Final/arquillian-bom-1.1.13.Final.pom (11 kB at 246 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.6/shrinkwrap-bom-1.2.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.6/shrinkwrap-bom-1.2.6.pom (4.0 kB at 117 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-10/shrinkwrap-descriptors-bom-2.0.0-alpha-10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-10/shrinkwrap-descriptors-bom-2.0.0-alpha-10.pom (5.2 kB at 131 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/wildfly/core/wildfly-core-parent/5.0.0.Final/wildfly-core-parent-5.0.0.Final.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/wildfly/core/wildfly-core-parent/5.0.0.Final/wildfly-core-parent-5.0.0.Final.pom (84 kB at 1.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/26/jboss-parent-26.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/26/jboss-parent-26.pom (35 kB at 994 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-commons/9.3.0.Final/infinispan-commons-9.3.0.Final.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-commons/9.3.0.Final/infinispan-commons-9.3.0.Final.pom (9.2 kB at 236 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/ben-manes/caffeine/caffeine/2.6.2/caffeine-2.6.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/ben-manes/caffeine/caffeine/2.6.2/caffeine-2.6.2.pom (5.6 kB at 175 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.1.Final/jboss-logging-3.3.1.Final.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.1.Final/jboss-logging-3.3.1.Final.pom (5.9 kB at 138 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/15/jboss-parent-15.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/15/jboss-parent-15.pom (32 kB at 630 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jgroups/jgroups/4.0.12.Final/jgroups-4.0.12.Final.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jgroups/jgroups/4.0.12.Final/jgroups-4.0.12.Final.pom (19 kB at 429 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.pom (4.1 kB at 82 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/9/jboss-parent-9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/9/jboss-parent-9.pom (29 kB at 751 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/marshalling/jboss-marshalling-osgi/2.0.5.Final/jboss-marshalling-osgi-2.0.5.Final.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/marshalling/jboss-marshalling-osgi/2.0.5.Final/jboss-marshalling-osgi-2.0.5.Final.pom (2.5 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/marshalling/jboss-marshalling-parent/2.0.5.Final/jboss-marshalling-parent-2.0.5.Final.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/marshalling/jboss-marshalling-parent/2.0.5.Final/jboss-marshalling-parent-2.0.5.Final.pom (5.7 kB at 154 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/24/jboss-parent-24.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/24/jboss-parent-24.pom (36 kB at 836 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/reactivex/rxjava2/rxjava/2.1.3/rxjava-2.1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/reactivex/rxjava2/rxjava/2.1.3/rxjava-2.1.3.pom (2.6 kB at 69 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.1/reactive-streams-1.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.1/reactive-streams-1.0.1.pom (1.2 kB at 34 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-core/9.3.0.Final/infinispan-core-9.3.0.Final.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-core/9.3.0.Final/infinispan-core-9.3.0.Final.jar (4.4 MB at 69 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-commons/9.3.0.Final/infinispan-commons-9.3.0.Final.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jgroups/jgroups/4.0.12.Final/jgroups-4.0.12.Final.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/ben-manes/caffeine/caffeine/2.6.2/caffeine-2.6.2.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/marshalling/jboss-marshalling-osgi/2.0.5.Final/jboss-marshalling-osgi-2.0.5.Final.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.jar (25 kB at 700 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.1.Final/jboss-logging-3.3.1.Final.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/marshalling/jboss-marshalling-osgi/2.0.5.Final/jboss-marshalling-osgi-2.0.5.Final.jar (369 kB at 9.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/reactivex/rxjava2/rxjava/2.1.3/rxjava-2.1.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/infinispan/infinispan-commons/9.3.0.Final/infinispan-commons-9.3.0.Final.jar (508 kB at 12 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.1/reactive-streams-1.0.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/ben-manes/caffeine/caffeine/2.6.2/caffeine-2.6.2.jar (660 kB at 13 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jgroups/jgroups/4.0.12.Final/jgroups-4.0.12.Final.jar (2.3 MB at 32 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.1.Final/jboss-logging-3.3.1.Final.jar (66 kB at 917 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.1/reactive-streams-1.0.1.jar (2.1 kB at 26 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/reactivex/rxjava2/rxjava/2.1.3/rxjava-2.1.3.jar (2.2 MB at 26 MB/s)
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ orbit-infinispan-cluster ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ orbit-infinispan-cluster ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /tmp/tmp.Eh737M18qU/repo/actors/infinispan-cluster/target/classes
+[INFO] 
+[INFO] >>> ea-async:1.2.1:instrument (default) > process-classes @ orbit-infinispan-cluster >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ orbit-infinispan-cluster ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ orbit-infinispan-cluster ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< ea-async:1.2.1:instrument (default) < process-classes @ orbit-infinispan-cluster <<<
+[INFO] 
+[INFO] 
+[INFO] --- ea-async:1.2.1:instrument (default) @ orbit-infinispan-cluster ---
+[INFO] Orbit Async main-classes instrumented: 0
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ orbit-infinispan-cluster ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.Eh737M18qU/repo/actors/infinispan-cluster/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ orbit-infinispan-cluster ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] >>> ea-async:1.2.1:instrument-test (default) > process-test-classes @ orbit-infinispan-cluster >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ orbit-infinispan-cluster ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ orbit-infinispan-cluster ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> ea-async:1.2.1:instrument (default) > process-classes @ orbit-infinispan-cluster >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ orbit-infinispan-cluster ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ orbit-infinispan-cluster ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< ea-async:1.2.1:instrument (default) < process-classes @ orbit-infinispan-cluster <<<
+[INFO] 
+[INFO] 
+[INFO] --- ea-async:1.2.1:instrument (default) @ orbit-infinispan-cluster ---
+[INFO] Orbit Async main-classes instrumented: 0
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ orbit-infinispan-cluster ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.Eh737M18qU/repo/actors/infinispan-cluster/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ orbit-infinispan-cluster ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< ea-async:1.2.1:instrument-test (default) < process-test-classes @ orbit-infinispan-cluster <<<
+[INFO] 
+[INFO] 
+[INFO] --- ea-async:1.2.1:instrument-test (default) @ orbit-infinispan-cluster ---
+[INFO] Skipping instrumentation of the test-classes
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ orbit-infinispan-cluster ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ orbit-infinispan-cluster ---
+[INFO] Building jar: /tmp/tmp.Eh737M18qU/repo/actors/infinispan-cluster/target/orbit-infinispan-cluster-1.10.2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ orbit-infinispan-cluster ---
+[INFO] Installing /tmp/tmp.Eh737M18qU/repo/actors/infinispan-cluster/pom.xml to /home/runner/.m2/repository/cloud/orbit/orbit-infinispan-cluster/1.10.2-SNAPSHOT/orbit-infinispan-cluster-1.10.2-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.Eh737M18qU/repo/actors/infinispan-cluster/target/orbit-infinispan-cluster-1.10.2-SNAPSHOT.jar to /home/runner/.m2/repository/cloud/orbit/orbit-infinispan-cluster/1.10.2-SNAPSHOT/orbit-infinispan-cluster-1.10.2-SNAPSHOT.jar
+[INFO] 
+[INFO] ---------------------< cloud.orbit:orbit-runtime >----------------------
+[INFO] Building Orbit Runtime 1.10.2-SNAPSHOT                             [6/6]
+[INFO]   from actors/runtime/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/kryo/4.0.2/kryo-4.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/kryo/4.0.2/kryo-4.0.2.pom (4.7 kB at 114 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/kryo-parent/4.0.2/kryo-parent-4.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/kryo-parent/4.0.2/kryo-parent-4.0.2.pom (7.1 kB at 236 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.pom (4.0 kB at 113 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.pom (3.3 kB at 107 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.pom (2.8 kB at 68 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/2.5.1/objenesis-parent-2.5.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/2.5.1/objenesis-parent-2.5.1.pom (17 kB at 459 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/de/javakaffee/kryo-serializers/0.42/kryo-serializers-0.42.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/de/javakaffee/kryo-serializers/0.42/kryo-serializers-0.42.pom (8.0 kB at 195 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/kryo/4.0.0/kryo-4.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/kryo/4.0.0/kryo-4.0.0.pom (5.0 kB at 8.2 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/kryo-parent/4.0.0/kryo-parent-4.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/kryo-parent/4.0.0/kryo-parent-4.0.0.pom (7.1 kB at 236 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.2/objenesis-2.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.2/objenesis-2.2.pom (2.5 kB at 92 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/2.2/objenesis-parent-2.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/2.2/objenesis-parent-2.2.pom (17 kB at 403 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/kryo/4.0.2/kryo-4.0.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/kryo/4.0.2/kryo-4.0.2.jar (338 kB at 8.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/de/javakaffee/kryo-serializers/0.42/kryo-serializers-0.42.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/reflectasm/1.11.3/reflectasm-1.11.3.jar (21 kB at 580 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.jar (54 kB at 1.2 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar (5.7 kB at 112 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/de/javakaffee/kryo-serializers/0.42/kryo-serializers-0.42.jar (106 kB at 1.9 MB/s)
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ orbit-runtime ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.Eh737M18qU/repo/actors/runtime/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ orbit-runtime ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 76 source files to /tmp/tmp.Eh737M18qU/repo/actors/runtime/target/classes
+[INFO] /tmp/tmp.Eh737M18qU/repo/actors/runtime/src/main/java/cloud/orbit/actors/runtime/DefaultActorConstructionExtension.java: /tmp/tmp.Eh737M18qU/repo/actors/runtime/src/main/java/cloud/orbit/actors/runtime/DefaultActorConstructionExtension.java uses or overrides a deprecated API.
+[INFO] /tmp/tmp.Eh737M18qU/repo/actors/runtime/src/main/java/cloud/orbit/actors/runtime/DefaultActorConstructionExtension.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.Eh737M18qU/repo/actors/runtime/src/main/java/cloud/orbit/actors/net/DefaultPipeline.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.Eh737M18qU/repo/actors/runtime/src/main/java/cloud/orbit/actors/net/DefaultPipeline.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>> ea-async:1.2.1:instrument (default) > process-classes @ orbit-runtime >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ orbit-runtime ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.Eh737M18qU/repo/actors/runtime/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ orbit-runtime ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< ea-async:1.2.1:instrument (default) < process-classes @ orbit-runtime <<<
+[INFO] 
+[INFO] 
+[INFO] --- ea-async:1.2.1:instrument (default) @ orbit-runtime ---
+[INFO] instrumented: cloud/orbit/actors/streams/ClientStreamProxy.class
+[INFO] instrumented: cloud/orbit/actors/streams/simple/SimpleStreamProxyObject.class
+[INFO] instrumented: cloud/orbit/actors/streams/simple/SimpleStreamActor.class
+[INFO] instrumented: cloud/orbit/actors/Stage.class
+[INFO] instrumented: cloud/orbit/actors/peer/PeerExecutor.class
+[INFO] instrumented: cloud/orbit/actors/client/streams/ClientSideStreamProxyImpl.class
+[INFO] instrumented: cloud/orbit/actors/client/ClientPeer.class
+[INFO] instrumented: cloud/orbit/actors/server/streams/ServerSideStreamProxyImpl.class
+[INFO] instrumented: cloud/orbit/actors/runtime/ActorEntry.class
+[INFO] instrumented: cloud/orbit/actors/runtime/DefaultLocalObjectsCleaner.class
+[INFO] instrumented: cloud/orbit/actors/runtime/DefaultInvocationHandler.class
+[INFO] instrumented: cloud/orbit/actors/runtime/StatelessActorEntry.class
+[INFO] instrumented: cloud/orbit/actors/runtime/Hosting.class
+[INFO] instrumented: cloud/orbit/actors/Stage$4$1.class
+[INFO] Orbit Async main-classes instrumented: 14
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ orbit-runtime ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.Eh737M18qU/repo/actors/runtime/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ orbit-runtime ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /tmp/tmp.Eh737M18qU/repo/actors/runtime/target/test-classes
+[INFO] /tmp/tmp.Eh737M18qU/repo/actors/runtime/src/test/java/cloud/orbit/actors/extensions/test/ConstructionTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.Eh737M18qU/repo/actors/runtime/src/test/java/cloud/orbit/actors/extensions/test/ConstructionTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] >>> ea-async:1.2.1:instrument-test (default) > process-test-classes @ orbit-runtime >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ orbit-runtime ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.Eh737M18qU/repo/actors/runtime/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ orbit-runtime ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] >>> ea-async:1.2.1:instrument (default) > process-classes @ orbit-runtime >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ orbit-runtime ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.Eh737M18qU/repo/actors/runtime/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ orbit-runtime ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< ea-async:1.2.1:instrument (default) < process-classes @ orbit-runtime <<<
+[INFO] 
+[INFO] 
+[INFO] --- ea-async:1.2.1:instrument (default) @ orbit-runtime ---
+[INFO] Orbit Async main-classes instrumented: 0
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ orbit-runtime ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.Eh737M18qU/repo/actors/runtime/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ orbit-runtime ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< ea-async:1.2.1:instrument-test (default) < process-test-classes @ orbit-runtime <<<
+[INFO] 
+[INFO] 
+[INFO] --- ea-async:1.2.1:instrument-test (default) @ orbit-runtime ---
+[INFO] Orbit Async test-classes instrumented: 0
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ orbit-runtime ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ orbit-runtime ---
+[INFO] Building jar: /tmp/tmp.Eh737M18qU/repo/actors/runtime/target/orbit-runtime-1.10.2-SNAPSHOT.jar
+[INFO] 
+[INFO] --- shade:3.1.1:shade (default) @ orbit-runtime ---
+[INFO] Excluding cloud.orbit:orbit-core:jar:1.10.2-SNAPSHOT from the shaded jar.
+[INFO] Excluding org.slf4j:slf4j-api:jar:1.7.25 from the shaded jar.
+[INFO] Excluding com.googlecode.gentyref:gentyref:jar:1.2.0 from the shaded jar.
+[INFO] Excluding org.javassist:javassist:jar:3.23.1-GA from the shaded jar.
+[INFO] Excluding org.yaml:snakeyaml:jar:1.21 from the shaded jar.
+[INFO] Excluding cloud.orbit:orbit-infinispan-cluster:jar:1.10.2-SNAPSHOT from the shaded jar.
+[INFO] Excluding org.infinispan:infinispan-core:jar:9.3.0.Final from the shaded jar.
+[INFO] Excluding org.infinispan:infinispan-commons:jar:9.3.0.Final from the shaded jar.
+[INFO] Excluding org.jgroups:jgroups:jar:4.0.12.Final from the shaded jar.
+[INFO] Excluding org.jboss.spec.javax.transaction:jboss-transaction-api_1.1_spec:jar:1.0.1.Final from the shaded jar.
+[INFO] Excluding org.jboss.marshalling:jboss-marshalling-osgi:jar:2.0.5.Final from the shaded jar.
+[INFO] Excluding org.jboss.logging:jboss-logging:jar:3.3.1.Final from the shaded jar.
+[INFO] Excluding io.reactivex.rxjava2:rxjava:jar:2.1.3 from the shaded jar.
+[INFO] Excluding org.reactivestreams:reactive-streams:jar:1.0.1 from the shaded jar.
+[INFO] Including io.github.lukehutch:fast-classpath-scanner:jar:3.1.9 in the shaded jar.
+[INFO] Including com.github.ben-manes.caffeine:caffeine:jar:2.6.2 in the shaded jar.
+[INFO] Including org.ow2.asm:asm:jar:6.2.1 in the shaded jar.
+[INFO] Including com.esotericsoftware:kryo:jar:4.0.2 in the shaded jar.
+[INFO] Including com.esotericsoftware:reflectasm:jar:1.11.3 in the shaded jar.
+[INFO] Including com.esotericsoftware:minlog:jar:1.3.0 in the shaded jar.
+[INFO] Including org.objenesis:objenesis:jar:2.5.1 in the shaded jar.
+[INFO] Including de.javakaffee:kryo-serializers:jar:0.42 in the shaded jar.
+[INFO] Excluding javax.inject:javax.inject:jar:1 from the shaded jar.
+[INFO] Excluding cloud.orbit:orbit-commons:jar:1.10.2-SNAPSHOT from the shaded jar.
+[INFO] Excluding com.ea.async:ea-async:jar:1.2.1 from the shaded jar.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /tmp/tmp.Eh737M18qU/repo/actors/runtime/target/orbit-runtime-1.10.2-SNAPSHOT.jar with /tmp/tmp.Eh737M18qU/repo/actors/runtime/target/orbit-runtime-1.10.2-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /tmp/tmp.Eh737M18qU/repo/actors/runtime/dependency-reduced-pom.xml
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ orbit-runtime ---
+[INFO] Installing /tmp/tmp.Eh737M18qU/repo/actors/runtime/dependency-reduced-pom.xml to /home/runner/.m2/repository/cloud/orbit/orbit-runtime/1.10.2-SNAPSHOT/orbit-runtime-1.10.2-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.Eh737M18qU/repo/actors/runtime/target/orbit-runtime-1.10.2-SNAPSHOT.jar to /home/runner/.m2/repository/cloud/orbit/orbit-runtime/1.10.2-SNAPSHOT/orbit-runtime-1.10.2-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Orbit Internal Parent 1.10.2-SNAPSHOT:
+[INFO] 
+[INFO] Orbit Internal Parent .............................. SUCCESS [  0.161 s]
+[INFO] Orbit Commons ...................................... SUCCESS [  2.518 s]
+[INFO] Orbit Actors ....................................... SUCCESS [  2.929 s]
+[INFO] Orbit Core ......................................... SUCCESS [  3.424 s]
+[INFO] Orbit Default Cluster .............................. SUCCESS [  1.348 s]
+[INFO] Orbit Runtime ...................................... SUCCESS [  2.644 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.326 s
+[INFO] Finished at: 2026-11-10T19:21:44Z
+[INFO] ------------------------------------------------------------------------

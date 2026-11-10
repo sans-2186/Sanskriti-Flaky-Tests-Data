@@ -1,0 +1,89 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< org.fluentd:fluent-logger >----------------------
+[INFO] Building Fluent Logger for Java 0.3.4-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ fluent-logger >>>
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.16.1-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ fluent-logger ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ fluent-logger ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.TfLPSPjRzQ/repo/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ fluent-logger ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ fluent-logger ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ fluent-logger ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ fluent-logger <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ fluent-logger ---
+INFO: Running DeltaDebugMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Surefire report directory: /tmp/tmp.TfLPSPjRzQ/repo/.flakesync/clean_xmB1rFvShmQ6L8kTVXSel0YLjjIFcvt2B18qi2ON+lk=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.fluentd.logger.TestFluentLogger
+2026-11-10 19:05:11,077 DEBUG [pool-1-thread-1] Started MockFluentd port:35781
+2026-11-10 19:06:12,835 INFO  [main] Closing the current fluentd instance
+2026-11-10 19:06:12,838 DEBUG [pool-1-thread-1] Terminated MockFluentd port:35781
+2026-11-10 19:06:58,146 ERROR [main] org.fluentd.logger.sender.RawSocketSender
+java.net.SocketException: Connection reset by peer (Write failed)
+2026-11-10 19:07:46,903 ERROR [main] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2026-11-10 19:08:35,659 ERROR [main] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2026-11-10 19:08:35,660 DEBUG [pool-1-thread-2] Started MockFluentd port:35781
+2026-11-10 19:09:39,617 DEBUG [pool-1-thread-2] Terminated MockFluentd port:35781
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 270.882 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Surefire report directory: /tmp/tmp.TfLPSPjRzQ/repo/.flakesync/clean_QyRbkYoFKSkCgvs5jqrPi1351JHyqDrR7omS6zpaUd8=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.fluentd.logger.TestFluentLogger
+2026-11-10 19:09:42,247 DEBUG [pool-1-thread-1] Started MockFluentd port:36749
+2026-11-10 19:10:07,194 INFO  [main] Closing the current fluentd instance
+2026-11-10 19:10:07,196 DEBUG [pool-1-thread-1] Terminated MockFluentd port:36749
+2026-11-10 19:10:17,302 ERROR [main] org.fluentd.logger.sender.RawSocketSender
+java.net.SocketException: Connection reset by peer (Write failed)
+2026-11-10 19:10:29,256 ERROR [main] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2026-11-10 19:10:41,209 ERROR [main] org.fluentd.logger.sender.RawSocketSender
+java.net.ConnectException: Connection refused (Connection refused)
+2026-11-10 19:10:42,810 DEBUG [pool-1-thread-2] Started MockFluentd port:36749
+2026-11-10 19:11:03,563 DEBUG [pool-1-thread-2] Terminated MockFluentd port:36749
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 83.647 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+DELTA UPDATE DELAY: 3200
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Surefire report directory: /tmp/tmp.TfLPSPjRzQ/repo/.flakesync/clean_BrT+BzfweutQAez3fsqQNQuOBbp4z3Cmj5QDIAf95w=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.fluentd.logger.TestFluentLogger
+2026-11-10 19:11:06,231 DEBUG [pool-1-thread-1] Started MockFluentd port:38785
+Destroying 1 processes
+Destroying process..
+Destroyed 1 processes

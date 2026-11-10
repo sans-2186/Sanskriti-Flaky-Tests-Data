@@ -1,0 +1,3 @@
+url=https://github.com/apache/causeway
+sha=101f656b845168feb3d6d72c31b55999f261d20f
+module=api/applib

@@ -1,0 +1,133 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 2 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 2 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Asset Share Commons - Reactor Project                              [pom]
+[INFO] Asset Share Commons - Core                                         [jar]
+[INFO] 
+[INFO] ------------------< com.adobe.aem.commons:assetshare >------------------
+[INFO] Building Asset Share Commons - Reactor Project 2.1.13-SNAPSHOT     [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven) @ assetshare ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ assetshare ---
+[INFO] Installing /tmp/tmp.CV1dDP9xdP/repo/pom.xml to /home/runner/.m2/repository/com/adobe/aem/commons/assetshare/2.1.13-SNAPSHOT/assetshare-2.1.13-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------< com.adobe.aem.commons:assetshare.core >----------------
+[INFO] Building Asset Share Commons - Core 2.1.13-SNAPSHOT                [2/2]
+[INFO]   from core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.2-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven) @ assetshare.core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ assetshare.core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.CV1dDP9xdP/repo/core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.6.1:compile (default-compile) @ assetshare.core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 224 source files to /tmp/tmp.CV1dDP9xdP/repo/core/target/classes
+[INFO] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/search/impl/datasources/FilterablePropertiesDataSource.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/search/impl/datasources/FilterablePropertiesDataSource.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionDispatcher.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/content/renditions/AssetRenditionDispatcher.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/actions/download/Download.java:[25,33] package com.google.common.collect does not exist
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/search/impl/predicateevaluators/PropertyValuesPredicateEvaluator.java:[28,33] package com.google.common.collect does not exist
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[38,33] package com.google.common.collect does not exist
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[39,46] package com.google.common.collect.ImmutableMap does not exist
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionDispatchersImpl.java:[24,33] package com.google.common.collect does not exist
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/actions/download/Download.java:[101,20] cannot find symbol
+  symbol:   variable ImmutableList
+  location: class com.adobe.aem.commons.assetshare.components.actions.download.Download.AssetRenditionsGroup
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/search/impl/predicateevaluators/PropertyValuesPredicateEvaluator.java:[209,20] cannot find symbol
+  symbol:   variable ImmutableList
+  location: class com.adobe.aem.commons.assetshare.search.impl.predicateevaluators.PropertyValuesPredicateEvaluator
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[232,67] cannot find symbol
+  symbol:   variable ImmutableMap
+  location: class com.adobe.aem.commons.assetshare.components.predicates.impl.PagePredicateImpl
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[238,67] cannot find symbol
+  symbol:   variable ImmutableMap
+  location: class com.adobe.aem.commons.assetshare.components.predicates.impl.PagePredicateImpl
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[244,67] cannot find symbol
+  symbol:   variable ImmutableMap
+  location: class com.adobe.aem.commons.assetshare.components.predicates.impl.PagePredicateImpl
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[283,57] cannot find symbol
+  symbol:   variable ImmutableMap
+  location: class com.adobe.aem.commons.assetshare.components.predicates.impl.PagePredicateImpl
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[290,9] cannot find symbol
+  symbol:   class Builder
+  location: class com.adobe.aem.commons.assetshare.components.predicates.impl.PagePredicateImpl
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[290,57] cannot find symbol
+  symbol:   variable ImmutableMap
+  location: class com.adobe.aem.commons.assetshare.components.predicates.impl.PagePredicateImpl
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionDispatchersImpl.java:[69,20] cannot find symbol
+  symbol:   variable ImmutableList
+  location: class com.adobe.aem.commons.assetshare.content.renditions.impl.AssetRenditionDispatchersImpl
+[INFO] 14 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Asset Share Commons - Reactor Project 2.1.13-SNAPSHOT:
+[INFO] 
+[INFO] Asset Share Commons - Reactor Project .............. SUCCESS [  0.192 s]
+[INFO] Asset Share Commons - Core ......................... FAILURE [  2.541 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.615 s
+[INFO] Finished at: 2026-11-10T18:37:40Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.6.1:compile (default-compile) on project assetshare.core: Compilation failure: Compilation failure: 
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/actions/download/Download.java:[25,33] package com.google.common.collect does not exist
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/search/impl/predicateevaluators/PropertyValuesPredicateEvaluator.java:[28,33] package com.google.common.collect does not exist
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[38,33] package com.google.common.collect does not exist
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[39,46] package com.google.common.collect.ImmutableMap does not exist
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionDispatchersImpl.java:[24,33] package com.google.common.collect does not exist
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/actions/download/Download.java:[101,20] cannot find symbol
+[ERROR]   symbol:   variable ImmutableList
+[ERROR]   location: class com.adobe.aem.commons.assetshare.components.actions.download.Download.AssetRenditionsGroup
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/search/impl/predicateevaluators/PropertyValuesPredicateEvaluator.java:[209,20] cannot find symbol
+[ERROR]   symbol:   variable ImmutableList
+[ERROR]   location: class com.adobe.aem.commons.assetshare.search.impl.predicateevaluators.PropertyValuesPredicateEvaluator
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[232,67] cannot find symbol
+[ERROR]   symbol:   variable ImmutableMap
+[ERROR]   location: class com.adobe.aem.commons.assetshare.components.predicates.impl.PagePredicateImpl
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[238,67] cannot find symbol
+[ERROR]   symbol:   variable ImmutableMap
+[ERROR]   location: class com.adobe.aem.commons.assetshare.components.predicates.impl.PagePredicateImpl
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[244,67] cannot find symbol
+[ERROR]   symbol:   variable ImmutableMap
+[ERROR]   location: class com.adobe.aem.commons.assetshare.components.predicates.impl.PagePredicateImpl
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[283,57] cannot find symbol
+[ERROR]   symbol:   variable ImmutableMap
+[ERROR]   location: class com.adobe.aem.commons.assetshare.components.predicates.impl.PagePredicateImpl
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[290,9] cannot find symbol
+[ERROR]   symbol:   class Builder
+[ERROR]   location: class com.adobe.aem.commons.assetshare.components.predicates.impl.PagePredicateImpl
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/components/predicates/impl/PagePredicateImpl.java:[290,57] cannot find symbol
+[ERROR]   symbol:   variable ImmutableMap
+[ERROR]   location: class com.adobe.aem.commons.assetshare.components.predicates.impl.PagePredicateImpl
+[ERROR] /tmp/tmp.CV1dDP9xdP/repo/core/src/main/java/com/adobe/aem/commons/assetshare/content/renditions/impl/AssetRenditionDispatchersImpl.java:[69,20] cannot find symbol
+[ERROR]   symbol:   variable ImmutableList
+[ERROR]   location: class com.adobe.aem.commons.assetshare.content.renditions.impl.AssetRenditionDispatchersImpl
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :assetshare.core

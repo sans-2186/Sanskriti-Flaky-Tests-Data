@@ -1,0 +1,3 @@
+org.apache.avro.reflect.TestNonStringMapKeys#testNonStringMapKeys
+org.apache.avro.reflect.TestReflect#testAvroDoc
+org.apache.avro.reflect.TestReflect#testRecord

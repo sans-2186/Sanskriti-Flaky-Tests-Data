@@ -1,0 +1,3 @@
+url=https://github.com/apache/commons-math
+sha=43b77ffabba8a48144080674973362150cbcfb28
+module=<root>

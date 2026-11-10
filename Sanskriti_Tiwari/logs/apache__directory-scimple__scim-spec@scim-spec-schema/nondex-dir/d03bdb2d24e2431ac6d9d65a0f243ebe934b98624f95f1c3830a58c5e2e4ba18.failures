@@ -1,0 +1,2 @@
+org.apache.directory.scim.spec.resources.PhoneNumberBuilderTest#test_adding_params_for_GlobalPhoneNumberBuilder
+org.apache.directory.scim.spec.resources.PhoneNumberBuilderTest#test_adding_params_for_LocalPhoneNumberBuilder

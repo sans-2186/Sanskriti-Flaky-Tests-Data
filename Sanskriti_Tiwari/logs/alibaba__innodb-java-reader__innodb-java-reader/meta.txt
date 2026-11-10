@@ -1,0 +1,3 @@
+url=https://github.com/alibaba/innodb-java-reader
+sha=24a95d8005d480d460c3004fad89cfa295b9cbb4
+module=innodb-java-reader

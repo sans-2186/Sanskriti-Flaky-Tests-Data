@@ -1,0 +1,3 @@
+url=https://github.com/apache/dubbo
+sha=1f84cdcfede5ec9843ecebf39a25d9b995b8098b
+module=dubbo-common

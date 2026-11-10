@@ -1,0 +1,89 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] hutool                                                             [pom]
+[INFO] hutool-core                                                        [jar]
+[INFO] hutool-log                                                         [jar]
+[INFO] hutool-setting                                                     [jar]
+[INFO] hutool-cron                                                        [jar]
+[INFO] 
+[INFO] ----------------------< cn.hutool:hutool-parent >-----------------------
+[INFO] Building hutool 4.1.14                                             [1/5]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ hutool-parent ---
+[INFO] Installing /tmp/tmp.zwXrtAk2XW/repo/pom.xml to /home/runner/.m2/repository/cn/hutool/hutool-parent/4.1.14/hutool-parent-4.1.14.pom
+[INFO] 
+[INFO] -----------------------< cn.hutool:hutool-core >------------------------
+[INFO] Building hutool-core 4.1.14                                        [2/5]
+[INFO]   from hutool-core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.pom (24 kB at 98 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom (766 B at 35 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom (2.0 kB at 53 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.jar (315 kB at 4.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar (45 kB at 2.0 MB/s)
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ hutool-core ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.zwXrtAk2XW/repo/hutool-core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ hutool-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 308 source files to /tmp/tmp.zwXrtAk2XW/repo/hutool-core/target/classes
+[INFO] /tmp/tmp.zwXrtAk2XW/repo/hutool-core/src/main/java/cn/hutool/core/util/ClassUtil.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.zwXrtAk2XW/repo/hutool-core/src/main/java/cn/hutool/core/util/ClassUtil.java: Recompile with -Xlint:deprecation for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /tmp/tmp.zwXrtAk2XW/repo/hutool-core/src/main/java/cn/hutool/core/lang/caller/ReflectionCaller.java:[16,35] cannot find symbol
+  symbol:   class Reflection
+  location: package sun.reflect
+[ERROR] /tmp/tmp.zwXrtAk2XW/repo/hutool-core/src/main/java/cn/hutool/core/lang/caller/ReflectionCaller.java:[22,35] cannot find symbol
+  symbol:   class Reflection
+  location: package sun.reflect
+[ERROR] /tmp/tmp.zwXrtAk2XW/repo/hutool-core/src/main/java/cn/hutool/core/lang/caller/ReflectionCaller.java:[28,35] cannot find symbol
+  symbol:   class Reflection
+  location: package sun.reflect
+[INFO] 3 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for hutool 4.1.14:
+[INFO] 
+[INFO] hutool ............................................. SUCCESS [  0.189 s]
+[INFO] hutool-core ........................................ FAILURE [  4.571 s]
+[INFO] hutool-log ......................................... SKIPPED
+[INFO] hutool-setting ..................................... SKIPPED
+[INFO] hutool-cron ........................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.940 s
+[INFO] Finished at: 2026-11-10T19:12:58Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.7.0:compile (default-compile) on project hutool-core: Compilation failure: Compilation failure: 
+[ERROR] /tmp/tmp.zwXrtAk2XW/repo/hutool-core/src/main/java/cn/hutool/core/lang/caller/ReflectionCaller.java:[16,35] cannot find symbol
+[ERROR]   symbol:   class Reflection
+[ERROR]   location: package sun.reflect
+[ERROR] /tmp/tmp.zwXrtAk2XW/repo/hutool-core/src/main/java/cn/hutool/core/lang/caller/ReflectionCaller.java:[22,35] cannot find symbol
+[ERROR]   symbol:   class Reflection
+[ERROR]   location: package sun.reflect
+[ERROR] /tmp/tmp.zwXrtAk2XW/repo/hutool-core/src/main/java/cn/hutool/core/lang/caller/ReflectionCaller.java:[28,35] cannot find symbol
+[ERROR]   symbol:   class Reflection
+[ERROR]   location: package sun.reflect
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :hutool-core

@@ -1,0 +1,42 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Cukes Parent                                                       [pom]
+[INFO] Cukes Core                                                         [jar]
+[INFO] Cukes Sample Projects                                              [pom]
+[INFO] Cukes Plugins Sample Project                                       [jar]
+[INFO] 
+[INFO] ------------------------< lv.ctco.cukes:cukes >-------------------------
+[INFO] Building Cukes Parent 0.0.33-SNAPSHOT                              [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) > test-compile @ cukes >>>
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) < test-compile @ cukes <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) @ cukes ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running BarrierPointSearchMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Cukes Parent 0.0.33-SNAPSHOT:
+[INFO] 
+[INFO] Cukes Parent ....................................... FAILURE [  0.232 s]
+[INFO] Cukes Core ......................................... SKIPPED
+[INFO] Cukes Sample Projects .............................. SKIPPED
+[INFO] Cukes Plugins Sample Project ....................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.364 s
+[INFO] Finished at: 2026-11-10T18:50:29Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch (default-cli) on project cukes: Execution default-cli of goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch failed: java.io.FileNotFoundException: /tmp/tmp.j9mn4mC8zz/repo/.flakesync/Results-CritSearch/lv.ctco.cukes.plugins.RunCukesTest.Given wait for 1 second-CriticalPoints.csv (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

@@ -1,0 +1,588 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.adobe.prime:captivate-prime.core:bundle:1.3.0
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.mockito:mockito-core:jar -> duplicate declaration of version (?) @ line 143, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] captivate-prime                                                    [pom]
+[INFO] CPWidget - Core                                                 [bundle]
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom (5.2 kB at 46 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom (7.2 kB at 256 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar (41 kB at 1.2 MB/s)
+[INFO] 
+[INFO] ------------------< com.adobe.prime:captivate-prime >-------------------
+[INFO] Building captivate-prime 1.3.0                                     [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ captivate-prime >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven) @ captivate-prime ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- scr:1.26.0:scr (generate-scr-descriptor) @ captivate-prime ---
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ captivate-prime <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ captivate-prime ---
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom (3.4 kB at 120 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom (18 kB at 738 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom (2.2 kB at 67 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom (9.3 kB at 403 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom (2.3 kB at 70 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom (2.6 kB at 90 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom (20 kB at 720 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom (8.1 kB at 290 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/net/java/jvnet-parent/5/jvnet-parent-5.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/5/jvnet-parent-5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/5/jvnet-parent-5.pom (8.9 kB at 341 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom (4.9 kB at 205 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/sun/activation/all/1.2.0/all-1.2.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.0/all-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.0/all-1.2.0.pom (18 kB at 690 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/net/java/jvnet-parent/1/jvnet-parent-1.pom
+[INFO] Downloaded from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/net/java/jvnet-parent/1/jvnet-parent-1.pom (4.7 kB at 336 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom (4.0 kB at 118 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom (1.5 kB at 55 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar (63 kB at 2.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar (12 kB at 349 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar (2.1 kB at 49 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar (35 kB at 497 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar (128 kB at 1.9 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar (57 kB at 810 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar (435 kB at 5.7 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar (563 kB at 6.9 MB/s)
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.MLt0VyKfWd/repo/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_O4GCf1iLLtVpg5Y2cgwlYFLOxcBREfohKEhT4mNem4=
+nondexLogging=CONFIG
+test=
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.pom (6.5 kB at 259 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire/2.20/surefire-2.20.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.20/surefire-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.20/surefire-2.20.pom (21 kB at 904 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.jar (53 kB at 1.8 MB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.pom (9.4 kB at 302 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom (1.6 kB at 53 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom (13 kB at 372 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.pom (3.7 kB at 124 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.pom (2.0 kB at 56 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.pom (3.2 kB at 82 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.jar (331 kB at 11 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.jar (50 kB at 1.9 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar (14 kB at 540 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.jar (182 kB at 6.5 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.jar (13 kB at 459 kB/s)
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.MLt0VyKfWd/repo/.nondex
+nondexJarDir=/tmp/tmp.MLt0VyKfWd/repo/.nondex
+nondexExecid=rfaDbpp5e6aH+LKEeryQ1esj9MpQYtqqShlixeoiIo=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.MLt0VyKfWd/repo/.nondex
+nondexJarDir=/tmp/tmp.MLt0VyKfWd/repo/.nondex
+nondexExecid=VTuSyqc6r9T7RB1CPsWAhDJXozBtLchzFaDVjwvaKk=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.MLt0VyKfWd/repo/.nondex
+nondexJarDir=/tmp/tmp.MLt0VyKfWd/repo/.nondex
+nondexExecid=7ycD8AFoapWLb2oJGOnWodU5N2YWFLdEehLKmuJDl4=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.MLt0VyKfWd/repo/.nondex" -DnondexJarDir="/tmp/tmp.MLt0VyKfWd/repo/.nondex" -DnondexExecid=rfaDbpp5e6aH+LKEeryQ1esj9MpQYtqqShlixeoiIo= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.MLt0VyKfWd/repo/.nondex" -DnondexJarDir="/tmp/tmp.MLt0VyKfWd/repo/.nondex" -DnondexExecid=VTuSyqc6r9T7RB1CPsWAhDJXozBtLchzFaDVjwvaKk= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.MLt0VyKfWd/repo/.nondex" -DnondexJarDir="/tmp/tmp.MLt0VyKfWd/repo/.nondex" -DnondexExecid=7ycD8AFoapWLb2oJGOnWodU5N2YWFLdEehLKmuJDl4= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.MLt0VyKfWd/repo/.nondex/rfaDbpp5e6aH+LKEeryQ1esj9MpQYtqqShlixeoiIo=/test_results.html
+[INFO] [NonDex] The id of this run is: rfaDbpp5e6aH+LKEeryQ1esj9MpQYtqqShlixeoiIo=
+[INFO] 
+[INFO] ----------------< com.adobe.prime:captivate-prime.core >----------------
+[INFO] Building CPWidget - Core 1.3.0                                     [2/2]
+[INFO]   from core/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ captivate-prime.core >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven) @ captivate-prime.core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ captivate-prime.core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.MLt0VyKfWd/repo/core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ captivate-prime.core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- bnd:5.1.2:bnd-process (bnd-process) @ captivate-prime.core ---
+[INFO] skip project with packaging=bundle
+[INFO] 
+[INFO] --- scr:1.26.0:scr (generate-scr-descriptor) @ captivate-prime.core ---
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.java [1:1]:  Component com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet has set a label. However metatype is set to false. This label is ignored.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.java [1:1]:  Component com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet has set a description. However metatype is set to false. This description is ignored.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.java [1:1]: Property sling.servlet.resourceTypes in class com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet is set as private. This is redundant as no metatype will be generated.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.java [1:1]: Property sling.servlet.methods in class com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet is set as private. This is redundant as no metatype will be generated.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.java [1:1]:  Component com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet has set a label. However metatype is set to false. This label is ignored.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.java [1:1]:  Component com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet has set a description. However metatype is set to false. This description is ignored.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.java [1:1]: Property sling.servlet.resourceTypes in class com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet is set as private. This is redundant as no metatype will be generated.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.java [1:1]: Property sling.servlet.methods in class com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet is set as private. This is redundant as no metatype will be generated.
+[INFO] Generating 1 MetaType Descriptors in /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/metatype/com.adobe.prime.core.services.EmbeddableWidgetServiceImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/com.adobe.prime.core.services.EmbeddableWidgetConfigurationServiceImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/com.adobe.prime.core.services.EmbeddableWidgetServiceImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/com.adobe.prime.core.services.EmbeddableWidgetUserServiceImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/com.adobe.prime.core.servlets.EmbeddableAdminConfigDsServlet.xml
+[INFO] Writing 1 Service Component Descriptors to /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet.xml
+[INFO] Writing 1 Service Component Descriptors to /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet.xml
+[INFO] 
+[INFO] --- bundle:4.1.0:manifest (generate-osgi-metadata-for-unittests) @ captivate-prime.core ---
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 :  Component com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet has set a label. However metatype is set to false. This label is ignored. [com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 :  Component com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet has set a description. However metatype is set to false. This description is ignored. [com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 : Property sling.servlet.resourceTypes in class com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet is set as private. This is redundant as no metatype will be generated. [com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 : Property sling.servlet.methods in class com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet is set as private. This is redundant as no metatype will be generated. [com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 :  Component com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet has set a label. However metatype is set to false. This label is ignored. [com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 :  Component com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet has set a description. However metatype is set to false. This description is ignored. [com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 : Property sling.servlet.resourceTypes in class com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet is set as private. This is redundant as no metatype will be generated. [com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 : Property sling.servlet.methods in class com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet is set as private. This is redundant as no metatype will be generated. [com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.class,1:1]
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ captivate-prime.core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ captivate-prime.core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ captivate-prime.core <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ captivate-prime.core ---
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.MLt0VyKfWd/repo/core/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_eDrsJ1UPtImb0VTFYnmq0hJrPEBTAHOuzdPoGTeURtI=
+nondexLogging=CONFIG
+test=
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.pom (7.0 kB at 189 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom (2.5 kB at 108 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/junit/platform/junit-platform-launcher/1.3.1/junit-platform-launcher-1.3.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.3.1/junit-platform-launcher-1.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.3.1/junit-platform-launcher-1.3.1.pom (2.2 kB at 85 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/junit/platform/junit-platform-engine/1.3.1/junit-platform-engine-1.3.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.3.1/junit-platform-engine-1.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.3.1/junit-platform-engine-1.3.1.pom (2.4 kB at 85 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.pom (2.0 kB at 72 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.pom (1.7 kB at 58 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/junit/platform/junit-platform-launcher/1.3.1/junit-platform-launcher-1.3.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/junit/platform/junit-platform-engine/1.3.1/junit-platform-engine-1.3.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.3.1/junit-platform-engine-1.3.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.3.1/junit-platform-launcher-1.3.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/2.22.1/surefire-junit-platform-2.22.1.jar (66 kB at 2.6 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar (7.1 kB at 274 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.3.1/junit-platform-engine-1.3.1.jar (135 kB at 4.2 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.3.1/junit-platform-launcher-1.3.1.jar (95 kB at 2.8 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar (78 kB at 2.1 MB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.adobe.prime.core.sightly.models.EmbeddableWidgetModelTest
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/runner/.m2/repository/uk/org/lidalia/slf4j-test/1.0.1/slf4j-test-1.0.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/runner/.m2/repository/com/adobe/aem/aem-sdk-api/2021.4.5139.20210407T003220Z-210325/aem-sdk-api-2021.4.5139.20210407T003220Z-210325.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [uk.org.lidalia.slf4jtest.TestLoggerFactory]
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.482 s - in com.adobe.prime.core.sightly.models.EmbeddableWidgetModelTest
+[INFO] Running com.adobe.prime.core.services.EmbeddableWidgetServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.594 s - in com.adobe.prime.core.services.EmbeddableWidgetServiceImplTest
+[INFO] Running com.adobe.prime.core.services.EmbeddableWidgetConfigurationServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in com.adobe.prime.core.services.EmbeddableWidgetConfigurationServiceImplTest
+[INFO] Running com.adobe.prime.core.services.EmbeddableWidgetUserServiceImplTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 s - in com.adobe.prime.core.services.EmbeddableWidgetUserServiceImplTest
+[INFO] Running com.adobe.prime.core.entity.EmbeddableWidgetsConfigTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.adobe.prime.core.entity.EmbeddableWidgetsConfigTest
+[INFO] Running com.adobe.prime.core.entity.EmbeddableWidgetOptionsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.adobe.prime.core.entity.EmbeddableWidgetOptionsTest
+[INFO] Running com.adobe.prime.core.utils.EmbeddableWidgetConfigUtilsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.adobe.prime.core.utils.EmbeddableWidgetConfigUtilsTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServletTest
+[INFO] Running com.adobe.prime.core.servlets.ConfigPublishServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in com.adobe.prime.core.servlets.ConfigPublishServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableAdminConfigPostServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in com.adobe.prime.core.servlets.EmbeddableAdminConfigPostServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableAdminConfigGetServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in com.adobe.prime.core.servlets.EmbeddableAdminConfigGetServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableAdminConfigDsServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in com.adobe.prime.core.servlets.EmbeddableAdminConfigDsServletTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.MLt0VyKfWd/repo/core/.nondex
+nondexJarDir=/tmp/tmp.MLt0VyKfWd/repo/core/.nondex
+nondexExecid=HZ8LUtnevzEobwbPFMzzcKYF3HNdH1fnBWpLzFUAWw=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.adobe.prime.core.sightly.models.EmbeddableWidgetModelTest
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/runner/.m2/repository/uk/org/lidalia/slf4j-test/1.0.1/slf4j-test-1.0.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/runner/.m2/repository/com/adobe/aem/aem-sdk-api/2021.4.5139.20210407T003220Z-210325/aem-sdk-api-2021.4.5139.20210407T003220Z-210325.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [uk.org.lidalia.slf4jtest.TestLoggerFactory]
+[ERROR] Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.723 s <<< FAILURE! - in com.adobe.prime.core.sightly.models.EmbeddableWidgetModelTest
+[ERROR] testWidgetConfigs  Time elapsed: 0.048 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.adobe.prime.core.sightly.models.EmbeddableWidgetModelTest.testWidgetConfigs(EmbeddableWidgetModelTest.java:93)
+
+[INFO] Running com.adobe.prime.core.services.EmbeddableWidgetServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.743 s - in com.adobe.prime.core.services.EmbeddableWidgetServiceImplTest
+[INFO] Running com.adobe.prime.core.services.EmbeddableWidgetConfigurationServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s - in com.adobe.prime.core.services.EmbeddableWidgetConfigurationServiceImplTest
+[INFO] Running com.adobe.prime.core.services.EmbeddableWidgetUserServiceImplTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.372 s - in com.adobe.prime.core.services.EmbeddableWidgetUserServiceImplTest
+[INFO] Running com.adobe.prime.core.entity.EmbeddableWidgetsConfigTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.adobe.prime.core.entity.EmbeddableWidgetsConfigTest
+[INFO] Running com.adobe.prime.core.entity.EmbeddableWidgetOptionsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.adobe.prime.core.entity.EmbeddableWidgetOptionsTest
+[INFO] Running com.adobe.prime.core.utils.EmbeddableWidgetConfigUtilsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.adobe.prime.core.utils.EmbeddableWidgetConfigUtilsTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServletTest
+[INFO] Running com.adobe.prime.core.servlets.ConfigPublishServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in com.adobe.prime.core.servlets.ConfigPublishServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableAdminConfigPostServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in com.adobe.prime.core.servlets.EmbeddableAdminConfigPostServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableAdminConfigGetServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in com.adobe.prime.core.servlets.EmbeddableAdminConfigGetServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableAdminConfigDsServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in com.adobe.prime.core.servlets.EmbeddableAdminConfigDsServletTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   EmbeddableWidgetModelTest.testWidgetConfigs:93 expected: <true> but was: <false>
+[INFO] 
+[ERROR] Tests run: 28, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Surefire failed when running tests for HZ8LUtnevzEobwbPFMzzcKYF3HNdH1fnBWpLzFUAWw=
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.MLt0VyKfWd/repo/core/.nondex
+nondexJarDir=/tmp/tmp.MLt0VyKfWd/repo/core/.nondex
+nondexExecid=p8FWifstrHAWN8vYLMQJA+w0VpprIN5OBE27f2OOiXw=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.adobe.prime.core.sightly.models.EmbeddableWidgetModelTest
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/runner/.m2/repository/uk/org/lidalia/slf4j-test/1.0.1/slf4j-test-1.0.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/runner/.m2/repository/com/adobe/aem/aem-sdk-api/2021.4.5139.20210407T003220Z-210325/aem-sdk-api-2021.4.5139.20210407T003220Z-210325.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [uk.org.lidalia.slf4jtest.TestLoggerFactory]
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.718 s - in com.adobe.prime.core.sightly.models.EmbeddableWidgetModelTest
+[INFO] Running com.adobe.prime.core.services.EmbeddableWidgetServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.69 s - in com.adobe.prime.core.services.EmbeddableWidgetServiceImplTest
+[INFO] Running com.adobe.prime.core.services.EmbeddableWidgetConfigurationServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in com.adobe.prime.core.services.EmbeddableWidgetConfigurationServiceImplTest
+[INFO] Running com.adobe.prime.core.services.EmbeddableWidgetUserServiceImplTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.38 s - in com.adobe.prime.core.services.EmbeddableWidgetUserServiceImplTest
+[INFO] Running com.adobe.prime.core.entity.EmbeddableWidgetsConfigTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.adobe.prime.core.entity.EmbeddableWidgetsConfigTest
+[INFO] Running com.adobe.prime.core.entity.EmbeddableWidgetOptionsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.adobe.prime.core.entity.EmbeddableWidgetOptionsTest
+[INFO] Running com.adobe.prime.core.utils.EmbeddableWidgetConfigUtilsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.adobe.prime.core.utils.EmbeddableWidgetConfigUtilsTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServletTest
+[INFO] Running com.adobe.prime.core.servlets.ConfigPublishServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in com.adobe.prime.core.servlets.ConfigPublishServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableAdminConfigPostServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s - in com.adobe.prime.core.servlets.EmbeddableAdminConfigPostServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableAdminConfigGetServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in com.adobe.prime.core.servlets.EmbeddableAdminConfigGetServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableAdminConfigDsServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in com.adobe.prime.core.servlets.EmbeddableAdminConfigDsServletTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.MLt0VyKfWd/repo/core/.nondex
+nondexJarDir=/tmp/tmp.MLt0VyKfWd/repo/core/.nondex
+nondexExecid=Sn9GrL5w2vEeTmncbdyEI+VAURXBFAUCeFg0nAP8hi4=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.adobe.prime.core.sightly.models.EmbeddableWidgetModelTest
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/runner/.m2/repository/uk/org/lidalia/slf4j-test/1.0.1/slf4j-test-1.0.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/runner/.m2/repository/com/adobe/aem/aem-sdk-api/2021.4.5139.20210407T003220Z-210325/aem-sdk-api-2021.4.5139.20210407T003220Z-210325.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [uk.org.lidalia.slf4jtest.TestLoggerFactory]
+[ERROR] Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.87 s <<< FAILURE! - in com.adobe.prime.core.sightly.models.EmbeddableWidgetModelTest
+[ERROR] testWidgetConfigs  Time elapsed: 0.046 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.adobe.prime.core.sightly.models.EmbeddableWidgetModelTest.testWidgetConfigs(EmbeddableWidgetModelTest.java:93)
+
+[INFO] Running com.adobe.prime.core.services.EmbeddableWidgetServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.726 s - in com.adobe.prime.core.services.EmbeddableWidgetServiceImplTest
+[INFO] Running com.adobe.prime.core.services.EmbeddableWidgetConfigurationServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in com.adobe.prime.core.services.EmbeddableWidgetConfigurationServiceImplTest
+[INFO] Running com.adobe.prime.core.services.EmbeddableWidgetUserServiceImplTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.343 s - in com.adobe.prime.core.services.EmbeddableWidgetUserServiceImplTest
+[INFO] Running com.adobe.prime.core.entity.EmbeddableWidgetsConfigTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.adobe.prime.core.entity.EmbeddableWidgetsConfigTest
+[INFO] Running com.adobe.prime.core.entity.EmbeddableWidgetOptionsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.adobe.prime.core.entity.EmbeddableWidgetOptionsTest
+[INFO] Running com.adobe.prime.core.utils.EmbeddableWidgetConfigUtilsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.adobe.prime.core.utils.EmbeddableWidgetConfigUtilsTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServletTest
+[INFO] Running com.adobe.prime.core.servlets.ConfigPublishServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in com.adobe.prime.core.servlets.ConfigPublishServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableAdminConfigPostServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in com.adobe.prime.core.servlets.EmbeddableAdminConfigPostServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableAdminConfigGetServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in com.adobe.prime.core.servlets.EmbeddableAdminConfigGetServletTest
+[INFO] Running com.adobe.prime.core.servlets.EmbeddableAdminConfigDsServletTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in com.adobe.prime.core.servlets.EmbeddableAdminConfigDsServletTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   EmbeddableWidgetModelTest.testWidgetConfigs:93 expected: <true> but was: <false>
+[INFO] 
+[ERROR] Tests run: 28, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Surefire failed when running tests for Sn9GrL5w2vEeTmncbdyEI+VAURXBFAUCeFg0nAP8hi4=
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.MLt0VyKfWd/repo/core/.nondex" -DnondexJarDir="/tmp/tmp.MLt0VyKfWd/repo/core/.nondex" -DnondexExecid=HZ8LUtnevzEobwbPFMzzcKYF3HNdH1fnBWpLzFUAWw= -DnondexLogging=CONFIG
+[WARNING] com.adobe.prime.core.sightly.models.EmbeddableWidgetModelTest#testWidgetConfigs
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.MLt0VyKfWd/repo/core/.nondex" -DnondexJarDir="/tmp/tmp.MLt0VyKfWd/repo/core/.nondex" -DnondexExecid=p8FWifstrHAWN8vYLMQJA+w0VpprIN5OBE27f2OOiXw= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.MLt0VyKfWd/repo/core/.nondex" -DnondexJarDir="/tmp/tmp.MLt0VyKfWd/repo/core/.nondex" -DnondexExecid=Sn9GrL5w2vEeTmncbdyEI+VAURXBFAUCeFg0nAP8hi4= -DnondexLogging=CONFIG
+[WARNING] com.adobe.prime.core.sightly.models.EmbeddableWidgetModelTest#testWidgetConfigs
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] com.adobe.prime.core.sightly.models.EmbeddableWidgetModelTest#testWidgetConfigs
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.MLt0VyKfWd/repo/core/.nondex/HZ8LUtnevzEobwbPFMzzcKYF3HNdH1fnBWpLzFUAWw=/test_results.html
+[INFO] [NonDex] The id of this run is: HZ8LUtnevzEobwbPFMzzcKYF3HNdH1fnBWpLzFUAWw=
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for captivate-prime 1.3.0:
+[INFO] 
+[INFO] captivate-prime .................................... SUCCESS [  2.632 s]
+[INFO] CPWidget - Core .................................... FAILURE [ 23.381 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  28.030 s
+[INFO] Finished at: 2026-11-10T18:37:26Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.illinois:nondex-maven-plugin:2.2.1:nondex (default-cli) on project captivate-prime.core: Unable to execute mojo: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /tmp/tmp.MLt0VyKfWd/repo/core/.nondex/HZ8LUtnevzEobwbPFMzzcKYF3HNdH1fnBWpLzFUAWw= for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :captivate-prime.core

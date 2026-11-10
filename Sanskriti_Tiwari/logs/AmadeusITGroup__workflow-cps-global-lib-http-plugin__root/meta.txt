@@ -1,0 +1,3 @@
+url=https://github.com/AmadeusITGroup/workflow-cps-global-lib-http-plugin
+sha=fa78cb033a5b95fa6ab914991936253e406867ea
+module=<root>

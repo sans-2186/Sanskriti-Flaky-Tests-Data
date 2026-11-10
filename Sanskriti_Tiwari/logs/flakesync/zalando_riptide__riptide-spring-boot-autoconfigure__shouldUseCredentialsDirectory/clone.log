@@ -1,0 +1,19 @@
+Cloning into '/tmp/tmp.JfOcexVxE0/repo'...
+Note: switching to 'dcf4af17abfd312243897e79e0577d1e28537e7d'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at dcf4af17 Merge pull request #1247 from zalando/dependabot/maven/io.micrometer-micrometer-core-1.8.4

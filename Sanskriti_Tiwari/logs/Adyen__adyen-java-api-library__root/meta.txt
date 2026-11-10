@@ -1,0 +1,3 @@
+url=https://github.com/Adyen/adyen-java-api-library
+sha=6fb5cd049b57a22d2ec4465d204c15f1c90dd325
+module=<root>

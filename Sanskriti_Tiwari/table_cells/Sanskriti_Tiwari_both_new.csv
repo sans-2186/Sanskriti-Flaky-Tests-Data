@@ -1,0 +1,2 @@
+project_name,sha,flaky_tests,found_by
+alibaba/nacos,2a0dafa2f4e1a8f1fac38e8bf750b77858c03af3,com.alibaba.nacos.api.utils.NetUtilsTest.testLocalIpWithException,iDFlakies+NonDex

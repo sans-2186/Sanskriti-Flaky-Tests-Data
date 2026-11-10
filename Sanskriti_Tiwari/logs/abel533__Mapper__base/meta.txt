@@ -1,0 +1,3 @@
+url=https://github.com/abel533/Mapper
+sha=3c0b3307011fad53f811e08d05147d94fc6c0d67
+module=base

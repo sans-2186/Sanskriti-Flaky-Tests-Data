@@ -1,0 +1,20 @@
+Cloning into '/tmp/tmp.QR67vYSrAk/repo'...
+Updating files:  63% (1036/1620)Updating files:  64% (1037/1620)Updating files:  65% (1053/1620)Updating files:  66% (1070/1620)Updating files:  67% (1086/1620)Updating files:  68% (1102/1620)Updating files:  69% (1118/1620)Updating files:  70% (1134/1620)Updating files:  71% (1151/1620)Updating files:  72% (1167/1620)Updating files:  73% (1183/1620)Updating files:  74% (1199/1620)Updating files:  75% (1215/1620)Updating files:  76% (1232/1620)Updating files:  77% (1248/1620)Updating files:  78% (1264/1620)Updating files:  79% (1280/1620)Updating files:  80% (1296/1620)Updating files:  81% (1313/1620)Updating files:  82% (1329/1620)Updating files:  83% (1345/1620)Updating files:  84% (1361/1620)Updating files:  85% (1377/1620)Updating files:  86% (1394/1620)Updating files:  87% (1410/1620)Updating files:  88% (1426/1620)Updating files:  89% (1442/1620)Updating files:  90% (1458/1620)Updating files:  91% (1475/1620)Updating files:  92% (1491/1620)Updating files:  93% (1507/1620)Updating files:  94% (1523/1620)Updating files:  95% (1539/1620)Updating files:  96% (1556/1620)Updating files:  97% (1572/1620)Updating files:  98% (1588/1620)Updating files:  99% (1604/1620)Updating files: 100% (1620/1620)Updating files: 100% (1620/1620), done.
+Note: switching to 'd0efffad5d2034bb07525cac9b299dac72c3045d'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at d0efffad5 UNDERTOW-1416 Error message in the log when using server push over HTTP/2

@@ -1,0 +1,581 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.adobe.prime:captivate-prime.core:bundle:1.3.0
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.mockito:mockito-core:jar -> duplicate declaration of version (?) @ line 143, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] captivate-prime                                                    [pom]
+[INFO] CPWidget - Core                                                 [bundle]
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.pom (3.0 kB at 33 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/cs/idflakies/2.0.0/idflakies-2.0.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies/2.0.0/idflakies-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies/2.0.0/idflakies-2.0.0.pom (7.1 kB at 137 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.jar (35 kB at 806 kB/s)
+[INFO] 
+[INFO] ------------------< com.adobe.prime:captivate-prime >-------------------
+[INFO] Building captivate-prime 1.3.0                                     [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ captivate-prime >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven) @ captivate-prime ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- scr:1.26.0:scr (generate-scr-descriptor) @ captivate-prime ---
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ captivate-prime <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ captivate-prime ---
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.pom (5.3 kB at 152 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.pom (4.6 kB at 127 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/cs/testrunner/1.2.1/testrunner-1.2.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner/1.2.1/testrunner-1.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner/1.2.1/testrunner-1.2.1.pom (7.4 kB at 296 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/code/gson/gson/2.8.5/gson-2.8.5.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.pom (2.5 kB at 72 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/code/gson/gson-parent/2.8.5/gson-parent-2.8.5.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.5/gson-parent-2.8.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.5/gson-parent-2.8.5.pom (3.8 kB at 126 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.pom (8.5 kB at 275 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven/3.5.4/maven-3.5.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.5.4/maven-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.5.4/maven-3.5.4.pom (23 kB at 936 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.pom (4.0 kB at 130 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.pom (1.8 kB at 29 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.pom (2.6 kB at 105 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.pom (1.5 kB at 69 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.pom (1.9 kB at 73 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.pom (2.1 kB at 84 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.pom (2.9 kB at 95 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.pom (3.1 kB at 87 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/guava/guava/25.1-jre/guava-25.1-jre.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.pom (7.8 kB at 243 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/guava/guava-parent/25.1-jre/guava-parent-25.1-jre.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/25.1-jre/guava-parent-25.1-jre.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/25.1-jre/guava-parent-25.1-jre.pom (10 kB at 385 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom (4.3 kB at 148 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.0.pom (4.2 kB at 168 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.pom (1.8 kB at 58 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/errorprone/error_prone_parent/2.1.3/error_prone_parent-2.1.3.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_parent/2.1.3/error_prone_parent-2.1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_parent/2.1.3/error_prone_parent-2.1.3.pom (5.1 kB at 204 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom (2.8 kB at 132 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom (2.5 kB at 98 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.pom (4.1 kB at 151 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/inject/guice/4.2.0/guice-4.2.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.2.0/guice-4.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.2.0/guice-4.2.0.pom (11 kB at 438 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/inject/guice-parent/4.2.0/guice-parent-4.2.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice-parent/4.2.0/guice-parent-4.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice-parent/4.2.0/guice-parent-4.2.0.pom (16 kB at 537 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/plugins/maven-surefire-plugin/2.22.0/maven-surefire-plugin-2.22.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.22.0/maven-surefire-plugin-2.22.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.22.0/maven-surefire-plugin-2.22.0.pom (5.0 kB at 187 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire/2.22.0/surefire-2.22.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.22.0/surefire-2.22.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.22.0/surefire-2.22.0.pom (27 kB at 1.1 MB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/maven-surefire-common/2.22.0/maven-surefire-common-2.22.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.22.0/maven-surefire-common-2.22.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.22.0/maven-surefire-common-2.22.0.pom (11 kB at 291 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5/maven-plugin-annotations-3.5.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5/maven-plugin-annotations-3.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5/maven-plugin-annotations-3.5.pom (1.7 kB at 54 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/plugin-tools/maven-plugin-tools/3.5/maven-plugin-tools-3.5.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.5/maven-plugin-tools-3.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.5/maven-plugin-tools-3.5.pom (16 kB at 736 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.pom (3.5 kB at 148 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.pom (2.0 kB at 65 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.pom (7.4 kB at 307 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/codehaus/plexus/plexus-java/0.9.8/plexus-java-0.9.8.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/0.9.8/plexus-java-0.9.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/0.9.8/plexus-java-0.9.8.pom (2.4 kB at 71 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/codehaus/plexus/plexus-languages/0.9.8/plexus-languages-0.9.8.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/0.9.8/plexus-languages-0.9.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/0.9.8/plexus-languages-0.9.8.pom (2.2 kB at 76 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/ow2/asm/asm/6.1.1/asm-6.1.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.1.1/asm-6.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.1.1/asm-6.1.1.pom (2.9 kB at 134 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.pom (16 kB at 609 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.pom (1.6 kB at 72 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/xmlunit/xmlunit/1.6/xmlunit-1.6.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.6/xmlunit-1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.6/xmlunit-1.6.pom (3.0 kB at 67 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.pom (2.2 kB at 80 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.pom (1.2 kB at 36 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.pom (2.4 kB at 62 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.pom (2.0 kB at 78 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.pom (1.7 kB at 62 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/opencsv/opencsv/4.3/opencsv-4.3.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.3/opencsv-4.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.3/opencsv-4.3.pom (20 kB at 754 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.pom (28 kB at 1.0 MB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/commons/commons-text/1.3/commons-text-1.3.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.pom (14 kB at 594 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/commons/commons-parent/45/commons-parent-45.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/45/commons-parent-45.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/45/commons-parent-45.pom (73 kB at 2.6 MB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.pom (28 kB at 949 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.pom (15 kB at 585 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/commons-logging/commons-logging/1.2/commons-logging-1.2.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.pom (19 kB at 835 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.pom (23 kB at 723 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.pom (9.3 kB at 333 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.pom (2.4 kB at 83 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.pom (7.3 kB at 304 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/github/javaparser/javaparser-parent/3.6.10/javaparser-parent-3.6.10.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-parent/3.6.10/javaparser-parent-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-parent/3.6.10/javaparser-parent-3.6.10.pom (13 kB at 468 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.pom (5.0 kB at 210 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.pom (4.9 kB at 205 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.pom (9.7 kB at 390 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.pom (4.7 kB at 103 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.pom (9.4 kB at 360 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/eclipse/jgit/org.eclipse.jgit-parent/4.10.0.201712302008-r/org.eclipse.jgit-parent-4.10.0.201712302008-r.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit-parent/4.10.0.201712302008-r/org.eclipse.jgit-parent-4.10.0.201712302008-r.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit-parent/4.10.0.201712302008-r/org.eclipse.jgit-parent-4.10.0.201712302008-r.pom (29 kB at 1.3 MB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/jcraft/jsch/0.1.54/jsch-0.1.54.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.pom (3.2 kB at 147 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/sonatype/oss/oss-parent/6/oss-parent-6.pom
+[INFO] Downloaded from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/sonatype/oss/oss-parent/6/oss-parent-6.pom (4.8 kB at 604 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.pom (6.0 kB at 223 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/sonatype/oss/oss-parent/5/oss-parent-5.pom
+[INFO] Downloaded from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/sonatype/oss/oss-parent/5/oss-parent-5.pom (4.1 kB at 314 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom (6.4 kB at 278 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom (16 kB at 653 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/httpcomponents/project/7/project-7.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/7/project-7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/project/7/project-7.pom (27 kB at 1.2 MB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom (5.5 kB at 221 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom (13 kB at 561 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.pom (12 kB at 444 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/commons/commons-parent/32/commons-parent-32.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/32/commons-parent-32.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/32/commons-parent-32.pom (53 kB at 1.8 MB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom (2.7 kB at 75 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/slf4j/slf4j-parent/1.7.2/slf4j-parent-1.7.2.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.2/slf4j-parent-1.7.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.2/slf4j-parent-1.7.2.pom (12 kB at 422 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.pom (6.3 kB at 146 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.pom (4.2 kB at 155 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/commons-cli/commons-cli/1.4/commons-cli-1.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.pom (11 kB at 446 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.pom (2.5 kB at 108 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.pom (2.7 kB at 102 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.pom (6.4 kB at 277 kB/s)
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/inject/guice/4.2.0/guice-4.2.0-no_aop.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/plugins/maven-surefire-plugin/2.22.0/maven-surefire-plugin-2.22.0.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/maven-surefire-common/2.22.0/maven-surefire-common-2.22.0.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5/maven-plugin-annotations-3.5.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/codehaus/plexus/plexus-java/0.9.8/plexus-java-0.9.8.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/ow2/asm/asm/6.1.1/asm-6.1.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/xmlunit/xmlunit/1.6/xmlunit-1.6.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/opencsv/opencsv/4.3/opencsv-4.3.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/commons/commons-text/1.3/commons-text-1.3.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/commons-cli/commons-cli/1.4/commons-cli-1.4.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/guava/guava/25.1-jre/guava-25.1-jre.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar
+[INFO] Downloading from adobe-public-releases: https://repo.adobe.com/nexus/content/groups/public/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.jar (115 kB at 4.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.jar (130 kB at 3.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.jar (45 kB at 810 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.jar (15 kB at 251 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.jar (43 kB at 707 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.jar (165 kB at 2.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.jar (27 kB at 357 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.jar (630 kB at 7.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.jar (55 kB at 653 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.jar (48 kB at 560 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.jar (177 kB at 1.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.jar (67 kB at 684 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.2.0/guice-4.2.0-no_aop.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.jar (36 kB at 338 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.jar (146 kB at 1.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.22.0/maven-surefire-plugin-2.22.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.jar (185 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.22.0/maven-surefire-common-2.22.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.jar (159 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5/maven-plugin-annotations-3.5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.jar (262 kB at 2.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.22.0/maven-surefire-plugin-2.22.0.jar (41 kB at 308 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.2.0/guice-4.2.0-no_aop.jar (521 kB at 3.9 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.22.0/maven-surefire-common-2.22.0.jar (524 kB at 3.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/0.9.8/plexus-java-0.9.8.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5/maven-plugin-annotations-3.5.jar (14 kB at 94 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.jar (13 kB at 88 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.1.1/asm-6.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.jar (273 kB at 1.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.jar (186 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.6/xmlunit-1.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/0.9.8/plexus-java-0.9.8.jar (35 kB at 208 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.1.1/asm-6.1.1.jar (108 kB at 626 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.jar (315 kB at 1.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.6/xmlunit-1.6.jar (101 kB at 562 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar (80 kB at 415 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar (2.2 kB at 11 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.3/opencsv-4.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar (90 kB at 456 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.jar (77 kB at 384 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar (6.6 kB at 31 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.jar (183 kB at 820 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.jar (502 kB at 2.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.3/opencsv-4.3.jar (164 kB at 721 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.jar (5.3 MB at 23 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar (246 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar (62 kB at 250 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.jar (753 kB at 3.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.jar (170 kB at 657 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.jar (1.1 MB at 4.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.jar (366 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.jar (17 kB at 60 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar (740 kB at 2.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.jar (7.6 kB at 26 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar (281 kB at 929 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.jar (2.7 MB at 8.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.jar (166 kB at 546 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar (737 kB at 2.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar (327 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.jar (98 kB at 303 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar (28 kB at 85 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar (26 kB at 80 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.jar (264 kB at 790 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.jar (13 kB at 39 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.4/commons-cli-1.4.jar (54 kB at 156 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.jar (810 kB at 2.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar (193 kB at 548 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar (242 kB at 675 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar (20 kB at 55 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar (14 kB at 37 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar (8.8 kB at 23 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.jar (2.7 MB at 7.2 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar (324 kB at 834 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar (3.5 kB at 8.9 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.jar (7.1 MB at 16 MB/s)
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving com.adobe.prime:captivate-prime:1.3.0 5 rounds to run for random-class-method
+INFO: Module is not using a supported test framework (probably not JUnit), or there is no test.
+---------------------------------------------------
+Message was:
+Module is not using a supported test framework (probably not JUnit), or there is no test.
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ----------------< com.adobe.prime:captivate-prime.core >----------------
+[INFO] Building CPWidget - Core 1.3.0                                     [2/2]
+[INFO]   from core/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ captivate-prime.core >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven) @ captivate-prime.core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ captivate-prime.core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.MLt0VyKfWd/repo/core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ captivate-prime.core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- bnd:5.1.2:bnd-process (bnd-process) @ captivate-prime.core ---
+[INFO] skip project with packaging=bundle
+[INFO] 
+[INFO] --- scr:1.26.0:scr (generate-scr-descriptor) @ captivate-prime.core ---
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.java [1:1]:  Component com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet has set a label. However metatype is set to false. This label is ignored.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.java [1:1]:  Component com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet has set a description. However metatype is set to false. This description is ignored.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.java [1:1]: Property sling.servlet.resourceTypes in class com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet is set as private. This is redundant as no metatype will be generated.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.java [1:1]: Property sling.servlet.methods in class com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet is set as private. This is redundant as no metatype will be generated.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.java [1:1]:  Component com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet has set a label. However metatype is set to false. This label is ignored.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.java [1:1]:  Component com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet has set a description. However metatype is set to false. This description is ignored.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.java [1:1]: Property sling.servlet.resourceTypes in class com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet is set as private. This is redundant as no metatype will be generated.
+[WARNING] /tmp/tmp.MLt0VyKfWd/repo/core/src/main/java/com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.java [1:1]: Property sling.servlet.methods in class com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet is set as private. This is redundant as no metatype will be generated.
+[INFO] Generating 1 MetaType Descriptors in /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/metatype/com.adobe.prime.core.services.EmbeddableWidgetServiceImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/com.adobe.prime.core.services.EmbeddableWidgetConfigurationServiceImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/com.adobe.prime.core.services.EmbeddableWidgetServiceImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/com.adobe.prime.core.services.EmbeddableWidgetUserServiceImpl.xml
+[INFO] Writing 1 Service Component Descriptors to /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/com.adobe.prime.core.servlets.EmbeddableAdminConfigDsServlet.xml
+[INFO] Writing 1 Service Component Descriptors to /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet.xml
+[INFO] Writing 1 Service Component Descriptors to /tmp/tmp.MLt0VyKfWd/repo/core/target/classes/OSGI-INF/com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet.xml
+[INFO] 
+[INFO] --- bundle:4.1.0:manifest (generate-osgi-metadata-for-unittests) @ captivate-prime.core ---
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 :  Component com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet has set a label. However metatype is set to false. This label is ignored. [com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 :  Component com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet has set a description. However metatype is set to false. This description is ignored. [com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 : Property sling.servlet.resourceTypes in class com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet is set as private. This is redundant as no metatype will be generated. [com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 : Property sling.servlet.methods in class com.adobe.prime.core.servlets.EmbeddableWidgetDatasourceServlet is set as private. This is redundant as no metatype will be generated. [com/adobe/prime/core/servlets/EmbeddableWidgetDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 :  Component com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet has set a label. However metatype is set to false. This label is ignored. [com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 :  Component com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet has set a description. However metatype is set to false. This description is ignored. [com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 : Property sling.servlet.resourceTypes in class com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet is set as private. This is redundant as no metatype will be generated. [com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.class,1:1]
+[WARNING] Manifest com.adobe.prime:captivate-prime.core:bundle:1.3.0 : Property sling.servlet.methods in class com.adobe.prime.core.servlets.EmbeddableWidgetListDatasourceServlet is set as private. This is redundant as no metatype will be generated. [com/adobe/prime/core/servlets/EmbeddableWidgetListDatasourceServlet.class,1:1]
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ captivate-prime.core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ captivate-prime.core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ captivate-prime.core <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ captivate-prime.core ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving com.adobe.prime:captivate-prime.core:1.3.0 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 0 tests. Time taken: 0.13099980354309082 seconds
+INFO: Locating tests...
+INFO: Located 28 tests. Time taken: 0.12900018692016602 seconds
+INFO: Using original order in path: /tmp/tmp.MLt0VyKfWd/repo/core/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.MLt0VyKfWd/repo/core/.dtfixingtools/original-order
+[INFO] Getting original results (28 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (3.9 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (3.9 seconds elapsed (7.8 total), 5.8 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (7.8 seconds elapsed (11.9 total), 5.2 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (11.9 seconds elapsed (15.9 total), 3.0 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (15.9 seconds elapsed (19.8 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.MLt0VyKfWd/repo/core/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.MLt0VyKfWd/repo/core/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for captivate-prime 1.3.0:
+[INFO] 
+[INFO] captivate-prime .................................... SUCCESS [  8.655 s]
+[INFO] CPWidget - Core .................................... SUCCESS [ 26.717 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  37.411 s
+[INFO] Finished at: 2026-11-10T18:36:56Z
+[INFO] ------------------------------------------------------------------------

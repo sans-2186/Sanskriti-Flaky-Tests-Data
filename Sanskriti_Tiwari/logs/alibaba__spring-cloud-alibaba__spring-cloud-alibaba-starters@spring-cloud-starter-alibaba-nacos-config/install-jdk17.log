@@ -1,0 +1,239 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba.cloud:spring-cloud-bus-rocketmq-example:jar:2021.0.4.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework.cloud:spring-cloud-starter-bootstrap:jar -> duplicate declaration of version (?) @ com.alibaba.cloud:spring-cloud-bus-rocketmq-example:${revision}, /tmp/tmp.ryi2oFhjOV/repo/spring-cloud-alibaba-examples/spring-cloud-bus-rocketmq-example/pom.xml, line 40, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Spring Cloud Alibaba                                               [pom]
+[INFO] Spring Cloud Alibaba Starters                                      [pom]
+[INFO] Spring Cloud Alibaba Commons                                       [jar]
+[INFO] Spring Cloud Starter Alibaba Nacos Config                          [jar]
+[INFO] 
+[INFO] ---------------< com.alibaba.cloud:spring-cloud-alibaba >---------------
+[INFO] Building Spring Cloud Alibaba 2021.0.4.0-SNAPSHOT                  [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[WARNING] Parameter 'additionalparam' is unknown for plugin 'maven-javadoc-plugin:3.1.1:jar (javadoc)'
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ spring-cloud-alibaba ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (no-http-checkstyle-validation) @ spring-cloud-alibaba ---
+[INFO] 
+[INFO] --- flatten:1.2.7:flatten (flatten) @ spring-cloud-alibaba ---
+[INFO] Generating flattened POM of project com.alibaba.cloud:spring-cloud-alibaba:pom:2021.0.4.0-SNAPSHOT...
+[INFO] 
+[INFO] --- javadoc:3.1.1:jar (javadoc) @ spring-cloud-alibaba ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] >>> source:3.2.1:jar (attach-sources) > generate-sources @ spring-cloud-alibaba >>>
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ spring-cloud-alibaba ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (no-http-checkstyle-validation) @ spring-cloud-alibaba ---
+[INFO] 
+[INFO] <<< source:3.2.1:jar (attach-sources) < generate-sources @ spring-cloud-alibaba <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.2.1:jar (attach-sources) @ spring-cloud-alibaba ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ spring-cloud-alibaba ---
+[INFO] Installing /tmp/tmp.ryi2oFhjOV/repo/.flattened-pom.xml to /home/runner/.m2/repository/com/alibaba/cloud/spring-cloud-alibaba/2021.0.4.0-SNAPSHOT/spring-cloud-alibaba-2021.0.4.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------< com.alibaba.cloud:spring-cloud-alibaba-starters >-----------
+[INFO] Building Spring Cloud Alibaba Starters 2021.0.4.0-SNAPSHOT         [2/4]
+[INFO]   from spring-cloud-alibaba-starters/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[WARNING] Parameter 'additionalparam' is unknown for plugin 'maven-javadoc-plugin:3.1.1:jar (javadoc)'
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ spring-cloud-alibaba-starters ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (no-http-checkstyle-validation) @ spring-cloud-alibaba-starters ---
+[INFO] 
+[INFO] --- jacoco:0.8.5:prepare-agent (jacoco-initialize) @ spring-cloud-alibaba-starters ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- flatten:1.2.7:flatten (flatten) @ spring-cloud-alibaba-starters ---
+[INFO] Generating flattened POM of project com.alibaba.cloud:spring-cloud-alibaba-starters:pom:2021.0.4.0-SNAPSHOT...
+[INFO] 
+[INFO] --- jacoco:0.8.5:report (jacoco-site) @ spring-cloud-alibaba-starters ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- javadoc:3.1.1:jar (javadoc) @ spring-cloud-alibaba-starters ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] >>> source:3.2.1:jar (attach-sources) > generate-sources @ spring-cloud-alibaba-starters >>>
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ spring-cloud-alibaba-starters ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (no-http-checkstyle-validation) @ spring-cloud-alibaba-starters ---
+[INFO] 
+[INFO] --- jacoco:0.8.5:prepare-agent (jacoco-initialize) @ spring-cloud-alibaba-starters ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< source:3.2.1:jar (attach-sources) < generate-sources @ spring-cloud-alibaba-starters <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.2.1:jar (attach-sources) @ spring-cloud-alibaba-starters ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ spring-cloud-alibaba-starters ---
+[INFO] Installing /tmp/tmp.ryi2oFhjOV/repo/spring-cloud-alibaba-starters/.flattened-pom.xml to /home/runner/.m2/repository/com/alibaba/cloud/spring-cloud-alibaba-starters/2021.0.4.0-SNAPSHOT/spring-cloud-alibaba-starters-2021.0.4.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------< com.alibaba.cloud:spring-cloud-alibaba-commons >-----------
+[INFO] Building Spring Cloud Alibaba Commons 2021.0.4.0-SNAPSHOT          [3/4]
+[INFO]   from spring-cloud-alibaba-starters/spring-cloud-alibaba-commons/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] Parameter 'additionalparam' is unknown for plugin 'maven-javadoc-plugin:3.1.1:jar (javadoc)'
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ spring-cloud-alibaba-commons ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (no-http-checkstyle-validation) @ spring-cloud-alibaba-commons ---
+[INFO] 
+[INFO] --- jacoco:0.8.5:prepare-agent (jacoco-initialize) @ spring-cloud-alibaba-commons ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ spring-cloud-alibaba-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.ryi2oFhjOV/repo/spring-cloud-alibaba-starters/spring-cloud-alibaba-commons/src/main/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.ryi2oFhjOV/repo/spring-cloud-alibaba-starters/spring-cloud-alibaba-commons/src/main/resources
+[INFO] 
+[INFO] --- flatten:1.2.7:flatten (flatten) @ spring-cloud-alibaba-commons ---
+[INFO] Generating flattened POM of project com.alibaba.cloud:spring-cloud-alibaba-commons:jar:2021.0.4.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ spring-cloud-alibaba-commons ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ spring-cloud-alibaba-commons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.ryi2oFhjOV/repo/spring-cloud-alibaba-starters/spring-cloud-alibaba-commons/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ spring-cloud-alibaba-commons ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ spring-cloud-alibaba-commons ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco:0.8.5:report (jacoco-site) @ spring-cloud-alibaba-commons ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ spring-cloud-alibaba-commons ---
+[INFO] 
+[INFO] --- javadoc:3.1.1:jar (javadoc) @ spring-cloud-alibaba-commons ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] >>> source:3.2.1:jar (attach-sources) > generate-sources @ spring-cloud-alibaba-commons >>>
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ spring-cloud-alibaba-commons ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (no-http-checkstyle-validation) @ spring-cloud-alibaba-commons ---
+[INFO] 
+[INFO] --- jacoco:0.8.5:prepare-agent (jacoco-initialize) @ spring-cloud-alibaba-commons ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< source:3.2.1:jar (attach-sources) < generate-sources @ spring-cloud-alibaba-commons <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.2.1:jar (attach-sources) @ spring-cloud-alibaba-commons ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ spring-cloud-alibaba-commons ---
+[INFO] Installing /tmp/tmp.ryi2oFhjOV/repo/spring-cloud-alibaba-starters/spring-cloud-alibaba-commons/.flattened-pom.xml to /home/runner/.m2/repository/com/alibaba/cloud/spring-cloud-alibaba-commons/2021.0.4.0-SNAPSHOT/spring-cloud-alibaba-commons-2021.0.4.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.ryi2oFhjOV/repo/spring-cloud-alibaba-starters/spring-cloud-alibaba-commons/target/spring-cloud-alibaba-commons-2021.0.4.0-SNAPSHOT.jar to /home/runner/.m2/repository/com/alibaba/cloud/spring-cloud-alibaba-commons/2021.0.4.0-SNAPSHOT/spring-cloud-alibaba-commons-2021.0.4.0-SNAPSHOT.jar
+[INFO] 
+[INFO] ----< com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config >-----
+[INFO] Building Spring Cloud Starter Alibaba Nacos Config 2021.0.4.0-SNAPSHOT [4/4]
+[INFO]   from spring-cloud-alibaba-starters/spring-cloud-starter-alibaba-nacos-config/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] Parameter 'additionalparam' is unknown for plugin 'maven-javadoc-plugin:3.1.1:jar (javadoc)'
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.21.0-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle-validation) @ spring-cloud-starter-alibaba-nacos-config ---
+[INFO] Starting audit...
+Audit done.
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (no-http-checkstyle-validation) @ spring-cloud-starter-alibaba-nacos-config ---
+[INFO] 
+[INFO] --- jacoco:0.8.5:prepare-agent (jacoco-initialize) @ spring-cloud-starter-alibaba-nacos-config ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ spring-cloud-starter-alibaba-nacos-config ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 0 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- flatten:1.2.7:flatten (flatten) @ spring-cloud-starter-alibaba-nacos-config ---
+[INFO] Generating flattened POM of project com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config:jar:2021.0.4.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ spring-cloud-starter-alibaba-nacos-config ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 31 source files to /tmp/tmp.ryi2oFhjOV/repo/spring-cloud-alibaba-starters/spring-cloud-starter-alibaba-nacos-config/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /tmp/tmp.ryi2oFhjOV/repo/spring-cloud-alibaba-starters/spring-cloud-starter-alibaba-nacos-config/src/main/java/com/alibaba/cloud/nacos/NacosConfigProperties.java:[30,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.ryi2oFhjOV/repo/spring-cloud-alibaba-starters/spring-cloud-starter-alibaba-nacos-config/src/main/java/com/alibaba/cloud/nacos/NacosConfigProperties.java:[101,10] cannot find symbol
+  symbol:   class PostConstruct
+  location: class com.alibaba.cloud.nacos.NacosConfigProperties
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Spring Cloud Alibaba 2021.0.4.0-SNAPSHOT:
+[INFO] 
+[INFO] Spring Cloud Alibaba ............................... SUCCESS [  1.306 s]
+[INFO] Spring Cloud Alibaba Starters ...................... SUCCESS [  0.302 s]
+[INFO] Spring Cloud Alibaba Commons ....................... SUCCESS [  1.183 s]
+[INFO] Spring Cloud Starter Alibaba Nacos Config .......... FAILURE [  1.029 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.345 s
+[INFO] Finished at: 2026-11-10T18:40:26Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project spring-cloud-starter-alibaba-nacos-config: Compilation failure: Compilation failure: 
+[ERROR] /tmp/tmp.ryi2oFhjOV/repo/spring-cloud-alibaba-starters/spring-cloud-starter-alibaba-nacos-config/src/main/java/com/alibaba/cloud/nacos/NacosConfigProperties.java:[30,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.ryi2oFhjOV/repo/spring-cloud-alibaba-starters/spring-cloud-starter-alibaba-nacos-config/src/main/java/com/alibaba/cloud/nacos/NacosConfigProperties.java:[101,10] cannot find symbol
+[ERROR]   symbol:   class PostConstruct
+[ERROR]   location: class com.alibaba.cloud.nacos.NacosConfigProperties
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :spring-cloud-starter-alibaba-nacos-config

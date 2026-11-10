@@ -1,0 +1,2 @@
+com.amadeus.jenkins.opentracing.SpanStorageTest#testFailing
+com.amadeus.jenkins.opentracing.SpanStorageTest#testExecutionWithMissingCaches

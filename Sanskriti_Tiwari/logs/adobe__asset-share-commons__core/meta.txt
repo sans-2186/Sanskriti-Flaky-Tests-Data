@@ -1,0 +1,3 @@
+url=https://github.com/adobe/asset-share-commons
+sha=ee3ef7051e3ea3eb7f5d904fac177bc56623c6ed
+module=core

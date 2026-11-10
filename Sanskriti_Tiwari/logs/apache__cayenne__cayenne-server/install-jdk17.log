@@ -1,0 +1,153 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.cayenne.build-tools:cayenne-checkers:jar:4.2.M3-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 95, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 101, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] cayenne-parent: Top-level parent of Cayenne modules                [pom]
+[INFO] build-tools-parent: Cayenne Build Tools Parent                     [pom]
+[INFO] cayenne-test-utilities: Common Unit Test Utilities                 [jar]
+[INFO] cayenne-di: Cayenne Dependency Injection Container                 [jar]
+[INFO] cayenne-server: Cayenne Server                                     [jar]
+[INFO] 
+[INFO] -----------------< org.apache.cayenne:cayenne-parent >------------------
+[INFO] Building cayenne-parent: Top-level parent of Cayenne modules 4.2.M3-SNAPSHOT [1/5]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> source:3.0.1:jar (bundle-source-jar) > generate-sources @ cayenne-parent >>>
+[INFO] 
+[INFO] <<< source:3.0.1:jar (bundle-source-jar) < generate-sources @ cayenne-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.0.1:jar (bundle-source-jar) @ cayenne-parent ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- failsafe:2.22.2:integration-test (integration-test) @ cayenne-parent ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- failsafe:2.22.2:verify (integration-test) @ cayenne-parent ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ cayenne-parent ---
+[INFO] Installing /tmp/tmp.9HEqvwazHf/repo/pom.xml to /home/runner/.m2/repository/org/apache/cayenne/cayenne-parent/4.2.M3-SNAPSHOT/cayenne-parent-4.2.M3-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------< org.apache.cayenne.build-tools:build-tools-parent >----------
+[INFO] Building build-tools-parent: Cayenne Build Tools Parent 4.2.M3-SNAPSHOT [2/5]
+[INFO]   from build-tools/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> source:3.0.1:jar (bundle-source-jar) > generate-sources @ build-tools-parent >>>
+[INFO] 
+[INFO] <<< source:3.0.1:jar (bundle-source-jar) < generate-sources @ build-tools-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.0.1:jar (bundle-source-jar) @ build-tools-parent ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- failsafe:2.22.2:integration-test (integration-test) @ build-tools-parent ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- failsafe:2.22.2:verify (integration-test) @ build-tools-parent ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ build-tools-parent ---
+[INFO] Installing /tmp/tmp.9HEqvwazHf/repo/build-tools/pom.xml to /home/runner/.m2/repository/org/apache/cayenne/build-tools/build-tools-parent/4.2.M3-SNAPSHOT/build-tools-parent-4.2.M3-SNAPSHOT.pom
+[INFO] 
+[INFO] -------< org.apache.cayenne.build-tools:cayenne-test-utilities >--------
+[INFO] Building cayenne-test-utilities: Common Unit Test Utilities 4.2.M3-SNAPSHOT [3/5]
+[INFO]   from build-tools/cayenne-test-utilities/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ cayenne-test-utilities ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.9HEqvwazHf/repo/build-tools/cayenne-test-utilities/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cayenne-test-utilities ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ cayenne-test-utilities ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.9HEqvwazHf/repo/build-tools/cayenne-test-utilities/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cayenne-test-utilities ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ cayenne-test-utilities ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.1.2:jar (default-jar) @ cayenne-test-utilities ---
+[INFO] 
+[INFO] >>> source:3.0.1:jar (bundle-source-jar) > generate-sources @ cayenne-test-utilities >>>
+[INFO] 
+[INFO] <<< source:3.0.1:jar (bundle-source-jar) < generate-sources @ cayenne-test-utilities <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.0.1:jar (bundle-source-jar) @ cayenne-test-utilities ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- failsafe:2.22.2:integration-test (integration-test) @ cayenne-test-utilities ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- failsafe:2.22.2:verify (integration-test) @ cayenne-test-utilities ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ cayenne-test-utilities ---
+[INFO] Installing /tmp/tmp.9HEqvwazHf/repo/build-tools/cayenne-test-utilities/pom.xml to /home/runner/.m2/repository/org/apache/cayenne/build-tools/cayenne-test-utilities/4.2.M3-SNAPSHOT/cayenne-test-utilities-4.2.M3-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.9HEqvwazHf/repo/build-tools/cayenne-test-utilities/target/cayenne-test-utilities-4.2.M3-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/cayenne/build-tools/cayenne-test-utilities/4.2.M3-SNAPSHOT/cayenne-test-utilities-4.2.M3-SNAPSHOT.jar
+[INFO] 
+[INFO] -------------------< org.apache.cayenne:cayenne-di >--------------------
+[INFO] Building cayenne-di: Cayenne Dependency Injection Container 4.2.M3-SNAPSHOT [4/5]
+[INFO]   from cayenne-di/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- remote-resources:1.5:process (default) @ cayenne-di ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for cayenne-parent: Top-level parent of Cayenne modules 4.2.M3-SNAPSHOT:
+[INFO] 
+[INFO] cayenne-parent: Top-level parent of Cayenne modules  SUCCESS [  0.467 s]
+[INFO] build-tools-parent: Cayenne Build Tools Parent ..... SUCCESS [  0.027 s]
+[INFO] cayenne-test-utilities: Common Unit Test Utilities . SUCCESS [  0.327 s]
+[INFO] cayenne-di: Cayenne Dependency Injection Container . FAILURE [  0.154 s]
+[INFO] cayenne-server: Cayenne Server ..................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.361 s
+[INFO] Finished at: 2026-11-10T18:39:56Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-remote-resources-plugin:1.5:process (default) on project cayenne-di: Resources archive cannot be found. The following artifacts could not be resolved: org.apache.cayenne.build-tools:cayenne-legal:jar:4.2.M3-SNAPSHOT (absent): org.apache.cayenne.build-tools:cayenne-legal:jar:4.2.M3-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] 
+[ERROR] Try downloading the file manually from the project website.
+[ERROR] 
+[ERROR] Then, install it using the command: 
+[ERROR]     mvn install:install-file -DgroupId=org.apache.cayenne.build-tools -DartifactId=cayenne-legal -Dversion=4.2.M3-SNAPSHOT -Dpackaging=jar -Dfile=/path/to/file
+[ERROR] 
+[ERROR] Alternatively, if you host your own repository you can deploy the file there: 
+[ERROR]     mvn deploy:deploy-file -DgroupId=org.apache.cayenne.build-tools -DartifactId=cayenne-legal -Dversion=4.2.M3-SNAPSHOT -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+[ERROR] 
+[ERROR] 
+[ERROR]   org.apache.cayenne.build-tools:cayenne-legal:jar:4.2.M3-SNAPSHOT
+[ERROR] 
+[ERROR] from the specified remote repositories:
+[ERROR]   objectstyle (https://maven.objectstyle.org/nexus/content/groups/cayenne-deps, releases=true, snapshots=false),
+[ERROR]   apache.snapshots (https://repository.apache.org/snapshots, releases=false, snapshots=true),
+[ERROR]   central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :cayenne-di

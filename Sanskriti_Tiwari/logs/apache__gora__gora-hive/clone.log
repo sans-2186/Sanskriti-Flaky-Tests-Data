@@ -1,0 +1,20 @@
+Cloning into '/tmp/tmp.53oBRLlMiZ/repo'...
+Updating files:  87% (801/916)Updating files:  88% (807/916)Updating files:  89% (816/916)Updating files:  90% (825/916)Updating files:  91% (834/916)Updating files:  92% (843/916)Updating files:  93% (852/916)Updating files:  94% (862/916)Updating files:  95% (871/916)Updating files:  96% (880/916)Updating files:  97% (889/916)Updating files:  98% (898/916)Updating files:  99% (907/916)Updating files: 100% (916/916)Updating files: 100% (916/916), done.
+Note: switching to '6c6b06c916b969352a6757ba7025cc78055fa87a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 6c6b06c9 Merge pull request #273 from himanshuacharya95/GORA-698

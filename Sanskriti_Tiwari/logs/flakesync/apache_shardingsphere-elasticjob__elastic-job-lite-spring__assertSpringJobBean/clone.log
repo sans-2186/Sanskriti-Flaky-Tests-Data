@@ -1,0 +1,19 @@
+Cloning into '/tmp/tmp.pXPJ5v5Oxi/repo'...
+Note: switching to 'b022898ef1b8c984e17efb2a422ee45f6b13e46e'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at b022898ef Merge pull request #500 from sevenzhao/event-trace-enhancement

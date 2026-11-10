@@ -1,0 +1,511 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-config-nacos-example:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-config-apollo-example:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-config-zookeeper:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-config-consul-example:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-config-etcd-example:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-config-nacos-spring-boot-1x:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-config-apollo-spring-boot-1x-example:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-config-mode-example:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-example-core:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-rabbitmq-example:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-stream-rabbitmq-example:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-stream-rocketmq-example:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-rocketmq-example:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-kafka-example:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-server-example:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-monitor-elasticsearch-example:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-server-mode-example:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-agent-config-apollo-example:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-agent-example:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-example:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-examples:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-infra-common:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-infra-toolkit:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-infra:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-kernel-alarm:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-dynamic-api:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-dynamic-core:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-dynamic-mode-config:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-dynamic-mode-server:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-dynamic-mode:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-kernel-dynamic:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-message-api:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-message-core:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-message-mode-config:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-message-mode-server:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-message-mode:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-kernel-message:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-kernel-monitor:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-kernel:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-config-spring-boot-starter:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter-adapter-all:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter-adapter-dubbo:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter-adapter-dubbox:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter-adapter-alibaba-dubbo:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter-adapter-rabbitmq:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter-adapter-rocketmq:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter-adapter-kafka:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter-adapter-hystrix:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter-adapter-stream-rocketmq:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter-adapter-stream-rabbitmq:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter-adapter-web:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter-adapter:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-spring-boot-starter-monitor-elasticsearch:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-spring-boot-starter-monitor-local-log:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-spring-boot-starter-monitor-micrometer:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-spring-boot-starter-monitor:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-config-spring-boot-1x-starter:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-starters:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-starters:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-tests:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-alibaba-dubbo:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-base:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-dubbo:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-dubbox:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-rabbitmq:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-rocketmq:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-kafka:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-hystrix:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-stream-rocketmq:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-stream-rabbitmq:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter-web:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-adapter:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-core:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-message:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-monitor-base:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-monitor-elasticsearch:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-monitor-local-log:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-monitor-micrometer:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-monitor:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-rpc:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-server-auth:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-server-bootstrap:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-resources-plugin is missing. @ cn.hippo4j:hippo4j-threadpool-server-bootstrap:${revision}, /tmp/tmp.DkRmauqdW8/repo/threadpool/server/bootstrap/pom.xml, line 61, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-server-config:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] The expression ${version} is deprecated. Please use ${project.version} instead. @ cn.hippo4j:hippo4j-threadpool-server-config:${revision}, /tmp/tmp.DkRmauqdW8/repo/threadpool/server/config/pom.xml
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-server-console:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-server-discovery:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-server-common:jar:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool-server:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-threadpool:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for cn.hippo4j:hippo4j-all:pom:2.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ cn.hippo4j:hippo4j-all:${revision}, /tmp/tmp.DkRmauqdW8/repo/pom.xml, line 125, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] hippo4j-all                                                        [pom]
+[INFO] hippo4j-infra                                                      [pom]
+[INFO] hippo4j-threadpool-infra-common                                    [jar]
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-2: 
+The plugin org.apache.maven.plugins:maven-jar-plugin:4.0.0-beta-2 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 11.0.32.1
+	Required Maven version 4.0.0-rc-7 is not met by current version 3.9.15
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-jar-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-jar-plugin
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: 
+The plugin org.apache.maven.plugins:maven-jar-plugin:4.0.0-beta-1 has unmet prerequisites: 
+	Required Java version 17 is not met by current version: 11.0.32.1
+	Required Maven version 4.0.0-beta-3 is not met by current version 3.9.15
+[INFO] Selected plugin org.apache.maven.plugins:maven-jar-plugin:3.5.1
+[INFO] 
+[INFO] -----------------------< cn.hippo4j:hippo4j-all >-----------------------
+[INFO] Building hippo4j-all 2.0.0-SNAPSHOT                                [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ hippo4j-all >>>
+[INFO] 
+[INFO] --- checkstyle:3.1.0:checkstyle (validate) @ hippo4j-all ---
+[INFO] 
+[INFO] --- jacoco:0.8.8:prepare-agent (default) @ hippo4j-all ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- spring-boot:2.3.2.RELEASE:build-info (default) @ hippo4j-all ---
+[INFO] 
+[INFO] --- flatten:1.1.0:flatten (flatten) @ hippo4j-all ---
+[INFO] Generating flattened POM of project cn.hippo4j:hippo4j-all:pom:2.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- spotless:2.22.1:apply (default) @ hippo4j-all ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ hippo4j-all <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ hippo4j-all ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running FindTestsRunMojo
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.pom (6.5 kB at 29 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.20/surefire-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.20/surefire-2.20.pom (21 kB at 832 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.jar (53 kB at 1.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.pom (9.4 kB at 302 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom (1.6 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom (13 kB at 666 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.pom (3.7 kB at 195 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.pom (2.0 kB at 98 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.pom (3.2 kB at 133 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.pom (24 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.pom (3.3 kB at 176 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom (17 kB at 760 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.jar (331 kB at 8.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar (228 kB at 4.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar (39 kB at 644 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar (22 kB at 331 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.jar (50 kB at 570 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar (8.8 kB at 109 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.12/junit-4.12.jar (315 kB at 3.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar (22 kB at 245 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1/classworlds-1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar (178 kB at 1.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar (10 kB at 96 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar (13 kB at 113 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar (17 kB at 141 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/classworlds/classworlds/1.1/classworlds-1.1.jar (38 kB at 313 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.jar (13 kB at 94 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar (14 kB at 98 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar (38 kB at 261 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.jar (182 kB at 1.2 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar (316 kB at 2.2 MB/s)
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] 
+[INFO] ----------------------< cn.hippo4j:hippo4j-infra >----------------------
+[INFO] Building hippo4j-infra 2.0.0-SNAPSHOT                              [2/3]
+[INFO]   from infra/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ hippo4j-infra >>>
+[INFO] 
+[INFO] --- checkstyle:3.1.0:checkstyle (validate) @ hippo4j-infra ---
+[INFO] 
+[INFO] --- jacoco:0.8.8:prepare-agent (default) @ hippo4j-infra ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- spring-boot:2.3.2.RELEASE:build-info (default) @ hippo4j-infra ---
+[INFO] 
+[INFO] --- flatten:1.1.0:flatten (flatten) @ hippo4j-infra ---
+[INFO] Generating flattened POM of project cn.hippo4j:hippo4j-infra:pom:2.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- spotless:2.22.1:apply (default) @ hippo4j-infra ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ hippo4j-infra <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ hippo4j-infra ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] 
+[INFO] -------------< cn.hippo4j:hippo4j-threadpool-infra-common >-------------
+[INFO] Building hippo4j-threadpool-infra-common 2.0.0-SNAPSHOT            [3/3]
+[INFO]   from infra/common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ hippo4j-threadpool-infra-common >>>
+[INFO] 
+[INFO] --- checkstyle:3.1.0:checkstyle (validate) @ hippo4j-threadpool-infra-common ---
+[INFO] 
+[INFO] --- jacoco:0.8.8:prepare-agent (default) @ hippo4j-threadpool-infra-common ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- spring-boot:2.3.2.RELEASE:build-info (default) @ hippo4j-threadpool-infra-common ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ hippo4j-threadpool-infra-common ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.DkRmauqdW8/repo/infra/common/src/main/resources
+[INFO] 
+[INFO] --- flatten:1.1.0:flatten (flatten) @ hippo4j-threadpool-infra-common ---
+[INFO] Generating flattened POM of project cn.hippo4j:hippo4j-threadpool-infra-common:jar:2.0.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.6.1:compile (default-compile) @ hippo4j-threadpool-infra-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- spotless:2.22.1:apply (default) @ hippo4j-threadpool-infra-common ---
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ hippo4j-threadpool-infra-common ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.DkRmauqdW8/repo/infra/common/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.6.1:testCompile (default-testCompile) @ hippo4j-threadpool-infra-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ hippo4j-threadpool-infra-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ hippo4j-threadpool-infra-common ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'disableXmlReport' (user property 'disableXmlReport') is deprecated: Instead use disable within statelessTestsetReporter since of 3.0.0-M6.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.4/surefire-junit-platform-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.4/surefire-junit-platform-3.5.4.pom (5.2 kB at 258 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.5.4/surefire-providers-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.5.4/surefire-providers-3.5.4.pom (2.5 kB at 91 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.4/common-java5-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.4/common-java5-3.5.4.pom (3.1 kB at 127 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.12.1/junit-platform-engine-1.12.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.12.1/junit-platform-engine-1.12.1.pom (3.2 kB at 128 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.pom (2.0 kB at 78 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.12.1/junit-platform-commons-1.12.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.12.1/junit-platform-commons-1.12.1.pom (2.8 kB at 91 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.pom (1.5 kB at 64 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.12.1/junit-platform-launcher-1.12.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.12.1/junit-platform-launcher-1.12.1.pom (3.0 kB at 112 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.4/surefire-junit-platform-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.5.4/surefire-junit-platform-3.5.4.jar (35 kB at 1.9 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.4/common-java5-3.5.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.12.1/junit-platform-engine-1.12.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.12.1/junit-platform-commons-1.12.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.5.4/common-java5-3.5.4.jar (18 kB at 979 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.12.1/junit-platform-launcher-1.12.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar (14 kB at 681 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar (6.8 kB at 252 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.12.1/junit-platform-engine-1.12.1.jar (256 kB at 8.5 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.12.1/junit-platform-commons-1.12.1.jar (152 kB at 5.1 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.12.1/junit-platform-launcher-1.12.1.jar (208 kB at 4.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.pom (3.0 kB at 178 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.6.2/junit-platform-launcher-1.6.2.jar (122 kB at 3.7 MB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cn.hippo4j.common.toolkit.logtracing.LogMessageTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.030 s -- in cn.hippo4j.common.toolkit.logtracing.LogMessageTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for hippo4j-all 2.0.0-SNAPSHOT:
+[INFO] 
+[INFO] hippo4j-all ........................................ SUCCESS [  2.625 s]
+[INFO] hippo4j-infra ...................................... SUCCESS [  0.062 s]
+[INFO] hippo4j-threadpool-infra-common .................... SUCCESS [  3.143 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.638 s
+[INFO] Finished at: 2026-11-10T19:22:26Z
+[INFO] ------------------------------------------------------------------------

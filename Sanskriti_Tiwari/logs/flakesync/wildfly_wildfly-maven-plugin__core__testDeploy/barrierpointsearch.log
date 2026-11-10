@@ -1,0 +1,55 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] WildFly Maven Plugin - Parent                                      [pom]
+[INFO] WildFly Plugin Core Utilities                                      [jar]
+[INFO] 
+[INFO] ----------< org.wildfly.plugins:wildfly-maven-plugin-parent >-----------
+[INFO] Building WildFly Maven Plugin - Parent 3.0.0.Alpha3-SNAPSHOT       [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) > test-compile @ wildfly-maven-plugin-parent >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-java-version) @ wildfly-maven-plugin-parent ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven-version) @ wildfly-maven-plugin-parent ---
+[INFO] 
+[INFO] --- buildnumber:1.4:create (get-scm-revision) @ wildfly-maven-plugin-parent ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.xuif6YABnK/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.xuif6YABnK/repo
+[INFO] Storing buildNumber: ba664f977f4a20771eb7aab979164b2fb639a240 at timestamp: 1794338580284
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.xuif6YABnK/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.xuif6YABnK/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- checkstyle:3.1.1:checkstyle (check-style) @ wildfly-maven-plugin-parent ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) < test-compile @ wildfly-maven-plugin-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) @ wildfly-maven-plugin-parent ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running BarrierPointSearchMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for WildFly Maven Plugin - Parent 3.0.0.Alpha3-SNAPSHOT:
+[INFO] 
+[INFO] WildFly Maven Plugin - Parent ...................... FAILURE [  1.268 s]
+[INFO] WildFly Plugin Core Utilities ...................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.517 s
+[INFO] Finished at: 2026-11-10T19:23:00Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch (default-cli) on project wildfly-maven-plugin-parent: Execution default-cli of goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch failed: java.io.FileNotFoundException: /tmp/tmp.xuif6YABnK/repo/.flakesync/Results-CritSearch/org.wildfly.plugin.core.DomainDeploymentManagerIT.testDeploy-CriticalPoints.csv (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

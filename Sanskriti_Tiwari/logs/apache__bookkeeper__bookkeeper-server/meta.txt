@@ -1,0 +1,3 @@
+url=https://github.com/apache/bookkeeper
+sha=2aa59c74cdd1de13c33a593f6dccc888823c4a83
+module=bookkeeper-server

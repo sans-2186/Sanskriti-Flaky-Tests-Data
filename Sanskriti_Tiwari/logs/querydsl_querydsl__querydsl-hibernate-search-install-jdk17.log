@@ -1,0 +1,114 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Querydsl                                                           [pom]
+[INFO] Querydsl - Core module                                             [jar]
+[INFO] Querydsl - Codegen module                                          [jar]
+[INFO] Querydsl - APT support                                             [jar]
+[INFO] Querydsl - Lucene 3 support                                        [jar]
+[INFO] Querydsl - Hibernate Search support                                [jar]
+[INFO] 
+[INFO] ---------------------< com.querydsl:querydsl-root >---------------------
+[INFO] Building Querydsl 4.2.1                                            [1/6]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.2-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:1.4:enforce (enforce-maven) @ querydsl-root ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- checkstyle:2.15:check (checkstyle) @ querydsl-root ---
+[INFO] 
+[INFO] --- checkstyle:2.15:check (checkstyle-main) @ querydsl-root ---
+[INFO] 
+[INFO] --- jacoco:0.7.5.201505241946:prepare-agent (prepare-agent) @ querydsl-root ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/tmp/tmp.X0tsvuxaJv/repo/target/jacoco.exec -Xms256m -Xmx512m
+[INFO] 
+[INFO] --- animal-sniffer:1.14:check (ensure-java-1.6-class-library) @ querydsl-root ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] >>> source:2.4:jar (default) > generate-sources @ querydsl-root >>>
+[INFO] 
+[INFO] --- enforcer:1.4:enforce (enforce-maven) @ querydsl-root ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- checkstyle:2.15:check (checkstyle) @ querydsl-root ---
+[INFO] 
+[INFO] --- checkstyle:2.15:check (checkstyle-main) @ querydsl-root ---
+[INFO] 
+[INFO] --- jacoco:0.7.5.201505241946:prepare-agent (prepare-agent) @ querydsl-root ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/tmp/tmp.X0tsvuxaJv/repo/target/jacoco.exec -Xms256m -Xmx512m
+[INFO] 
+[INFO] <<< source:2.4:jar (default) < generate-sources @ querydsl-root <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:2.4:jar (default) @ querydsl-root ---
+[INFO] 
+[INFO] --- javadoc:2.10.3:jar (default) @ querydsl-root ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- enforcer:1.4:enforce (check) @ querydsl-root ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- gpg:1.6:sign (sign-artifacts) @ querydsl-root ---
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ querydsl-root ---
+[INFO] Installing /tmp/tmp.X0tsvuxaJv/repo/pom.xml to /home/runner/.m2/repository/com/querydsl/querydsl-root/4.2.1/querydsl-root-4.2.1.pom
+[INFO] 
+[INFO] ---------------------< com.querydsl:querydsl-core >---------------------
+[INFO] Building Querydsl - Core module 4.2.1                              [2/6]
+[INFO]   from querydsl-core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:1.4:enforce (enforce-maven) @ querydsl-core ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- checkstyle:2.15:check (checkstyle) @ querydsl-core ---
+[INFO] 
+[INFO] --- checkstyle:2.15:check (checkstyle-main) @ querydsl-core ---
+[INFO] 
+[INFO] --- jacoco:0.7.5.201505241946:prepare-agent (prepare-agent) @ querydsl-core ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar=destfile=/tmp/tmp.X0tsvuxaJv/repo/querydsl-core/target/jacoco.exec -Xms256m -Xmx512m
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ querydsl-core ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.X0tsvuxaJv/repo/querydsl-core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.3:compile (default-compile) @ querydsl-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 234 source files to /tmp/tmp.X0tsvuxaJv/repo/querydsl-core/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] Source option 6 is no longer supported. Use 7 or later.
+[ERROR] Target option 6 is no longer supported. Use 7 or later.
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Querydsl 4.2.1:
+[INFO] 
+[INFO] Querydsl ........................................... SUCCESS [  1.930 s]
+[INFO] Querydsl - Core module ............................. FAILURE [  0.485 s]
+[INFO] Querydsl - Codegen module .......................... SKIPPED
+[INFO] Querydsl - APT support ............................. SKIPPED
+[INFO] Querydsl - Lucene 3 support ........................ SKIPPED
+[INFO] Querydsl - Hibernate Search support ................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.687 s
+[INFO] Finished at: 2026-11-10T19:22:02Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.3:compile (default-compile) on project querydsl-core: Compilation failure: Compilation failure: 
+[ERROR] Source option 6 is no longer supported. Use 7 or later.
+[ERROR] Target option 6 is no longer supported. Use 7 or later.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :querydsl-core

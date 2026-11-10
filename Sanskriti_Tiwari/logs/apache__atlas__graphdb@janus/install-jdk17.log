@@ -1,0 +1,483 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.atlas:kafka-bridge:jar:3.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-resources-plugin @ line 384, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.atlas:sample-app:jar:3.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 87, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Atlas Server Build Tools                                    [jar]
+[INFO] apache-atlas                                                       [pom]
+[INFO] Apache Atlas Integration                                           [jar]
+[INFO] Apache Atlas Test Utility Tools                                    [jar]
+[INFO] Apache Atlas Common                                                [jar]
+[INFO] Apache Atlas Graph Database Projects                               [pom]
+[INFO] Apache Atlas Graph Database API                                    [jar]
+[INFO] Graph Database Common Code                                         [jar]
+[INFO] Apache Atlas JanusGraph-HBase2 Module                              [jar]
+[INFO] Apache Atlas JanusGraph DB Impl                                    [jar]
+[INFO] 
+[INFO] -----------------< org.apache.atlas:atlas-buildtools >------------------
+[INFO] Building Apache Atlas Server Build Tools 3.0.0-SNAPSHOT           [1/10]
+[INFO]   from build-tools/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ atlas-buildtools ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 11 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ atlas-buildtools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ atlas-buildtools ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /tmp/tmp.xTI6yk2106/repo/build-tools/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ atlas-buildtools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ atlas-buildtools ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ atlas-buildtools ---
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ atlas-buildtools ---
+[INFO] Installing /tmp/tmp.xTI6yk2106/repo/build-tools/pom.xml to /home/runner/.m2/repository/org/apache/atlas/atlas-buildtools/3.0.0-SNAPSHOT/atlas-buildtools-3.0.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.xTI6yk2106/repo/build-tools/target/atlas-buildtools-3.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/atlas/atlas-buildtools/3.0.0-SNAPSHOT/atlas-buildtools-3.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] -------------------< org.apache.atlas:apache-atlas >--------------------
+[INFO] Building apache-atlas 3.0.0-SNAPSHOT                              [2/10]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-maven-version) @ apache-atlas ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-versions) @ apache-atlas ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ apache-atlas ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.xTI6yk2106/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.xTI6yk2106/repo
+[INFO] Storing buildNumber: c0700e436afccc04e7f77480d6fb8aed8e293db4 at timestamp: 1794336090165
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.xTI6yk2106/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.xTI6yk2106/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- apache-rat:0.13:check (rat-check) @ apache-atlas ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ apache-atlas ---
+[INFO] 
+[INFO] --- site:3.7:attach-descriptor (attach-descriptor) @ apache-atlas ---
+[INFO] No site descriptor found: nothing to attach.
+[INFO] 
+[INFO] --- failsafe:2.18.1:integration-test (integration-test) @ apache-atlas ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- source:2.4:jar-no-fork (attach-sources) @ apache-atlas ---
+[INFO] 
+[INFO] --- source:2.4:test-jar-no-fork (attach-sources) @ apache-atlas ---
+[INFO] 
+[INFO] --- failsafe:2.18.1:verify (verify) @ apache-atlas ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- checkstyle:2.9.1:check (checkstyle-check) @ apache-atlas ---
+[INFO] 
+[INFO] 
+[INFO] >>> findbugs:3.0.5:check (findbugs-check) > :findbugs @ apache-atlas >>>
+[INFO] 
+[INFO] --- findbugs:3.0.5:findbugs (findbugs) @ apache-atlas ---
+[INFO] 
+[INFO] <<< findbugs:3.0.5:check (findbugs-check) < :findbugs @ apache-atlas <<<
+[INFO] 
+[INFO] 
+[INFO] --- findbugs:3.0.5:check (findbugs-check) @ apache-atlas ---
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ apache-atlas ---
+[INFO] Installing /tmp/tmp.xTI6yk2106/repo/pom.xml to /home/runner/.m2/repository/org/apache/atlas/apache-atlas/3.0.0-SNAPSHOT/apache-atlas-3.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------------< org.apache.atlas:atlas-intg >---------------------
+[INFO] Building Apache Atlas Integration 3.0.0-SNAPSHOT                  [3/10]
+[INFO]   from intg/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 2 problems were encountered while building the effective model for org.apache.yetus:audience-annotations:jar:0.5.0 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-maven-version) @ atlas-intg ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-versions) @ atlas-intg ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ atlas-intg ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.xTI6yk2106/repo/intg' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.xTI6yk2106/repo/intg
+[INFO] Storing buildNumber: c0700e436afccc04e7f77480d6fb8aed8e293db4 at timestamp: 1794336092068
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.xTI6yk2106/repo/intg' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.xTI6yk2106/repo/intg
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- apache-rat:0.13:check (rat-check) @ atlas-intg ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ atlas-intg ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ atlas-intg ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ atlas-intg ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ atlas-intg ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ atlas-intg ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:3.0.0-M5:test (default-test) @ atlas-intg ---
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:2.4:jar (default-jar) @ atlas-intg ---
+[INFO] Building jar: /tmp/tmp.xTI6yk2106/repo/intg/target/atlas-intg-3.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.7:attach-descriptor (attach-descriptor) @ atlas-intg ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- jar:2.4:test-jar (default) @ atlas-intg ---
+[INFO] Building jar: /tmp/tmp.xTI6yk2106/repo/intg/target/atlas-intg-3.0.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- failsafe:2.18.1:integration-test (integration-test) @ atlas-intg ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- source:2.4:jar-no-fork (attach-sources) @ atlas-intg ---
+[INFO] Building jar: /tmp/tmp.xTI6yk2106/repo/intg/target/atlas-intg-3.0.0-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- source:2.4:test-jar-no-fork (attach-sources) @ atlas-intg ---
+[INFO] Building jar: /tmp/tmp.xTI6yk2106/repo/intg/target/atlas-intg-3.0.0-SNAPSHOT-test-sources.jar
+[INFO] 
+[INFO] --- failsafe:2.18.1:verify (verify) @ atlas-intg ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- checkstyle:2.9.1:check (checkstyle-check) @ atlas-intg ---
+/tmp/tmp.xTI6yk2106/repo/intg/src/main/java/org/apache/atlas/type/AtlasTypeUtil.java:639:84: unexpected token: >
+/tmp/tmp.xTI6yk2106/repo/intg/src/main/java/org/apache/atlas/model/instance/EntityMutationResponse.java:126:74: unexpected token: >
+/tmp/tmp.xTI6yk2106/repo/intg/src/main/java/org/apache/atlas/model/metrics/AtlasMetrics.java:117:19: expecting SEMI, found ','
+/tmp/tmp.xTI6yk2106/repo/intg/src/test/java/org/apache/atlas/model/ModelTestUtil.java:533:40: unexpected token: >
+[INFO] 
+[INFO] There are 15214 checkstyle errors.
+[WARNING] checkstyle:check violations detected but failOnViolation set to false
+[INFO] 
+[INFO] >>> findbugs:3.0.5:check (findbugs-check) > :findbugs @ atlas-intg >>>
+[INFO] 
+[INFO] --- findbugs:3.0.5:findbugs (findbugs) @ atlas-intg ---
+[INFO] Fork Value is true
+     [java] WARNING: A terminally deprecated method in java.lang.System has been called
+     [java] WARNING: System::setSecurityManager has been called by edu.umd.cs.findbugs.ba.jsr305.TypeQualifierValue (file:/home/runner/.m2/repository/com/google/code/findbugs/findbugs/3.0.1/findbugs-3.0.1.jar)
+     [java] WARNING: Please consider reporting this to the maintainers of edu.umd.cs.findbugs.ba.jsr305.TypeQualifierValue
+     [java] WARNING: System::setSecurityManager will be removed in a future release
+     [java] The following classes needed for analysis were missing:
+     [java]   java.lang.Enum
+     [java]   java.lang.Exception
+     [java]   java.lang.Object
+     [java]   javax.security.auth.login.Configuration
+     [java]   java.io.Serializable
+     [java]   java.util.LinkedHashMap
+     [java]   java.util.HashMap
+     [java]   java.util.ArrayList
+     [java]   java.lang.ThreadLocal
+     [java]   java.lang.Comparable
+     [java]   java.lang.annotation.Annotation
+     [java]   java.util.Comparator
+     [java]   java.lang.Cloneable
+     [java]   java.lang.StringBuilder
+     [java]   java.lang.System
+     [java]   java.util.Objects
+     [java]   java.lang.Number
+     [java]   java.lang.Short
+     [java]   java.math.BigInteger
+     [java]   java.lang.String
+     [java]   java.util.List
+     [java]   java.lang.Class
+     [java]   java.lang.IllegalArgumentException
+     [java]   java.util.Map
+     [java]   java.util.Collection
+     [java]   java.util.Iterator
+     [java]   java.util.HashSet
+     [java]   java.util.Set
+     [java]   java.lang.Integer
+     [java]   java.util.Collections
+     [java]   java.util.stream.Stream
+     [java]   java.util.stream.Collectors
+     [java]   java.util.ListIterator
+     [java]   java.util.Arrays
+     [java]   java.lang.Boolean
+     [java]   java.util.regex.Pattern
+     [java]   java.util.regex.Matcher
+     [java]   java.util.LinkedList
+     [java]   java.util.Map$Entry
+     [java]   java.util.concurrent.ConcurrentHashMap
+     [java]   java.lang.Long
+     [java]   java.lang.reflect.Array
+     [java]   java.text.DateFormat
+     [java]   java.math.BigDecimal
+     [java]   java.text.SimpleDateFormat
+     [java]   java.util.TimeZone
+     [java]   java.util.Properties
+     [java]   java.io.InputStreamReader
+     [java]   java.lang.Byte
+     [java]   java.lang.StringBuffer
+     [java]   java.io.IOException
+     [java]   java.util.concurrent.TimeUnit
+     [java]   java.util.concurrent.locks.ReentrantLock
+     [java]   java.lang.Thread
+     [java]   java.lang.Float
+     [java]   java.lang.Math
+     [java]   java.util.AbstractMap$SimpleEntry
+     [java]   java.lang.ClassLoader
+     [java]   java.io.File
+     [java]   java.net.URI
+     [java]   java.io.FileInputStream
+     [java]   java.net.URL
+     [java]   java.lang.RuntimeException
+     [java]   java.lang.Double
+     [java]   java.lang.Character
+     [java]   java.util.concurrent.atomic.AtomicLong
+     [java]   java.util.Date
+     [java]   javax.security.auth.login.AppConfigurationEntry$LoginModuleControlFlag
+     [java]   java.io.InputStream
+     [java]   java.util.StringTokenizer
+     [java]   java.util.TreeSet
+     [java]   java.util.SortedSet
+     [java]   javax.security.auth.login.AppConfigurationEntry
+     [java]   java.io.ByteArrayOutputStream
+     [java]   java.util.zip.GZIPOutputStream
+     [java]   java.io.ByteArrayInputStream
+     [java]   java.util.zip.GZIPInputStream
+     [java]   java.text.MessageFormat
+     [java]   java.util.UUID
+     [java]   java.io.PrintStream
+     [java]   java.io.Console
+     [java]   java.lang.NoSuchFieldError
+     [java]   java.lang.IllegalAccessError
+     [java]   java.lang.UnsatisfiedLinkError
+     [java]   java.lang.invoke.LambdaMetafactory
+     [java]   java.lang.invoke.MethodHandles$Lookup
+     [java]   java.lang.invoke.MethodHandles
+     [java]   java.lang.IncompatibleClassChangeError
+     [java]   java.lang.AbstractMethodError
+     [java]   java.lang.Error
+     [java]   java.lang.ClassFormatError
+     [java]   java.lang.VerifyError
+     [java]   java.lang.ExceptionInInitializerError
+     [java]   java.lang.InstantiationException
+     [java]   java.lang.IllegalAccessException
+     [java]   java.lang.ArrayIndexOutOfBoundsException
+     [java]   java.lang.NoClassDefFoundError
+     [java]   java.lang.NumberFormatException
+     [java]   java.io.FileNotFoundException
+     [java]   java.text.ParseException
+     [java]   java.lang.NegativeArraySizeException
+     [java]   java.lang.InterruptedException
+     [java] Warnings generated: 66
+     [java] Missing classes: 86
+[INFO] Done FindBugs Analysis....
+[INFO] 
+[INFO] <<< findbugs:3.0.5:check (findbugs-check) < :findbugs @ atlas-intg <<<
+[INFO] 
+[INFO] 
+[INFO] --- findbugs:3.0.5:check (findbugs-check) @ atlas-intg ---
+[INFO] BugInstance size is 66
+[INFO] Error size is 0
+[INFO] Total bugs: 66
+[INFO] Boxing/unboxing to parse a primitive org.apache.atlas.AtlasConfiguration.getInt() [org.apache.atlas.AtlasConfiguration] At AtlasConfiguration.java:[line 111] DM_BOXED_PRIMITIVE_FOR_PARSING
+[INFO] Boxing/unboxing to parse a primitive org.apache.atlas.AtlasConfiguration.getLong() [org.apache.atlas.AtlasConfiguration] At AtlasConfiguration.java:[line 115] DM_BOXED_PRIMITIVE_FOR_PARSING
+[INFO] org.apache.atlas.model.audit.AtlasAuditEntry.getEndTime() may expose internal representation by returning AtlasAuditEntry.endTime [org.apache.atlas.model.audit.AtlasAuditEntry] At AtlasAuditEntry.java:[line 129] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.audit.AtlasAuditEntry.getStartTime() may expose internal representation by returning AtlasAuditEntry.startTime [org.apache.atlas.model.audit.AtlasAuditEntry] At AtlasAuditEntry.java:[line 121] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.audit.AtlasAuditEntry.setEndTime(Date) may expose internal representation by storing an externally mutable object into AtlasAuditEntry.endTime [org.apache.atlas.model.audit.AtlasAuditEntry] At AtlasAuditEntry.java:[line 125] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.model.audit.AtlasAuditEntry.setStartTime(Date) may expose internal representation by storing an externally mutable object into AtlasAuditEntry.startTime [org.apache.atlas.model.audit.AtlasAuditEntry] At AtlasAuditEntry.java:[line 117] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.model.audit.EntityAuditEventV2$ActionComparator implements Comparator but not Serializable [org.apache.atlas.model.audit.EntityAuditEventV2$ActionComparator] At EntityAuditEventV2.java:[lines 305-314] SE_COMPARATOR_SHOULD_BE_SERIALIZABLE
+[INFO] org.apache.atlas.model.audit.EntityAuditEventV2$TimestampComparator implements Comparator but not Serializable [org.apache.atlas.model.audit.EntityAuditEventV2$TimestampComparator] At EntityAuditEventV2.java:[lines 318-321] SE_COMPARATOR_SHOULD_BE_SERIALIZABLE
+[INFO] org.apache.atlas.model.audit.EntityAuditEventV2$UserComparator implements Comparator but not Serializable [org.apache.atlas.model.audit.EntityAuditEventV2$UserComparator] At EntityAuditEventV2.java:[lines 292-301] SE_COMPARATOR_SHOULD_BE_SERIALIZABLE
+[INFO] org.apache.atlas.model.discovery.SearchParameters$Operator.getSymbols() may expose internal representation by returning SearchParameters$Operator.symbols [org.apache.atlas.model.discovery.SearchParameters$Operator] At SearchParameters.java:[line 513] EI_EXPOSE_REP
+[INFO] Boxing/unboxing to parse a primitive org.apache.atlas.model.impexp.AtlasImportRequest.getOptionsValue(String, int) [org.apache.atlas.model.impexp.AtlasImportRequest] At AtlasImportRequest.java:[line 146] DM_BOXED_PRIMITIVE_FOR_PARSING
+[INFO] Boxing/unboxing to parse a primitive org.apache.atlas.model.impexp.AtlasImportRequest.getSizeOption() [org.apache.atlas.model.impexp.AtlasImportRequest] At AtlasImportRequest.java:[line 166] DM_BOXED_PRIMITIVE_FOR_PARSING
+[INFO] org.apache.atlas.model.impexp.MigrationStatus.getEndTime() may expose internal representation by returning MigrationStatus.endTime [org.apache.atlas.model.impexp.MigrationStatus] At MigrationStatus.java:[line 65] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.impexp.MigrationStatus.getStartTime() may expose internal representation by returning MigrationStatus.startTime [org.apache.atlas.model.impexp.MigrationStatus] At MigrationStatus.java:[line 57] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.impexp.MigrationStatus.setEndTime(Date) may expose internal representation by storing an externally mutable object into MigrationStatus.endTime [org.apache.atlas.model.impexp.MigrationStatus] At MigrationStatus.java:[line 61] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.model.impexp.MigrationStatus.setStartTime(Date) may expose internal representation by storing an externally mutable object into MigrationStatus.startTime [org.apache.atlas.model.impexp.MigrationStatus] At MigrationStatus.java:[line 53] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.model.instance.AtlasEntity.getCreateTime() may expose internal representation by returning AtlasEntity.createTime [org.apache.atlas.model.instance.AtlasEntity] At AtlasEntity.java:[line 293] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.instance.AtlasEntity.getUpdateTime() may expose internal representation by returning AtlasEntity.updateTime [org.apache.atlas.model.instance.AtlasEntity] At AtlasEntity.java:[line 301] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.instance.AtlasEntity.setCreateTime(Date) may expose internal representation by storing an externally mutable object into AtlasEntity.createTime [org.apache.atlas.model.instance.AtlasEntity] At AtlasEntity.java:[line 297] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.model.instance.AtlasEntity.setUpdateTime(Date) may expose internal representation by storing an externally mutable object into AtlasEntity.updateTime [org.apache.atlas.model.instance.AtlasEntity] At AtlasEntity.java:[line 305] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.model.instance.AtlasRelationship.getCreateTime() may expose internal representation by returning AtlasRelationship.createTime [org.apache.atlas.model.instance.AtlasRelationship] At AtlasRelationship.java:[line 297] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.instance.AtlasRelationship.getUpdateTime() may expose internal representation by returning AtlasRelationship.updateTime [org.apache.atlas.model.instance.AtlasRelationship] At AtlasRelationship.java:[line 305] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.instance.AtlasRelationship.setCreateTime(Date) may expose internal representation by storing an externally mutable object into AtlasRelationship.createTime [org.apache.atlas.model.instance.AtlasRelationship] At AtlasRelationship.java:[line 301] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.model.instance.AtlasRelationship.setUpdateTime(Date) may expose internal representation by storing an externally mutable object into AtlasRelationship.updateTime [org.apache.atlas.model.instance.AtlasRelationship] At AtlasRelationship.java:[line 309] EI_EXPOSE_REP2
+[INFO] Load of known null value in org.apache.atlas.model.instance.AtlasStruct.dumpDateField(String, Date, StringBuilder) [org.apache.atlas.model.instance.AtlasStruct] At AtlasStruct.java:[line 283] NP_LOAD_OF_KNOWN_NULL_VALUE
+[INFO] Found reliance on default encoding in new org.apache.atlas.model.notification.AtlasNotificationStringMessage(byte[], int, int, String, AtlasNotificationBaseMessage$CompressionKind, int, int): new String(byte[], int, int) [org.apache.atlas.model.notification.AtlasNotificationStringMessage] At AtlasNotificationStringMessage.java:[line 72] DM_DEFAULT_ENCODING
+[INFO] Found reliance on default encoding in org.apache.atlas.model.notification.MessageSource.fetchBuildVersion(): new java.io.InputStreamReader(InputStream) [org.apache.atlas.model.notification.MessageSource] At MessageSource.java:[line 81] DM_DEFAULT_ENCODING
+[INFO] org.apache.atlas.model.notification.MessageVersion.getVersionParts() invokes inefficient new Integer(String) constructor; use Integer.valueOf(String) instead [org.apache.atlas.model.notification.MessageVersion] At MessageVersion.java:[line 152] DM_NUMBER_CTOR
+[INFO] org.apache.atlas.model.tasks.AtlasTask.getCreatedTime() may expose internal representation by returning AtlasTask.createdTime [org.apache.atlas.model.tasks.AtlasTask] At AtlasTask.java:[line 91] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.tasks.AtlasTask.getEndTime() may expose internal representation by returning AtlasTask.endTime [org.apache.atlas.model.tasks.AtlasTask] At AtlasTask.java:[line 169] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.tasks.AtlasTask.getStartTime() may expose internal representation by returning AtlasTask.startTime [org.apache.atlas.model.tasks.AtlasTask] At AtlasTask.java:[line 161] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.tasks.AtlasTask.getUpdatedTime() may expose internal representation by returning AtlasTask.updatedTime [org.apache.atlas.model.tasks.AtlasTask] At AtlasTask.java:[line 99] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.tasks.AtlasTask.setCreatedTime(Date) may expose internal representation by storing an externally mutable object into AtlasTask.createdTime [org.apache.atlas.model.tasks.AtlasTask] At AtlasTask.java:[line 95] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.model.tasks.AtlasTask.setEndTime(Date) may expose internal representation by storing an externally mutable object into AtlasTask.endTime [org.apache.atlas.model.tasks.AtlasTask] At AtlasTask.java:[line 173] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.model.tasks.AtlasTask.setStartTime(Date) may expose internal representation by storing an externally mutable object into AtlasTask.startTime [org.apache.atlas.model.tasks.AtlasTask] At AtlasTask.java:[line 165] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.model.tasks.AtlasTask.setUpdatedTime(Date) may expose internal representation by storing an externally mutable object into AtlasTask.updatedTime [org.apache.atlas.model.tasks.AtlasTask] At AtlasTask.java:[line 103] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.model.typedef.AtlasBaseTypeDef.getCreateTime() may expose internal representation by returning AtlasBaseTypeDef.createTime [org.apache.atlas.model.typedef.AtlasBaseTypeDef] At AtlasBaseTypeDef.java:[line 243] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.typedef.AtlasBaseTypeDef.getUpdateTime() may expose internal representation by returning AtlasBaseTypeDef.updateTime [org.apache.atlas.model.typedef.AtlasBaseTypeDef] At AtlasBaseTypeDef.java:[line 251] EI_EXPOSE_REP
+[INFO] org.apache.atlas.model.typedef.AtlasBaseTypeDef.setCreateTime(Date) may expose internal representation by storing an externally mutable object into AtlasBaseTypeDef.createTime [org.apache.atlas.model.typedef.AtlasBaseTypeDef] At AtlasBaseTypeDef.java:[line 247] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.model.typedef.AtlasBaseTypeDef.setUpdateTime(Date) may expose internal representation by storing an externally mutable object into AtlasBaseTypeDef.updateTime [org.apache.atlas.model.typedef.AtlasBaseTypeDef] At AtlasBaseTypeDef.java:[line 255] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.model.typedef.AtlasBaseTypeDef.ATLAS_BUILTIN_TYPES is a mutable array [org.apache.atlas.model.typedef.AtlasBaseTypeDef] At AtlasBaseTypeDef.java:[line 111] MS_MUTABLE_ARRAY
+[INFO] Load of known null value in org.apache.atlas.model.typedef.AtlasBaseTypeDef.dumpDateField(String, Date, StringBuilder) [org.apache.atlas.model.typedef.AtlasBaseTypeDef] At AtlasBaseTypeDef.java:[line 443] NP_LOAD_OF_KNOWN_NULL_VALUE
+[INFO] Unread field: org.apache.atlas.model.typedef.AtlasStructDef$AtlasAttributeDef.STRING_TRUE; should this field be static? [org.apache.atlas.model.typedef.AtlasStructDef$AtlasAttributeDef] At AtlasStructDef.java:[line 270] SS_SHOULD_BE_STATIC
+[INFO] org.apache.atlas.security.InMemoryJAASConfiguration.initialize(Properties) makes inefficient use of keySet iterator instead of entrySet iterator [org.apache.atlas.security.InMemoryJAASConfiguration, org.apache.atlas.security.InMemoryJAASConfiguration] At InMemoryJAASConfiguration.java:[line 282]Another occurrence at InMemoryJAASConfiguration.java:[line 361] WMI_WRONG_MAP_ITERATOR
+[INFO] Load of known null value in org.apache.atlas.type.AtlasArrayType.getNormalizedValue(Object) [org.apache.atlas.type.AtlasArrayType, org.apache.atlas.type.AtlasArrayType] At AtlasArrayType.java:[line 259]Another occurrence at AtlasArrayType.java:[line 235] NP_LOAD_OF_KNOWN_NULL_VALUE
+[INFO] Load of known null value in org.apache.atlas.type.AtlasArrayType.getNormalizedValueForUpdate(Object) [org.apache.atlas.type.AtlasArrayType, org.apache.atlas.type.AtlasArrayType] At AtlasArrayType.java:[line 318]Another occurrence at AtlasArrayType.java:[line 294] NP_LOAD_OF_KNOWN_NULL_VALUE
+[INFO] org.apache.atlas.type.AtlasBuiltInTypes$AtlasBooleanType.getNormalizedValue(Object) has Boolean return type and returns explicit null [org.apache.atlas.type.AtlasBuiltInTypes$AtlasBooleanType] At AtlasBuiltInTypes.java:[line 77] NP_BOOLEAN_RETURN_NULL
+[INFO] Boxing/unboxing to parse a primitive org.apache.atlas.type.AtlasBuiltInTypes$AtlasDateType.getNormalizedValue(Object) [org.apache.atlas.type.AtlasBuiltInTypes$AtlasDateType] At AtlasBuiltInTypes.java:[line 668] DM_BOXED_PRIMITIVE_FOR_PARSING
+[INFO] org.apache.atlas.type.AtlasBuiltInTypes$AtlasDateType.createDefaultValue() may expose internal representation by returning AtlasBuiltInTypes$AtlasDateType.DEFAULT_VALUE [org.apache.atlas.type.AtlasBuiltInTypes$AtlasDateType] At AtlasBuiltInTypes.java:[line 640] EI_EXPOSE_REP
+[INFO] org.apache.atlas.type.AtlasEntityType.parseDynAttributeTemplates() makes inefficient use of keySet iterator instead of entrySet iterator [org.apache.atlas.type.AtlasEntityType] At AtlasEntityType.java:[line 951] WMI_WRONG_MAP_ITERATOR
+[INFO] org.apache.atlas.type.AtlasEntityType.resolveReferencesPhase3(AtlasTypeRegistry) makes inefficient use of keySet iterator instead of entrySet iterator [org.apache.atlas.type.AtlasEntityType, org.apache.atlas.type.AtlasEntityType] At AtlasEntityType.java:[line 251]Another occurrence at AtlasEntityType.java:[line 264] WMI_WRONG_MAP_ITERATOR
+[INFO] Load of known null value in org.apache.atlas.type.AtlasMapType.getNormalizedValue(Object) [org.apache.atlas.type.AtlasMapType] At AtlasMapType.java:[line 209] NP_LOAD_OF_KNOWN_NULL_VALUE
+[INFO] Load of known null value in org.apache.atlas.type.AtlasMapType.getNormalizedValueForUpdate(Object) [org.apache.atlas.type.AtlasMapType] At AtlasMapType.java:[line 248] NP_LOAD_OF_KNOWN_NULL_VALUE
+[INFO] org.apache.atlas.type.AtlasMapType.areEqualValues(Object, Object, Map) makes inefficient use of keySet iterator instead of entrySet iterator [org.apache.atlas.type.AtlasMapType] At AtlasMapType.java:[line 146] WMI_WRONG_MAP_ITERATOR
+[INFO] Nullcheck of relationshipDef at line 61 of value previously dereferenced in new org.apache.atlas.type.AtlasRelationshipType(AtlasRelationshipDef) [org.apache.atlas.type.AtlasRelationshipType, org.apache.atlas.type.AtlasRelationshipType, org.apache.atlas.type.AtlasRelationshipType] At AtlasRelationshipType.java:[line 59]Redundant null check at AtlasRelationshipType.java:[line 61]Another occurrence at AtlasRelationshipType.java:[line 62] RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE
+[INFO] Switch statement found in org.apache.atlas.type.AtlasTypeRegistry$AtlasTransientTypeRegistry.removeTypeByGuidWithNoRefResolve(AtlasBaseTypeDef) where default case is missing [org.apache.atlas.type.AtlasTypeRegistry$AtlasTransientTypeRegistry] At AtlasTypeRegistry.java:[lines 673-690] SF_SWITCH_NO_DEFAULT
+[INFO] Switch statement found in org.apache.atlas.type.AtlasTypeRegistry$AtlasTransientTypeRegistry.removeTypeByNameWithNoRefResolve(AtlasBaseTypeDef) where default case is missing [org.apache.atlas.type.AtlasTypeRegistry$AtlasTransientTypeRegistry] At AtlasTypeRegistry.java:[lines 649-666] SF_SWITCH_NO_DEFAULT
+[INFO] Redundant nullcheck of guid, which is known to be non-null in org.apache.atlas.type.AtlasTypeUtil.isAssignedGuid(String) [org.apache.atlas.type.AtlasTypeUtil] Redundant null check at AtlasTypeUtil.java:[line 575] RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE
+[INFO] org.apache.atlas.v1.model.instance.AtlasSystemAttributes.getCreatedTime() may expose internal representation by returning AtlasSystemAttributes.createdTime [org.apache.atlas.v1.model.instance.AtlasSystemAttributes] At AtlasSystemAttributes.java:[line 99] EI_EXPOSE_REP
+[INFO] org.apache.atlas.v1.model.instance.AtlasSystemAttributes.getModifiedTime() may expose internal representation by returning AtlasSystemAttributes.modifiedTime [org.apache.atlas.v1.model.instance.AtlasSystemAttributes] At AtlasSystemAttributes.java:[line 107] EI_EXPOSE_REP
+[INFO] new org.apache.atlas.v1.model.instance.AtlasSystemAttributes(String, String, Date, Date) may expose internal representation by storing an externally mutable object into AtlasSystemAttributes.createdTime [org.apache.atlas.v1.model.instance.AtlasSystemAttributes] At AtlasSystemAttributes.java:[line 67] EI_EXPOSE_REP2
+[INFO] new org.apache.atlas.v1.model.instance.AtlasSystemAttributes(String, String, Date, Date) may expose internal representation by storing an externally mutable object into AtlasSystemAttributes.modifiedTime [org.apache.atlas.v1.model.instance.AtlasSystemAttributes] At AtlasSystemAttributes.java:[line 68] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.v1.model.instance.AtlasSystemAttributes.setCreatedTime(Date) may expose internal representation by storing an externally mutable object into AtlasSystemAttributes.createdTime [org.apache.atlas.v1.model.instance.AtlasSystemAttributes] At AtlasSystemAttributes.java:[line 103] EI_EXPOSE_REP2
+[INFO] org.apache.atlas.v1.model.instance.AtlasSystemAttributes.setModifiedTime(Date) may expose internal representation by storing an externally mutable object into AtlasSystemAttributes.modifiedTime [org.apache.atlas.v1.model.instance.AtlasSystemAttributes] At AtlasSystemAttributes.java:[line 111] EI_EXPOSE_REP2
+[INFO] new org.apache.atlas.v1.model.instance.Referenceable(Map) makes inefficient use of keySet iterator instead of entrySet iterator [org.apache.atlas.v1.model.instance.Referenceable] At Referenceable.java:[line 153] WMI_WRONG_MAP_ITERATOR
+[INFO] org.apache.atlas.v1.model.typedef.Multiplicity$MultiplicitySerializer.serialize(Multiplicity, JsonGenerator, SerializerProvider) uses the same code for two branches [org.apache.atlas.v1.model.typedef.Multiplicity$MultiplicitySerializer, org.apache.atlas.v1.model.typedef.Multiplicity$MultiplicitySerializer] At Multiplicity.java:[line 137]At Multiplicity.java:[line 139] DB_DUPLICATE_BRANCHES
+[INFO] 
+
+
+To see bug detail using the Findbugs GUI, use the following command "mvn findbugs:gui"
+
+
+
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ atlas-intg ---
+[INFO] Installing /tmp/tmp.xTI6yk2106/repo/intg/target/atlas-intg-3.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/atlas/atlas-intg/3.0.0-SNAPSHOT/atlas-intg-3.0.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.xTI6yk2106/repo/intg/pom.xml to /home/runner/.m2/repository/org/apache/atlas/atlas-intg/3.0.0-SNAPSHOT/atlas-intg-3.0.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.xTI6yk2106/repo/intg/target/atlas-intg-3.0.0-SNAPSHOT-tests.jar to /home/runner/.m2/repository/org/apache/atlas/atlas-intg/3.0.0-SNAPSHOT/atlas-intg-3.0.0-SNAPSHOT-tests.jar
+[INFO] Installing /tmp/tmp.xTI6yk2106/repo/intg/target/atlas-intg-3.0.0-SNAPSHOT-sources.jar to /home/runner/.m2/repository/org/apache/atlas/atlas-intg/3.0.0-SNAPSHOT/atlas-intg-3.0.0-SNAPSHOT-sources.jar
+[INFO] Installing /tmp/tmp.xTI6yk2106/repo/intg/target/atlas-intg-3.0.0-SNAPSHOT-test-sources.jar to /home/runner/.m2/repository/org/apache/atlas/atlas-intg/3.0.0-SNAPSHOT/atlas-intg-3.0.0-SNAPSHOT-test-sources.jar
+[INFO] 
+[INFO] ------------------< org.apache.atlas:atlas-testtools >------------------
+[INFO] Building Apache Atlas Test Utility Tools 3.0.0-SNAPSHOT           [4/10]
+[INFO]   from test-tools/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.restlet.jee:org.restlet:jar:2.4.3 is invalid, transitive dependencies (if any) will not be available: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /home/runner/.m2/repository/org/restlet/jee/org.restlet/2.4.3/org.restlet-2.4.3.pom: unexpected markup <!d (position: START_DOCUMENT seen <!d... @1:4)  @ line 1, column 4
+
+[WARNING] The POM for org.restlet.jee:org.restlet.ext.servlet:jar:2.4.3 is invalid, transitive dependencies (if any) will not be available: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /home/runner/.m2/repository/org/restlet/jee/org.restlet.ext.servlet/2.4.3/org.restlet.ext.servlet-2.4.3.pom: unexpected markup <!d (position: START_DOCUMENT seen <!d... @1:4)  @ line 1, column 4
+
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-maven-version) @ atlas-testtools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-versions) @ atlas-testtools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ atlas-testtools ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.xTI6yk2106/repo/test-tools' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.xTI6yk2106/repo/test-tools
+[INFO] Storing buildNumber: c0700e436afccc04e7f77480d6fb8aed8e293db4 at timestamp: 1794336104078
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.xTI6yk2106/repo/test-tools' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.xTI6yk2106/repo/test-tools
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- apache-rat:0.13:check (rat-check) @ atlas-testtools ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- resources:2.7:copy-resources (copy-resources) @ atlas-testtools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ atlas-testtools ---
+[WARNING] Invalid POM for org.restlet.jee:org.restlet:jar:2.4.3, transitive dependencies (if any) will not be available, enable debug logging for more details
+[WARNING] Invalid POM for org.restlet.jee:org.restlet.ext.servlet:jar:2.4.3, transitive dependencies (if any) will not be available, enable debug logging for more details
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ atlas-testtools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ atlas-testtools ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /tmp/tmp.xTI6yk2106/repo/test-tools/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] error reading /home/runner/.m2/repository/org/restlet/jee/org.restlet/2.4.3/org.restlet-2.4.3.jar; zip END header not found
+[ERROR] error reading /home/runner/.m2/repository/org/restlet/jee/org.restlet.ext.servlet/2.4.3/org.restlet.ext.servlet-2.4.3.jar; zip END header not found
+[ERROR] /tmp/tmp.xTI6yk2106/repo/test-tools/src/main/java/org/apache/atlas/runner/LocalSolrRunner.java:[15,1] cannot access org.apache.atlas.runner
+  ZipException opening "org.restlet-2.4.3.jar": zip END header not found
+[INFO] 3 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for apache-atlas 3.0.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache Atlas Server Build Tools .................... SUCCESS [  0.798 s]
+[INFO] apache-atlas ....................................... SUCCESS [  2.172 s]
+[INFO] Apache Atlas Integration ........................... SUCCESS [ 11.885 s]
+[INFO] Apache Atlas Test Utility Tools .................... FAILURE [  2.362 s]
+[INFO] Apache Atlas Common ................................ SKIPPED
+[INFO] Apache Atlas Graph Database Projects ............... SKIPPED
+[INFO] Apache Atlas Graph Database API .................... SKIPPED
+[INFO] Graph Database Common Code ......................... SKIPPED
+[INFO] Apache Atlas JanusGraph-HBase2 Module .............. SKIPPED
+[INFO] Apache Atlas JanusGraph DB Impl .................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18.020 s
+[INFO] Finished at: 2026-11-10T18:41:46Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.7.0:compile (default-compile) on project atlas-testtools: Compilation failure: Compilation failure: 
+[ERROR] error reading /home/runner/.m2/repository/org/restlet/jee/org.restlet/2.4.3/org.restlet-2.4.3.jar; zip END header not found
+[ERROR] error reading /home/runner/.m2/repository/org/restlet/jee/org.restlet.ext.servlet/2.4.3/org.restlet.ext.servlet-2.4.3.jar; zip END header not found
+[ERROR] /tmp/tmp.xTI6yk2106/repo/test-tools/src/main/java/org/apache/atlas/runner/LocalSolrRunner.java:[15,1] cannot access org.apache.atlas.runner
+[ERROR]   ZipException opening "org.restlet-2.4.3.jar": zip END header not found
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :atlas-testtools

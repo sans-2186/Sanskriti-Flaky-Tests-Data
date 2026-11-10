@@ -1,0 +1,751 @@
+[INFO] Scanning for projects...
+[INFO] Artifact org.jenkins-ci.tools:maven-hpi-plugin:pom:3.17 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [incrementals (https://repo.jenkins-ci.org/incrementals/, default, releases), central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.jenkins-ci.tools:maven-hpi-plugin:pom:3.17 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [incrementals (https://repo.jenkins-ci.org/incrementals/, default, releases), central (https://repo.maven.apache.org/maven2, default, releases)]
+[WARNING] The POM for org.jenkins-ci.tools:maven-hpi-plugin:jar:3.17 is missing, no dependency information available
+[INFO] Artifact org.jenkins-ci.tools:maven-hpi-plugin:jar:3.17 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [incrementals (https://repo.jenkins-ci.org/incrementals/, default, releases), central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.jenkins-ci.tools:maven-hpi-plugin:jar:3.17 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [incrementals (https://repo.jenkins-ci.org/incrementals/, default, releases), central (https://repo.maven.apache.org/maven2, default, releases)]
+[WARNING] Failed to build parent project for com.amadeus.jenkins.plugins:opentracing:hpi:1.0-SNAPSHOT
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom (5.2 kB at 54 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom (7.2 kB at 325 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar (41 kB at 1.5 MB/s)
+[INFO] 
+[INFO] --------------< com.amadeus.jenkins.plugins:opentracing >---------------
+[INFO] Building opentracing 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ hpi ]---------------------------------
+[WARNING] Parameter 'showDeprecation' is unknown for plugin 'maven-hpi-plugin:3.17:validate (default-validate)'
+[WARNING] Parameter 'showDeprecation' is unknown for plugin 'maven-hpi-plugin:3.17:validate-hpi (default-validate-hpi)'
+[WARNING] Parameter 'showDeprecation' is unknown for plugin 'maven-hpi-plugin:3.17:insert-test (default-insert-test)'
+[WARNING] Parameter 'showDeprecation' is unknown for plugin 'maven-hpi-plugin:3.17:test-hpl (default-test-hpl)'
+[WARNING] Parameter 'showDeprecation' is unknown for plugin 'maven-hpi-plugin:3.17:resolve-test-dependencies (default-resolve-test-dependencies)'
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ opentracing >>>
+[WARNING] 1 problem was encountered while building the effective model for org.jboss.marshalling:jboss-marshalling-river:jar:1.4.9.Final during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.jboss.marshalling:jboss-marshalling:jar:1.4.9.Final during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.jboss.marshalling:jboss-marshalling-river:jar:1.4.12.jenkins-3 during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.jboss.marshalling:jboss-marshalling:jar:1.4.12.jenkins-3 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- hpi:3.17:validate (default-validate) @ opentracing ---
+[INFO] 
+[INFO] --- hpi:3.17:validate-hpi (default-validate-hpi) @ opentracing ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:display-info (display-info) @ opentracing ---
+[INFO] Maven Version: 3.9.15
+[INFO] JDK Version: 11.0.32.1 normalized as: 11.0.32-1
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 7.0.0-1019-azure
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (display-info) @ opentracing ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (no-snapshots-in-release) @ opentracing ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- gplus:1.12.1:addTestSources (test-in-groovy) @ opentracing ---
+[INFO] 
+[INFO] --- localizer:1.31:generate (default) @ opentracing ---
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ opentracing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- flatten:1.2.5:flatten (flatten) @ opentracing ---
+[INFO] Generating flattened POM of project com.amadeus.jenkins.plugins:opentracing:hpi:1.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ opentracing ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- access-modifier-checker:1.21:enforce (default-enforce) @ opentracing ---
+[INFO] 
+[INFO] --- hpi:3.17:insert-test (default-insert-test) @ opentracing ---
+[INFO] 
+[INFO] --- gplus:1.12.1:generateTestStubs (test-in-groovy) @ opentracing ---
+[INFO] No sources specified for stub generation. Skipping.
+[INFO] Generated 0 stubs.
+[INFO] 
+[INFO] --- antrun:3.0.0:run (createTempDir) @ opentracing ---
+[INFO] Executing tasks
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ opentracing ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 26 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ opentracing ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- hpi:3.17:test-hpl (default-test-hpl) @ opentracing ---
+[INFO] Generating /tmp/tmp.Nt6yqqlMgZ/repo/target/test-classes/the.hpl
+[INFO] 
+[INFO] --- hpi:3.17:resolve-test-dependencies (default-resolve-test-dependencies) @ opentracing ---
+[INFO] 
+[INFO] --- gplus:1.12.1:compileTests (test-in-groovy) @ opentracing ---
+[INFO] No sources specified for compilation. Skipping.
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ opentracing <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ opentracing ---
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom (3.4 kB at 146 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom (18 kB at 923 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom (2.2 kB at 96 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom (9.3 kB at 515 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom (8.3 kB at 345 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom (1.8 kB at 80 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom (2.6 kB at 164 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom (1.7 kB at 72 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom (1.9 kB at 90 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom (3.1 kB at 174 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom (5.7 kB at 270 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom (7.7 kB at 334 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom (4.0 kB at 224 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom (1.8 kB at 83 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom (29 kB at 815 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom (2.0 kB at 117 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom (2.1 kB at 106 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom (3.4 kB at 187 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom (2.6 kB at 119 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom (20 kB at 1.0 MB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom (8.1 kB at 368 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom (4.9 kB at 259 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/com/sun/activation/all/1.2.0/all-1.2.0.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/com/sun/activation/all/1.2.0/all-1.2.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.0/all-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.0/all-1.2.0.pom (18 kB at 855 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom (4.0 kB at 191 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom (1.5 kB at 86 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/com/google/guava/guava/18.0/guava-18.0.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/com/google/guava/guava/18.0/guava-18.0.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar (63 kB at 2.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar (12 kB at 500 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar (44 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar (10 kB at 234 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar (15 kB at 323 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar (43 kB at 860 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar (27 kB at 525 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar (177 kB at 2.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar (31 kB at 409 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar (67 kB at 880 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar (173 kB at 1.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar (638 kB at 6.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar (136 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar (147 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar (4.3 kB at 38 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar (2.1 kB at 17 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar (35 kB at 268 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar (128 kB at 896 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar (563 kB at 3.8 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar (57 kB at 378 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar (2.3 MB at 14 MB/s)
+INFO: The original argline is: -Xms768M -Xmx768M -Djava.awt.headless=true -XX:+HeapDumpOnOutOfMemoryError -XX:+TieredCompilation -XX:TieredStopAtLevel=1
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.Nt6yqqlMgZ/repo/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_wVFwF2xE93LfEGDajDAwZz0z8NFf3vnn6yPnXgaKu0=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-junit4/3.0.0-M4/surefire-junit4-3.0.0-M4.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/surefire-junit4/3.0.0-M4/surefire-junit4-3.0.0-M4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M4/surefire-junit4-3.0.0-M4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M4/surefire-junit4-3.0.0-M4.jar (17 kB at 547 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-junit4/3.0.0-M4/surefire-junit4-3.0.0-M4.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/surefire-junit4/3.0.0-M4/surefire-junit4-3.0.0-M4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M4/surefire-junit4-3.0.0-M4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M4/surefire-junit4-3.0.0-M4.pom (2.9 kB at 120 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-providers/3.0.0-M4/surefire-providers-3.0.0-M4.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/surefire-providers/3.0.0-M4/surefire-providers-3.0.0-M4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M4/surefire-providers-3.0.0-M4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M4/surefire-providers-3.0.0-M4.pom (2.5 kB at 127 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/junit/junit/4.0/junit-4.0.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/junit/junit/4.0/junit-4.0.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.pom (210 B at 12 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/common-junit4/3.0.0-M4/common-junit4-3.0.0-M4.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/common-junit4/3.0.0-M4/common-junit4-3.0.0-M4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M4/common-junit4-3.0.0-M4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M4/common-junit4-3.0.0-M4.pom (2.9 kB at 128 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/common-junit3/3.0.0-M4/common-junit3-3.0.0-M4.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/common-junit3/3.0.0-M4/common-junit3-3.0.0-M4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M4/common-junit3-3.0.0-M4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M4/common-junit3-3.0.0-M4.pom (2.6 kB at 113 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.pom (3.8 kB at 110 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom (820 B at 33 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom (2.4 kB at 99 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/easytesting/fest/1.0.8/fest-1.0.8.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/easytesting/fest/1.0.8/fest-1.0.8.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.8/fest-1.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.8/fest-1.0.8.pom (12 kB at 212 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom (1.6 kB at 60 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/common-junit3/3.0.0-M4/common-junit3-3.0.0-M4.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/common-junit4/3.0.0-M4/common-junit4-3.0.0-M4.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/common-junit3/3.0.0-M4/common-junit3-3.0.0-M4.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/common-junit4/3.0.0-M4/common-junit4-3.0.0-M4.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M4/common-junit4-3.0.0-M4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M4/common-junit3-3.0.0-M4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M4/common-junit3-3.0.0-M4.jar (12 kB at 595 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.jar (33 kB at 1.6 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M4/common-junit4-3.0.0-M4.jar (27 kB at 667 kB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running InjectedTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.784 s - in InjectedTest
+[INFO] Running com.amadeus.jenkins.opentracing.PipelineTracingTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.508 s - in com.amadeus.jenkins.opentracing.PipelineTracingTest
+[INFO] Running com.amadeus.jenkins.opentracing.PluginLoadingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.393 s - in com.amadeus.jenkins.opentracing.PluginLoadingTest
+[INFO] Running com.amadeus.jenkins.opentracing.RestartTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.107 s - in com.amadeus.jenkins.opentracing.RestartTest
+[INFO] Running com.amadeus.jenkins.opentracing.SpanStorageTest
+[ERROR] Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.017 s <<< FAILURE! - in com.amadeus.jenkins.opentracing.SpanStorageTest
+[ERROR] com.amadeus.jenkins.opentracing.SpanStorageTest.testFailing  Time elapsed: 0.488 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+	at com.amadeus.jenkins.opentracing.SpanStorageTest.assertions(SpanStorageTest.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.RunAfters.invokeMethod(RunAfters.java:46)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:601)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[ERROR] com.amadeus.jenkins.opentracing.SpanStorageTest.testExecutionWithMissingCaches  Time elapsed: 0.525 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+	at com.amadeus.jenkins.opentracing.SpanStorageTest.assertions(SpanStorageTest.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.RunAfters.invokeMethod(RunAfters.java:46)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:601)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[INFO] Running com.amadeus.jenkins.opentracing.UtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.371 s - in com.amadeus.jenkins.opentracing.UtilsTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.ConfigurationAsCodeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.031 s - in com.amadeus.jenkins.opentracing.config.ConfigurationAsCodeTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.ConfigurationMigrationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.649 s - in com.amadeus.jenkins.opentracing.config.ConfigurationMigrationTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.GroovyInitializationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.544 s - in com.amadeus.jenkins.opentracing.config.GroovyInitializationTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.OTConfigTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.762 s - in com.amadeus.jenkins.opentracing.config.OTConfigTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.impl.JaegerConfigTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.904 s - in com.amadeus.jenkins.opentracing.config.impl.JaegerConfigTest
+[INFO] Running com.amadeus.jenkins.opentracing.workflow.TraceStepExecutionsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.amadeus.jenkins.opentracing.workflow.TraceStepExecutionsTest
+[INFO] Running com.amadeus.jenkins.opentracing.workflow.TraceStepTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.652 s - in com.amadeus.jenkins.opentracing.workflow.TraceStepTest
+[INFO] Running com.amadeus.jenkins.opentracing.workflow.WorkflowUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.amadeus.jenkins.opentracing.workflow.WorkflowUtilsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   SpanStorageTest.assertions:69 
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+[ERROR]   SpanStorageTest.assertions:69 
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+[INFO] 
+[ERROR] Tests run: 54, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Surefire failed when running tests for clean_wVFwF2xE93LfEGDajDAwZz0z8NFf3vnn6yPnXgaKu0=
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.Nt6yqqlMgZ/repo/.nondex
+nondexJarDir=/tmp/tmp.Nt6yqqlMgZ/repo/.nondex
+nondexExecid=hY95waC66tvCNASIr+BZgVA5i+aAtCIuOxp9NknqM8M=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-junit47/3.0.0-M4/surefire-junit47-3.0.0-M4.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/surefire-junit47/3.0.0-M4/surefire-junit47-3.0.0-M4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M4/surefire-junit47-3.0.0-M4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M4/surefire-junit47-3.0.0-M4.jar (92 kB at 2.9 MB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-junit47/3.0.0-M4/surefire-junit47-3.0.0-M4.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/surefire-junit47/3.0.0-M4/surefire-junit47-3.0.0-M4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M4/surefire-junit47-3.0.0-M4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M4/surefire-junit47-3.0.0-M4.pom (8.3 kB at 309 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/common-junit48/3.0.0-M4/common-junit48-3.0.0-M4.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/common-junit48/3.0.0-M4/common-junit48-3.0.0-M4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M4/common-junit48-3.0.0-M4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M4/common-junit48-3.0.0-M4.pom (3.2 kB at 100 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-grouper/3.0.0-M4/surefire-grouper-3.0.0-M4.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/surefire-grouper/3.0.0-M4/surefire-grouper-3.0.0-M4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M4/surefire-grouper-3.0.0-M4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M4/surefire-grouper-3.0.0-M4.pom (3.1 kB at 148 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.pom
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.pom (5.4 kB at 258 kB/s)
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/common-junit48/3.0.0-M4/common-junit48-3.0.0-M4.jar
+[INFO] Downloading from repo.jenkins-ci.org: https://repo.jenkins-ci.org/public/org/apache/maven/surefire/surefire-grouper/3.0.0-M4/surefire-grouper-3.0.0-M4.jar
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/common-junit48/3.0.0-M4/common-junit48-3.0.0-M4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M4/common-junit48-3.0.0-M4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M4/common-junit48-3.0.0-M4.jar (21 kB at 705 kB/s)
+[INFO] Downloading from incrementals: https://repo.jenkins-ci.org/incrementals/org/apache/maven/surefire/surefire-grouper/3.0.0-M4/surefire-grouper-3.0.0-M4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M4/surefire-grouper-3.0.0-M4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M4/surefire-grouper-3.0.0-M4.jar (40 kB at 1.3 MB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.jvnet.hudson.test.JellyTestSuiteBuilder$JellyCheck
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.238 s - in org.jvnet.hudson.test.JellyTestSuiteBuilder$JellyCheck
+[INFO] Running org.jvnet.hudson.test.PluginAutomaticTestBuilder$OtherTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.378 s - in org.jvnet.hudson.test.PluginAutomaticTestBuilder$OtherTests
+[INFO] Running org.jvnet.hudson.test.junit.FailedTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in org.jvnet.hudson.test.junit.FailedTest
+[INFO] Running com.amadeus.jenkins.opentracing.PipelineTracingTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.551 s - in com.amadeus.jenkins.opentracing.PipelineTracingTest
+[INFO] Running com.amadeus.jenkins.opentracing.PluginLoadingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.047 s - in com.amadeus.jenkins.opentracing.PluginLoadingTest
+[INFO] Running com.amadeus.jenkins.opentracing.RestartTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.82 s - in com.amadeus.jenkins.opentracing.RestartTest
+[INFO] Running com.amadeus.jenkins.opentracing.SpanStorageTest
+[ERROR] Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.409 s <<< FAILURE! - in com.amadeus.jenkins.opentracing.SpanStorageTest
+[ERROR] com.amadeus.jenkins.opentracing.SpanStorageTest.testFailing  Time elapsed: 1.335 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+	at com.amadeus.jenkins.opentracing.SpanStorageTest.assertions(SpanStorageTest.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.RunAfters.invokeMethod(RunAfters.java:46)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:601)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[ERROR] com.amadeus.jenkins.opentracing.SpanStorageTest.testExecutionWithMissingCaches  Time elapsed: 1.071 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+	at com.amadeus.jenkins.opentracing.SpanStorageTest.assertions(SpanStorageTest.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.RunAfters.invokeMethod(RunAfters.java:46)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:601)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[INFO] Running com.amadeus.jenkins.opentracing.UtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.773 s - in com.amadeus.jenkins.opentracing.UtilsTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.ConfigurationAsCodeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.169 s - in com.amadeus.jenkins.opentracing.config.ConfigurationAsCodeTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.ConfigurationMigrationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.703 s - in com.amadeus.jenkins.opentracing.config.ConfigurationMigrationTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.GroovyInitializationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.27 s - in com.amadeus.jenkins.opentracing.config.GroovyInitializationTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.OTConfigTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.301 s - in com.amadeus.jenkins.opentracing.config.OTConfigTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.impl.JaegerConfigTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.624 s - in com.amadeus.jenkins.opentracing.config.impl.JaegerConfigTest
+[INFO] Running com.amadeus.jenkins.opentracing.workflow.TraceStepExecutionsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.amadeus.jenkins.opentracing.workflow.TraceStepExecutionsTest
+[INFO] Running com.amadeus.jenkins.opentracing.workflow.TraceStepTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.975 s - in com.amadeus.jenkins.opentracing.workflow.TraceStepTest
+[INFO] Running com.amadeus.jenkins.opentracing.workflow.WorkflowUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.amadeus.jenkins.opentracing.workflow.WorkflowUtilsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   SpanStorageTest.assertions:69 
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+[ERROR]   SpanStorageTest.assertions:69 
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+[INFO] 
+[ERROR] Tests run: 54, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Surefire failed when running tests for hY95waC66tvCNASIr+BZgVA5i+aAtCIuOxp9NknqM8M=
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.Nt6yqqlMgZ/repo/.nondex
+nondexJarDir=/tmp/tmp.Nt6yqqlMgZ/repo/.nondex
+nondexExecid=Ayz+6tCuU5w8cWofkTWAX+AOYg+YCf1EYLBLZYe4g0=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.jvnet.hudson.test.JellyTestSuiteBuilder$JellyCheck
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.232 s - in org.jvnet.hudson.test.JellyTestSuiteBuilder$JellyCheck
+[INFO] Running org.jvnet.hudson.test.PluginAutomaticTestBuilder$OtherTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.352 s - in org.jvnet.hudson.test.PluginAutomaticTestBuilder$OtherTests
+[INFO] Running org.jvnet.hudson.test.junit.FailedTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.jvnet.hudson.test.junit.FailedTest
+[INFO] Running com.amadeus.jenkins.opentracing.PipelineTracingTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.982 s - in com.amadeus.jenkins.opentracing.PipelineTracingTest
+[INFO] Running com.amadeus.jenkins.opentracing.PluginLoadingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.616 s - in com.amadeus.jenkins.opentracing.PluginLoadingTest
+[INFO] Running com.amadeus.jenkins.opentracing.RestartTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.28 s - in com.amadeus.jenkins.opentracing.RestartTest
+[INFO] Running com.amadeus.jenkins.opentracing.SpanStorageTest
+[ERROR] Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.345 s <<< FAILURE! - in com.amadeus.jenkins.opentracing.SpanStorageTest
+[ERROR] com.amadeus.jenkins.opentracing.SpanStorageTest.testFailing  Time elapsed: 1.209 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+	at com.amadeus.jenkins.opentracing.SpanStorageTest.assertions(SpanStorageTest.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.RunAfters.invokeMethod(RunAfters.java:46)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:601)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[ERROR] com.amadeus.jenkins.opentracing.SpanStorageTest.testExecutionWithMissingCaches  Time elapsed: 1.134 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+	at com.amadeus.jenkins.opentracing.SpanStorageTest.assertions(SpanStorageTest.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.RunAfters.invokeMethod(RunAfters.java:46)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:601)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[INFO] Running com.amadeus.jenkins.opentracing.UtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.908 s - in com.amadeus.jenkins.opentracing.UtilsTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.ConfigurationAsCodeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.976 s - in com.amadeus.jenkins.opentracing.config.ConfigurationAsCodeTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.ConfigurationMigrationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.983 s - in com.amadeus.jenkins.opentracing.config.ConfigurationMigrationTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.GroovyInitializationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.776 s - in com.amadeus.jenkins.opentracing.config.GroovyInitializationTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.OTConfigTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.094 s - in com.amadeus.jenkins.opentracing.config.OTConfigTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.impl.JaegerConfigTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.402 s - in com.amadeus.jenkins.opentracing.config.impl.JaegerConfigTest
+[INFO] Running com.amadeus.jenkins.opentracing.workflow.TraceStepExecutionsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.amadeus.jenkins.opentracing.workflow.TraceStepExecutionsTest
+[INFO] Running com.amadeus.jenkins.opentracing.workflow.TraceStepTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.06 s - in com.amadeus.jenkins.opentracing.workflow.TraceStepTest
+[INFO] Running com.amadeus.jenkins.opentracing.workflow.WorkflowUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.amadeus.jenkins.opentracing.workflow.WorkflowUtilsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   SpanStorageTest.assertions:69 
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+[ERROR]   SpanStorageTest.assertions:69 
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+[INFO] 
+[ERROR] Tests run: 54, Failures: 2, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Surefire failed when running tests for Ayz+6tCuU5w8cWofkTWAX+AOYg+YCf1EYLBLZYe4g0=
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.Nt6yqqlMgZ/repo/.nondex
+nondexJarDir=/tmp/tmp.Nt6yqqlMgZ/repo/.nondex
+nondexExecid=jUOrPCpJw3rP8LRrauaijfA0HW0j3tTWZAV8ap0DYU=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.jvnet.hudson.test.JellyTestSuiteBuilder$JellyCheck
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.231 s - in org.jvnet.hudson.test.JellyTestSuiteBuilder$JellyCheck
+[INFO] Running org.jvnet.hudson.test.PluginAutomaticTestBuilder$OtherTests
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.354 s - in org.jvnet.hudson.test.PluginAutomaticTestBuilder$OtherTests
+[INFO] Running org.jvnet.hudson.test.junit.FailedTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.jvnet.hudson.test.junit.FailedTest
+[INFO] Running com.amadeus.jenkins.opentracing.PipelineTracingTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.815 s - in com.amadeus.jenkins.opentracing.PipelineTracingTest
+[INFO] Running com.amadeus.jenkins.opentracing.PluginLoadingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.079 s - in com.amadeus.jenkins.opentracing.PluginLoadingTest
+[INFO] Running com.amadeus.jenkins.opentracing.RestartTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.036 s - in com.amadeus.jenkins.opentracing.RestartTest
+[INFO] Running com.amadeus.jenkins.opentracing.SpanStorageTest
+[ERROR] Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.65 s <<< FAILURE! - in com.amadeus.jenkins.opentracing.SpanStorageTest
+[ERROR] com.amadeus.jenkins.opentracing.SpanStorageTest.testFailing  Time elapsed: 1.618 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+	at com.amadeus.jenkins.opentracing.SpanStorageTest.assertions(SpanStorageTest.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.RunAfters.invokeMethod(RunAfters.java:46)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:601)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[ERROR] com.amadeus.jenkins.opentracing.SpanStorageTest.testExecutionWithMissingCaches  Time elapsed: 1.03 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting empty but was:<["failed to clean up memory from Owner[p/1:p #1]"]>
+	at com.amadeus.jenkins.opentracing.SpanStorageTest.assertions(SpanStorageTest.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.RunAfters.invokeMethod(RunAfters.java:46)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:601)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[INFO] Running com.amadeus.jenkins.opentracing.UtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.028 s - in com.amadeus.jenkins.opentracing.UtilsTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.ConfigurationAsCodeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.807 s - in com.amadeus.jenkins.opentracing.config.ConfigurationAsCodeTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.ConfigurationMigrationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.117 s - in com.amadeus.jenkins.opentracing.config.ConfigurationMigrationTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.GroovyInitializationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.282 s - in com.amadeus.jenkins.opentracing.config.GroovyInitializationTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.OTConfigTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.674 s - in com.amadeus.jenkins.opentracing.config.OTConfigTest
+[INFO] Running com.amadeus.jenkins.opentracing.config.impl.JaegerConfigTest

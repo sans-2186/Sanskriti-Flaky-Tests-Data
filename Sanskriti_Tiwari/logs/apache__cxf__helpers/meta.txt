@@ -1,0 +1,3 @@
+url=https://github.com/apache/cxf
+sha=649520354501295859b692ddf1b42adb919affbb
+module=helpers

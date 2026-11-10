@@ -1,0 +1,3 @@
+url=https://github.com/apache/archiva
+sha=292dbe1bb4323dd299d36b78f37d9c1d55c889f8
+module=archiva-modules/archiva-base/archiva-repository-layer
