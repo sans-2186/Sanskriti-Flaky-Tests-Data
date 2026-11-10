@@ -1,0 +1,185 @@
+name: RIDE module flow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - cursor/match-sample-flow-4d64
+    paths:
+      - ".github/ride_flow_config.json"
+
+concurrency:
+  group: ride-module-flow
+  cancel-in-progress: true
+
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    outputs:
+      n_modules: ${{ steps.bounds.outputs.n_modules }}
+      n_groups: ${{ steps.bounds.outputs.n_groups }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: bounds
+        run: |
+          NM=$(($(wc -l < inputs/modules.csv) - 1))
+          NG=$(($(wc -l < inputs/nod_groups.csv) - 1))
+          echo "n_modules=$NM" >> "$GITHUB_OUTPUT"
+          echo "n_groups=$NG" >> "$GITHUB_OUTPUT"
+          echo "modules=$NM nod_groups=$NG"
+
+  detect:
+    needs: prep
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        idx: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Detect module ${{ matrix.idx }}
+        run: |
+          set -uo pipefail
+          IDX=${{ matrix.idx }}
+          N=${{ needs.prep.outputs.n_modules }}
+          if [ "$IDX" -ge "$N" ]; then echo "no module $IDX"; exit 0; fi
+          mkdir -p work
+          python3 - "$IDX" << 'PY'
+          import csv, os, sys
+          os.makedirs("work", exist_ok=True)
+          idx = sys.argv[1]
+          for row in csv.DictReader(open("inputs/modules.csv")):
+              if row["idx"] == idx:
+                  open("work/url","w").write(row["url"])
+                  open("work/sha","w").write(row["sha"])
+                  open("work/module","w").write(row["module"])
+                  slug = row["project"].replace("/", "__") + "__" + (row["module"].replace("/", "@") or "root")
+                  open("work/slug","w").write(slug)
+                  break
+          PY
+          URL=$(cat work/url)
+          SHA=$(cat work/sha)
+          MODULE=$(cat work/module)
+          SLUG=$(cat work/slug)
+          echo "module $IDX $URL $SHA ${MODULE:-<root>}"
+          mkdir -p "logs/$SLUG" results
+          chmod +x scripts/run_module.sh
+          bash scripts/run_module.sh "$URL" "$SHA" "$MODULE" "logs/$SLUG" "results/$IDX.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: module-result-${{ matrix.idx }}
+          path: results/
+          if-no-files-found: warn
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: module-logs-${{ matrix.idx }}
+          path: logs/
+          if-no-files-found: warn
+          retention-days: 14
+
+  flakesync:
+    needs: prep
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        idx: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106]
+    steps:
+      - uses: actions/checkout@v4
+      - name: FlakeSync NOD group ${{ matrix.idx }}
+        run: |
+          set -uo pipefail
+          IDX=${{ matrix.idx }}
+          N=${{ needs.prep.outputs.n_groups }}
+          if [ "$IDX" -ge "$N" ]; then echo "no group $IDX"; exit 0; fi
+          if [ -n "${JAVA_HOME_11_X64:-}" ]; then
+            export JAVA_HOME="$JAVA_HOME_11_X64"
+            export PATH="$JAVA_HOME/bin:$PATH"
+          fi
+          git clone --filter=blob:none https://github.com/UT-SE-Research/FlakeSync.git FlakeSync_src
+          git -C FlakeSync_src fetch --depth=1 origin 54ebfa3b5e
+          git -C FlakeSync_src checkout 54ebfa3b5e
+          mvn -B -DskipTests install -f FlakeSync_src/pom.xml
+          mkdir -p work logs results
+          python3 - "$IDX" << 'PY'
+          import csv, sys
+          idx = sys.argv[1]
+          for row in csv.DictReader(open("inputs/nod_groups.csv")):
+              if row["idx"] == idx:
+                  open("work/url","w").write(row["url"])
+                  open("work/sha","w").write(row["sha"])
+                  open("work/module","w").write(row["module"])
+                  open("work/tests.txt","w").write(row["tests"].replace("|", "\n") + "\n")
+                  break
+          PY
+          URL=$(cat work/url)
+          SHA=$(cat work/sha)
+          MODULE=$(cat work/module)
+          echo "group $IDX $URL module=${MODULE:-<root>} tests=$(wc -l < work/tests.txt)"
+          chmod +x scripts/run_flakesync_nod.sh
+          bash scripts/run_flakesync_nod.sh "$URL" "$SHA" "$MODULE" work/tests.txt "logs" "results/$IDX.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fs-result-${{ matrix.idx }}
+          path: results/
+          if-no-files-found: warn
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fs-logs-${{ matrix.idx }}
+          path: logs/
+          if-no-files-found: warn
+          retention-days: 14
+
+  merge:
+    needs: [detect, flakesync]
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: module-result-*
+          path: detect_results
+          merge-multiple: true
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fs-result-*
+          path: fs_results
+          merge-multiple: true
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: module-logs-*
+          path: module_logs
+          merge-multiple: false
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: fs-logs-*
+          path: fs_logs
+          merge-multiple: false
+      - name: Build the sample layout
+        run: |
+          curl -fsSL "https://raw.githubusercontent.com/TestingResearchIllinois/idoft/main/pr-data.csv" -o pr-data.csv
+          mkdir -p Sanskriti_Tiwari/logs
+          # Artifact roots are the uploaded logs/ trees.
+          find module_logs fs_logs -mindepth 1 -maxdepth 1 -type d | while read -r d; do
+            cp -a "$d"/. Sanskriti_Tiwari/logs/ || true
+          done
+          PR_DATA=pr-data.csv DETECT_DIR=detect_results FS_DIR=fs_results OUT_DIR=Sanskriti_Tiwari \
+            python3 scripts/merge_ride_outputs.py
+      - name: Commit results
+        run: |
+          git config user.name "sans-2186"
+          git config user.email "sut230001@utdallas.edu"
+          git add Sanskriti_Tiwari
+          git commit -m "results: module-scoped iDFlakies/NonDex and NOD FlakeSync" || echo "nothing to commit"
+          git push
