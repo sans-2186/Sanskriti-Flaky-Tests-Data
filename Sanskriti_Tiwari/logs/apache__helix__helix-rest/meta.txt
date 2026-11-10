@@ -1,0 +1,3 @@
+url=https://github.com/apache/helix
+sha=917b786e4da9a615c5177f27256e170feae2298f
+module=helix-rest

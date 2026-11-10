@@ -1,0 +1,7 @@
+org/apache/dubbo/remoting/transport/netty4/NettyClient.access$000(Lorg/apache/dubbo/remoting/transport/netty4/NettyClient;)Lorg/apache/dubbo/remoting/Codec2;
+org/apache/dubbo/remoting/transport/AbstractPeer.getUrl()Lorg/apache/dubbo/common/URL;
+org/apache/dubbo/remoting/transport/netty4/NettyCodecAdapter.getEncoder()Lio/netty/channel/ChannelHandler;
+org/apache/dubbo/remoting/transport/netty4/NettyCodecAdapter.getDecoder()Lio/netty/channel/ChannelHandler;
+flakesync/Constants.getConcurrentMethodsFilepath(Ljava/lang/String;)Ljava/nio/file/Path;
+org/apache/dubbo/remoting/transport/netty4/NettyClient$1.initChannel(Lio/netty/channel/Channel;)V
+org/apache/dubbo/remoting/transport/AbstractEndpoint.getCodec()Lorg/apache/dubbo/remoting/Codec2;

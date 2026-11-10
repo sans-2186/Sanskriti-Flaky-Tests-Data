@@ -1,0 +1,3 @@
+url=https://github.com/alibaba/spring-cloud-alibaba
+sha=add08b6822cb7cf6b2a429dd30b0ed0e49a7db49
+module=spring-cloud-alibaba-starters/spring-cloud-starter-alibaba-sentinel

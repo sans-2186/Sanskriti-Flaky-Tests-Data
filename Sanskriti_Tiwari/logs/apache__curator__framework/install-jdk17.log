@@ -1,0 +1,25 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[ERROR] [ERROR] Could not find the selected project in the reactor: framework @ 
+[INFO] 0 goals, 0 executed
+Nov 10, 2026 7:10:08 PM com.gradle.maven.extension.internal.dep.org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {s}->https://ge.apache.org:443: Connection reset
+Nov 10, 2026 7:10:08 PM com.gradle.maven.extension.internal.dep.org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {s}->https://ge.apache.org:443
+Nov 10, 2026 7:10:08 PM com.gradle.maven.extension.internal.dep.org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {s}->https://ge.apache.org:443: Connection reset
+Nov 10, 2026 7:10:08 PM com.gradle.maven.extension.internal.dep.org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {s}->https://ge.apache.org:443
+Nov 10, 2026 7:10:08 PM com.gradle.maven.extension.internal.dep.org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {s}->https://ge.apache.org:443: Connection reset
+Nov 10, 2026 7:10:08 PM com.gradle.maven.extension.internal.dep.org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request to {s}->https://ge.apache.org:443
+[WARNING] Unexpected error while contacting Gradle Enterprise server at https://ge.apache.org/
+[WARNING] No build scan will be published: Gradle Enterprise features were not enabled due to an unexpected error while contacting Gradle Enterprise.
+[ERROR] Could not find the selected project in the reactor: framework -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MavenExecutionException

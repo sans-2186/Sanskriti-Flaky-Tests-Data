@@ -1,0 +1,57 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Vertexium                                                          [pom]
+[INFO] Vertexium: Core                                                    [jar]
+[INFO] Vertexium: Test                                                    [jar]
+[INFO] Vertexium: Accumulo: Iterators                                     [jar]
+[INFO] Vertexium: Accumulo                                                [jar]
+[INFO] 
+[INFO] --------------------< org.vertexium:vertexium-root >--------------------
+[INFO] Building Vertexium 4.4.2-SNAPSHOT                                  [1/5]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) > test-compile @ vertexium-root >>>
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ vertexium-root ---
+[INFO] 
+[INFO] --- buildnumber:1.2:create (create-build-number) @ vertexium-root ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.D6VZtM9ig1/repo && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.D6VZtM9ig1/repo
+[INFO] Storing buildNumber: f1fd59e23610312cf0ec6756ea01baaf56cdb74e at timestamp: 1794338410178
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.D6VZtM9ig1/repo && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.D6VZtM9ig1/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber:1.2:create-timestamp (create-formatted-timestamp) @ vertexium-root ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) < test-compile @ vertexium-root <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) @ vertexium-root ---
+INFO: Running BarrierPointSearchMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Vertexium 4.4.2-SNAPSHOT:
+[INFO] 
+[INFO] Vertexium .......................................... FAILURE [  0.576 s]
+[INFO] Vertexium: Core .................................... SKIPPED
+[INFO] Vertexium: Test .................................... SKIPPED
+[INFO] Vertexium: Accumulo: Iterators ..................... SKIPPED
+[INFO] Vertexium: Accumulo ................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.757 s
+[INFO] Finished at: 2026-11-10T19:20:10Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch (default-cli) on project vertexium-root: Execution default-cli of goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch failed: java.io.FileNotFoundException: /tmp/tmp.D6VZtM9ig1/repo/.flakesync/Results-CritSearch/org.vertexium.accumulo.AccumuloGraphTest.testFindPathsMultiplePaths-CriticalPoints.csv (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

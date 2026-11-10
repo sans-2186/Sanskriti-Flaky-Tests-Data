@@ -1,0 +1,3 @@
+url=https://github.com/apache/hadoop
+sha=14cd969b6ea1898e9db6eeb9ea5292ec4558a706
+module=hadoop-common-project/hadoop-common

@@ -1,0 +1,59 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 2 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 2 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Prometheus Tomcat Exporter                                         [pom]
+[INFO] Prometheus client for Apache Tomcat                                [jar]
+[INFO] 
+[INFO] --------------------< nl.nlighten:tomcat_exporter >---------------------
+[INFO] Building Prometheus Tomcat Exporter 0.0.15-SNAPSHOT                [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ tomcat_exporter >>>
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ tomcat_exporter <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ tomcat_exporter ---
+INFO: Running PatchingMojo
+[INFO] 
+[INFO] -----------------< nl.nlighten:tomcat_exporter_client >-----------------
+[INFO] Building Prometheus client for Apache Tomcat 0.0.15-SNAPSHOT       [2/2]
+[INFO]   from client/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ tomcat_exporter_client >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ tomcat_exporter_client ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.ODd6gYtoxR/repo/client/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ tomcat_exporter_client ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ tomcat_exporter_client ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.ODd6gYtoxR/repo/client/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ tomcat_exporter_client ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ tomcat_exporter_client <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ tomcat_exporter_client ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.ODd6gYtoxR/repo/client/.flakesync/Results-BarrierSearch/nl.nlighten.prometheus.tomcat.TomcatGenericExportsTest.testRequestProcessorMetrics-BarrierPoints.csv (No such file or directory)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Prometheus Tomcat Exporter 0.0.15-SNAPSHOT:
+[INFO] 
+[INFO] Prometheus Tomcat Exporter ......................... SUCCESS [  0.101 s]
+[INFO] Prometheus client for Apache Tomcat ................ SUCCESS [  0.175 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.013 s
+[INFO] Finished at: 2026-11-10T19:33:48Z
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,118 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.bitness: 64
+[INFO] os.detected.version: 7.0
+[INFO] os.detected.version.major: 7
+[INFO] os.detected.version.minor: 0
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 26.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Hadoop Main                                                 [pom]
+[INFO] Apache Hadoop Build Tools                                          [jar]
+[INFO] Apache Hadoop Project POM                                          [pom]
+[INFO] Apache Hadoop Annotations                                          [jar]
+[INFO] Apache Hadoop Project Dist POM                                     [pom]
+[INFO] Apache Hadoop Maven Plugins                               [maven-plugin]
+[INFO] Apache Hadoop MiniKDC                                              [jar]
+[INFO] Apache Hadoop Auth                                                 [jar]
+[INFO] Apache Hadoop Common                                               [jar]
+[INFO] Apache Hadoop KMS                                                  [jar]
+[INFO] Apache Hadoop Registry                                             [jar]
+[INFO] Apache Hadoop HDFS Client                                          [jar]
+[INFO] Apache Hadoop HDFS                                                 [jar]
+[INFO] Apache Hadoop YARN                                                 [pom]
+[INFO] Apache Hadoop YARN API                                             [jar]
+[INFO] Apache Hadoop YARN Common                                          [jar]
+[INFO] Apache Hadoop YARN Server                                          [pom]
+[INFO] Apache Hadoop YARN Server Common                                   [jar]
+[INFO] Apache Hadoop YARN ApplicationHistoryService                       [jar]
+[INFO] Apache Hadoop YARN Timeline Service                                [jar]
+[INFO] Apache Hadoop YARN Web Proxy                                       [jar]
+[INFO] Apache Hadoop YARN ResourceManager                                 [jar]
+[INFO] Apache Hadoop YARN NodeManager                                     [jar]
+[INFO] Apache Hadoop YARN Server Tests                                    [jar]
+[INFO] Apache Hadoop YARN Client                                          [jar]
+[INFO] Apache Hadoop MapReduce Client                                     [pom]
+[INFO] Apache Hadoop MapReduce Core                                       [jar]
+[INFO] Apache Hadoop MapReduce Common                                     [jar]
+[INFO] Apache Hadoop MapReduce Shuffle                                    [jar]
+[INFO] Apache Hadoop MapReduce App                                        [jar]
+[INFO] Apache Hadoop MapReduce HistoryServer                              [jar]
+[INFO] Apache Hadoop MapReduce JobClient                                  [jar]
+[INFO] 
+[INFO] -------------------< org.apache.hadoop:hadoop-main >--------------------
+[INFO] Building Apache Hadoop Main 3.4.0-SNAPSHOT                        [1/32]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) > test-compile @ hadoop-main >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (default) @ hadoop-main ---
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (enforce-property) @ hadoop-main ---
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-main ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) < test-compile @ hadoop-main <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) @ hadoop-main ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running BarrierPointSearchMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache Hadoop Main 3.4.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache Hadoop Main ................................. FAILURE [  0.410 s]
+[INFO] Apache Hadoop Build Tools .......................... SKIPPED
+[INFO] Apache Hadoop Project POM .......................... SKIPPED
+[INFO] Apache Hadoop Annotations .......................... SKIPPED
+[INFO] Apache Hadoop Project Dist POM ..................... SKIPPED
+[INFO] Apache Hadoop Maven Plugins ........................ SKIPPED
+[INFO] Apache Hadoop MiniKDC .............................. SKIPPED
+[INFO] Apache Hadoop Auth ................................. SKIPPED
+[INFO] Apache Hadoop Common ............................... SKIPPED
+[INFO] Apache Hadoop KMS .................................. SKIPPED
+[INFO] Apache Hadoop Registry ............................. SKIPPED
+[INFO] Apache Hadoop HDFS Client .......................... SKIPPED
+[INFO] Apache Hadoop HDFS ................................. SKIPPED
+[INFO] Apache Hadoop YARN ................................. SKIPPED
+[INFO] Apache Hadoop YARN API ............................. SKIPPED
+[INFO] Apache Hadoop YARN Common .......................... SKIPPED
+[INFO] Apache Hadoop YARN Server .......................... SKIPPED
+[INFO] Apache Hadoop YARN Server Common ................... SKIPPED
+[INFO] Apache Hadoop YARN ApplicationHistoryService ....... SKIPPED
+[INFO] Apache Hadoop YARN Timeline Service ................ SKIPPED
+[INFO] Apache Hadoop YARN Web Proxy ....................... SKIPPED
+[INFO] Apache Hadoop YARN ResourceManager ................. SKIPPED
+[INFO] Apache Hadoop YARN NodeManager ..................... SKIPPED
+[INFO] Apache Hadoop YARN Server Tests .................... SKIPPED
+[INFO] Apache Hadoop YARN Client .......................... SKIPPED
+[INFO] Apache Hadoop MapReduce Client ..................... SKIPPED
+[INFO] Apache Hadoop MapReduce Core ....................... SKIPPED
+[INFO] Apache Hadoop MapReduce Common ..................... SKIPPED
+[INFO] Apache Hadoop MapReduce Shuffle .................... SKIPPED
+[INFO] Apache Hadoop MapReduce App ........................ SKIPPED
+[INFO] Apache Hadoop MapReduce HistoryServer .............. SKIPPED
+[INFO] Apache Hadoop MapReduce JobClient .................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.088 s
+[INFO] Finished at: 2026-11-10T19:06:12Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch (default-cli) on project hadoop-main: Execution default-cli of goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch failed: java.io.FileNotFoundException: /tmp/tmp.J928NUxL4U/repo/.flakesync/Results-CritSearch/org.apache.hadoop.mapred.TestLocalMRNotification.testMR-CriticalPoints.csv (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

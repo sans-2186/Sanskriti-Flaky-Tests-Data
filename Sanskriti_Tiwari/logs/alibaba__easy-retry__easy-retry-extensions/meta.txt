@@ -1,0 +1,3 @@
+url=https://github.com/alibaba/easy-retry
+sha=16e0c4156347658c1fd701ad4bf53aeeb214ce50
+module=easy-retry-extensions

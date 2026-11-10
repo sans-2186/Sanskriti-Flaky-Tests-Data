@@ -1,0 +1,20 @@
+Cloning into '/tmp/tmp.RShpgQSC1Y/repo'...
+Updating files:  16% (536/3238)Updating files:  17% (551/3238)Updating files:  18% (583/3238)Updating files:  19% (616/3238)Updating files:  20% (648/3238)Updating files:  21% (680/3238)Updating files:  22% (713/3238)Updating files:  23% (745/3238)Updating files:  24% (778/3238)Updating files:  25% (810/3238)Updating files:  26% (842/3238)Updating files:  27% (875/3238)Updating files:  28% (907/3238)Updating files:  29% (940/3238)Updating files:  30% (972/3238)Updating files:  31% (1004/3238)Updating files:  32% (1037/3238)Updating files:  33% (1069/3238)Updating files:  34% (1101/3238)Updating files:  35% (1134/3238)Updating files:  36% (1166/3238)Updating files:  37% (1199/3238)Updating files:  38% (1231/3238)Updating files:  39% (1263/3238)Updating files:  40% (1296/3238)Updating files:  41% (1328/3238)Updating files:  42% (1360/3238)Updating files:  43% (1393/3238)Updating files:  44% (1425/3238)Updating files:  45% (1458/3238)Updating files:  46% (1490/3238)Updating files:  47% (1522/3238)Updating files:  48% (1555/3238)Updating files:  49% (1587/3238)Updating files:  50% (1619/3238)Updating files:  51% (1652/3238)Updating files:  52% (1684/3238)Updating files:  53% (1717/3238)Updating files:  54% (1749/3238)Updating files:  55% (1781/3238)Updating files:  56% (1814/3238)Updating files:  57% (1846/3238)Updating files:  58% (1879/3238)Updating files:  59% (1911/3238)Updating files:  60% (1943/3238)Updating files:  61% (1976/3238)Updating files:  62% (2008/3238)Updating files:  63% (2040/3238)Updating files:  64% (2073/3238)Updating files:  65% (2105/3238)Updating files:  66% (2138/3238)Updating files:  67% (2170/3238)Updating files:  68% (2202/3238)Updating files:  69% (2235/3238)Updating files:  70% (2267/3238)Updating files:  71% (2299/3238)Updating files:  72% (2332/3238)Updating files:  73% (2364/3238)Updating files:  74% (2397/3238)Updating files:  75% (2429/3238)Updating files:  76% (2461/3238)Updating files:  77% (2494/3238)Updating files:  78% (2526/3238)Updating files:  79% (2559/3238)Updating files:  80% (2591/3238)Updating files:  81% (2623/3238)Updating files:  82% (2656/3238)Updating files:  83% (2688/3238)Updating files:  84% (2720/3238)Updating files:  85% (2753/3238)Updating files:  86% (2785/3238)Updating files:  87% (2818/3238)Updating files:  88% (2850/3238)Updating files:  89% (2882/3238)Updating files:  90% (2915/3238)Updating files:  91% (2947/3238)Updating files:  92% (2979/3238)Updating files:  93% (3012/3238)Updating files:  94% (3044/3238)Updating files:  95% (3077/3238)Updating files:  96% (3109/3238)Updating files:  97% (3141/3238)Updating files:  98% (3174/3238)Updating files:  99% (3206/3238)Updating files: 100% (3238/3238)Updating files: 100% (3238/3238), done.
+Note: switching to '292dbe1bb4323dd299d36b78f37d9c1d55c889f8'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 292dbe1bb Migration to remote repository handler

@@ -1,0 +1,3 @@
+url=https://github.com/alibaba/nacos
+sha=2a0dafa2f4e1a8f1fac38e8bf750b77858c03af3
+module=config

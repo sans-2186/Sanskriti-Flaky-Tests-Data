@@ -1,0 +1,15 @@
+com.alibaba.easyexcel.test.core.excludeorinclude.ExcludeOrIncludeDataTest#t06IncludeIndex07
+com.alibaba.easyexcel.test.core.excludeorinclude.ExcludeOrIncludeDataTest#t08IncludeFiledName07
+com.alibaba.easyexcel.test.core.sort.SortDataTest#t01ReadAndWrite07
+com.alibaba.easyexcel.test.core.sort.SortDataTest#t02ReadAndWrite03
+com.alibaba.easyexcel.test.core.sort.SortDataTest#t03ReadAndWriteNoHead07
+com.alibaba.easyexcel.test.core.sort.SortDataTest#t04ReadAndWriteNoHead03
+com.alibaba.easyexcel.test.core.encrypt.EncryptDataTest#t01ReadAndWrite07
+com.alibaba.easyexcel.test.core.encrypt.EncryptDataTest#t03ReadAndWriteStream07
+com.alibaba.easyexcel.test.core.compatibility.CompatibilityDataTest#t01ReadAndWrite07
+com.alibaba.easyexcel.test.core.compatibility.CompatibilityDataTest#t02ReadAndWrite03
+com.alibaba.easyexcel.test.core.dataformat.DateFormatTest#t02Read03
+com.alibaba.easyexcel.test.core.dataformat.DateFormatTest#t01Read07
+com.alibaba.easyexcel.test.core.converter.ConverterDataTest#t03ReadAllConverter07
+com.alibaba.easyexcel.test.core.converter.ConverterDataTest#t04ReadAllConverter03
+com.alibaba.easyexcel.test.core.compatibility.CompatibilityParameterDataTest#t01ReadAndWrite

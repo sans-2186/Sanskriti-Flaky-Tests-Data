@@ -1,0 +1,172 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] WildFly Maven Plugin - Parent                                      [pom]
+[INFO] WildFly Plugin Core Utilities                                      [jar]
+[INFO] 
+[INFO] ----------< org.wildfly.plugins:wildfly-maven-plugin-parent >-----------
+[INFO] Building WildFly Maven Plugin - Parent 3.0.0.Alpha3-SNAPSHOT       [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ wildfly-maven-plugin-parent >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-java-version) @ wildfly-maven-plugin-parent ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven-version) @ wildfly-maven-plugin-parent ---
+[INFO] 
+[INFO] --- buildnumber:1.4:create (get-scm-revision) @ wildfly-maven-plugin-parent ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.xuif6YABnK/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.xuif6YABnK/repo
+[INFO] Storing buildNumber: ba664f977f4a20771eb7aab979164b2fb639a240 at timestamp: 1794338556672
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.xuif6YABnK/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.xuif6YABnK/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- checkstyle:3.1.1:checkstyle (check-style) @ wildfly-maven-plugin-parent ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ wildfly-maven-plugin-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ wildfly-maven-plugin-parent ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running FindTestsRunMojo
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.pom (6.5 kB at 80 kB/s)
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/surefire/2.20/surefire-2.20.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.20/surefire-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.20/surefire-2.20.pom (21 kB at 867 kB/s)
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.jar (53 kB at 1.3 MB/s)
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.pom (9.4 kB at 493 kB/s)
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom (1.6 kB at 86 kB/s)
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom (13 kB at 527 kB/s)
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.pom (3.7 kB at 177 kB/s)
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.pom (2.0 kB at 115 kB/s)
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.pom (3.2 kB at 152 kB/s)
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom (17 kB at 928 kB/s)
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.jar
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.jar
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.jar
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.jar (331 kB at 7.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.jar (50 kB at 1.2 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.jar (182 kB at 4.1 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.jar (13 kB at 268 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar (14 kB at 292 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar (316 kB at 5.1 MB/s)
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] 
+[INFO] --------------< org.wildfly.plugins:wildfly-plugin-core >---------------
+[INFO] Building WildFly Plugin Core Utilities 3.0.0.Alpha3-SNAPSHOT       [2/2]
+[INFO]   from core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ wildfly-plugin-core >>>
+[INFO] Artifact org.jboss:jboss-parent:pom:36 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [nexus (https://repository.jboss.org/nexus/content/groups/public-jboss, default, releases+snapshots), redhat-ga (https://maven.repository.redhat.com/ga/, default, releases+snapshots), central (https://repo.maven.apache.org/maven2, default, releases), jboss-public-repository-group (https://repository.jboss.org/nexus/content/groups/public/, default, releases+snapshots), jboss-enterprise-maven-repository (https://maven.repository.redhat.com/ga/, default, releases)]
+[INFO] Artifact org.jboss:jboss-parent:pom:36 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [nexus (https://repository.jboss.org/nexus/content/groups/public-jboss, default, releases+snapshots), redhat-ga (https://maven.repository.redhat.com/ga/, default, releases+snapshots), central (https://repo.maven.apache.org/maven2, default, releases), jboss-public-repository-group (https://repository.jboss.org/nexus/content/groups/public/, default, releases+snapshots), jboss-enterprise-maven-repository (https://maven.repository.redhat.com/ga/, default, releases)]
+[INFO] Downloading from nexus: https://repository.jboss.org/nexus/content/groups/public-jboss/org/jboss/jboss-parent/36/jboss-parent-36.pom
+[INFO] Downloaded from nexus: https://repository.jboss.org/nexus/content/groups/public-jboss/org/jboss/jboss-parent/36/jboss-parent-36.pom (0 B at 0 B/s)
+[INFO] Artifact org.jboss.galleon:galleon-parent:pom:4.2.8.Final is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [nexus (https://repository.jboss.org/nexus/content/groups/public-jboss, default, releases+snapshots), redhat-ga (https://maven.repository.redhat.com/ga/, default, releases+snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.jboss.galleon:galleon-parent:pom:4.2.8.Final is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [nexus (https://repository.jboss.org/nexus/content/groups/public-jboss, default, releases+snapshots), redhat-ga (https://maven.repository.redhat.com/ga/, default, releases+snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Downloading from nexus: https://repository.jboss.org/nexus/content/groups/public-jboss/org/jboss/galleon/galleon-parent/4.2.8.Final/galleon-parent-4.2.8.Final.pom
+[INFO] Downloaded from nexus: https://repository.jboss.org/nexus/content/groups/public-jboss/org/jboss/galleon/galleon-parent/4.2.8.Final/galleon-parent-4.2.8.Final.pom (0 B at 0 B/s)
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-java-version) @ wildfly-plugin-core ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven-version) @ wildfly-plugin-core ---
+[INFO] 
+[INFO] --- buildnumber:1.4:create (get-scm-revision) @ wildfly-plugin-core ---
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ wildfly-plugin-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.8.1-jboss-2:compile (default-compile) @ wildfly-plugin-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- checkstyle:3.1.1:checkstyle (check-style) @ wildfly-plugin-core ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ wildfly-plugin-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.xuif6YABnK/repo/core/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1-jboss-2:testCompile (default-testCompile) @ wildfly-plugin-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ wildfly-plugin-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ wildfly-plugin-core ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/surefire-junit4/2.22.2/surefire-junit4-2.22.2.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.2/surefire-junit4-2.22.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.2/surefire-junit4-2.22.2.pom (3.1 kB at 154 kB/s)
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/surefire-providers/2.22.2/surefire-providers-2.22.2.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.2/surefire-providers-2.22.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.2/surefire-providers-2.22.2.pom (2.5 kB at 108 kB/s)
+[INFO] Downloading from jboss-public-repository: https://repository.jboss.org/nexus/content/groups/public/org/apache/maven/surefire/surefire-junit4/2.22.2/surefire-junit4-2.22.2.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.2/surefire-junit4-2.22.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.2/surefire-junit4-2.22.2.jar (85 kB at 3.4 MB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.wildfly.plugin.core.DomainDeploymentManagerIT
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.124 s <<< FAILURE! - in org.wildfly.plugin.core.DomainDeploymentManagerIT
+[ERROR] org.wildfly.plugin.core.DomainDeploymentManagerIT  Time elapsed: 0.122 s  <<< FAILURE!
+java.lang.AssertionError: WildFly home property, jboss.home, was not set
+	at org.wildfly.plugin.core.DomainDeploymentManagerIT.startServer(DomainDeploymentManagerIT.java:80)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   DomainDeploymentManagerIT.startServer:80 WildFly home property, jboss.home, was not set
+[INFO] 
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Surefire failed when running tests for clean_toDvHrhr5wvobNnqiyH2Rm664I3sPF9pCfsKYNnshbA= with delay: 0
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for WildFly Maven Plugin - Parent 3.0.0.Alpha3-SNAPSHOT:
+[INFO] 
+[INFO] WildFly Maven Plugin - Parent ...................... SUCCESS [  5.221 s]
+[INFO] WildFly Plugin Core Utilities ...................... SUCCESS [  3.216 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.685 s
+[INFO] Finished at: 2026-11-10T19:22:44Z
+[INFO] ------------------------------------------------------------------------

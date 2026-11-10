@@ -1,0 +1,117 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] parent                                                             [pom]
+[INFO] cat-client                                                         [jar]
+[INFO] 
+[INFO] ----------------------< com.dianping.cat:parent >-----------------------
+[INFO] Building parent 4.0-RC1                                            [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ parent >>>
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ parent ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running FindTestsRunMojo
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.pom (6.5 kB at 27 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire/2.20/surefire-2.20.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire/2.20/surefire-2.20.pom (21 kB at 484 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom (40 kB at 947 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.20/maven-surefire-plugin-2.20.jar (53 kB at 986 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.pom (9.4 kB at 234 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.pom (1.6 kB at 40 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.3/maven-plugin-tools-3.3.pom (13 kB at 324 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.pom (3.7 kB at 93 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.pom (2.0 kB at 52 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.pom (3.2 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.pom (24 kB at 592 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom (17 kB at 398 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.20/maven-surefire-common-2.20.jar (331 kB at 4.5 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.jar
+[INFO] Downloading from central: https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-api/2.20/surefire-api-2.20.jar (182 kB at 2.8 MB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-logger-api/2.20/surefire-logger-api-2.20.jar (13 kB at 123 kB/s)
+[INFO] Downloading from central: https://repo1.maven.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/surefire/surefire-booter/2.20/surefire-booter-2.20.jar (50 kB at 374 kB/s)
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar (315 kB at 2.2 MB/s)
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar (228 kB at 1.4 MB/s)
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.3/maven-plugin-annotations-3.3.jar (14 kB at 89 kB/s)
+[INFO] Downloaded from central: https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar (316 kB at 1.8 MB/s)
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] 
+[INFO] --------------------< com.dianping.cat:cat-client >---------------------
+[INFO] Building cat-client 4.0-RC1                                        [2/2]
+[INFO]   from cat-client/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ cat-client >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ cat-client ---
+[INFO] Copying 8 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.2:compile (default-compile) @ cat-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ cat-client ---
+[INFO] Copying 4 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.2:testCompile (default-testCompile) @ cat-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ cat-client <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ cat-client ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Surefire report directory: /tmp/tmp.QTV8xSxAXb/repo/cat-client/.flakesync/clean_VWqi8GTvZjyyMT0P54A1XkqkXAeP2oUhRwVJ4V+1go=
+[INFO] Using configured provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Concurrency config is parallel='none', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Running com.dianping.cat.message.context.MessageIdFactoryTest
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1,918,442.552 sec <<< FAILURE!
+
+Results :
+
+Failed tests:   testDefaultDomainInParallel(com.dianping.cat.message.context.MessageIdFactoryTest): Not all threads completed in time. expected:<123400> but was:<16258>
+  testGivenDomainInParallel(com.dianping.cat.message.context.MessageIdFactoryTest): Not all threads completed in time. expected:<123400> but was:<5156>
+
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0
+
+INFO: Surefire failed when running tests for clean_VWqi8GTvZjyyMT0P54A1XkqkXAeP2oUhRwVJ4V+1go= with delay: 0
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for parent 4.0-RC1:
+[INFO] 
+[INFO] parent ............................................. SUCCESS [  1.877 s]
+[INFO] cat-client ......................................... SUCCESS [  5.710 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.768 s
+[INFO] Finished at: 2026-11-10T18:58:32Z
+[INFO] ------------------------------------------------------------------------

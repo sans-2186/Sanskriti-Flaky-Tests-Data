@@ -1,0 +1,3 @@
+url=https://github.com/alibaba/metrics
+sha=2dbfbd0b2e9ba5d652f1f2e86d655cff8ea1ec66
+module=prometheus

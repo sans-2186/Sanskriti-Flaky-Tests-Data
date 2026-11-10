@@ -1,0 +1,3 @@
+url=https://github.com/apache/dolphinscheduler
+sha=26b7541d954ba63deb37e89479ab4d648573e8ae
+module=dolphinscheduler-spi

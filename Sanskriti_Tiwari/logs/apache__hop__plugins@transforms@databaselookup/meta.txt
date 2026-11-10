@@ -1,0 +1,3 @@
+url=https://github.com/apache/hop
+sha=be70e6fa1d4bf180c2766edc4c21d10fc215118b
+module=plugins/transforms/databaselookup

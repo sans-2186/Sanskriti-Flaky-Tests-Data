@@ -1,0 +1,5 @@
+org.apache.dubbo.config.context.ConfigManagerTest#testGetConfigByIdOrName
+org.apache.dubbo.common.utils.JsonUtilsTest#consistentTest
+org.apache.dubbo.metadata.definition.ServiceDefinitionBuilderTest#testBuilderComplexObject
+org.apache.dubbo.common.bytecode.WrapperTest#testWrapImplClass
+org.apache.dubbo.common.URLTest#testHashcode

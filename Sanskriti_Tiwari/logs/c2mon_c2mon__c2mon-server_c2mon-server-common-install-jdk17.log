@@ -1,0 +1,94 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] c2mon                                                              [pom]
+[INFO] c2mon-shared                                                       [pom]
+[INFO] c2mon-shared-util                                                  [jar]
+[INFO] c2mon-shared-common                                                [jar]
+[INFO] c2mon-shared-daq                                                   [jar]
+[INFO] c2mon-shared-rule                                                  [jar]
+[INFO] c2mon-shared-persistence-manager                                   [jar]
+[INFO] c2mon-shared-client                                                [jar]
+[INFO] c2mon-server-parent                                                [pom]
+[INFO] c2mon-server-common                                                [jar]
+[INFO] 
+[INFO] --------------------------< cern.c2mon:c2mon >--------------------------
+[INFO] Building c2mon 1.8.40-SNAPSHOT                                    [1/10]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> source:3.0.1:jar (attach-sources) > generate-sources @ c2mon >>>
+[INFO] 
+[INFO] <<< source:3.0.1:jar (attach-sources) < generate-sources @ c2mon <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.0.1:jar (attach-sources) @ c2mon ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- javadoc:2.10.4:jar (attach-javadocs) @ c2mon ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ c2mon ---
+[INFO] Installing /tmp/tmp.pzCjUcUA8Z/repo/pom.xml to /home/runner/.m2/repository/cern/c2mon/c2mon/1.8.40-SNAPSHOT/c2mon-1.8.40-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------------< cern.c2mon.shared:c2mon-shared >-------------------
+[INFO] Building c2mon-shared 1.8.40-SNAPSHOT                             [2/10]
+[INFO]   from c2mon-shared/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> source:3.0.1:jar (attach-sources) > generate-sources @ c2mon-shared >>>
+[INFO] 
+[INFO] <<< source:3.0.1:jar (attach-sources) < generate-sources @ c2mon-shared <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.0.1:jar (attach-sources) @ c2mon-shared ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- javadoc:2.10.4:jar (attach-javadocs) @ c2mon-shared ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ c2mon-shared ---
+[INFO] Installing /tmp/tmp.pzCjUcUA8Z/repo/c2mon-shared/pom.xml to /home/runner/.m2/repository/cern/c2mon/shared/c2mon-shared/1.8.40-SNAPSHOT/c2mon-shared-1.8.40-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------< cern.c2mon.shared:c2mon-shared-util >-----------------
+[INFO] Building c2mon-shared-util 1.8.40-SNAPSHOT                        [3/10]
+[INFO]   from c2mon-shared/c2mon-shared-util/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ c2mon-shared-util ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.pzCjUcUA8Z/repo/c2mon-shared/c2mon-shared-util/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ c2mon-shared-util ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 16 source files to /tmp/tmp.pzCjUcUA8Z/repo/c2mon-shared/c2mon-shared-util/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for c2mon 1.8.40-SNAPSHOT:
+[INFO] 
+[INFO] c2mon .............................................. SUCCESS [  1.292 s]
+[INFO] c2mon-shared ....................................... SUCCESS [  0.030 s]
+[INFO] c2mon-shared-util .................................. FAILURE [  1.646 s]
+[INFO] c2mon-shared-common ................................ SKIPPED
+[INFO] c2mon-shared-daq ................................... SKIPPED
+[INFO] c2mon-shared-rule .................................. SKIPPED
+[INFO] c2mon-shared-persistence-manager ................... SKIPPED
+[INFO] c2mon-shared-client ................................ SKIPPED
+[INFO] c2mon-server-parent ................................ SKIPPED
+[INFO] c2mon-server-common ................................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.174 s
+[INFO] Finished at: 2026-11-10T18:56:15Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.6.0:compile (default-compile) on project c2mon-shared-util: Fatal error compiling: java.lang.IllegalAccessError: class lombok.javac.apt.LombokProcessor (in unnamed module @0xf591271) cannot access class com.sun.tools.javac.processing.JavacProcessingEnvironment (in module jdk.compiler) because module jdk.compiler does not export com.sun.tools.javac.processing to unnamed module @0xf591271 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :c2mon-shared-util

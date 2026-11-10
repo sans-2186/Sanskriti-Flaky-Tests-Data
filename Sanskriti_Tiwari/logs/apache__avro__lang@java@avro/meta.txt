@@ -1,0 +1,3 @@
+url=https://github.com/apache/avro
+sha=bfbd2d115aec576545b0673e876a652806b41986
+module=lang/java/avro

@@ -1,0 +1,3 @@
+url=https://github.com/apache/aries-cdi
+sha=1b39afdec269266b91fe258dd4abe3bcf91aadcb
+module=cdi-extender

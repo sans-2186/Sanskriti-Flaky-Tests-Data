@@ -1,0 +1,3 @@
+org.apache.hop.core.svg.HopSvgGraphics2DTest#testNewDocumentXml
+org.apache.hop.core.svg.HopSvgGraphics2DTest#testNewDocumentSimpleXml
+org.apache.hop.core.row.value.ValueMetaAvroRecordTest#testStoreLoadMetaInJson

@@ -1,0 +1,19 @@
+Cloning into '/tmp/tmp.nitpopNULw/repo'...
+Note: switching to '3aae2253569751eaa4c419300cf9915f03a42bf1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 3aae225 Merge pull request #12 from amzn/dependabot/maven/org.eclipse.jetty-jetty-server-9.4.41.v20210516

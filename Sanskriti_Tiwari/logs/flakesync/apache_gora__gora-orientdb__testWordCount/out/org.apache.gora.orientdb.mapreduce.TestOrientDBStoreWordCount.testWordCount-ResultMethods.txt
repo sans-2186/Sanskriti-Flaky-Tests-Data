@@ -1,0 +1,6 @@
+com/orientechnologies/orient/server/OServer.shutdown()Z
+com/orientechnologies/common/log/OLogManager.shutdown()V
+com/orientechnologies/orient/server/OServer.deinit()Z
+flakesync/Constants.getConcurrentMethodsFilepath(Ljava/lang/String;)Ljava/nio/file/Path;
+com/orientechnologies/orient/server/OServerShutdownHook.run()V
+com/orientechnologies/common/log/OLogManager.instance()Lcom/orientechnologies/common/log/OLogManager;

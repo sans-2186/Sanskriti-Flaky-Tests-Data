@@ -1,0 +1,3 @@
+url=https://github.com/apache/activemq
+sha=dfd35d89f62558881bda1ed4cf7a165502c5c989
+module=activemq-stomp

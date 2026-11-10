@@ -1,0 +1,134 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Rate limit configuration for Spring Cloud Netflix Zuul             [pom]
+[INFO] Rate limit configuration for Spring Cloud Netflix Zuul - Core      [jar]
+[INFO] Spring Cloud Starter Zuul - Rate Limit                             [jar]
+[INFO] Tests - Bucket4j Infinispan RateLimit                              [jar]
+[INFO] 
+[INFO] -----< com.marcosbarbero.cloud:spring-cloud-zuul-ratelimit-parent >-----
+[INFO] Building Rate limit configuration for Spring Cloud Netflix Zuul 2.2.1.RELEASE [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ spring-cloud-zuul-ratelimit-parent >>>
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ spring-cloud-zuul-ratelimit-parent ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.pPcxVZcL15/repo/target/coverage-reports/jacoco-unit.exec,excludes=**/test/**:**/tests/**:**/*Constants.*
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ spring-cloud-zuul-ratelimit-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ spring-cloud-zuul-ratelimit-parent ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running PatchingMojo
+[INFO] 
+[INFO] ------< com.marcosbarbero.cloud:spring-cloud-zuul-ratelimit-core >------
+[INFO] Building Rate limit configuration for Spring Cloud Netflix Zuul - Core 2.2.1.RELEASE [2/4]
+[INFO]   from spring-cloud-zuul-ratelimit-core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ spring-cloud-zuul-ratelimit-core >>>
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ spring-cloud-zuul-ratelimit-core ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.pPcxVZcL15/repo/spring-cloud-zuul-ratelimit-core/target/coverage-reports/jacoco-unit.exec,excludes=**/test/**:**/tests/**:**/*Constants.*
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ spring-cloud-zuul-ratelimit-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ spring-cloud-zuul-ratelimit-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ spring-cloud-zuul-ratelimit-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ spring-cloud-zuul-ratelimit-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ spring-cloud-zuul-ratelimit-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ spring-cloud-zuul-ratelimit-core ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.pPcxVZcL15/repo/spring-cloud-zuul-ratelimit-core/.flakesync/Results-BarrierSearch/com.marcosbarbero.tests.it.Bucket4jInfinispanApplicationTestIT.testExceedingQuotaCapacityRequest-BarrierPoints.csv (No such file or directory)
+[INFO] 
+[INFO] --------< com.marcosbarbero.cloud:spring-cloud-zuul-ratelimit >---------
+[INFO] Building Spring Cloud Starter Zuul - Rate Limit 2.2.1.RELEASE      [3/4]
+[INFO]   from spring-cloud-starter-zuul-ratelimit/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ spring-cloud-zuul-ratelimit >>>
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ spring-cloud-zuul-ratelimit ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.pPcxVZcL15/repo/spring-cloud-starter-zuul-ratelimit/target/coverage-reports/jacoco-unit.exec,excludes=**/test/**:**/tests/**:**/*Constants.*
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ spring-cloud-zuul-ratelimit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ spring-cloud-zuul-ratelimit ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ spring-cloud-zuul-ratelimit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.pPcxVZcL15/repo/spring-cloud-starter-zuul-ratelimit/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ spring-cloud-zuul-ratelimit ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ spring-cloud-zuul-ratelimit <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ spring-cloud-zuul-ratelimit ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.pPcxVZcL15/repo/spring-cloud-starter-zuul-ratelimit/.flakesync/Results-BarrierSearch/com.marcosbarbero.tests.it.Bucket4jInfinispanApplicationTestIT.testExceedingQuotaCapacityRequest-BarrierPoints.csv (No such file or directory)
+[INFO] 
+[INFO] ------------< com.marcosbarbero.cloud:bucket4j-infinispan >-------------
+[INFO] Building Tests - Bucket4j Infinispan RateLimit 2.2.1.RELEASE       [4/4]
+[INFO]   from spring-cloud-zuul-ratelimit-tests/bucket4j-infinispan/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ bucket4j-infinispan >>>
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ bucket4j-infinispan ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.pPcxVZcL15/repo/spring-cloud-zuul-ratelimit-tests/bucket4j-infinispan/target/coverage-reports/jacoco-unit.exec,excludes=**/test/**:**/tests/**:**/*Constants.*
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ bucket4j-infinispan ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ bucket4j-infinispan ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ bucket4j-infinispan ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ bucket4j-infinispan ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ bucket4j-infinispan <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ bucket4j-infinispan ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.pPcxVZcL15/repo/spring-cloud-zuul-ratelimit-tests/bucket4j-infinispan/.flakesync/Results-BarrierSearch/com.marcosbarbero.tests.it.Bucket4jInfinispanApplicationTestIT.testExceedingQuotaCapacityRequest-BarrierPoints.csv (No such file or directory)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Rate limit configuration for Spring Cloud Netflix Zuul 2.2.1.RELEASE:
+[INFO] 
+[INFO] Rate limit configuration for Spring Cloud Netflix Zuul SUCCESS [  0.737 s]
+[INFO] Rate limit configuration for Spring Cloud Netflix Zuul - Core SUCCESS [  0.558 s]
+[INFO] Spring Cloud Starter Zuul - Rate Limit ............. SUCCESS [  0.018 s]
+[INFO] Tests - Bucket4j Infinispan RateLimit .............. SUCCESS [  0.065 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.733 s
+[INFO] Finished at: 2026-11-10T19:16:35Z
+[INFO] ------------------------------------------------------------------------

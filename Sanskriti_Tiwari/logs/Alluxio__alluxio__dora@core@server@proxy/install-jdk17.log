@@ -1,0 +1,89 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.alluxio:alluxio-shaded-hadoop:jar:3.3.1
+[WARNING] 'version' contains an expression but should be a constant. @ org.alluxio:alluxio-shaded-hadoop:${ufs.hadoop.version}, /tmp/tmp.fKZMBUdssS/repo/dora/shaded/hadoop/pom.xml, line 22, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.version: 7.0
+[INFO] os.detected.version.major: 7
+[INFO] os.detected.version.minor: 0
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 26.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Alluxio Parent                                                     [pom]
+[INFO] Alluxio Common                                                     [pom]
+[INFO] Alluxio Core - Transport                                           [jar]
+[INFO] Alluxio Dora                                                       [pom]
+[INFO] Alluxio Core                                                       [pom]
+[INFO] Alluxio Core - Common Utilities                                    [jar]
+[INFO] Alluxio Under File System                                          [pom]
+[INFO] Alluxio Under File System - Local FS                               [jar]
+[INFO] Alluxio Core - Client                                              [pom]
+[INFO] Alluxio Core - Client - File System                                [jar]
+[INFO] Alluxio Core - Server                                              [pom]
+[INFO] Alluxio Core - Server - Common Utilities                           [jar]
+[INFO] Alluxio Core - Server - Proxy                                      [jar]
+[INFO] 
+[INFO] ---------------------< org.alluxio:alluxio-parent >---------------------
+[INFO] Building Alluxio Parent 304-SNAPSHOT                              [1/13]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-maven) @ alluxio-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (enforce-versions) @ alluxio-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.3.0:enforce (no-duplicate-dependencies) @ alluxio-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle) @ alluxio-parent ---
+[INFO] 
+[INFO] --- license:4.2:check (default) @ alluxio-parent ---
+[INFO] 
+[INFO] --- sortpom:3.0.1:verify (default-cli) @ alluxio-parent ---
+[INFO] Verifying file /tmp/tmp.fKZMBUdssS/repo/pom.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Alluxio Parent 304-SNAPSHOT:
+[INFO] 
+[INFO] Alluxio Parent ..................................... FAILURE [  1.375 s]
+[INFO] Alluxio Common ..................................... SKIPPED
+[INFO] Alluxio Core - Transport ........................... SKIPPED
+[INFO] Alluxio Dora ....................................... SKIPPED
+[INFO] Alluxio Core ....................................... SKIPPED
+[INFO] Alluxio Core - Common Utilities .................... SKIPPED
+[INFO] Alluxio Under File System .......................... SKIPPED
+[INFO] Alluxio Under File System - Local FS ............... SKIPPED
+[INFO] Alluxio Core - Client .............................. SKIPPED
+[INFO] Alluxio Core - Client - File System ................ SKIPPED
+[INFO] Alluxio Core - Server .............................. SKIPPED
+[INFO] Alluxio Core - Server - Common Utilities ........... SKIPPED
+[INFO] Alluxio Core - Server - Proxy ...................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.028 s
+[INFO] Finished at: 2026-11-10T18:37:53Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.github.ekryd.sortpom:sortpom-maven-plugin:3.0.1:verify (default-cli) on project alluxio-parent: Could not find /home/runner/work/Sanskriti-Flaky-Tests-Data/Sanskriti-Flaky-Tests-Data/build/sortpom/alluxio_pom.xml or build/sortpom/alluxio_pom.xml in classpath -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

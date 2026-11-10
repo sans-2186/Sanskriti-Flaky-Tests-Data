@@ -1,0 +1,3 @@
+org.apache.activemq.jaas.LDAPModuleRoleExpansionTest#testRoleExpansion
+org.apache.activemq.jaas.LDAPLoginModuleTest#testAESEncryptedLogin
+org.apache.activemq.jaas.LDAPLoginModuleTest#testLogin

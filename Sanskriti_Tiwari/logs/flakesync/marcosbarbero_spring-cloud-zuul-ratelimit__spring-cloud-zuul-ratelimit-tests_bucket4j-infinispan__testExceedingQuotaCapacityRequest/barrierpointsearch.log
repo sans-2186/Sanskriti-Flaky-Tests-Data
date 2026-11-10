@@ -1,0 +1,45 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Rate limit configuration for Spring Cloud Netflix Zuul             [pom]
+[INFO] Rate limit configuration for Spring Cloud Netflix Zuul - Core      [jar]
+[INFO] Spring Cloud Starter Zuul - Rate Limit                             [jar]
+[INFO] Tests - Bucket4j Infinispan RateLimit                              [jar]
+[INFO] 
+[INFO] -----< com.marcosbarbero.cloud:spring-cloud-zuul-ratelimit-parent >-----
+[INFO] Building Rate limit configuration for Spring Cloud Netflix Zuul 2.2.1.RELEASE [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) > test-compile @ spring-cloud-zuul-ratelimit-parent >>>
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ spring-cloud-zuul-ratelimit-parent ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.pPcxVZcL15/repo/target/coverage-reports/jacoco-unit.exec,excludes=**/test/**:**/tests/**:**/*Constants.*
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) < test-compile @ spring-cloud-zuul-ratelimit-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) @ spring-cloud-zuul-ratelimit-parent ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running BarrierPointSearchMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Rate limit configuration for Spring Cloud Netflix Zuul 2.2.1.RELEASE:
+[INFO] 
+[INFO] Rate limit configuration for Spring Cloud Netflix Zuul FAILURE [  0.798 s]
+[INFO] Rate limit configuration for Spring Cloud Netflix Zuul - Core SKIPPED
+[INFO] Spring Cloud Starter Zuul - Rate Limit ............. SKIPPED
+[INFO] Tests - Bucket4j Infinispan RateLimit .............. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.157 s
+[INFO] Finished at: 2026-11-10T19:16:32Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch (default-cli) on project spring-cloud-zuul-ratelimit-parent: Execution default-cli of goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch failed: java.io.FileNotFoundException: /tmp/tmp.pPcxVZcL15/repo/.flakesync/Results-CritSearch/com.marcosbarbero.tests.it.Bucket4jInfinispanApplicationTestIT.testExceedingQuotaCapacityRequest-CriticalPoints.csv (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

@@ -1,0 +1,283 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Helidon Build Tools Project                                        [pom]
+[INFO] Helidon Build Tools Common Project                                 [pom]
+[INFO] Helidon Build Tools Common Test Utils                              [jar]
+[INFO] Helidon Build Tools Common                                         [jar]
+[INFO] Helidon Build Tools Common Ansi                                    [jar]
+[INFO] Helidon Build Tools Common XML                                     [jar]
+[INFO] Helidon Archetype Project                                          [pom]
+[INFO] Helidon Archetype Engine                                           [jar]
+[INFO] 
+[INFO] ---------< io.helidon.build-tools:helidon-build-tools-project >---------
+[INFO] Building Helidon Build Tools Project 4.0.0-SNAPSHOT                [1/8]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ helidon-build-tools-project >>>
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ helidon-build-tools-project ---
+[INFO] ShortRevision tag detected. The value is '8'.
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kvXgALFVZA/repo' && 'git' 'rev-parse' '--verify' '--short=8' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kvXgALFVZA/repo
+[INFO] Storing buildNumber: c60640f0 at timestamp: 2026-11-10 19:18:49 UTC
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] ShortRevision tag detected. The value is '8'.
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kvXgALFVZA/repo' && 'git' 'rev-parse' '--verify' '--short=8' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kvXgALFVZA/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- resources:2.7:copy-resources (copy-license) @ helidon-build-tools-project ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource to META-INF/
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ helidon-build-tools-project <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ helidon-build-tools-project ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running PatchingMojo
+[INFO] 
+[INFO] -----< io.helidon.build-tools.common:helidon-build-common-project >-----
+[INFO] Building Helidon Build Tools Common Project 4.0.0-SNAPSHOT         [2/8]
+[INFO]   from common/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ helidon-build-common-project >>>
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ helidon-build-common-project ---
+[INFO] 
+[INFO] --- resources:2.7:copy-resources (copy-license) @ helidon-build-common-project ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource to META-INF/
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ helidon-build-common-project <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ helidon-build-common-project ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.kvXgALFVZA/repo/common/.flakesync/Results-BarrierSearch/io.helidon.build.archetype.engine.v2.util.InputPermutationsTest.testConditionals-BarrierPoints.csv (No such file or directory)
+[INFO] 
+[INFO] ---< io.helidon.build-tools.common:helidon-build-common-test-utils >----
+[INFO] Building Helidon Build Tools Common Test Utils 4.0.0-SNAPSHOT      [3/8]
+[INFO]   from common/test-utils/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ helidon-build-common-test-utils >>>
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ helidon-build-common-test-utils ---
+[INFO] 
+[INFO] --- resources:2.7:copy-resources (copy-license) @ helidon-build-common-test-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource to META-INF/
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ helidon-build-common-test-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.kvXgALFVZA/repo/common/test-utils/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ helidon-build-common-test-utils ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /tmp/tmp.kvXgALFVZA/repo/common/test-utils/target/classes
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ helidon-build-common-test-utils ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.kvXgALFVZA/repo/common/test-utils/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ helidon-build-common-test-utils ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ helidon-build-common-test-utils <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ helidon-build-common-test-utils ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.kvXgALFVZA/repo/common/test-utils/.flakesync/Results-BarrierSearch/io.helidon.build.archetype.engine.v2.util.InputPermutationsTest.testConditionals-BarrierPoints.csv (No such file or directory)
+[INFO] 
+[INFO] ---------< io.helidon.build-tools.common:helidon-build-common >---------
+[INFO] Building Helidon Build Tools Common 4.0.0-SNAPSHOT                 [4/8]
+[INFO]   from common/common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ helidon-build-common >>>
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ helidon-build-common ---
+[INFO] 
+[INFO] --- resources:2.7:copy-resources (copy-license) @ helidon-build-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource to META-INF/
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ helidon-build-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.kvXgALFVZA/repo/common/common/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ helidon-build-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 47 source files to /tmp/tmp.kvXgALFVZA/repo/common/common/target/classes
+[INFO] /tmp/tmp.kvXgALFVZA/repo/common/common/src/main/java/io/helidon/build/common/VirtualFileSystem.java: /tmp/tmp.kvXgALFVZA/repo/common/common/src/main/java/io/helidon/build/common/VirtualFileSystem.java uses or overrides a deprecated API.
+[INFO] /tmp/tmp.kvXgALFVZA/repo/common/common/src/main/java/io/helidon/build/common/VirtualFileSystem.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ helidon-build-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ helidon-build-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /tmp/tmp.kvXgALFVZA/repo/common/common/target/test-classes
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ helidon-build-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ helidon-build-common ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.kvXgALFVZA/repo/common/common/.flakesync/Results-BarrierSearch/io.helidon.build.archetype.engine.v2.util.InputPermutationsTest.testConditionals-BarrierPoints.csv (No such file or directory)
+[INFO] 
+[INFO] ------< io.helidon.build-tools.common:helidon-build-common-ansi >-------
+[INFO] Building Helidon Build Tools Common Ansi 4.0.0-SNAPSHOT            [5/8]
+[INFO]   from common/ansi/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ helidon-build-common-ansi >>>
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ helidon-build-common-ansi ---
+[INFO] 
+[INFO] --- resources:2.7:copy-resources (copy-license) @ helidon-build-common-ansi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource to META-INF/
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ helidon-build-common-ansi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ helidon-build-common-ansi ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /tmp/tmp.kvXgALFVZA/repo/common/ansi/target/classes
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ helidon-build-common-ansi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.kvXgALFVZA/repo/common/ansi/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ helidon-build-common-ansi ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /tmp/tmp.kvXgALFVZA/repo/common/ansi/target/test-classes
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ helidon-build-common-ansi <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ helidon-build-common-ansi ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.kvXgALFVZA/repo/common/ansi/.flakesync/Results-BarrierSearch/io.helidon.build.archetype.engine.v2.util.InputPermutationsTest.testConditionals-BarrierPoints.csv (No such file or directory)
+[INFO] 
+[INFO] -------< io.helidon.build-tools.common:helidon-build-common-xml >-------
+[INFO] Building Helidon Build Tools Common XML 4.0.0-SNAPSHOT             [6/8]
+[INFO]   from common/xml/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ helidon-build-common-xml >>>
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ helidon-build-common-xml ---
+[INFO] 
+[INFO] --- resources:2.7:copy-resources (copy-license) @ helidon-build-common-xml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource to META-INF/
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ helidon-build-common-xml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.kvXgALFVZA/repo/common/xml/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ helidon-build-common-xml ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /tmp/tmp.kvXgALFVZA/repo/common/xml/target/classes
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ helidon-build-common-xml ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ helidon-build-common-xml ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /tmp/tmp.kvXgALFVZA/repo/common/xml/target/test-classes
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ helidon-build-common-xml <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ helidon-build-common-xml ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.kvXgALFVZA/repo/common/xml/.flakesync/Results-BarrierSearch/io.helidon.build.archetype.engine.v2.util.InputPermutationsTest.testConditionals-BarrierPoints.csv (No such file or directory)
+[INFO] 
+[INFO] -----< io.helidon.build-tools.archetype:helidon-archetype-project >-----
+[INFO] Building Helidon Archetype Project 4.0.0-SNAPSHOT                  [7/8]
+[INFO]   from archetype/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ helidon-archetype-project >>>
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ helidon-archetype-project ---
+[INFO] 
+[INFO] --- resources:2.7:copy-resources (copy-license) @ helidon-archetype-project ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource to META-INF/
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ helidon-archetype-project <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ helidon-archetype-project ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.kvXgALFVZA/repo/archetype/.flakesync/Results-BarrierSearch/io.helidon.build.archetype.engine.v2.util.InputPermutationsTest.testConditionals-BarrierPoints.csv (No such file or directory)
+[INFO] 
+[INFO] ----< io.helidon.build-tools.archetype:helidon-archetype-engine-v2 >----
+[INFO] Building Helidon Archetype Engine 4.0.0-SNAPSHOT                   [8/8]
+[INFO]   from archetype/engine-v2/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ helidon-archetype-engine-v2 >>>
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ helidon-archetype-engine-v2 ---
+[INFO] 
+[INFO] --- resources:2.7:copy-resources (copy-license) @ helidon-archetype-engine-v2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource to META-INF/
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ helidon-archetype-engine-v2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ helidon-archetype-engine-v2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 67 source files to /tmp/tmp.kvXgALFVZA/repo/archetype/engine-v2/target/classes
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ helidon-archetype-engine-v2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 119 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ helidon-archetype-engine-v2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 22 source files to /tmp/tmp.kvXgALFVZA/repo/archetype/engine-v2/target/test-classes
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ helidon-archetype-engine-v2 <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ helidon-archetype-engine-v2 ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.kvXgALFVZA/repo/archetype/engine-v2/.flakesync/Results-BarrierSearch/io.helidon.build.archetype.engine.v2.util.InputPermutationsTest.testConditionals-BarrierPoints.csv (No such file or directory)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Helidon Build Tools Project 4.0.0-SNAPSHOT:
+[INFO] 
+[INFO] Helidon Build Tools Project ........................ SUCCESS [  0.942 s]
+[INFO] Helidon Build Tools Common Project ................. SUCCESS [  0.065 s]
+[INFO] Helidon Build Tools Common Test Utils .............. SUCCESS [  1.056 s]
+[INFO] Helidon Build Tools Common ......................... SUCCESS [  2.204 s]
+[INFO] Helidon Build Tools Common Ansi .................... SUCCESS [  0.400 s]
+[INFO] Helidon Build Tools Common XML ..................... SUCCESS [  0.361 s]
+[INFO] Helidon Archetype Project .......................... SUCCESS [  0.053 s]
+[INFO] Helidon Archetype Engine ........................... SUCCESS [  2.312 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.770 s
+[INFO] Finished at: 2026-11-10T19:18:56Z
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,64 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[INFO] Artifact org.jenkins-ci.tools:maven-hpi-plugin:pom:3.5 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.jenkins-ci.tools:maven-hpi-plugin:pom:3.5 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[WARNING] The POM for org.jenkins-ci.tools:maven-hpi-plugin:jar:3.5 is missing, no dependency information available
+[INFO] Artifact org.jenkins-ci.tools:maven-hpi-plugin:jar:3.5 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.jenkins-ci.tools:maven-hpi-plugin:jar:3.5 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [central (https://repo.maven.apache.org/maven2, default, releases)]
+[WARNING] Failed to build parent project for com.amadeus.jenkins.plugins:workflow-cps-global-lib-http:hpi:0.0.1
+[INFO] 
+[INFO] ------< com.amadeus.jenkins.plugins:workflow-cps-global-lib-http >------
+[INFO] Building Pipeline: Shared Groovy Libraries through HTTP retrieval 0.0.1
+[INFO]   from pom.xml
+[INFO] --------------------------------[ hpi ]---------------------------------
+[WARNING] Parameter 'showDeprecation' is unknown for plugin 'maven-hpi-plugin:3.5:validate (default-validate)'
+[WARNING] Parameter 'showDeprecation' is unknown for plugin 'maven-hpi-plugin:3.5:insert-test (default-insert-test)'
+[WARNING] Parameter 'showDeprecation' is unknown for plugin 'maven-hpi-plugin:3.5:test-hpl (default-test-hpl)'
+[WARNING] Parameter 'showDeprecation' is unknown for plugin 'maven-hpi-plugin:3.5:resolve-test-dependencies (default-resolve-test-dependencies)'
+[WARNING] Parameter 'showDeprecation' is unknown for plugin 'maven-hpi-plugin:3.5:hpi (default-hpi)'
+[WARNING] 1 problem was encountered while building the effective model for org.jboss.marshalling:jboss-marshalling-river:jar:1.4.9.Final during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.jboss.marshalling:jboss-marshalling:jar:1.4.9.Final during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- hpi:3.5:validate (default-validate) @ workflow-cps-global-lib-http ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M2:display-info (display-info) @ workflow-cps-global-lib-http ---
+[INFO] Maven Version: 3.9.15
+[INFO] JDK Version: 17.0.21 normalized as: 17.0.21
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 7.0.0-1019-azure
+[INFO] 
+[INFO] --- enforcer:3.0.0-M2:enforce (display-info) @ workflow-cps-global-lib-http ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- jacoco:0.8.3:prepare-agent (default-prepare-agent) @ workflow-cps-global-lib-http ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] --- localizer:1.26:generate (default) @ workflow-cps-global-lib-http ---
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ workflow-cps-global-lib-http ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ workflow-cps-global-lib-http ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /tmp/tmp.klLa0iQPAL/repo/target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] java.nio.file.NoSuchFileException: /tmp/tmp.klLa0iQPAL/repo/target/classes/META-INF/annotations/hudson.Extension
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.087 s
+[INFO] Finished at: 2026-11-10T18:37:38Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile (default-compile) on project workflow-cps-global-lib-http: Compilation failure
+[ERROR] java.nio.file.NoSuchFileException: /tmp/tmp.klLa0iQPAL/repo/target/classes/META-INF/annotations/hudson.Extension
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

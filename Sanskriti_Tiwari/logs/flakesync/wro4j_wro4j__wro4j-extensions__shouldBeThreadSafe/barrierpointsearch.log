@@ -1,0 +1,57 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] wro4j parent                                                       [pom]
+[INFO] wro4j core                                                         [jar]
+[INFO] wro4j extensions                                                   [jar]
+[INFO] 
+[INFO] ---------------------< ro.isdc.wro4j:wro4j-parent >---------------------
+[INFO] Building wro4j parent 1.8.1-SNAPSHOT                               [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) > test-compile @ wro4j-parent >>>
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-maven) @ wro4j-parent ---
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ wro4j-parent ---
+[INFO] ShortRevision tag detected. The value is '8'.
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.DPFUQeyGJX/repo' && 'git' 'rev-parse' '--verify' '--short=8' 'HEAD'
+[INFO] Working directory: /tmp/tmp.DPFUQeyGJX/repo
+[INFO] Storing buildNumber: 185ab607 at timestamp: 1794339436450
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] ShortRevision tag detected. The value is '8'.
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.DPFUQeyGJX/repo' && 'git' 'rev-parse' '--verify' '--short=8' 'HEAD'
+[INFO] Working directory: /tmp/tmp.DPFUQeyGJX/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- jacoco:0.7.7.201606060606:prepare-agent (default) @ wro4j-parent ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/tmp/tmp.DPFUQeyGJX/repo/target/jacoco.exec
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) < test-compile @ wro4j-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) @ wro4j-parent ---
+INFO: Running BarrierPointSearchMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for wro4j parent 1.8.1-SNAPSHOT:
+[INFO] 
+[INFO] wro4j parent ....................................... FAILURE [  1.173 s]
+[INFO] wro4j core ......................................... SKIPPED
+[INFO] wro4j extensions ................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.350 s
+[INFO] Finished at: 2026-11-10T19:37:16Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch (default-cli) on project wro4j-parent: Execution default-cli of goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch failed: java.io.FileNotFoundException: /tmp/tmp.DPFUQeyGJX/repo/.flakesync/Results-CritSearch/ro.isdc.wro.extensions.processor.TestBourbonCssProcessor.shouldBeThreadSafe-CriticalPoints.csv (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

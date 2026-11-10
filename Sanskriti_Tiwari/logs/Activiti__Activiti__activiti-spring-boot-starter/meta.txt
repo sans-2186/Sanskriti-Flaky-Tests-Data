@@ -1,0 +1,3 @@
+url=https://github.com/Activiti/Activiti
+sha=b11f757a48600e53aaf3fcb7a3ba1ece6c463cb4
+module=activiti-spring-boot-starter

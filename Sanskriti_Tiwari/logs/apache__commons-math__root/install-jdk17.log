@@ -1,0 +1,57 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.apache.commons:commons-math4 >------------------
+[INFO] Building Apache Commons Math 4.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.apache.commons:commons-statistics-distribution:jar:1.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-numbers-core:jar:1.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-numbers-complex:jar:1.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-numbers-complex-streams:jar:1.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-numbers-gamma:jar:1.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-numbers-combinatorics:jar:1.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-numbers-arrays:jar:1.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-numbers-angle:jar:1.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-numbers-rootfinder:jar:1.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-numbers-field:jar:1.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-numbers-quaternion:jar:1.0-SNAPSHOT is missing, no dependency information available
+[WARNING] The POM for org.apache.commons:commons-geometry-euclidean:jar:1.0-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.313 s
+[INFO] Finished at: 2026-11-10T19:08:49Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project commons-math4: Could not resolve dependencies for project org.apache.commons:commons-math4:jar:4.0-SNAPSHOT
+[ERROR] dependency: org.apache.commons:commons-statistics-distribution:jar:1.0-SNAPSHOT (compile)
+[ERROR] 	org.apache.commons:commons-statistics-distribution:jar:1.0-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] dependency: org.apache.commons:commons-numbers-core:jar:1.0-SNAPSHOT (compile)
+[ERROR] 	org.apache.commons:commons-numbers-core:jar:1.0-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] dependency: org.apache.commons:commons-numbers-complex:jar:1.0-SNAPSHOT (compile)
+[ERROR] 	org.apache.commons:commons-numbers-complex:jar:1.0-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] dependency: org.apache.commons:commons-numbers-complex-streams:jar:1.0-SNAPSHOT (compile)
+[ERROR] 	org.apache.commons:commons-numbers-complex-streams:jar:1.0-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] dependency: org.apache.commons:commons-numbers-gamma:jar:1.0-SNAPSHOT (compile)
+[ERROR] 	org.apache.commons:commons-numbers-gamma:jar:1.0-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] dependency: org.apache.commons:commons-numbers-combinatorics:jar:1.0-SNAPSHOT (compile)
+[ERROR] 	org.apache.commons:commons-numbers-combinatorics:jar:1.0-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] dependency: org.apache.commons:commons-numbers-arrays:jar:1.0-SNAPSHOT (compile)
+[ERROR] 	org.apache.commons:commons-numbers-arrays:jar:1.0-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] dependency: org.apache.commons:commons-numbers-angle:jar:1.0-SNAPSHOT (compile)
+[ERROR] 	org.apache.commons:commons-numbers-angle:jar:1.0-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] dependency: org.apache.commons:commons-numbers-rootfinder:jar:1.0-SNAPSHOT (compile)
+[ERROR] 	org.apache.commons:commons-numbers-rootfinder:jar:1.0-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] dependency: org.apache.commons:commons-numbers-field:jar:1.0-SNAPSHOT (compile)
+[ERROR] 	org.apache.commons:commons-numbers-field:jar:1.0-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] dependency: org.apache.commons:commons-numbers-quaternion:jar:1.0-SNAPSHOT (compile)
+[ERROR] 	org.apache.commons:commons-numbers-quaternion:jar:1.0-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] dependency: org.apache.commons:commons-geometry-euclidean:jar:1.0-SNAPSHOT (compile)
+[ERROR] 	org.apache.commons:commons-geometry-euclidean:jar:1.0-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException

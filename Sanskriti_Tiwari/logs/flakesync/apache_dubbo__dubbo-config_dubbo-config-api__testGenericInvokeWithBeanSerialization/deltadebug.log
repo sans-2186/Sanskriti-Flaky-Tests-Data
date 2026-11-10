@@ -1,0 +1,2246 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] dubbo-parent                                                       [pom]
+[INFO] dubbo-common                                                       [jar]
+[INFO] dubbo-container                                                    [pom]
+[INFO] dubbo-container-api                                                [jar]
+[INFO] dubbo-serialization                                                [pom]
+[INFO] dubbo-serialization-api                                            [jar]
+[INFO] dubbo-serialization-hessian2                                       [jar]
+[INFO] dubbo-remoting                                                     [pom]
+[INFO] dubbo-remoting-api                                                 [jar]
+[INFO] dubbo-rpc                                                          [pom]
+[INFO] dubbo-rpc-api                                                      [jar]
+[INFO] dubbo-cluster                                                      [jar]
+[INFO] dubbo-registry                                                     [pom]
+[INFO] dubbo-registry-api                                                 [jar]
+[INFO] dubbo-monitor                                                      [pom]
+[INFO] dubbo-monitor-api                                                  [jar]
+[INFO] dubbo-rpc-injvm                                                    [jar]
+[INFO] dubbo-filter                                                       [pom]
+[INFO] dubbo-filter-validation                                            [jar]
+[INFO] dubbo-filter-cache                                                 [jar]
+[INFO] dubbo-remoting-netty4                                              [jar]
+[INFO] dubbo-rpc-dubbo                                                    [jar]
+[INFO] dubbo-registry-default                                             [jar]
+[INFO] dubbo-monitor-default                                              [jar]
+[INFO] dubbo-rpc-rmi                                                      [jar]
+[INFO] dubbo-registry-multicast                                           [jar]
+[INFO] dubbo-serialization-jdk                                            [jar]
+[INFO] dubbo-config                                                       [pom]
+[INFO] dubbo-config-api                                                   [jar]
+[INFO] 
+[INFO] -------------------< org.apache.dubbo:dubbo-parent >--------------------
+[INFO] Building dubbo-parent 2.7.0-SNAPSHOT                              [1/29]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-parent >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-parent ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-parent ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-parent ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-parent ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-parent ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] -------------------< org.apache.dubbo:dubbo-common >--------------------
+[INFO] Building dubbo-common 2.7.0-SNAPSHOT                              [2/29]
+[INFO]   from dubbo-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-common >>>
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.20.0-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-common ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-common ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-common ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-common/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-common ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 24 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-common ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-common/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ------------------< org.apache.dubbo:dubbo-container >------------------
+[INFO] Building dubbo-container 2.7.0-SNAPSHOT                           [3/29]
+[INFO]   from dubbo-container/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-container >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-container ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-container ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-container ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-container/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-container ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-container <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-container ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-container/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ----------------< org.apache.dubbo:dubbo-container-api >----------------
+[INFO] Building dubbo-container-api 2.7.0-SNAPSHOT                       [4/29]
+[INFO]   from dubbo-container/dubbo-container-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-container-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-container-api ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-container-api ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-container-api ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-container/dubbo-container-api/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-container-api ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-container-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-container-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-container-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.FTJANWDYdv/repo/dubbo-container/dubbo-container-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-container-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-container-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-container-api ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-container/dubbo-container-api/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ----------------< org.apache.dubbo:dubbo-serialization >----------------
+[INFO] Building dubbo-serialization 2.7.0-SNAPSHOT                       [5/29]
+[INFO]   from dubbo-serialization/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-serialization >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-serialization ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-serialization ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-serialization ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-serialization/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-serialization ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-serialization <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-serialization ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-serialization/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] --------------< org.apache.dubbo:dubbo-serialization-api >--------------
+[INFO] Building dubbo-serialization-api 2.7.0-SNAPSHOT                   [6/29]
+[INFO]   from dubbo-serialization/dubbo-serialization-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-serialization-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-serialization-api ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-serialization-api ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-serialization-api ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-serialization/dubbo-serialization-api/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-serialization-api ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-serialization-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.FTJANWDYdv/repo/dubbo-serialization/dubbo-serialization-api/src/main/resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-serialization-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-serialization-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.FTJANWDYdv/repo/dubbo-serialization/dubbo-serialization-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-serialization-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-serialization-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-serialization-api ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-serialization/dubbo-serialization-api/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] -----------< org.apache.dubbo:dubbo-serialization-hessian2 >------------
+[INFO] Building dubbo-serialization-hessian2 2.7.0-SNAPSHOT              [7/29]
+[INFO]   from dubbo-serialization/dubbo-serialization-hessian2/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-serialization-hessian2 >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-serialization-hessian2 ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-serialization-hessian2 ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-serialization-hessian2 ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-serialization/dubbo-serialization-hessian2/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-serialization-hessian2 ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-serialization-hessian2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-serialization-hessian2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-serialization-hessian2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-serialization-hessian2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-serialization-hessian2 <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-serialization-hessian2 ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-serialization/dubbo-serialization-hessian2/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ------------------< org.apache.dubbo:dubbo-remoting >-------------------
+[INFO] Building dubbo-remoting 2.7.0-SNAPSHOT                            [8/29]
+[INFO]   from dubbo-remoting/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-remoting >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-remoting ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-remoting ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-remoting ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-remoting/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-remoting ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-remoting <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-remoting ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-remoting/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ----------------< org.apache.dubbo:dubbo-remoting-api >-----------------
+[INFO] Building dubbo-remoting-api 2.7.0-SNAPSHOT                        [9/29]
+[INFO]   from dubbo-remoting/dubbo-remoting-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-remoting-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-remoting-api ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-remoting-api ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-remoting-api ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-remoting/dubbo-remoting-api/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-remoting-api ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-remoting-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-remoting-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-remoting-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-remoting-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-remoting-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-remoting-api ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-remoting/dubbo-remoting-api/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ---------------------< org.apache.dubbo:dubbo-rpc >---------------------
+[INFO] Building dubbo-rpc 2.7.0-SNAPSHOT                                [10/29]
+[INFO]   from dubbo-rpc/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-rpc >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-rpc ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-rpc ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-rpc ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-rpc/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-rpc ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-rpc <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-rpc ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-rpc/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] -------------------< org.apache.dubbo:dubbo-rpc-api >-------------------
+[INFO] Building dubbo-rpc-api 2.7.0-SNAPSHOT                            [11/29]
+[INFO]   from dubbo-rpc/dubbo-rpc-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-rpc-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-rpc-api ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-rpc-api ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-rpc-api ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-rpc/dubbo-rpc-api/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-rpc-api ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-rpc-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-rpc-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-rpc-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-rpc-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-rpc-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-rpc-api ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-rpc/dubbo-rpc-api/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] -------------------< org.apache.dubbo:dubbo-cluster >-------------------
+[INFO] Building dubbo-cluster 2.7.0-SNAPSHOT                            [12/29]
+[INFO]   from dubbo-cluster/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-cluster >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-cluster ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-cluster ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-cluster ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-cluster/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-cluster ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-cluster ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-cluster ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-cluster ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-cluster ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-cluster <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-cluster ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-cluster/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ------------------< org.apache.dubbo:dubbo-registry >-------------------
+[INFO] Building dubbo-registry 2.7.0-SNAPSHOT                           [13/29]
+[INFO]   from dubbo-registry/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-registry >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-registry ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-registry ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-registry ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-registry/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-registry ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-registry <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-registry ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-registry/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ----------------< org.apache.dubbo:dubbo-registry-api >-----------------
+[INFO] Building dubbo-registry-api 2.7.0-SNAPSHOT                       [14/29]
+[INFO]   from dubbo-registry/dubbo-registry-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-registry-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-registry-api ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-registry-api ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-registry-api ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-registry/dubbo-registry-api/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-registry-api ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-registry-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-registry-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-registry-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-registry-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-registry-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-registry-api ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-registry/dubbo-registry-api/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] -------------------< org.apache.dubbo:dubbo-monitor >-------------------
+[INFO] Building dubbo-monitor 2.7.0-SNAPSHOT                            [15/29]
+[INFO]   from dubbo-monitor/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-monitor >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-monitor ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-monitor ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-monitor ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-monitor/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-monitor ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-monitor <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-monitor ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-monitor/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] -----------------< org.apache.dubbo:dubbo-monitor-api >-----------------
+[INFO] Building dubbo-monitor-api 2.7.0-SNAPSHOT                        [16/29]
+[INFO]   from dubbo-monitor/dubbo-monitor-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-monitor-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-monitor-api ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-monitor-api ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-monitor-api ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-monitor/dubbo-monitor-api/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-monitor-api ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-monitor-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-monitor-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-monitor-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.FTJANWDYdv/repo/dubbo-monitor/dubbo-monitor-api/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-monitor-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-monitor-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-monitor-api ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-monitor/dubbo-monitor-api/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ------------------< org.apache.dubbo:dubbo-rpc-injvm >------------------
+[INFO] Building dubbo-rpc-injvm 2.7.0-SNAPSHOT                          [17/29]
+[INFO]   from dubbo-rpc/dubbo-rpc-injvm/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-rpc-injvm >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-rpc-injvm ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-rpc-injvm ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-rpc-injvm ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-rpc/dubbo-rpc-injvm/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-rpc-injvm ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-rpc-injvm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-rpc-injvm ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-rpc-injvm ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.FTJANWDYdv/repo/dubbo-rpc/dubbo-rpc-injvm/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-rpc-injvm ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-rpc-injvm <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-rpc-injvm ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-rpc/dubbo-rpc-injvm/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] -------------------< org.apache.dubbo:dubbo-filter >--------------------
+[INFO] Building dubbo-filter 2.7.0-SNAPSHOT                             [18/29]
+[INFO]   from dubbo-filter/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-filter >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-filter ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-filter ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-filter ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-filter/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-filter ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-filter <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-filter ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-filter/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] --------------< org.apache.dubbo:dubbo-filter-validation >--------------
+[INFO] Building dubbo-filter-validation 2.7.0-SNAPSHOT                  [19/29]
+[INFO]   from dubbo-filter/dubbo-filter-validation/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-filter-validation >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-filter-validation ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-filter-validation ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-filter-validation ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-filter/dubbo-filter-validation/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-filter-validation ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-filter-validation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-filter-validation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-filter-validation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.FTJANWDYdv/repo/dubbo-filter/dubbo-filter-validation/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-filter-validation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-filter-validation <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-filter-validation ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-filter/dubbo-filter-validation/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ----------------< org.apache.dubbo:dubbo-filter-cache >-----------------
+[INFO] Building dubbo-filter-cache 2.7.0-SNAPSHOT                       [20/29]
+[INFO]   from dubbo-filter/dubbo-filter-cache/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-filter-cache >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-filter-cache ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-filter-cache ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-filter-cache ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-filter/dubbo-filter-cache/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-filter-cache ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-filter-cache ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-filter-cache ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-filter-cache ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.FTJANWDYdv/repo/dubbo-filter/dubbo-filter-cache/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-filter-cache ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-filter-cache <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-filter-cache ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-filter/dubbo-filter-cache/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ---------------< org.apache.dubbo:dubbo-remoting-netty4 >---------------
+[INFO] Building dubbo-remoting-netty4 2.7.0-SNAPSHOT                    [21/29]
+[INFO]   from dubbo-remoting/dubbo-remoting-netty4/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-remoting-netty4 >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-remoting-netty4 ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-remoting-netty4 ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-remoting-netty4 ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-remoting/dubbo-remoting-netty4/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-remoting-netty4 ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-remoting-netty4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-remoting-netty4 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-remoting-netty4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.FTJANWDYdv/repo/dubbo-remoting/dubbo-remoting-netty4/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-remoting-netty4 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-remoting-netty4 <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-remoting-netty4 ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-remoting/dubbo-remoting-netty4/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ------------------< org.apache.dubbo:dubbo-rpc-dubbo >------------------
+[INFO] Building dubbo-rpc-dubbo 2.7.0-SNAPSHOT                          [22/29]
+[INFO]   from dubbo-rpc/dubbo-rpc-dubbo/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-rpc-dubbo >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-rpc-dubbo ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-rpc-dubbo ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-rpc-dubbo ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-rpc/dubbo-rpc-dubbo/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-rpc-dubbo ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-rpc-dubbo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-rpc-dubbo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-rpc-dubbo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-rpc-dubbo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-rpc-dubbo <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-rpc-dubbo ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-rpc/dubbo-rpc-dubbo/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] --------------< org.apache.dubbo:dubbo-registry-default >---------------
+[INFO] Building dubbo-registry-default 2.7.0-SNAPSHOT                   [23/29]
+[INFO]   from dubbo-registry/dubbo-registry-default/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-registry-default >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-registry-default ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-registry-default ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-registry-default ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-registry/dubbo-registry-default/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-registry-default ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-registry-default ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-registry-default ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-registry-default ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-registry-default ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-registry-default <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-registry-default ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-registry/dubbo-registry-default/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ---------------< org.apache.dubbo:dubbo-monitor-default >---------------
+[INFO] Building dubbo-monitor-default 2.7.0-SNAPSHOT                    [24/29]
+[INFO]   from dubbo-monitor/dubbo-monitor-default/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-monitor-default >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-monitor-default ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-monitor-default ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-monitor-default ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-monitor/dubbo-monitor-default/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-monitor-default ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-monitor-default ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-monitor-default ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-monitor-default ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.FTJANWDYdv/repo/dubbo-monitor/dubbo-monitor-default/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-monitor-default ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-monitor-default <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-monitor-default ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-monitor/dubbo-monitor-default/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] -------------------< org.apache.dubbo:dubbo-rpc-rmi >-------------------
+[INFO] Building dubbo-rpc-rmi 2.7.0-SNAPSHOT                            [25/29]
+[INFO]   from dubbo-rpc/dubbo-rpc-rmi/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-rpc-rmi >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-rpc-rmi ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-rpc-rmi ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-rpc-rmi ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-rpc/dubbo-rpc-rmi/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-rpc-rmi ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-rpc-rmi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-rpc-rmi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-rpc-rmi ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.FTJANWDYdv/repo/dubbo-rpc/dubbo-rpc-rmi/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-rpc-rmi ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-rpc-rmi <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-rpc-rmi ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-rpc/dubbo-rpc-rmi/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] -------------< org.apache.dubbo:dubbo-registry-multicast >--------------
+[INFO] Building dubbo-registry-multicast 2.7.0-SNAPSHOT                 [26/29]
+[INFO]   from dubbo-registry/dubbo-registry-multicast/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-registry-multicast >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-registry-multicast ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-registry-multicast ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-registry-multicast ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-registry/dubbo-registry-multicast/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-registry-multicast ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-registry-multicast ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-registry-multicast ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-registry-multicast ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.FTJANWDYdv/repo/dubbo-registry/dubbo-registry-multicast/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-registry-multicast ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-registry-multicast <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-registry-multicast ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-registry/dubbo-registry-multicast/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] --------------< org.apache.dubbo:dubbo-serialization-jdk >--------------
+[INFO] Building dubbo-serialization-jdk 2.7.0-SNAPSHOT                  [27/29]
+[INFO]   from dubbo-serialization/dubbo-serialization-jdk/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-serialization-jdk >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-serialization-jdk ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-serialization-jdk ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-serialization-jdk ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-serialization/dubbo-serialization-jdk/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-serialization-jdk ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-serialization-jdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-serialization-jdk ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-serialization-jdk ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-serialization-jdk ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-serialization-jdk <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-serialization-jdk ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-serialization/dubbo-serialization-jdk/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] -------------------< org.apache.dubbo:dubbo-config >--------------------
+[INFO] Building dubbo-config 2.7.0-SNAPSHOT                             [28/29]
+[INFO]   from dubbo-config/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-config >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-config ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-config ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-config ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-config/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-config ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-config <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-config ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.FTJANWDYdv/repo/dubbo-config/./.flakesync/org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] -----------------< org.apache.dubbo:dubbo-config-api >------------------
+[INFO] Building dubbo-config-api 2.7.0-SNAPSHOT                         [29/29]
+[INFO]   from dubbo-config/dubbo-config-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ dubbo-config-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-config-api ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-config-api ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-config-api ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.FTJANWDYdv/repo/dubbo-config/dubbo-config-api/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-config-api ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ dubbo-config-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.FTJANWDYdv/repo/dubbo-config/dubbo-config-api/src/main/resources
+[INFO] Copying 2 resources to META-INF/
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:compile (default-compile) @ dubbo-config-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ dubbo-config-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 16 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.6.0:testCompile (default-testCompile) @ dubbo-config-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ dubbo-config-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ dubbo-config-api ---
+INFO: Running DeltaDebugMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.dubbo.config.GenericServiceTest
+[10/11/26 06:38:32:032 UTC] main  INFO logger.LoggerFactory: using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by javassist.ClassPool (file:/home/runner/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of javassist.ClassPool
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[10/11/26 06:38:32:032 UTC] main  INFO config.AbstractConfig:  [DUBBO] Export dubbo service org.apache.dubbo.config.api.DemoService to local registry, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:32:032 UTC] main  INFO config.AbstractConfig:  [DUBBO] Export dubbo service org.apache.dubbo.config.api.DemoService to url dubbo://10.1.0.58:29581/org.apache.dubbo.config.api.DemoService?anyhost=true&application=bean-provider&bind.ip=10.1.0.58&bind.port=29581&dubbo=2.0.2&generic=false&interface=org.apache.dubbo.config.api.DemoService&methods=getUsers,sayName,echo,throwDemoException,getBox&pid=4119&side=provider&timestamp=1794335912658, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:35:035 UTC] main  INFO transport.AbstractServer:  [DUBBO] Start NettyServer bind /0.0.0.0:29581, export /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:36:036 UTC] main  INFO transport.AbstractClient:  [DUBBO] Successed connect to server /10.1.0.58:29581 from NettyClient 10.1.0.58 using dubbo version , channel is NettyChannel [channel=[id: 0xf4898a76, L:/10.1.0.58:39872 - R:/10.1.0.58:29581]], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:36:036 UTC] main  INFO transport.AbstractClient:  [DUBBO] Start NettyClient runnervmwuk1x/10.1.0.58 connect to the server /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:36:036 UTC] main  INFO config.AbstractConfig:  [DUBBO] Refer dubbo service org.apache.dubbo.rpc.service.GenericService from url dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&dubbo=2.0.2&generic=bean&interface=org.apache.dubbo.config.api.DemoService&pid=4119&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335916283, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:39:039 UTC] main  INFO netty4.NettyChannel:  [DUBBO] Close netty channel [id: 0xf4898a76, L:/10.1.0.58:39872 - R:/10.1.0.58:29581], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:39:039 UTC] NettyServerWorker-3-1  WARN transport.AbstractServer:  [DUBBO] All clients has discontected from /10.1.0.58:29581. You can graceful shutdown now., dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:39:039 UTC] DubboSharedHandler-thread-1  INFO dubbo.DubboProtocol:  [DUBBO] disconnected from /10.1.0.58:29581,url:dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&codec=dubbo&dubbo=2.0.2&generic=bean&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&pid=4119&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335916283, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:39:039 UTC] DubboServerHandler-10.1.0.58:29581-thread-3  INFO dubbo.DubboProtocol:  [DUBBO] disconnected from /10.1.0.58:39872,url:dubbo://10.1.0.58:29581/org.apache.dubbo.config.api.DemoService?anyhost=true&application=bean-provider&bind.ip=10.1.0.58&bind.port=29581&channel.readonly.sent=true&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&methods=getUsers,sayName,echo,throwDemoException,getBox&pid=4119&side=provider&timestamp=1794335912658, dubbo version: , current host: 10.1.0.58
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.286 sec <<< FAILURE! - in org.apache.dubbo.config.GenericServiceTest
+testGenericInvokeWithBeanSerialization(org.apache.dubbo.config.GenericServiceTest)  Time elapsed: 11.223 sec  <<< ERROR!
+org.apache.dubbo.rpc.RpcException: Invoke remote method timeout. method: $invoke, provider: dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&dubbo=2.0.2&generic=bean&interface=org.apache.dubbo.config.api.DemoService&pid=4119&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335916283, cause: Waiting server-side response timeout. start time: 2026-11-10 18:38:36.384, end time: 2026-11-10 18:38:39.389, client elapsed: 80 ms, server elapsed: 2925 ms, timeout: 3000 ms, request: Request [id=0, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=$invoke, parameterTypes=[class java.lang.String, class [Ljava.lang.String;, class [Ljava.lang.Object;], arguments=[getUsers, [Ljava.lang.String;@7db554f5, [Ljava.lang.Object;@516a1ce7], attachments={path=org.apache.dubbo.config.api.DemoService, interface=org.apache.dubbo.config.api.DemoService, version=0.0.0, generic=bean, timeout=3000}]], channel: /10.1.0.58:39872 -> /10.1.0.58:29581
+	at org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization(GenericServiceTest.java:226)
+Caused by: org.apache.dubbo.remoting.TimeoutException: Waiting server-side response timeout. start time: 2026-11-10 18:38:36.384, end time: 2026-11-10 18:38:39.389, client elapsed: 80 ms, server elapsed: 2925 ms, timeout: 3000 ms, request: Request [id=0, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=$invoke, parameterTypes=[class java.lang.String, class [Ljava.lang.String;, class [Ljava.lang.Object;], arguments=[getUsers, [Ljava.lang.String;@7db554f5, [Ljava.lang.Object;@516a1ce7], attachments={path=org.apache.dubbo.config.api.DemoService, interface=org.apache.dubbo.config.api.DemoService, version=0.0.0, generic=bean, timeout=3000}]], channel: /10.1.0.58:39872 -> /10.1.0.58:29581
+	at org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization(GenericServiceTest.java:226)
+
+[10/11/26 06:38:43:043 UTC] DubboShutdownHook  INFO config.DubboShutdownHook:  [DUBBO] Run shutdown hook now., dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:43:043 UTC] DubboShutdownHook  INFO support.AbstractRegistryFactory:  [DUBBO] Close all registries [], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:43:043 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo server: /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:43:043 UTC] DubboShutdownHook  INFO transport.AbstractServer:  [DUBBO] Close NettyServer bind /0.0.0.0:29581, export /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:43:043 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo connect: 10.1.0.58:0-->127.0.0.1:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:43:043 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo connect: 10.1.0.58:0-->127.0.0.1:29581, dubbo version: , current host: 10.1.0.58
+
+Results :
+
+Tests in error: 
+  GenericServiceTest.testGenericInvokeWithBeanSerialization:226 » Rpc Invoke rem...
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+INFO: Surefire failed when running tests for clean_L9q51VwtxFzd8RDt4SrjbWcXOz9ZUShPVLpRfxFdqJU= with delay: 400
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.dubbo.config.GenericServiceTest
+[10/11/26 06:38:44:044 UTC] main  INFO logger.LoggerFactory: using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by javassist.ClassPool (file:/home/runner/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of javassist.ClassPool
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[10/11/26 06:38:44:044 UTC] main  INFO config.AbstractConfig:  [DUBBO] Export dubbo service org.apache.dubbo.config.api.DemoService to local registry, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:44:044 UTC] main  INFO config.AbstractConfig:  [DUBBO] Export dubbo service org.apache.dubbo.config.api.DemoService to url dubbo://10.1.0.58:29581/org.apache.dubbo.config.api.DemoService?anyhost=true&application=bean-provider&bind.ip=10.1.0.58&bind.port=29581&dubbo=2.0.2&generic=false&interface=org.apache.dubbo.config.api.DemoService&methods=getUsers,sayName,echo,throwDemoException,getBox&pid=4180&side=provider&timestamp=1794335924686, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:45:045 UTC] main  INFO transport.AbstractServer:  [DUBBO] Start NettyServer bind /0.0.0.0:29581, export /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:45:045 UTC] main  INFO transport.AbstractClient:  [DUBBO] Successed connect to server /10.1.0.58:29581 from NettyClient 10.1.0.58 using dubbo version , channel is NettyChannel [channel=[id: 0x573e8cb9, L:/10.1.0.58:55538 - R:/10.1.0.58:29581]], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:45:045 UTC] main  INFO transport.AbstractClient:  [DUBBO] Start NettyClient runnervmwuk1x/10.1.0.58 connect to the server /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:45:045 UTC] main  INFO config.AbstractConfig:  [DUBBO] Refer dubbo service org.apache.dubbo.rpc.service.GenericService from url dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&dubbo=2.0.2&generic=bean&interface=org.apache.dubbo.config.api.DemoService&pid=4180&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335925052, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:45:045 UTC] main  INFO netty4.NettyChannel:  [DUBBO] Close netty channel [id: 0x573e8cb9, L:/10.1.0.58:55538 - R:/10.1.0.58:29581], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:45:045 UTC] NettyServerWorker-3-1  WARN transport.AbstractServer:  [DUBBO] All clients has discontected from /10.1.0.58:29581. You can graceful shutdown now., dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:45:045 UTC] DubboSharedHandler-thread-1  INFO dubbo.DubboProtocol:  [DUBBO] disconnected from /10.1.0.58:29581,url:dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&codec=dubbo&dubbo=2.0.2&generic=bean&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&pid=4180&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335925052, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:45:045 UTC] DubboServerHandler-10.1.0.58:29581-thread-3  INFO dubbo.DubboProtocol:  [DUBBO] disconnected from /10.1.0.58:55538,url:dubbo://10.1.0.58:29581/org.apache.dubbo.config.api.DemoService?anyhost=true&application=bean-provider&bind.ip=10.1.0.58&bind.port=29581&channel.readonly.sent=true&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&methods=getUsers,sayName,echo,throwDemoException,getBox&pid=4180&side=provider&timestamp=1794335924686, dubbo version: , current host: 10.1.0.58
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.36 sec - in org.apache.dubbo.config.GenericServiceTest
+[10/11/26 06:38:48:048 UTC] DubboShutdownHook  INFO config.DubboShutdownHook:  [DUBBO] Run shutdown hook now., dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:48:048 UTC] DubboShutdownHook  INFO support.AbstractRegistryFactory:  [DUBBO] Close all registries [], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:48:048 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo server: /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:48:048 UTC] DubboShutdownHook  INFO transport.AbstractServer:  [DUBBO] Close NettyServer bind /0.0.0.0:29581, export /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:48:048 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo connect: 10.1.0.58:0-->127.0.0.1:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:48:048 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo connect: 10.1.0.58:0-->127.0.0.1:29581, dubbo version: , current host: 10.1.0.58
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.dubbo.config.GenericServiceTest
+[10/11/26 06:38:49:049 UTC] main  INFO logger.LoggerFactory: using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by javassist.ClassPool (file:/home/runner/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of javassist.ClassPool
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[10/11/26 06:38:49:049 UTC] main  INFO config.AbstractConfig:  [DUBBO] Export dubbo service org.apache.dubbo.config.api.DemoService to local registry, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:49:049 UTC] main  INFO config.AbstractConfig:  [DUBBO] Export dubbo service org.apache.dubbo.config.api.DemoService to url dubbo://10.1.0.58:29581/org.apache.dubbo.config.api.DemoService?anyhost=true&application=bean-provider&bind.ip=10.1.0.58&bind.port=29581&dubbo=2.0.2&generic=false&interface=org.apache.dubbo.config.api.DemoService&methods=getUsers,sayName,echo,throwDemoException,getBox&pid=4233&side=provider&timestamp=1794335929706, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:52:052 UTC] main  INFO transport.AbstractServer:  [DUBBO] Start NettyServer bind /0.0.0.0:29581, export /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:53:053 UTC] main  INFO transport.AbstractClient:  [DUBBO] Successed connect to server /10.1.0.58:29581 from NettyClient 10.1.0.58 using dubbo version , channel is NettyChannel [channel=[id: 0x69c04dd3, L:/10.1.0.58:39770 - R:/10.1.0.58:29581]], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:53:053 UTC] main  INFO transport.AbstractClient:  [DUBBO] Start NettyClient runnervmwuk1x/10.1.0.58 connect to the server /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:53:053 UTC] main  INFO config.AbstractConfig:  [DUBBO] Refer dubbo service org.apache.dubbo.rpc.service.GenericService from url dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&dubbo=2.0.2&generic=bean&interface=org.apache.dubbo.config.api.DemoService&pid=4233&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335933282, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:56:056 UTC] main  INFO netty4.NettyChannel:  [DUBBO] Close netty channel [id: 0x69c04dd3, L:/10.1.0.58:39770 - R:/10.1.0.58:29581], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:56:056 UTC] NettyServerWorker-3-1  WARN transport.AbstractServer:  [DUBBO] All clients has discontected from /10.1.0.58:29581. You can graceful shutdown now., dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:56:056 UTC] DubboSharedHandler-thread-1  INFO dubbo.DubboProtocol:  [DUBBO] disconnected from /10.1.0.58:29581,url:dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&codec=dubbo&dubbo=2.0.2&generic=bean&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&pid=4233&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335933282, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:56:056 UTC] DubboServerHandler-10.1.0.58:29581-thread-3  INFO dubbo.DubboProtocol:  [DUBBO] disconnected from /10.1.0.58:39770,url:dubbo://10.1.0.58:29581/org.apache.dubbo.config.api.DemoService?anyhost=true&application=bean-provider&bind.ip=10.1.0.58&bind.port=29581&channel.readonly.sent=true&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&methods=getUsers,sayName,echo,throwDemoException,getBox&pid=4233&side=provider&timestamp=1794335929706, dubbo version: , current host: 10.1.0.58
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.062 sec <<< FAILURE! - in org.apache.dubbo.config.GenericServiceTest
+testGenericInvokeWithBeanSerialization(org.apache.dubbo.config.GenericServiceTest)  Time elapsed: 7.982 sec  <<< ERROR!
+org.apache.dubbo.rpc.RpcException: Invoke remote method timeout. method: $invoke, provider: dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&dubbo=2.0.2&generic=bean&interface=org.apache.dubbo.config.api.DemoService&pid=4233&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335933282, cause: Waiting server-side response timeout. start time: 2026-11-10 18:38:53.378, end time: 2026-11-10 18:38:56.383, client elapsed: 100 ms, server elapsed: 2905 ms, timeout: 3000 ms, request: Request [id=0, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=$invoke, parameterTypes=[class java.lang.String, class [Ljava.lang.String;, class [Ljava.lang.Object;], arguments=[getUsers, [Ljava.lang.String;@17d4096e, [Ljava.lang.Object;@7096fbb3], attachments={path=org.apache.dubbo.config.api.DemoService, interface=org.apache.dubbo.config.api.DemoService, version=0.0.0, generic=bean, timeout=3000}]], channel: /10.1.0.58:39770 -> /10.1.0.58:29581
+	at org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization(GenericServiceTest.java:226)
+Caused by: org.apache.dubbo.remoting.TimeoutException: Waiting server-side response timeout. start time: 2026-11-10 18:38:53.378, end time: 2026-11-10 18:38:56.383, client elapsed: 100 ms, server elapsed: 2905 ms, timeout: 3000 ms, request: Request [id=0, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=$invoke, parameterTypes=[class java.lang.String, class [Ljava.lang.String;, class [Ljava.lang.Object;], arguments=[getUsers, [Ljava.lang.String;@17d4096e, [Ljava.lang.Object;@7096fbb3], attachments={path=org.apache.dubbo.config.api.DemoService, interface=org.apache.dubbo.config.api.DemoService, version=0.0.0, generic=bean, timeout=3000}]], channel: /10.1.0.58:39770 -> /10.1.0.58:29581
+	at org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization(GenericServiceTest.java:226)
+
+[10/11/26 06:38:57:057 UTC] DubboShutdownHook  INFO config.DubboShutdownHook:  [DUBBO] Run shutdown hook now., dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:57:057 UTC] DubboShutdownHook  INFO support.AbstractRegistryFactory:  [DUBBO] Close all registries [], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:57:057 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo server: /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:57:057 UTC] DubboShutdownHook  INFO transport.AbstractServer:  [DUBBO] Close NettyServer bind /0.0.0.0:29581, export /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:57:057 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo connect: 10.1.0.58:0-->127.0.0.1:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:57:057 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo connect: 10.1.0.58:0-->127.0.0.1:29581, dubbo version: , current host: 10.1.0.58
+
+Results :
+
+Tests in error: 
+  GenericServiceTest.testGenericInvokeWithBeanSerialization:226 » Rpc Invoke rem...
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+INFO: Surefire failed when running tests for clean_zW0xrc3PBPmK+6ykFwRWOD8mrVbr7CLZyIJOIg+JvU= with delay: 400
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.dubbo.config.GenericServiceTest
+[10/11/26 06:38:58:058 UTC] main  INFO logger.LoggerFactory: using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by javassist.ClassPool (file:/home/runner/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of javassist.ClassPool
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[10/11/26 06:38:59:059 UTC] main  INFO config.AbstractConfig:  [DUBBO] Export dubbo service org.apache.dubbo.config.api.DemoService to local registry, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:38:59:059 UTC] main  INFO config.AbstractConfig:  [DUBBO] Export dubbo service org.apache.dubbo.config.api.DemoService to url dubbo://10.1.0.58:29581/org.apache.dubbo.config.api.DemoService?anyhost=true&application=bean-provider&bind.ip=10.1.0.58&bind.port=29581&dubbo=2.0.2&generic=false&interface=org.apache.dubbo.config.api.DemoService&methods=getUsers,sayName,echo,throwDemoException,getBox&pid=4286&side=provider&timestamp=1794335939103, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:02:002 UTC] main  INFO transport.AbstractServer:  [DUBBO] Start NettyServer bind /0.0.0.0:29581, export /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:02:002 UTC] main  INFO transport.AbstractClient:  [DUBBO] Successed connect to server /10.1.0.58:29581 from NettyClient 10.1.0.58 using dubbo version , channel is NettyChannel [channel=[id: 0xef21dec7, L:/10.1.0.58:33452 - R:/10.1.0.58:29581]], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:02:002 UTC] main  INFO transport.AbstractClient:  [DUBBO] Start NettyClient runnervmwuk1x/10.1.0.58 connect to the server /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:02:002 UTC] main  INFO config.AbstractConfig:  [DUBBO] Refer dubbo service org.apache.dubbo.rpc.service.GenericService from url dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&dubbo=2.0.2&generic=bean&interface=org.apache.dubbo.config.api.DemoService&pid=4286&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335942691, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:05:005 UTC] main  INFO netty4.NettyChannel:  [DUBBO] Close netty channel [id: 0xef21dec7, L:/10.1.0.58:33452 - R:/10.1.0.58:29581], dubbo version: , current host: 10.1.0.58
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.263 sec <<< FAILURE! - in org.apache.dubbo.config.GenericServiceTest
+testGenericInvokeWithBeanSerialization(org.apache.dubbo.config.GenericServiceTest)  Time elapsed: 7.184 sec  <<< ERROR!
+org.apache.dubbo.rpc.RpcException: Invoke remote method timeout. method: $invoke, provider: dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&dubbo=2.0.2&generic=bean&interface=org.apache.dubbo.config.api.DemoService&pid=4286&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335942691, cause: Waiting server-side response timeout by scan timer. start time: 2026-11-10 18:39:02.791, end time: 2026-11-10 18:39:05.823, client elapsed: 89 ms, server elapsed: 2943 ms, timeout: 3000 ms, request: Request [id=0, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=$invoke, parameterTypes=[class java.lang.String, class [Ljava.lang.String;, class [Ljava.lang.Object;], arguments=[getUsers, [Ljava.lang.String;@2bb3364a, [Ljava.lang.Object;@7f3c2fc4], attachments={path=org.apache.dubbo.config.api.DemoService, interface=org.apache.dubbo.config.api.DemoService, version=0.0.0, generic=bean, timeout=3000}]], channel: /10.1.0.58:33452 -> /10.1.0.58:29581
+	at org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization(GenericServiceTest.java:226)
+Caused by: org.apache.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2026-11-10 18:39:02.791, end time: 2026-11-10 18:39:05.823, client elapsed: 89 ms, server elapsed: 2943 ms, timeout: 3000 ms, request: Request [id=0, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=$invoke, parameterTypes=[class java.lang.String, class [Ljava.lang.String;, class [Ljava.lang.Object;], arguments=[getUsers, [Ljava.lang.String;@2bb3364a, [Ljava.lang.Object;@7f3c2fc4], attachments={path=org.apache.dubbo.config.api.DemoService, interface=org.apache.dubbo.config.api.DemoService, version=0.0.0, generic=bean, timeout=3000}]], channel: /10.1.0.58:33452 -> /10.1.0.58:29581
+	at org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization(GenericServiceTest.java:226)
+
+[10/11/26 06:39:05:005 UTC] NettyServerWorker-3-1  WARN transport.AbstractServer:  [DUBBO] All clients has discontected from /10.1.0.58:29581. You can graceful shutdown now., dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:05:005 UTC] DubboShutdownHook  INFO config.DubboShutdownHook:  [DUBBO] Run shutdown hook now., dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:05:005 UTC] DubboSharedHandler-thread-1  INFO dubbo.DubboProtocol:  [DUBBO] disconnected from /10.1.0.58:29581,url:dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&codec=dubbo&dubbo=2.0.2&generic=bean&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&pid=4286&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335942691, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:05:005 UTC] DubboServerHandler-10.1.0.58:29581-thread-3  INFO dubbo.DubboProtocol:  [DUBBO] disconnected from /10.1.0.58:33452,url:dubbo://10.1.0.58:29581/org.apache.dubbo.config.api.DemoService?anyhost=true&application=bean-provider&bind.ip=10.1.0.58&bind.port=29581&channel.readonly.sent=true&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&methods=getUsers,sayName,echo,throwDemoException,getBox&pid=4286&side=provider&timestamp=1794335939103, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:05:005 UTC] DubboShutdownHook  INFO support.AbstractRegistryFactory:  [DUBBO] Close all registries [], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:05:005 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo server: /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:07:007 UTC] DubboShutdownHook  INFO transport.AbstractServer:  [DUBBO] Close NettyServer bind /0.0.0.0:29581, export /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:07:007 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo connect: 10.1.0.58:0-->127.0.0.1:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:07:007 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo connect: 10.1.0.58:0-->127.0.0.1:29581, dubbo version: , current host: 10.1.0.58
+
+Results :
+
+Tests in error: 
+  GenericServiceTest.testGenericInvokeWithBeanSerialization:226 » Rpc Invoke rem...
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+INFO: Surefire failed when running tests for clean_PPR6GV+LVkBmWvTtLvl1ECMmKor3he8fIzBb2lJ82Bo= with delay: 400
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.dubbo.config.GenericServiceTest
+[10/11/26 06:39:08:008 UTC] main  INFO logger.LoggerFactory: using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by javassist.ClassPool (file:/home/runner/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of javassist.ClassPool
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[10/11/26 06:39:08:008 UTC] main  INFO config.AbstractConfig:  [DUBBO] Export dubbo service org.apache.dubbo.config.api.DemoService to local registry, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:08:008 UTC] main  INFO config.AbstractConfig:  [DUBBO] Export dubbo service org.apache.dubbo.config.api.DemoService to url dubbo://10.1.0.58:29581/org.apache.dubbo.config.api.DemoService?anyhost=true&application=bean-provider&bind.ip=10.1.0.58&bind.port=29581&dubbo=2.0.2&generic=false&interface=org.apache.dubbo.config.api.DemoService&methods=getUsers,sayName,echo,throwDemoException,getBox&pid=4416&side=provider&timestamp=1794335948534, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:08:008 UTC] main  INFO transport.AbstractServer:  [DUBBO] Start NettyServer bind /0.0.0.0:29581, export /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:09:009 UTC] main  INFO transport.AbstractClient:  [DUBBO] Successed connect to server /10.1.0.58:29581 from NettyClient 10.1.0.58 using dubbo version , channel is NettyChannel [channel=[id: 0x0a5555c1, L:/10.1.0.58:33462 - R:/10.1.0.58:29581]], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:09:009 UTC] main  INFO transport.AbstractClient:  [DUBBO] Start NettyClient runnervmwuk1x/10.1.0.58 connect to the server /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:09:009 UTC] main  INFO config.AbstractConfig:  [DUBBO] Refer dubbo service org.apache.dubbo.rpc.service.GenericService from url dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&dubbo=2.0.2&generic=bean&interface=org.apache.dubbo.config.api.DemoService&pid=4416&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335948969, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:09:009 UTC] main  INFO netty4.NettyChannel:  [DUBBO] Close netty channel [id: 0x0a5555c1, L:/10.1.0.58:33462 - R:/10.1.0.58:29581], dubbo version: , current host: 10.1.0.58
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.571 sec - in org.apache.dubbo.config.GenericServiceTest
+[10/11/26 06:39:09:009 UTC] DubboShutdownHook  INFO config.DubboShutdownHook:  [DUBBO] Run shutdown hook now., dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:09:009 UTC] NettyServerWorker-3-1  WARN transport.AbstractServer:  [DUBBO] All clients has discontected from /10.1.0.58:29581. You can graceful shutdown now., dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:09:009 UTC] DubboSharedHandler-thread-1  INFO dubbo.DubboProtocol:  [DUBBO] disconnected from /10.1.0.58:29581,url:dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&codec=dubbo&dubbo=2.0.2&generic=bean&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&pid=4416&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335948969, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:09:009 UTC] DubboServerHandler-10.1.0.58:29581-thread-3  INFO dubbo.DubboProtocol:  [DUBBO] disconnected from /10.1.0.58:33462,url:dubbo://10.1.0.58:29581/org.apache.dubbo.config.api.DemoService?anyhost=true&application=bean-provider&bind.ip=10.1.0.58&bind.port=29581&channel.readonly.sent=true&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&methods=getUsers,sayName,echo,throwDemoException,getBox&pid=4416&side=provider&timestamp=1794335948534, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:09:009 UTC] DubboShutdownHook  INFO support.AbstractRegistryFactory:  [DUBBO] Close all registries [], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:09:009 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo server: /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:09:009 UTC] DubboShutdownHook  INFO transport.AbstractServer:  [DUBBO] Close NettyServer bind /0.0.0.0:29581, export /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:09:009 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo connect: 10.1.0.58:0-->127.0.0.1:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:09:009 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo connect: 10.1.0.58:0-->127.0.0.1:29581, dubbo version: , current host: 10.1.0.58
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.dubbo.config.GenericServiceTest
+[10/11/26 06:39:10:010 UTC] main  INFO logger.LoggerFactory: using logger: org.apache.dubbo.common.logger.log4j.Log4jLoggerAdapter
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by javassist.ClassPool (file:/home/runner/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of javassist.ClassPool
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[10/11/26 06:39:10:010 UTC] main  INFO config.AbstractConfig:  [DUBBO] Export dubbo service org.apache.dubbo.config.api.DemoService to local registry, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:10:010 UTC] main  INFO config.AbstractConfig:  [DUBBO] Export dubbo service org.apache.dubbo.config.api.DemoService to url dubbo://10.1.0.58:29581/org.apache.dubbo.config.api.DemoService?anyhost=true&application=bean-provider&bind.ip=10.1.0.58&bind.port=29581&dubbo=2.0.2&generic=false&interface=org.apache.dubbo.config.api.DemoService&methods=getUsers,sayName,echo,throwDemoException,getBox&pid=4466&side=provider&timestamp=1794335950837, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:14:014 UTC] main  INFO transport.AbstractServer:  [DUBBO] Start NettyServer bind /0.0.0.0:29581, export /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:14:014 UTC] main  INFO transport.AbstractClient:  [DUBBO] Successed connect to server /10.1.0.58:29581 from NettyClient 10.1.0.58 using dubbo version , channel is NettyChannel [channel=[id: 0x04ec11df, L:/10.1.0.58:57206 - R:/10.1.0.58:29581]], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:14:014 UTC] main  INFO transport.AbstractClient:  [DUBBO] Start NettyClient runnervmwuk1x/10.1.0.58 connect to the server /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:14:014 UTC] main  INFO config.AbstractConfig:  [DUBBO] Refer dubbo service org.apache.dubbo.rpc.service.GenericService from url dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&dubbo=2.0.2&generic=bean&interface=org.apache.dubbo.config.api.DemoService&pid=4466&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335954447, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:17:017 UTC] main  INFO netty4.NettyChannel:  [DUBBO] Close netty channel [id: 0x04ec11df, L:/10.1.0.58:57206 - R:/10.1.0.58:29581], dubbo version: , current host: 10.1.0.58
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.316 sec <<< FAILURE! - in org.apache.dubbo.config.GenericServiceTest
+testGenericInvokeWithBeanSerialization(org.apache.dubbo.config.GenericServiceTest)  Time elapsed: 7.233 sec  <<< ERROR!
+org.apache.dubbo.rpc.RpcException: Invoke remote method timeout. method: $invoke, provider: dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&dubbo=2.0.2&generic=bean&interface=org.apache.dubbo.config.api.DemoService&pid=4466&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335954447, cause: Waiting server-side response timeout. start time: 2026-11-10 18:39:14.547, end time: 2026-11-10 18:39:17.552, client elapsed: 93 ms, server elapsed: 2912 ms, timeout: 3000 ms, request: Request [id=0, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=$invoke, parameterTypes=[class java.lang.String, class [Ljava.lang.String;, class [Ljava.lang.Object;], arguments=[getUsers, [Ljava.lang.String;@1893977d, [Ljava.lang.Object;@4702e52a], attachments={path=org.apache.dubbo.config.api.DemoService, interface=org.apache.dubbo.config.api.DemoService, version=0.0.0, generic=bean, timeout=3000}]], channel: /10.1.0.58:57206 -> /10.1.0.58:29581
+	at org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization(GenericServiceTest.java:226)
+Caused by: org.apache.dubbo.remoting.TimeoutException: Waiting server-side response timeout. start time: 2026-11-10 18:39:14.547, end time: 2026-11-10 18:39:17.552, client elapsed: 93 ms, server elapsed: 2912 ms, timeout: 3000 ms, request: Request [id=0, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=$invoke, parameterTypes=[class java.lang.String, class [Ljava.lang.String;, class [Ljava.lang.Object;], arguments=[getUsers, [Ljava.lang.String;@1893977d, [Ljava.lang.Object;@4702e52a], attachments={path=org.apache.dubbo.config.api.DemoService, interface=org.apache.dubbo.config.api.DemoService, version=0.0.0, generic=bean, timeout=3000}]], channel: /10.1.0.58:57206 -> /10.1.0.58:29581
+	at org.apache.dubbo.config.GenericServiceTest.testGenericInvokeWithBeanSerialization(GenericServiceTest.java:226)
+
+[10/11/26 06:39:17:017 UTC] NettyServerWorker-3-1  WARN transport.AbstractServer:  [DUBBO] All clients has discontected from /10.1.0.58:29581. You can graceful shutdown now., dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:17:017 UTC] DubboShutdownHook  INFO config.DubboShutdownHook:  [DUBBO] Run shutdown hook now., dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:17:017 UTC] DubboSharedHandler-thread-1  INFO dubbo.DubboProtocol:  [DUBBO] disconnected from /10.1.0.58:29581,url:dubbo://127.0.0.1:29581/org.apache.dubbo.config.api.DemoService?application=bean-consumer&codec=dubbo&dubbo=2.0.2&generic=bean&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&pid=4466&register.ip=10.1.0.58&scope=remote&side=consumer&timeout=3000&timestamp=1794335954447, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:17:017 UTC] DubboServerHandler-10.1.0.58:29581-thread-3  INFO dubbo.DubboProtocol:  [DUBBO] disconnected from /10.1.0.58:57206,url:dubbo://10.1.0.58:29581/org.apache.dubbo.config.api.DemoService?anyhost=true&application=bean-provider&bind.ip=10.1.0.58&bind.port=29581&channel.readonly.sent=true&codec=dubbo&dubbo=2.0.2&generic=false&heartbeat=60000&interface=org.apache.dubbo.config.api.DemoService&methods=getUsers,sayName,echo,throwDemoException,getBox&pid=4466&side=provider&timestamp=1794335950837, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:17:017 UTC] DubboShutdownHook  INFO support.AbstractRegistryFactory:  [DUBBO] Close all registries [], dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:17:017 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo server: /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:18:018 UTC] DubboShutdownHook  INFO transport.AbstractServer:  [DUBBO] Close NettyServer bind /0.0.0.0:29581, export /10.1.0.58:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:18:018 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo connect: 10.1.0.58:0-->127.0.0.1:29581, dubbo version: , current host: 10.1.0.58
+[10/11/26 06:39:18:018 UTC] DubboShutdownHook  INFO dubbo.DubboProtocol:  [DUBBO] Close dubbo connect: 10.1.0.58:0-->127.0.0.1:29581, dubbo version: , current host: 10.1.0.58
+
+Results :
+
+Tests in error: 
+  GenericServiceTest.testGenericInvokeWithBeanSerialization:226 » Rpc Invoke rem...
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+INFO: Surefire failed when running tests for clean_MsgeOyuaNURaM4YgStIYXzsvCypPRhky3aNYhMcTxcc= with delay: 400
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for dubbo-parent 2.7.0-SNAPSHOT:
+[INFO] 
+[INFO] dubbo-parent ....................................... SUCCESS [  1.410 s]
+[INFO] dubbo-common ....................................... SUCCESS [  0.585 s]
+[INFO] dubbo-container .................................... SUCCESS [  0.023 s]
+[INFO] dubbo-container-api ................................ SUCCESS [  0.199 s]
+[INFO] dubbo-serialization ................................ SUCCESS [  0.019 s]
+[INFO] dubbo-serialization-api ............................ SUCCESS [  0.164 s]
+[INFO] dubbo-serialization-hessian2 ....................... SUCCESS [  0.206 s]
+[INFO] dubbo-remoting ..................................... SUCCESS [  0.025 s]
+[INFO] dubbo-remoting-api ................................. SUCCESS [  0.231 s]
+[INFO] dubbo-rpc .......................................... SUCCESS [  0.023 s]
+[INFO] dubbo-rpc-api ...................................... SUCCESS [  0.217 s]
+[INFO] dubbo-cluster ...................................... SUCCESS [  0.186 s]
+[INFO] dubbo-registry ..................................... SUCCESS [  0.017 s]
+[INFO] dubbo-registry-api ................................. SUCCESS [  0.192 s]
+[INFO] dubbo-monitor ...................................... SUCCESS [  0.025 s]
+[INFO] dubbo-monitor-api .................................. SUCCESS [  0.176 s]
+[INFO] dubbo-rpc-injvm .................................... SUCCESS [  0.160 s]
+[INFO] dubbo-filter ....................................... SUCCESS [  0.018 s]
+[INFO] dubbo-filter-validation ............................ SUCCESS [  0.210 s]
+[INFO] dubbo-filter-cache ................................. SUCCESS [  0.150 s]
+[INFO] dubbo-remoting-netty4 .............................. SUCCESS [  0.137 s]
+[INFO] dubbo-rpc-dubbo .................................... SUCCESS [  0.170 s]
+[INFO] dubbo-registry-default ............................. SUCCESS [  0.190 s]
+[INFO] dubbo-monitor-default .............................. SUCCESS [  0.145 s]
+[INFO] dubbo-rpc-rmi ...................................... SUCCESS [  0.151 s]
+[INFO] dubbo-registry-multicast ........................... SUCCESS [  0.186 s]
+[INFO] dubbo-serialization-jdk ............................ SUCCESS [  0.136 s]
+[INFO] dubbo-config ....................................... SUCCESS [  0.016 s]
+[INFO] dubbo-config-api ................................... SUCCESS [ 47.666 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  53.777 s
+[INFO] Finished at: 2026-11-10T18:39:19Z
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,201 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Gora                                                        [pom]
+[INFO] Apache Gora :: Core                                             [bundle]
+[INFO] Apache Gora :: OrientDB                                         [bundle]
+[INFO] 
+[INFO] ------------------------< org.apache.gora:gora >------------------------
+[INFO] Building Apache Gora 1.0-SNAPSHOT                                  [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ gora >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora ---
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ gora <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ gora ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] 
+[INFO] ---------------------< org.apache.gora:gora-core >----------------------
+[INFO] Building Apache Gora :: Core 1.0-SNAPSHOT                          [2/3]
+[INFO]   from gora-core/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ gora-core >>>
+[WARNING] 1 problem was encountered while building the effective model for org.apache.hadoop:hadoop-annotations:jar:2.5.2 during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.19.0-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora-core ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora-core ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora-core ---
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora-core ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ gora-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.liFAUKNsmG/repo/gora-core/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ gora-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 101 source files to /tmp/tmp.liFAUKNsmG/repo/gora-core/target/classes
+[INFO] 
+[INFO] --- build-helper:1.7:add-test-source (default) @ gora-core ---
+[INFO] Test Source directory: /tmp/tmp.liFAUKNsmG/repo/gora-core/src/examples/java added.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ gora-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ gora-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ gora-core ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------< org.apache.gora:gora-orientdb >--------------------
+[INFO] Building Apache Gora :: OrientDB 1.0-SNAPSHOT                      [3/3]
+[INFO]   from gora-orientdb/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ gora-orientdb >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora-orientdb ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora-orientdb ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora-orientdb ---
+[INFO] 
+[INFO] --- build-helper:1.7:add-source (default) @ gora-orientdb ---
+[INFO] Source directory: /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/examples/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora-orientdb ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ gora-orientdb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ gora-orientdb ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[254,39] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[280,41] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[313,32] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[347,32] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[349,32] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[368,41] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[404,61] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ gora-orientdb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora-orientdb ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ gora-orientdb <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ gora-orientdb ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.pom (3.3 kB at 15 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.20/surefire-providers-2.20.pom (2.6 kB at 95 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.20/surefire-junit4-2.20.jar (82 kB at 1.8 MB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Nov 10, 2026 6:52:10 PM com.orientechnologies.common.log.OLogManager log
+INFO: Detected limit of amount of simultaneously open files is 65536,  limit of open files for disk cache will be set to 32256
+Nov 10, 2026 6:52:10 PM com.orientechnologies.common.log.OLogManager log
+WARNING: Value of limit of simultaneously open files is too small, recommended value is 262144
+
+2026-11-10 18:52:10:800 INFO  Loading configuration from input stream [OServerConfigurationLoaderXml]
+2026-11-10 18:52:11:172 INFO  OrientDB Server v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) is starting up... [OServer][ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.595 s <<< FAILURE! - in org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+[ERROR] testFlinkWordCountFlink(org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount)  Time elapsed: 1.32 s  <<< ERROR!
+java.lang.LinkageError: loader 'app' attempted duplicate class definition for com.orientechnologies.orient.server.OPushManager. (com.orientechnologies.orient.server.OPushManager is in unnamed module of loader 'app')
+	at org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount.setUp(TestOrientDBStoreWordCount.java:44)
+
+[ERROR] testFlinkWordCountFlink(org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount)  Time elapsed: 1.32 s  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount.tearDown(TestOrientDBStoreWordCount.java:53)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR] org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount.testFlinkWordCountFlink(org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount)
+[ERROR]   Run 1: TestOrientDBStoreWordCount.setUp:44 » Linkage loader 'app' attempted duplicate...
+[ERROR]   Run 2: TestOrientDBStoreWordCount.tearDown:53 NullPointer
+[INFO] 
+[INFO] 
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+INFO: Surefire failed when running tests for clean_yPIxDMSEcIpLzLG0MdvGMOp+KV+CTeg4af3yUtagpqc= with delay: 0
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache Gora 1.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache Gora ........................................ SUCCESS [  0.991 s]
+[INFO] Apache Gora :: Core ................................ SUCCESS [  5.208 s]
+[INFO] Apache Gora :: OrientDB ............................ SUCCESS [ 12.279 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.463 s
+[INFO] Finished at: 2026-11-10T18:52:16Z
+[INFO] ------------------------------------------------------------------------

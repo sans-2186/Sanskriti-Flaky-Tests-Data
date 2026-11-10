@@ -1,0 +1,142 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Gora                                                        [pom]
+[INFO] Apache Gora :: Core                                             [bundle]
+[INFO] Apache Gora :: Ignite                                           [bundle]
+[INFO] 
+[INFO] ------------------------< org.apache.gora:gora >------------------------
+[INFO] Building Apache Gora 1.0-SNAPSHOT                                  [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ gora >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora ---
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ gora <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ gora ---
+INFO: Running PatchingMojo
+[INFO] 
+[INFO] ---------------------< org.apache.gora:gora-core >----------------------
+[INFO] Building Apache Gora :: Core 1.0-SNAPSHOT                          [2/3]
+[INFO]   from gora-core/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ gora-core >>>
+[WARNING] 1 problem was encountered while building the effective model for org.apache.hadoop:hadoop-annotations:jar:2.5.2 during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.19.0-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora-core ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora-core ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora-core ---
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora-core ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ gora-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.SL4hYZ4L3k/repo/gora-core/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ gora-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 101 source files to /tmp/tmp.SL4hYZ4L3k/repo/gora-core/target/classes
+[INFO] 
+[INFO] --- build-helper:1.7:add-test-source (default) @ gora-core ---
+[INFO] Test Source directory: /tmp/tmp.SL4hYZ4L3k/repo/gora-core/src/examples/java added.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ gora-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ gora-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ gora-core ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.SL4hYZ4L3k/repo/gora-core/.flakesync/Results-BarrierSearch/org.apache.gora.ignite.store.TestIgniteStore.igniteStoreMetadataAnalyzerTest-BarrierPoints.csv (No such file or directory)
+[INFO] 
+[INFO] --------------------< org.apache.gora:gora-ignite >---------------------
+[INFO] Building Apache Gora :: Ignite 1.0-SNAPSHOT                        [3/3]
+[INFO]   from gora-ignite/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ gora-ignite >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora-ignite ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora-ignite ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora-ignite ---
+[INFO] 
+[INFO] --- build-helper:1.7:add-source (default) @ gora-ignite ---
+[INFO] Source directory: /tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/src/examples/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora-ignite ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ gora-ignite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ gora-ignite ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to /tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+/tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/src/main/java/org/apache/gora/ignite/utils/IgniteSQLBuilder.java:[124,48] non-varargs call of varargs method with inexact argument type for last parameter;
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ gora-ignite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora-ignite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ gora-ignite <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ gora-ignite ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/.flakesync/Results-BarrierSearch/org.apache.gora.ignite.store.TestIgniteStore.igniteStoreMetadataAnalyzerTest-BarrierPoints.csv (No such file or directory)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache Gora 1.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache Gora ........................................ SUCCESS [  0.596 s]
+[INFO] Apache Gora :: Core ................................ SUCCESS [  3.372 s]
+[INFO] Apache Gora :: Ignite .............................. SUCCESS [  2.284 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.902 s
+[INFO] Finished at: 2026-11-10T18:59:31Z
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,237 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Gora                                                        [pom]
+[INFO] Apache Gora :: Core                                             [bundle]
+[INFO] Apache Gora :: OrientDB                                         [bundle]
+[INFO] 
+[INFO] ------------------------< org.apache.gora:gora >------------------------
+[INFO] Building Apache Gora 1.0-SNAPSHOT                                  [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ gora >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora ---
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ gora <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ gora ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ---------------------< org.apache.gora:gora-core >----------------------
+[INFO] Building Apache Gora :: Core 1.0-SNAPSHOT                          [2/3]
+[INFO]   from gora-core/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ gora-core >>>
+[WARNING] 1 problem was encountered while building the effective model for org.apache.hadoop:hadoop-annotations:jar:2.5.2 during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.19.0-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora-core ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora-core ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora-core ---
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora-core ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ gora-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.liFAUKNsmG/repo/gora-core/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ gora-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 101 source files to /tmp/tmp.liFAUKNsmG/repo/gora-core/target/classes
+[INFO] 
+[INFO] --- build-helper:1.7:add-test-source (default) @ gora-core ---
+[INFO] Test Source directory: /tmp/tmp.liFAUKNsmG/repo/gora-core/src/examples/java added.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ gora-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ gora-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ gora-core ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] -------------------< org.apache.gora:gora-orientdb >--------------------
+[INFO] Building Apache Gora :: OrientDB 1.0-SNAPSHOT                      [3/3]
+[INFO]   from gora-orientdb/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ gora-orientdb >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora-orientdb ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora-orientdb ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora-orientdb ---
+[INFO] 
+[INFO] --- build-helper:1.7:add-source (default) @ gora-orientdb ---
+[INFO] Source directory: /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/examples/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora-orientdb ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ gora-orientdb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ gora-orientdb ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[254,39] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[280,41] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[313,32] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[347,32] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[349,32] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[368,41] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[WARNING]   where RET is a type-variable:
+    RET extends OCommandRequest declared in method <RET>command(OCommandRequest)
+/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/src/main/java/org/apache/gora/orientdb/store/OrientDBStore.java:[404,61] [deprecation] <RET>command(OCommandRequest) in ODatabase has been deprecated
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ gora-orientdb ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora-orientdb ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ gora-orientdb <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ gora-orientdb ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+Warning: Nashorn engine is planned to be removed from a future JDK release
+Nov 10, 2026 6:56:49 PM com.orientechnologies.common.log.OLogManager log
+INFO: Detected limit of amount of simultaneously open files is 65536,  limit of open files for disk cache will be set to 32256
+Nov 10, 2026 6:56:49 PM com.orientechnologies.common.log.OLogManager log
+WARNING: Value of limit of simultaneously open files is too small, recommended value is 262144
+
+2026-11-10 18:56:49:415 INFO  Loading configuration from input stream [OServerConfigurationLoaderXml]
+2026-11-10 18:56:49:697 INFO  OrientDB Server v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) is starting up... [OServer]
+2026-11-10 18:56:49:796 INFO  16759439360 B/15983 MB/15 GB of physical memory were detected on machine [ONative]
+2026-11-10 18:56:49:797 INFO  Soft memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:56:49:797 INFO  Hard memory limit for this process is set to -1 B/-1 MB/-1 GB [ONative]
+2026-11-10 18:56:49:798 INFO  Detected memory limit for current process is 16759439360 B/15983 MB/15 GB [ONative]
+2026-11-10 18:56:49:799 INFO  JVM can use maximum 3996MB of heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:56:49:800 INFO  Because OrientDB is running outside a container 12% of memory will be left unallocated according to the setting 'memory.leftToOS' not taking into account heap memory [OMemoryAndLocalPaginatedEnginesInitializer]
+2026-11-10 18:56:49:800 INFO  OrientDB auto-config DISKCACHE=10,069MB (heap=3,996MB os=15,983MB) [orientechnologies]
+2026-11-10 18:56:49:801 INFO  System is started under an effective user : `runner` [OEngineLocalPaginated]
+2026-11-10 18:56:49:802 INFO  Allocation of 153048 pages. [OEngineLocalPaginated]
+2026-11-10 18:56:50:496 INFO  WAL maximum segment size is set to 6,144 MB [OrientDBEmbedded]
+2026-11-10 18:56:50:497 INFO  Databases directory: /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases [OServer]
+2026-11-10 18:56:50:556 INFO  Direct IO for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is allowed with block size 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:56:50:557 INFO  Page size for WAL located in /tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem is set to 4096 bytes. [OCASDiskWriteAheadLog]
+2026-11-10 18:56:50:683 INFO  Storage 'plocal:/tmp/tmp.liFAUKNsmG/repo/gora-orientdb/target/db/databases/OSystem' is opened under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [OLocalPaginatedStorage]
+2026-11-10 18:56:50:881 INFO  [OVariableParser.resolveVariables] Property not found: ORIENTDB_HOME [orientechnologies]
+2026-11-10 18:56:50:882 SEVER ODefaultServerSecurity.loadConfig() Could not access the security JSON file: /config/security.json [ODefaultServerSecurity]
+2026-11-10 18:56:50:937 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.37, socket=default) [OServerNetworkListener]
+2026-11-10 18:56:50:940 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2026-11-10 18:56:50:940 INFO  Found ORIENTDB_ROOT_PASSWORD variable, using this value as root's password [OServer]
+2026-11-10 18:56:51:035 WARNI onAfterDynamicPlugins() Configuration document is empty [ODefaultServerSecurity]
+2026-11-10 18:56:51:037 INFO  OrientDB Studio available at http://10.1.0.244:2480/studio/index.html [OServer]
+2026-11-10 18:56:51:038 INFO  OrientDB Server is active v3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN). [OServer]
+2026-11-10 18:56:51:287 INFO  Storage 'memory:gora' is created under OrientDB distribution : 3.0.30 - Veloce (build eae50981ca31c79c85e4524fb376fced313acc23, branch UNKNOWN) [ODirectMemoryStorage]
+2026-11-10 18:56:51:651 INFO  Created database 'gora' of type 'memory' [OConnectionBinaryExecutor]
+2026-11-10 18:56:53:805 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:53:868 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:53:933 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:024 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:072 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:120 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:158 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:198 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:234 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:274 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:346 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:349 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:350 INFO  OrientDB Server is shutting down... [OServer]
+2026-11-10 18:56:54:350 INFO  Shutting down listeners: [OServer]
+2026-11-10 18:56:54:350 INFO  - ONetworkProtocolBinary /0.0.0.0:2424: [OServer]
+2026-11-10 18:56:54:352 INFO  - ONetworkProtocolHttpDb /0.0.0.0:2480: [OServer]
+2026-11-10 18:56:54:352 INFO  Shutting down protocols [OServer]
+2026-11-10 18:56:54:358 INFO  Shutting down plugins: [OServerPluginManager]
+2026-11-10 18:56:54:358 INFO  Shutting down databases: [OServer]
+2026-11-10 18:56:54:358 INFO  Orient Engine is shutting down... [Orient]
+2026-11-10 18:56:54:359 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:361 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:362 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:363 INFO  - shutdown storage: gora... [OrientDBRemote]
+2026-11-10 18:56:54:364 INFO  - shutdown storage: OSystem... [OrientDBEmbedded]
+2026-11-10 18:56:54:407 INFO  - shutdown storage: gora... [OrientDBEmbedded]
+2026-11-10 18:56:54:499 INFO  Clearing byte buffer pool [Orient]
+2026-11-10 18:56:54:526 INFO  OrientDB Engine shutdown complete [Orient]
+2026-11-10 18:56:54:527 INFO  OrientDB Server shutdown complete
+ [OServer][INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.78 s - in org.apache.gora.orientdb.mapreduce.TestOrientDBStoreWordCount
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+This location is not a good one. Go back and run minimizer again.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache Gora 1.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache Gora ........................................ SUCCESS [  0.966 s]
+[INFO] Apache Gora :: Core ................................ SUCCESS [  4.762 s]
+[INFO] Apache Gora :: OrientDB ............................ SUCCESS [ 10.217 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.945 s
+[INFO] Finished at: 2026-11-10T18:56:54Z
+[INFO] ------------------------------------------------------------------------

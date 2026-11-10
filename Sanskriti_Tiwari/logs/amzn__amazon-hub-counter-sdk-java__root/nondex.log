@@ -1,0 +1,428 @@
+[INFO] Scanning for projects...
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom (5.2 kB at 25 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom (7.2 kB at 275 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar (41 kB at 1.2 MB/s)
+[INFO] 
+[INFO] -----------< com.amazon.hub.counter:amazon-hub-counter-sdk >------------
+[INFO] Building amazon-hub-counter-sdk 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ amazon-hub-counter-sdk >>>
+[WARNING] The POM for com.sun.xml.bind:jaxb-osgi:jar:2.2.10 is invalid, transitive dependencies (if any) will not be available: 1 problem was encountered while building the effective model for com.sun.xml.bind:jaxb-osgi:2.2.10
+[ERROR] 'dependencyManagement.dependencies.dependency.systemPath' for com.sun:tools:jar must specify an absolute path but is ${tools.jar} @ 
+
+[INFO] 
+[INFO] --- jacoco:0.8.4:prepare-agent (default) @ amazon-hub-counter-sdk ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ amazon-hub-counter-sdk ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ amazon-hub-counter-sdk ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ amazon-hub-counter-sdk ---
+[INFO] Copying 15 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ amazon-hub-counter-sdk ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ amazon-hub-counter-sdk <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ amazon-hub-counter-sdk ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom (3.4 kB at 140 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom (2.2 kB at 101 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom (9.3 kB at 403 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom (2.3 kB at 128 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom (8.3 kB at 307 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom (24 kB at 997 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/27/maven-parent-27.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/27/maven-parent-27.pom (41 kB at 1.9 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/17/apache-17.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/17/apache-17.pom (16 kB at 803 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom (4.0 kB at 202 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom (1.8 kB at 57 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom (2.6 kB at 101 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom (1.7 kB at 79 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom (1.5 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom (3.1 kB at 153 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom (748 B at 47 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom (3.8 kB at 171 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom (22 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom (1.9 kB at 90 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom (2.1 kB at 119 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom (2.7 kB at 142 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom (4.2 kB at 190 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom (14 kB at 327 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom (2.6 kB at 119 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom (14 kB at 465 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom (3.1 kB at 150 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom (5.7 kB at 270 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom (7.7 kB at 349 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom (4.0 kB at 183 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom (1.8 kB at 87 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom (29 kB at 863 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom (2.0 kB at 68 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom (2.1 kB at 118 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom (3.4 kB at 198 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom (6.1 kB at 291 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom (7.3 kB at 386 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom (4.1 kB at 206 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom (2.6 kB at 119 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom (20 kB at 1.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom (8.1 kB at 427 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom (4.9 kB at 176 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.0/all-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.0/all-1.2.0.pom (18 kB at 997 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom (4.7 kB at 205 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom (4.0 kB at 160 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom (1.5 kB at 67 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar (63 kB at 3.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar (44 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar (15 kB at 297 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar (27 kB at 496 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar (43 kB at 652 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar (55 kB at 797 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar (12 kB at 151 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar (177 kB at 2.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar (67 kB at 760 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar (638 kB at 6.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar (31 kB at 317 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar (173 kB at 1.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar (136 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar (147 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar (205 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar (62 kB at 434 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar (378 kB at 2.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar (4.3 kB at 28 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar (424 kB at 2.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar (47 kB at 286 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar (164 kB at 942 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar (435 kB at 2.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar (247 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar (35 kB at 186 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar (2.3 MB at 12 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar (2.1 kB at 11 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar (57 kB at 275 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar (128 kB at 619 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar (563 kB at 2.7 MB/s)
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.KokJGl0W7M/repo/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_p6MhKV+zUhFCO9HdayLFKpJxSqkFmX400sw7f6xwkiY=
+nondexLogging=CONFIG
+test=
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.pom (1.8 kB at 98 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/1.0-beta-6/wagon-1.0-beta-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon/1.0-beta-6/wagon-1.0-beta-6.pom (12 kB at 459 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom (2.0 kB at 75 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http/1.0-beta-6/wagon-http-1.0-beta-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http/1.0-beta-6/wagon-http-1.0-beta-6.pom (3.3 kB at 95 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-providers/1.0-beta-6/wagon-providers-1.0-beta-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-providers/1.0-beta-6/wagon-providers-1.0-beta-6.pom (2.1 kB at 64 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.pom (2.1 kB at 92 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.pom (390 B at 14 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.pom (704 B at 17 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-webdav-jackrabbit/1.0-beta-6/wagon-webdav-jackrabbit-1.0-beta-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-webdav-jackrabbit/1.0-beta-6/wagon-webdav-jackrabbit-1.0-beta-6.pom (3.5 kB at 185 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-webdav/1.5.0/jackrabbit-webdav-1.5.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-webdav/1.5.0/jackrabbit-webdav-1.5.0.pom (3.3 kB at 111 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-parent/1.5.0/jackrabbit-parent-1.5.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-parent/1.5.0/jackrabbit-parent-1.5.0.pom (25 kB at 952 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-jcr-commons/1.5.0/jackrabbit-jcr-commons-1.5.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-jcr-commons/1.5.0/jackrabbit-jcr-commons-1.5.0.pom (3.0 kB at 142 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.3/slf4j-api-1.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.3/slf4j-api-1.5.3.pom (3.0 kB at 142 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.5.3/slf4j-parent-1.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.5.3/slf4j-parent-1.5.3.pom (7.7 kB at 322 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-httpclient/commons-httpclient/3.0/commons-httpclient-3.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-httpclient/commons-httpclient/3.0/commons-httpclient-3.0.pom (8.0 kB at 423 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-nop/1.5.3/slf4j-nop-1.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-nop/1.5.3/slf4j-nop-1.5.3.pom (1.5 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http/1.0-beta-6/wagon-http-1.0-beta-6.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar (53 kB at 2.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.jar (25 kB at 1.2 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.jar (40 kB at 1.7 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar (121 kB at 4.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-webdav/1.5.0/jackrabbit-webdav-1.5.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-http/1.0-beta-6/wagon-http-1.0-beta-6.jar (11 kB at 389 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-webdav-jackrabbit/1.0-beta-6/wagon-webdav-jackrabbit-1.0-beta-6.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-nop/1.5.3/slf4j-nop-1.5.3.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-jcr-commons/1.5.0/jackrabbit-jcr-commons-1.5.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.jar (112 kB at 4.7 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/wagon/wagon-webdav-jackrabbit/1.0-beta-6/wagon-webdav-jackrabbit-1.0-beta-6.jar (18 kB at 831 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-nop/1.5.3/slf4j-nop-1.5.3.jar (5.2 kB at 260 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-jcr-commons/1.5.0/jackrabbit-jcr-commons-1.5.0.jar (203 kB at 7.0 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/jackrabbit/jackrabbit-webdav/1.5.0/jackrabbit-webdav-1.5.0.jar (303 kB at 9.2 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar (9.8 kB at 515 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar (11 kB at 515 kB/s)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.amazon.hub.counter.HttpUtilsTest
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.586 sec - in com.amazon.hub.counter.HttpUtilsTest
+Running com.amazon.hub.counter.AmazonHubCounterFeedAPITest
+10 Nov 2026 18:41:47.335/UTC [INFO ] - Created Feed with FeedID: [9c3a0529-37e6-40dd-8b48-d5w1fgojr8mq]
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.632 sec - in com.amazon.hub.counter.AmazonHubCounterFeedAPITest
+Running com.amazon.hub.counter.AccessPointTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec - in com.amazon.hub.counter.AccessPointTest
+
+Results :
+
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
+
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.KokJGl0W7M/repo/.nondex
+nondexJarDir=/tmp/tmp.KokJGl0W7M/repo/.nondex
+nondexExecid=Wb7fqDnpAQtVB7CX3Plxj5rUJ3yzCtoRjaDwnQIHFU=
+nondexLogging=CONFIG
+test=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.amazon.hub.counter.HttpUtilsTest
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.752 sec - in com.amazon.hub.counter.HttpUtilsTest
+Running com.amazon.hub.counter.AmazonHubCounterFeedAPITest
+10 Nov 2026 18:41:50.967/UTC [INFO ] - Created Feed with FeedID: [9c3a0529-37e6-40dd-8b48-d5w1fgojr8mq]
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.01 sec <<< FAILURE! - in com.amazon.hub.counter.AmazonHubCounterFeedAPITest
+postFeedSerializationTest()  Time elapsed: 0.031 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{"accessPoints":[{"accessPointName":"Amazon Hub Counter - Amazon US HQ","address":{"city":"Seattle","postalCode":"98101","longitude":"-122.335819","countryCode":"US","addressFieldOne":"1918 8th Ave, Seattle, WA 98101, USA","latitude":"47.615564"},"communicationDetails":{"phoneNumber":"00 1 206-922-0880","emailId":"store-id@example.com"},"standardHours":[{"closingTime":"20:00:00","openingTime":"08:30:00","day":"MONDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"TUESDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"WEDNESDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"THURSDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"FRIDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","midDayClosures":[{"startTime":"12:00:00","endTime":"13:00:00"}],"day":"SATURDAY"}],"exceptionalClosures":[{"endDateTime":"2038-01-20","startDateTime":"2038-01-19"}],"accessPointId":"AMAZON-US-HQ","capabilities":["PICK_UP","DROP_OFF"],"timeZone":"America/Los_Angeles","terminationDate":"2199-12-31","isRestrictedAccess":false,"isActive":true}]}> but was: <{"accessPoints":[{"accessPointId":"AMAZON-US-HQ","accessPointName":"Amazon Hub Counter - Amazon US HQ","isActive":true,"isRestrictedAccess":false,"timeZone":"America/Los_Angeles","address":{"addressFieldOne":"1918 8th Ave, Seattle, WA 98101, USA","city":"Seattle","postalCode":"98101","countryCode":"US","latitude":"47.615564","longitude":"-122.335819"},"terminationDate":"2199-12-31","capabilities":["PICK_UP","DROP_OFF"],"standardHours":[{"day":"MONDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"TUESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"WEDNESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"THURSDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"FRIDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"SATURDAY","openingTime":"08:30:00","closingTime":"20:00:00","midDayClosures":[{"startTime":"12:00:00","endTime":"13:00:00"}]}],"exceptionalClosures":[{"startDateTime":"2038-01-19","endDateTime":"2038-01-20"}],"communicationDetails":{"phoneNumber":"00 1 206-922-0880","emailId":"store-id@example.com"}}]}>
+	at com.amazon.hub.counter.AmazonHubCounterFeedAPITest.postFeedSerializationTest(AmazonHubCounterFeedAPITest.java:608)
+
+Running com.amazon.hub.counter.AccessPointTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.amazon.hub.counter.AccessPointTest
+
+Results :
+
+Failed tests: 
+  AmazonHubCounterFeedAPITest.postFeedSerializationTest:608 expected: <{"accessPoints":[{"accessPointName":"Amazon Hub Counter - Amazon US HQ","address":{"city":"Seattle","postalCode":"98101","longitude":"-122.335819","countryCode":"US","addressFieldOne":"1918 8th Ave, Seattle, WA 98101, USA","latitude":"47.615564"},"communicationDetails":{"phoneNumber":"00 1 206-922-0880","emailId":"store-id@example.com"},"standardHours":[{"closingTime":"20:00:00","openingTime":"08:30:00","day":"MONDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"TUESDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"WEDNESDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"THURSDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"FRIDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","midDayClosures":[{"startTime":"12:00:00","endTime":"13:00:00"}],"day":"SATURDAY"}],"exceptionalClosures":[{"endDateTime":"2038-01-20","startDateTime":"2038-01-19"}],"accessPointId":"AMAZON-US-HQ","capabilities":["PICK_UP","DROP_OFF"],"timeZone":"America/Los_Angeles","terminationDate":"2199-12-31","isRestrictedAccess":false,"isActive":true}]}> but was: <{"accessPoints":[{"accessPointId":"AMAZON-US-HQ","accessPointName":"Amazon Hub Counter - Amazon US HQ","isActive":true,"isRestrictedAccess":false,"timeZone":"America/Los_Angeles","address":{"addressFieldOne":"1918 8th Ave, Seattle, WA 98101, USA","city":"Seattle","postalCode":"98101","countryCode":"US","latitude":"47.615564","longitude":"-122.335819"},"terminationDate":"2199-12-31","capabilities":["PICK_UP","DROP_OFF"],"standardHours":[{"day":"MONDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"TUESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"WEDNESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"THURSDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"FRIDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"SATURDAY","openingTime":"08:30:00","closingTime":"20:00:00","midDayClosures":[{"startTime":"12:00:00","endTime":"13:00:00"}]}],"exceptionalClosures":[{"startDateTime":"2038-01-19","endDateTime":"2038-01-20"}],"communicationDetails":{"phoneNumber":"00 1 206-922-0880","emailId":"store-id@example.com"}}]}>
+
+Tests run: 23, Failures: 1, Errors: 0, Skipped: 0
+
+INFO: Surefire failed when running tests for Wb7fqDnpAQtVB7CX3Plxj5rUJ3yzCtoRjaDwnQIHFU=
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.KokJGl0W7M/repo/.nondex
+nondexJarDir=/tmp/tmp.KokJGl0W7M/repo/.nondex
+nondexExecid=EDyqYYvWoIkTKdpkhL28mHwMPmDQ3I6Vo61X1mTEzHQ=
+nondexLogging=CONFIG
+test=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.amazon.hub.counter.HttpUtilsTest
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.807 sec - in com.amazon.hub.counter.HttpUtilsTest
+Running com.amazon.hub.counter.AmazonHubCounterFeedAPITest
+10 Nov 2026 18:41:54.625/UTC [INFO ] - Created Feed with FeedID: [9c3a0529-37e6-40dd-8b48-d5w1fgojr8mq]
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.952 sec <<< FAILURE! - in com.amazon.hub.counter.AmazonHubCounterFeedAPITest
+postFeedSerializationTest()  Time elapsed: 0.031 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{"accessPoints":[{"capabilities":["PICK_UP","DROP_OFF"],"address":{"city":"Seattle","countryCode":"US","longitude":"-122.335819","addressFieldOne":"1918 8th Ave, Seattle, WA 98101, USA","postalCode":"98101","latitude":"47.615564"},"timeZone":"America/Los_Angeles","exceptionalClosures":[{"endDateTime":"2038-01-20","startDateTime":"2038-01-19"}],"communicationDetails":{"phoneNumber":"00 1 206-922-0880","emailId":"store-id@example.com"},"accessPointName":"Amazon Hub Counter - Amazon US HQ","isRestrictedAccess":false,"terminationDate":"2199-12-31","accessPointId":"AMAZON-US-HQ","isActive":true,"standardHours":[{"day":"MONDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"TUESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"WEDNESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"THURSDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"FRIDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"SATURDAY","midDayClosures":[{"startTime":"12:00:00","endTime":"13:00:00"}],"openingTime":"08:30:00","closingTime":"20:00:00"}]}]}> but was: <{"accessPoints":[{"accessPointId":"AMAZON-US-HQ","accessPointName":"Amazon Hub Counter - Amazon US HQ","isActive":true,"isRestrictedAccess":false,"timeZone":"America/Los_Angeles","address":{"addressFieldOne":"1918 8th Ave, Seattle, WA 98101, USA","city":"Seattle","postalCode":"98101","countryCode":"US","latitude":"47.615564","longitude":"-122.335819"},"terminationDate":"2199-12-31","capabilities":["PICK_UP","DROP_OFF"],"standardHours":[{"day":"MONDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"TUESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"WEDNESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"THURSDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"FRIDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"SATURDAY","openingTime":"08:30:00","closingTime":"20:00:00","midDayClosures":[{"startTime":"12:00:00","endTime":"13:00:00"}]}],"exceptionalClosures":[{"startDateTime":"2038-01-19","endDateTime":"2038-01-20"}],"communicationDetails":{"phoneNumber":"00 1 206-922-0880","emailId":"store-id@example.com"}}]}>
+	at com.amazon.hub.counter.AmazonHubCounterFeedAPITest.postFeedSerializationTest(AmazonHubCounterFeedAPITest.java:608)
+
+Running com.amazon.hub.counter.AccessPointTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.amazon.hub.counter.AccessPointTest
+
+Results :
+
+Failed tests: 
+  AmazonHubCounterFeedAPITest.postFeedSerializationTest:608 expected: <{"accessPoints":[{"capabilities":["PICK_UP","DROP_OFF"],"address":{"city":"Seattle","countryCode":"US","longitude":"-122.335819","addressFieldOne":"1918 8th Ave, Seattle, WA 98101, USA","postalCode":"98101","latitude":"47.615564"},"timeZone":"America/Los_Angeles","exceptionalClosures":[{"endDateTime":"2038-01-20","startDateTime":"2038-01-19"}],"communicationDetails":{"phoneNumber":"00 1 206-922-0880","emailId":"store-id@example.com"},"accessPointName":"Amazon Hub Counter - Amazon US HQ","isRestrictedAccess":false,"terminationDate":"2199-12-31","accessPointId":"AMAZON-US-HQ","isActive":true,"standardHours":[{"day":"MONDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"TUESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"WEDNESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"THURSDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"FRIDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"SATURDAY","midDayClosures":[{"startTime":"12:00:00","endTime":"13:00:00"}],"openingTime":"08:30:00","closingTime":"20:00:00"}]}]}> but was: <{"accessPoints":[{"accessPointId":"AMAZON-US-HQ","accessPointName":"Amazon Hub Counter - Amazon US HQ","isActive":true,"isRestrictedAccess":false,"timeZone":"America/Los_Angeles","address":{"addressFieldOne":"1918 8th Ave, Seattle, WA 98101, USA","city":"Seattle","postalCode":"98101","countryCode":"US","latitude":"47.615564","longitude":"-122.335819"},"terminationDate":"2199-12-31","capabilities":["PICK_UP","DROP_OFF"],"standardHours":[{"day":"MONDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"TUESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"WEDNESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"THURSDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"FRIDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"SATURDAY","openingTime":"08:30:00","closingTime":"20:00:00","midDayClosures":[{"startTime":"12:00:00","endTime":"13:00:00"}]}],"exceptionalClosures":[{"startDateTime":"2038-01-19","endDateTime":"2038-01-20"}],"communicationDetails":{"phoneNumber":"00 1 206-922-0880","emailId":"store-id@example.com"}}]}>
+
+Tests run: 23, Failures: 1, Errors: 0, Skipped: 0
+
+INFO: Surefire failed when running tests for EDyqYYvWoIkTKdpkhL28mHwMPmDQ3I6Vo61X1mTEzHQ=
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.KokJGl0W7M/repo/.nondex
+nondexJarDir=/tmp/tmp.KokJGl0W7M/repo/.nondex
+nondexExecid=TjKkCK8k4a2EoxALyGQ0W6RoOizOXjh5yvrm+a6fnD8=
+nondexLogging=CONFIG
+test=
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.amazon.hub.counter.HttpUtilsTest
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.836 sec - in com.amazon.hub.counter.HttpUtilsTest
+Running com.amazon.hub.counter.AmazonHubCounterFeedAPITest
+10 Nov 2026 18:41:58.396/UTC [INFO ] - Created Feed with FeedID: [9c3a0529-37e6-40dd-8b48-d5w1fgojr8mq]
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.022 sec <<< FAILURE! - in com.amazon.hub.counter.AmazonHubCounterFeedAPITest
+postFeedSerializationTest()  Time elapsed: 0.028 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{"accessPoints":[{"isRestrictedAccess":false,"capabilities":["PICK_UP","DROP_OFF"],"timeZone":"America/Los_Angeles","standardHours":[{"closingTime":"20:00:00","openingTime":"08:30:00","day":"MONDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"TUESDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"WEDNESDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"THURSDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"FRIDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"SATURDAY","midDayClosures":[{"endTime":"13:00:00","startTime":"12:00:00"}]}],"address":{"longitude":"-122.335819","postalCode":"98101","countryCode":"US","latitude":"47.615564","addressFieldOne":"1918 8th Ave, Seattle, WA 98101, USA","city":"Seattle"},"communicationDetails":{"emailId":"store-id@example.com","phoneNumber":"00 1 206-922-0880"},"terminationDate":"2199-12-31","accessPointName":"Amazon Hub Counter - Amazon US HQ","isActive":true,"exceptionalClosures":[{"endDateTime":"2038-01-20","startDateTime":"2038-01-19"}],"accessPointId":"AMAZON-US-HQ"}]}> but was: <{"accessPoints":[{"accessPointId":"AMAZON-US-HQ","accessPointName":"Amazon Hub Counter - Amazon US HQ","isActive":true,"isRestrictedAccess":false,"timeZone":"America/Los_Angeles","address":{"addressFieldOne":"1918 8th Ave, Seattle, WA 98101, USA","city":"Seattle","postalCode":"98101","countryCode":"US","latitude":"47.615564","longitude":"-122.335819"},"terminationDate":"2199-12-31","capabilities":["PICK_UP","DROP_OFF"],"standardHours":[{"day":"MONDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"TUESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"WEDNESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"THURSDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"FRIDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"SATURDAY","openingTime":"08:30:00","closingTime":"20:00:00","midDayClosures":[{"startTime":"12:00:00","endTime":"13:00:00"}]}],"exceptionalClosures":[{"startDateTime":"2038-01-19","endDateTime":"2038-01-20"}],"communicationDetails":{"phoneNumber":"00 1 206-922-0880","emailId":"store-id@example.com"}}]}>
+	at com.amazon.hub.counter.AmazonHubCounterFeedAPITest.postFeedSerializationTest(AmazonHubCounterFeedAPITest.java:608)
+
+Running com.amazon.hub.counter.AccessPointTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in com.amazon.hub.counter.AccessPointTest
+
+Results :
+
+Failed tests: 
+  AmazonHubCounterFeedAPITest.postFeedSerializationTest:608 expected: <{"accessPoints":[{"isRestrictedAccess":false,"capabilities":["PICK_UP","DROP_OFF"],"timeZone":"America/Los_Angeles","standardHours":[{"closingTime":"20:00:00","openingTime":"08:30:00","day":"MONDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"TUESDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"WEDNESDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"THURSDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"FRIDAY"},{"closingTime":"20:00:00","openingTime":"08:30:00","day":"SATURDAY","midDayClosures":[{"endTime":"13:00:00","startTime":"12:00:00"}]}],"address":{"longitude":"-122.335819","postalCode":"98101","countryCode":"US","latitude":"47.615564","addressFieldOne":"1918 8th Ave, Seattle, WA 98101, USA","city":"Seattle"},"communicationDetails":{"emailId":"store-id@example.com","phoneNumber":"00 1 206-922-0880"},"terminationDate":"2199-12-31","accessPointName":"Amazon Hub Counter - Amazon US HQ","isActive":true,"exceptionalClosures":[{"endDateTime":"2038-01-20","startDateTime":"2038-01-19"}],"accessPointId":"AMAZON-US-HQ"}]}> but was: <{"accessPoints":[{"accessPointId":"AMAZON-US-HQ","accessPointName":"Amazon Hub Counter - Amazon US HQ","isActive":true,"isRestrictedAccess":false,"timeZone":"America/Los_Angeles","address":{"addressFieldOne":"1918 8th Ave, Seattle, WA 98101, USA","city":"Seattle","postalCode":"98101","countryCode":"US","latitude":"47.615564","longitude":"-122.335819"},"terminationDate":"2199-12-31","capabilities":["PICK_UP","DROP_OFF"],"standardHours":[{"day":"MONDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"TUESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"WEDNESDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"THURSDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"FRIDAY","openingTime":"08:30:00","closingTime":"20:00:00"},{"day":"SATURDAY","openingTime":"08:30:00","closingTime":"20:00:00","midDayClosures":[{"startTime":"12:00:00","endTime":"13:00:00"}]}],"exceptionalClosures":[{"startDateTime":"2038-01-19","endDateTime":"2038-01-20"}],"communicationDetails":{"phoneNumber":"00 1 206-922-0880","emailId":"store-id@example.com"}}]}>
+
+Tests run: 23, Failures: 1, Errors: 0, Skipped: 0
+
+INFO: Surefire failed when running tests for TjKkCK8k4a2EoxALyGQ0W6RoOizOXjh5yvrm+a6fnD8=
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.KokJGl0W7M/repo/.nondex" -DnondexJarDir="/tmp/tmp.KokJGl0W7M/repo/.nondex" -DnondexExecid=Wb7fqDnpAQtVB7CX3Plxj5rUJ3yzCtoRjaDwnQIHFU= -DnondexLogging=CONFIG
+[WARNING] com.amazon.hub.counter.AmazonHubCounterFeedAPITest#postFeedSerializationTest
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.KokJGl0W7M/repo/.nondex" -DnondexJarDir="/tmp/tmp.KokJGl0W7M/repo/.nondex" -DnondexExecid=EDyqYYvWoIkTKdpkhL28mHwMPmDQ3I6Vo61X1mTEzHQ= -DnondexLogging=CONFIG
+[WARNING] com.amazon.hub.counter.AmazonHubCounterFeedAPITest#postFeedSerializationTest
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.KokJGl0W7M/repo/.nondex" -DnondexJarDir="/tmp/tmp.KokJGl0W7M/repo/.nondex" -DnondexExecid=TjKkCK8k4a2EoxALyGQ0W6RoOizOXjh5yvrm+a6fnD8= -DnondexLogging=CONFIG
+[WARNING] com.amazon.hub.counter.AmazonHubCounterFeedAPITest#postFeedSerializationTest
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] com.amazon.hub.counter.AmazonHubCounterFeedAPITest#postFeedSerializationTest
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.KokJGl0W7M/repo/.nondex/Wb7fqDnpAQtVB7CX3Plxj5rUJ3yzCtoRjaDwnQIHFU=/test_results.html
+[INFO] [NonDex] The id of this run is: Wb7fqDnpAQtVB7CX3Plxj5rUJ3yzCtoRjaDwnQIHFU=
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18.568 s
+[INFO] Finished at: 2026-11-10T18:41:58Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.illinois:nondex-maven-plugin:2.2.1:nondex (default-cli) on project amazon-hub-counter-sdk: Unable to execute mojo: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /tmp/tmp.KokJGl0W7M/repo/.nondex/Wb7fqDnpAQtVB7CX3Plxj5rUJ3yzCtoRjaDwnQIHFU= for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

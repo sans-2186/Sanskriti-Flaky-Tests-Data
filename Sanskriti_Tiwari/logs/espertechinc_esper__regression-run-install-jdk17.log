@@ -1,0 +1,443 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Esper (Parent)                                                     [pom]
+[INFO] Esper Common                                                       [jar]
+[INFO] Esper-Common-Avro                                                  [jar]
+[INFO] Esper Compiler                                                     [jar]
+[INFO] Esper Runtime                                                      [jar]
+[INFO] Esper Regression-Lib                                               [jar]
+[INFO] Esper Regression-Run                                               [jar]
+[INFO] 
+[INFO] ---------------------< com.espertech:esper-parent >---------------------
+[INFO] Building Esper (Parent) 8.0.0                                      [1/7]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ esper-parent ---
+[INFO] 
+[INFO] --- gpg:1.5:sign (sign-artifacts) @ esper-parent ---
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ esper-parent ---
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/pom.xml to /home/runner/.m2/repository/com/espertech/esper-parent/8.0.0/esper-parent-8.0.0.pom
+[INFO] 
+[INFO] ---------------------< com.espertech:esper-common >---------------------
+[INFO] Building Esper Common 8.0.0                                        [2/7]
+[INFO]   from common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ esper-common ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ esper-common ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ esper-common ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 30 source files to /tmp/tmp.k1LyLbHNEG/repo/common/target/classes
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ esper-common ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /tmp/tmp.k1LyLbHNEG/repo/common/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:testCompile (default-testCompile) @ esper-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.4.3:test (default-test) @ esper-common ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:2.2:jar (default-jar) @ esper-common ---
+[INFO] 
+[INFO] --- jar:2.2:jar (empty-javadoc-jar) @ esper-common ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] 
+[INFO] >>> source:2.1:jar (default) > generate-sources @ esper-common >>>
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ esper-common ---
+[INFO] 
+[INFO] <<< source:2.1:jar (default) < generate-sources @ esper-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:2.1:jar (default) @ esper-common ---
+[INFO] 
+[INFO] --- gpg:1.5:sign (sign-artifacts) @ esper-common ---
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ esper-common ---
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/common/pom.xml to /home/runner/.m2/repository/com/espertech/esper-common/8.0.0/esper-common-8.0.0.pom
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/common/target/esper-common-8.0.0.jar to /home/runner/.m2/repository/com/espertech/esper-common/8.0.0/esper-common-8.0.0.jar
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/common/target/esper-common-8.0.0-javadoc.jar to /home/runner/.m2/repository/com/espertech/esper-common/8.0.0/esper-common-8.0.0-javadoc.jar
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/common/target/esper-common-8.0.0-sources.jar to /home/runner/.m2/repository/com/espertech/esper-common/8.0.0/esper-common-8.0.0-sources.jar
+[INFO] 
+[INFO] ------------------< com.espertech:esper-common-avro >-------------------
+[INFO] Building Esper-Common-Avro 8.0.0                                   [3/7]
+[INFO]   from common-avro/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ esper-common-avro ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ esper-common-avro ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ esper-common-avro ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ esper-common-avro ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /tmp/tmp.k1LyLbHNEG/repo/common-avro/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:testCompile (default-testCompile) @ esper-common-avro ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.4.3:test (default-test) @ esper-common-avro ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:2.2:jar (default-jar) @ esper-common-avro ---
+[INFO] 
+[INFO] --- jar:2.2:jar (empty-javadoc-jar) @ esper-common-avro ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] 
+[INFO] >>> source:2.1:jar (default) > generate-sources @ esper-common-avro >>>
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ esper-common-avro ---
+[INFO] 
+[INFO] <<< source:2.1:jar (default) < generate-sources @ esper-common-avro <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:2.1:jar (default) @ esper-common-avro ---
+[INFO] 
+[INFO] --- gpg:1.5:sign (sign-artifacts) @ esper-common-avro ---
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ esper-common-avro ---
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/common-avro/pom.xml to /home/runner/.m2/repository/com/espertech/esper-common-avro/8.0.0/esper-common-avro-8.0.0.pom
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/common-avro/target/esper-common-avro-8.0.0.jar to /home/runner/.m2/repository/com/espertech/esper-common-avro/8.0.0/esper-common-avro-8.0.0.jar
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/common-avro/target/esper-common-avro-8.0.0-javadoc.jar to /home/runner/.m2/repository/com/espertech/esper-common-avro/8.0.0/esper-common-avro-8.0.0-javadoc.jar
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/common-avro/target/esper-common-avro-8.0.0-sources.jar to /home/runner/.m2/repository/com/espertech/esper-common-avro/8.0.0/esper-common-avro-8.0.0-sources.jar
+[INFO] 
+[INFO] --------------------< com.espertech:esper-compiler >--------------------
+[INFO] Building Esper Compiler 8.0.0                                      [4/7]
+[INFO]   from compiler/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ esper-compiler ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ esper-compiler ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ esper-compiler ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 3 source files to /tmp/tmp.k1LyLbHNEG/repo/compiler/target/classes
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ esper-compiler ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /tmp/tmp.k1LyLbHNEG/repo/compiler/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:testCompile (default-testCompile) @ esper-compiler ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.4.3:test (default-test) @ esper-compiler ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:2.2:jar (default-jar) @ esper-compiler ---
+[INFO] 
+[INFO] --- jar:2.2:jar (empty-javadoc-jar) @ esper-compiler ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] 
+[INFO] >>> source:2.1:jar (default) > generate-sources @ esper-compiler >>>
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ esper-compiler ---
+[INFO] 
+[INFO] <<< source:2.1:jar (default) < generate-sources @ esper-compiler <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:2.1:jar (default) @ esper-compiler ---
+[INFO] 
+[INFO] --- gpg:1.5:sign (sign-artifacts) @ esper-compiler ---
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ esper-compiler ---
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/compiler/pom.xml to /home/runner/.m2/repository/com/espertech/esper-compiler/8.0.0/esper-compiler-8.0.0.pom
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/compiler/target/esper-compiler-8.0.0.jar to /home/runner/.m2/repository/com/espertech/esper-compiler/8.0.0/esper-compiler-8.0.0.jar
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/compiler/target/esper-compiler-8.0.0-javadoc.jar to /home/runner/.m2/repository/com/espertech/esper-compiler/8.0.0/esper-compiler-8.0.0-javadoc.jar
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/compiler/target/esper-compiler-8.0.0-sources.jar to /home/runner/.m2/repository/com/espertech/esper-compiler/8.0.0/esper-compiler-8.0.0-sources.jar
+[INFO] 
+[INFO] --------------------< com.espertech:esper-runtime >---------------------
+[INFO] Building Esper Runtime 8.0.0                                       [5/7]
+[INFO]   from runtime/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ esper-runtime ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ esper-runtime ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ esper-runtime ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 5 source files to /tmp/tmp.k1LyLbHNEG/repo/runtime/target/classes
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ esper-runtime ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /tmp/tmp.k1LyLbHNEG/repo/runtime/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:testCompile (default-testCompile) @ esper-runtime ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.4.3:test (default-test) @ esper-runtime ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:2.2:jar (default-jar) @ esper-runtime ---
+[INFO] 
+[INFO] --- jar:2.2:jar (empty-javadoc-jar) @ esper-runtime ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] 
+[INFO] >>> source:2.1:jar (default) > generate-sources @ esper-runtime >>>
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ esper-runtime ---
+[INFO] 
+[INFO] <<< source:2.1:jar (default) < generate-sources @ esper-runtime <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:2.1:jar (default) @ esper-runtime ---
+[INFO] 
+[INFO] --- gpg:1.5:sign (sign-artifacts) @ esper-runtime ---
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ esper-runtime ---
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/runtime/pom.xml to /home/runner/.m2/repository/com/espertech/esper-runtime/8.0.0/esper-runtime-8.0.0.pom
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/runtime/target/esper-runtime-8.0.0.jar to /home/runner/.m2/repository/com/espertech/esper-runtime/8.0.0/esper-runtime-8.0.0.jar
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/runtime/target/esper-runtime-8.0.0-javadoc.jar to /home/runner/.m2/repository/com/espertech/esper-runtime/8.0.0/esper-runtime-8.0.0-javadoc.jar
+[INFO] Installing /tmp/tmp.k1LyLbHNEG/repo/runtime/target/esper-runtime-8.0.0-sources.jar to /home/runner/.m2/repository/com/espertech/esper-runtime/8.0.0/esper-runtime-8.0.0-sources.jar
+[INFO] 
+[INFO] -----------------< com.espertech:esper-regression-lib >-----------------
+[INFO] Building Esper Regression-Lib 8.0.0                                [6/7]
+[INFO]   from regression-lib/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (validate) @ esper-regression-lib ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ esper-regression-lib ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ esper-regression-lib ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1232 source files to /tmp/tmp.k1LyLbHNEG/repo/regression-lib/target/classes
+[INFO] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/epl/insertinto/EPLInsertIntoPopulateUnderlying.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/epl/insertinto/EPLInsertIntoPopulateUnderlying.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/expr/exprcore/ExprCoreCase.java: Some input files use or override a deprecated API that is marked for removal.
+[INFO] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/expr/exprcore/ExprCoreCase.java: Recompile with -Xlint:removal for details.
+[INFO] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/multithread/MultithreadStmtNamedWindowIterate.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/multithread/MultithreadStmtNamedWindowIterate.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[200,37] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[204,20] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[36,17] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[37,17] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[38,17] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[39,17] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[40,17] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[48,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[49,33] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[52,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[53,33] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[57,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[58,33] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[63,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[64,33] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[70,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[71,33] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[72,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[73,33] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[80,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[81,33] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[89,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[90,33] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[91,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[92,33] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[93,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[94,33] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[104,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[105,33] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[113,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[114,33] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[125,13] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[126,13] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[127,13] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[130,66] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[140,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[144,29] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[150,66] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[160,74] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[164,29] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[172,13] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[174,66] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[181,13] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[181,36] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[207,20] reference to Module is ambiguous
+  both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[INFO] 45 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Esper (Parent) 8.0.0:
+[INFO] 
+[INFO] Esper (Parent) ..................................... SUCCESS [  0.475 s]
+[INFO] Esper Common ....................................... SUCCESS [  1.848 s]
+[INFO] Esper-Common-Avro .................................. SUCCESS [  0.053 s]
+[INFO] Esper Compiler ..................................... SUCCESS [  0.097 s]
+[INFO] Esper Runtime ...................................... SUCCESS [  0.092 s]
+[INFO] Esper Regression-Lib ............................... FAILURE [  5.244 s]
+[INFO] Esper Regression-Run ............................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.605 s
+[INFO] Finished at: 2026-11-10T18:52:45Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.5.1:compile (default-compile) on project esper-regression-lib: Compilation failure: Compilation failure: 
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[200,37] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[204,20] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[36,17] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[37,17] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[38,17] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[39,17] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[40,17] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[48,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[49,33] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[52,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[53,33] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[57,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[58,33] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[63,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[64,33] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[70,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[71,33] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[72,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[73,33] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[80,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[81,33] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[89,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[90,33] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[91,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[92,33] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[93,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[94,33] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[104,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[105,33] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[113,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[114,33] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[125,13] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[126,13] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[127,13] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[130,66] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[140,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[144,29] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[150,66] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[160,74] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[164,29] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[172,13] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[174,66] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[181,13] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[181,36] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] /tmp/tmp.k1LyLbHNEG/repo/regression-lib/src/main/java/com/espertech/esper/regressionlib/suite/client/compile/ClientCompileModuleUses.java:[207,20] reference to Module is ambiguous
+[ERROR]   both class com.espertech.esper.common.client.module.Module in com.espertech.esper.common.client.module and class java.lang.Module in java.lang match
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :esper-regression-lib

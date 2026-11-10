@@ -1,0 +1,287 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] tyrus                                                              [pom]
+[INFO] Tyrus Container SPI                                             [bundle]
+[INFO] Tyrus Core                                                      [bundle]
+[INFO] Tyrus Client                                                    [bundle]
+[INFO] Tyrus Container Modules                                            [pom]
+[INFO] Tyrus Grizzly Client Container                                  [bundle]
+[INFO] Tyrus Server                                                    [bundle]
+[INFO] Tyrus Grizzly Server Container                                  [bundle]
+[INFO] Tyrus Servlet Bundle                                            [bundle]
+[INFO] Tyrus Tests                                                        [pom]
+[INFO] Tyrus Test Tools                                                [bundle]
+[INFO] Tyrus JDK Client Container                                      [bundle]
+[INFO] Tyrus End-to-End Tests                                             [pom]
+[INFO] Tyrus End-to-End Standard Config Tests                             [war]
+[INFO] 
+[INFO] -----------------< org.glassfish.tyrus:tyrus-project >------------------
+[INFO] Building tyrus 2.0-SNAPSHOT                                       [1/14]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:2.15:check (default) @ tyrus-project ---
+[INFO] 
+[INFO] --- source:2.2.1:jar-no-fork (attach-sources) @ tyrus-project ---
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ tyrus-project ---
+[INFO] Installing /tmp/tmp.DyrKaYDfKJ/repo/pom.xml to /home/runner/.m2/repository/org/glassfish/tyrus/tyrus-project/2.0-SNAPSHOT/tyrus-project-2.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------------< org.glassfish.tyrus:tyrus-spi >--------------------
+[INFO] Building Tyrus Container SPI 2.0-SNAPSHOT                         [2/14]
+[INFO]   from spi/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-2: 
+The plugin org.apache.maven.plugins:maven-resources-plugin:4.0.0-beta-2 has unmet prerequisites: 
+	Required Maven version 4.0.0-rc-7 is not met by current version 3.9.15
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-resources-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-resources-plugin
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: 
+The plugin org.apache.maven.plugins:maven-resources-plugin:4.0.0-beta-1 has unmet prerequisites: 
+	Required Maven version 4.0.0-beta-3 is not met by current version 3.9.15
+[INFO] Selected plugin org.apache.maven.plugins:maven-resources-plugin:3.5.0
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-3: 
+The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-3 has unmet prerequisites: 
+	Required Maven version 4.0.0-rc-6 is not met by current version 3.9.15
+[INFO] Latest version of plugin org.apache.maven.plugins:maven-install-plugin failed compatibility check
+[INFO] Looking for compatible RELEASE version of plugin org.apache.maven.plugins:maven-install-plugin
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-2: 
+The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-2 has unmet prerequisites: 
+	Required Maven version 4.0.0-rc-2 is not met by current version 3.9.15
+[WARNING] Ignoring incompatible plugin version 4.0.0-beta-1: 
+The plugin org.apache.maven.plugins:maven-install-plugin:4.0.0-beta-1 has unmet prerequisites: 
+	Required Maven version 4.0.0-beta-3 is not met by current version 3.9.15
+[INFO] Selected plugin org.apache.maven.plugins:maven-install-plugin:3.2.0
+[INFO] 
+[INFO] --- checkstyle:2.15:check (default) @ tyrus-spi ---
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ tyrus-spi ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.DyrKaYDfKJ/repo/spi/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ tyrus-spi ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /tmp/tmp.DyrKaYDfKJ/repo/spi/target/classes
+[WARNING] /tmp/tmp.DyrKaYDfKJ/repo/spi/src/main/java/org/glassfish/tyrus/spi/ServerContainerFactory.java: /tmp/tmp.DyrKaYDfKJ/repo/spi/src/main/java/org/glassfish/tyrus/spi/ServerContainerFactory.java uses or overrides a deprecated API.
+[WARNING] /tmp/tmp.DyrKaYDfKJ/repo/spi/src/main/java/org/glassfish/tyrus/spi/ServerContainerFactory.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ tyrus-spi ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.DyrKaYDfKJ/repo/spi/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ tyrus-spi ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.17:test (default-test) @ tyrus-spi ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- bundle:2.4.0:bundle (default-bundle) @ tyrus-spi ---
+[INFO] 
+[INFO] --- source:2.2.1:jar-no-fork (attach-sources) @ tyrus-spi ---
+[INFO] 
+[INFO] --- install:3.2.0:install (default-install) @ tyrus-spi ---
+[INFO] Installing /tmp/tmp.DyrKaYDfKJ/repo/spi/pom.xml to /home/runner/.m2/repository/org/glassfish/tyrus/tyrus-spi/2.0-SNAPSHOT/tyrus-spi-2.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.DyrKaYDfKJ/repo/spi/target/tyrus-spi-2.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/glassfish/tyrus/tyrus-spi/2.0-SNAPSHOT/tyrus-spi-2.0-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.DyrKaYDfKJ/repo/spi/target/tyrus-spi-2.0-SNAPSHOT-sources.jar to /home/runner/.m2/repository/org/glassfish/tyrus/tyrus-spi/2.0-SNAPSHOT/tyrus-spi-2.0-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- bundle:2.4.0:install (default-install) @ tyrus-spi ---
+[INFO] Installing org/glassfish/tyrus/tyrus-spi/2.0-SNAPSHOT/tyrus-spi-2.0-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] -------------------< org.glassfish.tyrus:tyrus-core >-------------------
+[INFO] Building Tyrus Core 2.0-SNAPSHOT                                  [3/14]
+[INFO]   from core/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- checkstyle:2.15:check (default) @ tyrus-core ---
+[INFO] 
+[INFO] --- build-helper:1.8:parse-version (parse-version) @ tyrus-core ---
+[INFO] 
+[INFO] --- istack-commons:2.6.1:rs-gen (default) @ tyrus-core ---
+Resources:
+org/glassfish/tyrus/core/l10n/localization.properties
+Skipping /tmp/tmp.DyrKaYDfKJ/repo/core/src/main/resources/org/glassfish/tyrus/core/l10n/localization.properties
+[INFO] 
+[INFO] --- build-helper:1.8:add-source (default) @ tyrus-core ---
+[INFO] Source directory: /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/rsrc-gen added.
+[INFO] 
+[INFO] --- jaxb:1.1.1:generate (default) @ tyrus-core ---
+[INFO] files are up to date
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ tyrus-core ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] The encoding used to copy filtered properties files has not been set. This means that the same encoding will be used to copy filtered properties files as when copying other filtered resources. This might not be what you want! Run your build with --debug to see which files might be affected. Read more at https://maven.apache.org/plugins/maven-resources-plugin/examples/filtering-properties-files.html
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ tyrus-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 112 source files to /tmp/tmp.DyrKaYDfKJ/repo/core/target/classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] /tmp/tmp.DyrKaYDfKJ/repo/core/src/main/java/org/glassfish/tyrus/core/ServiceFinder.java: Some input files use or override a deprecated API.
+[WARNING] /tmp/tmp.DyrKaYDfKJ/repo/core/src/main/java/org/glassfish/tyrus/core/ServiceFinder.java: Recompile with -Xlint:deprecation for details.
+[WARNING] /tmp/tmp.DyrKaYDfKJ/repo/core/src/main/java/org/glassfish/tyrus/core/ServiceFinder.java: Some input files use or override a deprecated API that is marked for removal.
+[WARNING] /tmp/tmp.DyrKaYDfKJ/repo/core/src/main/java/org/glassfish/tyrus/core/ServiceFinder.java: Recompile with -Xlint:removal for details.
+[WARNING] /tmp/tmp.DyrKaYDfKJ/repo/core/src/main/java/org/glassfish/tyrus/core/TyrusEndpointWrapper.java: Some input files use unchecked or unsafe operations.
+[WARNING] /tmp/tmp.DyrKaYDfKJ/repo/core/src/main/java/org/glassfish/tyrus/core/TyrusEndpointWrapper.java: Recompile with -Xlint:unchecked for details.
+[INFO] 6 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[13,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[14,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[15,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[16,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[17,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[18,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[19,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[20,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[21,42] package javax.xml.bind.annotation.adapters does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[22,42] package javax.xml.bind.annotation.adapters does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[45,2] cannot find symbol
+  symbol: class XmlAccessorType
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[46,2] cannot find symbol
+  symbol: class XmlType
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[47,2] cannot find symbol
+  symbol: class XmlRootElement
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[13,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[14,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[15,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[16,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[17,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[41,2] cannot find symbol
+  symbol: class XmlAccessorType
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[42,2] cannot find symbol
+  symbol: class XmlType
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[46,2] cannot find symbol
+  symbol: class XmlRootElement
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/ObjectFactory.java:[11,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/ObjectFactory.java:[28,2] cannot find symbol
+  symbol: class XmlRegistry
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[45,18] cannot find symbol
+  symbol: variable XmlAccessType
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[50,6] cannot find symbol
+  symbol:   class XmlAttribute
+  location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[51,6] cannot find symbol
+  symbol:   class XmlJavaTypeAdapter
+  location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[51,25] cannot find symbol
+  symbol:   class CollapsedStringAdapter
+  location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[52,6] cannot find symbol
+  symbol:   class XmlID
+  location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[53,6] cannot find symbol
+  symbol:   class XmlSchemaType
+  location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[55,6] cannot find symbol
+  symbol:   class XmlAttribute
+  location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[57,6] cannot find symbol
+  symbol:   class XmlAnyAttribute
+  location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[41,18] cannot find symbol
+  symbol: variable XmlAccessType
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[50,6] cannot find symbol
+  symbol:   class XmlAnyElement
+  location: class org.glassfish.tyrus.core.wsadl.model.Application
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/package-info.java:[8,27] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/package-info.java:[8,130] package javax.xml.bind.annotation does not exist
+[INFO] 35 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for tyrus 2.0-SNAPSHOT:
+[INFO] 
+[INFO] tyrus .............................................. SUCCESS [  0.740 s]
+[INFO] Tyrus Container SPI ................................ SUCCESS [  3.240 s]
+[INFO] Tyrus Core ......................................... FAILURE [  1.956 s]
+[INFO] Tyrus Client ....................................... SKIPPED
+[INFO] Tyrus Container Modules ............................ SKIPPED
+[INFO] Tyrus Grizzly Client Container ..................... SKIPPED
+[INFO] Tyrus Server ....................................... SKIPPED
+[INFO] Tyrus Grizzly Server Container ..................... SKIPPED
+[INFO] Tyrus Servlet Bundle ............................... SKIPPED
+[INFO] Tyrus Tests ........................................ SKIPPED
+[INFO] Tyrus Test Tools ................................... SKIPPED
+[INFO] Tyrus JDK Client Container ......................... SKIPPED
+[INFO] Tyrus End-to-End Tests ............................. SKIPPED
+[INFO] Tyrus End-to-End Standard Config Tests ............. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.727 s
+[INFO] Finished at: 2026-11-10T18:57:27Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project tyrus-core: Compilation failure: Compilation failure: 
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[13,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[14,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[15,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[16,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[17,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[18,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[19,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[20,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[21,42] package javax.xml.bind.annotation.adapters does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[22,42] package javax.xml.bind.annotation.adapters does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[45,2] cannot find symbol
+[ERROR]   symbol: class XmlAccessorType
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[46,2] cannot find symbol
+[ERROR]   symbol: class XmlType
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[47,2] cannot find symbol
+[ERROR]   symbol: class XmlRootElement
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[13,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[14,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[15,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[16,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[17,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[41,2] cannot find symbol
+[ERROR]   symbol: class XmlAccessorType
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[42,2] cannot find symbol
+[ERROR]   symbol: class XmlType
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[46,2] cannot find symbol
+[ERROR]   symbol: class XmlRootElement
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/ObjectFactory.java:[11,33] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/ObjectFactory.java:[28,2] cannot find symbol
+[ERROR]   symbol: class XmlRegistry
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[45,18] cannot find symbol
+[ERROR]   symbol: variable XmlAccessType
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[50,6] cannot find symbol
+[ERROR]   symbol:   class XmlAttribute
+[ERROR]   location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[51,6] cannot find symbol
+[ERROR]   symbol:   class XmlJavaTypeAdapter
+[ERROR]   location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[51,25] cannot find symbol
+[ERROR]   symbol:   class CollapsedStringAdapter
+[ERROR]   location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[52,6] cannot find symbol
+[ERROR]   symbol:   class XmlID
+[ERROR]   location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[53,6] cannot find symbol
+[ERROR]   symbol:   class XmlSchemaType
+[ERROR]   location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[55,6] cannot find symbol
+[ERROR]   symbol:   class XmlAttribute
+[ERROR]   location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Endpoint.java:[57,6] cannot find symbol
+[ERROR]   symbol:   class XmlAnyAttribute
+[ERROR]   location: class org.glassfish.tyrus.core.wsadl.model.Endpoint
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[41,18] cannot find symbol
+[ERROR]   symbol: variable XmlAccessType
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/Application.java:[50,6] cannot find symbol
+[ERROR]   symbol:   class XmlAnyElement
+[ERROR]   location: class org.glassfish.tyrus.core.wsadl.model.Application
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/package-info.java:[8,27] package javax.xml.bind.annotation does not exist
+[ERROR] /tmp/tmp.DyrKaYDfKJ/repo/core/target/generated-sources/xjc/org/glassfish/tyrus/core/wsadl/model/package-info.java:[8,130] package javax.xml.bind.annotation does not exist
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :tyrus-core

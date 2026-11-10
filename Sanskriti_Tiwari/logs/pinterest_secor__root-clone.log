@@ -1,0 +1,19 @@
+Cloning into '/tmp/tmp.mglY3N5zAy/repo'...
+Note: switching to '0927a127e3014ee494c97f8c0c25dafe9cf5ac27'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 0927a12 Merge pull request #1679 from pinterest/dependabot/maven/org.powermock-powermock-module-junit4-2.0.9

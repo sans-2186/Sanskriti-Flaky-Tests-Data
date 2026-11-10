@@ -1,0 +1,88 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Redpipe                                                            [pom]
+[INFO] redpipe-engine                                                     [jar]
+[INFO] redpipe-templating-freemarker                                      [jar]
+[INFO] 
+[INFO] ---------------------< net.redpipe:redpipe-parent >---------------------
+[INFO] Building Redpipe 0.0.5-SNAPSHOT                                    [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ redpipe-parent >>>
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ redpipe-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ redpipe-parent ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running PatchingMojo
+[INFO] 
+[INFO] ---------------------< net.redpipe:redpipe-engine >---------------------
+[INFO] Building redpipe-engine 0.0.5-SNAPSHOT                             [2/3]
+[INFO]   from redpipe-engine/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ redpipe-engine >>>
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.21.0-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ redpipe-engine ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ redpipe-engine ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ redpipe-engine ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ redpipe-engine ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ redpipe-engine <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ redpipe-engine ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.OtCBto4PVK/repo/redpipe-engine/.flakesync/Results-BarrierSearch/net.redpipe.templating.freemarker.ApiTest.checkMail-BarrierPoints.csv (No such file or directory)
+[INFO] 
+[INFO] -------------< net.redpipe:redpipe-templating-freemarker >--------------
+[INFO] Building redpipe-templating-freemarker 0.0.5-SNAPSHOT              [3/3]
+[INFO]   from redpipe-templating-freemarker/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ redpipe-templating-freemarker >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ redpipe-templating-freemarker ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ redpipe-templating-freemarker ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ redpipe-templating-freemarker ---
+[INFO] Copying 8 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ redpipe-templating-freemarker ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ redpipe-templating-freemarker <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ redpipe-templating-freemarker ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.OtCBto4PVK/repo/redpipe-templating-freemarker/.flakesync/Results-BarrierSearch/net.redpipe.templating.freemarker.ApiTest.checkMail-BarrierPoints.csv (No such file or directory)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Redpipe 0.0.5-SNAPSHOT:
+[INFO] 
+[INFO] Redpipe ............................................ SUCCESS [  0.333 s]
+[INFO] redpipe-engine ..................................... SUCCESS [  0.497 s]
+[INFO] redpipe-templating-freemarker ...................... SUCCESS [  0.049 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.060 s
+[INFO] Finished at: 2026-11-10T19:22:29Z
+[INFO] ------------------------------------------------------------------------

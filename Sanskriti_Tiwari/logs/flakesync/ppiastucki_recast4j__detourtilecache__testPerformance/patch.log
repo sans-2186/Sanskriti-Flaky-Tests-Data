@@ -1,0 +1,144 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.recast4j:recast:jar:1.0.8-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.recast4j:parent:1.0.8-SNAPSHOT, /tmp/tmp.Ky0jE5SyKx/repo/pom.xml, line 64, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.recast4j:detour:jar:1.0.8-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.recast4j:parent:1.0.8-SNAPSHOT, /tmp/tmp.Ky0jE5SyKx/repo/pom.xml, line 64, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.recast4j:detour-crowd:jar:1.0.8-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.recast4j:parent:1.0.8-SNAPSHOT, /tmp/tmp.Ky0jE5SyKx/repo/pom.xml, line 64, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.recast4j:detour-tile-cache:jar:1.0.8-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.recast4j:parent:1.0.8-SNAPSHOT, /tmp/tmp.Ky0jE5SyKx/repo/pom.xml, line 64, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.recast4j:detour-extras:jar:1.0.8-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ org.recast4j:parent:1.0.8-SNAPSHOT, /tmp/tmp.Ky0jE5SyKx/repo/pom.xml, line 64, column 12
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.recast4j:parent:pom:1.0.8-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 64, column 12
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] Inspecting build with total of 4 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 4 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Recast and Detour for Java                                         [pom]
+[INFO] recast                                                             [jar]
+[INFO] detour                                                             [jar]
+[INFO] detour-tile-cache                                                  [jar]
+[INFO] 
+[INFO] ------------------------< org.recast4j:parent >-------------------------
+[INFO] Building Recast and Detour for Java 1.0.8-SNAPSHOT                 [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ parent >>>
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ parent ---
+INFO: Running PatchingMojo
+[INFO] 
+[INFO] ------------------------< org.recast4j:recast >-------------------------
+[INFO] Building recast 1.0.8-SNAPSHOT                                     [2/4]
+[INFO]   from recast/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ recast >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ recast ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /tmp/tmp.Ky0jE5SyKx/repo/recast/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.3:compile (default-compile) @ recast ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ recast ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.3:testCompile (default-testCompile) @ recast ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ recast <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ recast ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.Ky0jE5SyKx/repo/recast/.flakesync/Results-BarrierSearch/org.recast4j.detour.tilecache.TileCacheTest.testPerformance-BarrierPoints.csv (No such file or directory)
+[INFO] 
+[INFO] ------------------------< org.recast4j:detour >-------------------------
+[INFO] Building detour 1.0.8-SNAPSHOT                                     [3/4]
+[INFO]   from detour/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ detour >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ detour ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /tmp/tmp.Ky0jE5SyKx/repo/detour/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.3:compile (default-compile) @ detour ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ detour ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 5 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.3:testCompile (default-testCompile) @ detour ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ detour <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ detour ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.Ky0jE5SyKx/repo/detour/.flakesync/Results-BarrierSearch/org.recast4j.detour.tilecache.TileCacheTest.testPerformance-BarrierPoints.csv (No such file or directory)
+[INFO] 
+[INFO] -------------------< org.recast4j:detour-tile-cache >-------------------
+[INFO] Building detour-tile-cache 1.0.8-SNAPSHOT                          [4/4]
+[INFO]   from detourtilecache/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:patch (default-cli) > test-compile @ detour-tile-cache >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ detour-tile-cache ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /tmp/tmp.Ky0jE5SyKx/repo/detourtilecache/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.3:compile (default-compile) @ detour-tile-cache ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ detour-tile-cache ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.3:testCompile (default-testCompile) @ detour-tile-cache ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:patch (default-cli) < test-compile @ detour-tile-cache <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:patch (default-cli) @ detour-tile-cache ---
+INFO: Running PatchingMojo
+java.io.FileNotFoundException: /tmp/tmp.Ky0jE5SyKx/repo/detourtilecache/.flakesync/Results-BarrierSearch/org.recast4j.detour.tilecache.TileCacheTest.testPerformance-BarrierPoints.csv (No such file or directory)
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Recast and Detour for Java 1.0.8-SNAPSHOT:
+[INFO] 
+[INFO] Recast and Detour for Java ......................... SUCCESS [  0.280 s]
+[INFO] recast ............................................. SUCCESS [  0.370 s]
+[INFO] detour ............................................. SUCCESS [  0.044 s]
+[INFO] detour-tile-cache .................................. SUCCESS [  0.029 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.394 s
+[INFO] Finished at: 2026-11-10T19:40:14Z
+[INFO] ------------------------------------------------------------------------

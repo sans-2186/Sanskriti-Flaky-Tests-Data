@@ -1,0 +1,1939 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.bitness: 64
+[INFO] os.detected.version: 7.0
+[INFO] os.detected.version.major: 7
+[INFO] os.detected.version.minor: 0
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 26.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Hadoop Main                                                 [pom]
+[INFO] Apache Hadoop Build Tools                                          [jar]
+[INFO] Apache Hadoop Project POM                                          [pom]
+[INFO] Apache Hadoop Annotations                                          [jar]
+[INFO] Apache Hadoop Project Dist POM                                     [pom]
+[INFO] Apache Hadoop Maven Plugins                               [maven-plugin]
+[INFO] Apache Hadoop MiniKDC                                              [jar]
+[INFO] Apache Hadoop Auth                                                 [jar]
+[INFO] Apache Hadoop Common                                               [jar]
+[INFO] Apache Hadoop KMS                                                  [jar]
+[INFO] Apache Hadoop Registry                                             [jar]
+[INFO] Apache Hadoop HDFS Client                                          [jar]
+[INFO] Apache Hadoop HDFS                                                 [jar]
+[INFO] Apache Hadoop YARN                                                 [pom]
+[INFO] Apache Hadoop YARN API                                             [jar]
+[INFO] Apache Hadoop YARN Common                                          [jar]
+[INFO] Apache Hadoop YARN Server                                          [pom]
+[INFO] Apache Hadoop YARN Server Common                                   [jar]
+[INFO] Apache Hadoop YARN ApplicationHistoryService                       [jar]
+[INFO] Apache Hadoop YARN Timeline Service                                [jar]
+[INFO] Apache Hadoop YARN Web Proxy                                       [jar]
+[INFO] Apache Hadoop YARN ResourceManager                                 [jar]
+[INFO] Apache Hadoop YARN NodeManager                                     [jar]
+[INFO] Apache Hadoop YARN Server Tests                                    [jar]
+[INFO] Apache Hadoop YARN Client                                          [jar]
+[INFO] Apache Hadoop MapReduce Client                                     [pom]
+[INFO] Apache Hadoop MapReduce Core                                       [jar]
+[INFO] Apache Hadoop MapReduce Common                                     [jar]
+[INFO] Apache Hadoop MapReduce Shuffle                                    [jar]
+[INFO] Apache Hadoop MapReduce App                                        [jar]
+[INFO] Apache Hadoop MapReduce HistoryServer                              [jar]
+[INFO] Apache Hadoop MapReduce JobClient                                  [jar]
+[INFO] 
+[INFO] -------------------< org.apache.hadoop:hadoop-main >--------------------
+[INFO] Building Apache Hadoop Main 3.4.0-SNAPSHOT                        [1/32]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-main >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (default) @ hadoop-main ---
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (enforce-property) @ hadoop-main ---
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-main ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-main <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-main ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ----------------< org.apache.hadoop:hadoop-build-tools >----------------
+[INFO] Building Apache Hadoop Build Tools 3.4.0-SNAPSHOT                 [2/32]
+[INFO]   from hadoop-build-tools/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-build-tools >>>
+[INFO] 
+[INFO] --- resources:3.0.1:copy-resources (copy-resources) @ hadoop-build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- antrun:1.7:run (dummy) @ hadoop-build-tools ---
+[INFO] No ant target defined - SKIPPED
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-build-tools ---
+[INFO] 
+[INFO] --- resources:3.0.1:resources (default-resources) @ hadoop-build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- remote-resources:1.5:bundle (default) @ hadoop-build-tools ---
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-build-tools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.0.1:testResources (default-testResources) @ hadoop-build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-build-tools/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-build-tools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-build-tools <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-build-tools ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'disableXmlReport' (user property 'disableXmlReport') is deprecated: Instead use disable within statelessTestsetReporter since of 3.0.0-M6.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ------------------< org.apache.hadoop:hadoop-project >------------------
+[INFO] Building Apache Hadoop Project POM 3.4.0-SNAPSHOT                 [3/32]
+[INFO]   from hadoop-project/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-project >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-project ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-project ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-project ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-project ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-project ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-project ---
+[INFO] Skipping
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-project <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-project ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ----------------< org.apache.hadoop:hadoop-annotations >----------------
+[INFO] Building Apache Hadoop Annotations 3.4.0-SNAPSHOT                 [4/32]
+[INFO]   from hadoop-common-project/hadoop-annotations/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-annotations >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-annotations ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-annotations ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-annotations ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-annotations ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-annotations/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-annotations ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-annotations ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-annotations ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-annotations/src/test/resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-annotations ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-annotations ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-annotations <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-annotations ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ---------------< org.apache.hadoop:hadoop-project-dist >----------------
+[INFO] Building Apache Hadoop Project Dist POM 3.4.0-SNAPSHOT            [5/32]
+[INFO]   from hadoop-project-dist/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-project-dist >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-project-dist ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-project-dist ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-project-dist ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-project-dist ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-project-dist ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-project-dist ---
+[INFO] Skipping
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-project-dist <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-project-dist ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ---------------< org.apache.hadoop:hadoop-maven-plugins >---------------
+[INFO] Building Apache Hadoop Maven Plugins 3.4.0-SNAPSHOT               [6/32]
+[INFO]   from hadoop-maven-plugins/pom.xml
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-maven-plugins >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-maven-plugins ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-maven-plugins ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-maven-plugins ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-maven-plugins ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-maven-plugins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-maven-plugins/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-maven-plugins ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- plugin:3.10.1:descriptor (default-descriptor) @ hadoop-maven-plugins ---
+[WARNING] 
+
+Some dependencies of Maven Plugins are expected to be in provided scope.
+Please make sure that dependencies listed below declared in POM
+have set '<scope>provided</scope>' as well.
+
+The following dependencies are in wrong scope:
+ * org.apache.maven:maven-plugin-api:jar:3.9.5:compile
+ * org.apache.maven:maven-model:jar:3.9.5:compile
+ * org.apache.maven:maven-artifact:jar:3.9.5:compile
+ * org.apache.maven:maven-core:jar:3.9.5:compile
+ * org.apache.maven:maven-settings:jar:3.9.5:compile
+ * org.apache.maven:maven-settings-builder:jar:3.9.5:compile
+ * org.apache.maven:maven-builder-support:jar:3.9.5:compile
+ * org.apache.maven:maven-repository-metadata:jar:3.9.5:compile
+ * org.apache.maven:maven-model-builder:jar:3.9.5:compile
+ * org.apache.maven:maven-resolver-provider:jar:3.9.5:compile
+
+
+
+[INFO] Using 'UTF-8' encoding to read mojo source files.
+[INFO] java-annotations mojo extractor found 7 mojo descriptors.
+[INFO] java-javadoc mojo extractor found 0 mojo descriptor.
+[INFO] ant mojo extractor found 0 mojo descriptor.
+[INFO] bsh mojo extractor found 0 mojo descriptor.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-maven-plugins ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-maven-plugins ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-maven-plugins/src/test/resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-maven-plugins ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-maven-plugins ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-maven-plugins <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-maven-plugins ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ------------------< org.apache.hadoop:hadoop-minikdc >------------------
+[INFO] Building Apache Hadoop MiniKDC 3.4.0-SNAPSHOT                     [7/32]
+[INFO]   from hadoop-common-project/hadoop-minikdc/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-minikdc >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-minikdc ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-minikdc ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-minikdc ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-minikdc ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-minikdc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-minikdc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-minikdc ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-minikdc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-minikdc/src/test/resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-minikdc ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-minikdc ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-minikdc <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-minikdc ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] -------------------< org.apache.hadoop:hadoop-auth >--------------------
+[INFO] Building Apache Hadoop Auth 3.4.0-SNAPSHOT                        [8/32]
+[INFO]   from hadoop-common-project/hadoop-auth/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-auth >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-auth ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-auth ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-auth ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-auth ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-auth ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-auth/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-auth ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-auth ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-auth ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-auth/src/test/resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-auth ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-auth ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-auth <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-auth ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ------------------< org.apache.hadoop:hadoop-common >-------------------
+[INFO] Building Apache Hadoop Common 3.4.0-SNAPSHOT                      [9/32]
+[INFO]   from hadoop-common-project/hadoop-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-common >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-common ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc) @ hadoop-common ---
+[INFO] Compiling 14 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/target/generated-sources/java
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc-legacy) @ hadoop-common ---
+[INFO] Compiling 1 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/target/generated-sources/java
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-common ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-common ---
+[INFO] Replacement run on 14 files.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-common ---
+[INFO] Replacement run on 1152 files.
+[INFO] 
+[INFO] --- hadoops:3.4.0-SNAPSHOT:version-info (version-info) @ hadoop-common ---
+[INFO] SCM: GIT
+[INFO] Computed MD5: 6b3797232f65545d7e4bf8a295142d
+[INFO] 
+[INFO] --- hadoops:3.4.0-SNAPSHOT:resource-gz (resource-gz) @ hadoop-common ---
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/webapps/static/hadoop.css to /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/target/webapps/static/hadoop.css.gz
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-common ---
+[INFO] Compiling 1167 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/target/classes
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java:[48,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/SignalLogger.java:[22,16] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/SignalLogger.java:[23,16] sun.misc.SignalHandler is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/service/launcher/IrqHandler.java:[26,16] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/service/launcher/IrqHandler.java:[27,16] sun.misc.SignalHandler is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/FastByteComparisons.java:[27,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java:[895,17] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java:[897,7] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/nativeio/NativeIO.java:[897,24] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/SignalLogger.java:[44,43] sun.misc.SignalHandler is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/SignalLogger.java:[46,19] sun.misc.SignalHandler is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/SignalLogger.java:[50,39] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/SignalLogger.java:[50,21] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/SignalLogger.java:[59,24] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/service/launcher/IrqHandler.java:[42,42] sun.misc.SignalHandler is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/service/launcher/IrqHandler.java:[71,11] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/service/launcher/IrqHandler.java:[92,20] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/service/launcher/IrqHandler.java:[93,7] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/service/launcher/IrqHandler.java:[113,5] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/service/launcher/IrqHandler.java:[126,22] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/FastByteComparisons.java:[134,20] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/FastByteComparisons.java:[140,22] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/FastByteComparisons.java:[145,29] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/GenericOptionsParser.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/GenericOptionsParser.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/FileSystem.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- avro:1.9.2:schema (generate-avro-test-sources) @ hadoop-common ---
+[WARNING] configuration key 'resource.loader' has been deprecated in favor of 'resource.loaders'
+[WARNING] configuration key 'class.resource.loader.class' has been deprecated in favor of 'resource.loader.class.class'
+[WARNING] configuration key 'file.resource.loader.class' has been deprecated in favor of 'resource.loader.file.class'
+[WARNING] configuration key 'file.resource.loader.path' has been deprecated in favor of 'resource.loader.file.path'
+[WARNING] configuration key 'runtime.references.strict' has been deprecated in favor of 'runtime.strict_mode.enable'
+[WARNING] configuration key 'space.gobbling' has been deprecated in favor of 'parser.space_gobbling'
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc) @ hadoop-common ---
+[INFO] Compiling 2 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/target/generated-test-sources/java
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc-legacy) @ hadoop-common ---
+[INFO] Compiling 2 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/target/generated-test-sources/java
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-common ---
+[INFO] Replacement run on 717 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 35 resources
+[INFO] 
+[INFO] --- antrun:1.7:run (create-log-dir) @ hadoop-common ---
+[INFO] Executing tasks
+
+main:
+   [delete] Deleting directory /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/target/test/data
+    [mkdir] Created dir: /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/target/test/data
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-common ---
+[INFO] Replacement run on 3 files.
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-common ---
+[INFO] Compiling 722 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/target/test-classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/security/ssl/KeyStoreTestUtil.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/security/ssl/KeyStoreTestUtil.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/test/LambdaTestUtils.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/test/LambdaTestUtils.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-common ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] --------------------< org.apache.hadoop:hadoop-kms >--------------------
+[INFO] Building Apache Hadoop KMS 3.4.0-SNAPSHOT                        [10/32]
+[INFO]   from hadoop-common-project/hadoop-kms/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-kms >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-kms ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-kms ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-kms ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-kms ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-kms ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-kms ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-kms ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-kms ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-kms ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-kms ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-kms <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-kms ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] -----------------< org.apache.hadoop:hadoop-registry >------------------
+[INFO] Building Apache Hadoop Registry 3.4.0-SNAPSHOT                   [11/32]
+[INFO]   from hadoop-common-project/hadoop-registry/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-registry >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-registry ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-registry ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-registry ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-registry ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- hadoops:3.4.0-SNAPSHOT:version-info (version-info) @ hadoop-registry ---
+[INFO] SCM: GIT
+[INFO] Computed MD5: 54b2c44c6a13fadd1b825f2d76c15b4
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-registry/src/main/resources
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-common-project/hadoop-registry/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-registry ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-registry ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-registry ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-registry ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- jar:2.5:test-jar (default) @ hadoop-registry ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-registry <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-registry ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ----------------< org.apache.hadoop:hadoop-hdfs-client >----------------
+[INFO] Building Apache Hadoop HDFS Client 3.4.0-SNAPSHOT                [12/32]
+[INFO]   from hadoop-hdfs-project/hadoop-hdfs-client/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-hdfs-client >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-hdfs-client ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc) @ hadoop-hdfs-client ---
+[INFO] Compiling 10 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/target/generated-sources/java
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-hdfs-client ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-hdfs-client ---
+[INFO] Replacement run on 10 files.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-hdfs-client ---
+[INFO] Replacement run on 306 files.
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-hdfs-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-hdfs-client ---
+[INFO] Compiling 316 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/target/classes
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/shortcircuit/ShortCircuitShm.java:[40,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/shortcircuit/ShortCircuitShm.java:[57,24] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/shortcircuit/ShortCircuitShm.java:[59,18] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/shortcircuit/ShortCircuitShm.java:[61,17] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/shortcircuit/ShortCircuitShm.java:[63,15] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/protocolPB/PBHelperClient.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/protocolPB/PBHelperClient.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/DFSUtilClient.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/src/main/java/org/apache/hadoop/hdfs/DFSUtilClient.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc) @ hadoop-hdfs-client ---
+[INFO] Skipping mojo execution
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-hdfs-client ---
+[INFO] Replacement run on 27 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-hdfs-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-hdfs-client ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-hdfs-client ---
+[INFO] Compiling 27 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/target/test-classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/src/test/java/org/apache/hadoop/hdfs/web/TestTokenAspect.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs-client/src/test/java/org/apache/hadoop/hdfs/web/TestTokenAspect.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-hdfs-client <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-hdfs-client ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] -------------------< org.apache.hadoop:hadoop-hdfs >--------------------
+[INFO] Building Apache Hadoop HDFS 3.4.0-SNAPSHOT                       [13/32]
+[INFO]   from hadoop-hdfs-project/hadoop-hdfs/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] Parameter 'skipTests' is unknown for plugin 'maven-antrun-plugin:1.7:run (create-testdirs)'
+[WARNING] Parameter 'skipTests' is unknown for plugin 'maven-antrun-plugin:1.7:run (create-web-xmls)'
+[WARNING] Parameter 'skipTests' is unknown for plugin 'maven-antrun-plugin:1.7:run (create-log-dir)'
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-hdfs >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-hdfs ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc) @ hadoop-hdfs ---
+[INFO] Compiling 12 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/generated-sources/java
+[WARNING] PROTOC: QJournalProtocol.proto: warning: Import hdfs.proto but not used.
+fsimage.proto: warning: Import acl.proto but not used.
+fsimage.proto: warning: Import xattr.proto but not used.
+JournalProtocol.proto: warning: Import HdfsServer.proto but not used.
+JournalProtocol.proto: warning: Import hdfs.proto but not used.
+InterQJournalProtocol.proto: warning: Import HdfsServer.proto but not used.
+
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-hdfs ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-hdfs ---
+[INFO] Replacement run on 12 files.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-hdfs ---
+[INFO] Replacement run on 706 files.
+[INFO] 
+[INFO] --- hadoops:3.4.0-SNAPSHOT:resource-gz (resource-gz) @ hadoop-hdfs ---
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/dust-full-2.0.0.min.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/dust-full-2.0.0.min.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/dataTables.bootstrap.css to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/dataTables.bootstrap.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/json-bignum.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/json-bignum.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/dataTables.bootstrap.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/dataTables.bootstrap.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/histogram-hostip.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/histogram-hostip.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/dfs-dust.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/dfs-dust.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/hadoop.css to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/hadoop.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/bootstrap-3.4.1/js/bootstrap-editable.min.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/bootstrap-3.4.1/js/bootstrap-editable.min.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/bootstrap-3.4.1/js/bootstrap.min.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/bootstrap-3.4.1/js/bootstrap.min.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/bootstrap-3.4.1/js/npm.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/bootstrap-3.4.1/js/npm.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/bootstrap-3.4.1/js/bootstrap.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/bootstrap-3.4.1/js/bootstrap.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/bootstrap-3.4.1/css/bootstrap-editable.css to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/bootstrap-3.4.1/css/bootstrap-editable.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/bootstrap-3.4.1/css/bootstrap-theme.css to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/bootstrap-3.4.1/css/bootstrap-theme.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/bootstrap-3.4.1/css/bootstrap.min.css to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/bootstrap-3.4.1/css/bootstrap.min.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/bootstrap-3.4.1/css/bootstrap.css to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/bootstrap-3.4.1/css/bootstrap.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/bootstrap-3.4.1/css/bootstrap-theme.min.css to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/bootstrap-3.4.1/css/bootstrap-theme.min.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/jquery-3.6.0.min.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/jquery-3.6.0.min.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/moment.min.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/moment.min.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/jquery.dataTables.min.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/jquery.dataTables.min.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/rest-csrf.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/rest-csrf.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/dust-helpers-1.1.1.min.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/dust-helpers-1.1.1.min.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/webapps/static/d3-v4.1.1.min.js to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/webapps/static/d3-v4.1.1.min.js.gz
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-hdfs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-hdfs ---
+[INFO] Compiling 718 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/classes
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/checker/AbstractFuture.java:[1045,26] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/checker/AbstractFuture.java:[1053,15] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/checker/AbstractFuture.java:[1055,26] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/checker/AbstractFuture.java:[1060,57] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/checker/AbstractFuture.java:[1062,36] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/checker/AbstractFuture.java:[1063,37] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/checker/AbstractFuture.java:[1063,58] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/balancer/NameNodeConnector.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/balancer/NameNodeConnector.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ReencryptionHandler.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/ReencryptionHandler.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- antrun:1.7:run (create-web-xmls) @ hadoop-hdfs ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc) @ hadoop-hdfs ---
+[INFO] Skipping mojo execution
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-hdfs ---
+[INFO] Replacement run on 855 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-hdfs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 63 resources
+[INFO] 
+[INFO] --- antrun:1.7:run (create-log-dir) @ hadoop-hdfs ---
+[INFO] Executing tasks
+
+main:
+   [delete] Deleting directory /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/test/data
+    [mkdir] Created dir: /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/test/data
+     [copy] Copying 22 files to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/test-classes/webapps
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-hdfs ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-hdfs ---
+[INFO] Compiling 854 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/target/test-classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/DFSTestUtil.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/DFSTestUtil.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/TestEncryptionZones.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-hdfs-project/hadoop-hdfs/src/test/java/org/apache/hadoop/hdfs/TestEncryptionZones.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-hdfs <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-hdfs ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] -------------------< org.apache.hadoop:hadoop-yarn >--------------------
+[INFO] Building Apache Hadoop YARN 3.4.0-SNAPSHOT                       [14/32]
+[INFO]   from hadoop-yarn-project/hadoop-yarn/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-yarn >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-yarn ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-yarn ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-yarn ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-yarn ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-yarn ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-yarn ---
+[INFO] Skipping
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-yarn <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-yarn ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] -----------------< org.apache.hadoop:hadoop-yarn-api >------------------
+[INFO] Building Apache Hadoop YARN API 3.4.0-SNAPSHOT                   [15/32]
+[INFO]   from hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-yarn-api >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-yarn-api ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc) @ hadoop-yarn-api ---
+[INFO] Compiling 13 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/target/generated-sources/java
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-yarn-api ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-yarn-api ---
+[INFO] Replacement run on 13 files.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-yarn-api ---
+[INFO] Replacement run on 351 files.
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-yarn-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-yarn-api ---
+[INFO] Compiling 364 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/target/classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/target/generated-sources/java/org/apache/hadoop/yarn/proto/CsiAdaptorProtos.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/target/generated-sources/java/org/apache/hadoop/yarn/proto/CsiAdaptorProtos.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc) @ hadoop-yarn-api ---
+[INFO] Skipping mojo execution
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-yarn-api ---
+[INFO] Replacement run on 9 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-yarn-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/test/resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-yarn-api ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-yarn-api ---
+[INFO] Compiling 9 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/target/test-classes
+[INFO] 
+[INFO] --- jar:2.5:test-jar (default) @ hadoop-yarn-api ---
+[INFO] Building jar: /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/target/hadoop-yarn-api-3.4.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-yarn-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-yarn-api ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ----------------< org.apache.hadoop:hadoop-yarn-common >----------------
+[INFO] Building Apache Hadoop YARN Common 3.4.0-SNAPSHOT                [16/32]
+[INFO]   from hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-yarn-common >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-yarn-common ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc) @ hadoop-yarn-common ---
+[INFO] Compiling 1 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/generated-sources/java
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-yarn-common ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-yarn-common ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-yarn-common ---
+[INFO] Replacement run on 506 files.
+[INFO] 
+[INFO] --- hadoops:3.4.0-SNAPSHOT:version-info (version-info) @ hadoop-yarn-common ---
+[INFO] SCM: GIT
+[INFO] Computed MD5: c1dd986ff7185c6188421742d06888e
+[INFO] 
+[INFO] --- hadoops:3.4.0-SNAPSHOT:resource-gz (resource-gz) @ hadoop-yarn-common ---
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/yarn.css to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/yarn.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/dt-1.11.5/js/jquery.dataTables.min.js to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.11.5/js/jquery.dataTables.min.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/dt-1.11.5/css/custom_datatable.css to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.11.5/css/custom_datatable.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/dt-1.11.5/css/jquery.dataTables.css to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.11.5/css/jquery.dataTables.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/dt-1.11.5/css/demo_table.css to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.11.5/css/demo_table.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/dt-1.11.5/css/jui-dt.css to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.11.5/css/jui-dt.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/dt-1.11.5/css/demo_page.css to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-1.11.5/css/demo_page.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/jquery/themes-1.9.1/base/jquery-ui.css to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/themes-1.9.1/base/jquery-ui.css.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/jquery/jquery-3.6.0.min.js to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/jquery-3.6.0.min.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/jquery/jquery-ui-1.13.2.custom.min.js to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jquery/jquery-ui-1.13.2.custom.min.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/dt-sorting/natural.js to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/dt-sorting/natural.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/federation/federation.js to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/federation/federation.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/yarn.dt.plugins.js to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/yarn.dt.plugins.js.gz
+[INFO] Compressing /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/resources/webapps/static/jt/jquery.jstree.js to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes/webapps/static/jt/jquery.jstree.js.gz
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-yarn-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 55 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-yarn-common ---
+[INFO] Compiling 507 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/client/api/impl/TimelineClientImpl.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/client/api/impl/TimelineClientImpl.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/client/api/AppAdminClient.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/client/api/AppAdminClient.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc) @ hadoop-yarn-common ---
+[INFO] Skipping mojo execution
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-yarn-common ---
+[INFO] Replacement run on 113 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-yarn-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 26 resources
+[INFO] Copying 16 resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-yarn-common ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-yarn-common ---
+[INFO] Compiling 113 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/test-classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/security/TestDockerClientConfigHandler.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/security/TestDockerClientConfigHandler.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/nodelabels/TestCommonNodeLabelsManager.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/nodelabels/TestCommonNodeLabelsManager.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- jar:2.5:test-jar (default) @ hadoop-yarn-common ---
+[INFO] Building jar: /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/target/hadoop-yarn-common-3.4.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-yarn-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-yarn-common ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ----------------< org.apache.hadoop:hadoop-yarn-server >----------------
+[INFO] Building Apache Hadoop YARN Server 3.4.0-SNAPSHOT                [17/32]
+[INFO]   from hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-yarn-server >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-yarn-server ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-yarn-server ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-yarn-server ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-yarn-server ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-yarn-server ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-yarn-server ---
+[INFO] Skipping
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-yarn-server <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-yarn-server ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ------------< org.apache.hadoop:hadoop-yarn-server-common >-------------
+[INFO] Building Apache Hadoop YARN Server Common 3.4.0-SNAPSHOT         [18/32]
+[INFO]   from hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-yarn-server-common >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-yarn-server-common ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc) @ hadoop-yarn-server-common ---
+[INFO] Compiling 7 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/target/generated-sources/java
+[WARNING] PROTOC: yarn_server_federation_protos.proto: warning: Import yarn_server_common_protos.proto but not used.
+
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-yarn-server-common ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-yarn-server-common ---
+[INFO] Replacement run on 7 files.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-yarn-server-common ---
+[INFO] Replacement run on 337 files.
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-yarn-server-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-yarn-server-common ---
+[INFO] Compiling 344 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/target/classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/target/generated-sources/java/org/apache/hadoop/yarn/proto/YarnServerCommonServiceProtos.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/target/generated-sources/java/org/apache/hadoop/yarn/proto/YarnServerCommonServiceProtos.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/src/main/java/org/apache/hadoop/yarn/server/webapp/LogServlet.java: /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/src/main/java/org/apache/hadoop/yarn/server/webapp/LogServlet.java uses unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/src/main/java/org/apache/hadoop/yarn/server/webapp/LogServlet.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc) @ hadoop-yarn-server-common ---
+[INFO] Skipping mojo execution
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-yarn-server-common ---
+[INFO] Replacement run on 65 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-yarn-server-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-yarn-server-common ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-yarn-server-common ---
+[INFO] Compiling 65 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/target/test-classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/src/test/java/org/apache/hadoop/yarn/server/federation/policies/manager/BasePolicyManagerTest.java: /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/src/test/java/org/apache/hadoop/yarn/server/federation/policies/manager/BasePolicyManagerTest.java uses or overrides a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/src/test/java/org/apache/hadoop/yarn/server/federation/policies/manager/BasePolicyManagerTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- jar:2.5:test-jar (default) @ hadoop-yarn-server-common ---
+[INFO] Building jar: /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-common/target/hadoop-yarn-server-common-3.4.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-yarn-server-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-yarn-server-common ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ---< org.apache.hadoop:hadoop-yarn-server-applicationhistoryservice >---
+[INFO] Building Apache Hadoop YARN ApplicationHistoryService 3.4.0-SNAPSHOT [19/32]
+[INFO]   from hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-yarn-server-applicationhistoryservice >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-yarn-server-applicationhistoryservice ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc) @ hadoop-yarn-server-applicationhistoryservice ---
+[INFO] Compiling 1 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/target/generated-sources/java
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-yarn-server-applicationhistoryservice ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-yarn-server-applicationhistoryservice ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-yarn-server-applicationhistoryservice ---
+[INFO] Replacement run on 65 files.
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-yarn-server-applicationhistoryservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-yarn-server-applicationhistoryservice ---
+[INFO] Compiling 66 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/target/classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/timeline/GenericObjectMapper.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/timeline/GenericObjectMapper.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/ContextFactory.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/main/java/org/apache/hadoop/yarn/server/applicationhistoryservice/webapp/ContextFactory.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc) @ hadoop-yarn-server-applicationhistoryservice ---
+[INFO] Skipping mojo execution
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-yarn-server-applicationhistoryservice ---
+[INFO] Replacement run on 21 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-yarn-server-applicationhistoryservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/test/resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-yarn-server-applicationhistoryservice ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-yarn-server-applicationhistoryservice ---
+[INFO] Compiling 21 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/target/test-classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/test/java/org/apache/hadoop/yarn/server/timeline/webapp/TestTimelineWebServices.java: /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/test/java/org/apache/hadoop/yarn/server/timeline/webapp/TestTimelineWebServices.java uses unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/src/test/java/org/apache/hadoop/yarn/server/timeline/webapp/TestTimelineWebServices.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- jar:2.5:test-jar (default) @ hadoop-yarn-server-applicationhistoryservice ---
+[INFO] Building jar: /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-applicationhistoryservice/target/hadoop-yarn-server-applicationhistoryservice-3.4.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-yarn-server-applicationhistoryservice <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-yarn-server-applicationhistoryservice ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] --------< org.apache.hadoop:hadoop-yarn-server-timelineservice >--------
+[INFO] Building Apache Hadoop YARN Timeline Service 3.4.0-SNAPSHOT      [20/32]
+[INFO]   from hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-timelineservice/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-yarn-server-timelineservice >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-yarn-server-timelineservice ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-yarn-server-timelineservice ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-yarn-server-timelineservice ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-yarn-server-timelineservice ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-yarn-server-timelineservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-yarn-server-timelineservice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-yarn-server-timelineservice ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-yarn-server-timelineservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-yarn-server-timelineservice ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-yarn-server-timelineservice ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- jar:2.5:test-jar (default) @ hadoop-yarn-server-timelineservice ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-yarn-server-timelineservice <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-yarn-server-timelineservice ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] -----------< org.apache.hadoop:hadoop-yarn-server-web-proxy >-----------
+[INFO] Building Apache Hadoop YARN Web Proxy 3.4.0-SNAPSHOT             [21/32]
+[INFO]   from hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-web-proxy/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-yarn-server-web-proxy >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-yarn-server-web-proxy ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-yarn-server-web-proxy ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-yarn-server-web-proxy ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-yarn-server-web-proxy ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-yarn-server-web-proxy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-web-proxy/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-yarn-server-web-proxy ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-yarn-server-web-proxy ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-yarn-server-web-proxy ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-yarn-server-web-proxy ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-yarn-server-web-proxy ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- jar:2.5:test-jar (default) @ hadoop-yarn-server-web-proxy ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-yarn-server-web-proxy <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-yarn-server-web-proxy ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] --------< org.apache.hadoop:hadoop-yarn-server-resourcemanager >--------
+[INFO] Building Apache Hadoop YARN ResourceManager 3.4.0-SNAPSHOT       [22/32]
+[INFO]   from hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-yarn-server-resourcemanager >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-yarn-server-resourcemanager ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc) @ hadoop-yarn-server-resourcemanager ---
+[INFO] Compiling 1 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/generated-sources/java
+[INFO] 
+[INFO] --- jsonschema2pojo:1.1.1:generate (default) @ hadoop-yarn-server-resourcemanager ---
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-yarn-server-resourcemanager ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-yarn-server-resourcemanager ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-yarn-server-resourcemanager ---
+[INFO] Replacement run on 746 files.
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-yarn-server-resourcemanager ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-yarn-server-resourcemanager ---
+[INFO] Compiling 747 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/fair/converter/FSConfigToCSConfigArgumentHandler.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/fair/converter/FSConfigToCSConfigArgumentHandler.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/constraint/AllocationTagsManager.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/constraint/AllocationTagsManager.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc) @ hadoop-yarn-server-resourcemanager ---
+[INFO] Compiling 1 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/generated-test-sources/java
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-yarn-server-resourcemanager ---
+[INFO] Replacement run on 399 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-yarn-server-resourcemanager ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 79 resources
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-yarn-server-resourcemanager ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-yarn-server-resourcemanager ---
+[INFO] Compiling 400 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/test-classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/fair/converter/TestFSQueueConverter.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/fair/converter/TestFSQueueConverter.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/attempt/TestRMAppAttemptTransitions.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/attempt/TestRMAppAttemptTransitions.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- jar:2.5:test-jar (default) @ hadoop-yarn-server-resourcemanager ---
+[INFO] Building jar: /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/target/hadoop-yarn-server-resourcemanager-3.4.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-yarn-server-resourcemanager <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-yarn-server-resourcemanager ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ----------< org.apache.hadoop:hadoop-yarn-server-nodemanager >----------
+[INFO] Building Apache Hadoop YARN NodeManager 3.4.0-SNAPSHOT           [23/32]
+[INFO]   from hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-yarn-server-nodemanager >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-yarn-server-nodemanager ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc) @ hadoop-yarn-server-nodemanager ---
+[INFO] Compiling 3 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/target/generated-sources/java
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-yarn-server-nodemanager ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-yarn-server-nodemanager ---
+[INFO] Replacement run on 3 files.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-yarn-server-nodemanager ---
+[INFO] Replacement run on 391 files.
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-yarn-server-nodemanager ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 26 resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-yarn-server-nodemanager ---
+[INFO] Compiling 394 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/target/classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/amrmproxy/FederationInterceptor.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/amrmproxy/FederationInterceptor.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/linux/resources/CGroupElasticMemoryController.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/linux/resources/CGroupElasticMemoryController.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc) @ hadoop-yarn-server-nodemanager ---
+[INFO] Skipping mojo execution
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-yarn-server-nodemanager ---
+[INFO] Replacement run on 177 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-yarn-server-nodemanager ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 12 resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-yarn-server-nodemanager ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-yarn-server-nodemanager ---
+[INFO] Compiling 177 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/target/test-classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/test/java/org/apache/hadoop/yarn/server/nodemanager/TestLinuxContainerExecutor.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/test/java/org/apache/hadoop/yarn/server/nodemanager/TestLinuxContainerExecutor.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/test/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/resourceplugin/deviceframework/TestDevicePluginAdapter.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/test/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/resourceplugin/deviceframework/TestDevicePluginAdapter.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-yarn-server-nodemanager <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-yarn-server-nodemanager ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] -------------< org.apache.hadoop:hadoop-yarn-server-tests >-------------
+[INFO] Building Apache Hadoop YARN Server Tests 3.4.0-SNAPSHOT          [24/32]
+[INFO]   from hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-tests/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-yarn-server-tests >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-yarn-server-tests ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc) @ hadoop-yarn-server-tests ---
+[INFO] Skipping mojo execution
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-yarn-server-tests ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-yarn-server-tests ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-yarn-server-tests ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-yarn-server-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-tests/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-yarn-server-tests ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc) @ hadoop-yarn-server-tests ---
+[INFO] Compiling 1 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-tests/target/generated-test-sources/java
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-yarn-server-tests ---
+[INFO] Replacement run on 11 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-yarn-server-tests ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-yarn-server-tests ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-yarn-server-tests ---
+[INFO] Compiling 12 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-tests/target/test-classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-tests/src/test/java/org/apache/hadoop/yarn/server/TestMiniYarnCluster.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-tests/src/test/java/org/apache/hadoop/yarn/server/TestMiniYarnCluster.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- jar:2.5:test-jar (default) @ hadoop-yarn-server-tests ---
+[INFO] Building jar: /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-tests/target/hadoop-yarn-server-tests-3.4.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-yarn-server-tests <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-yarn-server-tests ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ----------------< org.apache.hadoop:hadoop-yarn-client >----------------
+[INFO] Building Apache Hadoop YARN Client 3.4.0-SNAPSHOT                [25/32]
+[INFO]   from hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-yarn-client >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-yarn-client ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc) @ hadoop-yarn-client ---
+[INFO] Skipping mojo execution
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-yarn-client ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-yarn-client ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-yarn-client ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-yarn-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-yarn-client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc) @ hadoop-yarn-client ---
+[INFO] Compiling 1 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/target/generated-test-sources/java
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-yarn-client ---
+[INFO] Replacement run on 44 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-yarn-client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-yarn-client ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-yarn-client ---
+[INFO] Compiling 45 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/target/test-classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/test/java/org/apache/hadoop/yarn/client/ProtocolHATestBase.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/test/java/org/apache/hadoop/yarn/client/ProtocolHATestBase.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/test/java/org/apache/hadoop/yarn/client/TestNoHaRMFailoverProxyProvider.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/test/java/org/apache/hadoop/yarn/client/TestNoHaRMFailoverProxyProvider.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-yarn-client <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-yarn-client ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] -------------< org.apache.hadoop:hadoop-mapreduce-client >--------------
+[INFO] Building Apache Hadoop MapReduce Client 3.4.0-SNAPSHOT           [26/32]
+[INFO]   from hadoop-mapreduce-project/hadoop-mapreduce-client/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-mapreduce-client >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-mapreduce-client ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-mapreduce-client ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-mapreduce-client ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-mapreduce-client ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-mapreduce-client ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-mapreduce-client ---
+[INFO] Skipping
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-mapreduce-client <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-mapreduce-client ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] -----------< org.apache.hadoop:hadoop-mapreduce-client-core >-----------
+[INFO] Building Apache Hadoop MapReduce Core 3.4.0-SNAPSHOT             [27/32]
+[INFO]   from hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-mapreduce-client-core >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-mapreduce-client-core ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- avro:1.9.2:protocol (default) @ hadoop-mapreduce-client-core ---
+[WARNING] configuration key 'resource.loader' has been deprecated in favor of 'resource.loaders'
+[WARNING] configuration key 'class.resource.loader.class' has been deprecated in favor of 'resource.loader.class.class'
+[WARNING] configuration key 'file.resource.loader.class' has been deprecated in favor of 'resource.loader.file.class'
+[WARNING] configuration key 'file.resource.loader.path' has been deprecated in favor of 'resource.loader.file.path'
+[WARNING] configuration key 'runtime.references.strict' has been deprecated in favor of 'runtime.strict_mode.enable'
+[WARNING] configuration key 'space.gobbling' has been deprecated in favor of 'parser.space_gobbling'
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-mapreduce-client-core ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-mapreduce-client-core ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-mapreduce-client-core ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-mapreduce-client-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-mapreduce-client-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-mapreduce-client-core ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-mapreduce-client-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-mapreduce-client-core ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-mapreduce-client-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- jar:2.5:test-jar (default) @ hadoop-mapreduce-client-core ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-mapreduce-client-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-mapreduce-client-core ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ----------< org.apache.hadoop:hadoop-mapreduce-client-common >----------
+[INFO] Building Apache Hadoop MapReduce Common 3.4.0-SNAPSHOT           [28/32]
+[INFO]   from hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-mapreduce-client-common >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-mapreduce-client-common ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc) @ hadoop-mapreduce-client-common ---
+[INFO] Compiling 4 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/target/generated-sources/java
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-mapreduce-client-common ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-mapreduce-client-common ---
+[INFO] Replacement run on 4 files.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-mapreduce-client-common ---
+[INFO] Replacement run on 126 files.
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-mapreduce-client-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-mapreduce-client-common ---
+[INFO] Compiling 130 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/target/classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/LocalResourceBuilder.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/LocalResourceBuilder.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc) @ hadoop-mapreduce-client-common ---
+[INFO] Skipping mojo execution
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-mapreduce-client-common ---
+[INFO] Replacement run on 12 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-mapreduce-client-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-mapreduce-client-common ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-mapreduce-client-common ---
+[INFO] Compiling 12 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/target/test-classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/test/java/org/apache/hadoop/mapred/TestMRWithDistributedCache.java: /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/test/java/org/apache/hadoop/mapred/TestMRWithDistributedCache.java uses or overrides a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/test/java/org/apache/hadoop/mapred/TestMRWithDistributedCache.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-mapreduce-client-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-mapreduce-client-common ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ---------< org.apache.hadoop:hadoop-mapreduce-client-shuffle >----------
+[INFO] Building Apache Hadoop MapReduce Shuffle 3.4.0-SNAPSHOT          [29/32]
+[INFO]   from hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-shuffle/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-mapreduce-client-shuffle >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-mapreduce-client-shuffle ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protobuf:0.5.1:compile (src-compile-protoc) @ hadoop-mapreduce-client-shuffle ---
+[INFO] Compiling 1 proto file(s) to /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-shuffle/target/generated-sources/java
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-mapreduce-client-shuffle ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-mapreduce-client-shuffle ---
+[INFO] Replacement run on 1 file.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-mapreduce-client-shuffle ---
+[INFO] Replacement run on 6 files.
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-mapreduce-client-shuffle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-shuffle/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-mapreduce-client-shuffle ---
+[INFO] Compiling 7 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-shuffle/target/classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-shuffle/target/generated-sources/java/org/apache/hadoop/mapred/proto/ShuffleHandlerRecoveryProtos.java: /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-shuffle/target/generated-sources/java/org/apache/hadoop/mapred/proto/ShuffleHandlerRecoveryProtos.java uses or overrides a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-shuffle/target/generated-sources/java/org/apache/hadoop/mapred/proto/ShuffleHandlerRecoveryProtos.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- protobuf:0.5.1:test-compile (src-test-compile-protoc) @ hadoop-mapreduce-client-shuffle ---
+[INFO] Skipping mojo execution
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-mapreduce-client-shuffle ---
+[INFO] Replacement run on 5 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-mapreduce-client-shuffle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-mapreduce-client-shuffle ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-mapreduce-client-shuffle ---
+[INFO] Compiling 5 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-shuffle/target/test-classes
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-mapreduce-client-shuffle <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-mapreduce-client-shuffle ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] -----------< org.apache.hadoop:hadoop-mapreduce-client-app >------------
+[INFO] Building Apache Hadoop MapReduce App 3.4.0-SNAPSHOT              [30/32]
+[INFO]   from hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-mapreduce-client-app >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-mapreduce-client-app ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-mapreduce-client-app ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-mapreduce-client-app ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-mapreduce-client-app ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-mapreduce-client-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-mapreduce-client-app ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-mapreduce-client-app ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-mapreduce-client-app ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-mapreduce-client-app ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-mapreduce-client-app ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- jar:2.5:test-jar (default) @ hadoop-mapreduce-client-app ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-mapreduce-client-app <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-mapreduce-client-app ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] ------------< org.apache.hadoop:hadoop-mapreduce-client-hs >------------
+[INFO] Building Apache Hadoop MapReduce HistoryServer 3.4.0-SNAPSHOT    [31/32]
+[INFO]   from hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-mapreduce-client-hs >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-mapreduce-client-hs ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-mapreduce-client-hs ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-mapreduce-client-hs ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-mapreduce-client-hs ---
+[INFO] Replacement run on 49 files.
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-mapreduce-client-hs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-mapreduce-client-hs ---
+[INFO] Compiling 49 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/target/classes
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-mapreduce-client-hs ---
+[INFO] Replacement run on 31 files.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-mapreduce-client-hs ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-mapreduce-client-hs ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-mapreduce-client-hs ---
+[INFO] Compiling 31 source files to /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/target/test-classes
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/src/test/java/org/apache/hadoop/mapreduce/v2/hs/server/TestHSAdminServer.java: /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/src/test/java/org/apache/hadoop/mapreduce/v2/hs/server/TestHSAdminServer.java uses or overrides a deprecated API.
+[INFO] /tmp/tmp.J928NUxL4U/repo/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-hs/src/test/java/org/apache/hadoop/mapreduce/v2/hs/server/TestHSAdminServer.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-mapreduce-client-hs <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-mapreduce-client-hs ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+This location is not a good one. Go back and run minimizer again.
+[INFO] 
+[INFO] --------< org.apache.hadoop:hadoop-mapreduce-client-jobclient >---------
+[INFO] Building Apache Hadoop MapReduce JobClient 3.4.0-SNAPSHOT        [32/32]
+[INFO]   from hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-jobclient/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:critsearch (default-cli) > test-compile @ hadoop-mapreduce-client-jobclient >>>
+[INFO] 
+[INFO] --- antrun:1.7:run (create-testdirs) @ hadoop-mapreduce-client-jobclient ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (banned-illegal-imports) @ hadoop-mapreduce-client-jobclient ---
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-sources) @ hadoop-mapreduce-client-jobclient ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-sources) @ hadoop-mapreduce-client-jobclient ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ hadoop-mapreduce-client-jobclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hadoop-mapreduce-client-jobclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-test-sources) @ hadoop-mapreduce-client-jobclient ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ hadoop-mapreduce-client-jobclient ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (replace-generated-test-sources) @ hadoop-mapreduce-client-jobclient ---
+[INFO] Skipping
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ hadoop-mapreduce-client-jobclient ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- jar:2.5:test-jar (default) @ hadoop-mapreduce-client-jobclient ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:critsearch (default-cli) < test-compile @ hadoop-mapreduce-client-jobclient <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:critsearch (default-cli) @ hadoop-mapreduce-client-jobclient ---
+INFO: Running CritSearchMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.hadoop.mapred.TestLocalMRNotification
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.747 s - in org.apache.hadoop.mapred.TestLocalMRNotification
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+This location is not a good one. Go back and run minimizer again.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache Hadoop Main 3.4.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache Hadoop Main ................................. SUCCESS [  0.594 s]
+[INFO] Apache Hadoop Build Tools .......................... SUCCESS [  0.992 s]
+[INFO] Apache Hadoop Project POM .......................... SUCCESS [  0.543 s]
+[INFO] Apache Hadoop Annotations .......................... SUCCESS [  0.242 s]
+[INFO] Apache Hadoop Project Dist POM ..................... SUCCESS [  0.052 s]
+[INFO] Apache Hadoop Maven Plugins ........................ SUCCESS [  1.356 s]
+[INFO] Apache Hadoop MiniKDC .............................. SUCCESS [  0.118 s]
+[INFO] Apache Hadoop Auth ................................. SUCCESS [  0.515 s]
+[INFO] Apache Hadoop Common ............................... SUCCESS [ 23.256 s]
+[INFO] Apache Hadoop KMS .................................. SUCCESS [  0.150 s]
+[INFO] Apache Hadoop Registry ............................. SUCCESS [  0.462 s]
+[INFO] Apache Hadoop HDFS Client .......................... SUCCESS [ 13.802 s]
+[INFO] Apache Hadoop HDFS ................................. SUCCESS [ 21.825 s]
+[INFO] Apache Hadoop YARN ................................. SUCCESS [  0.031 s]
+[INFO] Apache Hadoop YARN API ............................. SUCCESS [  8.260 s]
+[INFO] Apache Hadoop YARN Common .......................... SUCCESS [  6.058 s]
+[INFO] Apache Hadoop YARN Server .......................... SUCCESS [  0.041 s]
+[INFO] Apache Hadoop YARN Server Common ................... SUCCESS [  4.698 s]
+[INFO] Apache Hadoop YARN ApplicationHistoryService ....... SUCCESS [  1.430 s]
+[INFO] Apache Hadoop YARN Timeline Service ................ SUCCESS [  0.336 s]
+[INFO] Apache Hadoop YARN Web Proxy ....................... SUCCESS [  0.182 s]
+[INFO] Apache Hadoop YARN ResourceManager ................. SUCCESS [ 11.469 s]
+[INFO] Apache Hadoop YARN NodeManager ..................... SUCCESS [  5.613 s]
+[INFO] Apache Hadoop YARN Server Tests .................... SUCCESS [  0.575 s]
+[INFO] Apache Hadoop YARN Client .......................... SUCCESS [  1.367 s]
+[INFO] Apache Hadoop MapReduce Client ..................... SUCCESS [  0.073 s]
+[INFO] Apache Hadoop MapReduce Core ....................... SUCCESS [  1.863 s]
+[INFO] Apache Hadoop MapReduce Common ..................... SUCCESS [  2.292 s]
+[INFO] Apache Hadoop MapReduce Shuffle .................... SUCCESS [  0.660 s]
+[INFO] Apache Hadoop MapReduce App ........................ SUCCESS [  0.583 s]
+[INFO] Apache Hadoop MapReduce HistoryServer .............. SUCCESS [  1.273 s]
+[INFO] Apache Hadoop MapReduce JobClient .................. SUCCESS [  5.471 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:57 min
+[INFO] Finished at: 2026-11-10T19:06:08Z
+[INFO] ------------------------------------------------------------------------

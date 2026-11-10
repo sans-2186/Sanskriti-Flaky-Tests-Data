@@ -1,0 +1,2323 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.bookkeeper:bookkeeper-tools:jar:4.15.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-antrun-plugin @ line 65, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.bookkeeper.tests:scripts:jar:4.15.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 55, column 15
+[WARNING] 'build.plugins.plugin.version' for com.googlecode.maven-download-plugin:download-maven-plugin is missing. @ line 36, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Detecting the operating system and CPU architecture
+[INFO] ------------------------------------------------------------------------
+[INFO] os.detected.name: linux
+[INFO] os.detected.arch: x86_64
+[INFO] os.detected.release: ubuntu
+[INFO] os.detected.release.version: 26.04
+[INFO] os.detected.release.like.ubuntu: true
+[INFO] os.detected.release.like.debian: true
+[INFO] os.detected.classifier: linux-x86_64
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache BookKeeper :: Parent                                        [pom]
+[INFO] Apache BookKeeper :: Build Tools                                   [jar]
+[INFO] Apache BookKeeper :: Circe Checksum Library                        [nar]
+[INFO] Apache BookKeeper :: Stats API                                     [jar]
+[INFO] Apache BookKeeper :: CPU Affinity Library                          [nar]
+[INFO] Apache BookKeeper :: Common                                        [jar]
+[INFO] Apache BookKeeper :: Common :: Allocator                           [jar]
+[INFO] Apache BookKeeper :: Protocols                                     [jar]
+[INFO] Apache BookKeeper :: Tools :: Parent                               [pom]
+[INFO] Apache BookKeeper :: Tools :: Framework                            [jar]
+[INFO] Apache BookKeeper :: Http :: Http Server                           [jar]
+[INFO] Apache BookKeeper :: Stats Providers :: Prometheus                 [jar]
+[INFO] Apache BookKeeper :: Bookkeeper Http :: Vertx Http Server          [jar]
+[INFO] Apache BookKeeper :: Server                                        [jar]
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom (5.2 kB at 21 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom (7.2 kB at 166 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar (41 kB at 778 kB/s)
+[INFO] 
+[INFO] ------------------< org.apache.bookkeeper:bookkeeper >------------------
+[INFO] Building Apache BookKeeper :: Parent 4.15.0-SNAPSHOT              [1/14]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ bookkeeper >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ bookkeeper ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ bookkeeper ---
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ bookkeeper <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ bookkeeper ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom (3.4 kB at 78 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom (18 kB at 461 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom (2.2 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom (9.3 kB at 202 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom (8.3 kB at 166 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom (24 kB at 460 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom (4.0 kB at 98 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom (1.8 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom (2.6 kB at 52 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom (1.7 kB at 36 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom (1.5 kB at 33 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom (1.9 kB at 41 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom (2.1 kB at 48 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom (2.7 kB at 56 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom (4.2 kB at 91 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom (14 kB at 312 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom (2.6 kB at 62 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom (14 kB at 320 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom (3.1 kB at 67 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom (5.7 kB at 129 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom (7.7 kB at 171 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom (4.0 kB at 94 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom (1.8 kB at 41 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom (29 kB at 652 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom (2.0 kB at 45 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom (2.1 kB at 51 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom (3.4 kB at 80 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom (6.1 kB at 136 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom (7.3 kB at 159 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom (2.6 kB at 57 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom (20 kB at 458 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom (8.1 kB at 156 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/5/jvnet-parent-5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/5/jvnet-parent-5.pom (8.9 kB at 193 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom (4.9 kB at 105 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.0/all-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.0/all-1.2.0.pom (18 kB at 417 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom (4.7 kB at 105 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom (4.0 kB at 93 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom (1.5 kB at 32 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar (63 kB at 1.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar (10 kB at 219 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar (15 kB at 173 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar (44 kB at 418 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar (12 kB at 106 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar (43 kB at 395 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar (27 kB at 207 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar (55 kB at 372 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar (638 kB at 3.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar (177 kB at 978 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar (67 kB at 367 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar (31 kB at 163 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar (173 kB at 790 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar (136 kB at 603 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar (147 kB at 607 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar (205 kB at 845 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar (2.3 MB at 9.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar (378 kB at 1.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar (47 kB at 168 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar (62 kB at 220 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar (164 kB at 575 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar (424 kB at 1.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar (35 kB at 106 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar (2.1 kB at 6.5 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar (128 kB at 388 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar (57 kB at 165 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar (563 kB at 1.6 MB/s)
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_ZGCvXyJmG0ARZIfxs4ELVML2SxQcgN4m6oHQqx22o=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/.nondex
+nondexExecid=ISIkIbqMJnQmiTq1U8dGZiLiZJlNxRb+P4G6OsLwzeM=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/.nondex
+nondexExecid=ektN0yr0GGBidNKJLCuCBTP2h9qIiyoILpN0uU0l1s=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/.nondex
+nondexExecid=pnXAu8PL9kLBNzXPyesCDtntoC9XqolkI7muuOIbkzI=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/.nondex" -DnondexExecid=ISIkIbqMJnQmiTq1U8dGZiLiZJlNxRb+P4G6OsLwzeM= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/.nondex" -DnondexExecid=ektN0yr0GGBidNKJLCuCBTP2h9qIiyoILpN0uU0l1s= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/.nondex" -DnondexExecid=pnXAu8PL9kLBNzXPyesCDtntoC9XqolkI7muuOIbkzI= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.iQvgqMXLSW/repo/.nondex/ISIkIbqMJnQmiTq1U8dGZiLiZJlNxRb+P4G6OsLwzeM=/test_results.html
+[INFO] [NonDex] The id of this run is: ISIkIbqMJnQmiTq1U8dGZiLiZJlNxRb+P4G6OsLwzeM=
+[INFO] 
+[INFO] ------------------< org.apache.bookkeeper:buildtools >------------------
+[INFO] Building Apache BookKeeper :: Build Tools 4.15.0-SNAPSHOT         [2/14]
+[INFO]   from buildtools/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ buildtools >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ buildtools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ buildtools ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ buildtools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ buildtools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ buildtools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/buildtools/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ buildtools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ buildtools <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ buildtools ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_ddfkfepsEdBc37N0SR9+GmmkoIQkEd0muJfnAwkP4U=
+nondexLogging=CONFIG
+test=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex
+nondexExecid=AppW2HPg9OyFpeMvvE+mfyfMoaUcpzo29QO4Mc+VrB8=
+nondexLogging=CONFIG
+test=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex
+nondexExecid=FHYol4AHokDE4gcJuw7pt5bUO1JyM2tLZ+CB3DEsMU=
+nondexLogging=CONFIG
+test=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex
+nondexExecid=rjuEI9xbybnkuAcpSlrzQJDENeGlggdzaH7aZ3sAY=
+nondexLogging=CONFIG
+test=
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex" -DnondexExecid=AppW2HPg9OyFpeMvvE+mfyfMoaUcpzo29QO4Mc+VrB8= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex" -DnondexExecid=FHYol4AHokDE4gcJuw7pt5bUO1JyM2tLZ+CB3DEsMU= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex" -DnondexExecid=rjuEI9xbybnkuAcpSlrzQJDENeGlggdzaH7aZ3sAY= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.iQvgqMXLSW/repo/buildtools/.nondex/AppW2HPg9OyFpeMvvE+mfyfMoaUcpzo29QO4Mc+VrB8=/test_results.html
+[INFO] [NonDex] The id of this run is: AppW2HPg9OyFpeMvvE+mfyfMoaUcpzo29QO4Mc+VrB8=
+[INFO] 
+[INFO] ----------------< org.apache.bookkeeper:circe-checksum >----------------
+[INFO] Building Apache BookKeeper :: Circe Checksum Library 4.15.0-SNAPSHOT [3/14]
+[INFO]   from circe-checksum/pom.xml
+[INFO] --------------------------------[ nar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ circe-checksum >>>
+[INFO] 
+[INFO] --- nar:3.5.2:nar-validate (default-nar-validate) @ circe-checksum ---
+[INFO] Using AOL: amd64-Linux-gpp
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ circe-checksum ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- nar:3.5.2:nar-download (default-nar-download) @ circe-checksum ---
+[INFO] Getting Nar dependencies
+[INFO] Getting Nar dependencies
+[INFO] 
+[INFO] --- nar:3.5.2:nar-unpack (default-nar-unpack) @ circe-checksum ---
+[INFO] Getting Nar dependencies
+[INFO] Unpacking 0 dependencies to /tmp/tmp.iQvgqMXLSW/repo/circe-checksum/target/nar
+[INFO] 
+[INFO] --- nar:3.5.2:nar-gnu-configure (default-nar-gnu-configure) @ circe-checksum ---
+[INFO] 
+[INFO] --- nar:3.5.2:nar-system-generate (default-nar-system-generate) @ circe-checksum ---
+[INFO] Generating /tmp/tmp.iQvgqMXLSW/repo/circe-checksum/target/nar/nar-generated/com/scurrilous/circe/checksum/NarSystem.java
+[INFO] Not using 'native-lib-loader' because it is not a dependency)
+[INFO] 
+[INFO] --- nar:3.5.2:nar-vcproj (default-nar-vcproj) @ circe-checksum ---
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ circe-checksum ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ circe-checksum ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- nar:3.5.2:nar-resources (default-nar-resources) @ circe-checksum ---
+[INFO] Copied 0 resources
+[INFO] 
+[INFO] --- nar:3.5.2:nar-gnu-resources (default-nar-gnu-resources) @ circe-checksum ---
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ circe-checksum ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 53 source files to /tmp/tmp.iQvgqMXLSW/repo/circe-checksum/target/classes
+[WARNING] /tmp/tmp.iQvgqMXLSW/repo/circe-checksum/src/main/java/com/scurrilous/circe/crc/Sse42Crc32C.java:[68,20] finalize() in java.lang.Object has been deprecated
+[INFO] 
+[INFO] --- nar:3.5.2:nar-gnu-make (default-nar-gnu-make) @ circe-checksum ---
+[INFO] 
+[INFO] --- nar:3.5.2:nar-compile (default-nar-compile) @ circe-checksum ---
+[INFO] Compiling 2 native files
+[WARNING] No file matching patterns ("librt.a, librt.so) for library name "rt" was found.
+[INFO] Starting dependency analysis for 2 files.
+[INFO] 1 files are up to date.
+[INFO] 1 files to be recompiled from dependency analysis.
+[INFO] 1 total files to be compiled.
+[INFO] Found 4 processors available
+[INFO] Limited used processors to 1
+[INFO] 
+Starting Core 0 with 1 source files...
+[INFO] Linking...
+[INFO] Starting link {15 -shared -lrt -fexceptions -lstdc++}
+[INFO] 
+[INFO] --- nar:3.5.2:nar-gnu-process (default-nar-gnu-process) @ circe-checksum ---
+[INFO] 
+[INFO] --- nar:3.5.2:nar-process-libraries (default-nar-process-libraries) @ circe-checksum ---
+[info] Running process libraries
+[info] Processing library Library: type: jni
+[INFO] 
+[INFO] --- nar:3.5.2:nar-test-unpack (default-nar-test-unpack) @ circe-checksum ---
+[INFO] Getting Nar dependencies
+[INFO] Unpacking 0 dependencies to /tmp/tmp.iQvgqMXLSW/repo/circe-checksum/target/test-nar
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ circe-checksum ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ circe-checksum ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /tmp/tmp.iQvgqMXLSW/repo/circe-checksum/target/test-classes
+[INFO] 
+[INFO] --- nar:3.5.2:nar-testCompile (default-nar-testCompile) @ circe-checksum ---
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ circe-checksum <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ circe-checksum ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_fsXAMtsD8OF+sY1hgVx461tsFIIPQCVLGf6QISKQzM=
+nondexLogging=CONFIG
+test=
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M5/surefire-junit4-3.0.0-M5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M5/surefire-junit4-3.0.0-M5.jar (17 kB at 431 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M5/surefire-junit4-3.0.0-M5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M5/surefire-junit4-3.0.0-M5.pom (2.9 kB at 68 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M5/surefire-providers-3.0.0-M5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M5/surefire-providers-3.0.0-M5.pom (2.5 kB at 60 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.0/junit-4.0.pom (210 B at 5.2 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M5/common-junit4-3.0.0-M5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M5/common-junit4-3.0.0-M5.pom (2.9 kB at 78 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M5/common-junit3-3.0.0-M5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M5/common-junit3-3.0.0-M5.pom (2.6 kB at 57 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M5/common-java5-3.0.0-M5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M5/common-java5-3.0.0-M5.pom (2.6 kB at 71 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom (820 B at 21 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom (2.4 kB at 59 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.8/fest-1.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.8/fest-1.0.8.pom (12 kB at 295 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom (1.6 kB at 41 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M5/common-java5-3.0.0-M5.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M5/common-junit4-3.0.0-M5.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M5/common-junit3-3.0.0-M5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M5/common-junit4-3.0.0-M5.jar (25 kB at 638 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M5/common-java5-3.0.0-M5.jar (16 kB at 374 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M5/common-junit3-3.0.0-M5.jar (12 kB at 234 kB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.scurrilous.circe.CommonHashesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in com.scurrilous.circe.CommonHashesTest
+[INFO] Running com.scurrilous.circe.impl.AbstractStatefulHashTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.361 s - in com.scurrilous.circe.impl.AbstractStatefulHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractIncrementalLongHashTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.344 s - in com.scurrilous.circe.impl.AbstractIncrementalLongHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractStatelessLongHashTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.349 s - in com.scurrilous.circe.impl.AbstractStatelessLongHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractStatelessIntHashTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.337 s - in com.scurrilous.circe.impl.AbstractStatelessIntHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractIncrementalIntHashTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.362 s - in com.scurrilous.circe.impl.AbstractIncrementalIntHashTest
+[INFO] Running com.scurrilous.circe.crc.CRCProvidersTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in com.scurrilous.circe.crc.CRCProvidersTest
+[INFO] Running com.scurrilous.circe.crc.CRCTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s - in com.scurrilous.circe.crc.CRCTest
+[INFO] Running com.scurrilous.circe.checksum.ChecksumTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.348 s - in com.scurrilous.circe.checksum.ChecksumTest
+[INFO] Running com.scurrilous.circe.utils.NativeUtilsTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in com.scurrilous.circe.utils.NativeUtilsTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 78, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex
+nondexExecid=r21QxmHwqjc0j8K0ikGnep0dd1jWU5yWudJG5jwoZk=
+nondexLogging=CONFIG
+test=
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M5/surefire-junit47-3.0.0-M5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M5/surefire-junit47-3.0.0-M5.jar (91 kB at 1.9 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M5/surefire-junit47-3.0.0-M5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/3.0.0-M5/surefire-junit47-3.0.0-M5.pom (8.3 kB at 123 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M5/common-junit48-3.0.0-M5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M5/common-junit48-3.0.0-M5.pom (8.0 kB at 217 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M5/surefire-grouper-3.0.0-M5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M5/surefire-grouper-3.0.0-M5.pom (3.1 kB at 94 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.13/junit-4.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.13/junit-4.13.pom (25 kB at 611 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M5/common-junit48-3.0.0-M5.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M5/surefire-grouper-3.0.0-M5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/3.0.0-M5/common-junit48-3.0.0-M5.jar (22 kB at 567 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/3.0.0-M5/surefire-grouper-3.0.0-M5.jar (40 kB at 900 kB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.scurrilous.circe.CommonHashesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.scurrilous.circe.CommonHashesTest
+[INFO] Running com.scurrilous.circe.impl.AbstractStatefulHashTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in com.scurrilous.circe.impl.AbstractStatefulHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractIncrementalLongHashTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.342 s - in com.scurrilous.circe.impl.AbstractIncrementalLongHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractStatelessLongHashTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 s - in com.scurrilous.circe.impl.AbstractStatelessLongHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractStatelessIntHashTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.305 s - in com.scurrilous.circe.impl.AbstractStatelessIntHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractIncrementalIntHashTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.338 s - in com.scurrilous.circe.impl.AbstractIncrementalIntHashTest
+[INFO] Running com.scurrilous.circe.crc.CRCProvidersTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in com.scurrilous.circe.crc.CRCProvidersTest
+[INFO] Running com.scurrilous.circe.crc.CRCTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in com.scurrilous.circe.crc.CRCTest
+[INFO] Running com.scurrilous.circe.checksum.ChecksumTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.33 s - in com.scurrilous.circe.checksum.ChecksumTest
+[INFO] Running com.scurrilous.circe.utils.NativeUtilsTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in com.scurrilous.circe.utils.NativeUtilsTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 78, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex
+nondexExecid=z8ItUoX9tLIR2KM+NIbZpViC0wVls457sBhLcp8=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.scurrilous.circe.CommonHashesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.scurrilous.circe.CommonHashesTest
+[INFO] Running com.scurrilous.circe.impl.AbstractStatefulHashTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in com.scurrilous.circe.impl.AbstractStatefulHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractIncrementalLongHashTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.327 s - in com.scurrilous.circe.impl.AbstractIncrementalLongHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractStatelessLongHashTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.31 s - in com.scurrilous.circe.impl.AbstractStatelessLongHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractStatelessIntHashTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.308 s - in com.scurrilous.circe.impl.AbstractStatelessIntHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractIncrementalIntHashTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.333 s - in com.scurrilous.circe.impl.AbstractIncrementalIntHashTest
+[INFO] Running com.scurrilous.circe.crc.CRCProvidersTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.scurrilous.circe.crc.CRCProvidersTest
+[INFO] Running com.scurrilous.circe.crc.CRCTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in com.scurrilous.circe.crc.CRCTest
+[INFO] Running com.scurrilous.circe.checksum.ChecksumTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.331 s - in com.scurrilous.circe.checksum.ChecksumTest
+[INFO] Running com.scurrilous.circe.utils.NativeUtilsTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in com.scurrilous.circe.utils.NativeUtilsTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 78, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex
+nondexExecid=9M8ZZycJ2q3lw44DfmOgECs9ydROJwoC7Bzu5TJYY=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.scurrilous.circe.CommonHashesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.scurrilous.circe.CommonHashesTest
+[INFO] Running com.scurrilous.circe.impl.AbstractStatefulHashTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in com.scurrilous.circe.impl.AbstractStatefulHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractIncrementalLongHashTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.332 s - in com.scurrilous.circe.impl.AbstractIncrementalLongHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractStatelessLongHashTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.314 s - in com.scurrilous.circe.impl.AbstractStatelessLongHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractStatelessIntHashTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.308 s - in com.scurrilous.circe.impl.AbstractStatelessIntHashTest
+[INFO] Running com.scurrilous.circe.impl.AbstractIncrementalIntHashTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.335 s - in com.scurrilous.circe.impl.AbstractIncrementalIntHashTest
+[INFO] Running com.scurrilous.circe.crc.CRCProvidersTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in com.scurrilous.circe.crc.CRCProvidersTest
+[INFO] Running com.scurrilous.circe.crc.CRCTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in com.scurrilous.circe.crc.CRCTest
+[INFO] Running com.scurrilous.circe.checksum.ChecksumTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.334 s - in com.scurrilous.circe.checksum.ChecksumTest
+[INFO] Running com.scurrilous.circe.utils.NativeUtilsTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in com.scurrilous.circe.utils.NativeUtilsTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 78, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex" -DnondexExecid=r21QxmHwqjc0j8K0ikGnep0dd1jWU5yWudJG5jwoZk= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex" -DnondexExecid=z8ItUoX9tLIR2KM+NIbZpViC0wVls457sBhLcp8= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex" -DnondexExecid=9M8ZZycJ2q3lw44DfmOgECs9ydROJwoC7Bzu5TJYY= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.iQvgqMXLSW/repo/circe-checksum/.nondex/r21QxmHwqjc0j8K0ikGnep0dd1jWU5yWudJG5jwoZk=/test_results.html
+[INFO] [NonDex] The id of this run is: r21QxmHwqjc0j8K0ikGnep0dd1jWU5yWudJG5jwoZk=
+[INFO] 
+[INFO] ----------< org.apache.bookkeeper.stats:bookkeeper-stats-api >----------
+[INFO] Building Apache BookKeeper :: Stats API 4.15.0-SNAPSHOT           [4/14]
+[INFO]   from bookkeeper-stats/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ bookkeeper-stats-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ bookkeeper-stats-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ bookkeeper-stats-api ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ bookkeeper-stats-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ bookkeeper-stats-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ bookkeeper-stats-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ bookkeeper-stats-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ bookkeeper-stats-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ bookkeeper-stats-api ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_I9+z4NV7iMwGEkRQ8u4KUFa0jVKvePGNKFGixgl4iPM=
+nondexLogging=CONFIG
+test=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex
+nondexExecid=NRnNyd9kINFV69rnmIT52GCZnfYsD50t1F9AS37vU=
+nondexLogging=CONFIG
+test=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex
+nondexExecid=IeZQaDYV9v4IombS08+tmOL0daQ5QVhtJDG77oFFHMg=
+nondexLogging=CONFIG
+test=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex
+nondexExecid=MVzffyze6fmnCDALZ7pSyd2pE7buwTR8wGei1LZxU=
+nondexLogging=CONFIG
+test=
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex" -DnondexExecid=NRnNyd9kINFV69rnmIT52GCZnfYsD50t1F9AS37vU= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex" -DnondexExecid=IeZQaDYV9v4IombS08+tmOL0daQ5QVhtJDG77oFFHMg= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex" -DnondexExecid=MVzffyze6fmnCDALZ7pSyd2pE7buwTR8wGei1LZxU= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats/.nondex/NRnNyd9kINFV69rnmIT52GCZnfYsD50t1F9AS37vU=/test_results.html
+[INFO] [NonDex] The id of this run is: NRnNyd9kINFV69rnmIT52GCZnfYsD50t1F9AS37vU=
+[INFO] 
+[INFO] -----------------< org.apache.bookkeeper:cpu-affinity >-----------------
+[INFO] Building Apache BookKeeper :: CPU Affinity Library 4.15.0-SNAPSHOT [5/14]
+[INFO]   from cpu-affinity/pom.xml
+[INFO] --------------------------------[ nar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ cpu-affinity >>>
+[INFO] 
+[INFO] --- nar:3.5.2:nar-validate (default-nar-validate) @ cpu-affinity ---
+[INFO] Using AOL: amd64-Linux-gpp
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ cpu-affinity ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- nar:3.5.2:nar-download (default-nar-download) @ cpu-affinity ---
+[INFO] Getting Nar dependencies
+[INFO] Getting Nar dependencies
+[INFO] 
+[INFO] --- nar:3.5.2:nar-unpack (default-nar-unpack) @ cpu-affinity ---
+[INFO] Getting Nar dependencies
+[INFO] Unpacking 0 dependencies to /tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/target/nar
+[INFO] 
+[INFO] --- nar:3.5.2:nar-gnu-configure (default-nar-gnu-configure) @ cpu-affinity ---
+[INFO] 
+[INFO] --- nar:3.5.2:nar-system-generate (default-nar-system-generate) @ cpu-affinity ---
+[INFO] Generating /tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/target/nar/nar-generated/org/apache/bookkeeper/utils/affinity/NarSystem.java
+[INFO] Not using 'native-lib-loader' because it is not a dependency)
+[INFO] 
+[INFO] --- nar:3.5.2:nar-vcproj (default-nar-vcproj) @ cpu-affinity ---
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ cpu-affinity ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ cpu-affinity ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- nar:3.5.2:nar-resources (default-nar-resources) @ cpu-affinity ---
+[INFO] Copied 0 resources
+[INFO] 
+[INFO] --- nar:3.5.2:nar-gnu-resources (default-nar-gnu-resources) @ cpu-affinity ---
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cpu-affinity ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/target/classes
+[INFO] 
+[INFO] --- nar:3.5.2:nar-gnu-make (default-nar-gnu-make) @ cpu-affinity ---
+[INFO] 
+[INFO] --- nar:3.5.2:nar-compile (default-nar-compile) @ cpu-affinity ---
+[INFO] Compiling 1 native files
+[WARNING] No file matching patterns ("librt.a, librt.so) for library name "rt" was found.
+[INFO] Starting dependency analysis for 1 files.
+[INFO] 0 files are up to date.
+[INFO] 1 files to be recompiled from dependency analysis.
+[INFO] 1 total files to be compiled.
+[INFO] Found 4 processors available
+[INFO] Limited used processors to 1
+[INFO] 
+Starting Core 0 with 1 source files...
+[INFO] Linking...
+[INFO] Starting link {15 -shared -lrt -fexceptions -lstdc++}
+[INFO] 
+[INFO] --- nar:3.5.2:nar-gnu-process (default-nar-gnu-process) @ cpu-affinity ---
+[INFO] 
+[INFO] --- nar:3.5.2:nar-process-libraries (default-nar-process-libraries) @ cpu-affinity ---
+[info] Running process libraries
+[info] Processing library Library: type: jni
+[INFO] 
+[INFO] --- nar:3.5.2:nar-test-unpack (default-nar-test-unpack) @ cpu-affinity ---
+[INFO] Getting Nar dependencies
+[INFO] Unpacking 0 dependencies to /tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/target/test-nar
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ cpu-affinity ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cpu-affinity ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/target/test-classes
+[INFO] 
+[INFO] --- nar:3.5.2:nar-testCompile (default-nar-testCompile) @ cpu-affinity ---
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ cpu-affinity <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ cpu-affinity ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_ciL4WHcq3S8W1AVjSzXitbjqL9KLbN1PmRBVxkHihs=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.common.util.affinity.impl.CpuInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s - in org.apache.bookkeeper.common.util.affinity.impl.CpuInfoTest
+[INFO] Running org.apache.bookkeeper.common.util.affinity.impl.IsolatedProcessorsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.295 s - in org.apache.bookkeeper.common.util.affinity.impl.IsolatedProcessorsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex
+nondexExecid=lpvoupkkleNkyY5spJ4T7gAnsz1ZP8wLHEJCWjCH6g=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.common.util.affinity.impl.CpuInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.03 s - in org.apache.bookkeeper.common.util.affinity.impl.CpuInfoTest
+[INFO] Running org.apache.bookkeeper.common.util.affinity.impl.IsolatedProcessorsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.298 s - in org.apache.bookkeeper.common.util.affinity.impl.IsolatedProcessorsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex
+nondexExecid=MWb01PMlNwr9CdqQBhd8cZLqLYvbP8EneXu9IJhSaQ=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.common.util.affinity.impl.CpuInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.apache.bookkeeper.common.util.affinity.impl.CpuInfoTest
+[INFO] Running org.apache.bookkeeper.common.util.affinity.impl.IsolatedProcessorsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.301 s - in org.apache.bookkeeper.common.util.affinity.impl.IsolatedProcessorsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex
+nondexExecid=kCwiNUrMu9fxYw1Svi8ffFsOOLaHwU3RgeK4XXMrCA=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.common.util.affinity.impl.CpuInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.apache.bookkeeper.common.util.affinity.impl.CpuInfoTest
+[INFO] Running org.apache.bookkeeper.common.util.affinity.impl.IsolatedProcessorsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.3 s - in org.apache.bookkeeper.common.util.affinity.impl.IsolatedProcessorsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex" -DnondexExecid=lpvoupkkleNkyY5spJ4T7gAnsz1ZP8wLHEJCWjCH6g= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex" -DnondexExecid=MWb01PMlNwr9CdqQBhd8cZLqLYvbP8EneXu9IJhSaQ= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex" -DnondexExecid=kCwiNUrMu9fxYw1Svi8ffFsOOLaHwU3RgeK4XXMrCA= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.iQvgqMXLSW/repo/cpu-affinity/.nondex/lpvoupkkleNkyY5spJ4T7gAnsz1ZP8wLHEJCWjCH6g=/test_results.html
+[INFO] [NonDex] The id of this run is: lpvoupkkleNkyY5spJ4T7gAnsz1ZP8wLHEJCWjCH6g=
+[INFO] 
+[INFO] --------------< org.apache.bookkeeper:bookkeeper-common >---------------
+[INFO] Building Apache BookKeeper :: Common 4.15.0-SNAPSHOT              [6/14]
+[INFO]   from bookkeeper-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ bookkeeper-common >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ bookkeeper-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ bookkeeper-common ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ bookkeeper-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ bookkeeper-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 61 source files to /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/target/classes
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ bookkeeper-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ bookkeeper-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 28 source files to /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/target/test-classes
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ bookkeeper-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ bookkeeper-common ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_oTbjYLWZyJIBTYnTNLREMBUbdV6K8A4VAZomo2F+Kc=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.common.concurrent.TestFutureUtils
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.721 s - in org.apache.bookkeeper.common.concurrent.TestFutureUtils
+[INFO] Running org.apache.bookkeeper.common.net.ServiceURITest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in org.apache.bookkeeper.common.net.ServiceURITest
+[INFO] Running org.apache.bookkeeper.common.component.TestLifecycleComponentStack
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.604 s - in org.apache.bookkeeper.common.component.TestLifecycleComponentStack
+[INFO] Running org.apache.bookkeeper.common.component.TestComponentStarter
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.572 s - in org.apache.bookkeeper.common.component.TestComponentStarter
+[INFO] Running org.apache.bookkeeper.common.conf.validators.ClassValidatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.321 s - in org.apache.bookkeeper.common.conf.validators.ClassValidatorTest
+[INFO] Running org.apache.bookkeeper.common.conf.validators.RangeValidatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.apache.bookkeeper.common.conf.validators.RangeValidatorTest
+[INFO] Running org.apache.bookkeeper.common.conf.ConfigDefTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.34 s - in org.apache.bookkeeper.common.conf.ConfigDefTest
+[INFO] Running org.apache.bookkeeper.common.conf.ConfigKeyGroupTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.apache.bookkeeper.common.conf.ConfigKeyGroupTest
+[INFO] Running org.apache.bookkeeper.common.conf.ConfigKeyTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.576 s - in org.apache.bookkeeper.common.conf.ConfigKeyTest
+[INFO] Running org.apache.bookkeeper.common.collections.BlockingMpscQueueTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.523 s - in org.apache.bookkeeper.common.collections.BlockingMpscQueueTest
+[INFO] Running org.apache.bookkeeper.common.collections.RecyclableArrayListTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.335 s - in org.apache.bookkeeper.common.collections.RecyclableArrayListTest
+[INFO] Running org.apache.bookkeeper.common.testing.executors.MockExecutorControllerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.601 s - in org.apache.bookkeeper.common.testing.executors.MockExecutorControllerTest
+[INFO] Running org.apache.bookkeeper.common.testing.executors.MockClockTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in org.apache.bookkeeper.common.testing.executors.MockClockTest
+[INFO] Running org.apache.bookkeeper.common.testing.util.TestTimedOutTestsListener
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 s - in org.apache.bookkeeper.common.testing.util.TestTimedOutTestsListener
+[INFO] Running org.apache.bookkeeper.common.util.TestMathUtils
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.apache.bookkeeper.common.util.TestMathUtils
+[INFO] Running org.apache.bookkeeper.common.util.TestSharedResourceManager
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.588 s - in org.apache.bookkeeper.common.util.TestSharedResourceManager
+[INFO] Running org.apache.bookkeeper.common.util.TestOrderedExecutorDecorators
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.722 s - in org.apache.bookkeeper.common.util.TestOrderedExecutorDecorators
+[INFO] Running org.apache.bookkeeper.common.util.TestWatchable
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.571 s - in org.apache.bookkeeper.common.util.TestWatchable
+[INFO] Running org.apache.bookkeeper.common.util.TestBackoff
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in org.apache.bookkeeper.common.util.TestBackoff
+[INFO] Running org.apache.bookkeeper.common.util.MemoryLimitControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.648 s - in org.apache.bookkeeper.common.util.MemoryLimitControllerTest
+[INFO] Running org.apache.bookkeeper.common.util.TestReflectionUtils
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.apache.bookkeeper.common.util.TestReflectionUtils
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 118, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex
+nondexExecid=AxYR03dGxXqKYc2ip+7pIy9Yh8oauYAFklxZsc9Sc=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.common.concurrent.TestFutureUtils
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.75 s - in org.apache.bookkeeper.common.concurrent.TestFutureUtils
+[INFO] Running org.apache.bookkeeper.common.net.ServiceURITest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.046 s - in org.apache.bookkeeper.common.net.ServiceURITest
+[INFO] Running org.apache.bookkeeper.common.component.TestLifecycleComponentStack
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.585 s - in org.apache.bookkeeper.common.component.TestLifecycleComponentStack
+[INFO] Running org.apache.bookkeeper.common.component.TestComponentStarter
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.551 s - in org.apache.bookkeeper.common.component.TestComponentStarter
+[INFO] Running org.apache.bookkeeper.common.conf.validators.ClassValidatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.312 s - in org.apache.bookkeeper.common.conf.validators.ClassValidatorTest
+[INFO] Running org.apache.bookkeeper.common.conf.validators.RangeValidatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.bookkeeper.common.conf.validators.RangeValidatorTest
+[INFO] Running org.apache.bookkeeper.common.conf.ConfigDefTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s - in org.apache.bookkeeper.common.conf.ConfigDefTest
+[INFO] Running org.apache.bookkeeper.common.conf.ConfigKeyGroupTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.bookkeeper.common.conf.ConfigKeyGroupTest
+[INFO] Running org.apache.bookkeeper.common.conf.ConfigKeyTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.57 s - in org.apache.bookkeeper.common.conf.ConfigKeyTest
+[INFO] Running org.apache.bookkeeper.common.collections.BlockingMpscQueueTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.515 s - in org.apache.bookkeeper.common.collections.BlockingMpscQueueTest
+[INFO] Running org.apache.bookkeeper.common.collections.RecyclableArrayListTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.bookkeeper.common.collections.RecyclableArrayListTest
+[INFO] Running org.apache.bookkeeper.common.testing.executors.MockExecutorControllerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.609 s - in org.apache.bookkeeper.common.testing.executors.MockExecutorControllerTest
+[INFO] Running org.apache.bookkeeper.common.testing.executors.MockClockTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.bookkeeper.common.testing.executors.MockClockTest
+[INFO] Running org.apache.bookkeeper.common.testing.util.TestTimedOutTestsListener
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in org.apache.bookkeeper.common.testing.util.TestTimedOutTestsListener
+[INFO] Running org.apache.bookkeeper.common.util.TestMathUtils
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.bookkeeper.common.util.TestMathUtils
+[INFO] Running org.apache.bookkeeper.common.util.TestSharedResourceManager
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.573 s - in org.apache.bookkeeper.common.util.TestSharedResourceManager
+[INFO] Running org.apache.bookkeeper.common.util.TestOrderedExecutorDecorators
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.378 s - in org.apache.bookkeeper.common.util.TestOrderedExecutorDecorators
+[INFO] Running org.apache.bookkeeper.common.util.TestWatchable
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 s - in org.apache.bookkeeper.common.util.TestWatchable
+[INFO] Running org.apache.bookkeeper.common.util.TestBackoff
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.apache.bookkeeper.common.util.TestBackoff
+[INFO] Running org.apache.bookkeeper.common.util.MemoryLimitControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.612 s - in org.apache.bookkeeper.common.util.MemoryLimitControllerTest
+[INFO] Running org.apache.bookkeeper.common.util.TestReflectionUtils
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.bookkeeper.common.util.TestReflectionUtils
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 118, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex
+nondexExecid=dgFAVFL11s9saLhqO08qSF126gCyjLhLhuL0lI9a1Kg=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.common.concurrent.TestFutureUtils
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.757 s - in org.apache.bookkeeper.common.concurrent.TestFutureUtils
+[INFO] Running org.apache.bookkeeper.common.net.ServiceURITest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.apache.bookkeeper.common.net.ServiceURITest
+[INFO] Running org.apache.bookkeeper.common.component.TestLifecycleComponentStack
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.585 s - in org.apache.bookkeeper.common.component.TestLifecycleComponentStack
+[INFO] Running org.apache.bookkeeper.common.component.TestComponentStarter
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.572 s - in org.apache.bookkeeper.common.component.TestComponentStarter
+[INFO] Running org.apache.bookkeeper.common.conf.validators.ClassValidatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.319 s - in org.apache.bookkeeper.common.conf.validators.ClassValidatorTest
+[INFO] Running org.apache.bookkeeper.common.conf.validators.RangeValidatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.bookkeeper.common.conf.validators.RangeValidatorTest
+[INFO] Running org.apache.bookkeeper.common.conf.ConfigDefTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.apache.bookkeeper.common.conf.ConfigDefTest
+[INFO] Running org.apache.bookkeeper.common.conf.ConfigKeyGroupTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.bookkeeper.common.conf.ConfigKeyGroupTest
+[INFO] Running org.apache.bookkeeper.common.conf.ConfigKeyTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.568 s - in org.apache.bookkeeper.common.conf.ConfigKeyTest
+[INFO] Running org.apache.bookkeeper.common.collections.BlockingMpscQueueTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.514 s - in org.apache.bookkeeper.common.collections.BlockingMpscQueueTest
+[INFO] Running org.apache.bookkeeper.common.collections.RecyclableArrayListTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.bookkeeper.common.collections.RecyclableArrayListTest
+[INFO] Running org.apache.bookkeeper.common.testing.executors.MockExecutorControllerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.601 s - in org.apache.bookkeeper.common.testing.executors.MockExecutorControllerTest
+[INFO] Running org.apache.bookkeeper.common.testing.executors.MockClockTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.bookkeeper.common.testing.executors.MockClockTest
+[INFO] Running org.apache.bookkeeper.common.testing.util.TestTimedOutTestsListener
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.apache.bookkeeper.common.testing.util.TestTimedOutTestsListener
+[INFO] Running org.apache.bookkeeper.common.util.TestMathUtils
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.bookkeeper.common.util.TestMathUtils
+[INFO] Running org.apache.bookkeeper.common.util.TestSharedResourceManager
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.581 s - in org.apache.bookkeeper.common.util.TestSharedResourceManager
+[INFO] Running org.apache.bookkeeper.common.util.TestOrderedExecutorDecorators
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.394 s - in org.apache.bookkeeper.common.util.TestOrderedExecutorDecorators
+[INFO] Running org.apache.bookkeeper.common.util.TestWatchable
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.227 s - in org.apache.bookkeeper.common.util.TestWatchable
+[INFO] Running org.apache.bookkeeper.common.util.TestBackoff
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.apache.bookkeeper.common.util.TestBackoff
+[INFO] Running org.apache.bookkeeper.common.util.MemoryLimitControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 s - in org.apache.bookkeeper.common.util.MemoryLimitControllerTest
+[INFO] Running org.apache.bookkeeper.common.util.TestReflectionUtils
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.bookkeeper.common.util.TestReflectionUtils
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 118, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex
+nondexExecid=0sfLFkXH3XvqSrFPytLgyh+E+n8g2gJdRSnAm7hJs64=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.common.concurrent.TestFutureUtils
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.746 s - in org.apache.bookkeeper.common.concurrent.TestFutureUtils
+[INFO] Running org.apache.bookkeeper.common.net.ServiceURITest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in org.apache.bookkeeper.common.net.ServiceURITest
+[INFO] Running org.apache.bookkeeper.common.component.TestLifecycleComponentStack
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.596 s - in org.apache.bookkeeper.common.component.TestLifecycleComponentStack
+[INFO] Running org.apache.bookkeeper.common.component.TestComponentStarter
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.58 s - in org.apache.bookkeeper.common.component.TestComponentStarter
+[INFO] Running org.apache.bookkeeper.common.conf.validators.ClassValidatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 s - in org.apache.bookkeeper.common.conf.validators.ClassValidatorTest
+[INFO] Running org.apache.bookkeeper.common.conf.validators.RangeValidatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.bookkeeper.common.conf.validators.RangeValidatorTest
+[INFO] Running org.apache.bookkeeper.common.conf.ConfigDefTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.apache.bookkeeper.common.conf.ConfigDefTest
+[INFO] Running org.apache.bookkeeper.common.conf.ConfigKeyGroupTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.bookkeeper.common.conf.ConfigKeyGroupTest
+[INFO] Running org.apache.bookkeeper.common.conf.ConfigKeyTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.563 s - in org.apache.bookkeeper.common.conf.ConfigKeyTest
+[INFO] Running org.apache.bookkeeper.common.collections.BlockingMpscQueueTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.534 s - in org.apache.bookkeeper.common.collections.BlockingMpscQueueTest
+[INFO] Running org.apache.bookkeeper.common.collections.RecyclableArrayListTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.bookkeeper.common.collections.RecyclableArrayListTest
+[INFO] Running org.apache.bookkeeper.common.testing.executors.MockExecutorControllerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.604 s - in org.apache.bookkeeper.common.testing.executors.MockExecutorControllerTest
+[INFO] Running org.apache.bookkeeper.common.testing.executors.MockClockTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.bookkeeper.common.testing.executors.MockClockTest
+[INFO] Running org.apache.bookkeeper.common.testing.util.TestTimedOutTestsListener
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in org.apache.bookkeeper.common.testing.util.TestTimedOutTestsListener
+[INFO] Running org.apache.bookkeeper.common.util.TestMathUtils
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.bookkeeper.common.util.TestMathUtils
+[INFO] Running org.apache.bookkeeper.common.util.TestSharedResourceManager
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.574 s - in org.apache.bookkeeper.common.util.TestSharedResourceManager
+[INFO] Running org.apache.bookkeeper.common.util.TestOrderedExecutorDecorators
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.401 s - in org.apache.bookkeeper.common.util.TestOrderedExecutorDecorators
+[INFO] Running org.apache.bookkeeper.common.util.TestWatchable
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.225 s - in org.apache.bookkeeper.common.util.TestWatchable
+[INFO] Running org.apache.bookkeeper.common.util.TestBackoff
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in org.apache.bookkeeper.common.util.TestBackoff
+[INFO] Running org.apache.bookkeeper.common.util.MemoryLimitControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 s - in org.apache.bookkeeper.common.util.MemoryLimitControllerTest
+[INFO] Running org.apache.bookkeeper.common.util.TestReflectionUtils
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.bookkeeper.common.util.TestReflectionUtils
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 118, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex" -DnondexExecid=AxYR03dGxXqKYc2ip+7pIy9Yh8oauYAFklxZsc9Sc= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex" -DnondexExecid=dgFAVFL11s9saLhqO08qSF126gCyjLhLhuL0lI9a1Kg= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex" -DnondexExecid=0sfLFkXH3XvqSrFPytLgyh+E+n8g2gJdRSnAm7hJs64= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common/.nondex/AxYR03dGxXqKYc2ip+7pIy9Yh8oauYAFklxZsc9Sc=/test_results.html
+[INFO] [NonDex] The id of this run is: AxYR03dGxXqKYc2ip+7pIy9Yh8oauYAFklxZsc9Sc=
+[INFO] 
+[INFO] ---------< org.apache.bookkeeper:bookkeeper-common-allocator >----------
+[INFO] Building Apache BookKeeper :: Common :: Allocator 4.15.0-SNAPSHOT [7/14]
+[INFO]   from bookkeeper-common-allocator/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ bookkeeper-common-allocator >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ bookkeeper-common-allocator ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ bookkeeper-common-allocator ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ bookkeeper-common-allocator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ bookkeeper-common-allocator ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ bookkeeper-common-allocator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ bookkeeper-common-allocator ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ bookkeeper-common-allocator <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ bookkeeper-common-allocator ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_QCsoRIJOrqE4BL3MJHQqPKWI+ziCYUUJJWYQqoDyOI=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.common.allocator.impl.ByteBufAllocatorBuilderTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.633 s - in org.apache.bookkeeper.common.allocator.impl.ByteBufAllocatorBuilderTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex
+nondexExecid=HW0VS8TNgZjIXq7MJmbS0wURA7khC8VMVCIlHZbZvlk=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.common.allocator.impl.ByteBufAllocatorBuilderTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.617 s - in org.apache.bookkeeper.common.allocator.impl.ByteBufAllocatorBuilderTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex
+nondexExecid=SkliBpFPyOODPAEW1J1IvmQBdSvIojmxrxfoT0VXETU=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.common.allocator.impl.ByteBufAllocatorBuilderTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.591 s - in org.apache.bookkeeper.common.allocator.impl.ByteBufAllocatorBuilderTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex
+nondexExecid=GjXcs0t9DxEwo9SZ5zisHUuwWAx5Po8ORXmS8Likn0=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.common.allocator.impl.ByteBufAllocatorBuilderTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.605 s - in org.apache.bookkeeper.common.allocator.impl.ByteBufAllocatorBuilderTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex" -DnondexExecid=HW0VS8TNgZjIXq7MJmbS0wURA7khC8VMVCIlHZbZvlk= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex" -DnondexExecid=SkliBpFPyOODPAEW1J1IvmQBdSvIojmxrxfoT0VXETU= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex" -DnondexExecid=GjXcs0t9DxEwo9SZ5zisHUuwWAx5Po8ORXmS8Likn0= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.iQvgqMXLSW/repo/bookkeeper-common-allocator/.nondex/HW0VS8TNgZjIXq7MJmbS0wURA7khC8VMVCIlHZbZvlk=/test_results.html
+[INFO] [NonDex] The id of this run is: HW0VS8TNgZjIXq7MJmbS0wURA7khC8VMVCIlHZbZvlk=
+[INFO] 
+[INFO] ---------------< org.apache.bookkeeper:bookkeeper-proto >---------------
+[INFO] Building Apache BookKeeper :: Protocols 4.15.0-SNAPSHOT           [8/14]
+[INFO]   from bookkeeper-proto/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ bookkeeper-proto >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ bookkeeper-proto ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- protobuf:0.6.1:compile (default) @ bookkeeper-proto ---
+[INFO] Skipping compilation because target directory newer than sources.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ bookkeeper-proto ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ bookkeeper-proto ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/src/main/resources
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ bookkeeper-proto ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ bookkeeper-proto ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ bookkeeper-proto ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ bookkeeper-proto <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ bookkeeper-proto ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_+xrwiK9uFk5o3IPyZJWLvqmRXHpJVqKZYSTkvkZ2Kc=
+nondexLogging=CONFIG
+test=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex
+nondexExecid=vaE9HiFIKA3uD2RtW40sXF205Y17fwr3GEpmk2P5B64=
+nondexLogging=CONFIG
+test=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex
+nondexExecid=ukHNsoHTjQeyCZjY6Mda5rsleWq8x31O302kCMqcC2Q=
+nondexLogging=CONFIG
+test=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex
+nondexExecid=oEm2axkc6DCdARdNhJ3GoolzCgu9zJaAvutb0Rn9q4=
+nondexLogging=CONFIG
+test=
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex" -DnondexExecid=vaE9HiFIKA3uD2RtW40sXF205Y17fwr3GEpmk2P5B64= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex" -DnondexExecid=ukHNsoHTjQeyCZjY6Mda5rsleWq8x31O302kCMqcC2Q= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex" -DnondexExecid=oEm2axkc6DCdARdNhJ3GoolzCgu9zJaAvutb0Rn9q4= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.iQvgqMXLSW/repo/bookkeeper-proto/.nondex/vaE9HiFIKA3uD2RtW40sXF205Y17fwr3GEpmk2P5B64=/test_results.html
+[INFO] [NonDex] The id of this run is: vaE9HiFIKA3uD2RtW40sXF205Y17fwr3GEpmk2P5B64=
+[INFO] 
+[INFO] -----------< org.apache.bookkeeper:bookkeeper-tools-parent >------------
+[INFO] Building Apache BookKeeper :: Tools :: Parent 4.15.0-SNAPSHOT     [9/14]
+[INFO]   from tools/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ bookkeeper-tools-parent >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ bookkeeper-tools-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ bookkeeper-tools-parent ---
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ bookkeeper-tools-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ bookkeeper-tools-parent ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/tools/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_8GC7AEOmKyVYepFJbde7cCxfSaRJdJ40dwd0f77uP+o=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/tools/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/tools/.nondex
+nondexExecid=D6Sw2EvCkF7S+pDjFPOGQfkjxaYRWM3a9opc7wBb9A=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/tools/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/tools/.nondex
+nondexExecid=QFfU6nJkhEVc9Lx7AODje3oG5yqCGABFTRA7LoLXuo=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/tools/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/tools/.nondex
+nondexExecid=RyPGojDfkfF52F9WKaYZUUK8miCQwIGwxH0InVFOU=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/tools/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/tools/.nondex" -DnondexExecid=D6Sw2EvCkF7S+pDjFPOGQfkjxaYRWM3a9opc7wBb9A= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/tools/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/tools/.nondex" -DnondexExecid=QFfU6nJkhEVc9Lx7AODje3oG5yqCGABFTRA7LoLXuo= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/tools/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/tools/.nondex" -DnondexExecid=RyPGojDfkfF52F9WKaYZUUK8miCQwIGwxH0InVFOU= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.iQvgqMXLSW/repo/tools/.nondex/D6Sw2EvCkF7S+pDjFPOGQfkjxaYRWM3a9opc7wBb9A=/test_results.html
+[INFO] [NonDex] The id of this run is: D6Sw2EvCkF7S+pDjFPOGQfkjxaYRWM3a9opc7wBb9A=
+[INFO] 
+[INFO] ----------< org.apache.bookkeeper:bookkeeper-tools-framework >----------
+[INFO] Building Apache BookKeeper :: Tools :: Framework 4.15.0-SNAPSHOT [10/14]
+[INFO]   from tools/framework/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ bookkeeper-tools-framework >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ bookkeeper-tools-framework ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ bookkeeper-tools-framework ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ bookkeeper-tools-framework ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/tools/framework/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ bookkeeper-tools-framework ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 14 source files to /tmp/tmp.iQvgqMXLSW/repo/tools/framework/target/classes
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ bookkeeper-tools-framework ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/tools/framework/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ bookkeeper-tools-framework ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /tmp/tmp.iQvgqMXLSW/repo/tools/framework/target/test-classes
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ bookkeeper-tools-framework <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ bookkeeper-tools-framework ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_i8IH3NAN5XSLlrtkjrBge2geMtL0MNb8zIemk264pQ=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.tools.framework.CliTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.364 s - in org.apache.bookkeeper.tools.framework.CliTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex
+nondexExecid=S3d08ZWiX+uIUKighp1FCdLYzrlsy8naxHmWOZR3Y=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.tools.framework.CliTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.364 s - in org.apache.bookkeeper.tools.framework.CliTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex
+nondexExecid=OjnmrJLg0RMiRIXwU4xCU5Mxn65+r+eclglwQKtPfpQ=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.tools.framework.CliTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.358 s - in org.apache.bookkeeper.tools.framework.CliTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex
+nondexExecid=O7q+0Qf14n60gUnkqWnVvi9jlZhPCgKoHwXZn3oaNw=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.tools.framework.CliTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.376 s - in org.apache.bookkeeper.tools.framework.CliTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex" -DnondexExecid=S3d08ZWiX+uIUKighp1FCdLYzrlsy8naxHmWOZR3Y= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex" -DnondexExecid=OjnmrJLg0RMiRIXwU4xCU5Mxn65+r+eclglwQKtPfpQ= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex" -DnondexExecid=O7q+0Qf14n60gUnkqWnVvi9jlZhPCgKoHwXZn3oaNw= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.iQvgqMXLSW/repo/tools/framework/.nondex/S3d08ZWiX+uIUKighp1FCdLYzrlsy8naxHmWOZR3Y=/test_results.html
+[INFO] [NonDex] The id of this run is: S3d08ZWiX+uIUKighp1FCdLYzrlsy8naxHmWOZR3Y=
+[INFO] 
+[INFO] ---------------< org.apache.bookkeeper.http:http-server >---------------
+[INFO] Building Apache BookKeeper :: Http :: Http Server 4.15.0-SNAPSHOT [11/14]
+[INFO]   from bookkeeper-http/http-server/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ http-server >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ http-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ http-server ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ http-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ http-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ http-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ http-server ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ http-server <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ http-server ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_lmjnvPGI0vWlMw4MlUTQmNFDQnFQKUFXpB4wrcvQsY=
+nondexLogging=CONFIG
+test=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex
+nondexExecid=vQokNOTC344fqH3aRQh2SBqj6nK57hq6fs2Ah5y26s=
+nondexLogging=CONFIG
+test=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex
+nondexExecid=DbeK3Naj9wL+2mYtNioWmdycyWoPAEoYvZEyoMsaIo=
+nondexLogging=CONFIG
+test=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex
+nondexExecid=tY9WCxsEZ6iEsCe5vtCbZP25RrL9qQWHZmZiqVAmmks=
+nondexLogging=CONFIG
+test=
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex" -DnondexExecid=vQokNOTC344fqH3aRQh2SBqj6nK57hq6fs2Ah5y26s= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex" -DnondexExecid=DbeK3Naj9wL+2mYtNioWmdycyWoPAEoYvZEyoMsaIo= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex" -DnondexExecid=tY9WCxsEZ6iEsCe5vtCbZP25RrL9qQWHZmZiqVAmmks= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/http-server/.nondex/vQokNOTC344fqH3aRQh2SBqj6nK57hq6fs2Ah5y26s=/test_results.html
+[INFO] [NonDex] The id of this run is: vQokNOTC344fqH3aRQh2SBqj6nK57hq6fs2Ah5y26s=
+[INFO] 
+[INFO] ------< org.apache.bookkeeper.stats:prometheus-metrics-provider >-------
+[INFO] Building Apache BookKeeper :: Stats Providers :: Prometheus 4.15.0-SNAPSHOT [12/14]
+[INFO]   from bookkeeper-stats-providers/prometheus-metrics-provider/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ prometheus-metrics-provider >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ prometheus-metrics-provider ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ prometheus-metrics-provider ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ prometheus-metrics-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ prometheus-metrics-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ prometheus-metrics-provider ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ prometheus-metrics-provider ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ prometheus-metrics-provider <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ prometheus-metrics-provider ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_XvT54Ald3imBoZ1IywerOEsYpRo5ks16K1wriBf9M=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.stats.prometheus.TestPrometheusMetricsProvider
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.473 s - in org.apache.bookkeeper.stats.prometheus.TestPrometheusMetricsProvider
+[INFO] Running org.apache.bookkeeper.stats.prometheus.TestPrometheusFormatter
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.383 s - in org.apache.bookkeeper.stats.prometheus.TestPrometheusFormatter
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex
+nondexExecid=Y0Q2KM3d9rc43cr12f6LETydetdx1Lnft3C140C96cc=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.stats.prometheus.TestPrometheusMetricsProvider
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.509 s - in org.apache.bookkeeper.stats.prometheus.TestPrometheusMetricsProvider
+[INFO] Running org.apache.bookkeeper.stats.prometheus.TestPrometheusFormatter
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.363 s - in org.apache.bookkeeper.stats.prometheus.TestPrometheusFormatter
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex
+nondexExecid=XVe6Apq1+oeTNk682v13rV+t6dzarfXWWjHxx2yek=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.stats.prometheus.TestPrometheusMetricsProvider
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.489 s - in org.apache.bookkeeper.stats.prometheus.TestPrometheusMetricsProvider
+[INFO] Running org.apache.bookkeeper.stats.prometheus.TestPrometheusFormatter
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.343 s - in org.apache.bookkeeper.stats.prometheus.TestPrometheusFormatter
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex
+nondexExecid=Bn3VTcuR21Lq4pfzYzo0fuutrxU+CSdBsmfGYQYVYI=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.stats.prometheus.TestPrometheusMetricsProvider
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.476 s - in org.apache.bookkeeper.stats.prometheus.TestPrometheusMetricsProvider
+[INFO] Running org.apache.bookkeeper.stats.prometheus.TestPrometheusFormatter
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.353 s - in org.apache.bookkeeper.stats.prometheus.TestPrometheusFormatter
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex" -DnondexExecid=Y0Q2KM3d9rc43cr12f6LETydetdx1Lnft3C140C96cc= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex" -DnondexExecid=XVe6Apq1+oeTNk682v13rV+t6dzarfXWWjHxx2yek= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex" -DnondexExecid=Bn3VTcuR21Lq4pfzYzo0fuutrxU+CSdBsmfGYQYVYI= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.iQvgqMXLSW/repo/bookkeeper-stats-providers/prometheus-metrics-provider/.nondex/Y0Q2KM3d9rc43cr12f6LETydetdx1Lnft3C140C96cc=/test_results.html
+[INFO] [NonDex] The id of this run is: Y0Q2KM3d9rc43cr12f6LETydetdx1Lnft3C140C96cc=
+[INFO] 
+[INFO] ------------< org.apache.bookkeeper.http:vertx-http-server >------------
+[INFO] Building Apache BookKeeper :: Bookkeeper Http :: Vertx Http Server 4.15.0-SNAPSHOT [13/14]
+[INFO]   from bookkeeper-http/vertx-http-server/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ vertx-http-server >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ vertx-http-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ vertx-http-server ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ vertx-http-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ vertx-http-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ vertx-http-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ vertx-http-server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ vertx-http-server <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ vertx-http-server ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_bBqtlG7GG0VvDtZcYFasCZ243LL+OgReKp0tisl8=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.http.vertx.TestVertxHttpServer
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.709 s - in org.apache.bookkeeper.http.vertx.TestVertxHttpServer
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex
+nondexExecid=u3o5BL0VfLge9UmtU5mO4etd8+6yCkKnIAw4DllIJDE=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.http.vertx.TestVertxHttpServer
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.694 s - in org.apache.bookkeeper.http.vertx.TestVertxHttpServer
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex
+nondexExecid=bkm4wtHiAIBYzrRyN4lacW3nxq5P08AATUTU+LUsPDc=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.http.vertx.TestVertxHttpServer
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.679 s - in org.apache.bookkeeper.http.vertx.TestVertxHttpServer
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex
+nondexJarDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex
+nondexExecid=aDTSgpFWqpGza75lE3jvFDyOdOs5FFIXLKo1SKv2E=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.http.vertx.TestVertxHttpServer
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.686 s - in org.apache.bookkeeper.http.vertx.TestVertxHttpServer
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex" -DnondexExecid=u3o5BL0VfLge9UmtU5mO4etd8+6yCkKnIAw4DllIJDE= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex" -DnondexExecid=bkm4wtHiAIBYzrRyN4lacW3nxq5P08AATUTU+LUsPDc= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex" -DnondexJarDir="/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex" -DnondexExecid=aDTSgpFWqpGza75lE3jvFDyOdOs5FFIXLKo1SKv2E= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.iQvgqMXLSW/repo/bookkeeper-http/vertx-http-server/.nondex/u3o5BL0VfLge9UmtU5mO4etd8+6yCkKnIAw4DllIJDE=/test_results.html
+[INFO] [NonDex] The id of this run is: u3o5BL0VfLge9UmtU5mO4etd8+6yCkKnIAw4DllIJDE=
+[INFO] 
+[INFO] --------------< org.apache.bookkeeper:bookkeeper-server >---------------
+[INFO] Building Apache BookKeeper :: Server 4.15.0-SNAPSHOT             [14/14]
+[INFO]   from bookkeeper-server/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ bookkeeper-server >>>
+[WARNING] 2 problems were encountered while building the effective model for org.apache.yetus:audience-annotations:jar:0.5.0 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ bookkeeper-server ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ bookkeeper-server ---
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ bookkeeper-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ bookkeeper-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 530 source files to /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-server/target/classes
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ bookkeeper-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 15 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ bookkeeper-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 270 source files to /tmp/tmp.iQvgqMXLSW/repo/bookkeeper-server/target/test-classes
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ bookkeeper-server <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ bookkeeper-server ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-server/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_3qn9maq1frMDDmgTRLdD86EXHrAk389ErRmZZVPQQ=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.bookkeeper.zookeeper.TestZKClientBoundExpBackoffRP
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 172.735 s - in org.apache.bookkeeper.zookeeper.TestZKClientBoundExpBackoffRP
+[INFO] Running org.apache.bookkeeper.zookeeper.TestRetryPolicy
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.336 s - in org.apache.bookkeeper.zookeeper.TestRetryPolicy
+[INFO] Running org.apache.bookkeeper.zookeeper.TestZKClientExpBackoffWithDeadlineRP
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 79.248 s - in org.apache.bookkeeper.zookeeper.TestZKClientExpBackoffWithDeadlineRP
+[INFO] Running org.apache.bookkeeper.metastore.TestMetaStore
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.42 s - in org.apache.bookkeeper.metastore.TestMetaStore
+[INFO] Running org.apache.bookkeeper.auth.TestAuth
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by org.apache.bookkeeper.util.NativeIO (file:/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-server/target/classes/) to field java.io.FileDescriptor.fd
+[ERROR] WARNING: Please consider reporting this to the maintainers of org.apache.bookkeeper.util.NativeIO
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.159 s - in org.apache.bookkeeper.auth.TestAuth
+[INFO] Running org.apache.bookkeeper.test.ForceReadOnlyBookieTest
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by org.apache.bookkeeper.util.NativeIO (file:/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-server/target/classes/) to field java.io.FileDescriptor.fd
+[ERROR] WARNING: Please consider reporting this to the maintainers of org.apache.bookkeeper.util.NativeIO
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.98 s - in org.apache.bookkeeper.test.ForceReadOnlyBookieTest
+[INFO] Running org.apache.bookkeeper.test.LedgerCreateDeleteTest
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by org.apache.bookkeeper.util.NativeIO (file:/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-server/target/classes/) to field java.io.FileDescriptor.fd
+[ERROR] WARNING: Please consider reporting this to the maintainers of org.apache.bookkeeper.util.NativeIO
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.113 s - in org.apache.bookkeeper.test.LedgerCreateDeleteTest
+[INFO] Running org.apache.bookkeeper.test.LocalBookiesRegistryTest
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by org.apache.bookkeeper.util.NativeIO (file:/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-server/target/classes/) to field java.io.FileDescriptor.fd
+[ERROR] WARNING: Please consider reporting this to the maintainers of org.apache.bookkeeper.util.NativeIO
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.715 s - in org.apache.bookkeeper.test.LocalBookiesRegistryTest
+[INFO] Running org.apache.bookkeeper.test.BookieFailureTest
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by org.apache.bookkeeper.util.NativeIO (file:/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-server/target/classes/) to field java.io.FileDescriptor.fd
+[ERROR] WARNING: Please consider reporting this to the maintainers of org.apache.bookkeeper.util.NativeIO
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.342 s - in org.apache.bookkeeper.test.BookieFailureTest
+[INFO] Running org.apache.bookkeeper.test.ConfigurationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.416 s - in org.apache.bookkeeper.test.ConfigurationTest
+[INFO] Running org.apache.bookkeeper.test.ReadOnlyBookieTest
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by org.apache.bookkeeper.util.NativeIO (file:/tmp/tmp.iQvgqMXLSW/repo/bookkeeper-server/target/classes/) to field java.io.FileDescriptor.fd
+[ERROR] WARNING: Please consider reporting this to the maintainers of org.apache.bookkeeper.util.NativeIO
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release

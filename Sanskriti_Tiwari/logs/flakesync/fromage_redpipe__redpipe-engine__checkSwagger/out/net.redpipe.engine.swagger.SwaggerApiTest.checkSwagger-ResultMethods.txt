@@ -1,0 +1,4 @@
+com/mchange/v1/cachedstore/CachedStoreUtils.synchronizedCachedStore(Lcom/mchange/v1/cachedstore/CachedStore;)Lcom/mchange/v1/cachedstore/CachedStore;
+com/mchange/v1/lang/Synchronizer.createSynchronizedWrapper(Ljava/lang/Object;)Ljava/lang/Object;
+com/mchange/v1/lang/Synchronizer.recurseFindInterfaces(Ljava/lang/Class;)[Ljava/lang/Class;
+com/mchange/v1/cachedstore/CachedStoreFactory.createNoCleanupCachedStore(Lcom/mchange/v1/cachedstore/CachedStore$Manager;)Lcom/mchange/v1/cachedstore/TweakableCachedStore;

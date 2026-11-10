@@ -1,0 +1,1116 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] ActiveMQ                                                           [pom]
+[INFO] ActiveMQ :: Client                                              [bundle]
+[INFO] ActiveMQ :: Openwire Legacy Support                                [jar]
+[INFO] ActiveMQ :: JAAS                                                   [jar]
+[INFO] ActiveMQ :: Broker                                                 [jar]
+[INFO] ActiveMQ :: KahaDB Store                                           [jar]
+[INFO] ActiveMQ :: STOMP Protocol                                         [jar]
+[INFO] 
+[INFO] ----------------< org.apache.activemq:activemq-parent >-----------------
+[INFO] Building ActiveMQ 6.0.1-SNAPSHOT                                   [1/7]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven-version) @ activemq-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-java-version) @ activemq-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven) @ activemq-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:3.1.0:process (process-resource-bundles) @ activemq-parent ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- site:3.12.1:attach-descriptor (attach-descriptor) @ activemq-parent ---
+[INFO] No site descriptor found: nothing to attach.
+[INFO] 
+[INFO] --- source:3.3.0:jar-no-fork (attach-sources) @ activemq-parent ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- tools:1.4:verify-legal-files (default) @ activemq-parent ---
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ activemq-parent ---
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/pom.xml to /home/runner/.m2/repository/org/apache/activemq/activemq-parent/6.0.1-SNAPSHOT/activemq-parent-6.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------< org.apache.activemq:activemq-client >-----------------
+[INFO] Building ActiveMQ :: Client 6.0.1-SNAPSHOT                         [2/7]
+[INFO]   from activemq-client/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven-version) @ activemq-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-java-version) @ activemq-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven) @ activemq-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- javacc:3.0.1:javacc (default) @ activemq-client ---
+[WARNING]  Parameter 'packageName' (user property 'javacc.packageName') is deprecated: As of version 2.4 because the plugin extracts the package name from each grammar file.
+[INFO] Skipping - all parsers are up to date
+[INFO] 
+[INFO] --- build-helper:3.4.0:add-source (add-source) @ activemq-client ---
+[INFO] Source directory: /tmp/tmp.sZ1kzlFjee/repo/activemq-client/target/generated-sources/javacc added.
+[INFO] 
+[INFO] --- remote-resources:3.1.0:process (process-resource-bundles) @ activemq-client ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ activemq-client ---
+[INFO] Copying 17 resources from src/main/resources to target/classes
+[INFO] Copying 1 resource from src/main/filtered-resources to target/classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ activemq-client ---
+[WARNING]  Parameter 'optimize' (user property 'maven.compiler.optimize') is deprecated: This property is a no-op in javac.
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 719 source files with javac [debug optimize deprecation target 17] to target/classes
+[WARNING] system modules path not set in conjunction with -source 11
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/util/IdGenerator.java:[46,13] java.lang.SecurityManager in java.lang has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/util/IdGenerator.java:[46,40] getSecurityManager() in java.lang.System has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/ActiveMQConnectionFactory.java:[70,21] java.security.AccessController in java.security has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/ActiveMQConnectionFactory.java:[78,21] java.security.AccessController in java.security has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/ActiveMQConnectionFactory.java:[103,23] java.security.AccessController in java.security has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/transport/discovery/multicast/MulticastDiscoveryAgent.java:[321,18] setLoopbackMode(boolean) in java.net.MulticastSocket has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/transport/discovery/multicast/MulticastDiscoveryAgent.java:[328,22] joinGroup(java.net.InetAddress) in java.net.MulticastSocket has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/transport/discovery/multicast/MulticastDiscoveryAgent.java:[332,22] setInterface(java.net.InetAddress) in java.net.MulticastSocket has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/transport/reliable/ReplayStrategy.java:[38,30] org.apache.activemq.transport.reliable.ReliableTransport in org.apache.activemq.transport.reliable has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/transport/reliable/ReplayStrategy.java:[40,27] org.apache.activemq.transport.reliable.ReliableTransport in org.apache.activemq.transport.reliable has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/transport/multicast/MulticastTransport.java:[99,23] leaveGroup(java.net.InetAddress) in java.net.MulticastSocket has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/transport/multicast/MulticastTransport.java:[109,15] setLoopbackMode(boolean) in java.net.MulticastSocket has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/transport/multicast/MulticastTransport.java:[113,15] joinGroup(java.net.InetAddress) in java.net.MulticastSocket has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/transport/multicast/MulticastTransportFactory.java:[33,48] org.apache.activemq.transport.udp.UdpTransportFactory in org.apache.activemq.transport.udp has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/util/ClassLoadingAwareObjectInputStream.java:[70,26] getProxyClass(java.lang.ClassLoader,java.lang.Class<?>...) in java.lang.reflect.Proxy has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/util/ClassLoadingAwareObjectInputStream.java:[73,30] getProxyClass(java.lang.ClassLoader,java.lang.Class<?>...) in java.lang.reflect.Proxy has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/util/ClassLoadingAwareObjectInputStream.java:[78,30] getProxyClass(java.lang.ClassLoader,java.lang.Class<?>...) in java.lang.reflect.Proxy has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/transport/reliable/ExceptionIfDroppedReplayStrategy.java:[38,37] org.apache.activemq.transport.reliable.ReliableTransport in org.apache.activemq.transport.reliable has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/transport/reliable/ExceptionIfDroppedReplayStrategy.java:[49,34] org.apache.activemq.transport.reliable.ReliableTransport in org.apache.activemq.transport.reliable has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/transport/reliable/DefaultReplayStrategy.java:[38,37] org.apache.activemq.transport.reliable.ReliableTransport in org.apache.activemq.transport.reliable has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/transport/reliable/DefaultReplayStrategy.java:[53,34] org.apache.activemq.transport.reliable.ReliableTransport in org.apache.activemq.transport.reliable has been deprecated
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/openwire/v10/BaseDataStreamMarshaller.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/main/java/org/apache/activemq/openwire/v10/BaseDataStreamMarshaller.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ activemq-client ---
+[INFO] Copying 4 resources from src/test/resources to target/test-classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ activemq-client ---
+[WARNING]  Parameter 'optimize' (user property 'maven.compiler.optimize') is deprecated: This property is a no-op in javac.
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 35 source files with javac [debug optimize deprecation target 17] to target/test-classes
+[WARNING] system modules path not set in conjunction with -source 11
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/test/java/org/apache/activemq/thread/TaskRunnerTest.java:[94,29] 'yield' may become a restricted identifier in a future release
+  (to invoke a method called yield, qualify the yield with a receiver or type name)
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-client/src/test/java/org/apache/activemq/util/XASupportTest.java:[80,9] <T>assertThat(T,org.hamcrest.Matcher<? super T>) in org.junit.Assert has been deprecated
+[INFO] 
+[INFO] --- surefire:3.2.1:test (default-test) @ activemq-client ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.2.1/maven-surefire-common-3.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.2.1/maven-surefire-common-3.2.1.pom (6.2 kB at 12 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.2.1/surefire-api-3.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.2.1/surefire-api-3.2.1.pom (3.5 kB at 84 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.2.1/surefire-logger-api-3.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.2.1/surefire-logger-api-3.2.1.pom (3.3 kB at 81 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.2.1/surefire-shared-utils-3.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.2.1/surefire-shared-utils-3.2.1.pom (4.1 kB at 123 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.2.1/surefire-extensions-api-3.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.2.1/surefire-extensions-api-3.2.1.pom (3.3 kB at 85 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.2.1/surefire-booter-3.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.2.1/surefire-booter-3.2.1.pom (4.5 kB at 91 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.2.1/surefire-extensions-spi-3.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.2.1/surefire-extensions-spi-3.2.1.pom (1.8 kB at 61 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.1.1/maven-common-artifact-filters-3.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.1.1/maven-common-artifact-filters-3.1.1.pom (5.8 kB at 176 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.pom (8.7 kB at 216 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/13/plexus-13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/13/plexus-13.pom (27 kB at 856 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M2/org.eclipse.sisu.plexus-0.9.0.M2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M2/org.eclipse.sisu.plexus-0.9.0.M2.pom (15 kB at 534 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.9.0.M2/sisu-plexus-0.9.0.M2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.9.0.M2/sisu-plexus-0.9.0.M2.pom (15 kB at 403 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M2/org.eclipse.sisu.inject-0.9.0.M2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M2/org.eclipse.sisu.inject-0.9.0.M2.pom (17 kB at 619 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.9.0.M2/sisu-inject-0.9.0.M2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.9.0.M2/sisu-inject-0.9.0.M2.pom (15 kB at 462 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/2.1.0/plexus-component-annotations-2.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/2.1.0/plexus-component-annotations-2.1.0.pom (750 B at 27 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.12.0/commons-io-2.12.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.12.0/commons-io-2.12.0.pom (20 kB at 813 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/57/commons-parent-57.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/57/commons-parent-57.pom (83 kB at 2.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/4.0.0/plexus-xml-4.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/4.0.0/plexus-xml-4.0.0.pom (6.5 kB at 167 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-xml-impl/4.0.0-alpha-5/maven-xml-impl-4.0.0-alpha-5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-xml-impl/4.0.0-alpha-5/maven-xml-impl-4.0.0-alpha-5.pom (1.9 kB at 67 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/4.0.0-alpha-5/maven-4.0.0-alpha-5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/4.0.0-alpha-5/maven-4.0.0-alpha-5.pom (26 kB at 779 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-bom/4.0.0-alpha-5/maven-bom-4.0.0-alpha-5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-bom/4.0.0-alpha-5/maven-bom-4.0.0-alpha-5.pom (6.3 kB at 253 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-api-xml/4.0.0-alpha-5/maven-api-xml-4.0.0-alpha-5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-api-xml/4.0.0-alpha-5/maven-api-xml-4.0.0-alpha-5.pom (1.6 kB at 60 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-api/4.0.0-alpha-5/maven-api-4.0.0-alpha-5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-api/4.0.0-alpha-5/maven-api-4.0.0-alpha-5.pom (3.6 kB at 75 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-api-meta/4.0.0-alpha-5/maven-api-meta-4.0.0-alpha-5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-api-meta/4.0.0-alpha-5/maven-api-meta-4.0.0-alpha-5.pom (1.4 kB at 42 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.2.1/maven-surefire-common-3.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/3.2.1/maven-surefire-common-3.2.1.jar (306 kB at 5.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.2.1/surefire-api-3.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.2.1/surefire-logger-api-3.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.2.1/surefire-booter-3.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.2.1/surefire-extensions-api-3.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.2.1/surefire-extensions-spi-3.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-logger-api/3.2.1/surefire-logger-api-3.2.1.jar (14 kB at 409 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.1.1/maven-common-artifact-filters-3.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-api/3.2.1/surefire-extensions-api-3.2.1.jar (25 kB at 345 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-extensions-spi/3.2.1/surefire-extensions-spi-3.2.1.jar (8.2 kB at 113 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M2/org.eclipse.sisu.plexus-0.9.0.M2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/3.1.1/maven-common-artifact-filters-3.1.1.jar (61 kB at 845 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M2/org.eclipse.sisu.inject-0.9.0.M2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/3.2.1/surefire-booter-3.2.1.jar (117 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.12.0/commons-io-2.12.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M2/org.eclipse.sisu.plexus-0.9.0.M2.jar (210 kB at 1.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/4.0.0/plexus-xml-4.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/3.2.1/surefire-api-3.2.1.jar (170 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-xml-impl/4.0.0-alpha-5/maven-xml-impl-4.0.0-alpha-5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar (192 kB at 1.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-api-xml/4.0.0-alpha-5/maven-api-xml-4.0.0-alpha-5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M2/org.eclipse.sisu.inject-0.9.0.M2.jar (425 kB at 3.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-api-meta/4.0.0-alpha-5/maven-api-meta-4.0.0-alpha-5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/4.0.0/plexus-xml-4.0.0.jar (89 kB at 600 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.2.1/surefire-shared-utils-3.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-api-meta/4.0.0-alpha-5/maven-api-meta-4.0.0-alpha-5.jar (12 kB at 72 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-api-xml/4.0.0-alpha-5/maven-api-xml-4.0.0-alpha-5.jar (8.4 kB at 53 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-xml-impl/4.0.0-alpha-5/maven-xml-impl-4.0.0-alpha-5.jar (27 kB at 167 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.12.0/commons-io-2.12.0.jar (474 kB at 2.7 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-shared-utils/3.2.1/surefire-shared-utils-3.2.1.jar (2.3 MB at 10.0 MB/s)
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- bundle:5.1.9:bundle (default-bundle) @ activemq-client ---
+[WARNING] Bundle org.apache.activemq:activemq-client:bundle:6.0.1-SNAPSHOT : Unused -privatepackage instructions , no such package(s) on the class path: [com.google.errorprone.annotations, com.google.errorprone.annotations.concurrent]
+[INFO] Building bundle: /tmp/tmp.sZ1kzlFjee/repo/activemq-client/target/activemq-client-6.0.1-SNAPSHOT.jar
+[INFO] Writing manifest: /tmp/tmp.sZ1kzlFjee/repo/activemq-client/target/classes/META-INF/MANIFEST.MF
+[INFO] 
+[INFO] --- site:3.12.1:attach-descriptor (attach-descriptor) @ activemq-client ---
+[INFO] Skipping because packaging 'bundle' is not pom.
+[INFO] 
+[INFO] --- jar:3.3.0:test-jar (default) @ activemq-client ---
+[INFO] Building jar: /tmp/tmp.sZ1kzlFjee/repo/activemq-client/target/activemq-client-6.0.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- source:3.3.0:jar-no-fork (attach-sources) @ activemq-client ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- tools:1.4:verify-legal-files (default) @ activemq-client ---
+[INFO] Checking legal files in: activemq-client-6.0.1-SNAPSHOT.jar
+[INFO] Checking legal files in: activemq-client-6.0.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ activemq-client ---
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-client/pom.xml to /home/runner/.m2/repository/org/apache/activemq/activemq-client/6.0.1-SNAPSHOT/activemq-client-6.0.1-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-client/target/activemq-client-6.0.1-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/activemq/activemq-client/6.0.1-SNAPSHOT/activemq-client-6.0.1-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-client/target/activemq-client-6.0.1-SNAPSHOT-tests.jar to /home/runner/.m2/repository/org/apache/activemq/activemq-client/6.0.1-SNAPSHOT/activemq-client-6.0.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- bundle:5.1.9:install (default-install) @ activemq-client ---
+[INFO] Writing OBR metadata
+[INFO] Installing org/apache/activemq/activemq-client/6.0.1-SNAPSHOT/activemq-client-6.0.1-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] ------------< org.apache.activemq:activemq-openwire-legacy >------------
+[INFO] Building ActiveMQ :: Openwire Legacy Support 6.0.1-SNAPSHOT        [3/7]
+[INFO]   from activemq-openwire-legacy/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven-version) @ activemq-openwire-legacy ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-java-version) @ activemq-openwire-legacy ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven) @ activemq-openwire-legacy ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:3.1.0:process (process-resource-bundles) @ activemq-openwire-legacy ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ activemq-openwire-legacy ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.sZ1kzlFjee/repo/activemq-openwire-legacy/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ activemq-openwire-legacy ---
+[WARNING]  Parameter 'optimize' (user property 'maven.compiler.optimize') is deprecated: This property is a no-op in javac.
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 439 source files with javac [debug optimize deprecation target 17] to target/classes
+[WARNING] system modules path not set in conjunction with -source 11
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-openwire-legacy/src/main/java/org/apache/activemq/openwire/v2/BaseDataStreamMarshaller.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-openwire-legacy/src/main/java/org/apache/activemq/openwire/v2/BaseDataStreamMarshaller.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ activemq-openwire-legacy ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.sZ1kzlFjee/repo/activemq-openwire-legacy/src/test/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ activemq-openwire-legacy ---
+[WARNING]  Parameter 'optimize' (user property 'maven.compiler.optimize') is deprecated: This property is a no-op in javac.
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug optimize deprecation target 17] to target/test-classes
+[WARNING] system modules path not set in conjunction with -source 11
+[INFO] 
+[INFO] --- surefire:3.2.1:test (default-test) @ activemq-openwire-legacy ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ activemq-openwire-legacy ---
+[INFO] Building jar: /tmp/tmp.sZ1kzlFjee/repo/activemq-openwire-legacy/target/activemq-openwire-legacy-6.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.12.1:attach-descriptor (attach-descriptor) @ activemq-openwire-legacy ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- source:3.3.0:jar-no-fork (attach-sources) @ activemq-openwire-legacy ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- tools:1.4:verify-legal-files (default) @ activemq-openwire-legacy ---
+[INFO] Checking legal files in: activemq-openwire-legacy-6.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ activemq-openwire-legacy ---
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-openwire-legacy/pom.xml to /home/runner/.m2/repository/org/apache/activemq/activemq-openwire-legacy/6.0.1-SNAPSHOT/activemq-openwire-legacy-6.0.1-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-openwire-legacy/target/activemq-openwire-legacy-6.0.1-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/activemq/activemq-openwire-legacy/6.0.1-SNAPSHOT/activemq-openwire-legacy-6.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] -----------------< org.apache.activemq:activemq-jaas >------------------
+[INFO] Building ActiveMQ :: JAAS 6.0.1-SNAPSHOT                           [4/7]
+[INFO]   from activemq-jaas/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.15.0/commons-io-2.15.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.15.0/commons-io-2.15.0.pom (22 kB at 656 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/64/commons-parent-64.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/64/commons-parent-64.pom (78 kB at 2.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-integ/2.0.0.AM25/apacheds-core-integ-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-integ/2.0.0.AM25/apacheds-core-integ-2.0.0.AM25.pom (13 kB at 378 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-parent/2.0.0.AM25/apacheds-parent-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-parent/2.0.0.AM25/apacheds-parent-2.0.0.AM25.pom (45 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/project/project/42/project-42.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/project/project/42/project-42.pom (38 kB at 1.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core/2.0.0.AM25/apacheds-core-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core/2.0.0.AM25/apacheds-core-2.0.0.AM25.pom (12 kB at 329 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-i18n/2.0.0.AM25/apacheds-i18n-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-i18n/2.0.0.AM25/apacheds-i18n-2.0.0.AM25.pom (2.4 kB at 75 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-shared/2.0.0.AM25/apacheds-core-shared-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-shared/2.0.0.AM25/apacheds-core-shared-2.0.0.AM25.pom (8.0 kB at 319 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-api/2.0.0.AM25/apacheds-core-api-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-api/2.0.0.AM25/apacheds-core-api-2.0.0.AM25.pom (9.5 kB at 381 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom (17 kB at 700 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/17/commons-parent-17.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/17/commons-parent-17.pom (31 kB at 975 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-constants/2.0.0.AM25/apacheds-core-constants-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-constants/2.0.0.AM25/apacheds-core-constants-2.0.0.AM25.pom (2.5 kB at 63 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-i18n/2.0.0.AM1/api-i18n-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-i18n/2.0.0.AM1/api-i18n-2.0.0.AM1.pom (2.6 kB at 94 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-parent/2.0.0.AM1/api-parent-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-parent/2.0.0.AM1/api-parent-2.0.0.AM1.pom (25 kB at 637 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-asn1-api/2.0.0.AM1/api-asn1-api-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-asn1-api/2.0.0.AM1/api-asn1-api-2.0.0.AM1.pom (3.3 kB at 104 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-asn1-parent/2.0.0.AM1/api-asn1-parent-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-asn1-parent/2.0.0.AM1/api-asn1-parent-2.0.0.AM1.pom (1.5 kB at 46 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-client-api/2.0.0.AM1/api-ldap-client-api-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-client-api/2.0.0.AM1/api-ldap-client-api-2.0.0.AM1.pom (8.6 kB at 216 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-client-parent/2.0.0.AM1/api-ldap-client-parent-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-client-parent/2.0.0.AM1/api-ldap-client-parent-2.0.0.AM1.pom (1.5 kB at 33 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-parent/2.0.0.AM1/api-ldap-parent-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-parent/2.0.0.AM1/api-ldap-parent-2.0.0.AM1.pom (1.6 kB at 56 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-schema-data/2.0.0.AM1/api-ldap-schema-data-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-schema-data/2.0.0.AM1/api-ldap-schema-data-2.0.0.AM1.pom (7.8 kB at 253 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-schema-parent/2.0.0.AM1/api-ldap-schema-parent-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-schema-parent/2.0.0.AM1/api-ldap-schema-parent-2.0.0.AM1.pom (1.5 kB at 43 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-model/2.0.0.AM1/api-ldap-model-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-model/2.0.0.AM1/api-ldap-model-2.0.0.AM1.pom (8.8 kB at 253 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-util/2.0.0.AM1/api-util-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-util/2.0.0.AM1/api-util-2.0.0.AM1.pom (3.4 kB at 80 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-asn1-ber/2.0.0.AM1/api-asn1-ber-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-asn1-ber/2.0.0.AM1/api-asn1-ber-2.0.0.AM1.pom (3.9 kB at 101 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/mina/mina-core/2.0.18/mina-core-2.0.18.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/mina/mina-core/2.0.18/mina-core-2.0.18.pom (6.3 kB at 209 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/mina/mina-parent/2.0.18/mina-parent-2.0.18.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/mina/mina-parent/2.0.18/mina-parent-2.0.18.pom (31 kB at 929 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/org.apache.servicemix.bundles.antlr/2.7.7_5/org.apache.servicemix.bundles.antlr-2.7.7_5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/org.apache.servicemix.bundles.antlr/2.7.7_5/org.apache.servicemix.bundles.antlr-2.7.7_5.pom (2.7 kB at 104 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/bundles-pom/6/bundles-pom-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/bundles-pom/6/bundles-pom-6.pom (9.7 kB at 333 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/servicemix-pom/5/servicemix-pom-5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/servicemix-pom/5/servicemix-pom-5.pom (9.5 kB at 305 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-codec-core/2.0.0.AM1/api-ldap-codec-core-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-codec-core/2.0.0.AM1/api-ldap-codec-core-2.0.0.AM1.pom (6.9 kB at 230 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-codec-parent/2.0.0.AM1/api-ldap-codec-parent-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-codec-parent/2.0.0.AM1/api-ldap-codec-parent-2.0.0.AM1.pom (1.5 kB at 60 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-aci/2.0.0.AM1/api-ldap-extras-aci-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-aci/2.0.0.AM1/api-ldap-extras-aci-2.0.0.AM1.pom (4.8 kB at 112 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-parent/2.0.0.AM1/api-ldap-extras-parent-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-parent/2.0.0.AM1/api-ldap-extras-parent-2.0.0.AM1.pom (1.6 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-codec/2.0.0.AM1/api-ldap-extras-codec-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-codec/2.0.0.AM1/api-ldap-extras-codec-2.0.0.AM1.pom (9.9 kB at 382 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-codec-api/2.0.0.AM1/api-ldap-extras-codec-api-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-codec-api/2.0.0.AM1/api-ldap-extras-codec-api-2.0.0.AM1.pom (5.6 kB at 225 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.12.0/commons-pool2-2.12.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.12.0/commons-pool2-2.12.0.pom (16 kB at 638 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/62/commons-parent-62.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/62/commons-parent-62.pom (81 kB at 2.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-util/2.0.0.AM1/api-ldap-extras-util-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-util/2.0.0.AM1/api-ldap-extras-util-2.0.0.AM1.pom (3.4 kB at 100 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/sf/ehcache/ehcache/2.10.4/ehcache-2.10.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/sf/ehcache/ehcache/2.10.4/ehcache-2.10.4.pom (19 kB at 533 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/sf/ehcache/ehcache-root/2.10.4/ehcache-root-2.10.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/sf/ehcache/ehcache-root/2.10.4/ehcache-root-2.10.4.pom (17 kB at 531 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/sf/ehcache/ehcache-parent/2.18/ehcache-parent-2.18.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/sf/ehcache/ehcache-parent/2.18/ehcache-parent-2.18.pom (17 kB at 625 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M3/apacheds-jdbm1-2.0.0-M3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M3/apacheds-jdbm1-2.0.0-M3.pom (3.0 kB at 94 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/jdbm/apacheds-jdbm-parent/2.0.0-M3/apacheds-jdbm-parent-2.0.0-M3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/jdbm/apacheds-jdbm-parent/2.0.0-M3/apacheds-jdbm-parent-2.0.0-M3.pom (18 kB at 516 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/project/project/33/project-33.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/project/project/33/project-33.pom (29 kB at 880 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-admin/2.0.0.AM25/apacheds-interceptors-admin-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-admin/2.0.0.AM25/apacheds-interceptors-admin-2.0.0.AM25.pom (5.9 kB at 219 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors/2.0.0.AM25/apacheds-interceptors-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors/2.0.0.AM25/apacheds-interceptors-2.0.0.AM25.pom (2.0 kB at 64 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-authn/2.0.0.AM25/apacheds-interceptors-authn-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-authn/2.0.0.AM25/apacheds-interceptors-authn-2.0.0.AM25.pom (7.7 kB at 227 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-number/2.0.0.AM25/apacheds-interceptors-number-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-number/2.0.0.AM25/apacheds-interceptors-number-2.0.0.AM25.pom (5.3 kB at 171 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-authz/2.0.0.AM25/apacheds-interceptors-authz-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-authz/2.0.0.AM25/apacheds-interceptors-authz-2.0.0.AM25.pom (7.0 kB at 258 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-changelog/2.0.0.AM25/apacheds-interceptors-changelog-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-changelog/2.0.0.AM25/apacheds-interceptors-changelog-2.0.0.AM25.pom (6.4 kB at 163 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-collective/2.0.0.AM25/apacheds-interceptors-collective-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-collective/2.0.0.AM25/apacheds-interceptors-collective-2.0.0.AM25.pom (5.1 kB at 120 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-event/2.0.0.AM25/apacheds-interceptors-event-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-event/2.0.0.AM25/apacheds-interceptors-event-2.0.0.AM25.pom (5.2 kB at 168 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-exception/2.0.0.AM25/apacheds-interceptors-exception-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-exception/2.0.0.AM25/apacheds-interceptors-exception-2.0.0.AM25.pom (5.3 kB at 190 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-journal/2.0.0.AM25/apacheds-interceptors-journal-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-journal/2.0.0.AM25/apacheds-interceptors-journal-2.0.0.AM25.pom (4.6 kB at 170 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-normalization/2.0.0.AM25/apacheds-interceptors-normalization-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-normalization/2.0.0.AM25/apacheds-interceptors-normalization-2.0.0.AM25.pom (5.8 kB at 181 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-operational/2.0.0.AM25/apacheds-interceptors-operational-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-operational/2.0.0.AM25/apacheds-interceptors-operational-2.0.0.AM25.pom (5.8 kB at 169 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-referral/2.0.0.AM25/apacheds-interceptors-referral-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-referral/2.0.0.AM25/apacheds-interceptors-referral-2.0.0.AM25.pom (5.6 kB at 169 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-schema/2.0.0.AM25/apacheds-interceptors-schema-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-schema/2.0.0.AM25/apacheds-interceptors-schema-2.0.0.AM25.pom (7.3 kB at 245 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-subtree/2.0.0.AM25/apacheds-interceptors-subtree-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-subtree/2.0.0.AM25/apacheds-interceptors-subtree-2.0.0.AM25.pom (6.7 kB at 239 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-trigger/2.0.0.AM25/apacheds-interceptors-trigger-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-trigger/2.0.0.AM25/apacheds-interceptors-trigger-2.0.0.AM25.pom (6.2 kB at 193 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-trigger/2.0.0.AM1/api-ldap-extras-trigger-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-trigger/2.0.0.AM1/api-ldap-extras-trigger-2.0.0.AM1.pom (4.7 kB at 168 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk15on/1.59/bcprov-jdk15on-1.59.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk15on/1.59/bcprov-jdk15on-1.59.pom (1.1 kB at 42 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-annotations/2.0.0.AM25/apacheds-core-annotations-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-annotations/2.0.0.AM25/apacheds-core-annotations-2.0.0.AM25.pom (8.9 kB at 305 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-ldif-partition/2.0.0.AM25/apacheds-ldif-partition-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-ldif-partition/2.0.0.AM25/apacheds-ldif-partition-2.0.0.AM25.pom (5.7 kB at 178 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-xdbm-partition/2.0.0.AM25/apacheds-xdbm-partition-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-xdbm-partition/2.0.0.AM25/apacheds-xdbm-partition-2.0.0.AM25.pom (7.4 kB at 263 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-avl/2.0.0.AM25/apacheds-core-avl-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-avl/2.0.0.AM25/apacheds-core-avl-2.0.0.AM25.pom (3.8 kB at 111 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-jdbm-partition/2.0.0.AM25/apacheds-jdbm-partition-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-jdbm-partition/2.0.0.AM25/apacheds-jdbm-partition-2.0.0.AM25.pom (7.3 kB at 293 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/mavibot/mavibot/1.0.0-M8/mavibot-1.0.0-M8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/mavibot/mavibot/1.0.0-M8/mavibot-1.0.0-M8.pom (3.9 kB at 130 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/mavibot/mavibot-parent/1.0.0-M8/mavibot-parent-1.0.0-M8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/mavibot/mavibot-parent/1.0.0-M8/mavibot-parent-1.0.0-M8.pom (14 kB at 411 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/project/project/34/project-34.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/project/project/34/project-34.pom (29 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-mavibot-partition/2.0.0.AM25/apacheds-mavibot-partition-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-mavibot-partition/2.0.0.AM25/apacheds-mavibot-partition-2.0.0.AM25.pom (7.3 kB at 177 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-jndi/2.0.0.AM25/apacheds-core-jndi-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-jndi/2.0.0.AM25/apacheds-core-jndi-2.0.0.AM25.pom (8.8 kB at 313 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-hash/2.0.0.AM25/apacheds-interceptors-hash-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-hash/2.0.0.AM25/apacheds-interceptors-hash-2.0.0.AM25.pom (7.3 kB at 156 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-server-config/2.0.0.AM25/apacheds-server-config-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-server-config/2.0.0.AM25/apacheds-server-config-2.0.0.AM25.pom (6.0 kB at 159 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-protocol-ldap/2.0.0.AM25/apacheds-protocol-ldap-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-protocol-ldap/2.0.0.AM25/apacheds-protocol-ldap-2.0.0.AM25.pom (15 kB at 492 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-protocol-shared/2.0.0.AM25/apacheds-protocol-shared-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-protocol-shared/2.0.0.AM25/apacheds-protocol-shared-2.0.0.AM25.pom (5.9 kB at 170 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-kerberos-codec/2.0.0.AM25/apacheds-kerberos-codec-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-kerberos-codec/2.0.0.AM25/apacheds-kerberos-codec-2.0.0.AM25.pom (7.1 kB at 150 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-sp/2.0.0.AM1/api-ldap-extras-sp-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-sp/2.0.0.AM1/api-ldap-extras-sp-2.0.0.AM1.pom (3.7 kB at 97 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-server-annotations/2.0.0.AM25/apacheds-server-annotations-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-server-annotations/2.0.0.AM25/apacheds-server-annotations-2.0.0.AM25.pom (6.8 kB at 251 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-protocol-kerberos/2.0.0.AM25/apacheds-protocol-kerberos-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-protocol-kerberos/2.0.0.AM25/apacheds-protocol-kerberos-2.0.0.AM25.pom (9.0 kB at 282 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-test-framework/2.0.0.AM25/apacheds-test-framework-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-test-framework/2.0.0.AM25/apacheds-test-framework-2.0.0.AM25.pom (6.7 kB at 249 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-codec-standalone/2.0.0.AM1/api-ldap-codec-standalone-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-codec-standalone/2.0.0.AM1/api-ldap-codec-standalone-2.0.0.AM1.pom (4.9 kB at 159 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-net-mina/2.0.0.AM1/api-ldap-net-mina-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-net-mina/2.0.0.AM1/api-ldap-net-mina-2.0.0.AM1.pom (3.9 kB at 121 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-net-parent/2.0.0.AM1/api-ldap-net-parent-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-net-parent/2.0.0.AM1/api-ldap-net-parent-2.0.0.AM1.pom (1.5 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-server-integ/2.0.0.AM25/apacheds-server-integ-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-server-integ/2.0.0.AM25/apacheds-server-integ-2.0.0.AM25.pom (14 kB at 408 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptor-kerberos/2.0.0.AM25/apacheds-interceptor-kerberos-2.0.0.AM25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptor-kerberos/2.0.0.AM25/apacheds-interceptor-kerberos-2.0.0.AM25.pom (6.1 kB at 226 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/ldapsdk/ldapsdk/4.1/ldapsdk-4.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/ldapsdk/ldapsdk/4.1/ldapsdk-4.1.pom (146 B at 5.0 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-dsml-engine/2.0.0.AM1/api-dsml-engine-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-dsml-engine/2.0.0.AM1/api-dsml-engine-2.0.0.AM1.pom (4.1 kB at 142 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-dsml-parent/2.0.0.AM1/api-dsml-parent-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-dsml-parent/2.0.0.AM1/api-dsml-parent-2.0.0.AM1.pom (1.5 kB at 49 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-dsml-parser/2.0.0.AM1/api-dsml-parser-2.0.0.AM1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-dsml-parser/2.0.0.AM1/api-dsml-parser-2.0.0.AM1.pom (5.7 kB at 174 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/org.apache.servicemix.bundles.dom4j/1.6.1_5/org.apache.servicemix.bundles.dom4j-1.6.1_5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/org.apache.servicemix.bundles.dom4j/1.6.1_5/org.apache.servicemix.bundles.dom4j-1.6.1_5.pom (3.4 kB at 120 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/bundles-pom/8/bundles-pom-8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/bundles-pom/8/bundles-pom-8.pom (14 kB at 486 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/org.apache.servicemix.bundles.xpp3/1.1.4c_7/org.apache.servicemix.bundles.xpp3-1.1.4c_7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/org.apache.servicemix.bundles.xpp3/1.1.4c_7/org.apache.servicemix.bundles.xpp3-1.1.4c_7.pom (3.1 kB at 88 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/bundles-pom/11/bundles-pom-11.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/bundles-pom/11/bundles-pom-11.pom (15 kB at 451 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean-spring/4.24/xbean-spring-4.24.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean-spring/4.24/xbean-spring-4.24.pom (6.0 kB at 194 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean/4.24/xbean-4.24.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean/4.24/xbean-4.24.pom (19 kB at 456 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/genesis-java8-flava/2.3/genesis-java8-flava-2.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/genesis-java8-flava/2.3/genesis-java8-flava-2.3.pom (5.5 kB at 148 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/genesis-default-flava/2.3/genesis-default-flava-2.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/genesis-default-flava/2.3/genesis-default-flava-2.3.pom (15 kB at 485 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/genesis/2.3/genesis-2.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/genesis/2.3/genesis-2.3.pom (16 kB at 469 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jasypt/jasypt/1.9.3/jasypt-1.9.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jasypt/jasypt/1.9.3/jasypt-1.9.3.pom (8.1 kB at 313 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.15.0/commons-io-2.15.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.15.0/commons-io-2.15.0.jar (501 kB at 11 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-integ/2.0.0.AM25/apacheds-core-integ-2.0.0.AM25.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core/2.0.0.AM25/apacheds-core-2.0.0.AM25.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-admin/2.0.0.AM25/apacheds-interceptors-admin-2.0.0.AM25.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-number/2.0.0.AM25/apacheds-interceptors-number-2.0.0.AM25.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-authz/2.0.0.AM25/apacheds-interceptors-authz-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-integ/2.0.0.AM25/apacheds-core-integ-2.0.0.AM25.jar (39 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-changelog/2.0.0.AM25/apacheds-interceptors-changelog-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-number/2.0.0.AM25/apacheds-interceptors-number-2.0.0.AM25.jar (12 kB at 387 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-collective/2.0.0.AM25/apacheds-interceptors-collective-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-authz/2.0.0.AM25/apacheds-interceptors-authz-2.0.0.AM25.jar (66 kB at 1.9 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-event/2.0.0.AM25/apacheds-interceptors-event-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-admin/2.0.0.AM25/apacheds-interceptors-admin-2.0.0.AM25.jar (21 kB at 516 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-exception/2.0.0.AM25/apacheds-interceptors-exception-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-collective/2.0.0.AM25/apacheds-interceptors-collective-2.0.0.AM25.jar (14 kB at 260 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-journal/2.0.0.AM25/apacheds-interceptors-journal-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-changelog/2.0.0.AM25/apacheds-interceptors-changelog-2.0.0.AM25.jar (22 kB at 366 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-normalization/2.0.0.AM25/apacheds-interceptors-normalization-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-event/2.0.0.AM25/apacheds-interceptors-event-2.0.0.AM25.jar (20 kB at 314 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-operational/2.0.0.AM25/apacheds-interceptors-operational-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core/2.0.0.AM25/apacheds-core-2.0.0.AM25.jar (52 kB at 771 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-referral/2.0.0.AM25/apacheds-interceptors-referral-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-exception/2.0.0.AM25/apacheds-interceptors-exception-2.0.0.AM25.jar (11 kB at 155 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-schema/2.0.0.AM25/apacheds-interceptors-schema-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-journal/2.0.0.AM25/apacheds-interceptors-journal-2.0.0.AM25.jar (14 kB at 164 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-subtree/2.0.0.AM25/apacheds-interceptors-subtree-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-operational/2.0.0.AM25/apacheds-interceptors-operational-2.0.0.AM25.jar (19 kB at 199 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-trigger/2.0.0.AM25/apacheds-interceptors-trigger-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-normalization/2.0.0.AM25/apacheds-interceptors-normalization-2.0.0.AM25.jar (16 kB at 171 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-util/2.0.0.AM1/api-ldap-extras-util-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-schema/2.0.0.AM25/apacheds-interceptors-schema-2.0.0.AM25.jar (42 kB at 349 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk15on/1.59/bcprov-jdk15on-1.59.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-subtree/2.0.0.AM25/apacheds-interceptors-subtree-2.0.0.AM25.jar (27 kB at 216 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-annotations/2.0.0.AM25/apacheds-core-annotations-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-util/2.0.0.AM1/api-ldap-extras-util-2.0.0.AM1.jar (21 kB at 162 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-ldif-partition/2.0.0.AM25/apacheds-ldif-partition-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-trigger/2.0.0.AM25/apacheds-interceptors-trigger-2.0.0.AM25.jar (48 kB at 378 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-jdbm-partition/2.0.0.AM25/apacheds-jdbm-partition-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-referral/2.0.0.AM25/apacheds-interceptors-referral-2.0.0.AM25.jar (12 kB at 83 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-avl/2.0.0.AM25/apacheds-core-avl-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-jdbm-partition/2.0.0.AM25/apacheds-jdbm-partition-2.0.0.AM25.jar (74 kB at 480 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-xdbm-partition/2.0.0.AM25/apacheds-xdbm-partition-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-annotations/2.0.0.AM25/apacheds-core-annotations-2.0.0.AM25.jar (32 kB at 209 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/mavibot/mavibot/1.0.0-M8/mavibot-1.0.0-M8.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-ldif-partition/2.0.0.AM25/apacheds-ldif-partition-2.0.0.AM25.jar (32 kB at 198 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-mavibot-partition/2.0.0.AM25/apacheds-mavibot-partition-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/mavibot/mavibot/1.0.0-M8/mavibot-1.0.0-M8.jar (289 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-api/2.0.0.AM25/apacheds-core-api-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-xdbm-partition/2.0.0.AM25/apacheds-xdbm-partition-2.0.0.AM25.jar (186 kB at 986 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-constants/2.0.0.AM25/apacheds-core-constants-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-mavibot-partition/2.0.0.AM25/apacheds-mavibot-partition-2.0.0.AM25.jar (56 kB at 293 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-i18n/2.0.0.AM1/api-i18n-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-avl/2.0.0.AM25/apacheds-core-avl-2.0.0.AM25.jar (62 kB at 310 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-aci/2.0.0.AM1/api-ldap-extras-aci-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/bouncycastle/bcprov-jdk15on/1.59/bcprov-jdk15on-1.59.jar (4.1 MB at 20 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/sf/ehcache/ehcache/2.10.4/ehcache-2.10.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-api/2.0.0.AM25/apacheds-core-api-2.0.0.AM25.jar (259 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-jndi/2.0.0.AM25/apacheds-core-jndi-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-constants/2.0.0.AM25/apacheds-core-constants-2.0.0.AM25.jar (11 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-shared/2.0.0.AM25/apacheds-core-shared-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-i18n/2.0.0.AM1/api-i18n-2.0.0.AM1.jar (84 kB at 375 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-codec-api/2.0.0.AM1/api-ldap-extras-codec-api-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-aci/2.0.0.AM1/api-ldap-extras-aci-2.0.0.AM1.jar (105 kB at 431 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M3/apacheds-jdbm1-2.0.0-M3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-jndi/2.0.0.AM25/apacheds-core-jndi-2.0.0.AM25.jar (54 kB at 215 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-authn/2.0.0.AM25/apacheds-interceptors-authn-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-codec-api/2.0.0.AM1/api-ldap-extras-codec-api-2.0.0.AM1.jar (97 kB at 384 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-hash/2.0.0.AM25/apacheds-interceptors-hash-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-core-shared/2.0.0.AM25/apacheds-core-shared-2.0.0.AM25.jar (52 kB at 199 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-server-config/2.0.0.AM25/apacheds-server-config-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-authn/2.0.0.AM25/apacheds-interceptors-authn-2.0.0.AM25.jar (44 kB at 157 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-trigger/2.0.0.AM1/api-ldap-extras-trigger-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptors-hash/2.0.0.AM25/apacheds-interceptors-hash-2.0.0.AM25.jar (19 kB at 67 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-i18n/2.0.0.AM25/apacheds-i18n-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-server-config/2.0.0.AM25/apacheds-server-config-2.0.0.AM25.jar (91 kB at 313 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-protocol-ldap/2.0.0.AM25/apacheds-protocol-ldap-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-trigger/2.0.0.AM1/api-ldap-extras-trigger-2.0.0.AM1.jar (49 kB at 160 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-protocol-shared/2.0.0.AM25/apacheds-protocol-shared-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/sf/ehcache/ehcache/2.10.4/ehcache-2.10.4.jar (8.9 MB at 28 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-asn1-ber/2.0.0.AM1/api-asn1-ber-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-i18n/2.0.0.AM25/apacheds-i18n-2.0.0.AM25.jar (45 kB at 141 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-server-annotations/2.0.0.AM25/apacheds-server-annotations-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-protocol-ldap/2.0.0.AM25/apacheds-protocol-ldap-2.0.0.AM25.jar (235 kB at 722 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-protocol-kerberos/2.0.0.AM25/apacheds-protocol-kerberos-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M3/apacheds-jdbm1-2.0.0-M3.jar (105 kB at 320 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-test-framework/2.0.0.AM25/apacheds-test-framework-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-protocol-shared/2.0.0.AM25/apacheds-protocol-shared-2.0.0.AM25.jar (33 kB at 99 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-codec-standalone/2.0.0.AM1/api-ldap-codec-standalone-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-asn1-ber/2.0.0.AM1/api-asn1-ber-2.0.0.AM1.jar (42 kB at 120 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-net-mina/2.0.0.AM1/api-ldap-net-mina-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-test-framework/2.0.0.AM25/apacheds-test-framework-2.0.0.AM25.jar (33 kB at 94 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-server-annotations/2.0.0.AM25/apacheds-server-annotations-2.0.0.AM25.jar (23 kB at 64 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-asn1-api/2.0.0.AM1/api-asn1-api-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-codec-standalone/2.0.0.AM1/api-ldap-codec-standalone-2.0.0.AM1.jar (18 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-sp/2.0.0.AM1/api-ldap-extras-sp-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-protocol-kerberos/2.0.0.AM25/apacheds-protocol-kerberos-2.0.0.AM25.jar (81 kB at 218 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-codec-core/2.0.0.AM1/api-ldap-codec-core-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-asn1-api/2.0.0.AM1/api-asn1-api-2.0.0.AM1.jar (20 kB at 53 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-model/2.0.0.AM1/api-ldap-model-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar (284 kB at 742 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/org.apache.servicemix.bundles.antlr/2.7.7_5/org.apache.servicemix.bundles.antlr-2.7.7_5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-net-mina/2.0.0.AM1/api-ldap-net-mina-2.0.0.AM1.jar (17 kB at 43 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-schema-data/2.0.0.AM1/api-ldap-schema-data-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-sp/2.0.0.AM1/api-ldap-extras-sp-2.0.0.AM1.jar (13 kB at 33 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-util/2.0.0.AM1/api-util-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-model/2.0.0.AM1/api-ldap-model-2.0.0.AM1.jar (1.0 MB at 2.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-server-integ/2.0.0.AM25/apacheds-server-integ-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-util/2.0.0.AM1/api-util-2.0.0.AM1.jar (87 kB at 204 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-kerberos-codec/2.0.0.AM25/apacheds-kerberos-codec-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-codec-core/2.0.0.AM1/api-ldap-codec-core-2.0.0.AM1.jar (354 kB at 810 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptor-kerberos/2.0.0.AM25/apacheds-interceptor-kerberos-2.0.0.AM25.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-schema-data/2.0.0.AM1/api-ldap-schema-data-2.0.0.AM1.jar (687 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/ldapsdk/ldapsdk/4.1/ldapsdk-4.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/org.apache.servicemix.bundles.antlr/2.7.7_5/org.apache.servicemix.bundles.antlr-2.7.7_5.jar (454 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-codec/2.0.0.AM1/api-ldap-extras-codec-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-server-integ/2.0.0.AM25/apacheds-server-integ-2.0.0.AM25.jar (11 kB at 24 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/mina/mina-core/2.0.18/mina-core-2.0.18.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-kerberos-codec/2.0.0.AM25/apacheds-kerberos-codec-2.0.0.AM25.jar (688 kB at 1.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-client-api/2.0.0.AM1/api-ldap-client-api-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/ldapsdk/ldapsdk/4.1/ldapsdk-4.1.jar (263 kB at 554 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.12.0/commons-pool2-2.12.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-extras-codec/2.0.0.AM1/api-ldap-extras-codec-2.0.0.AM1.jar (319 kB at 656 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-dsml-engine/2.0.0.AM1/api-dsml-engine-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/server/apacheds-interceptor-kerberos/2.0.0.AM25/apacheds-interceptor-kerberos-2.0.0.AM25.jar (16 kB at 32 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-dsml-parser/2.0.0.AM1/api-dsml-parser-2.0.0.AM1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-ldap-client-api/2.0.0.AM1/api-ldap-client-api-2.0.0.AM1.jar (151 kB at 305 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/org.apache.servicemix.bundles.xpp3/1.1.4c_7/org.apache.servicemix.bundles.xpp3-1.1.4c_7.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/mina/mina-core/2.0.18/mina-core-2.0.18.jar (656 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/org.apache.servicemix.bundles.dom4j/1.6.1_5/org.apache.servicemix.bundles.dom4j-1.6.1_5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-dsml-engine/2.0.0.AM1/api-dsml-engine-2.0.0.AM1.jar (16 kB at 32 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean-spring/4.24/xbean-spring-4.24.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.12.0/commons-pool2-2.12.0.jar (150 kB at 290 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jasypt/jasypt/1.9.3/jasypt-1.9.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/org.apache.servicemix.bundles.xpp3/1.1.4c_7/org.apache.servicemix.bundles.xpp3-1.1.4c_7.jar (130 kB at 249 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/servicemix/bundles/org.apache.servicemix.bundles.dom4j/1.6.1_5/org.apache.servicemix.bundles.dom4j-1.6.1_5.jar (326 kB at 619 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/directory/api/api-dsml-parser/2.0.0.AM1/api-dsml-parser-2.0.0.AM1.jar (216 kB at 406 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/xbean/xbean-spring/4.24/xbean-spring-4.24.jar (137 kB at 252 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jasypt/jasypt/1.9.3/jasypt-1.9.3.jar (142 kB at 258 kB/s)
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven-version) @ activemq-jaas ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-java-version) @ activemq-jaas ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven) @ activemq-jaas ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:3.1.0:process (process-resource-bundles) @ activemq-jaas ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ activemq-jaas ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.sZ1kzlFjee/repo/activemq-jaas/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ activemq-jaas ---
+[WARNING]  Parameter 'optimize' (user property 'maven.compiler.optimize') is deprecated: This property is a no-op in javac.
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 15 source files with javac [debug optimize deprecation target 17] to target/classes
+[WARNING] system modules path not set in conjunction with -source 11
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-jaas/src/main/java/org/apache/activemq/jaas/CertificateLoginModule.java:[193,28] getSubjectDN() in java.security.cert.X509Certificate has been deprecated
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-jaas/src/main/java/org/apache/activemq/jaas/EncryptionSupport.java: /tmp/tmp.sZ1kzlFjee/repo/activemq-jaas/src/main/java/org/apache/activemq/jaas/EncryptionSupport.java uses unchecked or unsafe operations.
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-jaas/src/main/java/org/apache/activemq/jaas/EncryptionSupport.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ activemq-jaas ---
+[INFO] Copying 10 resources from src/test/resources to target/test-classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ activemq-jaas ---
+[WARNING]  Parameter 'optimize' (user property 'maven.compiler.optimize') is deprecated: This property is a no-op in javac.
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 11 source files with javac [debug optimize deprecation target 17] to target/test-classes
+[WARNING] system modules path not set in conjunction with -source 11
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-jaas/src/test/java/org/apache/activemq/jaas/StubCertificateLoginModule.java: /tmp/tmp.sZ1kzlFjee/repo/activemq-jaas/src/test/java/org/apache/activemq/jaas/StubCertificateLoginModule.java uses unchecked or unsafe operations.
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-jaas/src/test/java/org/apache/activemq/jaas/StubCertificateLoginModule.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- surefire:3.2.1:test (default-test) @ activemq-jaas ---
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ activemq-jaas ---
+[INFO] Building jar: /tmp/tmp.sZ1kzlFjee/repo/activemq-jaas/target/activemq-jaas-6.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.12.1:attach-descriptor (attach-descriptor) @ activemq-jaas ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- source:3.3.0:jar-no-fork (attach-sources) @ activemq-jaas ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- tools:1.4:verify-legal-files (default) @ activemq-jaas ---
+[INFO] Checking legal files in: activemq-jaas-6.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ activemq-jaas ---
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-jaas/pom.xml to /home/runner/.m2/repository/org/apache/activemq/activemq-jaas/6.0.1-SNAPSHOT/activemq-jaas-6.0.1-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-jaas/target/activemq-jaas-6.0.1-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/activemq/activemq-jaas/6.0.1-SNAPSHOT/activemq-jaas-6.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] ----------------< org.apache.activemq:activemq-broker >-----------------
+[INFO] Building ActiveMQ :: Broker 6.0.1-SNAPSHOT                         [5/7]
+[INFO]   from activemq-broker/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.pom (16 kB at 494 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/osgi/osgi.core/6.0.0/osgi.core-6.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/osgi/osgi.core/6.0.0/osgi.core-6.0.0.pom (1.3 kB at 37 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.pom (19 kB at 429 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-base/2.15.3/jackson-base-2.15.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-base/2.15.3/jackson-base-2.15.3.pom (11 kB at 289 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.15.3/jackson-bom-2.15.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.15.3/jackson-bom-2.15.3.pom (18 kB at 461 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.pom (7.1 kB at 221 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.pom (9.8 kB at 264 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar (26 kB at 843 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/osgi/osgi.core/6.0.0/osgi.core-6.0.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar (76 kB at 2.1 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar (549 kB at 14 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/osgi/osgi.core/6.0.0/osgi.core-6.0.0.jar (475 kB at 11 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar (1.6 MB at 31 MB/s)
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven-version) @ activemq-broker ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-java-version) @ activemq-broker ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven) @ activemq-broker ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:3.1.0:process (process-resource-bundles) @ activemq-broker ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ activemq-broker ---
+[INFO] Copying 14 resources from src/main/resources to target/classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ activemq-broker ---
+[WARNING]  Parameter 'optimize' (user property 'maven.compiler.optimize') is deprecated: This property is a no-op in javac.
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 457 source files with javac [debug optimize deprecation target 17] to target/classes
+[WARNING] system modules path not set in conjunction with -source 11
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/src/main/java/org/apache/activemq/broker/jmx/AnnotatedMBean.java:[208,50] java.security.AccessController in java.security has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/src/main/java/org/apache/activemq/broker/jmx/AnnotatedMBean.java:[208,38] getSubject(java.security.AccessControlContext) in javax.security.auth.Subject has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/src/main/java/org/apache/activemq/broker/util/MulticastTraceBrokerPlugin.java:[48,10] setLoopbackMode(boolean) in java.net.MulticastSocket has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/src/main/java/org/apache/activemq/security/JaasCertificateSecurityContext.java:[48,28] getSubjectDN() in java.security.cert.X509Certificate has been deprecated
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/src/main/java/org/apache/activemq/broker/region/policy/PolicyMap.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/src/main/java/org/apache/activemq/broker/region/policy/PolicyMap.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ activemq-broker ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ activemq-broker ---
+[WARNING]  Parameter 'optimize' (user property 'maven.compiler.optimize') is deprecated: This property is a no-op in javac.
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 26 source files with javac [debug optimize deprecation target 17] to target/test-classes
+[WARNING] system modules path not set in conjunction with -source 11
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/src/test/java/org/apache/activemq/util/DefaultTestAppender.java: /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/src/test/java/org/apache/activemq/util/DefaultTestAppender.java uses unchecked or unsafe operations.
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/src/test/java/org/apache/activemq/util/DefaultTestAppender.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- surefire:3.2.1:test (default-test) @ activemq-broker ---
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ activemq-broker ---
+[INFO] Building jar: /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/target/activemq-broker-6.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.12.1:attach-descriptor (attach-descriptor) @ activemq-broker ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- jar:3.3.0:test-jar (default) @ activemq-broker ---
+[INFO] Building jar: /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/target/activemq-broker-6.0.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- source:3.3.0:jar-no-fork (attach-sources) @ activemq-broker ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- tools:1.4:verify-legal-files (default) @ activemq-broker ---
+[INFO] Checking legal files in: activemq-broker-6.0.1-SNAPSHOT.jar
+[INFO] Checking legal files in: activemq-broker-6.0.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ activemq-broker ---
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/pom.xml to /home/runner/.m2/repository/org/apache/activemq/activemq-broker/6.0.1-SNAPSHOT/activemq-broker-6.0.1-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/target/activemq-broker-6.0.1-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/activemq/activemq-broker/6.0.1-SNAPSHOT/activemq-broker-6.0.1-SNAPSHOT.jar
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-broker/target/activemq-broker-6.0.1-SNAPSHOT-tests.jar to /home/runner/.m2/repository/org/apache/activemq/activemq-broker/6.0.1-SNAPSHOT/activemq-broker-6.0.1-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] -------------< org.apache.activemq:activemq-kahadb-store >--------------
+[INFO] Building ActiveMQ :: KahaDB Store 6.0.1-SNAPSHOT                   [6/7]
+[INFO]   from activemq-kahadb-store/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.pom (3.0 kB at 106 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/activemq/protobuf/activemq-protobuf-pom/1.1/activemq-protobuf-pom-1.1.pom (11 kB at 380 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/activemq/protobuf/activemq-protobuf/1.1/activemq-protobuf-1.1.jar (148 kB at 4.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.pom (14 kB at 440 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/ee4j/project/1.0.6/project-1.0.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/ee4j/project/1.0.6/project-1.0.6.pom (13 kB at 460 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jacc_1.1_spec/1.0.2/geronimo-jacc_1.1_spec-1.0.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jacc_1.1_spec/1.0.2/geronimo-jacc_1.1_spec-1.0.2.pom (3.4 kB at 117 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.5.4/jettison-1.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.5.4/jettison-1.5.4.pom (7.8 kB at 270 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.0.13/spring-context-6.0.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.0.13/spring-context-6.0.13.pom (2.6 kB at 96 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/6.0.13/spring-aop-6.0.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/6.0.13/spring-aop-6.0.13.pom (2.2 kB at 85 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.0.13/spring-beans-6.0.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.0.13/spring-beans-6.0.13.pom (2.0 kB at 65 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.0.13/spring-core-6.0.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.0.13/spring-core-6.0.13.pom (2.0 kB at 59 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.0.13/spring-jcl-6.0.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.0.13/spring-jcl-6.0.13.pom (1.8 kB at 71 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/6.0.13/spring-expression-6.0.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/6.0.13/spring-expression-6.0.13.pom (2.1 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-junit4/2.12.0/jmock-junit4-2.12.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-junit4/2.12.0/jmock-junit4-2.12.0.pom (2.1 kB at 57 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-parent/2.12.0/jmock-parent-2.12.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-parent/2.12.0/jmock-parent-2.12.0.pom (16 kB at 362 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jmock/jmock/2.12.0/jmock-2.12.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jmock/jmock/2.12.0/jmock-2.12.0.pom (3.2 kB at 100 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-testjar/2.12.0/jmock-testjar-2.12.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-testjar/2.12.0/jmock-testjar-2.12.0.pom (3.1 kB at 104 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/annotations/3.0.1/annotations-3.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/annotations/3.0.1/annotations-3.0.1.pom (7.8 kB at 205 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.pom (491 B at 18 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.pom (4.3 kB at 143 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest/2.1/hamcrest-2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest/2.1/hamcrest-2.1.pom (1.1 kB at 40 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/2.1/hamcrest-library-2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/2.1/hamcrest-library-2.1.pom (1.4 kB at 42 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/2.1/hamcrest-core-2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/2.1/hamcrest-core-2.1.pom (1.4 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.pom (2.4 kB at 85 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-legacy/2.12.0/jmock-legacy-2.12.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-legacy/2.12.0/jmock-legacy-2.12.0.pom (2.3 kB at 76 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/3.0.1/objenesis-3.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/3.0.1/objenesis-3.0.1.pom (3.5 kB at 122 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/3.0.1/objenesis-parent-3.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/3.0.1/objenesis-parent-3.0.1.pom (17 kB at 554 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/cglib/cglib/3.2.8/cglib-3.2.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/cglib/cglib/3.2.8/cglib-3.2.8.pom (2.8 kB at 91 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/cglib/cglib-parent/3.2.8/cglib-parent-3.2.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/cglib/cglib-parent/3.2.8/cglib-parent-3.2.8.pom (10 kB at 378 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-imposters/2.12.0/jmock-imposters-2.12.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-imposters/2.12.0/jmock-imposters-2.12.0.pom (1.3 kB at 47 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.9.12/byte-buddy-1.9.12.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.9.12/byte-buddy-1.9.12.pom (10 kB at 313 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.9.12/byte-buddy-parent-1.9.12.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.9.12/byte-buddy-parent-1.9.12.pom (36 kB at 1.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/4.8.1/mockito-core-4.8.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/4.8.1/mockito-core-4.8.1.pom (2.5 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.16/byte-buddy-1.12.16.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.16/byte-buddy-1.12.16.pom (16 kB at 609 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.12.16/byte-buddy-parent-1.12.16.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.12.16/byte-buddy-parent-1.12.16.pom (57 kB at 2.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.16/byte-buddy-agent-1.12.16.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.16/byte-buddy-agent-1.12.16.pom (9.9 kB at 342 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/3.2/objenesis-3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/3.2/objenesis-3.2.pom (3.0 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/3.2/objenesis-parent-3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/3.2/objenesis-parent-3.2.pom (18 kB at 588 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar (29 kB at 954 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jacc_1.1_spec/1.0.2/geronimo-jacc_1.1_spec-1.0.2.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.5.4/jettison-1.5.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.0.13/spring-context-6.0.13.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/6.0.13/spring-aop-6.0.13.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.0.13/spring-beans-6.0.13.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jacc_1.1_spec/1.0.2/geronimo-jacc_1.1_spec-1.0.2.jar (36 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.0.13/spring-core-6.0.13.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.5.4/jettison-1.5.4.jar (90 kB at 2.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.0.13/spring-jcl-6.0.13.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/6.0.13/spring-context-6.0.13.jar (1.2 MB at 26 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/6.0.13/spring-expression-6.0.13.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/6.0.13/spring-aop-6.0.13.jar (405 kB at 9.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-junit4/2.12.0/jmock-junit4-2.12.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/6.0.13/spring-beans-6.0.13.jar (857 kB at 17 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jmock/jmock/2.12.0/jmock-2.12.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/6.0.13/spring-core-6.0.13.jar (1.8 MB at 28 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-testjar/2.12.0/jmock-testjar-2.12.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/6.0.13/spring-jcl-6.0.13.jar (24 kB at 376 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/annotations/3.0.1/annotations-3.0.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/6.0.13/spring-expression-6.0.13.jar (297 kB at 4.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-junit4/2.12.0/jmock-junit4-2.12.0.jar (7.6 kB at 90 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jmock/jmock/2.12.0/jmock-2.12.0.jar (101 kB at 1.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/annotations/3.0.1/annotations-3.0.1.jar (39 kB at 413 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/2.1/hamcrest-library-2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-testjar/2.12.0/jmock-testjar-2.12.0.jar (3.4 kB at 34 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar (2.3 kB at 23 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-imposters/2.12.0/jmock-imposters-2.12.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar (20 kB at 173 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-legacy/2.12.0/jmock-legacy-2.12.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/2.1/hamcrest-library-2.1.jar (1.2 kB at 9.9 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/3.0.1/objenesis-3.0.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.jar (124 kB at 989 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/cglib/cglib/3.2.8/cglib-3.2.8.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar (123 kB at 985 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/4.8.1/mockito-core-4.8.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/3.0.1/objenesis-3.0.1.jar (61 kB at 420 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.16/byte-buddy-1.12.16.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/4.8.1/mockito-core-4.8.1.jar (684 kB at 4.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.16/byte-buddy-agent-1.12.16.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/cglib/cglib/3.2.8/cglib-3.2.8.jar (307 kB at 1.7 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-legacy/2.12.0/jmock-legacy-2.12.0.jar (8.7 kB at 49 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jmock/jmock-imposters/2.12.0/jmock-imposters-2.12.0.jar (8.9 kB at 47 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.16/byte-buddy-agent-1.12.16.jar (256 kB at 1.4 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.16/byte-buddy-1.12.16.jar (3.9 MB at 19 MB/s)
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven-version) @ activemq-kahadb-store ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-java-version) @ activemq-kahadb-store ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven) @ activemq-kahadb-store ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:3.4.0:add-source (add-source) @ activemq-kahadb-store ---
+[INFO] Source directory: /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/generated-sources/proto added.
+[INFO] 
+[INFO] --- activemq-protobuf:1.1:compile (default) @ activemq-kahadb-store ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.pom (601 B at 23 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0/maven-2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0/maven-2.0.pom (8.8 kB at 292 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.pom (1.6 kB at 65 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.pom (1.4 kB at 46 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0/maven-model-2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0/maven-model-2.0.pom (2.4 kB at 93 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.4/junit-4.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.4/junit-4.4.pom (1.2 kB at 39 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.pom (1.3 kB at 47 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.pom (1.2 kB at 41 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.pom (723 B at 27 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0/maven-plugin-api-2.0.jar (10 kB at 441 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0/maven-model-2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-profile/2.0/maven-profile-2.0.jar (30 kB at 1.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-project/2.0/maven-project-2.0.jar (105 kB at 3.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/2.0/maven-repository-metadata-2.0.jar (21 kB at 666 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.jar (51 kB at 1.4 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/2.0/maven-model-2.0.jar (78 kB at 2.1 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.jar (164 kB at 3.0 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.jar (195 kB at 3.5 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/2.0/maven-artifact-2.0.jar (79 kB at 1.4 MB/s)
+[INFO] Compiling: /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/main/proto/journal-data.proto
+[INFO] 
+[INFO] --- remote-resources:3.1.0:process (process-resource-bundles) @ activemq-kahadb-store ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ activemq-kahadb-store ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ activemq-kahadb-store ---
+[WARNING]  Parameter 'optimize' (user property 'maven.compiler.optimize') is deprecated: This property is a no-op in javac.
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 94 source files with javac [debug optimize deprecation target 17] to target/classes
+[WARNING] system modules path not set in conjunction with -source 11
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/generated-sources/proto/org/apache/activemq/store/kahadb/data/KahaAddScheduledJobCommand.java:[349,30] Long(long) in java.lang.Long has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/generated-sources/proto/org/apache/activemq/store/kahadb/data/KahaAddScheduledJobCommand.java:[355,28] Long(long) in java.lang.Long has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/generated-sources/proto/org/apache/activemq/store/kahadb/data/KahaAddScheduledJobCommand.java:[358,31] Long(long) in java.lang.Long has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/generated-sources/proto/org/apache/activemq/store/kahadb/data/KahaAddScheduledJobCommand.java:[367,30] Long(long) in java.lang.Long has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/generated-sources/proto/org/apache/activemq/store/kahadb/data/KahaRescheduleJobCommand.java:[249,30] Long(long) in java.lang.Long has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/generated-sources/proto/org/apache/activemq/store/kahadb/data/KahaRescheduleJobCommand.java:[252,30] Long(long) in java.lang.Long has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/generated-sources/proto/org/apache/activemq/store/kahadb/data/KahaRemoveScheduledJobCommand.java:[199,30] Long(long) in java.lang.Long has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/generated-sources/proto/org/apache/activemq/store/kahadb/data/KahaRemoveScheduledJobsCommand.java:[196,30] Long(long) in java.lang.Long has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/generated-sources/proto/org/apache/activemq/store/kahadb/data/KahaRemoveScheduledJobsCommand.java:[199,28] Long(long) in java.lang.Long has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/generated-sources/proto/org/apache/activemq/store/kahadb/data/KahaLocalTransactionId.java:[163,30] Long(long) in java.lang.Long has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/main/java/org/apache/activemq/store/kahadb/KahaDBPersistenceAdapter.java:[460,20] deprecated item is not annotated with @Deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/main/java/org/apache/activemq/store/kahadb/KahaDBPersistenceAdapter.java:[471,17] deprecated item is not annotated with @Deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/main/java/org/apache/activemq/store/kahadb/KahaDBStore.java:[555,28] isEnableJournalDiskSyncs() in org.apache.activemq.store.kahadb.MessageDatabase has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/main/java/org/apache/activemq/store/kahadb/KahaDBStore.java:[614,41] isEnableJournalDiskSyncs() in org.apache.activemq.store.kahadb.MessageDatabase has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/main/java/org/apache/activemq/store/kahadb/KahaDBStore.java:[626,28] isEnableJournalDiskSyncs() in org.apache.activemq.store.kahadb.MessageDatabase has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/main/java/org/apache/activemq/store/kahadb/KahaDBStore.java:[979,28] isEnableJournalDiskSyncs() in org.apache.activemq.store.kahadb.MessageDatabase has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/main/java/org/apache/activemq/store/kahadb/KahaDBStore.java:[988,28] isEnableJournalDiskSyncs() in org.apache.activemq.store.kahadb.MessageDatabase has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/main/java/org/apache/activemq/store/kahadb/KahaDBTransactionStore.java:[241,86] isEnableJournalDiskSyncs() in org.apache.activemq.store.kahadb.MessageDatabase has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/main/java/org/apache/activemq/store/kahadb/KahaDBTransactionStore.java:[255,84] isEnableJournalDiskSyncs() in org.apache.activemq.store.kahadb.MessageDatabase has been deprecated
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/generated-sources/proto/org/apache/activemq/store/kahadb/data/KahaAddMessageCommand.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/generated-sources/proto/org/apache/activemq/store/kahadb/data/KahaAddMessageCommand.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ activemq-kahadb-store ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ activemq-kahadb-store ---
+[WARNING]  Parameter 'optimize' (user property 'maven.compiler.optimize') is deprecated: This property is a no-op in javac.
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 34 source files with javac [debug optimize deprecation target 17] to target/test-classes
+[WARNING] system modules path not set in conjunction with -source 11
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/test/java/org/apache/activemq/store/kahadb/JournalSyncStrategyTest.java:[68,26] isEnableJournalDiskSyncs() in org.apache.activemq.store.kahadb.MessageDatabase has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/test/java/org/apache/activemq/store/kahadb/JournalSyncStrategyTest.java:[89,25] isEnableJournalDiskSyncs() in org.apache.activemq.store.kahadb.MessageDatabase has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/test/java/org/apache/activemq/store/kahadb/JournalSyncStrategyTest.java:[104,26] isEnableJournalDiskSyncs() in org.apache.activemq.store.kahadb.MessageDatabase has been deprecated
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/test/java/org/apache/activemq/store/kahadb/JournalArchiveTest.java:[122,39] java.lang.SecurityManager in java.lang has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/test/java/org/apache/activemq/store/kahadb/JournalArchiveTest.java:[122,15] setSecurityManager(java.lang.SecurityManager) in java.lang.System has been deprecated and marked for removal
+[WARNING] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/test/java/org/apache/activemq/store/kahadb/JournalArchiveTest.java:[154,15] setSecurityManager(java.lang.SecurityManager) in java.lang.System has been deprecated and marked for removal
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/test/java/org/apache/activemq/store/kahadb/disk/page/PageFileTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/src/test/java/org/apache/activemq/store/kahadb/disk/page/PageFileTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- surefire:3.2.1:test (default-test) @ activemq-kahadb-store ---
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ activemq-kahadb-store ---
+[INFO] Building jar: /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/activemq-kahadb-store-6.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.12.1:attach-descriptor (attach-descriptor) @ activemq-kahadb-store ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- source:3.3.0:jar-no-fork (attach-sources) @ activemq-kahadb-store ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- tools:1.4:verify-legal-files (default) @ activemq-kahadb-store ---
+[INFO] Checking legal files in: activemq-kahadb-store-6.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ activemq-kahadb-store ---
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/pom.xml to /home/runner/.m2/repository/org/apache/activemq/activemq-kahadb-store/6.0.1-SNAPSHOT/activemq-kahadb-store-6.0.1-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-kahadb-store/target/activemq-kahadb-store-6.0.1-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/activemq/activemq-kahadb-store/6.0.1-SNAPSHOT/activemq-kahadb-store-6.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] -----------------< org.apache.activemq:activemq-stomp >-----------------
+[INFO] Building ActiveMQ :: STOMP Protocol 6.0.1-SNAPSHOT                 [7/7]
+[INFO]   from activemq-stomp/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/3.2/objenesis-3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/3.2/objenesis-3.2.jar (49 kB at 1.8 MB/s)
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven-version) @ activemq-stomp ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-java-version) @ activemq-stomp ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven) @ activemq-stomp ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:3.1.0:process (process-resource-bundles) @ activemq-stomp ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ activemq-stomp ---
+[INFO] Copying 14 resources from src/main/resources to target/classes
+[INFO] skip non existing resourceDirectory /tmp/tmp.sZ1kzlFjee/repo/activemq-stomp/src/main/filtered-resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ activemq-stomp ---
+[WARNING]  Parameter 'optimize' (user property 'maven.compiler.optimize') is deprecated: This property is a no-op in javac.
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 25 source files with javac [debug optimize deprecation target 17] to target/classes
+[WARNING] system modules path not set in conjunction with -source 11
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ activemq-stomp ---
+[INFO] Copying 6 resources from src/test/resources to target/test-classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ activemq-stomp ---
+[WARNING]  Parameter 'optimize' (user property 'maven.compiler.optimize') is deprecated: This property is a no-op in javac.
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 44 source files with javac [debug optimize deprecation target 17] to target/test-classes
+[WARNING] system modules path not set in conjunction with -source 11
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-stomp/src/test/java/org/apache/activemq/transport/stomp/StompNIOSSLLargeMessageTest.java: /tmp/tmp.sZ1kzlFjee/repo/activemq-stomp/src/test/java/org/apache/activemq/transport/stomp/StompNIOSSLLargeMessageTest.java uses unchecked or unsafe operations.
+[INFO] /tmp/tmp.sZ1kzlFjee/repo/activemq-stomp/src/test/java/org/apache/activemq/transport/stomp/StompNIOSSLLargeMessageTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- surefire:3.2.1:test (default-test) @ activemq-stomp ---
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ activemq-stomp ---
+[INFO] Building jar: /tmp/tmp.sZ1kzlFjee/repo/activemq-stomp/target/activemq-stomp-6.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- site:3.12.1:attach-descriptor (attach-descriptor) @ activemq-stomp ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- source:3.3.0:jar-no-fork (attach-sources) @ activemq-stomp ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- tools:1.4:verify-legal-files (default) @ activemq-stomp ---
+[INFO] Checking legal files in: activemq-stomp-6.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ activemq-stomp ---
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-stomp/pom.xml to /home/runner/.m2/repository/org/apache/activemq/activemq-stomp/6.0.1-SNAPSHOT/activemq-stomp-6.0.1-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.sZ1kzlFjee/repo/activemq-stomp/target/activemq-stomp-6.0.1-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/activemq/activemq-stomp/6.0.1-SNAPSHOT/activemq-stomp-6.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for ActiveMQ 6.0.1-SNAPSHOT:
+[INFO] 
+[INFO] ActiveMQ ........................................... SUCCESS [  1.805 s]
+[INFO] ActiveMQ :: Client ................................. SUCCESS [ 12.140 s]
+[INFO] ActiveMQ :: Openwire Legacy Support ................ SUCCESS [  2.177 s]
+[INFO] ActiveMQ :: JAAS ................................... SUCCESS [  4.573 s]
+[INFO] ActiveMQ :: Broker ................................. SUCCESS [  3.407 s]
+[INFO] ActiveMQ :: KahaDB Store ........................... SUCCESS [  3.956 s]
+[INFO] ActiveMQ :: STOMP Protocol ......................... SUCCESS [  0.909 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  29.964 s
+[INFO] Finished at: 2026-11-10T18:36:41Z
+[INFO] ------------------------------------------------------------------------

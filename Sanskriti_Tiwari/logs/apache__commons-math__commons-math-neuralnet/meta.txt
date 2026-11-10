@@ -1,0 +1,3 @@
+url=https://github.com/apache/commons-math
+sha=ec7eb8b32d9dff80f98c506a88c521a0ca3ea6a6
+module=commons-math-neuralnet

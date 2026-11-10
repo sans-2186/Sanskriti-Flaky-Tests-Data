@@ -1,0 +1,1445 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.atlas:kafka-bridge:jar:3.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-resources-plugin @ line 487, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.atlas:sample-app:jar:3.0.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 93, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Atlas Server Build Tools                                    [jar]
+[INFO] apache-atlas                                                       [pom]
+[INFO] Apache Atlas Integration                                           [jar]
+[INFO] Apache Atlas Test Utility Tools                                    [jar]
+[INFO] Apache Atlas Common                                                [jar]
+[INFO] Apache Atlas Graph Database Projects                               [pom]
+[INFO] Apache Atlas Graph Database API                                    [jar]
+[INFO] Graph Database Common Code                                         [jar]
+[INFO] Apache Atlas JanusGraph-HBase2 Module                              [jar]
+[INFO] Apache Atlas JanusGraph DB Impl                                    [jar]
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom (5.2 kB at 18 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom (7.2 kB at 146 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar (41 kB at 750 kB/s)
+[INFO] 
+[INFO] -----------------< org.apache.atlas:atlas-buildtools >------------------
+[INFO] Building Apache Atlas Server Build Tools 3.0.0-SNAPSHOT           [1/10]
+[INFO]   from build-tools/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ atlas-buildtools >>>
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ atlas-buildtools ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 11 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ atlas-buildtools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ atlas-buildtools ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /tmp/tmp.kbNemppo6R/repo/build-tools/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ atlas-buildtools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ atlas-buildtools <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ atlas-buildtools ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom (3.4 kB at 71 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom (18 kB at 393 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom (2.2 kB at 45 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom (9.3 kB at 189 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom (2.3 kB at 48 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom (8.3 kB at 180 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom (24 kB at 532 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom (4.0 kB at 92 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom (1.8 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom (2.6 kB at 62 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom (1.7 kB at 35 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom (1.5 kB at 25 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom (1.9 kB at 39 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom (2.1 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom (2.7 kB at 56 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom (4.2 kB at 87 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom (14 kB at 275 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom (2.6 kB at 55 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom (14 kB at 300 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom (3.1 kB at 60 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom (5.7 kB at 111 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom (7.7 kB at 171 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom (4.0 kB at 90 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom (1.8 kB at 41 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom (29 kB at 524 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom (2.0 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom (2.1 kB at 51 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom (3.4 kB at 73 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom (2.6 kB at 51 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom (20 kB at 420 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom (8.1 kB at 169 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom (4.0 kB at 51 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom (1.5 kB at 31 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar (63 kB at 1.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar (15 kB at 292 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar (27 kB at 284 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar (44 kB at 389 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar (12 kB at 88 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar (43 kB at 331 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar (55 kB at 390 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar (67 kB at 365 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar (638 kB at 3.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar (31 kB at 157 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar (177 kB at 899 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar (136 kB at 583 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar (205 kB at 812 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar (147 kB at 581 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar (173 kB at 643 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar (2.3 MB at 8.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar (378 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar (424 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar (164 kB at 519 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar (35 kB at 106 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar (62 kB at 191 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar (47 kB at 145 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar (563 kB at 1.5 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar (2.1 kB at 5.8 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar (128 kB at 340 kB/s)
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/build-tools/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_eLyhbaKHFCLP5NtvTSwi2t9bDr8Oc5pgkKFYNtsAV8s=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'disableXmlReport' (user property 'disableXmlReport') is deprecated: Instead use disable within statelessTestsetReporter since of 3.0.0-M6.
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/build-tools/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/build-tools/.nondex
+nondexExecid=AlzEJBIwUJaie6y1DcqUHr2pFuPWRJOr4Q4mQWaCs8=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'disableXmlReport' (user property 'disableXmlReport') is deprecated: Instead use disable within statelessTestsetReporter since of 3.0.0-M6.
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/build-tools/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/build-tools/.nondex
+nondexExecid=9kvFiaaYvinTzBjDhV9sO+WzgNo4DeLM3gWn7jqzBOM=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'disableXmlReport' (user property 'disableXmlReport') is deprecated: Instead use disable within statelessTestsetReporter since of 3.0.0-M6.
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/build-tools/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/build-tools/.nondex
+nondexExecid=uFxmWvRM5BGbU7OLnpagdJ8csn3SXW6+19lEQ241U8=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'disableXmlReport' (user property 'disableXmlReport') is deprecated: Instead use disable within statelessTestsetReporter since of 3.0.0-M6.
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/build-tools/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/build-tools/.nondex" -DnondexExecid=AlzEJBIwUJaie6y1DcqUHr2pFuPWRJOr4Q4mQWaCs8= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/build-tools/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/build-tools/.nondex" -DnondexExecid=9kvFiaaYvinTzBjDhV9sO+WzgNo4DeLM3gWn7jqzBOM= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/build-tools/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/build-tools/.nondex" -DnondexExecid=uFxmWvRM5BGbU7OLnpagdJ8csn3SXW6+19lEQ241U8= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.kbNemppo6R/repo/build-tools/.nondex/AlzEJBIwUJaie6y1DcqUHr2pFuPWRJOr4Q4mQWaCs8=/test_results.html
+[INFO] [NonDex] The id of this run is: AlzEJBIwUJaie6y1DcqUHr2pFuPWRJOr4Q4mQWaCs8=
+[INFO] 
+[INFO] -------------------< org.apache.atlas:apache-atlas >--------------------
+[INFO] Building apache-atlas 3.0.0-SNAPSHOT                              [2/10]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ apache-atlas >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-maven-version) @ apache-atlas ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-versions) @ apache-atlas ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ apache-atlas ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kbNemppo6R/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kbNemppo6R/repo
+[INFO] Storing buildNumber: d8cf1e34a696da6100127c38cf42b922e177a314 at timestamp: 1794336139470
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kbNemppo6R/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kbNemppo6R/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- apache-rat:0.13:check (rat-check) @ apache-atlas ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ apache-atlas ---
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ apache-atlas <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ apache-atlas ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_MtUGQfGbe9L7E0l7c2OqFvF9p1TlxiUpDKkGvhsawI=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/.nondex
+nondexExecid=S9wpAU4t4ztPMLSWBKh31eW9TvdGuvGeRqpnNdC1tUg=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/.nondex
+nondexExecid=cXOkE+Ku+1737gkW55zVonFcCtIvUmr0zlfEG4Smtoo=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/.nondex
+nondexExecid=8ebt4OraaDm7eulGIcY9+fYBB2cWE+v0iR4r+pSiUo=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/.nondex" -DnondexExecid=S9wpAU4t4ztPMLSWBKh31eW9TvdGuvGeRqpnNdC1tUg= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/.nondex" -DnondexExecid=cXOkE+Ku+1737gkW55zVonFcCtIvUmr0zlfEG4Smtoo= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/.nondex" -DnondexExecid=8ebt4OraaDm7eulGIcY9+fYBB2cWE+v0iR4r+pSiUo= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.kbNemppo6R/repo/.nondex/S9wpAU4t4ztPMLSWBKh31eW9TvdGuvGeRqpnNdC1tUg=/test_results.html
+[INFO] [NonDex] The id of this run is: S9wpAU4t4ztPMLSWBKh31eW9TvdGuvGeRqpnNdC1tUg=
+[INFO] 
+[INFO] --------------------< org.apache.atlas:atlas-intg >---------------------
+[INFO] Building Apache Atlas Integration 3.0.0-SNAPSHOT                  [3/10]
+[INFO]   from intg/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ atlas-intg >>>
+[WARNING] 2 problems were encountered while building the effective model for org.apache.yetus:audience-annotations:jar:0.5.0 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-maven-version) @ atlas-intg ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-versions) @ atlas-intg ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ atlas-intg ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kbNemppo6R/repo/intg' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kbNemppo6R/repo/intg
+[INFO] Storing buildNumber: d8cf1e34a696da6100127c38cf42b922e177a314 at timestamp: 1794336140540
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kbNemppo6R/repo/intg' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kbNemppo6R/repo/intg
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- apache-rat:0.13:check (rat-check) @ atlas-intg ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ atlas-intg ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ atlas-intg ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ atlas-intg ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ atlas-intg ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 7 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ atlas-intg ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ atlas-intg <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ atlas-intg ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/intg/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_8WRXsEaBSbgYCGwd7OjZW8enBSljWlpZHyZmJuLzKYw=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/testng/testng/5.10/testng-5.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/testng/testng/5.10/testng-5.10.pom (2.1 kB at 43 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.13/junit-4.13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.13/junit-4.13.pom (25 kB at 501 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/2.28.2/mockito-core-2.28.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/2.28.2/mockito-core-2.28.2.pom (20 kB at 437 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.9.10/byte-buddy-1.9.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.9.10/byte-buddy-1.9.10.pom (10 kB at 215 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.9.10/byte-buddy-parent-1.9.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.9.10/byte-buddy-parent-1.9.10.pom (36 kB at 628 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.9.10/byte-buddy-agent-1.9.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.9.10/byte-buddy-agent-1.9.10.pom (6.0 kB at 131 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-reflect/2.0.5/powermock-reflect-2.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-reflect/2.0.5/powermock-reflect-2.0.5.pom (7.2 kB at 149 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.9.1/assertj-core-3.9.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.9.1/assertj-core-3.9.1.pom (10 kB at 228 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-parent-pom/2.1.9/assertj-parent-pom-2.1.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-parent-pom/2.1.9/assertj-parent-pom-2.1.9.pom (15 kB at 316 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom (820 B at 15 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom (2.4 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.8/fest-1.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.8/fest-1.0.8.pom (12 kB at 228 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom (1.6 kB at 34 kB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.atlas.security.InMemoryJAASConfigurationTest
+[INFO] Running org.apache.atlas.type.TestAtlasArrayType
+[INFO] Running org.apache.atlas.type.TestAtlasClassificationType
+[INFO] Running org.apache.atlas.type.TestAtlasLongType
+[INFO] Running org.apache.atlas.TestUtilsV2
+[INFO] Running org.apache.atlas.TestRelationshipUtilsV2
+[INFO] Running org.apache.atlas.type.TestAtlasObjectIdType
+[INFO] Running org.apache.atlas.security.InMemoryJAASConfigurationTicketBasedKafkaClientTest
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.476 s - in org.apache.atlas.TestRelationshipUtilsV2
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.819 s - in org.apache.atlas.TestUtilsV2
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.715 s - in org.apache.atlas.type.TestAtlasArrayType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.935 s - in org.apache.atlas.type.TestAtlasObjectIdType
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.963 s - in org.apache.atlas.security.InMemoryJAASConfigurationTicketBasedKafkaClientTest
+[INFO] Running org.apache.atlas.type.TestAtlasShortType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.37 s - in org.apache.atlas.type.TestAtlasLongType
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.055 s - in org.apache.atlas.security.InMemoryJAASConfigurationTest
+[INFO] Running org.apache.atlas.type.TestAtlasBigIntegerType
+[INFO] Running org.apache.atlas.type.TestAtlasDoubleType
+[INFO] Running org.apache.atlas.type.TestAtlasRelationshipType
+[INFO] Running org.apache.atlas.type.TestAtlasBigDecimalType
+[INFO] Running org.apache.atlas.type.TestAtlasMapType
+[INFO] Running org.apache.atlas.type.TestAtlasStringType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.399 s - in org.apache.atlas.type.TestAtlasShortType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.797 s - in org.apache.atlas.type.TestAtlasBigIntegerType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.683 s - in org.apache.atlas.type.TestAtlasDoubleType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.845 s - in org.apache.atlas.type.TestAtlasMapType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.153 s - in org.apache.atlas.type.TestAtlasBigDecimalType
+[INFO] Running org.apache.atlas.type.TestAtlasIntType
+[INFO] Running org.apache.atlas.type.TestAtlasBuiltInTypesFloatDouble
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.676 s - in org.apache.atlas.type.TestAtlasStringType
+[INFO] Running org.apache.atlas.type.TestAtlasFloatType
+[INFO] Running org.apache.atlas.type.TestAtlasDateType
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.978 s - in org.apache.atlas.type.TestAtlasRelationshipType
+[INFO] Running org.apache.atlas.type.TestAtlasBooleanType
+[INFO] Running org.apache.atlas.type.TestMultiplicity
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.603 s - in org.apache.atlas.type.TestAtlasIntType
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.653 s - in org.apache.atlas.type.TestAtlasBuiltInTypesFloatDouble
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.699 s - in org.apache.atlas.type.TestAtlasFloatType
+[INFO] Running org.apache.atlas.type.TestAtlasStructType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.687 s - in org.apache.atlas.type.TestAtlasDateType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.614 s - in org.apache.atlas.type.TestAtlasBooleanType
+[INFO] Running org.apache.atlas.type.TestAtlasEntityType
+[INFO] Running org.apache.atlas.type.TestAtlasByteType
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.035 s - in org.apache.atlas.type.TestMultiplicity
+[INFO] Running org.apache.atlas.type.TestAtlasTypeRegistry
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasRelationshipDef
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasStructDef
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasEntityDef
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.443 s - in org.apache.atlas.type.TestAtlasByteType
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasBusinessMetadataDef
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.664 s - in org.apache.atlas.model.typedef.TestAtlasBusinessMetadataDef
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasClassificationDef
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.838 s - in org.apache.atlas.model.typedef.TestAtlasRelationshipDef
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.986 s - in org.apache.atlas.type.TestAtlasStructType
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.373 s - in org.apache.atlas.type.TestAtlasTypeRegistry
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasEnumDef
+[INFO] Running org.apache.atlas.model.instance.TestAtlasEntity
+[INFO] Running org.apache.atlas.model.instance.TestAtlasClassification
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.948 s - in org.apache.atlas.model.typedef.TestAtlasStructDef
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.484 s - in org.apache.atlas.model.typedef.TestAtlasClassificationDef
+[INFO] Running org.apache.atlas.utils.FixedBufferListTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.423 s - in org.apache.atlas.model.typedef.TestAtlasEntityDef
+[INFO] Running org.apache.atlas.ApplicationPropertiesTest
+[INFO] Running org.apache.atlas.utils.AtlasStringUtilTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.886 s - in org.apache.atlas.utils.FixedBufferListTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.884 s - in org.apache.atlas.utils.AtlasStringUtilTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.43 s - in org.apache.atlas.ApplicationPropertiesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.683 s - in org.apache.atlas.model.instance.TestAtlasClassification
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.569 s - in org.apache.atlas.model.instance.TestAtlasEntity
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.511 s - in org.apache.atlas.model.typedef.TestAtlasEnumDef
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.4 s - in org.apache.atlas.type.TestAtlasEntityType
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.884 s - in org.apache.atlas.type.TestAtlasClassificationType
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 164, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/intg/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/intg/.nondex
+nondexExecid=zWLfEYFIGcJuqKr8NkgnMRXKYgGM1wfexJhzqM4e+8=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.atlas.type.TestAtlasLongType
+[INFO] Running org.apache.atlas.security.InMemoryJAASConfigurationTest
+[INFO] Running org.apache.atlas.type.TestAtlasObjectIdType
+[INFO] Running org.apache.atlas.type.TestAtlasArrayType
+[INFO] Running org.apache.atlas.TestUtilsV2
+[INFO] Running org.apache.atlas.security.InMemoryJAASConfigurationTicketBasedKafkaClientTest
+[INFO] Running org.apache.atlas.TestRelationshipUtilsV2
+[INFO] Running org.apache.atlas.type.TestAtlasClassificationType
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.882 s - in org.apache.atlas.TestRelationshipUtilsV2
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.004 s - in org.apache.atlas.TestUtilsV2
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.374 s - in org.apache.atlas.type.TestAtlasArrayType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.052 s - in org.apache.atlas.type.TestAtlasLongType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.513 s - in org.apache.atlas.type.TestAtlasObjectIdType
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.004 s - in org.apache.atlas.security.InMemoryJAASConfigurationTest
+[INFO] Running org.apache.atlas.type.TestAtlasDoubleType
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.87 s - in org.apache.atlas.security.InMemoryJAASConfigurationTicketBasedKafkaClientTest
+[INFO] Running org.apache.atlas.type.TestAtlasShortType
+[INFO] Running org.apache.atlas.type.TestAtlasBigIntegerType
+[INFO] Running org.apache.atlas.type.TestAtlasRelationshipType
+[INFO] Running org.apache.atlas.type.TestAtlasBigDecimalType
+[INFO] Running org.apache.atlas.type.TestAtlasStringType
+[INFO] Running org.apache.atlas.type.TestAtlasMapType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.726 s - in org.apache.atlas.type.TestAtlasDoubleType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.803 s - in org.apache.atlas.type.TestAtlasShortType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.368 s - in org.apache.atlas.type.TestAtlasBigIntegerType
+[INFO] Running org.apache.atlas.type.TestAtlasIntType
+[INFO] Running org.apache.atlas.type.TestAtlasBuiltInTypesFloatDouble
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.399 s - in org.apache.atlas.type.TestAtlasBigDecimalType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.263 s - in org.apache.atlas.type.TestAtlasMapType
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.668 s - in org.apache.atlas.type.TestAtlasRelationshipType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.382 s - in org.apache.atlas.type.TestAtlasStringType
+[INFO] Running org.apache.atlas.type.TestAtlasFloatType
+[INFO] Running org.apache.atlas.type.TestAtlasDateType
+[INFO] Running org.apache.atlas.type.TestAtlasBooleanType
+[INFO] Running org.apache.atlas.type.TestAtlasStructType
+[INFO] Running org.apache.atlas.type.TestMultiplicity
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.923 s - in org.apache.atlas.type.TestAtlasBuiltInTypesFloatDouble
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.278 s - in org.apache.atlas.type.TestAtlasIntType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.189 s - in org.apache.atlas.type.TestAtlasFloatType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.868 s - in org.apache.atlas.type.TestAtlasDateType
+[INFO] Running org.apache.atlas.type.TestAtlasEntityType
+[INFO] Running org.apache.atlas.type.TestAtlasByteType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.897 s - in org.apache.atlas.type.TestAtlasBooleanType
+[INFO] Running org.apache.atlas.type.TestAtlasTypeRegistry
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasRelationshipDef
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.336 s - in org.apache.atlas.type.TestMultiplicity
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasStructDef
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.678 s - in org.apache.atlas.type.TestAtlasByteType
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasEntityDef
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasBusinessMetadataDef
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.537 s - in org.apache.atlas.model.typedef.TestAtlasBusinessMetadataDef
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasClassificationDef
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.223 s - in org.apache.atlas.type.TestAtlasStructType
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.562 s - in org.apache.atlas.model.typedef.TestAtlasRelationshipDef
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasEnumDef
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.64 s - in org.apache.atlas.type.TestAtlasTypeRegistry
+[INFO] Running org.apache.atlas.model.instance.TestAtlasEntity
+[INFO] Running org.apache.atlas.model.instance.TestAtlasClassification
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.653 s - in org.apache.atlas.model.typedef.TestAtlasClassificationDef
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.955 s - in org.apache.atlas.model.typedef.TestAtlasStructDef
+[INFO] Running org.apache.atlas.utils.FixedBufferListTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.863 s - in org.apache.atlas.model.typedef.TestAtlasEntityDef
+[INFO] Running org.apache.atlas.utils.AtlasStringUtilTest
+[INFO] Running org.apache.atlas.ApplicationPropertiesTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.753 s - in org.apache.atlas.utils.AtlasStringUtilTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.119 s - in org.apache.atlas.utils.FixedBufferListTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.152 s - in org.apache.atlas.ApplicationPropertiesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.166 s - in org.apache.atlas.model.instance.TestAtlasEntity
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.89 s - in org.apache.atlas.model.instance.TestAtlasClassification
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.338 s - in org.apache.atlas.model.typedef.TestAtlasEnumDef
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.795 s - in org.apache.atlas.type.TestAtlasEntityType
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 50.543 s - in org.apache.atlas.type.TestAtlasClassificationType
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 164, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/intg/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/intg/.nondex
+nondexExecid=jG4LCL9a7dmkztMwnlIx6z9WoOO1Otkz6uAzPWYWw=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.atlas.TestUtilsV2
+[INFO] Running org.apache.atlas.type.TestAtlasLongType
+[INFO] Running org.apache.atlas.type.TestAtlasClassificationType
+[INFO] Running org.apache.atlas.type.TestAtlasObjectIdType
+[INFO] Running org.apache.atlas.security.InMemoryJAASConfigurationTest
+[INFO] Running org.apache.atlas.TestRelationshipUtilsV2
+[INFO] Running org.apache.atlas.type.TestAtlasArrayType
+[INFO] Running org.apache.atlas.security.InMemoryJAASConfigurationTicketBasedKafkaClientTest
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.688 s - in org.apache.atlas.TestUtilsV2
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.887 s - in org.apache.atlas.TestRelationshipUtilsV2
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.39 s - in org.apache.atlas.type.TestAtlasArrayType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.777 s - in org.apache.atlas.type.TestAtlasLongType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.294 s - in org.apache.atlas.type.TestAtlasObjectIdType
+[INFO] Running org.apache.atlas.type.TestAtlasShortType
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.662 s - in org.apache.atlas.security.InMemoryJAASConfigurationTest
+[INFO] Running org.apache.atlas.type.TestAtlasBigIntegerType
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.134 s - in org.apache.atlas.security.InMemoryJAASConfigurationTicketBasedKafkaClientTest
+[INFO] Running org.apache.atlas.type.TestAtlasDoubleType
+[INFO] Running org.apache.atlas.type.TestAtlasRelationshipType
+[INFO] Running org.apache.atlas.type.TestAtlasMapType
+[INFO] Running org.apache.atlas.type.TestAtlasBigDecimalType
+[INFO] Running org.apache.atlas.type.TestAtlasStringType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.662 s - in org.apache.atlas.type.TestAtlasShortType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.842 s - in org.apache.atlas.type.TestAtlasBigIntegerType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.054 s - in org.apache.atlas.type.TestAtlasDoubleType
+[INFO] Running org.apache.atlas.type.TestAtlasIntType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.752 s - in org.apache.atlas.type.TestAtlasMapType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.669 s - in org.apache.atlas.type.TestAtlasStringType
+[INFO] Running org.apache.atlas.type.TestAtlasBuiltInTypesFloatDouble
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.378 s - in org.apache.atlas.type.TestAtlasBigDecimalType
+[INFO] Running org.apache.atlas.type.TestAtlasBooleanType
+[INFO] Running org.apache.atlas.type.TestAtlasFloatType
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.544 s - in org.apache.atlas.type.TestAtlasRelationshipType
+[INFO] Running org.apache.atlas.type.TestMultiplicity
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.866 s - in org.apache.atlas.type.TestAtlasIntType
+[INFO] Running org.apache.atlas.type.TestAtlasDateType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.907 s - in org.apache.atlas.type.TestAtlasFloatType
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.339 s - in org.apache.atlas.type.TestAtlasBuiltInTypesFloatDouble
+[INFO] Running org.apache.atlas.type.TestAtlasStructType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.158 s - in org.apache.atlas.type.TestAtlasBooleanType
+[INFO] Running org.apache.atlas.type.TestAtlasEntityType
+[INFO] Running org.apache.atlas.type.TestAtlasByteType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.738 s - in org.apache.atlas.type.TestAtlasDateType
+[INFO] Running org.apache.atlas.type.TestAtlasTypeRegistry
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.157 s - in org.apache.atlas.type.TestMultiplicity
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasRelationshipDef
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.884 s - in org.apache.atlas.type.TestAtlasByteType
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasStructDef
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasEntityDef
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasBusinessMetadataDef
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.304 s - in org.apache.atlas.model.typedef.TestAtlasBusinessMetadataDef
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasClassificationDef
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.985 s - in org.apache.atlas.type.TestAtlasStructType
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.09 s - in org.apache.atlas.model.typedef.TestAtlasRelationshipDef
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasEnumDef
+[INFO] Running org.apache.atlas.model.instance.TestAtlasEntity
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.454 s - in org.apache.atlas.type.TestAtlasTypeRegistry
+[INFO] Running org.apache.atlas.model.instance.TestAtlasClassification
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.524 s - in org.apache.atlas.model.typedef.TestAtlasStructDef
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.74 s - in org.apache.atlas.model.typedef.TestAtlasEntityDef
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.266 s - in org.apache.atlas.model.typedef.TestAtlasClassificationDef
+[INFO] Running org.apache.atlas.utils.FixedBufferListTest
+[INFO] Running org.apache.atlas.utils.AtlasStringUtilTest
+[INFO] Running org.apache.atlas.ApplicationPropertiesTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.273 s - in org.apache.atlas.utils.FixedBufferListTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.811 s - in org.apache.atlas.utils.AtlasStringUtilTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.547 s - in org.apache.atlas.ApplicationPropertiesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.487 s - in org.apache.atlas.model.instance.TestAtlasEntity
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.904 s - in org.apache.atlas.model.instance.TestAtlasClassification
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.104 s - in org.apache.atlas.model.typedef.TestAtlasEnumDef
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.438 s - in org.apache.atlas.type.TestAtlasEntityType
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 50.199 s - in org.apache.atlas.type.TestAtlasClassificationType
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 164, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/intg/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/intg/.nondex
+nondexExecid=Zufgsadb30Wny6MTVy37WuOVeU2Q2hPoDBY4IKR+T0=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.atlas.TestUtilsV2
+[INFO] Running org.apache.atlas.security.InMemoryJAASConfigurationTest
+[INFO] Running org.apache.atlas.TestRelationshipUtilsV2
+[INFO] Running org.apache.atlas.security.InMemoryJAASConfigurationTicketBasedKafkaClientTest
+[INFO] Running org.apache.atlas.type.TestAtlasClassificationType
+[INFO] Running org.apache.atlas.type.TestAtlasArrayType
+[INFO] Running org.apache.atlas.type.TestAtlasObjectIdType
+[INFO] Running org.apache.atlas.type.TestAtlasLongType
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.989 s - in org.apache.atlas.TestUtilsV2
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.632 s - in org.apache.atlas.TestRelationshipUtilsV2
+[INFO] Running org.apache.atlas.type.TestAtlasShortType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.85 s - in org.apache.atlas.type.TestAtlasObjectIdType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.901 s - in org.apache.atlas.type.TestAtlasLongType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.37 s - in org.apache.atlas.type.TestAtlasArrayType
+[INFO] Running org.apache.atlas.type.TestAtlasBigIntegerType
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.743 s - in org.apache.atlas.security.InMemoryJAASConfigurationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.849 s - in org.apache.atlas.security.InMemoryJAASConfigurationTicketBasedKafkaClientTest
+[INFO] Running org.apache.atlas.type.TestAtlasRelationshipType
+[INFO] Running org.apache.atlas.type.TestAtlasDoubleType
+[INFO] Running org.apache.atlas.type.TestAtlasMapType
+[INFO] Running org.apache.atlas.type.TestAtlasBigDecimalType
+[INFO] Running org.apache.atlas.type.TestAtlasStringType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.226 s - in org.apache.atlas.type.TestAtlasShortType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.866 s - in org.apache.atlas.type.TestAtlasBigIntegerType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.094 s - in org.apache.atlas.type.TestAtlasStringType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.122 s - in org.apache.atlas.type.TestAtlasDoubleType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.936 s - in org.apache.atlas.type.TestAtlasMapType
+[INFO] Running org.apache.atlas.type.TestAtlasBuiltInTypesFloatDouble
+[INFO] Running org.apache.atlas.type.TestAtlasIntType
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.943 s - in org.apache.atlas.type.TestAtlasRelationshipType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.321 s - in org.apache.atlas.type.TestAtlasBigDecimalType
+[INFO] Running org.apache.atlas.type.TestMultiplicity
+[INFO] Running org.apache.atlas.type.TestAtlasFloatType
+[INFO] Running org.apache.atlas.type.TestAtlasBooleanType
+[INFO] Running org.apache.atlas.type.TestAtlasDateType
+[INFO] Running org.apache.atlas.type.TestAtlasStructType
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.147 s - in org.apache.atlas.type.TestAtlasBuiltInTypesFloatDouble
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.301 s - in org.apache.atlas.type.TestAtlasIntType
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.672 s - in org.apache.atlas.type.TestMultiplicity
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.63 s - in org.apache.atlas.type.TestAtlasBooleanType
+[INFO] Running org.apache.atlas.type.TestAtlasByteType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.45 s - in org.apache.atlas.type.TestAtlasFloatType
+[INFO] Running org.apache.atlas.type.TestAtlasEntityType
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.965 s - in org.apache.atlas.type.TestAtlasDateType
+[INFO] Running org.apache.atlas.type.TestAtlasTypeRegistry
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasRelationshipDef
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasStructDef
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasEntityDef
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.218 s - in org.apache.atlas.type.TestAtlasByteType
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasBusinessMetadataDef
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.323 s - in org.apache.atlas.model.typedef.TestAtlasBusinessMetadataDef
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasClassificationDef
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.758 s - in org.apache.atlas.model.typedef.TestAtlasRelationshipDef
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.153 s - in org.apache.atlas.type.TestAtlasStructType
+[INFO] Running org.apache.atlas.model.instance.TestAtlasEntity
+[INFO] Running org.apache.atlas.model.typedef.TestAtlasEnumDef
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.464 s - in org.apache.atlas.type.TestAtlasTypeRegistry
+[INFO] Running org.apache.atlas.model.instance.TestAtlasClassification
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.275 s - in org.apache.atlas.model.typedef.TestAtlasStructDef
+[INFO] Running org.apache.atlas.utils.FixedBufferListTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.615 s - in org.apache.atlas.model.typedef.TestAtlasClassificationDef
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.234 s - in org.apache.atlas.utils.FixedBufferListTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.625 s - in org.apache.atlas.model.typedef.TestAtlasEntityDef
+[INFO] Running org.apache.atlas.utils.AtlasStringUtilTest
+[INFO] Running org.apache.atlas.ApplicationPropertiesTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.709 s - in org.apache.atlas.utils.AtlasStringUtilTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.113 s - in org.apache.atlas.model.instance.TestAtlasEntity
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.402 s - in org.apache.atlas.ApplicationPropertiesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.61 s - in org.apache.atlas.model.instance.TestAtlasClassification
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.192 s - in org.apache.atlas.model.typedef.TestAtlasEnumDef
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.044 s - in org.apache.atlas.type.TestAtlasEntityType
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.977 s - in org.apache.atlas.type.TestAtlasClassificationType
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 164, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/intg/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/intg/.nondex" -DnondexExecid=zWLfEYFIGcJuqKr8NkgnMRXKYgGM1wfexJhzqM4e+8= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/intg/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/intg/.nondex" -DnondexExecid=jG4LCL9a7dmkztMwnlIx6z9WoOO1Otkz6uAzPWYWw= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/intg/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/intg/.nondex" -DnondexExecid=Zufgsadb30Wny6MTVy37WuOVeU2Q2hPoDBY4IKR+T0= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.kbNemppo6R/repo/intg/.nondex/zWLfEYFIGcJuqKr8NkgnMRXKYgGM1wfexJhzqM4e+8=/test_results.html
+[INFO] [NonDex] The id of this run is: zWLfEYFIGcJuqKr8NkgnMRXKYgGM1wfexJhzqM4e+8=
+[INFO] 
+[INFO] ------------------< org.apache.atlas:atlas-testtools >------------------
+[INFO] Building Apache Atlas Test Utility Tools 3.0.0-SNAPSHOT           [4/10]
+[INFO]   from test-tools/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ atlas-testtools >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-maven-version) @ atlas-testtools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-versions) @ atlas-testtools ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ atlas-testtools ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kbNemppo6R/repo/test-tools' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kbNemppo6R/repo/test-tools
+[INFO] Storing buildNumber: d8cf1e34a696da6100127c38cf42b922e177a314 at timestamp: 1794336351732
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kbNemppo6R/repo/test-tools' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kbNemppo6R/repo/test-tools
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- apache-rat:0.13:check (rat-check) @ atlas-testtools ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- resources:2.7:copy-resources (copy-resources) @ atlas-testtools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ atlas-testtools ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ atlas-testtools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 10 resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ atlas-testtools ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ atlas-testtools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.kbNemppo6R/repo/test-tools/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ atlas-testtools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ atlas-testtools <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ atlas-testtools ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/test-tools/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_zsBBdHHtngEd+tImzUUzKV4yEuSNWqCFjP2z1Xeca1A=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/test-tools/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/test-tools/.nondex
+nondexExecid=avcTsifUoEFgUconO3mhfg1Uj7ynbMma01XQGtWBua8=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/test-tools/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/test-tools/.nondex
+nondexExecid=7K98pH0yWdrEO+9uZUlloRpguo1CeLPcypIQJN5dUMc=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/test-tools/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/test-tools/.nondex
+nondexExecid=mB2O2ce95KoXq9jPVgBBz8lx9DCYIv0RwWDxkiMwIo=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/test-tools/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/test-tools/.nondex" -DnondexExecid=avcTsifUoEFgUconO3mhfg1Uj7ynbMma01XQGtWBua8= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/test-tools/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/test-tools/.nondex" -DnondexExecid=7K98pH0yWdrEO+9uZUlloRpguo1CeLPcypIQJN5dUMc= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/test-tools/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/test-tools/.nondex" -DnondexExecid=mB2O2ce95KoXq9jPVgBBz8lx9DCYIv0RwWDxkiMwIo= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.kbNemppo6R/repo/test-tools/.nondex/avcTsifUoEFgUconO3mhfg1Uj7ynbMma01XQGtWBua8=/test_results.html
+[INFO] [NonDex] The id of this run is: avcTsifUoEFgUconO3mhfg1Uj7ynbMma01XQGtWBua8=
+[INFO] 
+[INFO] -------------------< org.apache.atlas:atlas-common >--------------------
+[INFO] Building Apache Atlas Common 3.0.0-SNAPSHOT                       [5/10]
+[INFO]   from common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ atlas-common >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-maven-version) @ atlas-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-versions) @ atlas-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ atlas-common ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kbNemppo6R/repo/common' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kbNemppo6R/repo/common
+[INFO] Storing buildNumber: d8cf1e34a696da6100127c38cf42b922e177a314 at timestamp: 1794336353028
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kbNemppo6R/repo/common' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kbNemppo6R/repo/common
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- apache-rat:0.13:check (rat-check) @ atlas-common ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ atlas-common ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ atlas-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.kbNemppo6R/repo/common/src/main/resources
+[INFO] Copying 2 resources to META-INF
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ atlas-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ atlas-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ atlas-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ atlas-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ atlas-common ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/common/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_J7YFDrqZIYHR10C18c3RjL6X1tccEsmolNkKNXDJ+4c=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.atlas.ha.HAConfigurationTest
+[INFO] Running org.apache.atlas.utils.KafkaUtilsTest
+[INFO] Running org.apache.atlas.utils.LruCacheTest
+[INFO] Running org.apache.atlas.utils.AtlasPathExtractorUtilTest
+[INFO] Running org.apache.atlas.utils.HdfsNameServiceResolverTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.556 s - in org.apache.atlas.utils.LruCacheTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.752 s - in org.apache.atlas.utils.HdfsNameServiceResolverTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.927 s - in org.apache.atlas.utils.AtlasPathExtractorUtilTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.091 s - in org.apache.atlas.ha.HAConfigurationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.978 s - in org.apache.atlas.utils.KafkaUtilsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 39, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/common/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/common/.nondex
+nondexExecid=eQgdubJtIN1J0hxriDHWgwPfeLG7518P3Vs61FJZA=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.atlas.utils.HdfsNameServiceResolverTest
+[INFO] Running org.apache.atlas.utils.KafkaUtilsTest
+[INFO] Running org.apache.atlas.ha.HAConfigurationTest
+[INFO] Running org.apache.atlas.utils.LruCacheTest
+[INFO] Running org.apache.atlas.utils.AtlasPathExtractorUtilTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.763 s - in org.apache.atlas.utils.LruCacheTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.237 s - in org.apache.atlas.utils.HdfsNameServiceResolverTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.3 s - in org.apache.atlas.utils.AtlasPathExtractorUtilTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.381 s - in org.apache.atlas.ha.HAConfigurationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.42 s - in org.apache.atlas.utils.KafkaUtilsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 39, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/common/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/common/.nondex
+nondexExecid=hRLmbGONdaLIxkeGQDkeCBRPEiwYBrkwQOd8MbofQrM=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.atlas.utils.KafkaUtilsTest
+[INFO] Running org.apache.atlas.ha.HAConfigurationTest
+[INFO] Running org.apache.atlas.utils.AtlasPathExtractorUtilTest
+[INFO] Running org.apache.atlas.utils.HdfsNameServiceResolverTest
+[INFO] Running org.apache.atlas.utils.LruCacheTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.8 s - in org.apache.atlas.utils.LruCacheTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.073 s - in org.apache.atlas.utils.HdfsNameServiceResolverTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.199 s - in org.apache.atlas.utils.AtlasPathExtractorUtilTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.49 s - in org.apache.atlas.ha.HAConfigurationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.477 s - in org.apache.atlas.utils.KafkaUtilsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 39, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/common/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/common/.nondex
+nondexExecid=8WoqCk1T0VB98BC9QGqlkxHxzVklK+W3DaUaPPUY8OA=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.atlas.utils.LruCacheTest
+[INFO] Running org.apache.atlas.utils.KafkaUtilsTest
+[INFO] Running org.apache.atlas.utils.AtlasPathExtractorUtilTest
+[INFO] Running org.apache.atlas.utils.HdfsNameServiceResolverTest
+[INFO] Running org.apache.atlas.ha.HAConfigurationTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.444 s - in org.apache.atlas.utils.LruCacheTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.896 s - in org.apache.atlas.utils.HdfsNameServiceResolverTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.231 s - in org.apache.atlas.utils.AtlasPathExtractorUtilTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.155 s - in org.apache.atlas.ha.HAConfigurationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.196 s - in org.apache.atlas.utils.KafkaUtilsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 39, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/common/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/common/.nondex" -DnondexExecid=eQgdubJtIN1J0hxriDHWgwPfeLG7518P3Vs61FJZA= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/common/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/common/.nondex" -DnondexExecid=hRLmbGONdaLIxkeGQDkeCBRPEiwYBrkwQOd8MbofQrM= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/common/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/common/.nondex" -DnondexExecid=8WoqCk1T0VB98BC9QGqlkxHxzVklK+W3DaUaPPUY8OA= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.kbNemppo6R/repo/common/.nondex/eQgdubJtIN1J0hxriDHWgwPfeLG7518P3Vs61FJZA=/test_results.html
+[INFO] [NonDex] The id of this run is: eQgdubJtIN1J0hxriDHWgwPfeLG7518P3Vs61FJZA=
+[INFO] 
+[INFO] -------------------< org.apache.atlas:atlas-graphdb >-------------------
+[INFO] Building Apache Atlas Graph Database Projects 3.0.0-SNAPSHOT      [6/10]
+[INFO]   from graphdb/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ atlas-graphdb >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-maven-version) @ atlas-graphdb ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-versions) @ atlas-graphdb ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ atlas-graphdb ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kbNemppo6R/repo/graphdb' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kbNemppo6R/repo/graphdb
+[INFO] Storing buildNumber: d8cf1e34a696da6100127c38cf42b922e177a314 at timestamp: 1794336375154
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kbNemppo6R/repo/graphdb' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kbNemppo6R/repo/graphdb
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- apache-rat:0.13:check (rat-check) @ atlas-graphdb ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ atlas-graphdb ---
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ atlas-graphdb <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ atlas-graphdb ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/graphdb/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_eTN5ToA9gnfPPn0kzP0jmeU2EjjFdFfiIMeiZSc7Q3Q=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/graphdb/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/graphdb/.nondex
+nondexExecid=KmoZGrrd0vv93B73GT9z6Jn6H3tDBccyA8xxsNh0xLs=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/graphdb/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/graphdb/.nondex
+nondexExecid=sy1MCpXZz5XDYi1aB+RYpZbKBGnerVFUPcH921jaA9c=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/graphdb/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/graphdb/.nondex
+nondexExecid=l0fWjbBWlHAr7L+K+Zq8BpMiyuTv1LIMnxIUTu4REy0=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/graphdb/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/graphdb/.nondex" -DnondexExecid=KmoZGrrd0vv93B73GT9z6Jn6H3tDBccyA8xxsNh0xLs= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/graphdb/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/graphdb/.nondex" -DnondexExecid=sy1MCpXZz5XDYi1aB+RYpZbKBGnerVFUPcH921jaA9c= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/graphdb/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/graphdb/.nondex" -DnondexExecid=l0fWjbBWlHAr7L+K+Zq8BpMiyuTv1LIMnxIUTu4REy0= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.kbNemppo6R/repo/graphdb/.nondex/KmoZGrrd0vv93B73GT9z6Jn6H3tDBccyA8xxsNh0xLs=/test_results.html
+[INFO] [NonDex] The id of this run is: KmoZGrrd0vv93B73GT9z6Jn6H3tDBccyA8xxsNh0xLs=
+[INFO] 
+[INFO] -----------------< org.apache.atlas:atlas-graphdb-api >-----------------
+[INFO] Building Apache Atlas Graph Database API 3.0.0-SNAPSHOT           [7/10]
+[INFO]   from graphdb/api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ atlas-graphdb-api >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-maven-version) @ atlas-graphdb-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.0.0-M1:enforce (enforce-versions) @ atlas-graphdb-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ atlas-graphdb-api ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kbNemppo6R/repo/graphdb/api' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kbNemppo6R/repo/graphdb/api
+[INFO] Storing buildNumber: d8cf1e34a696da6100127c38cf42b922e177a314 at timestamp: 1794336375283
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.kbNemppo6R/repo/graphdb/api' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.kbNemppo6R/repo/graphdb/api
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- apache-rat:0.13:check (rat-check) @ atlas-graphdb-api ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ atlas-graphdb-api ---
+[INFO] 
+[INFO] --- resources:2.7:resources (default-resources) @ atlas-graphdb-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.kbNemppo6R/repo/graphdb/api/src/main/resources
+[INFO] Copying 0 resource to META-INF
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ atlas-graphdb-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.7:testResources (default-testResources) @ atlas-graphdb-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.kbNemppo6R/repo/graphdb/api/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ atlas-graphdb-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ atlas-graphdb-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ atlas-graphdb-api ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_3NRAOI+YN6s5gSZ2h3RNjdSklRSDGtNb621mU8fJ9E=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex
+nondexExecid=jT3512fRMwgEEohMwxOjiHUiL6tIj0Zf3iFq+hW3ro=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+INFO: Surefire failed when running tests for jT3512fRMwgEEohMwxOjiHUiL6tIj0Zf3iFq+hW3ro=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex
+nondexExecid=ye5Y0ZikG2GINo0nkJWbxDe531mJz2qzcrW4bLBnDyM=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+INFO: Surefire failed when running tests for ye5Y0ZikG2GINo0nkJWbxDe531mJz2qzcrW4bLBnDyM=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex
+nondexJarDir=/tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex
+nondexExecid=YPTXaQ5jGevYMTkHVMBysCaizbodJkcdaG0rmbjjC0=
+nondexLogging=CONFIG
+test=
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+INFO: Surefire failed when running tests for YPTXaQ5jGevYMTkHVMBysCaizbodJkcdaG0rmbjjC0=
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex" -DnondexExecid=jT3512fRMwgEEohMwxOjiHUiL6tIj0Zf3iFq+hW3ro= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex" -DnondexExecid=ye5Y0ZikG2GINo0nkJWbxDe531mJz2qzcrW4bLBnDyM= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex" -DnondexJarDir="/tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex" -DnondexExecid=YPTXaQ5jGevYMTkHVMBysCaizbodJkcdaG0rmbjjC0= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.kbNemppo6R/repo/graphdb/api/.nondex/jT3512fRMwgEEohMwxOjiHUiL6tIj0Zf3iFq+hW3ro=/test_results.html
+[INFO] [NonDex] The id of this run is: jT3512fRMwgEEohMwxOjiHUiL6tIj0Zf3iFq+hW3ro=
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for apache-atlas 3.0.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache Atlas Server Build Tools .................... SUCCESS [  3.050 s]
+[INFO] apache-atlas ....................................... SUCCESS [  1.159 s]
+[INFO] Apache Atlas Integration ........................... SUCCESS [03:31 min]
+[INFO] Apache Atlas Test Utility Tools .................... SUCCESS [  1.423 s]
+[INFO] Apache Atlas Common ................................ SUCCESS [ 22.165 s]
+[INFO] Apache Atlas Graph Database Projects ............... SUCCESS [  0.096 s]
+[INFO] Apache Atlas Graph Database API .................... FAILURE [  0.895 s]
+[INFO] Graph Database Common Code ......................... SKIPPED
+[INFO] Apache Atlas JanusGraph-HBase2 Module .............. SKIPPED
+[INFO] Apache Atlas JanusGraph DB Impl .................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:01 min
+[INFO] Finished at: 2026-11-10T18:46:16Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.illinois:nondex-maven-plugin:2.2.1:nondex (default-cli) on project atlas-graphdb-api: Unable to execute mojo: groups/excludedGroups require TestNG, JUnit48+ or JUnit 5 (a specific engine required on classpath) on project test classpath -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :atlas-graphdb-api

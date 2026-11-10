@@ -1,0 +1,3 @@
+url=https://github.com/alibaba/nacos
+sha=0ac96e1602baf1f516c3c614f13523adb2992e69
+module=common

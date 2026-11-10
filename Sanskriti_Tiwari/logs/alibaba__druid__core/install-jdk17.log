@@ -1,0 +1,68 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.springframework.samples:spring-petclinic:jar:2.7.3
+[WARNING] 'parent.relativePath' of POM org.springframework.samples:spring-petclinic:2.7.3 (/tmp/tmp.rci554gH9G/repo/druid-demo-petclinic/pom.xml) points at com.alibaba:druid-parent instead of org.springframework.boot:spring-boot-starter-parent, please verify your project structure @ line 8, column 11
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] druid-parent                                                       [pom]
+[INFO] druid                                                              [jar]
+[INFO] 
+[INFO] ----------------------< com.alibaba:druid-parent >----------------------
+[INFO] Building druid-parent 1.2.15                                       [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.1.2:check (checkstyle) @ druid-parent ---
+[INFO] You have 0 Checkstyle violations.
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (java-compile) @ druid-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (java-test-compile) @ druid-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- install:3.0.1:install (default-install) @ druid-parent ---
+[INFO] Installing /tmp/tmp.rci554gH9G/repo/pom.xml to /home/runner/.m2/repository/com/alibaba/druid-parent/1.2.15/druid-parent-1.2.15.pom
+[INFO] 
+[INFO] -------------------------< com.alibaba:druid >--------------------------
+[INFO] Building druid 1.2.15                                              [2/2]
+[INFO]   from core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.20.0-GA during dependency collection step for project (use -X to see details)
+[WARNING] 2 problems were encountered while building the effective model for org.apache.yetus:audience-annotations:jar:0.5.0 during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.apache.hadoop:hadoop-annotations:jar:2.6.0 during dependency collection step for project (use -X to see details)
+[INFO] Downloading from java.net.Releases: https://maven.java.net/content/repositories/releases/org/glassfish/javax.el/maven-metadata.xml
+[INFO] Downloading from jvnet-nexus-snapshots: https://maven.java.net/content/repositories/snapshots/org/glassfish/javax.el/maven-metadata.xml
+[WARNING] Could not transfer metadata org.glassfish:javax.el/maven-metadata.xml from/to java.net.Releases (https://maven.java.net/content/repositories/releases): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[WARNING] Could not transfer metadata org.glassfish:javax.el/maven-metadata.xml from/to jvnet-nexus-snapshots (https://maven.java.net/content/repositories/snapshots): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for druid-parent 1.2.15:
+[INFO] 
+[INFO] druid-parent ....................................... SUCCESS [  1.241 s]
+[INFO] druid .............................................. FAILURE [  2.071 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.514 s
+[INFO] Finished at: 2026-11-10T18:35:58Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project druid: Could not resolve dependencies for project com.alibaba:druid:jar:1.2.15
+[ERROR] dependency: jdk.tools:jdk.tools:jar:1.6 (system)
+[ERROR] 	Could not find artifact jdk.tools:jdk.tools:jar:1.6 at specified path /usr/lib/jvm/temurin-17-jdk-amd64/../lib/tools.jar
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :druid

@@ -1,0 +1,68 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] dubbo-parent                                                       [pom]
+[INFO] dubbo-common                                                       [jar]
+[INFO] dubbo-container                                                    [pom]
+[INFO] dubbo-container-api                                                [jar]
+[INFO] dubbo-serialization                                                [pom]
+[INFO] dubbo-serialization-api                                            [jar]
+[INFO] dubbo-serialization-hessian2                                       [jar]
+[INFO] dubbo-remoting                                                     [pom]
+[INFO] dubbo-remoting-api                                                 [jar]
+[INFO] dubbo-rpc                                                          [pom]
+[INFO] dubbo-rpc-api                                                      [jar]
+[INFO] dubbo-remoting-netty4                                              [jar]
+[INFO] dubbo-rpc-dubbo                                                    [jar]
+[INFO] 
+[INFO] -------------------< org.apache.dubbo:dubbo-parent >--------------------
+[INFO] Building dubbo-parent 2.7.0-SNAPSHOT                              [1/13]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) > test-compile @ dubbo-parent >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ dubbo-parent ---
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle-validation) @ dubbo-parent ---
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (jacoco-initialize) @ dubbo-parent ---
+[INFO] jacocoArgLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar=destfile=/tmp/tmp.SvMN0WFUH8/repo/target/jacoco.exec
+[INFO] 
+[INFO] --- remote-resources:1.5:process (process-resource-bundles) @ dubbo-parent ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) < test-compile @ dubbo-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) @ dubbo-parent ---
+INFO: Running BarrierPointSearchMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for dubbo-parent 2.7.0-SNAPSHOT:
+[INFO] 
+[INFO] dubbo-parent ....................................... FAILURE [  0.810 s]
+[INFO] dubbo-common ....................................... SKIPPED
+[INFO] dubbo-container .................................... SKIPPED
+[INFO] dubbo-container-api ................................ SKIPPED
+[INFO] dubbo-serialization ................................ SKIPPED
+[INFO] dubbo-serialization-api ............................ SKIPPED
+[INFO] dubbo-serialization-hessian2 ....................... SKIPPED
+[INFO] dubbo-remoting ..................................... SKIPPED
+[INFO] dubbo-remoting-api ................................. SKIPPED
+[INFO] dubbo-rpc .......................................... SKIPPED
+[INFO] dubbo-rpc-api ...................................... SKIPPED
+[INFO] dubbo-remoting-netty4 .............................. SKIPPED
+[INFO] dubbo-rpc-dubbo .................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.128 s
+[INFO] Finished at: 2026-11-10T18:48:35Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch (default-cli) on project dubbo-parent: Execution default-cli of goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch failed: java.io.FileNotFoundException: /tmp/tmp.SvMN0WFUH8/repo/.flakesync/Results-CritSearch/org.apache.dubbo.rpc.protocol.dubbo.DubboLazyConnectTest.testSticky1-CriticalPoints.csv (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

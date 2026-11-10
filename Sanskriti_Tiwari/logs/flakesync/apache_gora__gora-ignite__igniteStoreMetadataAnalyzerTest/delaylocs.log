@@ -1,0 +1,679 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Gora                                                        [pom]
+[INFO] Apache Gora :: Core                                             [bundle]
+[INFO] Apache Gora :: Ignite                                           [bundle]
+[INFO] 
+[INFO] ------------------------< org.apache.gora:gora >------------------------
+[INFO] Building Apache Gora 1.0-SNAPSHOT                                  [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:delaylocs (default-cli) > test-compile @ gora >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora ---
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:delaylocs (default-cli) < test-compile @ gora <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:delaylocs (default-cli) @ gora ---
+INFO: Running RunWithDelaysMojo
+Inside createWhiteList
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] 
+[INFO] ---------------------< org.apache.gora:gora-core >----------------------
+[INFO] Building Apache Gora :: Core 1.0-SNAPSHOT                          [2/3]
+[INFO]   from gora-core/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:delaylocs (default-cli) > test-compile @ gora-core >>>
+[WARNING] 1 problem was encountered while building the effective model for org.apache.hadoop:hadoop-annotations:jar:2.5.2 during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.19.0-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora-core ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora-core ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora-core ---
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora-core ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ gora-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.SL4hYZ4L3k/repo/gora-core/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ gora-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 101 source files to /tmp/tmp.SL4hYZ4L3k/repo/gora-core/target/classes
+[INFO] 
+[INFO] --- build-helper:1.7:add-test-source (default) @ gora-core ---
+[INFO] Test Source directory: /tmp/tmp.SL4hYZ4L3k/repo/gora-core/src/examples/java added.
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ gora-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:delaylocs (default-cli) < test-compile @ gora-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:delaylocs (default-cli) @ gora-core ---
+INFO: Running RunWithDelaysMojo
+Inside createWhiteList
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] --------------------< org.apache.gora:gora-ignite >---------------------
+[INFO] Building Apache Gora :: Ignite 1.0-SNAPSHOT                        [3/3]
+[INFO]   from gora-ignite/pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:delaylocs (default-cli) > test-compile @ gora-ignite >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ gora-ignite ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-java-version) @ gora-ignite ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-output-timestamp-property) @ gora-ignite ---
+[INFO] 
+[INFO] --- build-helper:1.7:add-source (default) @ gora-ignite ---
+[INFO] Source directory: /tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/src/examples/java added.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ gora-ignite ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ gora-ignite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:compile (default-compile) @ gora-ignite ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to /tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+/tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/src/main/java/org/apache/gora/ignite/utils/IgniteSQLBuilder.java:[124,48] non-varargs call of varargs method with inexact argument type for last parameter;
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ gora-ignite ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.1:testCompile (default-testCompile) @ gora-ignite ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:delaylocs (default-cli) < test-compile @ gora-ignite <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:delaylocs (default-cli) @ gora-ignite ---
+INFO: Running RunWithDelaysMojo
+Inside createWhiteList
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.ignite.store.TestIgniteStore
+[18:58:31] (wrn) Default Spring XML file not found (is IGNITE_HOME set?): config/default-config.xml
+
+[18:58:31]    __________  ________________ 
+[18:58:31]   /  _/ ___/ |/ /  _/_  __/ __/ 
+[18:58:31]  _/ // (7 7    // /  / / / _/   
+[18:58:31] /___/\___/_/|_/___/ /_/ /x___/  
+[18:58:31] 
+[18:58:31] ver. 2.14.0#20220929-sha1:951e8deb
+[18:58:31] 2022 Copyright(C) Apache Software Foundation
+[18:58:31] 
+[18:58:31] Ignite documentation: https://ignite.apache.org
+[18:58:31] 
+[18:58:31] Quiet mode.
+[18:58:31]   ^-- Logging to file '/tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/ignite/work/log/ignite-c5762254.0.log'
+[18:58:31]   ^-- Logging by 'JavaLogger [quiet=true, config=null]'
+[18:58:31]   ^-- To see **FULL** console log here add -DIGNITE_QUIET=false or "-v" to ignite.{sh|bat}
+[18:58:31] 
+[18:58:31] OS: Linux 7.0.0-1019-azure amd64
+[18:58:31] VM information: OpenJDK Runtime Environment 11.0.32.1+1 Eclipse Adoptium OpenJDK 64-Bit Server VM 11.0.32.1+1
+[18:58:31] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[18:58:32] Configured plugins:
+[18:58:32]   ^-- None
+[18:58:32] 
+[18:58:32] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=UnmodifiableSet [SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[18:58:32] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[18:58:32] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[18:58:34] Data Regions Started: 4
+[18:58:34] 
+[18:58:34]     ^--   sysMemPlc region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:34]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:34]     ^--   default region [type=default, persistence=false, lazyAlloc=true,
+[18:58:34]       ...  initCfg=256MB, maxCfg=3196MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:34]     ^--   TxLog region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:34]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:34]     ^--   volatileDsMemPlc region [type=user, persistence=false, lazyAlloc=true,
+[18:58:34]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:34] Security status [authentication=off, sandbox=off, tls/ssl=off]
+[18:58:34] Performance suggestions for grid  (fix if possible)
+[18:58:34] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[18:58:34]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:34]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:34]   ^-- Speed up flushing of dirty pages by OS (alter vm.dirty_expire_centisecs parameter by setting to 500)
+[18:58:34]   ^-- Reduce pages swapping ratio (set vm.swappiness=10 or less)
+[18:58:34]   ^-- Disable assertions (remove '-ea' from JVM options)
+[18:58:34] Refer to this page for more performance suggestions: https://ignite.apache.org/docs/latest/perf-and-troubleshooting/memory-tuning
+[18:58:34] 
+[18:58:34] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[18:58:34] 
+[18:58:34] Ignite node started OK (id=c5762254)
+[18:58:34] Topology snapshot [ver=1, locNode=c5762254, servers=1, clients=0, state=ACTIVE, CPUs=4, offheap=3.1GB, heap=3.9GB]
+[18:58:34]   ^-- Baseline [id=0, size=1, online=1, offline=0]
+[18:58:34] Ignite node stopped OK [uptime=00:00:00.704]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.355 s - in org.apache.gora.ignite.store.TestIgniteStore
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.ignite.store.TestIgniteStore
+[18:58:35] (wrn) Default Spring XML file not found (is IGNITE_HOME set?): config/default-config.xml
+
+[18:58:35]    __________  ________________ 
+[18:58:35]   /  _/ ___/ |/ /  _/_  __/ __/ 
+[18:58:35]  _/ // (7 7    // /  / / / _/   
+[18:58:35] /___/\___/_/|_/___/ /_/ /x___/  
+[18:58:35] 
+[18:58:35] ver. 2.14.0#20220929-sha1:951e8deb
+[18:58:35] 2022 Copyright(C) Apache Software Foundation
+[18:58:35] 
+[18:58:35] Ignite documentation: https://ignite.apache.org
+[18:58:35] 
+[18:58:35] Quiet mode.
+[18:58:35]   ^-- Logging to file '/tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/ignite/work/log/ignite-34d2fca3.0.log'
+[18:58:35]   ^-- Logging by 'JavaLogger [quiet=true, config=null]'
+[18:58:35]   ^-- To see **FULL** console log here add -DIGNITE_QUIET=false or "-v" to ignite.{sh|bat}
+[18:58:35] 
+[18:58:35] OS: Linux 7.0.0-1019-azure amd64
+[18:58:35] VM information: OpenJDK Runtime Environment 11.0.32.1+1 Eclipse Adoptium OpenJDK 64-Bit Server VM 11.0.32.1+1
+[18:58:35] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[18:58:36] Configured plugins:
+[18:58:36]   ^-- None
+[18:58:36] 
+[18:58:36] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=UnmodifiableSet [SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[18:58:36] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[18:58:36] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[18:58:38] Data Regions Started: 4
+[18:58:38] 
+[18:58:38]     ^--   sysMemPlc region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:38]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:38]     ^--   default region [type=default, persistence=false, lazyAlloc=true,
+[18:58:38]       ...  initCfg=256MB, maxCfg=3196MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:38]     ^--   TxLog region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:38]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:38]     ^--   volatileDsMemPlc region [type=user, persistence=false, lazyAlloc=true,
+[18:58:38]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:38] Security status [authentication=off, sandbox=off, tls/ssl=off]
+[18:58:38] Performance suggestions for grid  (fix if possible)
+[18:58:38] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[18:58:38]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:38]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:38]   ^-- Speed up flushing of dirty pages by OS (alter vm.dirty_expire_centisecs parameter by setting to 500)
+[18:58:38]   ^-- Reduce pages swapping ratio (set vm.swappiness=10 or less)
+[18:58:38]   ^-- Disable assertions (remove '-ea' from JVM options)
+[18:58:38] Refer to this page for more performance suggestions: https://ignite.apache.org/docs/latest/perf-and-troubleshooting/memory-tuning
+[18:58:38] 
+[18:58:38] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[18:58:38] 
+[18:58:38] Ignite node started OK (id=34d2fca3)
+[18:58:38] Topology snapshot [ver=1, locNode=34d2fca3, servers=1, clients=0, state=ACTIVE, CPUs=4, offheap=3.1GB, heap=3.9GB]
+[18:58:38]   ^-- Baseline [id=0, size=1, online=1, offline=0]
+[18:58:38] Ignite node stopped OK [uptime=00:00:00.633]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.204 s - in org.apache.gora.ignite.store.TestIgniteStore
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.ignite.store.TestIgniteStore
+[18:58:39] (wrn) Default Spring XML file not found (is IGNITE_HOME set?): config/default-config.xml
+
+[18:58:39]    __________  ________________ 
+[18:58:39]   /  _/ ___/ |/ /  _/_  __/ __/ 
+[18:58:39]  _/ // (7 7    // /  / / / _/   
+[18:58:39] /___/\___/_/|_/___/ /_/ /x___/  
+[18:58:39] 
+[18:58:39] ver. 2.14.0#20220929-sha1:951e8deb
+[18:58:39] 2022 Copyright(C) Apache Software Foundation
+[18:58:39] 
+[18:58:39] Ignite documentation: https://ignite.apache.org
+[18:58:39] 
+[18:58:39] Quiet mode.
+[18:58:39]   ^-- Logging to file '/tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/ignite/work/log/ignite-be1d9e76.0.log'
+[18:58:39]   ^-- Logging by 'JavaLogger [quiet=true, config=null]'
+[18:58:39]   ^-- To see **FULL** console log here add -DIGNITE_QUIET=false or "-v" to ignite.{sh|bat}
+[18:58:39] 
+[18:58:39] OS: Linux 7.0.0-1019-azure amd64
+[18:58:39] VM information: OpenJDK Runtime Environment 11.0.32.1+1 Eclipse Adoptium OpenJDK 64-Bit Server VM 11.0.32.1+1
+[18:58:39] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[18:58:39] Configured plugins:
+[18:58:39]   ^-- None
+[18:58:39] 
+[18:58:39] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=UnmodifiableSet [SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[18:58:39] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[18:58:40] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[18:58:41] Data Regions Started: 4
+[18:58:41] 
+[18:58:41]     ^--   sysMemPlc region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:41]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:41]     ^--   default region [type=default, persistence=false, lazyAlloc=true,
+[18:58:41]       ...  initCfg=256MB, maxCfg=3196MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:41]     ^--   TxLog region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:41]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:41]     ^--   volatileDsMemPlc region [type=user, persistence=false, lazyAlloc=true,
+[18:58:41]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:41] Security status [authentication=off, sandbox=off, tls/ssl=off]
+[18:58:41] Performance suggestions for grid  (fix if possible)
+[18:58:41] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[18:58:41]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:41]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:41]   ^-- Speed up flushing of dirty pages by OS (alter vm.dirty_expire_centisecs parameter by setting to 500)
+[18:58:41]   ^-- Reduce pages swapping ratio (set vm.swappiness=10 or less)
+[18:58:41]   ^-- Disable assertions (remove '-ea' from JVM options)
+[18:58:41] Refer to this page for more performance suggestions: https://ignite.apache.org/docs/latest/perf-and-troubleshooting/memory-tuning
+[18:58:41] 
+[18:58:41] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[18:58:41] 
+[18:58:41] Ignite node started OK (id=be1d9e76)
+[18:58:41] Topology snapshot [ver=1, locNode=be1d9e76, servers=1, clients=0, state=ACTIVE, CPUs=4, offheap=3.1GB, heap=3.9GB]
+[18:58:41]   ^-- Baseline [id=0, size=1, online=1, offline=0]
+[18:58:42] Ignite node stopped OK [uptime=00:00:00.645]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.216 s - in org.apache.gora.ignite.store.TestIgniteStore
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.ignite.store.TestIgniteStore
+[18:58:43] (wrn) Default Spring XML file not found (is IGNITE_HOME set?): config/default-config.xml
+
+[18:58:43]    __________  ________________ 
+[18:58:43]   /  _/ ___/ |/ /  _/_  __/ __/ 
+[18:58:43]  _/ // (7 7    // /  / / / _/   
+[18:58:43] /___/\___/_/|_/___/ /_/ /x___/  
+[18:58:43] 
+[18:58:43] ver. 2.14.0#20220929-sha1:951e8deb
+[18:58:43] 2022 Copyright(C) Apache Software Foundation
+[18:58:43] 
+[18:58:43] Ignite documentation: https://ignite.apache.org
+[18:58:43] 
+[18:58:43] Quiet mode.
+[18:58:43]   ^-- Logging to file '/tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/ignite/work/log/ignite-4021a42f.0.log'
+[18:58:43]   ^-- Logging by 'JavaLogger [quiet=true, config=null]'
+[18:58:43]   ^-- To see **FULL** console log here add -DIGNITE_QUIET=false or "-v" to ignite.{sh|bat}
+[18:58:43] 
+[18:58:43] OS: Linux 7.0.0-1019-azure amd64
+[18:58:43] VM information: OpenJDK Runtime Environment 11.0.32.1+1 Eclipse Adoptium OpenJDK 64-Bit Server VM 11.0.32.1+1
+[18:58:43] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[18:58:43] Configured plugins:
+[18:58:43]   ^-- None
+[18:58:43] 
+[18:58:43] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=UnmodifiableSet [SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[18:58:43] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[18:58:43] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[18:58:45] Data Regions Started: 4
+[18:58:45] 
+[18:58:45]     ^--   sysMemPlc region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:45]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:45]     ^--   default region [type=default, persistence=false, lazyAlloc=true,
+[18:58:45]       ...  initCfg=256MB, maxCfg=3196MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:45]     ^--   TxLog region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:45]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:45]     ^--   volatileDsMemPlc region [type=user, persistence=false, lazyAlloc=true,
+[18:58:45]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:45] Security status [authentication=off, sandbox=off, tls/ssl=off]
+[18:58:45] Performance suggestions for grid  (fix if possible)
+[18:58:45] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[18:58:45]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:45]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:45]   ^-- Speed up flushing of dirty pages by OS (alter vm.dirty_expire_centisecs parameter by setting to 500)
+[18:58:45]   ^-- Reduce pages swapping ratio (set vm.swappiness=10 or less)
+[18:58:45]   ^-- Disable assertions (remove '-ea' from JVM options)
+[18:58:45] Refer to this page for more performance suggestions: https://ignite.apache.org/docs/latest/perf-and-troubleshooting/memory-tuning
+[18:58:45] 
+[18:58:45] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[18:58:45] 
+[18:58:45] Ignite node started OK (id=4021a42f)
+[18:58:45] Topology snapshot [ver=1, locNode=4021a42f, servers=1, clients=0, state=ACTIVE, CPUs=4, offheap=3.1GB, heap=3.9GB]
+[18:58:45]   ^-- Baseline [id=0, size=1, online=1, offline=0]
+[18:58:46] Ignite node stopped OK [uptime=00:00:00.653]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.225 s - in org.apache.gora.ignite.store.TestIgniteStore
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.ignite.store.TestIgniteStore
+[18:58:47] (wrn) Default Spring XML file not found (is IGNITE_HOME set?): config/default-config.xml
+
+[18:58:47]    __________  ________________ 
+[18:58:47]   /  _/ ___/ |/ /  _/_  __/ __/ 
+[18:58:47]  _/ // (7 7    // /  / / / _/   
+[18:58:47] /___/\___/_/|_/___/ /_/ /x___/  
+[18:58:47] 
+[18:58:47] ver. 2.14.0#20220929-sha1:951e8deb
+[18:58:47] 2022 Copyright(C) Apache Software Foundation
+[18:58:47] 
+[18:58:47] Ignite documentation: https://ignite.apache.org
+[18:58:47] 
+[18:58:47] Quiet mode.
+[18:58:47]   ^-- Logging to file '/tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/ignite/work/log/ignite-7635b97c.0.log'
+[18:58:47]   ^-- Logging by 'JavaLogger [quiet=true, config=null]'
+[18:58:47]   ^-- To see **FULL** console log here add -DIGNITE_QUIET=false or "-v" to ignite.{sh|bat}
+[18:58:47] 
+[18:58:47] OS: Linux 7.0.0-1019-azure amd64
+[18:58:47] VM information: OpenJDK Runtime Environment 11.0.32.1+1 Eclipse Adoptium OpenJDK 64-Bit Server VM 11.0.32.1+1
+[18:58:47] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[18:58:47] Configured plugins:
+[18:58:47]   ^-- None
+[18:58:47] 
+[18:58:47] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=UnmodifiableSet [SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[18:58:47] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[18:58:47] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[18:58:49] Data Regions Started: 4
+[18:58:49] 
+[18:58:49]     ^--   sysMemPlc region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:49]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:49]     ^--   default region [type=default, persistence=false, lazyAlloc=true,
+[18:58:49]       ...  initCfg=256MB, maxCfg=3196MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:49]     ^--   TxLog region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:49]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:49]     ^--   volatileDsMemPlc region [type=user, persistence=false, lazyAlloc=true,
+[18:58:49]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:49] Security status [authentication=off, sandbox=off, tls/ssl=off]
+[18:58:49] Performance suggestions for grid  (fix if possible)
+[18:58:49] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[18:58:49]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:49]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:49]   ^-- Speed up flushing of dirty pages by OS (alter vm.dirty_expire_centisecs parameter by setting to 500)
+[18:58:49]   ^-- Reduce pages swapping ratio (set vm.swappiness=10 or less)
+[18:58:49]   ^-- Disable assertions (remove '-ea' from JVM options)
+[18:58:49] Refer to this page for more performance suggestions: https://ignite.apache.org/docs/latest/perf-and-troubleshooting/memory-tuning
+[18:58:49] 
+[18:58:49] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[18:58:49] 
+[18:58:49] Ignite node started OK (id=7635b97c)
+[18:58:49] Topology snapshot [ver=1, locNode=7635b97c, servers=1, clients=0, state=ACTIVE, CPUs=4, offheap=3.1GB, heap=3.9GB]
+[18:58:49]   ^-- Baseline [id=0, size=1, online=1, offline=0]
+[18:58:50] Ignite node stopped OK [uptime=00:00:00.686]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.271 s - in org.apache.gora.ignite.store.TestIgniteStore
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.ignite.store.TestIgniteStore
+[18:58:51] (wrn) Default Spring XML file not found (is IGNITE_HOME set?): config/default-config.xml
+
+[18:58:51]    __________  ________________ 
+[18:58:51]   /  _/ ___/ |/ /  _/_  __/ __/ 
+[18:58:51]  _/ // (7 7    // /  / / / _/   
+[18:58:51] /___/\___/_/|_/___/ /_/ /x___/  
+[18:58:51] 
+[18:58:51] ver. 2.14.0#20220929-sha1:951e8deb
+[18:58:51] 2022 Copyright(C) Apache Software Foundation
+[18:58:51] 
+[18:58:51] Ignite documentation: https://ignite.apache.org
+[18:58:51] 
+[18:58:51] Quiet mode.
+[18:58:51]   ^-- Logging to file '/tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/ignite/work/log/ignite-e325fd01.0.log'
+[18:58:51]   ^-- Logging by 'JavaLogger [quiet=true, config=null]'
+[18:58:51]   ^-- To see **FULL** console log here add -DIGNITE_QUIET=false or "-v" to ignite.{sh|bat}
+[18:58:51] 
+[18:58:51] OS: Linux 7.0.0-1019-azure amd64
+[18:58:51] VM information: OpenJDK Runtime Environment 11.0.32.1+1 Eclipse Adoptium OpenJDK 64-Bit Server VM 11.0.32.1+1
+[18:58:51] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[18:58:51] Configured plugins:
+[18:58:51]   ^-- None
+[18:58:51] 
+[18:58:51] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=UnmodifiableSet [SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[18:58:51] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[18:58:51] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[18:58:53] Data Regions Started: 4
+[18:58:53] 
+[18:58:53]     ^--   sysMemPlc region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:53]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:53]     ^--   default region [type=default, persistence=false, lazyAlloc=true,
+[18:58:53]       ...  initCfg=256MB, maxCfg=3196MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:53]     ^--   TxLog region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:53]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:53]     ^--   volatileDsMemPlc region [type=user, persistence=false, lazyAlloc=true,
+[18:58:53]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:53] Security status [authentication=off, sandbox=off, tls/ssl=off]
+[18:58:53] Performance suggestions for grid  (fix if possible)
+[18:58:53] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[18:58:53]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:53]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:53]   ^-- Speed up flushing of dirty pages by OS (alter vm.dirty_expire_centisecs parameter by setting to 500)
+[18:58:53]   ^-- Reduce pages swapping ratio (set vm.swappiness=10 or less)
+[18:58:53]   ^-- Disable assertions (remove '-ea' from JVM options)
+[18:58:53] Refer to this page for more performance suggestions: https://ignite.apache.org/docs/latest/perf-and-troubleshooting/memory-tuning
+[18:58:53] 
+[18:58:53] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[18:58:53] 
+[18:58:53] Ignite node started OK (id=e325fd01)
+[18:58:53] Topology snapshot [ver=1, locNode=e325fd01, servers=1, clients=0, state=ACTIVE, CPUs=4, offheap=3.1GB, heap=3.9GB]
+[18:58:53]   ^-- Baseline [id=0, size=1, online=1, offline=0]
+[18:58:54] Ignite node stopped OK [uptime=00:00:00.673]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.328 s - in org.apache.gora.ignite.store.TestIgniteStore
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.ignite.store.TestIgniteStore
+[18:58:55] (wrn) Default Spring XML file not found (is IGNITE_HOME set?): config/default-config.xml
+
+[18:58:55]    __________  ________________ 
+[18:58:55]   /  _/ ___/ |/ /  _/_  __/ __/ 
+[18:58:55]  _/ // (7 7    // /  / / / _/   
+[18:58:55] /___/\___/_/|_/___/ /_/ /x___/  
+[18:58:55] 
+[18:58:55] ver. 2.14.0#20220929-sha1:951e8deb
+[18:58:55] 2022 Copyright(C) Apache Software Foundation
+[18:58:55] 
+[18:58:55] Ignite documentation: https://ignite.apache.org
+[18:58:55] 
+[18:58:55] Quiet mode.
+[18:58:55]   ^-- Logging to file '/tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/ignite/work/log/ignite-c846fc09.0.log'
+[18:58:55]   ^-- Logging by 'JavaLogger [quiet=true, config=null]'
+[18:58:55]   ^-- To see **FULL** console log here add -DIGNITE_QUIET=false or "-v" to ignite.{sh|bat}
+[18:58:55] 
+[18:58:55] OS: Linux 7.0.0-1019-azure amd64
+[18:58:55] VM information: OpenJDK Runtime Environment 11.0.32.1+1 Eclipse Adoptium OpenJDK 64-Bit Server VM 11.0.32.1+1
+[18:58:55] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[18:58:55] Configured plugins:
+[18:58:55]   ^-- None
+[18:58:55] 
+[18:58:55] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=UnmodifiableSet [SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[18:58:55] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[18:58:55] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[18:58:57] Data Regions Started: 4
+[18:58:57] 
+[18:58:57]     ^--   sysMemPlc region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:57]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:57]     ^--   default region [type=default, persistence=false, lazyAlloc=true,
+[18:58:57]       ...  initCfg=256MB, maxCfg=3196MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:57]     ^--   TxLog region [type=internal, persistence=false, lazyAlloc=false,
+[18:58:57]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:58:57]     ^--   volatileDsMemPlc region [type=user, persistence=false, lazyAlloc=true,
+[18:58:57]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:58:57] Security status [authentication=off, sandbox=off, tls/ssl=off]
+[18:58:57] Performance suggestions for grid  (fix if possible)
+[18:58:57] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[18:58:57]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:57]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[18:58:57]   ^-- Speed up flushing of dirty pages by OS (alter vm.dirty_expire_centisecs parameter by setting to 500)
+[18:58:57]   ^-- Reduce pages swapping ratio (set vm.swappiness=10 or less)
+[18:58:57]   ^-- Disable assertions (remove '-ea' from JVM options)
+[18:58:57] Refer to this page for more performance suggestions: https://ignite.apache.org/docs/latest/perf-and-troubleshooting/memory-tuning
+[18:58:57] 
+[18:58:57] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[18:58:57] 
+[18:58:57] Ignite node started OK (id=c846fc09)
+[18:58:57] Topology snapshot [ver=1, locNode=c846fc09, servers=1, clients=0, state=ACTIVE, CPUs=4, offheap=3.1GB, heap=3.9GB]
+[18:58:57]   ^-- Baseline [id=0, size=1, online=1, offline=0]
+[18:58:58] Ignite node stopped OK [uptime=00:00:00.678]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.315 s - in org.apache.gora.ignite.store.TestIgniteStore
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.gora.ignite.store.TestIgniteStore
+[18:58:59] (wrn) Default Spring XML file not found (is IGNITE_HOME set?): config/default-config.xml
+
+[18:58:59]    __________  ________________ 
+[18:58:59]   /  _/ ___/ |/ /  _/_  __/ __/ 
+[18:58:59]  _/ // (7 7    // /  / / / _/   
+[18:58:59] /___/\___/_/|_/___/ /_/ /x___/  
+[18:58:59] 
+[18:58:59] ver. 2.14.0#20220929-sha1:951e8deb
+[18:58:59] 2022 Copyright(C) Apache Software Foundation
+[18:58:59] 
+[18:58:59] Ignite documentation: https://ignite.apache.org
+[18:58:59] 
+[18:58:59] Quiet mode.
+[18:58:59]   ^-- Logging to file '/tmp/tmp.SL4hYZ4L3k/repo/gora-ignite/ignite/work/log/ignite-4242ea08.0.log'
+[18:58:59]   ^-- Logging by 'JavaLogger [quiet=true, config=null]'
+[18:58:59]   ^-- To see **FULL** console log here add -DIGNITE_QUIET=false or "-v" to ignite.{sh|bat}
+[18:58:59] 
+[18:58:59] OS: Linux 7.0.0-1019-azure amd64
+[18:58:59] VM information: OpenJDK Runtime Environment 11.0.32.1+1 Eclipse Adoptium OpenJDK 64-Bit Server VM 11.0.32.1+1
+[18:58:59] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[18:58:59] Configured plugins:
+[18:58:59]   ^-- None
+[18:58:59] 
+[18:58:59] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=UnmodifiableSet [SYSTEM_WORKER_BLOCKED, SYSTEM_CRITICAL_OPERATION_TIMEOUT]]]]
+[18:58:59] Initial heap size is 250MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[18:58:59] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[18:59:01] Data Regions Started: 4
+[18:59:01] 
+[18:59:01]     ^--   sysMemPlc region [type=internal, persistence=false, lazyAlloc=false,
+[18:59:01]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:59:01]     ^--   default region [type=default, persistence=false, lazyAlloc=true,
+[18:59:01]       ...  initCfg=256MB, maxCfg=3196MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:59:01]     ^--   TxLog region [type=internal, persistence=false, lazyAlloc=false,
+[18:59:01]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=40MB]
+[18:59:01]     ^--   volatileDsMemPlc region [type=user, persistence=false, lazyAlloc=true,
+[18:59:01]       ...  initCfg=40MB, maxCfg=100MB, usedRam=0MB, freeRam=100%, allocRam=0MB]
+[18:59:01] Security status [authentication=off, sandbox=off, tls/ssl=off]
+[18:59:01] Performance suggestions for grid  (fix if possible)
+[18:59:01] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[18:59:01]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[18:59:01]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[18:59:01]   ^-- Speed up flushing of dirty pages by OS (alter vm.dirty_expire_centisecs parameter by setting to 500)
+[18:59:01]   ^-- Reduce pages swapping ratio (set vm.swappiness=10 or less)
+[18:59:01]   ^-- Disable assertions (remove '-ea' from JVM options)
+[18:59:01] Refer to this page for more performance suggestions: https://ignite.apache.org/docs/latest/perf-and-troubleshooting/memory-tuning
+[18:59:01] 
+[18:59:01] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[18:59:01] 
+[18:59:01] Ignite node started OK (id=4242ea08)
+[18:59:01] Topology snapshot [ver=1, locNode=4242ea08, servers=1, clients=0, state=ACTIVE, CPUs=4, offheap=3.1GB, heap=3.9GB]
+[18:59:01]   ^-- Baseline [id=0, size=1, online=1, offline=0]
+[18:59:02] Ignite node stopped OK [uptime=00:00:00.709]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.39 s - in org.apache.gora.ignite.store.TestIgniteStore
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache Gora 1.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache Gora ........................................ SUCCESS [  0.651 s]
+[INFO] Apache Gora :: Core ................................ SUCCESS [  3.201 s]
+[INFO] Apache Gora :: Ignite .............................. SUCCESS [ 33.719 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  38.179 s
+[INFO] Finished at: 2026-11-10T18:59:02Z
+[INFO] ------------------------------------------------------------------------

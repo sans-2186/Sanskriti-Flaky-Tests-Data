@@ -1,0 +1,123 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] WildFly Maven Plugin - Parent                                      [pom]
+[INFO] WildFly Plugin Core Utilities                                      [jar]
+[INFO] 
+[INFO] ----------< org.wildfly.plugins:wildfly-maven-plugin-parent >-----------
+[INFO] Building WildFly Maven Plugin - Parent 3.0.0.Alpha3-SNAPSHOT       [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:delaylocs (default-cli) > test-compile @ wildfly-maven-plugin-parent >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-java-version) @ wildfly-maven-plugin-parent ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven-version) @ wildfly-maven-plugin-parent ---
+[INFO] 
+[INFO] --- buildnumber:1.4:create (get-scm-revision) @ wildfly-maven-plugin-parent ---
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.xuif6YABnK/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.xuif6YABnK/repo
+[INFO] Storing buildNumber: ba664f977f4a20771eb7aab979164b2fb639a240 at timestamp: 1794338566707
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.xuif6YABnK/repo' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/tmp.xuif6YABnK/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- checkstyle:3.1.1:checkstyle (check-style) @ wildfly-maven-plugin-parent ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:delaylocs (default-cli) < test-compile @ wildfly-maven-plugin-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:delaylocs (default-cli) @ wildfly-maven-plugin-parent ---
+SEVERE: Surefire is not explicitly declared in your pom.xml; we will use version 2.20, but you may want to change that.
+INFO: Running RunWithDelaysMojo
+Inside createWhiteList
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] 
+[INFO] --------------< org.wildfly.plugins:wildfly-plugin-core >---------------
+[INFO] Building WildFly Plugin Core Utilities 3.0.0.Alpha3-SNAPSHOT       [2/2]
+[INFO]   from core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:delaylocs (default-cli) > test-compile @ wildfly-plugin-core >>>
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-java-version) @ wildfly-plugin-core ---
+[INFO] 
+[INFO] --- enforcer:3.0.0-M3:enforce (enforce-maven-version) @ wildfly-plugin-core ---
+[INFO] 
+[INFO] --- buildnumber:1.4:create (get-scm-revision) @ wildfly-plugin-core ---
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ wildfly-plugin-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.8.1-jboss-2:compile (default-compile) @ wildfly-plugin-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- checkstyle:3.1.1:checkstyle (check-style) @ wildfly-plugin-core ---
+[INFO] Starting audit...
+Audit done.
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ wildfly-plugin-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.xuif6YABnK/repo/core/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1-jboss-2:testCompile (default-testCompile) @ wildfly-plugin-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:delaylocs (default-cli) < test-compile @ wildfly-plugin-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:delaylocs (default-cli) @ wildfly-plugin-core ---
+INFO: Running RunWithDelaysMojo
+Inside createWhiteList
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.wildfly.plugin.core.DomainDeploymentManagerIT
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.118 s <<< FAILURE! - in org.wildfly.plugin.core.DomainDeploymentManagerIT
+[ERROR] org.wildfly.plugin.core.DomainDeploymentManagerIT  Time elapsed: 0.117 s  <<< FAILURE!
+java.lang.AssertionError: WildFly home property, jboss.home, was not set
+	at org.wildfly.plugin.core.DomainDeploymentManagerIT.startServer(DomainDeploymentManagerIT.java:80)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   DomainDeploymentManagerIT.startServer:80 WildFly home property, jboss.home, was not set
+[INFO] 
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Surefire failed when running tests for clean_vk87o3ed0XGzyQFebIOghwvRTQ7F1HhTPN2HWW8EDtM= with delay: 100
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for WildFly Maven Plugin - Parent 3.0.0.Alpha3-SNAPSHOT:
+[INFO] 
+[INFO] WildFly Maven Plugin - Parent ...................... SUCCESS [  1.437 s]
+[INFO] WildFly Plugin Core Utilities ...................... SUCCESS [  1.991 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.676 s
+[INFO] Finished at: 2026-11-10T19:22:49Z
+[INFO] ------------------------------------------------------------------------

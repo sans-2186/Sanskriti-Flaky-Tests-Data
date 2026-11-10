@@ -1,0 +1,3 @@
+url=https://github.com/apache/hive
+sha=54e43339dd671018fc70ebb5d9f0b292d70391a6
+module=serde

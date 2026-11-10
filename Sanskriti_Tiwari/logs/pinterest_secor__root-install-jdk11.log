@@ -1,0 +1,130 @@
+[INFO] Scanning for projects...
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/plugins/nexus-staging-maven-plugin/1.6.8/nexus-staging-maven-plugin-1.6.8.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/plugins/nexus-staging-maven-plugin/1.6.8/nexus-staging-maven-plugin-1.6.8.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plugins/nexus-staging-maven-plugin/1.6.8/nexus-staging-maven-plugin-1.6.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plugins/nexus-staging-maven-plugin/1.6.8/nexus-staging-maven-plugin-1.6.8.pom (12 kB at 84 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/maven/nexus-staging/1.6.8/nexus-staging-1.6.8.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/maven/nexus-staging/1.6.8/nexus-staging-1.6.8.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/maven/nexus-staging/1.6.8/nexus-staging-1.6.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/maven/nexus-staging/1.6.8/nexus-staging-1.6.8.pom (2.8 kB at 73 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/maven/nexus-maven-plugins/1.6.8/nexus-maven-plugins-1.6.8.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/maven/nexus-maven-plugins/1.6.8/nexus-maven-plugins-1.6.8.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/maven/nexus-maven-plugins/1.6.8/nexus-maven-plugins-1.6.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/maven/nexus-maven-plugins/1.6.8/nexus-maven-plugins-1.6.8.pom (18 kB at 338 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/buildsupport/public-parent/6/public-parent-6.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/buildsupport/public-parent/6/public-parent-6.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/buildsupport/public-parent/6/public-parent-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/buildsupport/public-parent/6/public-parent-6.pom (760 B at 17 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/buildsupport/buildsupport/6/buildsupport-6.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/buildsupport/buildsupport/6/buildsupport-6.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/buildsupport/buildsupport/6/buildsupport-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/buildsupport/buildsupport/6/buildsupport-6.pom (23 kB at 534 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/maven/nexus-common/1.6.8/nexus-common-1.6.8.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/maven/nexus-common/1.6.8/nexus-common-1.6.8.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/maven/nexus-common/1.6.8/nexus-common-1.6.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/maven/nexus-common/1.6.8/nexus-common-1.6.8.pom (2.2 kB at 45 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom (3.0 kB at 82 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.pom (4.2 kB at 93 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.pom (5.4 kB at 108 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom (2.6 kB at 77 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/nexus-client-core/2.14.3-02/nexus-client-core-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/nexus-client-core/2.14.3-02/nexus-client-core-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/nexus-client-core/2.14.3-02/nexus-client-core-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/nexus-client-core/2.14.3-02/nexus-client-core-2.14.3-02.pom (4.9 kB at 107 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/nexus-components/2.14.3-02/nexus-components-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/nexus-components/2.14.3-02/nexus-components-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/nexus-components/2.14.3-02/nexus-components-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/nexus-components/2.14.3-02/nexus-components-2.14.3-02.pom (2.6 kB at 72 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/nexus-parent/2.14.3-02/nexus-parent-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/nexus-parent/2.14.3-02/nexus-parent-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/nexus-parent/2.14.3-02/nexus-parent-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/nexus-parent/2.14.3-02/nexus-parent-2.14.3-02.pom (38 kB at 1.0 MB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/buildsupport/public-parent/9/public-parent-9.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/buildsupport/public-parent/9/public-parent-9.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/buildsupport/public-parent/9/public-parent-9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/buildsupport/public-parent/9/public-parent-9.pom (760 B at 17 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/buildsupport/buildsupport/9/buildsupport-9.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/buildsupport/buildsupport/9/buildsupport-9.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/buildsupport/buildsupport/9/buildsupport-9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/buildsupport/buildsupport/9/buildsupport-9.pom (24 kB at 413 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-all/2.14.3-02/nexus-buildsupport-all-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport-all/2.14.3-02/nexus-buildsupport-all-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-all/2.14.3-02/nexus-buildsupport-all-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-all/2.14.3-02/nexus-buildsupport-all-2.14.3-02.pom (6.5 kB at 52 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport/2.14.3-02/nexus-buildsupport-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport/2.14.3-02/nexus-buildsupport-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport/2.14.3-02/nexus-buildsupport-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport/2.14.3-02/nexus-buildsupport-2.14.3-02.pom (2.2 kB at 41 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-commons/2.14.3-02/nexus-buildsupport-commons-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport-commons/2.14.3-02/nexus-buildsupport-commons-2.14.3-02.pom
+[INFO] Downloading from rso-public-grid: https://repository.sonatype.org/content/groups/sonatype-public-grid/org/sonatype/nexus/buildsupport/nexus-buildsupport-commons/2.14.3-02/nexus-buildsupport-commons-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-commons/2.14.3-02/nexus-buildsupport-commons-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-commons/2.14.3-02/nexus-buildsupport-commons-2.14.3-02.pom (3.1 kB at 92 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-db/2.14.3-02/nexus-buildsupport-db-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport-db/2.14.3-02/nexus-buildsupport-db-2.14.3-02.pom
+[INFO] Downloading from rso-public-grid: https://repository.sonatype.org/content/groups/sonatype-public-grid/org/sonatype/nexus/buildsupport/nexus-buildsupport-db/2.14.3-02/nexus-buildsupport-db-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-db/2.14.3-02/nexus-buildsupport-db-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-db/2.14.3-02/nexus-buildsupport-db-2.14.3-02.pom (3.2 kB at 72 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-gwt/2.14.3-02/nexus-buildsupport-gwt-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport-gwt/2.14.3-02/nexus-buildsupport-gwt-2.14.3-02.pom
+[INFO] Downloading from rso-public-grid: https://repository.sonatype.org/content/groups/sonatype-public-grid/org/sonatype/nexus/buildsupport/nexus-buildsupport-gwt/2.14.3-02/nexus-buildsupport-gwt-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-gwt/2.14.3-02/nexus-buildsupport-gwt-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-gwt/2.14.3-02/nexus-buildsupport-gwt-2.14.3-02.pom (2.2 kB at 67 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-httpclient/2.14.3-02/nexus-buildsupport-httpclient-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport-httpclient/2.14.3-02/nexus-buildsupport-httpclient-2.14.3-02.pom
+[INFO] Downloading from rso-public-grid: https://repository.sonatype.org/content/groups/sonatype-public-grid/org/sonatype/nexus/buildsupport/nexus-buildsupport-httpclient/2.14.3-02/nexus-buildsupport-httpclient-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-httpclient/2.14.3-02/nexus-buildsupport-httpclient-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-httpclient/2.14.3-02/nexus-buildsupport-httpclient-2.14.3-02.pom (2.1 kB at 50 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-insight/2.14.3-02/nexus-buildsupport-insight-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport-insight/2.14.3-02/nexus-buildsupport-insight-2.14.3-02.pom
+[INFO] Downloading from rso-public-grid: https://repository.sonatype.org/content/groups/sonatype-public-grid/org/sonatype/nexus/buildsupport/nexus-buildsupport-insight/2.14.3-02/nexus-buildsupport-insight-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-insight/2.14.3-02/nexus-buildsupport-insight-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-insight/2.14.3-02/nexus-buildsupport-insight-2.14.3-02.pom (4.4 kB at 113 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-maven/2.14.3-02/nexus-buildsupport-maven-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport-maven/2.14.3-02/nexus-buildsupport-maven-2.14.3-02.pom
+[INFO] Downloading from rso-public-grid: https://repository.sonatype.org/content/groups/sonatype-public-grid/org/sonatype/nexus/buildsupport/nexus-buildsupport-maven/2.14.3-02/nexus-buildsupport-maven-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-maven/2.14.3-02/nexus-buildsupport-maven-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-maven/2.14.3-02/nexus-buildsupport-maven-2.14.3-02.pom (7.1 kB at 220 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-messaging/2.14.3-02/nexus-buildsupport-messaging-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport-messaging/2.14.3-02/nexus-buildsupport-messaging-2.14.3-02.pom
+[INFO] Downloading from rso-public-grid: https://repository.sonatype.org/content/groups/sonatype-public-grid/org/sonatype/nexus/buildsupport/nexus-buildsupport-messaging/2.14.3-02/nexus-buildsupport-messaging-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-messaging/2.14.3-02/nexus-buildsupport-messaging-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-messaging/2.14.3-02/nexus-buildsupport-messaging-2.14.3-02.pom (5.0 kB at 165 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-shiro/2.14.3-02/nexus-buildsupport-shiro-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport-shiro/2.14.3-02/nexus-buildsupport-shiro-2.14.3-02.pom
+[INFO] Downloading from rso-public-grid: https://repository.sonatype.org/content/groups/sonatype-public-grid/org/sonatype/nexus/buildsupport/nexus-buildsupport-shiro/2.14.3-02/nexus-buildsupport-shiro-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-shiro/2.14.3-02/nexus-buildsupport-shiro-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-shiro/2.14.3-02/nexus-buildsupport-shiro-2.14.3-02.pom (3.4 kB at 67 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-bouncycastle/2.14.3-02/nexus-buildsupport-bouncycastle-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport-bouncycastle/2.14.3-02/nexus-buildsupport-bouncycastle-2.14.3-02.pom
+[INFO] Downloading from rso-public-grid: https://repository.sonatype.org/content/groups/sonatype-public-grid/org/sonatype/nexus/buildsupport/nexus-buildsupport-bouncycastle/2.14.3-02/nexus-buildsupport-bouncycastle-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-bouncycastle/2.14.3-02/nexus-buildsupport-bouncycastle-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-bouncycastle/2.14.3-02/nexus-buildsupport-bouncycastle-2.14.3-02.pom (2.1 kB at 47 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-jetty/2.14.3-02/nexus-buildsupport-jetty-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport-jetty/2.14.3-02/nexus-buildsupport-jetty-2.14.3-02.pom
+[INFO] Downloading from rso-public-grid: https://repository.sonatype.org/content/groups/sonatype-public-grid/org/sonatype/nexus/buildsupport/nexus-buildsupport-jetty/2.14.3-02/nexus-buildsupport-jetty-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-jetty/2.14.3-02/nexus-buildsupport-jetty-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-jetty/2.14.3-02/nexus-buildsupport-jetty-2.14.3-02.pom (4.5 kB at 124 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-goodies/2.14.3-02/nexus-buildsupport-goodies-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport-goodies/2.14.3-02/nexus-buildsupport-goodies-2.14.3-02.pom
+[INFO] Downloading from rso-public-grid: https://repository.sonatype.org/content/groups/sonatype-public-grid/org/sonatype/nexus/buildsupport/nexus-buildsupport-goodies/2.14.3-02/nexus-buildsupport-goodies-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-goodies/2.14.3-02/nexus-buildsupport-goodies-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-goodies/2.14.3-02/nexus-buildsupport-goodies-2.14.3-02.pom (3.6 kB at 79 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-groovy/2.14.3-02/nexus-buildsupport-groovy-2.14.3-02.pom
+[INFO] Downloading from Typesafe public Maven repo: https://repo.typesafe.com/typesafe/releases/org/sonatype/nexus/buildsupport/nexus-buildsupport-groovy/2.14.3-02/nexus-buildsupport-groovy-2.14.3-02.pom
+[INFO] Downloading from rso-public-grid: https://repository.sonatype.org/content/groups/sonatype-public-grid/org/sonatype/nexus/buildsupport/nexus-buildsupport-groovy/2.14.3-02/nexus-buildsupport-groovy-2.14.3-02.pom
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-groovy/2.14.3-02/nexus-buildsupport-groovy-2.14.3-02.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/nexus/buildsupport/nexus-buildsupport-groovy/2.14.3-02/nexus-buildsupport-groovy-2.14.3-02.pom (3.1 kB at 92 kB/s)
+[INFO] Downloading from Twitter public Maven repo: https://maven.twttr.com/org/sonatype/nexus/buildsupport/nexus-buildsupport-guice/2.14.3-02/nexus-buildsupport-guice-2.14.3-02.pom

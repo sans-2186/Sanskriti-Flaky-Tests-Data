@@ -2,46 +2,22 @@
 
 **Student:** Sanskriti Tiwari (`sut230001@utdallas.edu`) · **Course:** RIDE
 
-Adds `data/`: iDFlakies and NonDex on **702** (project, SHA) pairs from [idoft](https://github.com/TestingResearchIllinois/idoft) `pr-data.csv`, and FlakeSync on **6,163** union flaky tests from that detection run.
+The run follows the course sample ([Ride-Flaky-Test-Detection](https://github.com/Reliable-SE-Research/Ride-Flaky-Test-Detection)): two separate inputs, one module at a time, logs kept.
 
-| | Flaky tests | New (not in IDoFT) |
-|---|---:|---:|
-| **iDFlakies** | [2,424](data/Sanskriti_Tiwari_idflakies.csv) | 2,189 |
-| **NonDex** | [3,754](data/Sanskriti_Tiwari_nondex.csv) | 2,620 |
-| **Both** | 15 | 11 |
-| **Unique total** | [6,163](data/flakesync_input.csv) | 4,798 |
-| **FlakeSync (TD confirmed)** | [0](data/Sanskriti_Tiwari_flakesync.csv) | — |
+## Flow
 
-New counts are rows with `in_pr_data=no` in the linked CSVs. iDFlakies and NonDex numbers are detector candidates (5 NonDex seeds, 10 iDFlakies rounds). FlakeSync did not confirm any of them as timing-dependent.
+1. **iDFlakies and NonDex** run on **100 IDoFT modules** (`inputs/modules.csv`). Maven is limited to that module (`-pl <module> -am`), not the whole repository. JDK 8, then 11, then 17. iDFlakies uses 5 rounds (10 min cap). NonDex uses 3 runs (8 min cap).
+2. **FlakeSync** does not use those findings. It runs on **140 NOD (async) tests** already listed in IDoFT (`inputs/nod_tests.csv`), grouped by module. A delay reproduction is a test with `delay_locations` > 0. Output files are `Class.method-Locations.txt` (a dot before the method name).
+3. **Logs** for clone, install, iDFlakies, NonDex, and each FlakeSync goal are uploaded with the run and copied into `Sanskriti_Tiwari/logs/` when the merge job finishes.
 
-| FlakeSync outcome | Tests |
-|---|---:|
-| TD (delay locations found) | **0** |
-| No concurrent methods | 2,467 |
-| `concurrentfind` failed (build / plugin) | 1,939 |
-| Listed in the union, never run | 2,501 |
-| Patches | **0** |
+"New" means the test name does not appear anywhere in IDoFT `pr-data.csv`.
 
-Per (project, SHA), [summary.csv](data/summary.csv) has the detection counts plus `flakesync_checked`, `flakesync_no_concurrent`, `flakesync_failed`, `flakesync_not_run`, `flakesync_td`, and `flakesync_patched`. A large `nondex_count` with `flakesync_td` = 0 means FlakeSync did not treat that batch as timing-dependent flakes.
+Outputs land in `Sanskriti_Tiwari/` after the workflow **RIDE module flow** finishes: the same files as the sample (`*_idflakies.csv`, `*_nondex.csv`, `*_flakesync.csv`, `*_summary.csv`, `*_per_project.csv`, `*_report.md`, `table_cells/`).
 
----
+The counts can differ from the sample. The order of work is the same.
 
-## Tools (detection settings)
+This first run is 100 modules so the logs and FlakeSync delay counts can be checked against the sample. More modules are added later by appending rows to `inputs/modules.csv`. The workflow reads that file, so the next run picks them up.
 
-- **iDFlakies** `2.0.0` — random class/method order, **10** rounds (`random-class-method`).
-- **NonDex** `2.2.1` — default **5** seeds over the full Maven project.
-- **FlakeSync** `1.0-SNAPSHOT` — six goals per test (`concurrentfind` … `patch`) on the union input list.
+## Earlier whole-repository run
 
-702/798 idoft pairs completed (96 missing: mostly nacos shard timeouts and hutool runner kills). Pipeline workflows live on branch `detection-pipeline`.
-
----
-
-## Files in `data/`
-
-| File | Description |
-|---|---|
-| [Sanskriti_Tiwari_idflakies.csv](data/Sanskriti_Tiwari_idflakies.csv) | OD flaky tests (`project_name`, `sha`, `flaky_test`, `in_pr_data`) |
-| [Sanskriti_Tiwari_nondex.csv](data/Sanskriti_Tiwari_nondex.csv) | ID flaky tests (same columns) |
-| [flakesync_input.csv](data/flakesync_input.csv) | Union of findings (`detected_by`, `in_pr_data`) |
-| [Sanskriti_Tiwari_flakesync.csv](data/Sanskriti_Tiwari_flakesync.csv) | FlakeSync status and counts per test |
-| [summary.csv](data/summary.csv) | One row per (project, SHA): iDFlakies, NonDex, and FlakeSync counts |
+`data/` is the previous run over entire repositories, with FlakeSync pointed at those iDFlakies/NonDex tests. That is why it reported thousands of tests and zero delay reproductions. It is not the result of this flow.

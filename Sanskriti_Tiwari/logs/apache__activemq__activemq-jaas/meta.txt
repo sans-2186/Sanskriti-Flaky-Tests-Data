@@ -1,0 +1,3 @@
+url=https://github.com/apache/activemq
+sha=5cd12a83823e79d4500b1e4158790da01a8bd368
+module=activemq-jaas

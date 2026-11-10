@@ -1,0 +1,832 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Ollie :: Parent                                                    [pom]
+[INFO] Ollie :: Core                                               [takari-jar]
+[INFO] Ollie :: Core                                               [takari-jar]
+[INFO] 
+[INFO] -----------------< com.walmartlabs.ollie:ollie-parent >-----------------
+[INFO] Building Ollie :: Parent 0.0.38-SNAPSHOT                           [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- license:1.14:update-file-header (first) @ ollie-parent ---
+[WARNING] No file to scan.
+[INFO] 
+[INFO] 
+[INFO] --- takari-lifecycle:1.13.5:install (default-install) @ ollie-parent ---
+[INFO] Installing /tmp/tmp.UGynQGwTe0/repo/pom.xml to /home/runner/.m2/repository/com/walmartlabs/ollie/ollie-parent/0.0.38-SNAPSHOT/ollie-parent-0.0.38-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< com.walmartlabs.ollie:ollie-config >-----------------
+[INFO] Building Ollie :: Core 0.0.38-SNAPSHOT                             [2/3]
+[INFO]   from ollie-config/pom.xml
+[INFO] -----------------------------[ takari-jar ]-----------------------------
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.21.0-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- takari-lifecycle:1.13.3:update-check (default-update-check) @ ollie-config ---
+[INFO] 
+[INFO] --- license:1.14:update-file-header (first) @ ollie-config ---
+[INFO] Will search files to update from root /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java
+[INFO] Scan 9 files header done in 18.276ms.
+[INFO] All files are up-to-date.
+[INFO] 
+[INFO] --- takari-lifecycle:1.13.3:process-resources (default-process-resources) @ ollie-config ---
+[INFO] 
+[INFO] --- takari-lifecycle:1.13.3:compile (default-compile) @ ollie-config ---
+[INFO] Performing incremental build
+[INFO] Skipped compilation, all 9 classes are up to date
+[INFO] Replaying recorded messages...
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[1,1] The type java.lang.Object cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[23,8] The import java.io cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[25,14] Implicit super constructor Object() is undefined for default constructor. Must define an explicit constructor
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[27,23] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[28,23] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[28,50] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[28,55] System cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[31,5] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[32,8] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[33,49] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[35,23] System cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[35,42] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[35,83] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[1,1] The type java.io.File cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[1,1] The type java.lang.Throwable cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[28,8] The import java.io.File cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[32,23] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[33,54] The method getLogger(Class<?>) from the type LoggerFactory refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[35,17] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[37,17] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[38,17] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[40,33] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[44,33] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[44,46] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[48,33] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[52,10] Implicit super constructor Object() is undefined. Must explicitly invoke another constructor
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[53,7] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[53,45] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[53,65] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[54,5] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[56,5] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[57,5] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[61,5] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[61,32] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[65,45] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[68,9] System cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[68,28] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[69,7] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[69,18] System cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[69,37] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[71,52] The method parseFile(File) from the type ConfigFactory refers to the missing type File
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[71,66] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[71,85] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[76,68] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[82,37] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[110,51] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[111,12] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[112,19] RuntimeException cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[113,13] String cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[114,79] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[116,43] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[118,41] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[119,16] No exception of type ConfigException can be thrown; an exception type must be a subclass of Throwable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[120,19] RuntimeException cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[121,13] String cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[123,17] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[123,23] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[126,53] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[127,16] No exception of type ConfigException can be thrown; an exception type must be a subclass of Throwable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[128,19] RuntimeException cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[129,13] String cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[131,29] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[131,35] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[131,41] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[136,8] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[136,37] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[137,48] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[146,7] The constructor Object() is undefined
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[148,10] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[149,35] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[153,10] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[24,3] The constructor Environment(String) refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[24,31] The constructor Environment(String) refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[24,41] The constructor Environment(String) refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[24,59] The constructor Environment(String) refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[26,17] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[28,11] Implicit super constructor Enum(String, int) is undefined. Must explicitly invoke another constructor
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[28,23] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[29,5] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[32,10] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[33,12] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[36,38] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[37,20] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[39,19] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[41,22] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[43,26] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[46,15] RuntimeException cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[46,32] String cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1,1] The type java.util.Set cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1,1] The type java.util.Collection cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1,1] The type java.net.URL cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1,1] The type java.lang.ClassLoader cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1,1] The type java.lang.reflect.Constructor cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1,1] The type java.lang.reflect.Method cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1,1] The type java.lang.reflect.Field cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1,1] The type java.lang.reflect.Type cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1,1] The type java.lang.RuntimeException cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[35,8] The import java.lang.annotation cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[38,8] The import java.util.Optional cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[39,8] The import java.util.stream cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[49,14] The hierarchy of the type OllieConfigurationModule is inconsistent
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[51,33] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[51,57] This lambda expression refers to the missing type Object
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[55,17] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[57,10] Implicit super constructor Object() is undefined. Must explicitly invoke another constructor
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[57,35] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[69,5] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[69,33] HashSet cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[72,4] SuppressWarnings cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[73,4] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[75,5] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[75,9] Constructor cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[75,58] The method getConstructorsWithAnyParamAnnotated(Class<? extends Annotation>) from the type Reflections refers to the missing type Set
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[76,10] Constructor cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[77,7] Parameter cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[81,5] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[81,9] Method cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[81,48] The method getMethodsWithAnyParamAnnotated(Class<? extends Annotation>) from the type Reflections refers to the missing type Set
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[82,10] Method cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[83,7] Parameter cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[87,5] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[87,9] Field cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[87,46] The method getFieldsAnnotatedWith(Class<? extends Annotation>) from the type Reflections refers to the missing type Set
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[88,10] Field cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[94,31] Parameter cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[95,10] Parameter cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[103,26] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[103,47] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[105,10] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[106,8] SuppressWarnings cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[107,11] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[107,30] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[108,7] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[108,38] The method value() from the type Config refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[109,7] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[112,32] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[114,17] No exception of type ConfigException.Missing can be thrown; an exception type must be a subclass of Throwable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[119,7] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[123,4] SuppressWarnings cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[124,11] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[124,33] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[124,54] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[124,70] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[125,5] The type Optional is not generic; it cannot be parameterized with arguments <Object>
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[125,14] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[136,19] The method equals(ConfigValueType) is undefined for the type ConfigValueType
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[136,53] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[138,21] The method unwrapped() from the type ConfigObject refers to the missing type Map
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[139,26] The method equals(ConfigValueType) is undefined for the type ConfigValueType
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[140,7] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[142,26] The method equals(ConfigValueType) is undefined for the type ConfigValueType
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[142,58] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[143,7] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[143,23] ParameterizedType cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[143,25] ParameterizedType cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[145,7] The type Optional is not generic; it cannot be parameterized with arguments <List<?>>
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[145,16] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[151,9] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[157,20] Collectors cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[161,15] RuntimeException cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[164,37] Annotation cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[169,10] Annotation cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[26,8] The import java.nio cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[27,8] The import java.nio cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[28,8] The import java.time.Duration cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[29,8] The import java.util.Base64 cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[30,8] The import java.util.HashMap cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[31,8] The import java.util.Map cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[32,8] The import java.util.Optional cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[41,26] Boolean cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[41,41] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[42,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[43,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[43,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[47,20] Byte cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[47,32] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[48,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[49,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[49,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[53,22] Short cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[53,35] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[54,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[55,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[55,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[59,22] Integer cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[59,37] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[60,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[61,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[61,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[65,20] Long cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[65,32] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[66,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[67,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[67,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[71,22] Float cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[71,35] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[72,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[73,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[73,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[77,24] Double cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[77,38] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[78,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[79,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[79,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[83,10] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[83,24] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[84,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[85,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[85,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[89,8] Path cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[89,20] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[90,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[91,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[91,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[92,14] Paths cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[95,11] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[95,25] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[96,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[97,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[97,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[101,24] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[102,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[103,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[103,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[107,37] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[108,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[109,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[109,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[113,35] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[114,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[115,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[115,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[119,33] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[120,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[121,12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[121,47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[125,12] Duration cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[125,28] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[126,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[131,39] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[132,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[137,28] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[138,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[144,17] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[145,24] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[145,28] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[145,75] HashMap cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[149,12] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[149,39] The method getMatchingClasses() from the type ConfigExtractor refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[150,9] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[150,9] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[155,28] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[159,10] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[169,10] The type Optional is not generic; it cannot be parameterized with arguments <Object>
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[169,19] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[169,61] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[169,82] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[170,33] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[170,33] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[171,26] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[171,26] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[173,23] The method empty() is undefined for the type Optional
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[1,1] The type java.lang.annotation.Annotation cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[25,8] The import java.lang.annotation cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[26,8] The import java.lang.annotation cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[28,15] The import java.lang.annotation cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[29,15] The import java.lang.annotation cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[37,2] Target cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[37,10] FIELD cannot be resolved to a variable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[37,17] PARAMETER cannot be resolved to a variable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[37,28] METHOD cannot be resolved to a variable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[38,2] Retention cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[38,12] RUNTIME cannot be resolved to a variable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[39,19] The hierarchy of the type Config is inconsistent
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[44,3] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractor.java:[1,1] The type java.util.Map$Entry cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractor.java:[1,1] The type java.lang.Class cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractor.java:[35,10] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractor.java:[35,65] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractor.java:[40,10] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractor.java:[1,1] The type java.util.List cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractor.java:[23,8] The import java.lang.reflect.Type cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractor.java:[24,8] The import java.util.List cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractor.java:[37,10] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractor.java:[37,70] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractor.java:[42,10] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1,1] The type java.lang.Enum cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1,1] The type java.lang.String cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1,1] The type java.time.Duration cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1,1] The type java.util.Map cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1,1] The type java.lang.Boolean cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1,1] The type java.lang.Integer cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1,1] The type java.lang.Double cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1,1] The type java.lang.Long cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[27,8] The import java.lang.reflect.Type cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[28,8] The import java.time.Duration cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[29,8] The import java.util.HashMap cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[30,8] The import java.util.List cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[31,8] The import java.util.Map cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[32,8] The import java.util.Optional cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[35,11] Boolean cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[35,26] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[35,26] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[36,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[37,12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[37,52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[41,11] Integer cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[41,26] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[41,26] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[42,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[43,12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[43,52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[47,10] Double cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[47,24] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[47,24] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[48,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[49,12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[49,52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[53,8] Long cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[53,20] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[53,20] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[54,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[55,12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[55,52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[59,10] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[59,24] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[59,24] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[60,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[61,12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[61,52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[65,12] Duration cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[65,28] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[65,28] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[66,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[67,12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[67,52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[71,39] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[71,39] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[72,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[73,12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[73,52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[77,10] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[77,24] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[77,24] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[78,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[79,12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[79,52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[83,24] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[83,24] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[84,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[85,12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[85,52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[89,37] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[89,37] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[90,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[91,12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[91,52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[95,36] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[95,36] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[96,6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[97,12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[97,52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[102,17] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[103,24] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[103,28] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[103,69] HashMap cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[107,7] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[107,7] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[107,35] The method getMatchingParameterizedType() from the type ListExtractor refers to the missing type Type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[111,11] Implicit super constructor Enum(String, int) is undefined. Must explicitly invoke another constructor
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[111,26] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[112,5] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[115,4] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[116,10] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[117,12] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[120,10] Optional cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[120,19] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[120,66] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[120,81] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[121,9] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[121,9] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[122,14] Optional cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[122,26] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[122,26] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[124,14] Optional cannot be resolved
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Ollie :: Parent 0.0.38-SNAPSHOT:
+[INFO] 
+[INFO] Ollie :: Parent .................................... SUCCESS [  0.865 s]
+[INFO] Ollie :: Core ...................................... FAILURE [  1.131 s]
+[INFO] Ollie :: Core ...................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.797 s
+[INFO] Finished at: 2026-11-10T19:17:02Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal io.takari.maven.plugins:takari-lifecycle-plugin:1.13.3:compile (default-compile) on project ollie-config: 385 error(s) encountered:
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[1:1] The type java.lang.Object cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[23:8] The import java.io cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[25:14] Implicit super constructor Object() is undefined for default constructor. Must define an explicit constructor
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[27:23] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[28:23] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[28:50] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[28:55] System cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[31:5] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[32:8] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[33:49] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[35:23] System cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[35:42] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/EnvironmentSelector.java:[35:83] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[1:1] The type java.io.File cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[1:1] The type java.lang.Throwable cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[28:8] The import java.io.File cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[32:23] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[33:54] The method getLogger(Class<?>) from the type LoggerFactory refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[35:17] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[37:17] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[38:17] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[40:33] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[44:33] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[44:46] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[48:33] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[52:10] Implicit super constructor Object() is undefined. Must explicitly invoke another constructor
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[53:7] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[53:45] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[53:65] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[54:5] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[56:5] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[57:5] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[61:5] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[61:32] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[65:45] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[68:9] System cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[68:28] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[69:7] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[69:18] System cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[69:37] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[71:52] The method parseFile(File) from the type ConfigFactory refers to the missing type File
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[71:66] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[71:85] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[76:68] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[82:37] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[110:51] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[111:12] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[112:19] RuntimeException cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[113:13] String cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[114:79] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[116:43] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[118:41] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[119:16] No exception of type ConfigException can be thrown; an exception type must be a subclass of Throwable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[120:19] RuntimeException cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[121:13] String cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[123:17] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[123:23] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[126:53] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[127:16] No exception of type ConfigException can be thrown; an exception type must be a subclass of Throwable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[128:19] RuntimeException cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[129:13] String cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[131:29] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[131:35] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[131:41] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[136:8] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[136:37] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[137:48] File cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[146:7] The constructor Object() is undefined
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[148:10] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[149:35] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigurationProcessor.java:[153:10] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[24:3] The constructor Environment(String) refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[24:31] The constructor Environment(String) refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[24:41] The constructor Environment(String) refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[24:59] The constructor Environment(String) refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[26:17] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[28:11] Implicit super constructor Enum(String, int) is undefined. Must explicitly invoke another constructor
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[28:23] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[29:5] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[32:10] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[33:12] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[36:38] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[37:20] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[39:19] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[41:22] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[43:26] The method id() from the type Environment refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[46:15] RuntimeException cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Environment.java:[46:32] String cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1:1] The type java.util.Set cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1:1] The type java.util.Collection cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1:1] The type java.net.URL cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1:1] The type java.lang.ClassLoader cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1:1] The type java.lang.reflect.Constructor cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1:1] The type java.lang.reflect.Method cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1:1] The type java.lang.reflect.Field cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1:1] The type java.lang.reflect.Type cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[1:1] The type java.lang.RuntimeException cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[35:8] The import java.lang.annotation cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[38:8] The import java.util.Optional cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[39:8] The import java.util.stream cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[49:14] The hierarchy of the type OllieConfigurationModule is inconsistent
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[51:33] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[51:57] This lambda expression refers to the missing type Object
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[55:17] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[57:10] Implicit super constructor Object() is undefined. Must explicitly invoke another constructor
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[57:35] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[69:5] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[69:33] HashSet cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[72:4] SuppressWarnings cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[73:4] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[75:5] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[75:9] Constructor cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[75:58] The method getConstructorsWithAnyParamAnnotated(Class<? extends Annotation>) from the type Reflections refers to the missing type Set
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[76:10] Constructor cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[77:7] Parameter cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[81:5] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[81:9] Method cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[81:48] The method getMethodsWithAnyParamAnnotated(Class<? extends Annotation>) from the type Reflections refers to the missing type Set
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[82:10] Method cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[83:7] Parameter cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[87:5] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[87:9] Field cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[87:46] The method getFieldsAnnotatedWith(Class<? extends Annotation>) from the type Reflections refers to the missing type Set
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[88:10] Field cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[94:31] Parameter cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[95:10] Parameter cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[103:26] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[103:47] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[105:10] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[106:8] SuppressWarnings cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[107:11] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[107:30] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[108:7] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[108:38] The method value() from the type Config refers to the missing type String
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[109:7] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[112:32] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[114:17] No exception of type ConfigException.Missing can be thrown; an exception type must be a subclass of Throwable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[119:7] Set cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[123:4] SuppressWarnings cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[124:11] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[124:33] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[124:54] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[124:70] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[125:5] The type Optional is not generic; it cannot be parameterized with arguments <Object>
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[125:14] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[136:19] The method equals(ConfigValueType) is undefined for the type ConfigValueType
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[136:53] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[138:21] The method unwrapped() from the type ConfigObject refers to the missing type Map
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[139:26] The method equals(ConfigValueType) is undefined for the type ConfigValueType
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[140:7] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[142:26] The method equals(ConfigValueType) is undefined for the type ConfigValueType
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[142:58] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[143:7] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[143:23] ParameterizedType cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[143:25] ParameterizedType cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[145:7] The type Optional is not generic; it cannot be parameterized with arguments <List<?>>
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[145:16] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[151:9] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[157:20] Collectors cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[161:15] RuntimeException cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[164:37] Annotation cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/OllieConfigurationModule.java:[169:10] Annotation cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[26:8] The import java.nio cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[27:8] The import java.nio cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[28:8] The import java.time.Duration cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[29:8] The import java.util.Base64 cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[30:8] The import java.util.HashMap cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[31:8] The import java.util.Map cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[32:8] The import java.util.Optional cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[41:26] Boolean cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[41:41] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[42:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[43:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[43:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[47:20] Byte cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[47:32] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[48:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[49:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[49:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[53:22] Short cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[53:35] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[54:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[55:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[55:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[59:22] Integer cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[59:37] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[60:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[61:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[61:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[65:20] Long cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[65:32] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[66:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[67:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[67:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[71:22] Float cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[71:35] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[72:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[73:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[73:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[77:24] Double cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[77:38] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[78:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[79:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[79:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[83:10] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[83:24] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[84:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[85:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[85:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[89:8] Path cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[89:20] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[90:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[91:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[91:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[92:14] Paths cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[95:11] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[95:25] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[96:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[97:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[97:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[101:24] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[102:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[103:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[103:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[107:37] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[108:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[109:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[109:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[113:35] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[114:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[115:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[115:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[119:33] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[120:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[121:12] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[121:47] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[125:12] Duration cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[125:28] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[126:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[131:39] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[132:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[137:28] The constructor ConfigExtractors(Class<?>...) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[138:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[144:17] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[145:24] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[145:28] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[145:75] HashMap cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[149:12] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[149:39] The method getMatchingClasses() from the type ConfigExtractor refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[150:9] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[150:9] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[155:28] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[159:10] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[169:10] The type Optional is not generic; it cannot be parameterized with arguments <Object>
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[169:19] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[169:61] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[169:82] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[170:33] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[170:33] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[171:26] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[171:26] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractors.java:[173:23] The method empty() is undefined for the type Optional
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[1:1] The type java.lang.annotation.Annotation cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[25:8] The import java.lang.annotation cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[26:8] The import java.lang.annotation cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[28:15] The import java.lang.annotation cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[29:15] The import java.lang.annotation cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[37:2] Target cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[37:10] FIELD cannot be resolved to a variable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[37:17] PARAMETER cannot be resolved to a variable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[37:28] METHOD cannot be resolved to a variable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[38:2] Retention cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[38:12] RUNTIME cannot be resolved to a variable
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[39:19] The hierarchy of the type Config is inconsistent
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/Config.java:[44:3] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractor.java:[1:1] The type java.util.Map$Entry cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractor.java:[1:1] The type java.lang.Class cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractor.java:[35:10] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractor.java:[35:65] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ConfigExtractor.java:[40:10] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractor.java:[1:1] The type java.util.List cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractor.java:[23:8] The import java.lang.reflect.Type cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractor.java:[24:8] The import java.util.List cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractor.java:[37:10] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractor.java:[37:70] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractor.java:[42:10] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1:1] The type java.lang.Enum cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1:1] The type java.lang.String cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1:1] The type java.time.Duration cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1:1] The type java.util.Map cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1:1] The type java.lang.Boolean cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1:1] The type java.lang.Integer cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1:1] The type java.lang.Double cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[1:1] The type java.lang.Long cannot be resolved. It is indirectly referenced from required .class files
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[27:8] The import java.lang.reflect.Type cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[28:8] The import java.time.Duration cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[29:8] The import java.util.HashMap cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[30:8] The import java.util.List cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[31:8] The import java.util.Map cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[32:8] The import java.util.Optional cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[35:11] Boolean cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[35:26] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[35:26] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[36:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[37:12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[37:52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[41:11] Integer cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[41:26] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[41:26] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[42:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[43:12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[43:52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[47:10] Double cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[47:24] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[47:24] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[48:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[49:12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[49:52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[53:8] Long cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[53:20] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[53:20] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[54:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[55:12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[55:52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[59:10] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[59:24] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[59:24] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[60:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[61:12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[61:52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[65:12] Duration cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[65:28] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[65:28] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[66:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[67:12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[67:52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[71:39] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[71:39] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[72:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[73:12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[73:52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[77:10] Object cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[77:24] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[77:24] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[78:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[79:12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[79:52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[83:24] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[83:24] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[84:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[85:12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[85:52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[89:37] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[89:37] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[90:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[91:12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[91:52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[95:36] The return types are incompatible for the inherited methods ListExtractor.getMatchingParameterizedType(), ListExtractors.getMatchingParameterizedType()
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[95:36] The constructor ListExtractors(Class<?>) refers to the missing type Class
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[96:6] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[97:12] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[97:52] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[102:17] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[103:24] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[103:28] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[103:69] HashMap cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[107:7] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[107:7] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[107:35] The method getMatchingParameterizedType() from the type ListExtractor refers to the missing type Type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[111:11] Implicit super constructor Enum(String, int) is undefined. Must explicitly invoke another constructor
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[111:26] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[112:5] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[115:4] Override cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[116:10] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[117:12] Class cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[120:10] Optional cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[120:19] List cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[120:66] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[120:81] String cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[121:9] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[121:9] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[122:14] Optional cannot be resolved
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[122:26] Map cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[122:26] Type cannot be resolved to a type
+[ERROR] /tmp/tmp.UGynQGwTe0/repo/ollie-config/src/main/java/com/walmartlabs/ollie/config/ListExtractors.java:[124:14] Optional cannot be resolved
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :ollie-config

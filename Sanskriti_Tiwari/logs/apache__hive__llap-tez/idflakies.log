@@ -1,0 +1,940 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Hive Storage API                                                   [jar]
+[INFO] Hive                                                               [pom]
+[INFO] Hive Classifications                                               [jar]
+[INFO] Hive Shims Common                                                  [jar]
+[INFO] Hive Shims 0.23                                                    [jar]
+[INFO] Hive Shims Scheduler                                               [jar]
+[INFO] Hive Shims                                                         [jar]
+[INFO] Hive Standalone Metastore                                          [pom]
+[INFO] Hive Standalone Metastore Common Code                              [jar]
+[INFO] Hive Common                                                        [jar]
+[INFO] Hive Service RPC                                                   [jar]
+[INFO] Hive Serde                                                         [jar]
+[INFO] Hive Llap Common                                                   [jar]
+[INFO] Hive Llap Client                                                   [jar]
+[INFO] Hive Llap Tez                                                      [jar]
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.pom (3.0 kB at 13 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies/2.0.0/idflakies-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies/2.0.0/idflakies-2.0.0.pom (7.1 kB at 87 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-maven-plugin/2.0.0/idflakies-maven-plugin-2.0.0.jar (35 kB at 679 kB/s)
+[INFO] 
+[INFO] ------------------< org.apache.hive:hive-storage-api >------------------
+[INFO] Building Hive Storage API 2.7.3-SNAPSHOT                          [1/15]
+[INFO]   from storage-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ hive-storage-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ hive-storage-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hive-storage-api ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hive-storage-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/storage-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hive-storage-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hive-storage-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hive-storage-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ hive-storage-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ hive-storage-api ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.pom (5.3 kB at 111 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.pom (4.6 kB at 114 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner/1.2.1/testrunner-1.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner/1.2.1/testrunner-1.2.1.pom (7.4 kB at 190 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.pom (2.5 kB at 66 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.5/gson-parent-2.8.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.5/gson-parent-2.8.5.pom (3.8 kB at 97 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.pom (8.5 kB at 185 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.5.4/maven-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.5.4/maven-3.5.4.pom (23 kB at 509 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.pom (4.0 kB at 103 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.pom (1.8 kB at 43 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.pom (2.6 kB at 79 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.pom (1.5 kB at 33 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.pom (3.0 kB at 60 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.pom (1.9 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.pom (2.1 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.pom (2.9 kB at 61 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.pom (4.2 kB at 37 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.3/sisu-plexus-0.3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.3/sisu-plexus-0.3.3.pom (14 kB at 312 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.pom (1.4 kB at 39 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-parent/1.0/weld-api-parent-1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-parent/1.0/weld-api-parent-1.0.pom (2.4 kB at 25 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-bom/1.0/weld-api-bom-1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-bom/1.0/weld-api-bom-1.0.pom (7.9 kB at 184 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/6/weld-parent-6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/6/weld-parent-6.pom (21 kB at 450 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom (1.0 kB at 25 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.3/org.eclipse.sisu.inject-0.3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.3/org.eclipse.sisu.inject-0.3.3.pom (2.6 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.3/sisu-inject-0.3.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.3/sisu-inject-0.3.3.pom (14 kB at 437 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.17/plexus-utils-3.0.17.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.17/plexus-utils-3.0.17.pom (3.4 kB at 79 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.pom (3.1 kB at 75 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.pom (7.8 kB at 236 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/25.1-jre/guava-parent-25.1-jre.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/25.1-jre/guava-parent-25.1-jre.pom (10 kB at 242 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.0.pom (4.2 kB at 127 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.pom (1.8 kB at 46 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_parent/2.1.3/error_prone_parent-2.1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_parent/2.1.3/error_prone_parent-2.1.3.pom (5.1 kB at 100 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom (2.8 kB at 60 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom (2.5 kB at 55 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-parent/1.14/animal-sniffer-parent-1.14.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-parent/1.14/animal-sniffer-parent-1.14.pom (4.4 kB at 80 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/mojo-parent/34/mojo-parent-34.pom (24 kB at 443 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/4/codehaus-parent-4.pom (4.8 kB at 89 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.pom (4.1 kB at 93 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.pom (1.9 kB at 45 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.1.1/maven-resolver-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.1.1/maven-resolver-1.1.1.pom (16 kB at 373 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.pom (2.1 kB at 40 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.pom (2.2 kB at 65 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.pom (3.5 kB at 74 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.2.0/guice-4.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.2.0/guice-4.2.0.pom (11 kB at 203 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice-parent/4.2.0/guice-parent-4.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice-parent/4.2.0/guice-parent-4.2.0.pom (16 kB at 413 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.pom (1.6 kB at 41 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.6/xmlunit-1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.6/xmlunit-1.6.pom (3.0 kB at 75 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.pom (2.2 kB at 27 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.pom (1.2 kB at 28 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.pom (2.4 kB at 67 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.pom (2.0 kB at 43 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.pom (1.7 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.3/opencsv-4.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.3/opencsv-4.3.pom (20 kB at 433 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.pom (28 kB at 580 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/47/commons-parent-47.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/47/commons-parent-47.pom (78 kB at 1.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.pom (14 kB at 264 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/45/commons-parent-45.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/45/commons-parent-45.pom (73 kB at 1.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.pom (28 kB at 744 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.pom (23 kB at 579 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.pom (9.3 kB at 228 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.pom (2.4 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.pom (7.3 kB at 174 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-parent/3.6.10/javaparser-parent-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-parent/3.6.10/javaparser-parent-3.6.10.pom (13 kB at 320 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.pom (5.0 kB at 132 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.pom (4.9 kB at 123 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.pom (9.7 kB at 212 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.pom (4.7 kB at 91 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.pom (9.4 kB at 234 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit-parent/4.10.0.201712302008-r/org.eclipse.jgit-parent-4.10.0.201712302008-r.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit-parent/4.10.0.201712302008-r/org.eclipse.jgit-parent-4.10.0.201712302008-r.pom (29 kB at 707 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.pom (6.0 kB at 183 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom (2.7 kB at 53 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.2/slf4j-parent-1.7.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.2/slf4j-parent-1.7.2.pom (12 kB at 319 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.pom (6.3 kB at 150 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.5.3/maven-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.5.3/maven-3.5.3.pom (23 kB at 669 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.3/maven-settings-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.3/maven-settings-3.5.3.pom (1.8 kB at 48 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.3/maven-settings-builder-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.3/maven-settings-builder-3.5.3.pom (2.6 kB at 65 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.3/maven-builder-support-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.3/maven-builder-support-3.5.3.pom (1.5 kB at 38 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.3/maven-core-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.3/maven-core-3.5.3.pom (8.5 kB at 161 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.3/maven-model-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.3/maven-model-3.5.3.pom (4.0 kB at 109 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.3/maven-repository-metadata-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.3/maven-repository-metadata-3.5.3.pom (1.9 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.3/maven-artifact-3.5.3.pom (2.1 kB at 60 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.3/maven-plugin-api-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.3/maven-plugin-api-3.5.3.pom (2.9 kB at 77 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.3/maven-model-builder-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.3/maven-model-builder-3.5.3.pom (3.1 kB at 98 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.3/maven-resolver-provider-3.5.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.3/maven-resolver-provider-3.5.3.pom (4.1 kB at 105 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.pom (4.2 kB at 116 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.pom (2.5 kB at 83 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.pom (2.7 kB at 57 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.pom (6.4 kB at 167 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/idflakies-core/2.0.0/idflakies-core-2.0.0.jar (115 kB at 2.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.5.4/maven-core-3.5.4.jar (630 kB at 9.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.5.4/maven-model-3.5.4.jar (165 kB at 1.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.5.4/maven-settings-3.5.4.jar (45 kB at 459 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/cs/testrunner-running/1.2.1/testrunner-running-1.2.1.jar (130 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.5.4/maven-builder-support-3.5.4.jar (15 kB at 131 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.5.4/maven-settings-builder-3.5.4.jar (43 kB at 360 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.5.4/maven-artifact-3.5.4.jar (55 kB at 395 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.5.4/maven-repository-metadata-3.5.4.jar (27 kB at 196 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.5.4/maven-model-builder-3.5.4.jar (177 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-resolver-provider/3.5.4/maven-resolver-provider-3.5.4.jar (67 kB at 424 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.5.4/maven-plugin-api-3.5.4.jar (48 kB at 294 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-impl/1.1.1/maven-resolver-impl-1.1.1.jar (185 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-spi/1.1.1/maven-resolver-spi-1.1.1.jar (36 kB at 195 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.3/org.eclipse.sisu.inject-0.3.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.1.1/maven-resolver-api-1.1.1.jar (146 kB at 774 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.2.0/guice-4.2.0-no_aop.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.jar (205 kB at 973 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar (45 kB at 200 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.6/xmlunit-1.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.3/org.eclipse.sisu.inject-0.3.3.jar (379 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.1.1/maven-resolver-util-1.1.1.jar (159 kB at 670 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.2.0/guice-4.2.0-no_aop.jar (521 kB at 2.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xmlunit/xmlunit/1.6/xmlunit-1.6.jar (101 kB at 383 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.1.0/junit-platform-launcher-1.1.0.jar (80 kB at 300 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar (2.2 kB at 7.7 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.3/opencsv-4.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.jar (77 kB at 261 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar (90 kB at 304 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar (6.6 kB at 22 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/opencsv/opencsv/4.3/opencsv-4.3.jar (164 kB at 497 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.3/commons-text-1.3.jar (183 kB at 543 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.jar (753 kB at 2.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.jar (502 kB at 1.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.jar (5.3 MB at 14 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/reedoei/eunomia/1.4.1/eunomia-1.4.1.jar (170 kB at 449 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.6.10/javaparser-core-3.6.10.jar (1.1 MB at 2.9 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-logic/3.6.10/javaparser-symbol-solver-logic-3.6.10.jar (17 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-core/3.6.10/javaparser-symbol-solver-core-3.6.10.jar (366 kB at 932 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar (740 kB at 1.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.jar (166 kB at 389 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar (327 kB at 758 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-symbol-solver-model/3.6.10/javaparser-symbol-solver-model-3.6.10.jar (7.6 kB at 18 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jgit/org.eclipse.jgit/4.10.0.201712302008-r/org.eclipse.jgit-4.10.0.201712302008-r.jar (2.7 MB at 6.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9.jar (264 kB at 587 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar (5.8 kB at 12 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-embedder/3.5.3/maven-embedder-3.5.3.jar (98 kB at 205 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar (28 kB at 58 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-cipher/1.7/plexus-cipher-1.7.jar (13 kB at 28 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar (242 kB at 468 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/jdk8/2.5.2/jdk8-2.5.2.jar (810 kB at 1.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar (26 kB at 49 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar (193 kB at 359 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.jar (2.7 MB at 5.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar (3.5 kB at 6.2 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar (20 kB at 35 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar (14 kB at 24 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar (324 kB at 567 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar (8.8 kB at 15 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.jar (7.1 MB at 11 MB/s)
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.hive:hive-storage-api:2.7.3-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 209 tests. Time taken: 0.2630000114440918 seconds
+INFO: Locating tests...
+INFO: Located 0 tests. Time taken: 0.19099998474121094 seconds
+INFO: Using original order in path: /tmp/tmp.nL4RebYRUE/repo/storage-api/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.nL4RebYRUE/repo/storage-api/.dtfixingtools/original-order
+[INFO] Getting original results (209 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (24.6 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (24.6 seconds elapsed (48.4 total), 36.9 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (48.4 seconds elapsed (73.1 total), 32.2 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (73.1 seconds elapsed (97.1 total), 18.3 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (97.1 seconds elapsed (121.0 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.nL4RebYRUE/repo/storage-api/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.nL4RebYRUE/repo/storage-api/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ------------------------< org.apache.hive:hive >------------------------
+[INFO] Building Hive 4.0.0-SNAPSHOT                                      [2/15]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ hive >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ hive ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-no-snapshots) @ hive ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-licenses) @ hive ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-logging) @ hive ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (check-banned-imports) @ hive ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hive ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- antrun:1.8:run (define-classpath) @ hive ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- apache-rat:0.13:check (default) @ hive ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- antrun:1.8:run (setup-test-dirs) @ hive ---
+[INFO] Executing tasks
+
+main:
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/target/tmp
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/target/testconf
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/target/tmp
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/target/testconf
+     [copy] Copying 24 files to /tmp/tmp.nL4RebYRUE/repo/target/testconf
+[INFO] Executed tasks
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ hive <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ hive ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.hive:hive:4.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Module is not using a supported test framework (probably not JUnit), or there is no test.
+---------------------------------------------------
+Message was:
+Module is not using a supported test framework (probably not JUnit), or there is no test.
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ----------------< org.apache.hive:hive-classification >-----------------
+[INFO] Building Hive Classifications 4.0.0-SNAPSHOT                      [3/15]
+[INFO]   from classification/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ hive-classification >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ hive-classification ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-no-snapshots) @ hive-classification ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-licenses) @ hive-classification ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-logging) @ hive-classification ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (check-banned-imports) @ hive-classification ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hive-classification ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hive-classification ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/classification/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- antrun:1.8:run (define-classpath) @ hive-classification ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- apache-rat:0.13:check (default) @ hive-classification ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hive-classification ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hive-classification ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/classification/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- antrun:1.8:run (setup-test-dirs) @ hive-classification ---
+[INFO] Executing tasks
+
+main:
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/classification/target/tmp
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/classification/target/testconf
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/classification/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/classification/target/tmp
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/classification/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/classification/target/testconf
+     [copy] Copying 24 files to /tmp/tmp.nL4RebYRUE/repo/classification/target/testconf
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hive-classification ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ hive-classification <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ hive-classification ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.hive:hive-classification:4.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Module is not using a supported test framework (probably not JUnit), or there is no test.
+---------------------------------------------------
+Message was:
+Module is not using a supported test framework (probably not JUnit), or there is no test.
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] --------------< org.apache.hive.shims:hive-shims-common >---------------
+[INFO] Building Hive Shims Common 4.0.0-SNAPSHOT                         [4/15]
+[INFO]   from shims/common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ hive-shims-common >>>
+[WARNING] 2 problems were encountered while building the effective model for org.apache.yetus:audience-annotations:jar:0.5.0 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ hive-shims-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-no-snapshots) @ hive-shims-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-licenses) @ hive-shims-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-logging) @ hive-shims-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (check-banned-imports) @ hive-shims-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hive-shims-common ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hive-shims-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/shims/common/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- antrun:1.8:run (define-classpath) @ hive-shims-common ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- apache-rat:0.13:check (default) @ hive-shims-common ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hive-shims-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hive-shims-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/shims/common/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- antrun:1.8:run (setup-test-dirs) @ hive-shims-common ---
+[INFO] Executing tasks
+
+main:
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/shims/common/target/tmp
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/shims/common/target/testconf
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/shims/common/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/shims/common/target/tmp
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/shims/common/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/shims/common/target/testconf
+     [copy] Copying 24 files to /tmp/tmp.nL4RebYRUE/repo/shims/common/target/testconf
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hive-shims-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ hive-shims-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ hive-shims-common ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.hive.shims:hive-shims-common:4.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 7 tests. Time taken: 0.026000022888183594 seconds
+INFO: Using original order in path: /tmp/tmp.nL4RebYRUE/repo/shims/common/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.nL4RebYRUE/repo/shims/common/.dtfixingtools/original-order
+[INFO] Getting original results (7 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (1.2 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (1.2 seconds elapsed (2.4 total), 1.7 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (2.4 seconds elapsed (3.5 total), 1.6 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (3.5 seconds elapsed (4.7 total), 0.9 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (4.7 seconds elapsed (5.9 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.nL4RebYRUE/repo/shims/common/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.nL4RebYRUE/repo/shims/common/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ---------------< org.apache.hive.shims:hive-shims-0.23 >----------------
+[INFO] Building Hive Shims 0.23 4.0.0-SNAPSHOT                           [5/15]
+[INFO]   from shims/0.23/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ hive-shims-0.23 >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ hive-shims-0.23 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-no-snapshots) @ hive-shims-0.23 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-licenses) @ hive-shims-0.23 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-logging) @ hive-shims-0.23 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (check-banned-imports) @ hive-shims-0.23 ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hive-shims-0.23 ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hive-shims-0.23 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/shims/0.23/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- antrun:1.8:run (define-classpath) @ hive-shims-0.23 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- apache-rat:0.13:check (default) @ hive-shims-0.23 ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hive-shims-0.23 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hive-shims-0.23 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/shims/0.23/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- antrun:1.8:run (setup-test-dirs) @ hive-shims-0.23 ---
+[INFO] Executing tasks
+
+main:
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/shims/0.23/target/tmp
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/shims/0.23/target/testconf
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/shims/0.23/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/shims/0.23/target/tmp
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/shims/0.23/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/shims/0.23/target/testconf
+     [copy] Copying 24 files to /tmp/tmp.nL4RebYRUE/repo/shims/0.23/target/testconf
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hive-shims-0.23 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ hive-shims-0.23 <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ hive-shims-0.23 ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.hive.shims:hive-shims-0.23:4.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 6 tests. Time taken: 0.026000022888183594 seconds
+INFO: Using original order in path: /tmp/tmp.nL4RebYRUE/repo/shims/0.23/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.nL4RebYRUE/repo/shims/0.23/.dtfixingtools/original-order
+[INFO] Getting original results (6 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).
+[INFO] Found 0 tests in round 1 of 5 (0.0 seconds elapsed (1.8 total), 0.0 seconds remaining).
+[INFO] Found 0 tests in round 2 of 5 (1.8 seconds elapsed (3.6 total), 2.7 seconds remaining).
+[INFO] Found 0 tests in round 3 of 5 (3.6 seconds elapsed (5.5 total), 2.4 seconds remaining).
+[INFO] Found 0 tests in round 4 of 5 (5.5 seconds elapsed (7.5 total), 1.4 seconds remaining).
+[INFO] Found 0 tests in round 5 of 5 (7.5 seconds elapsed (9.3 total), 0.0 seconds remaining).
+
+[INFO] Found 0 tests, writing list to /tmp/tmp.nL4RebYRUE/repo/shims/0.23/.dtfixingtools/detection-results/list.txt and dt lists to /tmp/tmp.nL4RebYRUE/repo/shims/0.23/.dtfixingtools/detection-results/flaky-lists.json
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] -------------< org.apache.hive.shims:hive-shims-scheduler >-------------
+[INFO] Building Hive Shims Scheduler 4.0.0-SNAPSHOT                      [6/15]
+[INFO]   from shims/scheduler/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ hive-shims-scheduler >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ hive-shims-scheduler ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-no-snapshots) @ hive-shims-scheduler ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-licenses) @ hive-shims-scheduler ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-logging) @ hive-shims-scheduler ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (check-banned-imports) @ hive-shims-scheduler ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hive-shims-scheduler ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hive-shims-scheduler ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/shims/scheduler/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- antrun:1.8:run (define-classpath) @ hive-shims-scheduler ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- apache-rat:0.13:check (default) @ hive-shims-scheduler ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hive-shims-scheduler ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hive-shims-scheduler ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/shims/scheduler/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- antrun:1.8:run (setup-test-dirs) @ hive-shims-scheduler ---
+[INFO] Executing tasks
+
+main:
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/shims/scheduler/target/tmp
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/shims/scheduler/target/testconf
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/shims/scheduler/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/shims/scheduler/target/tmp
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/shims/scheduler/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/shims/scheduler/target/testconf
+     [copy] Copying 24 files to /tmp/tmp.nL4RebYRUE/repo/shims/scheduler/target/testconf
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hive-shims-scheduler ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ hive-shims-scheduler <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ hive-shims-scheduler ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.hive.shims:hive-shims-scheduler:4.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Module is not using a supported test framework (probably not JUnit), or there is no test.
+---------------------------------------------------
+Message was:
+Module is not using a supported test framework (probably not JUnit), or there is no test.
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ---------------------< org.apache.hive:hive-shims >---------------------
+[INFO] Building Hive Shims 4.0.0-SNAPSHOT                                [7/15]
+[INFO]   from shims/aggregator/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ hive-shims >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ hive-shims ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-no-snapshots) @ hive-shims ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-licenses) @ hive-shims ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-logging) @ hive-shims ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (check-banned-imports) @ hive-shims ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hive-shims ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hive-shims ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/shims/aggregator/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- antrun:1.8:run (define-classpath) @ hive-shims ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- apache-rat:0.13:check (default) @ hive-shims ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hive-shims ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hive-shims ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/shims/aggregator/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- antrun:1.8:run (setup-test-dirs) @ hive-shims ---
+[INFO] Executing tasks
+
+main:
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/shims/aggregator/target/tmp
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/shims/aggregator/target/testconf
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/shims/aggregator/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/shims/aggregator/target/tmp
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/shims/aggregator/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/shims/aggregator/target/testconf
+     [copy] Copying 24 files to /tmp/tmp.nL4RebYRUE/repo/shims/aggregator/target/testconf
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hive-shims ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ hive-shims <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ hive-shims ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.hive:hive-shims:4.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Module is not using a supported test framework (probably not JUnit), or there is no test.
+---------------------------------------------------
+Message was:
+Module is not using a supported test framework (probably not JUnit), or there is no test.
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] -------------< org.apache.hive:hive-standalone-metastore >--------------
+[INFO] Building Hive Standalone Metastore 4.0.0-SNAPSHOT                 [8/15]
+[INFO]   from standalone-metastore/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ hive-standalone-metastore >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ hive-standalone-metastore ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hive-standalone-metastore ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ hive-standalone-metastore <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ hive-standalone-metastore ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.hive:hive-standalone-metastore:4.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Module is not using a supported test framework (probably not JUnit), or there is no test.
+---------------------------------------------------
+Message was:
+Module is not using a supported test framework (probably not JUnit), or there is no test.
+TRY_COPY_ALL_FAILING_TEST_OUTPUT
+[INFO] 
+[INFO] ----------< org.apache.hive:hive-standalone-metastore-common >----------
+[INFO] Building Hive Standalone Metastore Common Code 4.0.0-SNAPSHOT     [9/15]
+[INFO]   from standalone-metastore/metastore-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> idflakies:2.0.0:detect (default-cli) > test-compile @ hive-standalone-metastore-common >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ hive-standalone-metastore-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies) @ hive-standalone-metastore-common ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- antrun:1.8:run (generate-version-annotation) @ hive-standalone-metastore-common ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- protoc-jar:3.5.1.1:run (default) @ hive-standalone-metastore-common ---
+[INFO] Resolving artifact: com.google.protobuf:protoc:2.6.1, platform: linux-x86_64
+protoc-jar: executing: [/tmp/protoc11003839838032055651.exe, --version]
+libprotoc 2.6.1
+[INFO] Protoc command: /tmp/protoc11003839838032055651.exe
+[INFO] Input directories:
+[INFO]     /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/src/main/protobuf/org/apache/hadoop/hive/metastore
+[INFO] Output targets:
+[INFO]     java: /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/target/generated-sources (add: none, clean: false, plugin: null, outputOptions: null)
+[INFO]     Processing (java): metastore.proto
+protoc-jar: executing: [/tmp/protoc11003839838032055651.exe, -I/tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/src/main/protobuf/org/apache/hadoop/hive/metastore, --java_out=/tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/target/generated-sources, /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/src/main/protobuf/org/apache/hadoop/hive/metastore/metastore.proto]
+[INFO] 
+[INFO] --- build-helper:3.0.0:add-source (add-source) @ hive-standalone-metastore-common ---
+[INFO] Source directory: /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/src/gen/thrift/gen-javabean added.
+[INFO] Source directory: /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/target/generated-sources added.
+[INFO] Source directory: /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/src/gen/version added.
+[INFO] 
+[INFO] --- antlr3:3.5.2:antlr (default) @ hive-standalone-metastore-common ---
+[INFO] ANTLR: Processing source directory /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/src/main/java
+[INFO] No grammars to process
+ANTLR Parser Generator  Version 3.5.2
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hive-standalone-metastore-common ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hive-standalone-metastore-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hive-standalone-metastore-common ---
+[INFO] Compiling 4 source files to /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/target/classes
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hive-standalone-metastore-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- antrun:1.8:run (setup-test-dirs) @ hive-standalone-metastore-common ---
+[INFO] Executing tasks
+
+main:
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/target/tmp
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/target/tmp
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/target/warehouse
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- antrun:1.8:run (setup-metastore-scripts) @ hive-standalone-metastore-common ---
+[INFO] No Ant target defined - SKIPPED
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hive-standalone-metastore-common ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< idflakies:2.0.0:detect (default-cli) < test-compile @ hive-standalone-metastore-common <<<
+[INFO] 
+[INFO] 
+[INFO] --- idflakies:2.0.0:detect (default-cli) @ hive-standalone-metastore-common ---
+INFO: No timeout specified. Using randomize.rounds: 5
+INFO: ROUNDS_CALCULATED: Giving org.apache.hive:hive-standalone-metastore-common:4.0.0-SNAPSHOT 5 rounds to run for random-class-method
+INFO: Locating tests...
+INFO: Located 5 tests. Time taken: 0.09999990463256836 seconds
+INFO: Using original order in path: /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/.dtfixingtools/original-order
+INFO: Getting original order by parsing logs. ignoreExisting set to: false
+INFO: Using original order in path: /tmp/tmp.nL4RebYRUE/repo/standalone-metastore/metastore-common/.dtfixingtools/original-order
+[INFO] Getting original results (5 tests).
+INFO: Created dependent test detector (class edu.illinois.cs.dt.tools.detection.detectors.RandomDetector).

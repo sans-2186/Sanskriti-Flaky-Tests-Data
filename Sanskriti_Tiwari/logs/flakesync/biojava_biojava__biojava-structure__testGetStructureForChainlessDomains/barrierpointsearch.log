@@ -1,0 +1,48 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 4 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 4 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] biojava                                                            [pom]
+[INFO] biojava-core                                                       [jar]
+[INFO] biojava-alignment                                                  [jar]
+[INFO] biojava-structure                                                  [jar]
+[INFO] 
+[INFO] ------------------------< org.biojava:biojava >-------------------------
+[INFO] Building biojava 6.0.0-SNAPSHOT                                    [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) > test-compile @ biojava >>>
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-java) @ biojava ---
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-maven) @ biojava ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) < test-compile @ biojava <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:barrierpointsearch (default-cli) @ biojava ---
+INFO: Running BarrierPointSearchMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for biojava 6.0.0-SNAPSHOT:
+[INFO] 
+[INFO] biojava ............................................ FAILURE [  0.374 s]
+[INFO] biojava-core ....................................... SKIPPED
+[INFO] biojava-alignment .................................. SKIPPED
+[INFO] biojava-structure .................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.163 s
+[INFO] Finished at: 2026-11-10T18:54:49Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch (default-cli) on project biojava: Execution default-cli of goal edu.utexas.ece:flakesync-maven-plugin:1.0-SNAPSHOT:barrierpointsearch failed: java.io.FileNotFoundException: /tmp/tmp.pkzuwWkzK9/repo/.flakesync/Results-CritSearch/org.biojava.nbio.structure.align.util.AtomCacheTest.testGetStructureForChainlessDomains-CriticalPoints.csv (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

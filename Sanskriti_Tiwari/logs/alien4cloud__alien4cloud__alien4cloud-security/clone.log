@@ -1,0 +1,20 @@
+Cloning into '/tmp/tmp.XwEvSWPhDI/repo'...
+Updating files:  29% (945/3242)Updating files:  30% (973/3242)Updating files:  31% (1006/3242)Updating files:  32% (1038/3242)Updating files:  33% (1070/3242)Updating files:  34% (1103/3242)Updating files:  35% (1135/3242)Updating files:  36% (1168/3242)Updating files:  37% (1200/3242)Updating files:  38% (1232/3242)Updating files:  39% (1265/3242)Updating files:  40% (1297/3242)Updating files:  41% (1330/3242)Updating files:  42% (1362/3242)Updating files:  43% (1395/3242)Updating files:  44% (1427/3242)Updating files:  45% (1459/3242)Updating files:  46% (1492/3242)Updating files:  47% (1524/3242)Updating files:  48% (1557/3242)Updating files:  49% (1589/3242)Updating files:  50% (1621/3242)Updating files:  51% (1654/3242)Updating files:  52% (1686/3242)Updating files:  53% (1719/3242)Updating files:  54% (1751/3242)Updating files:  55% (1784/3242)Updating files:  56% (1816/3242)Updating files:  57% (1848/3242)Updating files:  58% (1881/3242)Updating files:  59% (1913/3242)Updating files:  60% (1946/3242)Updating files:  61% (1978/3242)Updating files:  62% (2011/3242)Updating files:  63% (2043/3242)Updating files:  64% (2075/3242)Updating files:  65% (2108/3242)Updating files:  66% (2140/3242)Updating files:  67% (2173/3242)Updating files:  68% (2205/3242)Updating files:  69% (2237/3242)Updating files:  70% (2270/3242)Updating files:  71% (2302/3242)Updating files:  72% (2335/3242)Updating files:  73% (2367/3242)Updating files:  74% (2400/3242)Updating files:  75% (2432/3242)Updating files:  76% (2464/3242)Updating files:  77% (2497/3242)Updating files:  78% (2529/3242)Updating files:  79% (2562/3242)Updating files:  80% (2594/3242)Updating files:  81% (2627/3242)Updating files:  82% (2659/3242)Updating files:  83% (2691/3242)Updating files:  84% (2724/3242)Updating files:  85% (2756/3242)Updating files:  86% (2789/3242)Updating files:  87% (2821/3242)Updating files:  88% (2853/3242)Updating files:  89% (2886/3242)Updating files:  90% (2918/3242)Updating files:  91% (2951/3242)Updating files:  92% (2983/3242)Updating files:  93% (3016/3242)Updating files:  94% (3048/3242)Updating files:  95% (3080/3242)Updating files:  96% (3113/3242)Updating files:  97% (3145/3242)Updating files:  98% (3178/3242)Updating files:  99% (3210/3242)Updating files: 100% (3242/3242)Updating files: 100% (3242/3242), done.
+Note: switching to 'eb57d0feca6c37e0a4aafc3feef494e43e02ecda'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at eb57d0fec [ALIEN-3014] fix an issue at matching when a metaproperty is deleted

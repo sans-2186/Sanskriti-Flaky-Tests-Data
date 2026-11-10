@@ -1,0 +1,3 @@
+url=https://github.com/Accenture/mercury
+sha=e659caf000c2a714d921a52cbc85e13f56cef981
+module=system/platform-core

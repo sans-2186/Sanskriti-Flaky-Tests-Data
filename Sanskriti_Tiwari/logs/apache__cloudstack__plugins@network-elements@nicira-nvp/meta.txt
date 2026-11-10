@@ -1,0 +1,3 @@
+url=https://github.com/apache/cloudstack
+sha=121531e2c3a71da2514cad986734063cf6a6d7dd
+module=plugins/network-elements/nicira-nvp

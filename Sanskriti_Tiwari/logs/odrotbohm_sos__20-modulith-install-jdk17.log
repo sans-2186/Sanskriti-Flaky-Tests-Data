@@ -1,0 +1,49 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] System of Systems - Parent                                         [pom]
+[INFO] System of Systems - The Modulith                                   [jar]
+[INFO] 
+[INFO] -------------------< de.olivergierke.sos:sos-parent >-------------------
+[INFO] Building System of Systems - Parent 0.0.1-SNAPSHOT                 [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- spring-boot:2.1.0.RELEASE:repackage (repackage) @ sos-parent ---
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ sos-parent ---
+[INFO] Installing /tmp/tmp.VcpAf8djQ1/repo/pom.xml to /home/runner/.m2/repository/de/olivergierke/sos/sos-parent/0.0.1-SNAPSHOT/sos-parent-0.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------------< de.olivergierke.sos:sos-modulith >------------------
+[INFO] Building System of Systems - The Modulith 0.0.1-SNAPSHOT           [2/2]
+[INFO]   from 20-modulith/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from spring-libs-snapshot: https://repo.spring.io/libs-snapshot/de/olivergierke/events/spring-domain-events-starter/1.0.0-SNAPSHOT/maven-metadata.xml
+[WARNING] Could not transfer metadata de.olivergierke.events:spring-domain-events-starter:1.0.0-SNAPSHOT/maven-metadata.xml from/to spring-libs-snapshot (https://repo.spring.io/libs-snapshot): status code: 401, reason phrase:  (401)
+[WARNING] de.olivergierke.events:spring-domain-events-starter:1.0.0-SNAPSHOT/maven-metadata.xml failed to transfer from https://repo.spring.io/libs-snapshot during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of spring-libs-snapshot has elapsed or updates are forced. Original error: Could not transfer metadata de.olivergierke.events:spring-domain-events-starter:1.0.0-SNAPSHOT/maven-metadata.xml from/to spring-libs-snapshot (https://repo.spring.io/libs-snapshot): status code: 401, reason phrase:  (401)
+[INFO] Downloading from spring-libs-snapshot: https://repo.spring.io/libs-snapshot/de/olivergierke/events/spring-domain-events-starter/1.0.0-SNAPSHOT/spring-domain-events-starter-1.0.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for System of Systems - Parent 0.0.1-SNAPSHOT:
+[INFO] 
+[INFO] System of Systems - Parent ......................... SUCCESS [  0.653 s]
+[INFO] System of Systems - The Modulith ................... FAILURE [  0.573 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.448 s
+[INFO] Finished at: 2026-11-10T19:15:05Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project sos-modulith: Could not collect dependencies for project de.olivergierke.sos:sos-modulith:jar:0.0.1-SNAPSHOT
+[ERROR] Failed to read artifact descriptor for de.olivergierke.events:spring-domain-events-starter:jar:1.0.0-SNAPSHOT
+[ERROR] 	Caused by: The following artifacts could not be resolved: de.olivergierke.events:spring-domain-events-starter:pom:1.0.0-SNAPSHOT (absent): Could not transfer artifact de.olivergierke.events:spring-domain-events-starter:pom:1.0.0-SNAPSHOT from/to spring-libs-snapshot (https://repo.spring.io/libs-snapshot): status code: 401, reason phrase:  (401)
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :sos-modulith

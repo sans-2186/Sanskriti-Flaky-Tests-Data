@@ -1,0 +1,5 @@
+org.apache.ignite.internal.tostring.IgniteToStringBuilderSelfTest#testHierarchy
+org.apache.ignite.internal.tostring.IgniteToStringBuilderSelfTest#testToString
+org.apache.ignite.internal.tostring.IgniteToStringBuilderSelfTest#testToStringCheckConcurrentModificationExceptionFromMap
+org.apache.ignite.internal.tostring.IgniteToStringBuilderSelfTest#testToStringSizeLimits
+org.apache.ignite.internal.tostring.IgniteToStringBuilderSelfTest#testToStringWithAdditions

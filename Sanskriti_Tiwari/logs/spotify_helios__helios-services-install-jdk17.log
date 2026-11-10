@@ -1,0 +1,78 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 6 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 6 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Helios Parent                                                      [pom]
+[INFO] Helios Client                                                      [jar]
+[INFO] Helios Service Registration                                        [jar]
+[INFO] Helios Tools                                                       [jar]
+[INFO] Helios Testing Common Library                                      [jar]
+[INFO] Helios Services                                                    [jar]
+[INFO] 
+[INFO] ---------------------< com.spotify:helios-parent >----------------------
+[INFO] Building Helios Parent 0.9.0-SNAPSHOT                              [1/6]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:2.17:check (validate) @ helios-parent ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce) @ helios-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- license:1.9:check-file-header (check-file-header) @ helios-parent ---
+[WARNING] No file to scan.
+[INFO] 
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ helios-parent ---
+[INFO] Installing /tmp/tmp.R8LulmQ9Jg/repo/pom.xml to /home/runner/.m2/repository/com/spotify/helios-parent/0.9.0-SNAPSHOT/helios-parent-0.9.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------------< com.spotify:helios-client >----------------------
+[INFO] Building Helios Client 0.9.0-SNAPSHOT                              [2/6]
+[INFO]   from helios-client/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:2.17:check (validate) @ helios-client ---
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce) @ helios-client ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- build-helper:1.9.1:add-source (default) @ helios-client ---
+[INFO] Source directory: /tmp/tmp.R8LulmQ9Jg/repo/helios-client/target/generated-sources/templated added.
+[INFO] 
+[INFO] --- license:1.9:check-file-header (check-file-header) @ helios-client ---
+[INFO] Will search files to update from root /tmp/tmp.R8LulmQ9Jg/repo/helios-client/src/main/java
+[INFO] Will search files to update from root /tmp/tmp.R8LulmQ9Jg/repo/helios-client/src/test/java
+[INFO] Scan 90 files header done in 127.084ms.
+[INFO] All files are up-to-date.
+[INFO] 
+[INFO] --- replacer:1.5.3:replace (default) @ helios-client ---
+[ERROR] File 'helios-client/src/main/java/com/spotify/helios/common/Version.java.template' does not exist
+[INFO] Replacement run on 0 file.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Helios Parent 0.9.0-SNAPSHOT:
+[INFO] 
+[INFO] Helios Parent ...................................... SUCCESS [  1.313 s]
+[INFO] Helios Client ...................................... FAILURE [  0.462 s]
+[INFO] Helios Service Registration ........................ SKIPPED
+[INFO] Helios Tools ....................................... SKIPPED
+[INFO] Helios Testing Common Library ...................... SKIPPED
+[INFO] Helios Services .................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.505 s
+[INFO] Finished at: 2026-11-10T19:15:33Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal com.google.code.maven-replacer-plugin:replacer:1.5.3:replace (default) on project helios-client: File 'helios-client/src/main/java/com/spotify/helios/common/Version.java.template' does not exist -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :helios-client

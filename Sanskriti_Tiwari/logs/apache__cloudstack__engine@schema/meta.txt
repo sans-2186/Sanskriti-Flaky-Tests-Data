@@ -1,0 +1,3 @@
+url=https://github.com/apache/cloudstack
+sha=30ca5d1a196f45e43fc585e251591685421a6e23
+module=engine/schema

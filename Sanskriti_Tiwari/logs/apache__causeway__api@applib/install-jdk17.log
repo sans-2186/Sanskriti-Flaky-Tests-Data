@@ -1,0 +1,53 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Causeway                                                    [pom]
+[INFO] Apache Causeway Core                                               [pom]
+[INFO] Apache Causeway Commons                                            [jar]
+[INFO] Apache Causeway Api - Schemas                                      [jar]
+[INFO] Apache Causeway Core - Code Gen (ByteBuddy)                        [jar]
+[INFO] Apache Causeway Core - Internal Test Support                       [jar]
+[INFO] Apache Causeway Api - AppLib                                       [jar]
+[INFO] 
+[INFO] ------------------< org.apache.causeway:causeway-bom >------------------
+[INFO] Building Apache Causeway 2.0.0-SNAPSHOT                            [1/7]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[WARNING] Parameter 'runOnlyAtExecutionRoot' is unknown for plugin 'maven-remote-resources-plugin:3.1.0:process (process-resource-bundles)'
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (validate-enforce) @ causeway-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven-version) @ causeway-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-java-version) @ causeway-bom ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:3.1.0:process (process-resource-bundles) @ causeway-bom ---
+[INFO] Preparing remote bundle org.apache.causeway:supplemental-model:1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache Causeway 2.0.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache Causeway .................................... FAILURE [  0.427 s]
+[INFO] Apache Causeway Core ............................... SKIPPED
+[INFO] Apache Causeway Commons ............................ SKIPPED
+[INFO] Apache Causeway Api - Schemas ...................... SKIPPED
+[INFO] Apache Causeway Core - Code Gen (ByteBuddy) ........ SKIPPED
+[INFO] Apache Causeway Core - Internal Test Support ....... SKIPPED
+[INFO] Apache Causeway Api - AppLib ....................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.267 s
+[INFO] Finished at: 2026-11-10T18:38:53Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-remote-resources-plugin:3.1.0:process (process-resource-bundles) on project causeway-bom: Error processing remote resources: The following artifacts could not be resolved: org.apache.causeway:supplemental-model:jar:1.0 (absent): org.apache.causeway:supplemental-model:jar:1.0 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

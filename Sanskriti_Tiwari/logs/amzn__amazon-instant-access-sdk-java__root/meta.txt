@@ -1,0 +1,3 @@
+url=https://github.com/amzn/amazon-instant-access-sdk-java
+sha=3aae2253569751eaa4c419300cf9915f03a42bf1
+module=<root>

@@ -1,0 +1,3 @@
+url=https://github.com/amzn/amazon-hub-counter-sdk-java
+sha=c8d1be1f81539a3aebd31290441c8a9f602ca3d9
+module=<root>

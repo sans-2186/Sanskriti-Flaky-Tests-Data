@@ -1,0 +1,209 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Apache Accumulo Project                                            [pom]
+[INFO] Apache Accumulo Start                                              [jar]
+[INFO] Apache Accumulo Core                                               [jar]
+[INFO] Apache Accumulo Server Base                                        [jar]
+[INFO] 
+[INFO] ----------------< org.apache.accumulo:accumulo-project >----------------
+[INFO] Building Apache Accumulo Project 4.0.0-SNAPSHOT                    [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- build-helper:3.5.0:rootlocation (create-rootlocation-property) @ accumulo-project ---
+[INFO] 
+[INFO] --- build-helper:3.5.0:regex-property (create-automatic-module-name) @ accumulo-project ---
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven-version) @ accumulo-project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-java-version) @ accumulo-project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-accumulo-rules) @ accumulo-project ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- mavanagaiata:1.0.1:commit (git-commit) @ accumulo-project ---
+[INFO] 
+[INFO] --- sortpom:3.3.0:sort (sort-pom) @ accumulo-project ---
+[INFO] Sorting file /tmp/tmp.Gc9xJJrjKk/repo/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- formatter:2.23.0:format (format-java-source) @ accumulo-project ---
+[INFO] Formatting is skipped
+[INFO] 
+[INFO] --- impsort:1.9.0:sort (sort-imports) @ accumulo-project ---
+[INFO] Processed 0 files in 00:00.002 (Already Sorted: 0, Needed Sorting: 0)
+[INFO] 
+[INFO] --- remote-resources:3.1.0:process (process-resource-bundles) @ accumulo-project ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- license:4.3:format (license-headers) @ accumulo-project ---
+[INFO] 
+[INFO] --- modernizer:2.7.0:modernizer (modernizer) @ accumulo-project ---
+[INFO] 
+[INFO] --- warbucks:1.1.2:check (check-junit-tags-on-its) @ accumulo-project ---
+[INFO] Rule 0: Class Matches: 0
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- apache-rat:0.15:check (check-licenses) @ accumulo-project ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- site:3.12.1:attach-descriptor (attach-descriptor) @ accumulo-project ---
+[INFO] No site descriptor found: nothing to attach.
+[INFO] 
+[INFO] --- failsafe:3.2.2:integration-test (run-integration-tests) @ accumulo-project ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- dependency:3.6.1:analyze-only (analyze) @ accumulo-project ---
+[INFO] Skipping pom project
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (check-style) @ accumulo-project ---
+[INFO] 
+[INFO] --- failsafe:3.2.2:verify (run-integration-tests) @ accumulo-project ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] >>> spotbugs:4.7.3.6:check (run-spotbugs) > :spotbugs @ accumulo-project >>>
+[INFO] 
+[INFO] --- spotbugs:4.7.3.6:spotbugs (spotbugs) @ accumulo-project ---
+[INFO] 
+[INFO] <<< spotbugs:4.7.3.6:check (run-spotbugs) < :spotbugs @ accumulo-project <<<
+[INFO] 
+[INFO] 
+[INFO] --- spotbugs:4.7.3.6:check (run-spotbugs) @ accumulo-project ---
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ accumulo-project ---
+[INFO] Installing /tmp/tmp.Gc9xJJrjKk/repo/pom.xml to /home/runner/.m2/repository/org/apache/accumulo/accumulo-project/4.0.0-SNAPSHOT/accumulo-project-4.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< org.apache.accumulo:accumulo-start >-----------------
+[INFO] Building Apache Accumulo Start 4.0.0-SNAPSHOT                      [2/4]
+[INFO]   from start/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- build-helper:3.5.0:rootlocation (create-rootlocation-property) @ accumulo-start ---
+[INFO] 
+[INFO] --- build-helper:3.5.0:regex-property (create-automatic-module-name) @ accumulo-start ---
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-maven-version) @ accumulo-start ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-java-version) @ accumulo-start ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-accumulo-rules) @ accumulo-start ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- mavanagaiata:1.0.1:commit (git-commit) @ accumulo-start ---
+[INFO] 
+[INFO] --- sortpom:3.3.0:sort (sort-pom) @ accumulo-start ---
+[INFO] Sorting file /tmp/tmp.Gc9xJJrjKk/repo/start/pom.xml
+[INFO] Pom file is already sorted, exiting
+[INFO] 
+[INFO] --- formatter:2.23.0:format (format-java-source) @ accumulo-start ---
+[INFO] Formatting is skipped
+[INFO] 
+[INFO] --- impsort:1.9.0:sort (sort-imports) @ accumulo-start ---
+[INFO] Processed 5 files in 00:00.011 (Already Sorted: 5, Needed Sorting: 0)
+[INFO] 
+[INFO] --- remote-resources:3.1.0:process (process-resource-bundles) @ accumulo-start ---
+[INFO] Preparing remote bundle org.apache.apache.resources:apache-jar-resource-bundle:1.5
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ accumulo-start ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.Gc9xJJrjKk/repo/start/src/main/resources
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ accumulo-start ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ accumulo-start ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] Copying 3 resources from target/maven-shared-archive-resources to target/test-classes
+[INFO] 
+[INFO] --- license:4.3:format (license-headers) @ accumulo-start ---
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ accumulo-start ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- modernizer:2.7.0:modernizer (modernizer) @ accumulo-start ---
+[INFO] 
+[INFO] --- warbucks:1.1.2:check (check-junit-tags-on-its) @ accumulo-start ---
+[INFO] Rule 0: Class Matches: 0
+[INFO] Rule 0: Class Failures: 0
+[INFO] Total class failures: 0
+[INFO] 
+[INFO] --- exec:3.1.1:exec (Build Test jars) @ accumulo-start ---
+[INFO] 
+[INFO] --- exec:3.1.1:exec (Build HelloWorld jars) @ accumulo-start ---
+[INFO] 
+[INFO] --- surefire:3.2.2:test (default-test) @ accumulo-start ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- apache-rat:0.15:check (check-licenses) @ accumulo-start ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ accumulo-start ---
+[INFO] 
+[INFO] --- site:3.12.1:attach-descriptor (attach-descriptor) @ accumulo-start ---
+[INFO] Skipping because packaging 'jar' is not pom.
+[INFO] 
+[INFO] --- failsafe:3.2.2:integration-test (run-integration-tests) @ accumulo-start ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- dependency:3.6.1:analyze-only (analyze) @ accumulo-start ---
+[INFO] No dependency problems found
+[INFO] 
+[INFO] --- checkstyle:3.3.1:check (check-style) @ accumulo-start ---
+[INFO] 
+[INFO] --- failsafe:3.2.2:verify (run-integration-tests) @ accumulo-start ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] >>> spotbugs:4.7.3.6:check (run-spotbugs) > :spotbugs @ accumulo-start >>>
+[INFO] 
+[INFO] --- spotbugs:4.7.3.6:spotbugs (spotbugs) @ accumulo-start ---
+[INFO] 
+[INFO] <<< spotbugs:4.7.3.6:check (run-spotbugs) < :spotbugs @ accumulo-start <<<
+[INFO] 
+[INFO] 
+[INFO] --- spotbugs:4.7.3.6:check (run-spotbugs) @ accumulo-start ---
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ accumulo-start ---
+[INFO] Installing /tmp/tmp.Gc9xJJrjKk/repo/start/pom.xml to /home/runner/.m2/repository/org/apache/accumulo/accumulo-start/4.0.0-SNAPSHOT/accumulo-start-4.0.0-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.Gc9xJJrjKk/repo/start/target/accumulo-start-4.0.0-SNAPSHOT.jar to /home/runner/.m2/repository/org/apache/accumulo/accumulo-start/4.0.0-SNAPSHOT/accumulo-start-4.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] -----------------< org.apache.accumulo:accumulo-core >------------------
+[INFO] Building Apache Accumulo Core 4.0.0-SNAPSHOT                       [3/4]
+[INFO]   from core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] The POM for org.apache.accumulo:accumulo-access:jar:1.0.0-SNAPSHOT is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Apache Accumulo Project 4.0.0-SNAPSHOT:
+[INFO] 
+[INFO] Apache Accumulo Project ............................ SUCCESS [  6.788 s]
+[INFO] Apache Accumulo Start .............................. SUCCESS [  3.714 s]
+[INFO] Apache Accumulo Core ............................... FAILURE [  0.125 s]
+[INFO] Apache Accumulo Server Base ........................ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.923 s
+[INFO] Finished at: 2026-11-10T18:36:35Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project accumulo-core: Could not resolve dependencies for project org.apache.accumulo:accumulo-core:jar:4.0.0-SNAPSHOT
+[ERROR] dependency: org.apache.accumulo:accumulo-access:jar:1.0.0-SNAPSHOT (compile)
+[ERROR] 	org.apache.accumulo:accumulo-access:jar:1.0.0-SNAPSHOT was not found in https://repository.apache.org/snapshots during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of apache.snapshots has elapsed or updates are forced
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :accumulo-core

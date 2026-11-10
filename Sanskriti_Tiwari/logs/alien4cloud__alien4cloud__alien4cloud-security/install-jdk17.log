@@ -1,0 +1,46 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Application LIfecycle ENabler parent project.                      [pom]
+[INFO] Alien 4 Cloud Common                                               [jar]
+[INFO] Alien 4 Cloud Dao                                                  [jar]
+[INFO] Alien 4 Cloud Security                                             [jar]
+[INFO] 
+[INFO] -------------------< alien4cloud:alien4cloud-parent >-------------------
+[INFO] Building Application LIfecycle ENabler parent project. 2.1.0-SNAPSHOT [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[WARNING] The POM for org.apache.maven.plugins:maven-javadoc-plugin:jar:2.9 is invalid, transitive dependencies (if any) will not be available: 4 problems were encountered while building the effective model for ::
+[ERROR] 'modelVersion' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'groupId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'artifactId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] 'version' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Application LIfecycle ENabler parent project. 2.1.0-SNAPSHOT:
+[INFO] 
+[INFO] Application LIfecycle ENabler parent project. ...... FAILURE [  0.016 s]
+[INFO] Alien 4 Cloud Common ............................... SKIPPED
+[INFO] Alien 4 Cloud Dao .................................. SKIPPED
+[INFO] Alien 4 Cloud Security ............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.251 s
+[INFO] Finished at: 2026-11-10T18:37:59Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Plugin org.apache.maven.plugins:maven-javadoc-plugin:2.9 or one of its dependencies could not be resolved:
+[ERROR] 	4 problems were encountered while building the effective model for ::
+[ERROR] [ERROR] 'modelVersion' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] [ERROR] 'groupId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] [ERROR] 'artifactId' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] [ERROR] 'version' is missing. @ [unknown-group-id]:[unknown-artifact-id]:[unknown-version]
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException

@@ -1,0 +1,251 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Riptide                                                            [pom]
+[INFO] Riptide: Parent                                                    [pom]
+[INFO] Riptide: Core                                                      [jar]
+[INFO] Riptide: Capture                                                   [jar]
+[INFO] Riptide: HTTP Client                                               [jar]
+[INFO] Riptide: Authorization                                             [jar]
+[INFO] Riptide: Chaos                                                     [jar]
+[INFO] Riptide: Problem                                                   [jar]
+[INFO] Riptide: Compatibility                                             [jar]
+[INFO] Riptide: Request Compression                                       [jar]
+[INFO] Riptide: Concurrent                                                [jar]
+[INFO] Riptide: Idempotency                                               [jar]
+[INFO] Riptide: Faults                                                    [jar]
+[INFO] Riptide: Failsafe                                                  [jar]
+[INFO] Riptide: Logbook                                                   [jar]
+[INFO] Riptide: Micrometer                                                [jar]
+[INFO] Riptide: OpenTracing                                               [jar]
+[INFO] Riptide: OpenTelemetry                                             [jar]
+[INFO] Riptide: SOAP                                                      [jar]
+[INFO] Riptide: Stream                                                    [jar]
+[INFO] Riptide: Spring Boot Auto Configuration                            [jar]
+[INFO] 
+[INFO] ------------------------< org.zalando:riptide >-------------------------
+[INFO] Building Riptide 3.2.1-SNAPSHOT                                   [1/21]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.0.0:enforce (enforce-maven) @ riptide ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- duplicate-finder:1.5.1:check (default) @ riptide ---
+[INFO] Ignoring POM project!
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (prepare-agent) @ riptide ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/tmp/tmp.JfOcexVxE0/repo/target/jacoco.exec
+[INFO] 
+[INFO] --- dependency-check:7.0.1:check (default) @ riptide ---
+[WARNING]  Parameter 'failBuildOnAnyVulnerability' (user property 'failBuildOnAnyVulnerability') is deprecated: use {@link BaseDependencyCheckMojo#failBuildOnCVSS} with a
+value of 0 instead
+[INFO] Checking for updates
+[ERROR] Error retrieving https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta; received response code 403; Forbidden
+[ERROR] Error retrieving https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta; received response code 403; Forbidden
+[ERROR] Error retrieving https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta; received response code 403; Forbidden
+[ERROR] Error retrieving https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta; received response code 403; Forbidden
+[ERROR] Unable to download meta file: https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta
+org.owasp.dependencycheck.data.update.exception.UpdateException: Unable to download meta file: https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.doMetaDownload (NvdCveUpdater.java:411)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.getMetaFile (NvdCveUpdater.java:356)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.getUpdatesNeeded (NvdCveUpdater.java:464)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.update (NvdCveUpdater.java:133)
+    at org.owasp.dependencycheck.Engine.doUpdates (Engine.java:878)
+    at org.owasp.dependencycheck.Engine.initializeAndUpdateDatabase (Engine.java:683)
+    at org.owasp.dependencycheck.Engine.analyzeDependencies (Engine.java:609)
+    at org.owasp.dependencycheck.maven.BaseDependencyCheckMojo.runCheck (BaseDependencyCheckMojo.java:1807)
+    at org.owasp.dependencycheck.maven.BaseDependencyCheckMojo.execute (BaseDependencyCheckMojo.java:995)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:919)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:285)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:207)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:569)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: org.owasp.dependencycheck.utils.DownloadFailedException: Download failed, unable to retrieve 'https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta'; Error downloading file https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta; unable to connect.
+    at org.owasp.dependencycheck.utils.Downloader.fetchContent (Downloader.java:187)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.doMetaDownload (NvdCveUpdater.java:382)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.getMetaFile (NvdCveUpdater.java:356)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.getUpdatesNeeded (NvdCveUpdater.java:464)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.update (NvdCveUpdater.java:133)
+    at org.owasp.dependencycheck.Engine.doUpdates (Engine.java:878)
+    at org.owasp.dependencycheck.Engine.initializeAndUpdateDatabase (Engine.java:683)
+    at org.owasp.dependencycheck.Engine.analyzeDependencies (Engine.java:609)
+    at org.owasp.dependencycheck.maven.BaseDependencyCheckMojo.runCheck (BaseDependencyCheckMojo.java:1807)
+    at org.owasp.dependencycheck.maven.BaseDependencyCheckMojo.execute (BaseDependencyCheckMojo.java:995)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:919)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:285)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:207)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:569)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: org.owasp.dependencycheck.utils.DownloadFailedException: Error downloading file https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta; unable to connect.
+    at org.owasp.dependencycheck.utils.HttpResourceConnection.obtainConnection (HttpResourceConnection.java:267)
+    at org.owasp.dependencycheck.utils.HttpResourceConnection.fetch (HttpResourceConnection.java:163)
+    at org.owasp.dependencycheck.utils.Downloader.fetchContent (Downloader.java:182)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.doMetaDownload (NvdCveUpdater.java:382)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.getMetaFile (NvdCveUpdater.java:356)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.getUpdatesNeeded (NvdCveUpdater.java:464)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.update (NvdCveUpdater.java:133)
+    at org.owasp.dependencycheck.Engine.doUpdates (Engine.java:878)
+    at org.owasp.dependencycheck.Engine.initializeAndUpdateDatabase (Engine.java:683)
+    at org.owasp.dependencycheck.Engine.analyzeDependencies (Engine.java:609)
+    at org.owasp.dependencycheck.maven.BaseDependencyCheckMojo.runCheck (BaseDependencyCheckMojo.java:1807)
+    at org.owasp.dependencycheck.maven.BaseDependencyCheckMojo.execute (BaseDependencyCheckMojo.java:995)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:919)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:285)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:207)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:569)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: org.owasp.dependencycheck.utils.DownloadFailedException: Error retrieving https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta; received response code 403; Forbidden
+    at org.owasp.dependencycheck.utils.HttpResourceConnection.obtainConnection (HttpResourceConnection.java:249)
+    at org.owasp.dependencycheck.utils.HttpResourceConnection.fetch (HttpResourceConnection.java:163)
+    at org.owasp.dependencycheck.utils.Downloader.fetchContent (Downloader.java:182)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.doMetaDownload (NvdCveUpdater.java:382)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.getMetaFile (NvdCveUpdater.java:356)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.getUpdatesNeeded (NvdCveUpdater.java:464)
+    at org.owasp.dependencycheck.data.update.NvdCveUpdater.update (NvdCveUpdater.java:133)
+    at org.owasp.dependencycheck.Engine.doUpdates (Engine.java:878)
+    at org.owasp.dependencycheck.Engine.initializeAndUpdateDatabase (Engine.java:683)
+    at org.owasp.dependencycheck.Engine.analyzeDependencies (Engine.java:609)
+    at org.owasp.dependencycheck.maven.BaseDependencyCheckMojo.runCheck (BaseDependencyCheckMojo.java:1807)
+    at org.owasp.dependencycheck.maven.BaseDependencyCheckMojo.execute (BaseDependencyCheckMojo.java:995)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:919)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:285)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:207)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:569)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[WARNING] A new version of dependency-check is available. Consider updating to version 12.1.0.
+[INFO] Skipping RetireJS update since last update was within 24 hours.
+[WARNING] Unable to update 1 or more Cached Web DataSource, using local data instead. Results may not include recent vulnerabilities.
+[ERROR] Unable to continue dependency-check analysis.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Riptide 3.2.1-SNAPSHOT:
+[INFO] 
+[INFO] Riptide ............................................ FAILURE [ 19.373 s]
+[INFO] Riptide: Parent .................................... SKIPPED
+[INFO] Riptide: Core ...................................... SKIPPED
+[INFO] Riptide: Capture ................................... SKIPPED
+[INFO] Riptide: HTTP Client ............................... SKIPPED
+[INFO] Riptide: Authorization ............................. SKIPPED
+[INFO] Riptide: Chaos ..................................... SKIPPED
+[INFO] Riptide: Problem ................................... SKIPPED
+[INFO] Riptide: Compatibility ............................. SKIPPED
+[INFO] Riptide: Request Compression ....................... SKIPPED
+[INFO] Riptide: Concurrent ................................ SKIPPED
+[INFO] Riptide: Idempotency ............................... SKIPPED
+[INFO] Riptide: Faults .................................... SKIPPED
+[INFO] Riptide: Failsafe .................................. SKIPPED
+[INFO] Riptide: Logbook ................................... SKIPPED
+[INFO] Riptide: Micrometer ................................ SKIPPED
+[INFO] Riptide: OpenTracing ............................... SKIPPED
+[INFO] Riptide: OpenTelemetry ............................. SKIPPED
+[INFO] Riptide: SOAP ...................................... SKIPPED
+[INFO] Riptide: Stream .................................... SKIPPED
+[INFO] Riptide: Spring Boot Auto Configuration ............ SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.633 s
+[INFO] Finished at: 2026-11-10T19:22:55Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.owasp:dependency-check-maven:7.0.1:check (default) on project riptide: Fatal exception(s) analyzing Riptide: One or more exceptions occurred during analysis:
+[ERROR] 	UpdateException: Unable to download meta file: https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta
+[ERROR] 		caused by DownloadFailedException: Download failed, unable to retrieve 'https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta'; Error downloading file https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta; unable to connect.
+[ERROR] 		caused by DownloadFailedException: Error downloading file https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta; unable to connect.
+[ERROR] 		caused by DownloadFailedException: Error retrieving https://nvd.nist.gov/feeds/json/cve/1.1/nvdcve-1.1-modified.meta; received response code 403; Forbidden
+[ERROR] 	NoDataException: No documents exist
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

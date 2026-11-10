@@ -1,0 +1,3 @@
+url=https://github.com/amzn/amazon-pay-api-sdk-java
+sha=4093fc0ddca8e410764919f587a2e984246d5dc1
+module=<root>

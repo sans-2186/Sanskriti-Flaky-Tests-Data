@@ -1,0 +1,20 @@
+Cloning into '/tmp/tmp.VayW3NJnt9/repo'...
+Updating files:  79% (2579/3249)Updating files:  80% (2600/3249)Updating files:  81% (2632/3249)Updating files:  82% (2665/3249)Updating files:  83% (2697/3249)Updating files:  84% (2730/3249)Updating files:  85% (2762/3249)Updating files:  86% (2795/3249)Updating files:  87% (2827/3249)Updating files:  88% (2860/3249)Updating files:  89% (2892/3249)Updating files:  90% (2925/3249)Updating files:  91% (2957/3249)Updating files:  92% (2990/3249)Updating files:  93% (3022/3249)Updating files:  94% (3055/3249)Updating files:  95% (3087/3249)Updating files:  96% (3120/3249)Updating files:  97% (3152/3249)Updating files:  98% (3185/3249)Updating files:  99% (3217/3249)Updating files: 100% (3249/3249)Updating files: 100% (3249/3249), done.
+Note: switching to 'e05e9c5e4be580691cc55a59f3256595393203a1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at e05e9c5e jsonpath.extract support MultiPropertySegement

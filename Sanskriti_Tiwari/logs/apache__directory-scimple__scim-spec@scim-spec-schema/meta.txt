@@ -1,0 +1,3 @@
+url=https://github.com/apache/directory-scimple
+sha=7f4c38e7b295ba8ba06b3490d9ec9f983570879e
+module=scim-spec/scim-spec-schema

@@ -1,0 +1,347 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Vertexium                                                          [pom]
+[INFO] Vertexium: Core                                                    [jar]
+[INFO] Vertexium: Test                                                    [jar]
+[INFO] Vertexium: Accumulo: Iterators                                     [jar]
+[INFO] Vertexium: Accumulo                                                [jar]
+[INFO] 
+[INFO] --------------------< org.vertexium:vertexium-root >--------------------
+[INFO] Building Vertexium 4.4.2-SNAPSHOT                                  [1/5]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ vertexium-root >>>
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ vertexium-root ---
+[INFO] 
+[INFO] --- buildnumber:1.2:create (create-build-number) @ vertexium-root ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.D6VZtM9ig1/repo && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.D6VZtM9ig1/repo
+[INFO] Storing buildNumber: f1fd59e23610312cf0ec6756ea01baaf56cdb74e at timestamp: 1794338403708
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.D6VZtM9ig1/repo && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.D6VZtM9ig1/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber:1.2:create-timestamp (create-formatted-timestamp) @ vertexium-root ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ vertexium-root <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ vertexium-root ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.D6VZtM9ig1/repo/./.flakesync/org.vertexium.accumulo.AccumuloGraphTest.testFindPathsMultiplePaths-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] --------------------< org.vertexium:vertexium-core >--------------------
+[INFO] Building Vertexium: Core 4.4.2-SNAPSHOT                            [2/5]
+[INFO]   from core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ vertexium-core >>>
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ vertexium-core ---
+[INFO] 
+[INFO] --- buildnumber:1.2:create (create-build-number) @ vertexium-core ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.D6VZtM9ig1/repo/core && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.D6VZtM9ig1/repo/core
+[INFO] Storing buildNumber: f1fd59e23610312cf0ec6756ea01baaf56cdb74e at timestamp: 1794338403964
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.D6VZtM9ig1/repo/core && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.D6VZtM9ig1/repo/core
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber:1.2:create-timestamp (create-formatted-timestamp) @ vertexium-core ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ vertexium-core ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.D6VZtM9ig1/repo/core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ vertexium-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ vertexium-core ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.D6VZtM9ig1/repo/core/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:testCompile (default-testCompile) @ vertexium-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ vertexium-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ vertexium-core ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.D6VZtM9ig1/repo/core/./.flakesync/org.vertexium.accumulo.AccumuloGraphTest.testFindPathsMultiplePaths-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] --------------------< org.vertexium:vertexium-test >--------------------
+[INFO] Building Vertexium: Test 4.4.2-SNAPSHOT                            [3/5]
+[INFO]   from test/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ vertexium-test >>>
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ vertexium-test ---
+[INFO] 
+[INFO] --- buildnumber:1.2:create (create-build-number) @ vertexium-test ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.D6VZtM9ig1/repo/test && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.D6VZtM9ig1/repo/test
+[INFO] Storing buildNumber: f1fd59e23610312cf0ec6756ea01baaf56cdb74e at timestamp: 1794338404274
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.D6VZtM9ig1/repo/test && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.D6VZtM9ig1/repo/test
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber:1.2:create-timestamp (create-formatted-timestamp) @ vertexium-test ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ vertexium-test ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.D6VZtM9ig1/repo/test/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ vertexium-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ vertexium-test ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.D6VZtM9ig1/repo/test/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:testCompile (default-testCompile) @ vertexium-test ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ vertexium-test <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ vertexium-test ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.D6VZtM9ig1/repo/test/./.flakesync/org.vertexium.accumulo.AccumuloGraphTest.testFindPathsMultiplePaths-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] -------------< org.vertexium:vertexium-accumulo-iterators >-------------
+[INFO] Building Vertexium: Accumulo: Iterators 4.4.2-SNAPSHOT             [4/5]
+[INFO]   from accumulo-iterators/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ vertexium-accumulo-iterators >>>
+[WARNING] 1 problem was encountered while building the effective model for org.apache.hadoop:hadoop-annotations:jar:2.6.4 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ vertexium-accumulo-iterators ---
+[INFO] 
+[INFO] --- buildnumber:1.2:create (create-build-number) @ vertexium-accumulo-iterators ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.D6VZtM9ig1/repo/accumulo-iterators && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.D6VZtM9ig1/repo/accumulo-iterators
+[INFO] Storing buildNumber: f1fd59e23610312cf0ec6756ea01baaf56cdb74e at timestamp: 1794338404523
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.D6VZtM9ig1/repo/accumulo-iterators && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.D6VZtM9ig1/repo/accumulo-iterators
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber:1.2:create-timestamp (create-formatted-timestamp) @ vertexium-accumulo-iterators ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ vertexium-accumulo-iterators ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.D6VZtM9ig1/repo/accumulo-iterators/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ vertexium-accumulo-iterators ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ vertexium-accumulo-iterators ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.D6VZtM9ig1/repo/accumulo-iterators/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:testCompile (default-testCompile) @ vertexium-accumulo-iterators ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ vertexium-accumulo-iterators <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ vertexium-accumulo-iterators ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.D6VZtM9ig1/repo/accumulo-iterators/./.flakesync/org.vertexium.accumulo.AccumuloGraphTest.testFindPathsMultiplePaths-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ------------------< org.vertexium:vertexium-accumulo >------------------
+[INFO] Building Vertexium: Accumulo 4.4.2-SNAPSHOT                        [5/5]
+[INFO]   from accumulo/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ vertexium-accumulo >>>
+[WARNING] 2 problems were encountered while building the effective model for org.apache.yetus:audience-annotations:jar:0.5.0 during dependency collection step for project (use -X to see details)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- enforcer:1.0:enforce (enforce-maven) @ vertexium-accumulo ---
+[INFO] 
+[INFO] --- buildnumber:1.2:create (create-build-number) @ vertexium-accumulo ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.D6VZtM9ig1/repo/accumulo && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.D6VZtM9ig1/repo/accumulo
+[INFO] Storing buildNumber: f1fd59e23610312cf0ec6756ea01baaf56cdb74e at timestamp: 1794338404623
+[INFO] Executing: /bin/sh -c cd /tmp/tmp.D6VZtM9ig1/repo/accumulo && git rev-parse --verify HEAD
+[INFO] Working directory: /tmp/tmp.D6VZtM9ig1/repo/accumulo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- buildnumber:1.2:create-timestamp (create-formatted-timestamp) @ vertexium-accumulo ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ vertexium-accumulo ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.D6VZtM9ig1/repo/accumulo/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.5.1:compile (default-compile) @ vertexium-accumulo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ vertexium-accumulo ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.5.1:testCompile (default-testCompile) @ vertexium-accumulo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- jar:3.0.1:test-jar (default) @ vertexium-accumulo ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ vertexium-accumulo <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ vertexium-accumulo ---
+INFO: Running DeltaDebugMojo
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Vertexium 4.4.2-SNAPSHOT:
+[INFO] 
+[INFO] Vertexium .......................................... SUCCESS [  0.623 s]
+[INFO] Vertexium: Core .................................... SUCCESS [  0.337 s]
+[INFO] Vertexium: Test .................................... SUCCESS [  0.038 s]
+[INFO] Vertexium: Accumulo: Iterators ..................... SUCCESS [  0.252 s]
+[INFO] Vertexium: Accumulo ................................ SUCCESS [  0.225 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.661 s
+[INFO] Finished at: 2026-11-10T19:20:04Z
+[INFO] ------------------------------------------------------------------------

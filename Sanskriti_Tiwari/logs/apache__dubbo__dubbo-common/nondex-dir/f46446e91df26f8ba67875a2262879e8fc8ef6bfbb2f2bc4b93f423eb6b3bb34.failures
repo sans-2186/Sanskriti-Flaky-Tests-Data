@@ -1,0 +1,4 @@
+org.apache.dubbo.common.utils.AnnotationUtilsTest#testGetAllDeclaredAnnotations
+org.apache.dubbo.common.utils.AnnotationUtilsTest#testGetMetaAnnotations
+org.apache.dubbo.common.utils.AnnotationUtilsTest#testGetAllMetaAnnotations
+org.apache.dubbo.common.utils.AnnotationUtilsTest#testGetDeclaredAnnotations

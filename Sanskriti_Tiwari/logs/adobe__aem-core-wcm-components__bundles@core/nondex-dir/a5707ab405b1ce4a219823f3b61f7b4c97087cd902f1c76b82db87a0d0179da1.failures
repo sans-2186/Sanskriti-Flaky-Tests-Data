@@ -1,0 +1,10 @@
+com.adobe.cq.wcm.core.components.internal.models.v1.PageImplTest#testPage
+com.adobe.cq.wcm.core.components.internal.models.v1.contentfragment.ContentFragmentImplTest#structuredVariation
+com.adobe.cq.wcm.core.components.internal.models.v1.contentfragment.ContentFragmentImplTest#structuredNonExistingVariation
+com.adobe.cq.wcm.core.components.internal.models.v2.PageImplTest#testPage
+com.adobe.cq.wcm.core.components.internal.models.v2.PageImplTest#testPageWithDeprecatedCaconfig
+com.adobe.cq.wcm.core.components.internal.servlets.contentfragment.ElementsDataSourceServletTest#testFragmentPathOverride
+com.adobe.cq.wcm.core.components.internal.servlets.contentfragment.ElementsDataSourceServletTest#testFragmentPathStructured
+com.adobe.cq.wcm.core.components.internal.models.v3.PageImplTest#testPage
+com.adobe.cq.wcm.core.components.internal.models.v3.PageImplTest#testPageWithDeprecatedCaconfig
+com.adobe.cq.wcm.core.components.internal.link.DefaultPathProcessorTest#testVanityUrl

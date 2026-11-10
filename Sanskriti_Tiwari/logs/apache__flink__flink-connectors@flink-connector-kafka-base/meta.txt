@@ -1,0 +1,3 @@
+url=https://github.com/apache/flink
+sha=23c9b5ac50d04d28a34a87c78eb2d3331c06b74b
+module=flink-connectors/flink-connector-kafka-base

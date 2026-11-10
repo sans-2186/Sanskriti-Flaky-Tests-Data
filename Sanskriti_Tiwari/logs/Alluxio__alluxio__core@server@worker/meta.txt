@@ -1,0 +1,3 @@
+url=https://github.com/Alluxio/alluxio
+sha=68fcda9dd2ca2181eb897e10ca02fa5bc3a3099f
+module=core/server/worker

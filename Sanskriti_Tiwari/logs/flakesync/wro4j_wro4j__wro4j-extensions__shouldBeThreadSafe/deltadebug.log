@@ -1,0 +1,357 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] wro4j parent                                                       [pom]
+[INFO] wro4j core                                                         [jar]
+[INFO] wro4j extensions                                                   [jar]
+[INFO] 
+[INFO] ---------------------< ro.isdc.wro4j:wro4j-parent >---------------------
+[INFO] Building wro4j parent 1.8.1-SNAPSHOT                               [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ wro4j-parent >>>
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-maven) @ wro4j-parent ---
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ wro4j-parent ---
+[INFO] ShortRevision tag detected. The value is '8'.
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.DPFUQeyGJX/repo' && 'git' 'rev-parse' '--verify' '--short=8' 'HEAD'
+[INFO] Working directory: /tmp/tmp.DPFUQeyGJX/repo
+[INFO] Storing buildNumber: 185ab607 at timestamp: 1794338946033
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] ShortRevision tag detected. The value is '8'.
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.DPFUQeyGJX/repo' && 'git' 'rev-parse' '--verify' '--short=8' 'HEAD'
+[INFO] Working directory: /tmp/tmp.DPFUQeyGJX/repo
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- jacoco:0.7.7.201606060606:prepare-agent (default) @ wro4j-parent ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/tmp/tmp.DPFUQeyGJX/repo/target/jacoco.exec
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ wro4j-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ wro4j-parent ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.DPFUQeyGJX/repo/./.flakesync/ro.isdc.wro.extensions.processor.TestBourbonCssProcessor.shouldBeThreadSafe-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] ----------------------< ro.isdc.wro4j:wro4j-core >----------------------
+[INFO] Building wro4j core 1.8.1-SNAPSHOT                                 [2/3]
+[INFO]   from wro4j-core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ wro4j-core >>>
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-maven) @ wro4j-core ---
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ wro4j-core ---
+[INFO] ShortRevision tag detected. The value is '8'.
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.DPFUQeyGJX/repo/wro4j-core' && 'git' 'rev-parse' '--verify' '--short=8' 'HEAD'
+[INFO] Working directory: /tmp/tmp.DPFUQeyGJX/repo/wro4j-core
+[INFO] Storing buildNumber: 185ab607 at timestamp: 1794338946565
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] ShortRevision tag detected. The value is '8'.
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.DPFUQeyGJX/repo/wro4j-core' && 'git' 'rev-parse' '--verify' '--short=8' 'HEAD'
+[INFO] Working directory: /tmp/tmp.DPFUQeyGJX/repo/wro4j-core
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- jacoco:0.7.7.201606060606:prepare-agent (default) @ wro4j-core ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/tmp/tmp.DPFUQeyGJX/repo/wro4j-core/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ wro4j-core ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/java to target/classes
+[INFO] 
+[INFO] --- compiler:2.3.2:compile (default-compile) @ wro4j-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ wro4j-core ---
+[INFO] Copying 328 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:2.3.2:testCompile (default-testCompile) @ wro4j-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ wro4j-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ wro4j-core ---
+INFO: Running DeltaDebugMojo
+java.io.FileNotFoundException: /tmp/tmp.DPFUQeyGJX/repo/wro4j-core/./.flakesync/ro.isdc.wro.extensions.processor.TestBourbonCssProcessor.shouldBeThreadSafe-Locations.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at flakesync.DeltaDebugMojo.generateLocsList(DeltaDebugMojo.java:109)
+	at flakesync.DeltaDebugMojo.execute(DeltaDebugMojo.java:70)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:126)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:328)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:316)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:174)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:75)
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:162)
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:159)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:105)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:73)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:53)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:118)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:261)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:173)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:101)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:919)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:285)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:361)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314)
+[INFO] 
+[INFO] -------------------< ro.isdc.wro4j:wro4j-extensions >-------------------
+[INFO] Building wro4j extensions 1.8.1-SNAPSHOT                           [3/3]
+[INFO]   from wro4j-extensions/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:deltadebug (default-cli) > test-compile @ wro4j-extensions >>>
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-maven) @ wro4j-extensions ---
+[INFO] 
+[INFO] --- buildnumber:1.4:create (default) @ wro4j-extensions ---
+[INFO] ShortRevision tag detected. The value is '8'.
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.DPFUQeyGJX/repo/wro4j-extensions' && 'git' 'rev-parse' '--verify' '--short=8' 'HEAD'
+[INFO] Working directory: /tmp/tmp.DPFUQeyGJX/repo/wro4j-extensions
+[INFO] Storing buildNumber: 185ab607 at timestamp: 1794338946926
+[WARNING] Cannot get the branch information from the git repository: 
+Detecting the current branch failed: fatal: ref HEAD is not a symbolic ref
+
+[INFO] ShortRevision tag detected. The value is '8'.
+[INFO] Executing: /bin/sh -c cd '/tmp/tmp.DPFUQeyGJX/repo/wro4j-extensions' && 'git' 'rev-parse' '--verify' '--short=8' 'HEAD'
+[INFO] Working directory: /tmp/tmp.DPFUQeyGJX/repo/wro4j-extensions
+[INFO] Storing buildScmBranch: UNKNOWN
+[INFO] 
+[INFO] --- jacoco:0.7.7.201606060606:prepare-agent (default) @ wro4j-extensions ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/tmp/tmp.DPFUQeyGJX/repo/wro4j-extensions/target/jacoco.exec
+[INFO] 
+[INFO] --- gplus:1.6:generateStubs (default) @ wro4j-extensions ---
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass (file:/home/runner/.m2/repository/org/codehaus/groovy/groovy/2.4.12/groovy-2.4.12.jar) to method java.lang.Object.finalize()
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.CachedClass
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Using Groovy 2.4.12 to perform generateStubs.
+[INFO] Generated 4 stubs.
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ wro4j-extensions ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 19 resources from src/main/java to target/classes
+[INFO] 
+[INFO] --- compiler:2.3.2:compile (default-compile) @ wro4j-extensions ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gplus:1.6:compile (default) @ wro4j-extensions ---
+[INFO] Using Groovy 2.4.12 to perform compile.
+[INFO] Compiled 5 files.
+[INFO] 
+[INFO] --- gplus:1.6:generateTestStubs (default) @ wro4j-extensions ---
+[INFO] Using Groovy 2.4.12 to perform generateTestStubs.
+[INFO] Generated 1 stub.
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ wro4j-extensions ---
+[INFO] Copying 808 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:2.3.2:testCompile (default-testCompile) @ wro4j-extensions ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- gplus:1.6:compileTests (default) @ wro4j-extensions ---
+[INFO] Using Groovy 2.4.12 to perform compileTests.
+[INFO] Compiled 21 files.
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:deltadebug (default-cli) < test-compile @ wro4j-extensions <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:deltadebug (default-cli) @ wro4j-extensions ---
+INFO: Running DeltaDebugMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ro.isdc.wro.extensions.processor.TestBourbonCssProcessor
+unsupported Java version "11", defaulting to 1.7
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.jruby.util.io.FilenoUtil (file:/home/runner/.m2/repository/org/jruby/jruby-core/9.0.5.0/jruby-core-9.0.5.0.jar) to method sun.nio.ch.SelChImpl.getFD()
+WARNING: Please consider reporting this to the maintainers of org.jruby.util.io.FilenoUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+io/console on JRuby shells out to stty for most operations
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 16.208 sec <<< FAILURE! - in ro.isdc.wro.extensions.processor.TestBourbonCssProcessor
+shouldBeThreadSafe(ro.isdc.wro.extensions.processor.TestBourbonCssProcessor)  Time elapsed: 16.154 sec  <<< ERROR!
+java.util.concurrent.ExecutionException: java.lang.RuntimeException: ro.isdc.wro.WroRuntimeException: org.jruby.embed.EvalFailedException: java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at ro.isdc.wro.extensions.processor.TestBourbonCssProcessor.shouldBeThreadSafe(TestBourbonCssProcessor.java:71)
+Caused by: java.lang.RuntimeException: ro.isdc.wro.WroRuntimeException: org.jruby.embed.EvalFailedException: java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+Caused by: ro.isdc.wro.WroRuntimeException: org.jruby.embed.EvalFailedException: java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+Caused by: javax.script.ScriptException: org.jruby.embed.EvalFailedException: java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+Caused by: org.jruby.embed.EvalFailedException: java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+Caused by: java.lang.IndexOutOfBoundsException: Index 2 out of bounds for length 2
+
+
+Results :
+
+Tests in error: 
+  TestBourbonCssProcessor.shouldBeThreadSafe:71 » Execution java.lang.RuntimeExc...
+
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+
+INFO: Surefire failed when running tests for clean_jOAKYOF2WupPQAjZLfk3mKNdV4Z+NovHq9UCgbhbRdw= with delay: 200
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ro.isdc.wro.extensions.processor.TestBourbonCssProcessor
+unsupported Java version "11", defaulting to 1.7
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.jruby.util.io.FilenoUtil (file:/home/runner/.m2/repository/org/jruby/jruby-core/9.0.5.0/jruby-core-9.0.5.0.jar) to method sun.nio.ch.SelChImpl.getFD()
+WARNING: Please consider reporting this to the maintainers of org.jruby.util.io.FilenoUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+io/console on JRuby shells out to stty for most operations
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.7 sec - in ro.isdc.wro.extensions.processor.TestBourbonCssProcessor
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ro.isdc.wro.extensions.processor.TestBourbonCssProcessor
+unsupported Java version "11", defaulting to 1.7
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.jruby.util.io.FilenoUtil (file:/home/runner/.m2/repository/org/jruby/jruby-core/9.0.5.0/jruby-core-9.0.5.0.jar) to method sun.nio.ch.SelChImpl.getFD()
+WARNING: Please consider reporting this to the maintainers of org.jruby.util.io.FilenoUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+io/console on JRuby shells out to stty for most operations
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 88.732 sec - in ro.isdc.wro.extensions.processor.TestBourbonCssProcessor
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+DELTA UPDATE DELAY: 400
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ro.isdc.wro.extensions.processor.TestBourbonCssProcessor
+unsupported Java version "11", defaulting to 1.7
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.jruby.util.io.FilenoUtil (file:/home/runner/.m2/repository/org/jruby/jruby-core/9.0.5.0/jruby-core-9.0.5.0.jar) to method sun.nio.ch.SelChImpl.getFD()
+WARNING: Please consider reporting this to the maintainers of org.jruby.util.io.FilenoUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+io/console on JRuby shells out to stty for most operations
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.272 sec - in ro.isdc.wro.extensions.processor.TestBourbonCssProcessor
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ro.isdc.wro.extensions.processor.TestBourbonCssProcessor
+unsupported Java version "11", defaulting to 1.7
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.jruby.util.io.FilenoUtil (file:/home/runner/.m2/repository/org/jruby/jruby-core/9.0.5.0/jruby-core-9.0.5.0.jar) to method sun.nio.ch.SelChImpl.getFD()
+WARNING: Please consider reporting this to the maintainers of org.jruby.util.io.FilenoUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+io/console on JRuby shells out to stty for most operations
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 174.452 sec - in ro.isdc.wro.extensions.processor.TestBourbonCssProcessor
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+DELTA UPDATE DELAY: 800
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ro.isdc.wro.extensions.processor.TestBourbonCssProcessor
+unsupported Java version "11", defaulting to 1.7
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.jruby.util.io.FilenoUtil (file:/home/runner/.m2/repository/org/jruby/jruby-core/9.0.5.0/jruby-core-9.0.5.0.jar) to method sun.nio.ch.SelChImpl.getFD()
+WARNING: Please consider reporting this to the maintainers of org.jruby.util.io.FilenoUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+io/console on JRuby shells out to stty for most operations
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.506 sec - in ro.isdc.wro.extensions.processor.TestBourbonCssProcessor
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ro.isdc.wro.extensions.processor.TestBourbonCssProcessor
+unsupported Java version "11", defaulting to 1.7
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.jruby.util.io.FilenoUtil (file:/home/runner/.m2/repository/org/jruby/jruby-core/9.0.5.0/jruby-core-9.0.5.0.jar) to method sun.nio.ch.SelChImpl.getFD()
+WARNING: Please consider reporting this to the maintainers of org.jruby.util.io.FilenoUtil
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+io/console on JRuby shells out to stty for most operations

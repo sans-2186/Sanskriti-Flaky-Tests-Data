@@ -1,0 +1,4 @@
+tk.mybatis.mapper.mapperhelper.ComplexEntityTest#test
+tk.mybatis.mapper.mapperhelper.FieldHelperTest#testUser
+tk.mybatis.mapper.annotation.IdTest#testCompositeKeys
+tk.mybatis.mapper.mapperhelper.SqlHelperTest#testLogicDeleteSql

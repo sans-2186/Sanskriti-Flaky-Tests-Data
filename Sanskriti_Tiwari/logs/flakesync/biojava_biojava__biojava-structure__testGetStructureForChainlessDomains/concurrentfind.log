@@ -1,0 +1,187 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 4 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 4 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] biojava                                                            [pom]
+[INFO] biojava-core                                                       [jar]
+[INFO] biojava-alignment                                                  [jar]
+[INFO] biojava-structure                                                  [jar]
+[INFO] 
+[INFO] ------------------------< org.biojava:biojava >-------------------------
+[INFO] Building biojava 6.0.0-SNAPSHOT                                    [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ biojava >>>
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-java) @ biojava ---
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-maven) @ biojava ---
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ biojava <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ biojava ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] No tests to run.
+[INFO] 
+[INFO] ----------------------< org.biojava:biojava-core >----------------------
+[INFO] Building biojava-core 6.0.0-SNAPSHOT                               [2/4]
+[INFO]   from biojava-core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ biojava-core >>>
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-java) @ biojava-core ---
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-maven) @ biojava-core ---
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ biojava-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 24 resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ biojava-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ biojava-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 46 resources
+[INFO] 
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ biojava-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ biojava-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ biojava-core ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------< org.biojava:biojava-alignment >--------------------
+[INFO] Building biojava-alignment 6.0.0-SNAPSHOT                          [3/4]
+[INFO]   from biojava-alignment/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ biojava-alignment >>>
+[WARNING] The POM for org.biojava.thirdparty:forester:jar:1.038 is invalid, transitive dependencies (if any) will not be available: 1 problem was encountered while building the effective model for org.biojava.thirdparty:forester:1.038
+[ERROR] 'dependencies.dependency.systemPath' for openchart:openchart:jar must specify an absolute path but is ${basedir}/src/main/resources/openchart.jar @ 
+
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-java) @ biojava-alignment ---
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-maven) @ biojava-alignment ---
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ biojava-alignment ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ biojava-alignment ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ biojava-alignment ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ biojava-alignment ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ biojava-alignment <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ biojava-alignment ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] 
+[INFO] -------------------< org.biojava:biojava-structure >--------------------
+[INFO] Building biojava-structure 6.0.0-SNAPSHOT                          [4/4]
+[INFO]   from biojava-structure/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) > test-compile @ biojava-structure >>>
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-java) @ biojava-structure ---
+[INFO] 
+[INFO] --- enforcer:1.2:enforce (enforce-maven) @ biojava-structure ---
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ biojava-structure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 61 resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ biojava-structure ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 473 source files to /tmp/tmp.pkzuwWkzK9/repo/biojava-structure/target/classes
+[INFO] /tmp/tmp.pkzuwWkzK9/repo/biojava-structure/src/main/java/org/biojava/nbio/structure/align/model/AFPChain.java: Some input files use or override a deprecated API.
+[INFO] /tmp/tmp.pkzuwWkzK9/repo/biojava-structure/src/main/java/org/biojava/nbio/structure/align/model/AFPChain.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ biojava-structure ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 52 resources
+[INFO] 
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ biojava-structure ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) < test-compile @ biojava-structure <<<
+[INFO] 
+[INFO] 
+[INFO] --- flakesync:1.0-SNAPSHOT:concurrentfind (default-cli) @ biojava-structure ---
+INFO: Running FindTestsRunMojo
+[WARNING]  Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M3/surefire-junit4-3.0.0-M3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M3/surefire-junit4-3.0.0-M3.jar (17 kB at 60 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M3/surefire-junit4-3.0.0-M3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/3.0.0-M3/surefire-junit4-3.0.0-M3.pom (1.7 kB at 41 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M3/surefire-providers-3.0.0-M3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M3/surefire-providers-3.0.0-M3.pom (2.5 kB at 56 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M3/common-junit4-3.0.0-M3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M3/common-junit4-3.0.0-M3.pom (1.9 kB at 37 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M3/common-junit3-3.0.0-M3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M3/common-junit3-3.0.0-M3.pom (1.6 kB at 25 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M3/common-java5-3.0.0-M3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M3/common-java5-3.0.0-M3.pom (3.1 kB at 90 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M3/common-junit4-3.0.0-M3.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M3/common-junit3-3.0.0-M3.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M3/common-java5-3.0.0-M3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/3.0.0-M3/common-junit4-3.0.0-M3.jar (28 kB at 562 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/3.0.0-M3/common-junit3-3.0.0-M3.jar (12 kB at 126 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M3/common-java5-3.0.0-M3.jar (32 kB at 350 kB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.biojava.nbio.structure.align.util.AtomCacheTest
+18:54:17 [main] WARN  org.biojava.nbio.structure.align.util.UserConfiguration - Could not read dir from system property PDB_DIR or environment variable PDB_DIR, using system's temp directory /tmp
+[Fatal Error] :1:1: Premature end of file.
+18:54:18 [main] ERROR org.biojava.nbio.structure.PDBStatus - Problem getting status for [1hcy] from PDB server. Error: Premature end of file.
+18:54:18 [main] ERROR org.biojava.nbio.structure.PDBStatus - Error getting Status for [1hcy] from the PDB website.
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.322 s <<< FAILURE! - in org.biojava.nbio.structure.align.util.AtomCacheTest
+[ERROR] testGetStructureForChainlessDomains(org.biojava.nbio.structure.align.util.AtomCacheTest)  Time elapsed: 2.254 s  <<< ERROR!
+java.net.UnknownHostException: mmtf.rcsb.org
+	at org.biojava.nbio.structure.align.util.AtomCacheTest.testGetStructureForChainlessDomains(AtomCacheTest.java:171)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   AtomCacheTest.testGetStructureForChainlessDomains:171 » UnknownHost mmtf.rcsb....
+[INFO] 
+[ERROR] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0
+[INFO] 
+INFO: Surefire failed when running tests for clean_3TXhNwFAxtLiuiSUjWbKOjVQvD1opvo8zGH1bsDpo= with delay: 0
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for biojava 6.0.0-SNAPSHOT:
+[INFO] 
+[INFO] biojava ............................................ SUCCESS [  0.593 s]
+[INFO] biojava-core ....................................... SUCCESS [  0.288 s]
+[INFO] biojava-alignment .................................. SUCCESS [  0.063 s]
+[INFO] biojava-structure .................................. SUCCESS [  9.350 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.109 s
+[INFO] Finished at: 2026-11-10T18:54:19Z
+[INFO] ------------------------------------------------------------------------

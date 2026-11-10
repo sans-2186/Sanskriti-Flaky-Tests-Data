@@ -1,0 +1,241 @@
+=== JDK 17 JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64 ===
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] jetcache                                                           [pom]
+[INFO] jetcache-anno-api                                                  [jar]
+[INFO] jetcache-core                                                      [jar]
+[INFO] jetcache-anno                                                      [jar]
+[INFO] jetcache-redis                                                     [jar]
+[INFO] jetcache-redis-lettuce                                             [jar]
+[INFO] jetcache-redis-springdata                                          [jar]
+[INFO] jetcache-autoconfigure                                             [jar]
+[INFO] jetcache-test                                                      [jar]
+[INFO] 
+[INFO] -----------------< com.alicp.jetcache:jetcache-parent >-----------------
+[INFO] Building jetcache 2.6.0.M4-SNAPSHOT                                [1/9]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (prepare-agent) @ jetcache-parent ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- javadoc:2.10.4:jar (attach-javadoc) @ jetcache-parent ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] >>> pmd:3.8:check (default) > :pmd @ jetcache-parent >>>
+[INFO] 
+[INFO] --- pmd:3.8:pmd (pmd) @ jetcache-parent ---
+[INFO] 
+[INFO] <<< pmd:3.8:check (default) < :pmd @ jetcache-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- pmd:3.8:check (default) @ jetcache-parent ---
+[INFO] 
+[INFO] >>> source:3.0.1:jar (attach-sources) > generate-sources @ jetcache-parent >>>
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (prepare-agent) @ jetcache-parent ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< source:3.0.1:jar (attach-sources) < generate-sources @ jetcache-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.0.1:jar (attach-sources) @ jetcache-parent ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ jetcache-parent ---
+[INFO] Installing /tmp/tmp.9XB514kQjD/repo/pom.xml to /home/runner/.m2/repository/com/alicp/jetcache/jetcache-parent/2.6.0.M4-SNAPSHOT/jetcache-parent-2.6.0.M4-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------< com.alicp.jetcache:jetcache-anno-api >----------------
+[INFO] Building jetcache-anno-api 2.6.0.M4-SNAPSHOT                       [2/9]
+[INFO]   from jetcache-anno-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (prepare-agent) @ jetcache-anno-api ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ jetcache-anno-api ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.9XB514kQjD/repo/jetcache-anno-api/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ jetcache-anno-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ jetcache-anno-api ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.9XB514kQjD/repo/jetcache-anno-api/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ jetcache-anno-api ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.19.1:test (default-test) @ jetcache-anno-api ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ jetcache-anno-api ---
+[INFO] 
+[INFO] --- javadoc:2.10.4:jar (attach-javadoc) @ jetcache-anno-api ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] >>> pmd:3.8:check (default) > :pmd @ jetcache-anno-api >>>
+[INFO] 
+[INFO] --- pmd:3.8:pmd (pmd) @ jetcache-anno-api ---
+[INFO] 
+[INFO] <<< pmd:3.8:check (default) < :pmd @ jetcache-anno-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- pmd:3.8:check (default) @ jetcache-anno-api ---
+[INFO] 
+[INFO] >>> source:3.0.1:jar (attach-sources) > generate-sources @ jetcache-anno-api >>>
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (prepare-agent) @ jetcache-anno-api ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< source:3.0.1:jar (attach-sources) < generate-sources @ jetcache-anno-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.0.1:jar (attach-sources) @ jetcache-anno-api ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ jetcache-anno-api ---
+[INFO] Installing /tmp/tmp.9XB514kQjD/repo/jetcache-anno-api/pom.xml to /home/runner/.m2/repository/com/alicp/jetcache/jetcache-anno-api/2.6.0.M4-SNAPSHOT/jetcache-anno-api-2.6.0.M4-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.9XB514kQjD/repo/jetcache-anno-api/target/jetcache-anno-api-2.6.0.M4-SNAPSHOT.jar to /home/runner/.m2/repository/com/alicp/jetcache/jetcache-anno-api/2.6.0.M4-SNAPSHOT/jetcache-anno-api-2.6.0.M4-SNAPSHOT.jar
+[INFO] 
+[INFO] ------------------< com.alicp.jetcache:jetcache-core >------------------
+[INFO] Building jetcache-core 2.6.0.M4-SNAPSHOT                           [3/9]
+[INFO]   from jetcache-core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (prepare-agent) @ jetcache-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ jetcache-core ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.9XB514kQjD/repo/jetcache-core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ jetcache-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ jetcache-core ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.9XB514kQjD/repo/jetcache-core/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.7.0:testCompile (default-testCompile) @ jetcache-core ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.19.1:test (default-test) @ jetcache-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ jetcache-core ---
+[INFO] 
+[INFO] --- javadoc:2.10.4:jar (attach-javadoc) @ jetcache-core ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] >>> pmd:3.8:check (default) > :pmd @ jetcache-core >>>
+[INFO] 
+[INFO] --- pmd:3.8:pmd (pmd) @ jetcache-core ---
+[INFO] 
+[INFO] <<< pmd:3.8:check (default) < :pmd @ jetcache-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- pmd:3.8:check (default) @ jetcache-core ---
+[INFO] 
+[INFO] >>> source:3.0.1:jar (attach-sources) > generate-sources @ jetcache-core >>>
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (prepare-agent) @ jetcache-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] 
+[INFO] <<< source:3.0.1:jar (attach-sources) < generate-sources @ jetcache-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.0.1:jar (attach-sources) @ jetcache-core ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- install:3.1.4:install (default-install) @ jetcache-core ---
+[INFO] Installing /tmp/tmp.9XB514kQjD/repo/jetcache-core/pom.xml to /home/runner/.m2/repository/com/alicp/jetcache/jetcache-core/2.6.0.M4-SNAPSHOT/jetcache-core-2.6.0.M4-SNAPSHOT.pom
+[INFO] Installing /tmp/tmp.9XB514kQjD/repo/jetcache-core/target/jetcache-core-2.6.0.M4-SNAPSHOT.jar to /home/runner/.m2/repository/com/alicp/jetcache/jetcache-core/2.6.0.M4-SNAPSHOT/jetcache-core-2.6.0.M4-SNAPSHOT.jar
+[INFO] 
+[INFO] ------------------< com.alicp.jetcache:jetcache-anno >------------------
+[INFO] Building jetcache-anno 2.6.0.M4-SNAPSHOT                           [4/9]
+[INFO]   from jetcache-anno/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.2:prepare-agent (prepare-agent) @ jetcache-anno ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ jetcache-anno ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.7.0:compile (default-compile) @ jetcache-anno ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 48 source files to /tmp/tmp.9XB514kQjD/repo/jetcache-anno/target/classes
+[INFO] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/field/CreateCacheAnnotationBeanPostProcessor.java: /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/field/CreateCacheAnnotationBeanPostProcessor.java uses or overrides a deprecated API.
+[INFO] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/field/CreateCacheAnnotationBeanPostProcessor.java: Recompile with -Xlint:deprecation for details.
+[INFO] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/field/LazyInitCache.java: Some input files use unchecked or unsafe operations.
+[INFO] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/field/LazyInitCache.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/ConfigProvider.java:[7,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/AbstractLifecycle.java:[6,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/AbstractLifecycle.java:[7,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/DefaultCacheMonitorManager.java:[17,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/ConfigProvider.java:[18,6] cannot find symbol
+  symbol:   class Resource
+  location: class com.alicp.jetcache.anno.support.ConfigProvider
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/AbstractLifecycle.java:[15,6] cannot find symbol
+  symbol:   class PostConstruct
+  location: class com.alicp.jetcache.anno.support.AbstractLifecycle
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/AbstractLifecycle.java:[26,6] cannot find symbol
+  symbol:   class PreDestroy
+  location: class com.alicp.jetcache.anno.support.AbstractLifecycle
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/DefaultCacheMonitorManager.java:[28,6] cannot find symbol
+  symbol:   class Resource
+  location: class com.alicp.jetcache.anno.support.DefaultCacheMonitorManager
+[INFO] 8 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for jetcache 2.6.0.M4-SNAPSHOT:
+[INFO] 
+[INFO] jetcache ........................................... SUCCESS [  1.365 s]
+[INFO] jetcache-anno-api .................................. SUCCESS [  0.386 s]
+[INFO] jetcache-core ...................................... SUCCESS [  0.050 s]
+[INFO] jetcache-anno ...................................... FAILURE [  1.418 s]
+[INFO] jetcache-redis ..................................... SKIPPED
+[INFO] jetcache-redis-lettuce ............................. SKIPPED
+[INFO] jetcache-redis-springdata .......................... SKIPPED
+[INFO] jetcache-autoconfigure ............................. SKIPPED
+[INFO] jetcache-test ...................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.350 s
+[INFO] Finished at: 2026-11-10T18:35:49Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.7.0:compile (default-compile) on project jetcache-anno: Compilation failure: Compilation failure: 
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/ConfigProvider.java:[7,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/AbstractLifecycle.java:[6,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/AbstractLifecycle.java:[7,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/DefaultCacheMonitorManager.java:[17,24] package javax.annotation does not exist
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/ConfigProvider.java:[18,6] cannot find symbol
+[ERROR]   symbol:   class Resource
+[ERROR]   location: class com.alicp.jetcache.anno.support.ConfigProvider
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/AbstractLifecycle.java:[15,6] cannot find symbol
+[ERROR]   symbol:   class PostConstruct
+[ERROR]   location: class com.alicp.jetcache.anno.support.AbstractLifecycle
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/AbstractLifecycle.java:[26,6] cannot find symbol
+[ERROR]   symbol:   class PreDestroy
+[ERROR]   location: class com.alicp.jetcache.anno.support.AbstractLifecycle
+[ERROR] /tmp/tmp.9XB514kQjD/repo/jetcache-anno/src/main/java/com/alicp/jetcache/anno/support/DefaultCacheMonitorManager.java:[28,6] cannot find symbol
+[ERROR]   symbol:   class Resource
+[ERROR]   location: class com.alicp.jetcache.anno.support.DefaultCacheMonitorManager
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :jetcache-anno

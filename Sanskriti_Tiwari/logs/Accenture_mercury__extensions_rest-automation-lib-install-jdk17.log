@@ -1,0 +1,1113 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Mercury core library                                               [jar]
+[INFO] rest-spring                                                        [jar]
+[INFO] Cloud connector                                                    [jar]
+[INFO] Cloud connector for Kafka cluster                                  [jar]
+[INFO] Cloud connector for Hazelcast cluster                              [jar]
+[INFO] REST automation library                                            [jar]
+[INFO] 
+[INFO] ------------------< org.platformlambda:platform-core >------------------
+[INFO] Building Mercury core library 2.2.2                                [1/6]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (default) @ platform-core ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/tmp/tmp.cBXON4Pjpe/repo/system/platform-core/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ platform-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ platform-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ platform-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 9 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ platform-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ platform-core ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.platformlambda.core.util.HtmlTimeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 s - in org.platformlambda.core.util.HtmlTimeTest
+[INFO] Running org.platformlambda.core.util.StringConversionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.platformlambda.core.util.StringConversionTest
+[INFO] Running org.platformlambda.core.util.ConfigReaderTest
+2026-11-10 18:48:33.537 INFO  org.platformlambda.core.serializers.SimpleMapper:47 [] snake.case.serialization enabled
+2026-11-10 18:48:33.644 INFO  org.platformlambda.core.serializers.SimpleMapper:62 [] Safe data models [org.platformlambda.core.]
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.102 s - in org.platformlambda.core.util.ConfigReaderTest
+[INFO] Running org.platformlambda.core.util.ObjectStreamTest
+2026-11-10 18:48:33.745 INFO  org.platformlambda.core.util.ManagedCache:86 [] Created cache (system.log.cache), expiry 30000 ms, maxItems=2000
+2026-11-10 18:48:33.746 INFO  org.platformlambda.core.util.ManagedCache:178 [] Started
+2026-11-10 18:48:34.031 INFO  org.platformlambda.core.system.ObjectStreamIO:244 [] Started
+2026-11-10 18:48:34.063 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE elastic.queue.cleanup with 1 instance started
+2026-11-10 18:48:34.105 INFO  org.platformlambda.core.system.ServiceQueue:61 [] PRIVATE stream.out.2cb9aadb35e1424cae15e448527cacee started
+2026-11-10 18:48:34.108 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE stream.in.2cb9aadb35e1424cae15e448527cacee with 1 instance started
+2026-11-10 18:48:34.110 INFO  org.platformlambda.core.system.ObjectStreamIO:88 [] Stream 2cb9aadb35e1424cae15e448527cacee created with expiry of 1800 seconds
+2026-11-10 18:48:34.111 INFO  org.platformlambda.core.util.ObjectStreamTest:146 [] Using stream.in.2cb9aadb35e1424cae15e448527cacee@20261110357fbcefbf754dd995b2e86ffc11e4fb
+2026-11-10 18:48:34.114 INFO  org.platformlambda.core.services.DistributedTrace:46 [] Reporting to 'distributed.trace.processor' if present
+2026-11-10 18:48:34.115 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE distributed.tracing with 1 instance started
+2026-11-10 18:48:34.120 INFO  org.platformlambda.core.util.ManagedCache:86 [] Created cache (health.info), expiry 5000 ms, maxItems=2000
+2026-11-10 18:48:34.124 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE actuator.services with 10 instances started
+2026-11-10 18:48:34.125 INFO  org.platformlambda.core.system.PostOffice:68 [] Includes [distributed.tracing, actuator.services]
+2026-11-10 18:48:34.127 INFO  org.platformlambda.core.system.PostOffice:200 [] Loading route substitutions from classpath:/route-substitution.yaml
+2026-11-10 18:48:34.128 INFO  org.platformlambda.core.system.PostOffice:186 [] Route substitution: hello.test -> hello.world
+2026-11-10 18:48:34.128 INFO  org.platformlambda.core.system.PostOffice:76 [] Loading multicast config from classpath:/multicast.yaml
+2026-11-10 18:48:34.132 INFO  org.platformlambda.core.services.Multicaster:23 [] Multicast routing - v1.hello.world -> [v1.hello.service.1, v1.hello.service.2, v1.hello.service.3]
+2026-11-10 18:48:34.133 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE v1.hello.world with 1 instance started
+2026-11-10 18:48:34.139 INFO  org.platformlambda.core.util.ManagedCache:86 [] Created cache (java.class.cache), expiry 300000 ms, maxItems=2000
+2026-11-10 18:48:34.183 INFO  org.platformlambda.core.util.ObjectStreamTest:157 [] Got the 1st item 'hello world'. The 2nd item is designed to timeout in 2 seconds.
+2026-11-10 18:48:34.697 INFO  org.platformlambda.core.util.ElasticQueue:197 [] Created holding area /tmp/reactive/platform-core-20261110357fbcefbf754dd995b2e86ffc11e4fb in 595 ms
+2026-11-10 18:48:34.697 INFO  org.platformlambda.core.util.ElasticQueue:364 [] Commit log started - com.sleepycat.je.Database@2e679e80
+2026-11-10 18:48:36.188 INFO  org.platformlambda.core.system.ServiceQueue:104 [] stream.in.2cb9aadb35e1424cae15e448527cacee stopped
+2026-11-10 18:48:36.189 INFO  org.platformlambda.core.system.ServiceQueue:104 [] stream.out.2cb9aadb35e1424cae15e448527cacee stopped
+2026-11-10 18:48:36.191 INFO  org.platformlambda.core.system.ServiceQueue:61 [] PRIVATE stream.out.a8f72dcdf5f94c0e8c4f95f4fa77355b started
+2026-11-10 18:48:36.192 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE stream.in.a8f72dcdf5f94c0e8c4f95f4fa77355b with 1 instance started
+2026-11-10 18:48:36.193 INFO  org.platformlambda.core.system.ObjectStreamIO:88 [] Stream a8f72dcdf5f94c0e8c4f95f4fa77355b created with expiry of 60 seconds
+2026-11-10 18:48:36.193 INFO  org.platformlambda.core.util.ObjectStreamTest:73 [] Using stream.in.a8f72dcdf5f94c0e8c4f95f4fa77355b@20261110357fbcefbf754dd995b2e86ffc11e4fb
+2026-11-10 18:48:36.366 INFO  org.platformlambda.core.util.ObjectStreamTest:87 [] Got 101 items where the last one is an EOF signal
+2026-11-10 18:48:36.367 INFO  org.platformlambda.core.system.ServiceQueue:104 [] stream.in.a8f72dcdf5f94c0e8c4f95f4fa77355b stopped
+2026-11-10 18:48:36.368 INFO  org.platformlambda.core.system.ServiceQueue:104 [] stream.out.a8f72dcdf5f94c0e8c4f95f4fa77355b stopped
+2026-11-10 18:48:36.371 INFO  org.platformlambda.core.system.ServiceQueue:61 [] PRIVATE stream.out.522232e2e82142878f82819df9d3c1ec started
+2026-11-10 18:48:36.371 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE stream.in.522232e2e82142878f82819df9d3c1ec with 1 instance started
+2026-11-10 18:48:36.373 INFO  org.platformlambda.core.system.ObjectStreamIO:88 [] Stream 522232e2e82142878f82819df9d3c1ec created with expiry of 1 seconds
+2026-11-10 18:48:38.075 WARN  org.platformlambda.core.system.ObjectStreamIO:130 [] stream.in.522232e2e82142878f82819df9d3c1ec expired. Inactivity for 1 seconds (2026-11-10T18:48:36.372Z - 2026-11-10T18:48:36.874Z)
+2026-11-10 18:48:38.076 INFO  org.platformlambda.core.system.ServiceQueue:61 [] PRIVATE stream.out.bdfa7ad23ca44ab4a8b8025910f3a5b0 started
+2026-11-10 18:48:38.077 INFO  org.platformlambda.core.system.ServiceQueue:104 [] stream.in.522232e2e82142878f82819df9d3c1ec stopped
+2026-11-10 18:48:38.077 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE stream.in.bdfa7ad23ca44ab4a8b8025910f3a5b0 with 1 instance started
+2026-11-10 18:48:38.078 INFO  org.platformlambda.core.system.ServiceQueue:104 [] stream.out.522232e2e82142878f82819df9d3c1ec stopped
+2026-11-10 18:48:38.078 INFO  org.platformlambda.core.system.ObjectStreamIO:88 [] Stream bdfa7ad23ca44ab4a8b8025910f3a5b0 created with expiry of 1800 seconds
+2026-11-10 18:48:38.079 INFO  org.platformlambda.core.util.ObjectStreamTest:146 [] Using stream.in.bdfa7ad23ca44ab4a8b8025910f3a5b0@20261110357fbcefbf754dd995b2e86ffc11e4fb
+2026-11-10 18:48:38.080 INFO  org.platformlambda.core.util.ObjectStreamTest:157 [] Got the 1st item 'hello world'. The 2nd item is designed to timeout in 2 seconds.
+2026-11-10 18:48:40.082 INFO  org.platformlambda.core.system.ServiceQueue:104 [] stream.in.bdfa7ad23ca44ab4a8b8025910f3a5b0 stopped
+2026-11-10 18:48:40.082 INFO  org.platformlambda.core.system.ServiceQueue:104 [] stream.out.bdfa7ad23ca44ab4a8b8025910f3a5b0 stopped
+2026-11-10 18:48:40.083 ERROR org.platformlambda.core.util.ObjectStreamTest:101 [] stream.in.bdfa7ad23ca44ab4a8b8025910f3a5b0@20261110357fbcefbf754dd995b2e86ffc11e4fb timeout for 2000 ms
+2026-11-10 18:48:40.083 INFO  org.platformlambda.core.system.ServiceQueue:61 [] PRIVATE stream.out.2176ff3d33ec4e2b8cd589c9dc10d75e started
+2026-11-10 18:48:40.084 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE stream.in.2176ff3d33ec4e2b8cd589c9dc10d75e with 1 instance started
+2026-11-10 18:48:40.084 INFO  org.platformlambda.core.system.ObjectStreamIO:88 [] Stream 2176ff3d33ec4e2b8cd589c9dc10d75e created with expiry of 1800 seconds
+2026-11-10 18:48:40.084 INFO  org.platformlambda.core.util.ObjectStreamTest:107 [] Using stream.in.2176ff3d33ec4e2b8cd589c9dc10d75e@20261110357fbcefbf754dd995b2e86ffc11e4fb
+2026-11-10 18:48:40.086 INFO  org.platformlambda.core.util.ObjectStreamTest:123 [] Got 1st item as bytes - [49, 32, 104, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100]
+2026-11-10 18:48:40.087 INFO  org.platformlambda.core.util.ObjectStreamTest:129 [] Got 2nd item as string '2 hello world'
+2026-11-10 18:48:40.088 INFO  org.platformlambda.core.util.ObjectStreamTest:134 [] Got 3nd item as an EOF signal
+2026-11-10 18:48:40.089 INFO  org.platformlambda.core.system.ServiceQueue:104 [] stream.in.2176ff3d33ec4e2b8cd589c9dc10d75e stopped
+2026-11-10 18:48:40.090 INFO  org.platformlambda.core.system.ServiceQueue:104 [] stream.out.2176ff3d33ec4e2b8cd589c9dc10d75e stopped
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.379 s - in org.platformlambda.core.util.ObjectStreamTest
+[INFO] Running org.platformlambda.core.util.PostOfficeTest
+2026-11-10 18:48:40.297 INFO  org.platformlambda.core.system.AppStarter:108 [] Starting org.platformlambda.core.util.mock.MockApp
+2026-11-10 18:48:40.327 INFO  org.platformlambda.core.util.mock.MockApp:38 [] Started
+2026-11-10 18:48:40.327 INFO  org.platformlambda.core.system.Platform:228 [] Starting cloud connector mock.cloud using org.platformlambda.core.util.mock.MockCloud
+2026-11-10 18:48:40.328 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE hello.world with 10 instances started
+2026-11-10 18:48:40.329 INFO  org.platformlambda.core.system.Platform:297 [] Converted hello.world to PUBLIC
+2026-11-10 18:48:40.351 INFO  org.platformlambda.core.system.Platform:228 [] Starting cloud service mock.cloud.service using org.platformlambda.core.util.mock.MockCloudService
+2026-11-10 18:48:40.351 INFO  org.platformlambda.core.system.Platform:173 [] Cloud services [mock.cloud.service] started
+2026-11-10 18:48:40.352 INFO  org.platformlambda.core.util.mock.MockCloudService:32 [] Mock cloud service started
+2026-11-10 18:48:40.355 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE cloud.connector with 1 instance started
+2026-11-10 18:48:40.356 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE system.service.query with 10 instances started
+2026-11-10 18:48:40.357 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE system.service.registry with 10 instances started
+2026-11-10 18:48:40.358 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE cloud.connector.health with 2 instances started
+2026-11-10 18:48:42.336 INFO  org.platformlambda.core.system.Platform:475 [] cloud.connector is ready
+2026-11-10 18:48:42.841 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE pojo.error.case.2 with 1 instance started
+2026-11-10 18:48:42.843 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE simple.callback.2 with 1 instance started
+2026-11-10 18:48:42.850 INFO  org.platformlambda.core.services.DistributedTrace:57 [] trace={exception=demo-exception, path=ERROR /20000, service=pojo.error.case.2, success=false, origin=20261110357fbcefbf754dd995b2e86ffc11e4fb, start=2026-11-10T18:48:42.843Z, id=20000, status=400}, annotations={}
+2026-11-10 18:48:42.851 INFO  org.platformlambda.core.util.PostOfficeTest:772 [20000] Found trace path 'ERROR /20000'
+2026-11-10 18:48:42.852 INFO  org.platformlambda.core.system.ServiceQueue:104 [] pojo.error.case.2 stopped
+2026-11-10 18:48:42.853 INFO  org.platformlambda.core.services.DistributedTrace:57 [] trace={exception=demo-exception, path=ERROR /20000, service=simple.callback.2, success=false, origin=20261110357fbcefbf754dd995b2e86ffc11e4fb, start=2026-11-10T18:48:42.850Z, from=pojo.error.case.2, id=20000, status=400}, annotations={}
+2026-11-10 18:48:42.853 INFO  org.platformlambda.core.system.ServiceQueue:104 [] simple.callback.2 stopped
+2026-11-10 18:48:42.855 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PUBLIC hello.world.1 with 1 instance started
+2026-11-10 18:48:42.856 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PUBLIC hello.world.2 with 1 instance started
+2026-11-10 18:48:42.859 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE hello.future.1 with 1 instance started
+2026-11-10 18:48:42.859 INFO  org.platformlambda.core.services.DistributedTrace:57 [] trace={path=TRACE addr://test, service=hello.world.1, success=true, origin=20261110357fbcefbf754dd995b2e86ffc11e4fb, start=2026-11-10T18:48:42.858Z, exec_time=0.083, id=12345}, annotations={}
+2026-11-10 18:48:42.860 INFO  org.platformlambda.core.services.DistributedTrace:57 [] trace={path=TRACE addr://test, service=hello.world.2, success=true, origin=20261110357fbcefbf754dd995b2e86ffc11e4fb, start=2026-11-10T18:48:42.858Z, exec_time=0.011, from=hello.world.1, id=12345}, annotations={}
+2026-11-10 18:48:42.865 INFO  org.platformlambda.core.system.ServiceQueue:104 [] hello.future.1 stopped
+2026-11-10 18:48:42.867 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PUBLIC hello.level.1 with 1 instance started
+2026-11-10 18:48:42.867 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PUBLIC hello.level.2 with 1 instance started
+2026-11-10 18:48:42.869 INFO  org.platformlambda.core.services.DistributedTrace:57 [] trace={path=GET /api/hello/world, service=hello.level.2, success=true, origin=20261110357fbcefbf754dd995b2e86ffc11e4fb, start=2026-11-10T18:48:42.868Z, exec_time=0.015, from=hello.level.1, id=cid-123456}, annotations={}
+2026-11-10 18:48:42.870 INFO  org.platformlambda.core.services.DistributedTrace:57 [] trace={path=GET /api/hello/world, service=hello.level.1, success=true, origin=20261110357fbcefbf754dd995b2e86ffc11e4fb, start=2026-11-10T18:48:42.868Z, exec_time=0.519, id=cid-123456}, annotations={some_key=some value, another_key=another value}
+2026-11-10 18:48:42.871 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE pojo.happy.case.1 with 1 instance started
+2026-11-10 18:48:42.871 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE simple.callback.1 with 1 instance started
+2026-11-10 18:48:42.879 INFO  org.platformlambda.core.services.DistributedTrace:57 [] trace={path=HAPPY /10000, service=pojo.happy.case.1, success=true, origin=20261110357fbcefbf754dd995b2e86ffc11e4fb, start=2026-11-10T18:48:42.873Z, exec_time=0.113, id=10000}, annotations={}
+2026-11-10 18:48:42.880 INFO  org.platformlambda.core.util.PostOfficeTest:781 [10000] Found trace path 'HAPPY /10000'
+2026-11-10 18:48:42.881 INFO  org.platformlambda.core.system.ServiceQueue:104 [] pojo.happy.case.1 stopped
+2026-11-10 18:48:42.882 INFO  org.platformlambda.core.system.ServiceQueue:104 [] simple.callback.1 stopped
+2026-11-10 18:48:42.882 INFO  org.platformlambda.core.services.DistributedTrace:57 [] trace={path=HAPPY /10000, service=simple.callback.1, success=true, origin=20261110357fbcefbf754dd995b2e86ffc11e4fb, start=2026-11-10T18:48:42.878Z, exec_time=0.528, from=pojo.happy.case.1, id=10000}, annotations={}
+2026-11-10 18:48:42.883 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE my.callback with 1 instance started
+2026-11-10 18:48:43.341 WARN  org.platformlambda.core.system.WorkerQueue:219 [] Unhandled exception when sending reply from hello.world#1 - Route r.4bfaa16fc3a54ccabd6ed3f36acc7f78@20261110357fbcefbf754dd995b2e86ffc11e4fb not found
+2026-11-10 18:48:43.341 WARN  org.platformlambda.core.system.WorkerQueue:219 [] Unhandled exception when sending reply from hello.world#3 - Route r.4bfaa16fc3a54ccabd6ed3f36acc7f78@20261110357fbcefbf754dd995b2e86ffc11e4fb not found
+2026-11-10 18:48:43.889 INFO  org.platformlambda.core.util.SimpleCache:74 [] Created cache (payload.segmentation), expiry 60000 ms
+2026-11-10 18:48:43.889 INFO  org.platformlambda.core.util.SimpleCache:150 [] Started
+2026-11-10 18:48:43.890 INFO  org.platformlambda.core.websocket.common.MultipartPayload:52 [] Automatic segmentation when event payload exceeds 65,080
+2026-11-10 18:48:44.893 INFO  org.platformlambda.core.system.ServiceQueue:104 [] my.callback stopped
+2026-11-10 18:48:44.895 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE pojo.error.case.3 with 1 instance started
+2026-11-10 18:48:44.896 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE simple.callback.3 with 1 instance started
+2026-11-10 18:48:44.897 INFO  org.platformlambda.core.util.PostOfficeTest:772 [30000] Found trace path 'CAST /30000'
+2026-11-10 18:48:44.897 INFO  org.platformlambda.core.services.DistributedTrace:57 [] trace={path=CAST /30000, service=pojo.error.case.3, success=true, origin=20261110357fbcefbf754dd995b2e86ffc11e4fb, start=2026-11-10T18:48:44.896Z, exec_time=0.018, id=30000}, annotations={}
+2026-11-10 18:48:44.899 INFO  org.platformlambda.core.system.ServiceQueue:104 [] pojo.error.case.3 stopped
+2026-11-10 18:48:44.899 INFO  org.platformlambda.core.services.DistributedTrace:57 [] trace={exception=class java.lang.String cannot be cast to class org.platformlambda.core.util.models.PoJo (java.lang.String is in module java.base of loader 'bootstrap'; org.platformlambda.core.util.models.PoJo is in unnamed module of loader 'app'), path=CAST /30000, service=simple.callback.3, success=false, origin=20261110357fbcefbf754dd995b2e86ffc11e4fb, start=2026-11-10T18:48:44.897Z, from=pojo.error.case.3, id=30000, status=500}, annotations={}
+2026-11-10 18:48:44.900 INFO  org.platformlambda.core.system.ServiceQueue:104 [] simple.callback.3 stopped
+2026-11-10 18:48:44.904 INFO  org.platformlambda.core.system.PostOffice:502 [] Cancel future event hello.world, 2026-11-10T18:48:49Z
+2026-11-10 18:48:44.905 INFO  org.platformlambda.core.util.PostOfficeTest:293 [] Ping successfully - you have reached hello.world
+2026-11-10 18:48:44.906 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE test.exception with 1 instance started
+2026-11-10 18:48:44.912 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PUBLIC hello.log with 1 instance started
+2026-11-10 18:48:44.913 INFO  org.platformlambda.core.util.PostOfficeTest:547 [12345] Got {hello=world} validate log context
+2026-11-10 18:48:44.913 INFO  org.platformlambda.core.services.DistributedTrace:57 [] trace={path=GET /hello/log, service=hello.log, success=true, origin=20261110357fbcefbf754dd995b2e86ffc11e4fb, start=2026-11-10T18:48:44.912Z, exec_time=0.376, id=12345}, annotations={}
+2026-11-10 18:48:45.405 INFO  org.platformlambda.core.services.DistributedTrace:57 [] trace={path=GET /1, service=hello.world, success=true, origin=20261110357fbcefbf754dd995b2e86ffc11e4fb, start=2026-11-10T18:48:45.405Z, exec_time=0.0, id=24680}, annotations={}
+2026-11-10 18:48:46.914 WARN  org.platformlambda.core.system.Platform:472 [] Giving up no.such.service because it is not ready after 2 seconds
+2026-11-10 18:48:46.921 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE multi.cores with 50 instances started
+2026-11-10 18:48:47.014 INFO  org.platformlambda.core.util.PostOfficeTest:671 [] 200 cycles done? true, 50 workers consumed 10 threads in 92 ms
+2026-11-10 18:48:47.015 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE hello.future.2 with 1 instance started
+2026-11-10 18:48:47.518 INFO  org.platformlambda.core.system.ServiceQueue:104 [] hello.future.2 stopped
+2026-11-10 18:48:47.519 WARN  org.platformlambda.core.system.Platform:309 [] test.exception will be reloaded
+2026-11-10 18:48:47.519 INFO  org.platformlambda.core.system.ServiceQueue:104 [] test.exception stopped
+2026-11-10 18:48:47.520 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE test.exception with 1 instance started
+2026-11-10 18:48:47.530 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE pending.service with 1 instance started
+2026-11-10 18:48:48.017 WARN  org.platformlambda.core.system.WorkerQueue:219 [] Unhandled exception when sending reply from hello.future.2#1 - Route r.70b1a36536514f7fa0d8d1cdd537d34b@20261110357fbcefbf754dd995b2e86ffc11e4fb not found
+2026-11-10 18:48:50.534 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PUBLIC no.op with 1 instance started
+2026-11-10 18:48:51.531 INFO  org.platformlambda.core.system.Platform:475 [] Waiting for no.op to get ready... 2
+2026-11-10 18:48:51.531 INFO  org.platformlambda.core.system.Platform:475 [] no.op is ready
+2026-11-10 18:48:51.534 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PUBLIC reloadable.service with 1 instance started
+2026-11-10 18:48:51.535 WARN  org.platformlambda.core.system.Platform:309 [] reloadable.service will be reloaded
+2026-11-10 18:48:51.535 INFO  org.platformlambda.core.system.ServiceQueue:104 [] reloadable.service stopped
+2026-11-10 18:48:51.536 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE reloadable.service with 1 instance started
+2026-11-10 18:48:51.536 INFO  org.platformlambda.core.system.Platform:297 [] Converted reloadable.service to PUBLIC
+2026-11-10 18:48:52.039 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE hello.future.3 with 1 instance started
+2026-11-10 18:48:52.041 INFO  org.platformlambda.core.system.ServiceQueue:104 [] hello.future.3 stopped
+2026-11-10 18:48:52.043 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PUBLIC test.route.1 with 1 instance started
+2026-11-10 18:48:52.045 INFO  org.platformlambda.core.system.Platform:88 [] application instance ID set to 20261110e25167f33479411cbac26e919c7be6f8-runner
+[INFO] Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.952 s - in org.platformlambda.core.util.PostOfficeTest
+[INFO] Running org.platformlambda.core.util.ElasticQueueTest
+2026-11-10 18:48:52.069 INFO  org.platformlambda.core.util.ElasticQueue:339 [] Cleared 40 unread events for unread.test/60
+2026-11-10 18:48:52.538 WARN  org.platformlambda.core.system.WorkerQueue:219 [] Unhandled exception when sending reply from hello.world#3 - Route r.6d95870765b64cde8d72da016915fbb2@20261110357fbcefbf754dd995b2e86ffc11e4fb not found
+2026-11-10 18:48:52.929 INFO  org.platformlambda.core.util.ElasticQueue:339 [] Cleared 19 unread events for large.payload.test/62
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.916 s - in org.platformlambda.core.util.ElasticQueueTest
+[INFO] Running org.platformlambda.core.util.MulticastTest
+2026-11-10 18:48:52.971 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE v1.hello.service.1 with 1 instance started
+2026-11-10 18:48:52.973 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE v1.hello.service.2 with 1 instance started
+2026-11-10 18:48:52.973 INFO  org.platformlambda.core.util.ElasticQueue:339 [] Cleared 19 unread events for normal.payload.test/64
+2026-11-10 18:48:52.974 WARN  org.platformlambda.core.services.Multicaster:38 [] Unable to relay v1.hello.world -> v1.hello.service.3 - target not reachable
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.platformlambda.core.util.MulticastTest
+[INFO] Running org.platformlambda.core.util.GsonTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.platformlambda.core.util.GsonTest
+[INFO] Running org.platformlambda.core.util.GenericTypeTest
+2026-11-10 18:48:53.000 WARN  org.platformlambda.core.models.EventEnvelope:209 [] Fall back to Map - Expected STRING but was BEGIN_OBJECT at path $.content
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.platformlambda.core.util.GenericTypeTest
+[INFO] Running org.platformlambda.core.util.CryptoTest
+2026-11-10 18:48:53.038 INFO  org.platformlambda.core.util.CryptoTest:48 [] Using Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy
+2026-11-10 18:48:53.038 INFO  org.platformlambda.core.util.CryptoTest:49 [] AES-256 supported
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.705 s - in org.platformlambda.core.util.CryptoTest
+[INFO] Running org.platformlambda.core.util.XmlReadWriteTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.platformlambda.core.util.XmlReadWriteTest
+[INFO] Running org.platformlambda.core.util.SimpleMapperTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.platformlambda.core.util.SimpleMapperTest
+[INFO] Running org.platformlambda.core.util.MsgPackTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.platformlambda.core.util.MsgPackTest
+[INFO] Running org.platformlambda.core.util.WebSocketTest
+2026-11-10 18:48:53.892 INFO  org.platformlambda.core.util.WebSocketTest:71 [] Listening to port 8086
+2026-11-10 18:48:53.900 INFO  org.platformlambda.core.websocket.client.PersistentWsClient:68 [] Started
+2026-11-10 18:48:53.900 INFO  org.platformlambda.core.websocket.client.PersistentWsClient:75 [] Connection list [ws://127.0.0.1:8086/ws/test/hi]
+2026-11-10 18:48:54.187 INFO  org.platformlambda.core.websocket.common.WsConfigurator:82 [] websocket.idle.timeout = 60 seconds
+2026-11-10 18:48:54.187 WARN  org.platformlambda.core.websocket.common.WsConfigurator:91 [] websocket.text.size changed from 8192 to 65536
+2026-11-10 18:48:54.187 WARN  org.platformlambda.core.websocket.common.WsConfigurator:98 [] websocket.binary.size changed from 8192 to 65536
+2026-11-10 18:48:54.188 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE ws.client.in.48065.1 with 1 instance started
+2026-11-10 18:48:54.189 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE ws.client.out.48065.1 with 1 instance started
+2026-11-10 18:48:54.192 INFO  org.platformlambda.core.websocket.client.SimpleClientEndpoint:82 [] Session-0 WebSocketTest$$Lambda$277/0x00007dc54437d320 connected to ws.client.in.48065.1 127.0.0.1, ws://127.0.0.1:8086/ws/test/hi/20261110357fbcefbf754dd995b2e86ffc11e4fb
+2026-11-10 18:48:55.199 INFO  org.platformlambda.core.websocket.client.SimpleClientEndpoint:139 [] Session-0 ws.client.in.48065.1 closed (1001, Shutdown)
+2026-11-10 18:48:55.200 INFO  org.platformlambda.core.system.ServiceQueue:104 [] ws.client.out.48065.1 stopped
+2026-11-10 18:48:55.200 INFO  org.platformlambda.core.system.ServiceQueue:104 [] ws.client.in.48065.1 stopped
+2026-11-10 18:48:55.201 INFO  org.platformlambda.core.system.WsRegistry:129 [] Session-0 (ws.client.in.48065.1, ws.client.out.48065.1) released
+2026-11-10 18:48:55.203 INFO  org.platformlambda.core.util.WebSocketTest:67 [] socket closed
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.536 s - in org.platformlambda.core.util.WebSocketTest
+[INFO] Running org.platformlambda.core.util.SimpleCookieTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.platformlambda.core.util.SimpleCookieTest
+[INFO] Running org.platformlambda.core.util.CacheTest
+2026-11-10 18:48:55.306 INFO  org.platformlambda.core.util.ManagedCache:86 [] Created cache (hello.world), expiry 1000 ms, maxItems=100
+2026-11-10 18:48:55.306 INFO  org.platformlambda.core.util.SimpleCache:74 [] Created cache (simple.cache), expiry 1000 ms
+2026-11-10 18:48:56.194 INFO  org.platformlambda.core.websocket.client.PersistentWsClient:97 [] Stopped
+2026-11-10 18:48:57.409 INFO  org.platformlambda.core.util.SimpleCache:132 [] Total 1 item expired, remaining: 0
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.101 s - in org.platformlambda.core.util.CacheTest
+[INFO] Running org.platformlambda.core.util.DataModelTest
+2026-11-10 18:48:57.414 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE websocket.in.53277.2 with 1 instance started
+2026-11-10 18:48:57.414 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE websocket.out.53277.2 with 1 instance started
+2026-11-10 18:48:57.415 INFO  org.platformlambda.core.system.ServiceQueue:104 [] websocket.out.53277.2 stopped
+2026-11-10 18:48:57.415 INFO  org.platformlambda.core.system.ServiceQueue:104 [] websocket.in.53277.2 stopped
+2026-11-10 18:48:57.415 INFO  org.platformlambda.core.system.WsRegistry:129 [] Session-12345 (websocket.in.53277.2, websocket.out.53277.2) released
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.platformlambda.core.util.DataModelTest
+[INFO] Running org.platformlambda.core.util.XmlParserFeatureTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.platformlambda.core.util.XmlParserFeatureTest
+[INFO] Running org.platformlambda.core.util.ServiceNameTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.platformlambda.core.util.ServiceNameTest
+[INFO] Running org.platformlambda.core.util.UtilityTests
+2026-11-10 18:48:57.458 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE unit.test.tx.path with 1 instance started
+2026-11-10 18:48:57.459 INFO  org.platformlambda.core.util.UtilityTests:323 [] Received close event {message=test, type=close, status=1003}
+2026-11-10 18:48:57.463 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE system.pubsub.producer with 1 instance started
+2026-11-10 18:48:57.464 INFO  org.platformlambda.core.system.PubSub:67 [] Provider org.platformlambda.core.util.models.MockPubSub@3186f8f5 loaded
+2026-11-10 18:48:57.465 INFO  org.platformlambda.core.system.ServiceQueue:104 [] system.pubsub.producer stopped
+2026-11-10 18:48:57.466 INFO  org.platformlambda.core.system.ServerPersonality:54 [] Setting personality as APP
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.platformlambda.core.util.UtilityTests
+[INFO] Running org.platformlambda.core.util.PayloadSegmentationTest
+2026-11-10 18:48:57.474 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE large.payload.receiver with 1 instance started
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.platformlambda.core.util.PayloadSegmentationTest
+[INFO] Running org.platformlambda.core.util.ExceptionTransportTest
+2026-11-10 18:48:57.482 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE exception.test with 1 instance started
+2026-11-10 18:48:57.492 INFO  org.platformlambda.core.system.ServiceQueue:71 [] PRIVATE callback.function with 1 instance started
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.platformlambda.core.util.ExceptionTransportTest
+[INFO] Running org.platformlambda.core.util.PayloadMapperTest
+2026-11-10 18:48:57.497 WARN  org.platformlambda.core.models.EventEnvelope:209 [] Fall back to Map - Class com.unsafe.models.UnauthorizedObj not in safe.data.models
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.platformlambda.core.util.PayloadMapperTest
+2026-11-10 18:48:57.703 INFO  org.platformlambda.core.util.ElasticQueue:401 [] Commit log stopped - com.sleepycat.je.Database@2e679e80
+2026-11-10 18:48:57.734 INFO  org.platformlambda.core.util.ElasticQueue:166 [] Holding area /tmp/reactive/platform-core-20261110357fbcefbf754dd995b2e86ffc11e4fb cleared
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 182, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.7:report (report) @ platform-core ---
+[INFO] Loading execution data file /tmp/tmp.cBXON4Pjpe/repo/system/platform-core/target/jacoco.exec
+[INFO] Analyzed bundle 'Mercury core library' with 92 classes
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ platform-core ---
+[INFO] 
+[INFO] >>> source:3.2.1:jar (attach-sources) > generate-sources @ platform-core >>>
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (default) @ platform-core ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/tmp/tmp.cBXON4Pjpe/repo/system/platform-core/target/jacoco.exec
+[INFO] 
+[INFO] <<< source:3.2.1:jar (attach-sources) < generate-sources @ platform-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.2.1:jar (attach-sources) @ platform-core ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- javadoc:3.2.0:jar (attach-javadocs) @ platform-core ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ platform-core ---
+[INFO] Installing /tmp/tmp.cBXON4Pjpe/repo/system/platform-core/target/platform-core-2.2.2.jar to /home/runner/.m2/repository/org/platformlambda/platform-core/2.2.2/platform-core-2.2.2.jar
+[INFO] Installing /tmp/tmp.cBXON4Pjpe/repo/system/platform-core/pom.xml to /home/runner/.m2/repository/org/platformlambda/platform-core/2.2.2/platform-core-2.2.2.pom
+[INFO] 
+[INFO] -------------------< org.platformlambda:rest-spring >-------------------
+[INFO] Building rest-spring 2.2.2                                         [2/6]
+[INFO]   from /tmp/tmp.cBXON4Pjpe/repo/system/rest-spring/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (default) @ rest-spring ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/tmp/tmp.cBXON4Pjpe/repo/system/rest-spring/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ rest-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ rest-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ rest-spring ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ rest-spring ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ rest-spring ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.platformlambda.rest.RestTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.6)
+
+2026-11-10 18:49:01.597 INFO  org.platformlambda.rest.RestServer:55 - Starting RestServer using Java 17.0.21 on runnervmwuk1x with PID 3586 (started by runner in /tmp/tmp.cBXON4Pjpe/repo/system/rest-spring)
+2026-11-10 18:49:01.610 INFO  org.platformlambda.rest.RestServer:659 - No active profile set, falling back to default profiles: default
+2026-11-10 18:49:02.843 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8085 (http)
+Nov 10, 2026 6:49:02 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-8085"]
+Nov 10, 2026 6:49:02 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Nov 10, 2026 6:49:02 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.54]
+Nov 10, 2026 6:49:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring embedded WebApplicationContext
+2026-11-10 18:49:02.953 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1276 ms
+2026-11-10 18:49:03.010 INFO  org.platformlambda.core.serializers.SimpleMapper:47 - snake.case.serialization enabled
+2026-11-10 18:49:03.015 INFO  org.platformlambda.core.serializers.SimpleMapper:62 - Safe data models [org.platformlambda.core.]
+2026-11-10 18:49:03.016 INFO  org.platformlambda.rest.RestLoader:59 - SimpleMapper initialized
+2026-11-10 18:49:03.016 INFO  org.platformlambda.rest.RestLoader:63 - jax.rs.application.path = /api
+2026-11-10 18:49:03.050 INFO  org.platformlambda.rest.RestLoader:80 - org.platformlambda.rest.HelloWorld registered as REST
+2026-11-10 18:49:03.052 INFO  org.platformlambda.rest.RestLoader:87 - Total 1 REST class registered
+2026-11-10 18:49:03.076 INFO  org.platformlambda.rest.RestLoader:100 - org.platformlambda.rest.exception.RestExceptionHandler registered as provider
+2026-11-10 18:49:03.077 INFO  org.platformlambda.rest.RestLoader:100 - org.platformlambda.rest.serializers.MessageBodyReaderJson registered as provider
+2026-11-10 18:49:03.077 INFO  org.platformlambda.rest.RestLoader:100 - org.platformlambda.rest.serializers.MessageBodyReaderXml registered as provider
+2026-11-10 18:49:03.078 INFO  org.platformlambda.rest.RestLoader:100 - org.platformlambda.rest.serializers.MessageBodyWriterHtml registered as provider
+2026-11-10 18:49:03.078 INFO  org.platformlambda.rest.RestLoader:100 - org.platformlambda.rest.serializers.MessageBodyWriterJson registered as provider
+2026-11-10 18:49:03.079 INFO  org.platformlambda.rest.RestLoader:100 - org.platformlambda.rest.serializers.MessageBodyWriterText registered as provider
+2026-11-10 18:49:03.079 INFO  org.platformlambda.rest.RestLoader:100 - org.platformlambda.rest.serializers.MessageBodyWriterXml registered as provider
+2026-11-10 18:49:03.080 INFO  org.platformlambda.rest.RestLoader:100 - org.platformlambda.rest.services.RestFilter registered as provider
+2026-11-10 18:49:03.082 INFO  org.platformlambda.rest.RestLoader:104 - Total 8 providers registered
+2026-11-10 18:49:03.091 INFO  org.platformlambda.spring.system.WebAppLoader:54 - Scanning class com.accenture.mock.ConditionalHelloServlet
+2026-11-10 18:49:03.092 INFO  org.platformlambda.spring.system.WebAppLoader:54 - Scanning class com.accenture.mock.MockHelloServlet
+2026-11-10 18:49:03.093 INFO  org.platformlambda.spring.system.WebAppLoader:72 - com.accenture.mock.MockHelloServlet registered as WEB SERVLET [/mock_servlet]
+2026-11-10 18:49:03.097 INFO  org.platformlambda.spring.system.WebAppLoader:91 - com.accenture.mock.MockFilter registered as WEB FILTER [/*]
+2026-11-10 18:49:03.101 INFO  org.platformlambda.spring.system.WebAppLoader:103 - com.accenture.mock.MockWebListener registered as WEB LISTENER
+2026-11-10 18:49:03.101 INFO  org.platformlambda.spring.system.WebAppLoader:107 - Total 1 WebServlet registered
+2026-11-10 18:49:03.101 INFO  org.platformlambda.spring.system.WebAppLoader:110 - Total 1 WebFilter registered
+2026-11-10 18:49:03.101 INFO  org.platformlambda.spring.system.WebAppLoader:113 - Total 1 WebListener registered
+2026-11-10 18:49:03.160 INFO  org.platformlambda.websocket.WsLoader:66 - org.platformlambda.websocket.WsServer registered as WEBSOCKET DISPATCHER [/ws/{name}/{handle}]
+2026-11-10 18:49:03.161 INFO  org.platformlambda.websocket.WsLoader:73 - Total 1 Websocket server endpoint is registered (JSR-356)
+2026-11-10 18:49:03.183 INFO  org.platformlambda.websocket.WsServer:78 - com.accenture.mock.MockWebSocketServer loaded as WEBSOCKET SERVER endpoint /ws/mock/{handle}
+2026-11-10 18:49:03.184 INFO  com.accenture.mock.MockWebListener:33 - Initialized javax.servlet.ServletContextEvent[source=org.apache.catalina.core.StandardContext$NoPluggabilityServletContext@26a5775f]
+2026-11-10 18:49:03.189 INFO  org.platformlambda.websocket.WsFilter:58 - HSTS (RFC-6797) feature enabled
+2026-11-10 18:49:03.190 INFO  org.platformlambda.websocket.WsFilter:66 - Index page redirection - [/]
+2026-11-10 18:49:03.209 INFO  org.platformlambda.spring.system.HttpConverterLoader:37 - Loading HTTP serializers
+2026-11-10 18:49:03.436 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:53 - Adding welcome page: class path resource [public/index.html]
+Nov 10, 2026 6:49:03 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-8085"]
+2026-11-10 18:49:03.843 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8085 (http) with context path ''
+2026-11-10 18:49:03.856 INFO  org.platformlambda.rest.RestServer:61 - Started RestServer in 2.752 seconds (JVM running for 4.617)
+2026-11-10 18:49:03.922 INFO  org.platformlambda.spring.system.SpringEventListener:107 - Starting org.platformlambda.main.MainApp
+2026-11-10 18:49:03.922 INFO  org.platformlambda.main.MainApp:36 - Started
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.476 s - in org.platformlambda.rest.RestTests
+[INFO] Running org.platformlambda.config.AppConfigTests
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.platformlambda.config.AppConfigTests
+[INFO] Running org.platformlambda.core.util.ConfigReaderTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.platformlambda.core.util.ConfigReaderTest
+[INFO] Running org.platformlambda.core.util.PostOfficeTest
+2026-11-10 18:49:04.314 INFO  org.platformlambda.core.util.ManagedCache:178 - Started
+2026-11-10 18:49:04.314 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (system.log.cache), expiry 30000 ms, maxItems=2000
+2026-11-10 18:49:04.520 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE elastic.queue.cleanup with 1 instance started
+2026-11-10 18:49:04.524 INFO  org.platformlambda.core.system.ServiceQueue:71 - PUBLIC hello.world with 10 instances started
+2026-11-10 18:49:04.528 INFO  org.platformlambda.core.services.DistributedTrace:46 - Reporting to 'distributed.trace.processor' if present
+2026-11-10 18:49:04.530 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE distributed.tracing with 1 instance started
+2026-11-10 18:49:04.533 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (health.info), expiry 5000 ms, maxItems=2000
+2026-11-10 18:49:04.537 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE actuator.services with 10 instances started
+2026-11-10 18:49:04.540 INFO  org.platformlambda.core.system.PostOffice:68 - Includes [distributed.tracing, actuator.services]
+2026-11-10 18:49:04.543 INFO  org.platformlambda.core.system.PostOffice:200 - Loading route substitutions from classpath:/route-substitution.yaml
+2026-11-10 18:49:04.543 INFO  org.platformlambda.core.system.PostOffice:186 - Route substitution: hello.test -> hello.world
+2026-11-10 18:49:04.547 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (java.class.cache), expiry 300000 ms, maxItems=2000
+2026-11-10 18:49:04.954 INFO  org.platformlambda.core.util.ElasticQueue:197 - Created holding area /tmp/reactive/rest-spring-202611101d05da875b194309848213c2891d9ef1 in 430 ms
+2026-11-10 18:49:04.954 INFO  org.platformlambda.core.util.ElasticQueue:364 - Commit log started - com.sleepycat.je.Database@6b4c3b40
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.278 s - in org.platformlambda.core.util.PostOfficeTest
+[INFO] Running org.platformlambda.core.util.MsgPackTest
+2026-11-10 18:49:05.576 WARN  org.platformlambda.core.system.WorkerQueue:219 - Unhandled exception when sending reply from hello.world#3 - Route r.f3b2d8b3495749dda23db318ce98f8aa@202611101d05da875b194309848213c2891d9ef1 not found
+2026-11-10 18:49:05.577 WARN  org.platformlambda.core.system.WorkerQueue:219 - Unhandled exception when sending reply from hello.world#1 - Route r.f3b2d8b3495749dda23db318ce98f8aa@202611101d05da875b194309848213c2891d9ef1 not found
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.platformlambda.core.util.MsgPackTest
+[INFO] Running org.platformlambda.core.util.ServiceNameTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.platformlambda.core.util.ServiceNameTest
+[INFO] Running org.platformlambda.core.util.PayloadMapperTest
+2026-11-10 18:49:05.582 WARN  org.platformlambda.core.models.EventEnvelope:209 - Fall back to Map - Class com.unsafe.models.UnauthorizedObj not in safe.data.models
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.platformlambda.core.util.PayloadMapperTest
+[INFO] Running org.platformlambda.servlets.ServletTest
+Nov 10, 2026 6:49:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-10 18:49:05.602 INFO  org.springframework.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2026-11-10 18:49:05.604 INFO  org.springframework.web.servlet.DispatcherServlet:547 - Completed initialization in 1 ms
+2026-11-10 18:49:05.660 WARN  org.platformlambda.core.system.WorkerQueue:225 - Unhandled exception for actuator.services#1 - Route system.service.registry not found
+2026-11-10 18:49:05.791 INFO  org.platformlambda.core.websocket.client.PersistentWsClient:68 - Started
+2026-11-10 18:49:05.792 INFO  org.platformlambda.core.websocket.client.PersistentWsClient:75 - Connection list [ws://127.0.0.1:8085/ws/mock]
+2026-11-10 18:49:05.849 INFO  org.platformlambda.core.websocket.common.WsConfigurator:82 - websocket.idle.timeout = 60 seconds
+2026-11-10 18:49:05.849 INFO  org.platformlambda.core.websocket.common.WsConfigurator:82 - websocket.idle.timeout = 60 seconds
+2026-11-10 18:49:05.849 WARN  org.platformlambda.core.websocket.common.WsConfigurator:91 - websocket.text.size changed from 8192 to 65536
+2026-11-10 18:49:05.849 WARN  org.platformlambda.core.websocket.common.WsConfigurator:98 - websocket.binary.size changed from 8192 to 65536
+2026-11-10 18:49:05.851 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.client.in.50163.1 with 1 instance started
+2026-11-10 18:49:05.852 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE mock.in.21480.2 with 1 instance started
+2026-11-10 18:49:05.853 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.client.out.50163.1 with 1 instance started
+2026-11-10 18:49:05.853 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE mock.out.21480.2 with 1 instance started
+2026-11-10 18:49:05.855 INFO  org.platformlambda.core.websocket.client.SimpleClientEndpoint:82 - Session-1 ServletTest$$Lambda$795/0x000079e8f05cbc68 connected to ws.client.in.50163.1 127.0.0.1, ws://127.0.0.1:8085/ws/mock/202611101d05da875b194309848213c2891d9ef1
+2026-11-10 18:49:05.855 INFO  org.platformlambda.websocket.WsServer:119 - Session-0 mock.in.21480.2 MockWebSocketServer connected to 127.0.0.1 /ws/mock/202611101d05da875b194309848213c2891d9ef1
+2026-11-10 18:49:05.857 INFO  com.accenture.mock.MockWebSocketServer:50 - Started mock.in.21480.2, mock.out.21480.2, ip=127.0.0.1, path=/ws/mock/202611101d05da875b194309848213c2891d9ef1, query=, token=202611101d05da875b194309848213c2891d9ef1
+2026-11-10 18:49:05.866 INFO  com.accenture.mock.MockWebSocketServer:74 - mock.in.21480.2 received: hello world
+2026-11-10 18:49:05.871 INFO  com.accenture.mock.MockWebSocketServer:65 - mock.in.21480.2 got 11 bytes
+2026-11-10 18:49:06.067 WARN  org.platformlambda.core.system.WorkerQueue:219 - Unhandled exception when sending reply from hello.world#6 - Route r.2014298a05364e1fbf79dc56124da5a0@202611101d05da875b194309848213c2891d9ef1 not found
+2026-11-10 18:49:06.861 INFO  com.accenture.mock.MockWebSocketServer:74 - mock.in.21480.2 received: {
+  "type": "keep-alive",
+  "seq": 1
+}
+2026-11-10 18:49:06.864 INFO  org.platformlambda.core.websocket.client.SimpleClientEndpoint:139 - Session-1 ws.client.in.50163.1 closed (1001, Shutdown)
+2026-11-10 18:49:06.865 INFO  org.platformlambda.core.system.ServiceQueue:104 - ws.client.out.50163.1 stopped
+2026-11-10 18:49:06.865 INFO  org.platformlambda.core.system.ServiceQueue:104 - ws.client.in.50163.1 stopped
+2026-11-10 18:49:06.864 INFO  org.platformlambda.websocket.WsServer:189 - Session-0 mock.in.21480.2 closed (1001, Shutdown)
+2026-11-10 18:49:06.866 INFO  org.platformlambda.core.system.WsRegistry:129 - Session-1 (ws.client.in.50163.1, ws.client.out.50163.1) released
+2026-11-10 18:49:06.866 INFO  org.platformlambda.core.system.ServiceQueue:104 - mock.out.21480.2 stopped
+2026-11-10 18:49:06.866 INFO  org.platformlambda.core.system.ServiceQueue:104 - mock.in.21480.2 stopped
+2026-11-10 18:49:06.867 INFO  org.platformlambda.core.system.WsRegistry:129 - Session-0 (mock.in.21480.2, mock.out.21480.2) released
+2026-11-10 18:49:06.875 WARN  org.platformlambda.core.system.WorkerQueue:225 - Unhandled exception for actuator.services#5 - Route system.service.registry not found
+[INFO] Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.374 s - in org.platformlambda.servlets.ServletTest
+2026-11-10 18:49:07.037 INFO  com.accenture.mock.MockWebListener:37 - Destroyed javax.servlet.ServletContextEvent[source=org.apache.catalina.core.StandardContext$NoPluggabilityServletContext@26a5775f]
+2026-11-10 18:49:07.037 INFO  org.platformlambda.websocket.WsLoader:82 - Stopped
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 110, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.7:report (report) @ rest-spring ---
+[INFO] Loading execution data file /tmp/tmp.cBXON4Pjpe/repo/system/rest-spring/target/jacoco.exec
+[INFO] Analyzed bundle 'rest-spring' with 34 classes
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ rest-spring ---
+[INFO] 
+[INFO] >>> source:3.2.1:jar (attach-sources) > generate-sources @ rest-spring >>>
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (default) @ rest-spring ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/tmp/tmp.cBXON4Pjpe/repo/system/rest-spring/target/jacoco.exec
+[INFO] 
+[INFO] <<< source:3.2.1:jar (attach-sources) < generate-sources @ rest-spring <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.2.1:jar (attach-sources) @ rest-spring ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- javadoc:3.2.0:jar (attach-javadocs) @ rest-spring ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ rest-spring ---
+[INFO] Installing /tmp/tmp.cBXON4Pjpe/repo/system/rest-spring/target/rest-spring-2.2.2.jar to /home/runner/.m2/repository/org/platformlambda/rest-spring/2.2.2/rest-spring-2.2.2.jar
+[INFO] Installing /tmp/tmp.cBXON4Pjpe/repo/system/rest-spring/pom.xml to /home/runner/.m2/repository/org/platformlambda/rest-spring/2.2.2/rest-spring-2.2.2.pom
+[INFO] 
+[INFO] -----------------< org.platformlambda:cloud-connector >-----------------
+[INFO] Building Cloud connector 2.2.2                                     [3/6]
+[INFO]   from /tmp/tmp.cBXON4Pjpe/repo/connectors/core/cloud-connector/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (default) @ cloud-connector ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/tmp/tmp.cBXON4Pjpe/repo/connectors/core/cloud-connector/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ cloud-connector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cloud-connector ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ cloud-connector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cloud-connector ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ cloud-connector ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.platformlambda.cloud.ConnectorTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.6)
+
+2026-11-10 18:49:10.682 INFO  org.platformlambda.rest.RestServer:55 - Starting RestServer v2.2.2 using Java 17.0.21 on runnervmwuk1x with PID 3698 (started by runner in /tmp/tmp.cBXON4Pjpe/repo/connectors/core/cloud-connector)
+2026-11-10 18:49:10.694 INFO  org.platformlambda.rest.RestServer:659 - No active profile set, falling back to default profiles: default
+2026-11-10 18:49:12.099 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8600 (http)
+Nov 10, 2026 6:49:12 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-nio-8600"]
+Nov 10, 2026 6:49:12 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service [Tomcat]
+Nov 10, 2026 6:49:12 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet engine: [Apache Tomcat/9.0.54]
+Nov 10, 2026 6:49:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring embedded WebApplicationContext
+2026-11-10 18:49:12.241 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1517 ms
+2026-11-10 18:49:12.311 INFO  org.platformlambda.core.serializers.SimpleMapper:47 - snake.case.serialization enabled
+2026-11-10 18:49:12.318 INFO  org.platformlambda.rest.RestLoader:59 - SimpleMapper initialized
+2026-11-10 18:49:12.318 INFO  org.platformlambda.rest.RestLoader:63 - jax.rs.application.path = /api
+2026-11-10 18:49:12.353 INFO  org.platformlambda.rest.RestLoader:84 - No REST endpoints are found
+2026-11-10 18:49:12.428 INFO  org.platformlambda.websocket.WsLoader:66 - org.platformlambda.websocket.WsServer registered as WEBSOCKET DISPATCHER [/ws/{name}/{handle}]
+2026-11-10 18:49:12.429 INFO  org.platformlambda.websocket.WsLoader:73 - Total 1 Websocket server endpoint is registered (JSR-356)
+2026-11-10 18:49:12.491 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (app.presence.list), expiry 60000 ms, maxItems=2000
+2026-11-10 18:49:12.491 INFO  org.platformlambda.core.util.ManagedCache:178 - Started
+2026-11-10 18:49:12.586 INFO  org.platformlambda.cloud.ConnectorConfig:80 - Loading config from classpath:/topic-substitution.yaml
+2026-11-10 18:49:12.587 INFO  org.platformlambda.cloud.ConnectorConfig:103 - Using pre-allocated topics - virtual topic mapping below:
+2026-11-10 18:49:12.587 INFO  org.platformlambda.cloud.ConnectorConfig:119 - multiplex.0001-000 -> user.topic.one
+2026-11-10 18:49:12.587 INFO  org.platformlambda.cloud.ConnectorConfig:119 - multiplex.0001-001 -> user.topic.two
+2026-11-10 18:49:12.588 INFO  org.platformlambda.cloud.ConnectorConfig:119 - multiplex.0001-002 -> user.topic.three
+2026-11-10 18:49:12.588 INFO  org.platformlambda.cloud.ConnectorConfig:119 - multiplex.0001-003 -> user.topic.four
+2026-11-10 18:49:12.588 INFO  org.platformlambda.cloud.ConnectorConfig:119 - multiplex.0001-004 -> user.topic.five
+2026-11-10 18:49:12.588 INFO  org.platformlambda.cloud.ConnectorConfig:119 - multiplex.0001-005 -> user.topic.six
+2026-11-10 18:49:12.588 INFO  org.platformlambda.cloud.ConnectorConfig:119 - service.monitor-000 -> some.topic.one
+2026-11-10 18:49:12.589 INFO  org.platformlambda.cloud.ConnectorConfig:119 - service.monitor-001 -> some.topic.two
+2026-11-10 18:49:12.589 INFO  org.platformlambda.cloud.ConnectorConfig:119 - service.monitor-002 -> some.topic.three
+2026-11-10 18:49:12.589 INFO  org.platformlambda.cloud.ConnectorConfig:119 - service.monitor-003 -> some.topic.four
+2026-11-10 18:49:12.590 INFO  org.platformlambda.mock.MockPresenceMonitor:106 - Topic prefix multiplex, partition count 32, max virtual topics 288
+2026-11-10 18:49:12.591 INFO  org.platformlambda.websocket.WsServer:78 - org.platformlambda.mock.MockPresenceMonitor loaded as WEBSOCKET SERVER endpoint /ws/presence/{handle}
+2026-11-10 18:49:12.598 INFO  org.platformlambda.websocket.WsFilter:58 - HSTS (RFC-6797) feature enabled
+2026-11-10 18:49:12.620 INFO  org.platformlambda.spring.system.HttpConverterLoader:37 - Loading HTTP serializers
+2026-11-10 18:49:12.894 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping:53 - Adding welcome page: class path resource [public/index.html]
+Nov 10, 2026 6:49:13 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-nio-8600"]
+2026-11-10 18:49:13.111 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8600 (http) with context path ''
+2026-11-10 18:49:13.125 INFO  org.platformlambda.rest.RestServer:61 - Started RestServer in 2.92 seconds (JVM running for 4.632)
+2026-11-10 18:49:13.146 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (system.log.cache), expiry 30000 ms, maxItems=2000
+2026-11-10 18:49:13.163 INFO  org.platformlambda.spring.system.SpringEventListener:107 - Starting org.platformlambda.mock.MockApp
+2026-11-10 18:49:13.433 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE elastic.queue.cleanup with 1 instance started
+2026-11-10 18:49:13.438 INFO  org.platformlambda.core.system.ServiceQueue:71 - PUBLIC hello.world with 5 instances started
+2026-11-10 18:49:13.446 INFO  org.platformlambda.core.services.DistributedTrace:46 - Reporting to 'distributed.trace.processor' if present
+2026-11-10 18:49:13.448 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE distributed.tracing with 1 instance started
+2026-11-10 18:49:13.455 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (health.info), expiry 5000 ms, maxItems=2000
+2026-11-10 18:49:13.459 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE actuator.services with 10 instances started
+2026-11-10 18:49:13.460 INFO  org.platformlambda.core.system.PostOffice:68 - Includes [distributed.tracing, actuator.services]
+2026-11-10 18:49:13.495 INFO  org.platformlambda.mock.MockApp:43 - started
+2026-11-10 18:49:13.496 INFO  org.platformlambda.core.system.Platform:228 - Starting cloud connector mock.cloud using org.platformlambda.mock.MockCloud
+2026-11-10 18:49:13.497 INFO  org.platformlambda.core.system.PubSub:67 - Provider org.platformlambda.mock.MockPubSub@3b8ca5f1 loaded
+2026-11-10 18:49:13.507 INFO  org.platformlambda.core.websocket.client.PersistentWsClient:68 - Started
+2026-11-10 18:49:13.510 INFO  org.platformlambda.core.websocket.client.PersistentWsClient:75 - Connection list [ws://127.0.0.1:8600/ws/presence, ws://localhost:8600/ws/presence]
+2026-11-10 18:49:13.520 INFO  org.platformlambda.core.util.SimpleCache:74 - Created cache (sticky.destinations), expiry 60000 ms
+2026-11-10 18:49:13.520 INFO  org.platformlambda.core.util.SimpleCache:150 - Started
+2026-11-10 18:49:13.526 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE cloud.connector with 1 instance started
+2026-11-10 18:49:13.528 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE system.service.query with 10 instances started
+2026-11-10 18:49:13.535 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (member.life.cycle.events), expiry 5000 ms, maxItems=2000
+2026-11-10 18:49:13.540 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE system.service.registry with 10 instances started
+2026-11-10 18:49:13.542 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE cloud.connector.health with 2 instances started
+Nov 10, 2026 6:49:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-10 18:49:13.659 INFO  org.springframework.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2026-11-10 18:49:13.661 INFO  org.springframework.web.servlet.DispatcherServlet:547 - Completed initialization in 1 ms
+2026-11-10 18:49:13.717 INFO  org.platformlambda.mock.MockPresenceMonitor:106 - Topic prefix multiplex, partition count 32, max virtual topics 288
+2026-11-10 18:49:13.719 INFO  org.platformlambda.core.websocket.common.WsConfigurator:82 - websocket.idle.timeout = 60 seconds
+2026-11-10 18:49:13.720 WARN  org.platformlambda.core.websocket.common.WsConfigurator:91 - websocket.text.size changed from 8192 to 65536
+2026-11-10 18:49:13.720 WARN  org.platformlambda.core.websocket.common.WsConfigurator:98 - websocket.binary.size changed from 8192 to 65536
+2026-11-10 18:49:13.722 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE presence.in.38688.2 with 1 instance started
+2026-11-10 18:49:13.723 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.client.in.68162.1 with 1 instance started
+2026-11-10 18:49:13.726 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE presence.out.38688.2 with 1 instance started
+2026-11-10 18:49:13.726 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.client.out.68162.1 with 1 instance started
+2026-11-10 18:49:13.733 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (java.class.cache), expiry 300000 ms, maxItems=2000
+2026-11-10 18:49:13.764 INFO  org.platformlambda.core.websocket.client.SimpleClientEndpoint:82 - Session-0 PresenceConnector connected to ws.client.in.68162.1 127.0.0.1, ws://127.0.0.1:8600/ws/presence/202611105bd8d80cafc14f3baa9df02ee4e45db2
+2026-11-10 18:49:13.765 INFO  org.platformlambda.websocket.WsServer:119 - Session-1 presence.in.38688.2 MockPresenceMonitor connected to 127.0.0.1 /ws/presence/202611105bd8d80cafc14f3baa9df02ee4e45db2
+2026-11-10 18:49:13.766 INFO  org.platformlambda.mock.MockPresenceMonitor:175 - Started presence.in.38688.2, 127.0.0.1, 202611105bd8d80cafc14f3baa9df02ee4e45db2
+2026-11-10 18:49:13.768 INFO  org.platformlambda.cloud.reporter.PresenceConnector:127 - Connected ws.client.in.68162.1, 127.0.0.1, /ws/presence/202611105bd8d80cafc14f3baa9df02ee4e45db2
+2026-11-10 18:49:13.781 INFO  org.platformlambda.mock.MockPresenceMonitor:226 - Member registered created=2026-11-10T18:49:13Z, name=cloud-connector, monitor=202611105bd8d80cafc14f3baa9df02ee4e45db2, id=presence.in.38688.2, type=APP, updated=2026-11-10T18:49:13Z, version=1.0.0, seq=0, group=1, origin=202611105bd8d80cafc14f3baa9df02ee4e45db2
+2026-11-10 18:49:13.789 INFO  org.platformlambda.cloud.services.ServiceRegistry:359 - hello.world (cloud-connector, APP.202611105bd8d80cafc14f3baa9df02ee4e45db2) registered
+2026-11-10 18:49:13.796 INFO  org.platformlambda.cloud.reporter.PresenceConnector:150 - Activated ws.client.in.68162.1
+2026-11-10 18:49:13.800 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE service.monitor.1 with 1 instance started
+2026-11-10 18:49:13.808 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE init.service.monitor.1 with 1 instance started
+2026-11-10 18:49:13.814 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE service.monitor.1.mock with 1 instance started
+2026-11-10 18:49:13.818 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE multiplex.0001.0 with 1 instance started
+2026-11-10 18:49:13.819 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE init.multiplex.0001.0 with 1 instance started
+2026-11-10 18:49:13.821 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE multiplex.0001.0.mock with 1 instance started
+2026-11-10 18:49:13.824 INFO  org.platformlambda.cloud.services.ServiceRegistry:173 - Presence monitor v1.0.0 detected
+2026-11-10 18:49:13.825 INFO  org.platformlambda.core.util.SimpleCache:74 - Created cache (payload.segmentation), expiry 60000 ms
+2026-11-10 18:49:13.826 INFO  org.platformlambda.core.websocket.common.MultipartPayload:52 - Automatic segmentation when event payload exceeds 65,080
+2026-11-10 18:49:13.948 INFO  org.platformlambda.core.util.ElasticQueue:197 - Created holding area /tmp/reactive/cloud-connector-202611105bd8d80cafc14f3baa9df02ee4e45db2 in 510 ms
+2026-11-10 18:49:13.951 INFO  org.platformlambda.core.util.ElasticQueue:364 - Commit log started - com.sleepycat.je.Database@61c5cad9
+2026-11-10 18:49:15.314 INFO  org.platformlambda.cloud.ServiceLifeCycle:60 - Contacting service.monitor, partition 1, sequence 1
+2026-11-10 18:49:15.316 INFO  org.platformlambda.core.system.PostOffice:502 - Cancel future event init.service.monitor.1, 2026-11-10T18:49:18Z
+2026-11-10 18:49:15.317 INFO  org.platformlambda.core.system.ServiceQueue:104 - init.service.monitor.1 stopped
+2026-11-10 18:49:15.317 INFO  org.platformlambda.cloud.ServiceLifeCycle:74 - service.monitor, partition 1 ready
+2026-11-10 18:49:15.321 INFO  org.platformlambda.cloud.ServiceLifeCycle:60 - Contacting multiplex.0001, partition 0, sequence 1
+2026-11-10 18:49:15.322 INFO  org.platformlambda.cloud.reporter.PresenceConnector:266 - Connected to Closed User Group 1
+2026-11-10 18:49:15.324 INFO  org.platformlambda.core.system.PostOffice:502 - Cancel future event init.multiplex.0001.0, 2026-11-10T18:49:18Z
+2026-11-10 18:49:15.325 INFO  org.platformlambda.core.system.ServiceQueue:104 - init.multiplex.0001.0 stopped
+2026-11-10 18:49:15.325 INFO  org.platformlambda.cloud.ServiceLifeCycle:74 - multiplex.0001, partition 0 ready
+2026-11-10 18:49:15.408 INFO  org.platformlambda.core.system.Platform:475 - cloud.connector.health is ready
+2026-11-10 18:49:15.531 INFO  org.platformlambda.core.system.ServiceQueue:71 - PUBLIC notification.manager.internal with 1 instance started
+2026-11-10 18:49:15.532 INFO  org.platformlambda.cloud.services.ServiceRegistry:359 - notification.manager.internal (cloud-connector, APP.202611105bd8d80cafc14f3baa9df02ee4e45db2) registered
+2026-11-10 18:49:15.538 INFO  org.platformlambda.cloud.services.ServiceRegistry:359 - hello.world (WEB.unit-test) registered
+2026-11-10 18:49:15.539 INFO  org.platformlambda.cloud.services.ServiceRegistry:359 - hello.test (WEB.unit-test) registered
+2026-11-10 18:49:15.540 INFO  org.platformlambda.cloud.services.ServiceRegistry:359 - hello.demo (WEB.unit-test) registered
+2026-11-10 18:49:15.540 INFO  org.platformlambda.cloud.services.ServiceRegistry:359 - to.be.removed (WEB.unit-test) registered
+2026-11-10 18:49:15.540 INFO  org.platformlambda.cloud.services.ServiceRegistry:286 - Loaded 3 routes from unit-test
+2026-11-10 18:49:15.543 INFO  org.platformlambda.cloud.services.ServiceRegistry:377 - to.be.removed unit-test unregistered
+2026-11-10 18:49:15.543 INFO  org.platformlambda.mock.MockApp:38 - Received {} something
+2026-11-10 18:49:15.545 INFO  org.platformlambda.mock.MockApp:38 - Received {} something
+2026-11-10 18:49:15.544 WARN  org.platformlambda.core.system.WorkerQueue:225 - Unhandled exception for cloud.connector#1 - Route hello.demo@unit-test not found
+2026-11-10 18:49:15.564 WARN  org.platformlambda.cloud.reporter.PresenceConnector:97 - Suspend 202611105bd8d80cafc14f3baa9df02ee4e45db2 by runner
+2026-11-10 18:49:15.600 WARN  org.platformlambda.cloud.reporter.PresenceConnector:93 - Resume 202611105bd8d80cafc14f3baa9df02ee4e45db2 by runner
+2026-11-10 18:49:15.600 INFO  org.platformlambda.cloud.services.ServiceRegistry:197 - Restore 202611105bd8d80cafc14f3baa9df02ee4e45db2 by runner
+2026-11-10 18:49:15.604 INFO  org.platformlambda.cloud.services.ServiceRegistry:250 - Peer unit-test left
+2026-11-10 18:49:15.604 INFO  org.platformlambda.cloud.services.ServiceRegistry:377 - hello.test unit-test unregistered
+2026-11-10 18:49:15.605 INFO  org.platformlambda.cloud.services.ServiceRegistry:377 - hello.world unit-test unregistered
+2026-11-10 18:49:15.605 INFO  org.platformlambda.cloud.services.ServiceRegistry:377 - hello.demo unit-test unregistered
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.604 s - in org.platformlambda.cloud.ConnectorTest
+[INFO] Running org.platformlambda.core.util.MsgPackTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.platformlambda.core.util.MsgPackTest
+[INFO] Running org.platformlambda.core.util.TopicSubstitutionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.platformlambda.core.util.TopicSubstitutionTest
+[INFO] Running org.platformlambda.core.util.ServiceNameTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.platformlambda.core.util.ServiceNameTest
+2026-11-10 18:49:15.631 INFO  org.platformlambda.cloud.reporter.PresenceConnector:135 - Disconnected ws.client.in.68162.1
+2026-11-10 18:49:15.635 INFO  org.platformlambda.websocket.WsServer:189 - Session-1 presence.in.38688.2 closed (1001, Shutdown)
+2026-11-10 18:49:15.636 INFO  org.platformlambda.core.system.ServiceQueue:104 - presence.out.38688.2 stopped
+2026-11-10 18:49:15.636 INFO  org.platformlambda.core.system.ServiceQueue:104 - presence.in.38688.2 stopped
+2026-11-10 18:49:15.636 INFO  org.platformlambda.core.system.WsRegistry:129 - Session-1 (presence.in.38688.2, presence.out.38688.2) released
+2026-11-10 18:49:15.639 INFO  org.platformlambda.core.websocket.client.SimpleClientEndpoint:139 - Session-0 ws.client.in.68162.1 closed (1001, Shutdown)
+2026-11-10 18:49:15.640 INFO  org.platformlambda.core.system.ServiceQueue:104 - ws.client.out.68162.1 stopped
+2026-11-10 18:49:15.640 INFO  org.platformlambda.core.system.ServiceQueue:104 - ws.client.in.68162.1 stopped
+2026-11-10 18:49:15.640 INFO  org.platformlambda.core.system.WsRegistry:129 - Session-0 (ws.client.in.68162.1, ws.client.out.68162.1) released
+2026-11-10 18:49:15.701 INFO  org.platformlambda.websocket.WsLoader:82 - Stopped
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.7:report (report) @ cloud-connector ---
+[INFO] Loading execution data file /tmp/tmp.cBXON4Pjpe/repo/connectors/core/cloud-connector/target/jacoco.exec
+[INFO] Analyzed bundle 'Cloud connector' with 8 classes
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ cloud-connector ---
+[INFO] 
+[INFO] >>> source:3.2.1:jar (attach-sources) > generate-sources @ cloud-connector >>>
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (default) @ cloud-connector ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/tmp/tmp.cBXON4Pjpe/repo/connectors/core/cloud-connector/target/jacoco.exec
+[INFO] 
+[INFO] <<< source:3.2.1:jar (attach-sources) < generate-sources @ cloud-connector <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.2.1:jar (attach-sources) @ cloud-connector ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- javadoc:3.2.0:jar (attach-javadocs) @ cloud-connector ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ cloud-connector ---
+[INFO] Installing /tmp/tmp.cBXON4Pjpe/repo/connectors/core/cloud-connector/target/cloud-connector-2.2.2.jar to /home/runner/.m2/repository/org/platformlambda/cloud-connector/2.2.2/cloud-connector-2.2.2.jar
+[INFO] Installing /tmp/tmp.cBXON4Pjpe/repo/connectors/core/cloud-connector/pom.xml to /home/runner/.m2/repository/org/platformlambda/cloud-connector/2.2.2/cloud-connector-2.2.2.pom
+[INFO] 
+[INFO] -----------------< org.platformlambda:kafka-connector >-----------------
+[INFO] Building Cloud connector for Kafka cluster 2.2.2                   [4/6]
+[INFO]   from /tmp/tmp.cBXON4Pjpe/repo/connectors/adapters/kafka/kafka-connector/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (default) @ kafka-connector ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/tmp/tmp.cBXON4Pjpe/repo/connectors/adapters/kafka/kafka-connector/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ kafka-connector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ kafka-connector ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ kafka-connector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ kafka-connector ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ kafka-connector ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.platformlambda.core.util.MsgPackTest
+2026-11-10 18:49:18.133 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (java.class.cache), expiry 300000 ms, maxItems=2000
+2026-11-10 18:49:18.132 INFO  org.platformlambda.core.util.ManagedCache:178 - Started
+2026-11-10 18:49:18.182 INFO  org.platformlambda.core.serializers.SimpleMapper:47 - snake.case.serialization enabled
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.073 s - in org.platformlambda.core.util.MsgPackTest
+[INFO] Running org.platformlambda.core.util.ServiceNameTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in org.platformlambda.core.util.ServiceNameTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.7:report (report) @ kafka-connector ---
+[INFO] Loading execution data file /tmp/tmp.cBXON4Pjpe/repo/connectors/adapters/kafka/kafka-connector/target/jacoco.exec
+[INFO] Analyzed bundle 'Cloud connector for Kafka cluster' with 6 classes
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ kafka-connector ---
+[INFO] 
+[INFO] >>> source:3.2.1:jar (attach-sources) > generate-sources @ kafka-connector >>>
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (default) @ kafka-connector ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/tmp/tmp.cBXON4Pjpe/repo/connectors/adapters/kafka/kafka-connector/target/jacoco.exec
+[INFO] 
+[INFO] <<< source:3.2.1:jar (attach-sources) < generate-sources @ kafka-connector <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.2.1:jar (attach-sources) @ kafka-connector ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- javadoc:3.2.0:jar (attach-javadocs) @ kafka-connector ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ kafka-connector ---
+[INFO] Installing /tmp/tmp.cBXON4Pjpe/repo/connectors/adapters/kafka/kafka-connector/target/kafka-connector-2.2.2.jar to /home/runner/.m2/repository/org/platformlambda/kafka-connector/2.2.2/kafka-connector-2.2.2.jar
+[INFO] Installing /tmp/tmp.cBXON4Pjpe/repo/connectors/adapters/kafka/kafka-connector/pom.xml to /home/runner/.m2/repository/org/platformlambda/kafka-connector/2.2.2/kafka-connector-2.2.2.pom
+[INFO] 
+[INFO] ---------------< org.platformlambda:hazelcast-connector >---------------
+[INFO] Building Cloud connector for Hazelcast cluster 2.2.2               [5/6]
+[INFO]   from /tmp/tmp.cBXON4Pjpe/repo/connectors/adapters/hazelcast/hazelcast-connector/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (default) @ hazelcast-connector ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/tmp/tmp.cBXON4Pjpe/repo/connectors/adapters/hazelcast/hazelcast-connector/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ hazelcast-connector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hazelcast-connector ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ hazelcast-connector ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hazelcast-connector ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ hazelcast-connector ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.platformlambda.core.util.MsgPackTest
+2026-11-10 18:49:20.200 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (java.class.cache), expiry 300000 ms, maxItems=2000
+2026-11-10 18:49:20.200 INFO  org.platformlambda.core.util.ManagedCache:178 - Started
+2026-11-10 18:49:20.250 INFO  org.platformlambda.core.serializers.SimpleMapper:47 - snake.case.serialization enabled
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.078 s - in org.platformlambda.core.util.MsgPackTest
+[INFO] Running org.platformlambda.core.util.ServiceNameTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.platformlambda.core.util.ServiceNameTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.7:report (report) @ hazelcast-connector ---
+[INFO] Loading execution data file /tmp/tmp.cBXON4Pjpe/repo/connectors/adapters/hazelcast/hazelcast-connector/target/jacoco.exec
+[INFO] Analyzed bundle 'Cloud connector for Hazelcast cluster' with 7 classes
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ hazelcast-connector ---
+[INFO] 
+[INFO] >>> source:3.2.1:jar (attach-sources) > generate-sources @ hazelcast-connector >>>
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (default) @ hazelcast-connector ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/tmp/tmp.cBXON4Pjpe/repo/connectors/adapters/hazelcast/hazelcast-connector/target/jacoco.exec
+[INFO] 
+[INFO] <<< source:3.2.1:jar (attach-sources) < generate-sources @ hazelcast-connector <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.2.1:jar (attach-sources) @ hazelcast-connector ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- javadoc:3.2.0:jar (attach-javadocs) @ hazelcast-connector ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ hazelcast-connector ---
+[INFO] Installing /tmp/tmp.cBXON4Pjpe/repo/connectors/adapters/hazelcast/hazelcast-connector/target/hazelcast-connector-2.2.2.jar to /home/runner/.m2/repository/org/platformlambda/hazelcast-connector/2.2.2/hazelcast-connector-2.2.2.jar
+[INFO] Installing /tmp/tmp.cBXON4Pjpe/repo/connectors/adapters/hazelcast/hazelcast-connector/pom.xml to /home/runner/.m2/repository/org/platformlambda/hazelcast-connector/2.2.2/hazelcast-connector-2.2.2.pom
+[INFO] 
+[INFO] -----------------< org.platformlambda:rest-automation >-----------------
+[INFO] Building REST automation library 2.2.2                             [6/6]
+[INFO]   from /tmp/tmp.cBXON4Pjpe/repo/extensions/rest-automation-lib/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.7:prepare-agent (default) @ rest-automation ---
+[INFO] argLine set to -javaagent:/home/runner/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/tmp/tmp.cBXON4Pjpe/repo/extensions/rest-automation-lib/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ rest-automation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ rest-automation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ rest-automation ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ rest-automation ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.2:test (default-test) @ rest-automation ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.platformlambda.automation.tests.WebSocketTests
+2026-11-10 18:49:22.521 INFO  org.platformlambda.core.system.AppStarter:108 - Starting org.platformlambda.automation.init.ParseArguments
+2026-11-10 18:49:22.581 INFO  org.platformlambda.core.system.AppStarter:108 - Starting org.platformlambda.automation.MainModule
+2026-11-10 18:49:22.583 INFO  org.platformlambda.core.system.ServerPersonality:54 - Setting personality as REST
+2026-11-10 18:49:22.635 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (system.log.cache), expiry 30000 ms, maxItems=2000
+2026-11-10 18:49:22.636 INFO  org.platformlambda.core.util.ManagedCache:178 - Started
+2026-11-10 18:49:23.070 INFO  org.platformlambda.automation.MainModule:135 - Loading config from classpath:/rest.yaml
+2026-11-10 18:49:23.075 INFO  org.platformlambda.automation.config.RoutingEntry:727 - Loaded header_1 request headers {drop=[Upgrade-Insecure-Requests, cache-control, accept-encoding, host, connection]}
+2026-11-10 18:49:23.076 INFO  org.platformlambda.automation.config.RoutingEntry:727 - Loaded header_1 response headers {add=[Strict-Transport-Security: max-age=31536000, Cache-Control: no-cache, no-store, Pragma: no-cache, Expires: Thu, 01 Jan 1970 00:00:00 GMT]}
+2026-11-10 18:49:23.077 INFO  org.platformlambda.automation.config.RoutingEntry:640 - Loaded cors_1 CORS headers (*)
+2026-11-10 18:49:23.078 INFO  org.platformlambda.automation.config.RoutingEntry:528 - GET /api/ws/token/{application} -> [ws.token.issuer], timeout=30s, tracing=true
+2026-11-10 18:49:23.079 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/ws/token/{application} -> [ws.token.issuer], timeout=30s
+2026-11-10 18:49:23.079 INFO  org.platformlambda.automation.config.RoutingEntry:528 - GET /api/notification -> [ws.notification], timeout=30s, tracing=true
+2026-11-10 18:49:23.079 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/notification -> [ws.notification], timeout=30s
+2026-11-10 18:49:23.080 INFO  org.platformlambda.automation.config.RoutingEntry:528 - GET /api/notification/{topic} -> [ws.notification], timeout=30s, tracing=true
+2026-11-10 18:49:23.080 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/notification/{topic} -> [ws.notification], timeout=30s
+2026-11-10 18:49:23.080 INFO  org.platformlambda.automation.config.RoutingEntry:525 - GET /api/hello/world -> v1.api.auth -> [hello.world], timeout=10s, tracing=true
+2026-11-10 18:49:23.080 INFO  org.platformlambda.automation.config.RoutingEntry:525 - PUT /api/hello/world -> v1.api.auth -> [hello.world], timeout=10s, tracing=true
+2026-11-10 18:49:23.081 INFO  org.platformlambda.automation.config.RoutingEntry:525 - POST /api/hello/world -> v1.api.auth -> [hello.world], timeout=10s, tracing=true
+2026-11-10 18:49:23.081 INFO  org.platformlambda.automation.config.RoutingEntry:525 - HEAD /api/hello/world -> v1.api.auth -> [hello.world], timeout=10s, tracing=true
+2026-11-10 18:49:23.081 INFO  org.platformlambda.automation.config.RoutingEntry:525 - PATCH /api/hello/world -> v1.api.auth -> [hello.world], timeout=10s, tracing=true
+2026-11-10 18:49:23.082 INFO  org.platformlambda.automation.config.RoutingEntry:525 - DELETE /api/hello/world -> v1.api.auth -> [hello.world], timeout=10s, tracing=true
+2026-11-10 18:49:23.082 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/hello/world -> [hello.world], timeout=10s
+2026-11-10 18:49:23.082 INFO  org.platformlambda.automation.config.RoutingEntry:528 - POST /api/upload/demo -> [hello.world], timeout=15s, tracing=false
+2026-11-10 18:49:23.082 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/upload/demo -> [hello.world], timeout=15s
+2026-11-10 18:49:23.083 INFO  org.platformlambda.automation.config.RoutingEntry:528 - GET /api/nice/{task}/* -> [hello.world], timeout=12s, tracing=false
+2026-11-10 18:49:23.083 INFO  org.platformlambda.automation.config.RoutingEntry:528 - PUT /api/nice/{task}/* -> [hello.world], timeout=12s, tracing=false
+2026-11-10 18:49:23.083 INFO  org.platformlambda.automation.config.RoutingEntry:528 - POST /api/nice/{task}/* -> [hello.world], timeout=12s, tracing=false
+2026-11-10 18:49:23.083 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/nice/{task}/* -> [hello.world], timeout=12s
+2026-11-10 18:49:23.085 WARN  org.platformlambda.automation.config.RoutingEntry:483 - trust_all_cert=true for http://127.0.0.1:8100 is not relevant - Do you meant https?
+2026-11-10 18:49:23.086 INFO  org.platformlambda.automation.config.RoutingEntry:528 - GET /api/v1/* -> [http://127.0.0.1:8100], timeout=20s, tracing=true
+2026-11-10 18:49:23.086 INFO  org.platformlambda.automation.config.RoutingEntry:528 - PUT /api/v1/* -> [http://127.0.0.1:8100], timeout=20s, tracing=true
+2026-11-10 18:49:23.086 INFO  org.platformlambda.automation.config.RoutingEntry:528 - POST /api/v1/* -> [http://127.0.0.1:8100], timeout=20s, tracing=true
+2026-11-10 18:49:23.086 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/v1/* -> [http://127.0.0.1:8100], timeout=20s
+2026-11-10 18:49:23.087 INFO  org.platformlambda.automation.config.RoutingEntry:528 - GET /api/hello/download -> [hello.download], timeout=20s, tracing=false
+2026-11-10 18:49:23.087 INFO  org.platformlambda.automation.config.RoutingEntry:523 - OPTIONS /api/hello/download -> [hello.download], timeout=20s
+2026-11-10 18:49:23.087 INFO  org.platformlambda.automation.config.RoutingEntry:247 - Number of exact URLs = 4
+2026-11-10 18:49:23.087 INFO  org.platformlambda.automation.config.RoutingEntry:265 - Number of wildcard URLs = 4
+2026-11-10 18:49:23.089 INFO  org.platformlambda.automation.config.WsEntry:85 - WebSocket /ws/api/notification:{token}, recipient: my.ws.handler, publish: true, subscribe: true
+2026-11-10 18:49:23.097 INFO  org.platformlambda.automation.services.ServiceGateway:93 - HTTP trace headers [X-Correlation-Id, X-Trace-Id]
+2026-11-10 18:49:23.106 INFO  org.platformlambda.automation.util.Housekeeper:43 - Started
+2026-11-10 18:49:23.146 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE elastic.queue.cleanup with 1 instance started
+2026-11-10 18:49:23.187 INFO  org.platformlambda.core.system.ServiceQueue:71 - PUBLIC async.http.request with 300 instances started
+2026-11-10 18:49:23.191 INFO  org.platformlambda.core.services.DistributedTrace:46 - Reporting to 'distributed.trace.processor' if present
+2026-11-10 18:49:23.193 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE distributed.tracing with 1 instance started
+2026-11-10 18:49:23.198 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (health.info), expiry 5000 ms, maxItems=2000
+2026-11-10 18:49:23.199 INFO  org.platformlambda.core.actuator.HealthService:66 - Mandatory service dependencies - []
+2026-11-10 18:49:23.201 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE actuator.services with 10 instances started
+2026-11-10 18:49:23.202 INFO  org.platformlambda.core.system.PostOffice:68 - Includes [distributed.tracing, actuator.services]
+2026-11-10 18:49:23.227 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE async.http.response with 300 instances started
+2026-11-10 18:49:23.285 INFO  org.platformlambda.automation.ws.WsRequestHandler:332 - Started
+2026-11-10 18:49:23.502 INFO  org.platformlambda.automation.MainModule:106 - REST automation running on port-8100
+2026-11-10 18:49:23.505 INFO  org.platformlambda.automation.util.AsyncTimeoutHandler:42 - Async HTTP timeout handler started
+2026-11-10 18:49:23.507 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (ws.tokens), expiry 30000 ms, maxItems=2000
+2026-11-10 18:49:23.508 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (ws.conn.events), expiry 2000 ms, maxItems=2000
+2026-11-10 18:49:23.510 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE rest.automation.notification with 1 instance started
+2026-11-10 18:49:23.516 INFO  org.platformlambda.core.util.ManagedCache:86 - Created cache (java.class.cache), expiry 300000 ms, maxItems=2000
+2026-11-10 18:49:23.542 INFO  org.platformlambda.core.system.ServiceQueue:71 - PUBLIC notification.manager with 10 instances started
+2026-11-10 18:49:23.561 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.token.issuer with 10 instances started
+2026-11-10 18:49:23.565 INFO  org.platformlambda.automation.services.NotificationManager:126 - Running in standalone mode
+2026-11-10 18:49:23.568 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.notification with 10 instances started
+2026-11-10 18:49:23.572 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE hello.world with 10 instances started
+2026-11-10 18:49:23.578 INFO  org.platformlambda.core.system.ServiceQueue:71 - PUBLIC my.ws.handler with 1 instance started
+2026-11-10 18:49:23.588 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.1
+2026-11-10 18:49:23.881 INFO  org.platformlambda.core.util.ElasticQueue:197 - Created holding area /tmp/reactive/rest-automation-202611105dbbafe40d434715992485f2101ae44d in 722 ms
+2026-11-10 18:49:23.884 INFO  org.platformlambda.core.util.ElasticQueue:364 - Commit log started - com.sleepycat.je.Database@77ebafb
+2026-11-10 18:49:23.964 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=GET /api/ws/token/notification, service=ws.token.issuer, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:23.959Z, exec_time=0.327, from=http.request, id=678bc95f56b644028708830e47f5543e}, annotations={}
+2026-11-10 18:49:23.965 INFO  org.platformlambda.core.serializers.SimpleMapper:47 - snake.case.serialization enabled
+2026-11-10 18:49:23.970 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=GET /api/ws/token/notification, service=notification.manager, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:23.962Z, exec_time=6.1, from=ws.token.issuer, id=678bc95f56b644028708830e47f5543e}, annotations={}
+2026-11-10 18:49:24.048 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=GET /api/ws/token/notification, service=async.http.response, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:23.961Z, exec_time=85.518, from=ws.token.issuer, id=678bc95f56b644028708830e47f5543e}, annotations={}
+2026-11-10 18:49:24.089 INFO  org.platformlambda.core.websocket.client.PersistentWsClient:68 - Started
+2026-11-10 18:49:24.092 INFO  org.platformlambda.core.websocket.client.PersistentWsClient:75 - Connection list [ws://127.0.0.1:8100/ws/notification/5bd8eed5f77b48d6860f3c518708af3f]
+2026-11-10 18:49:24.234 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.67894709.1 with 1 instance started
+2026-11-10 18:49:24.235 INFO  org.platformlambda.automation.ws.WsRequestHandler:152 - Session ws.67894709.1 started, ip=127.0.0.1, app=notification
+2026-11-10 18:49:24.282 INFO  org.platformlambda.core.websocket.common.WsConfigurator:82 - websocket.idle.timeout = 60 seconds
+2026-11-10 18:49:24.283 WARN  org.platformlambda.core.websocket.common.WsConfigurator:91 - websocket.text.size changed from 8192 to 65536
+2026-11-10 18:49:24.283 WARN  org.platformlambda.core.websocket.common.WsConfigurator:98 - websocket.binary.size changed from 8192 to 65536
+2026-11-10 18:49:24.284 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.client.in.73198.1 with 1 instance started
+2026-11-10 18:49:24.287 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE ws.client.out.73198.1 with 1 instance started
+2026-11-10 18:49:24.291 INFO  org.platformlambda.core.websocket.client.SimpleClientEndpoint:82 - Session-0 WebSocketTests$$Lambda$238/0x00007a2fd8382228 connected to ws.client.in.73198.1 127.0.0.1, ws://127.0.0.1:8100/ws/notification/5bd8eed5f77b48d6860f3c518708af3f/202611105dbbafe40d434715992485f2101ae44d
+2026-11-10 18:49:24.292 INFO  org.platformlambda.automation.tests.WebSocketTests:85 - GOT headers: {path=/ws/notification/5bd8eed5f77b48d6860f3c518708af3f/202611105dbbafe40d434715992485f2101ae44d, route=ws.client.in.73198.1, tx_path=ws.client.out.73198.1, ip=127.0.0.1, query=, type=open, token=202611105dbbafe40d434715992485f2101ae44d} payload: null
+2026-11-10 18:49:24.316 INFO  org.platformlambda.automation.services.NotificationManager:98 - ws.67894709.1@202611105dbbafe40d434715992485f2101ae44d subscribed to hello.world
+2026-11-10 18:49:24.321 INFO  org.platformlambda.automation.services.NotificationManager:98 - ws.67894709.1@202611105dbbafe40d434715992485f2101ae44d subscribed to another.channel
+2026-11-10 18:49:24.322 INFO  org.platformlambda.automation.tests.WebSocketTests:85 - GOT headers: {route=ws.client.in.73198.1, tx_path=ws.client.out.73198.1, type=string} payload: {
+  "time": "2026-11-10T18:49:24.314Z",
+  "type": "subscribe",
+  "message": "topic hello.world"
+}
+2026-11-10 18:49:24.322 INFO  org.platformlambda.automation.tests.WebSocketTests:85 - GOT headers: {route=ws.client.in.73198.1, tx_path=ws.client.out.73198.1, type=string} payload: {
+  "time": "2026-11-10T18:49:24.315Z",
+  "type": "publish",
+  "message": "sending message to hello.world"
+}
+2026-11-10 18:49:24.323 INFO  org.platformlambda.automation.tests.WebSocketTests:85 - GOT headers: {route=ws.client.in.73198.1, tx_path=ws.client.out.73198.1, type=string} payload: {
+  "time": "2026-11-10T18:49:24.316Z",
+  "type": "subscribe",
+  "message": "topic another.channel"
+}
+2026-11-10 18:49:25.299 INFO  org.platformlambda.automation.tests.WebSocketTests:85 - GOT headers: {route=ws.client.in.73198.1, tx_path=ws.client.out.73198.1, type=map} payload: {type=keep-alive, seq=1}
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.689 s <<< FAILURE! - in org.platformlambda.automation.tests.WebSocketTests
+[ERROR] userChannelTest(org.platformlambda.automation.tests.WebSocketTests)  Time elapsed: 20.519 s  <<< FAILURE!
+java.lang.AssertionError: expected:<true> but was:<null>
+	at org.platformlambda.automation.tests.WebSocketTests.userChannelTest(WebSocketTests.java:128)
+
+[INFO] Running org.platformlambda.automation.tests.RestEndpointTests
+2026-11-10 18:49:44.100 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE v1.api.auth with 1 instance started
+2026-11-10 18:49:44.101 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.2
+2026-11-10 18:49:44.107 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=HEAD /api/hello/world, service=v1.api.auth, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.106Z, exec_time=0.028, from=http.request, id=202611103b8c7a9e54044521a9be7b4272fe788b}, annotations={hello=world}
+2026-11-10 18:49:44.109 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=HEAD /api/hello/world, service=hello.world, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.108Z, exec_time=0.11, from=http.request, id=202611103b8c7a9e54044521a9be7b4272fe788b}, annotations={}
+2026-11-10 18:49:44.114 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=HEAD /api/hello/world, service=async.http.response, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.110Z, exec_time=1.403, from=hello.world, id=202611103b8c7a9e54044521a9be7b4272fe788b}, annotations={}
+2026-11-10 18:49:44.118 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.3
+2026-11-10 18:49:44.122 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=GET /api/hello/world, service=v1.api.auth, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.120Z, exec_time=0.005, from=http.request, id=e64d94b09e764410b8ff4facdf1649eb}, annotations={hello=world}
+2026-11-10 18:49:44.123 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=GET /api/hello/world, service=hello.world, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.121Z, exec_time=0.018, from=http.request, id=e64d94b09e764410b8ff4facdf1649eb}, annotations={}
+2026-11-10 18:49:44.125 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=GET /api/hello/world, service=async.http.response, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.122Z, exec_time=0.521, from=hello.world, id=e64d94b09e764410b8ff4facdf1649eb}, annotations={}
+2026-11-10 18:49:44.134 INFO  org.platformlambda.core.system.ObjectStreamIO:244 - Started
+2026-11-10 18:49:44.136 INFO  org.platformlambda.core.system.ServiceQueue:61 - PRIVATE stream.out.4afa7d2f668c429c98755f4305408a07 started
+2026-11-10 18:49:44.137 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE stream.in.4afa7d2f668c429c98755f4305408a07 with 1 instance started
+2026-11-10 18:49:44.137 INFO  org.platformlambda.core.system.ObjectStreamIO:88 - Stream 4afa7d2f668c429c98755f4305408a07 created with expiry of 1800 seconds
+2026-11-10 18:49:44.174 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.4
+2026-11-10 18:49:44.317 INFO  org.platformlambda.core.system.ServiceQueue:104 - stream.in.4afa7d2f668c429c98755f4305408a07 stopped
+2026-11-10 18:49:44.318 INFO  org.platformlambda.core.system.ServiceQueue:104 - stream.out.4afa7d2f668c429c98755f4305408a07 stopped
+2026-11-10 18:49:44.329 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=PUT /api/hello/world, service=v1.api.auth, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.325Z, exec_time=0.005, from=http.request, id=7e3cedbdd44f41edbd930ab563fc1df1}, annotations={hello=world}
+2026-11-10 18:49:44.339 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=PUT /api/hello/world, service=hello.world, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.338Z, exec_time=0.045, from=http.request, id=7e3cedbdd44f41edbd930ab563fc1df1}, annotations={}
+2026-11-10 18:49:44.341 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=PUT /api/hello/world, service=async.http.response, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.338Z, exec_time=0.283, from=hello.world, id=7e3cedbdd44f41edbd930ab563fc1df1}, annotations={}
+2026-11-10 18:49:44.348 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.5
+2026-11-10 18:49:44.351 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=DELETE /api/hello/world, service=v1.api.auth, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.350Z, exec_time=0.006, from=http.request, id=aa918a5f0ee44fee990bb411cef7d38a}, annotations={hello=world}
+2026-11-10 18:49:44.353 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=DELETE /api/hello/world, service=hello.world, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.352Z, exec_time=0.016, from=http.request, id=aa918a5f0ee44fee990bb411cef7d38a}, annotations={}
+2026-11-10 18:49:44.353 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=DELETE /api/hello/world, service=async.http.response, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.352Z, exec_time=0.432, from=hello.world, id=aa918a5f0ee44fee990bb411cef7d38a}, annotations={}
+2026-11-10 18:49:44.358 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.6
+2026-11-10 18:49:44.366 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE v1.demo.auth with 1 instance started
+2026-11-10 18:49:44.367 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.7
+2026-11-10 18:49:44.374 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=GET /api/hello/world, service=v1.demo.auth, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.369Z, exec_time=0.026, from=http.request, id=99e20fd483f8477c8de4332eb3815835}, annotations={demo=will show 'unauthorized'}
+2026-11-10 18:49:44.376 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.8
+2026-11-10 18:49:44.383 INFO  org.platformlambda.core.system.ServiceQueue:61 - PRIVATE stream.out.d8f0cf4ea1f445bd9f74559d8eeb2fd7 started
+2026-11-10 18:49:44.384 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE stream.in.d8f0cf4ea1f445bd9f74559d8eeb2fd7 with 1 instance started
+2026-11-10 18:49:44.384 INFO  org.platformlambda.core.system.ObjectStreamIO:88 - Stream d8f0cf4ea1f445bd9f74559d8eeb2fd7 created with expiry of 1800 seconds
+2026-11-10 18:49:44.499 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.9
+2026-11-10 18:49:44.863 INFO  org.platformlambda.core.system.ServiceQueue:104 - stream.in.d8f0cf4ea1f445bd9f74559d8eeb2fd7 stopped
+2026-11-10 18:49:44.864 INFO  org.platformlambda.core.system.ServiceQueue:104 - stream.out.d8f0cf4ea1f445bd9f74559d8eeb2fd7 stopped
+2026-11-10 18:49:44.873 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=PUT /api/hello/world, service=v1.api.auth, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.872Z, exec_time=0.007, from=http.request, id=5b2687143c98487bb7448b5a0fad10b3}, annotations={hello=world}
+2026-11-10 18:49:44.874 INFO  org.platformlambda.core.system.ServiceQueue:61 - PRIVATE stream.out.467209aa7bdb493ebf104cf375a53cd0 started
+2026-11-10 18:49:44.874 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE stream.in.467209aa7bdb493ebf104cf375a53cd0 with 1 instance started
+2026-11-10 18:49:44.874 INFO  org.platformlambda.core.system.ObjectStreamIO:88 - Stream 467209aa7bdb493ebf104cf375a53cd0 created with expiry of 10 seconds
+2026-11-10 18:49:44.879 INFO  org.platformlambda.core.system.ServiceQueue:61 - PRIVATE stream.out.b0938ec3d2564b7e9f9b6c22e4de85af started
+2026-11-10 18:49:44.880 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE stream.in.b0938ec3d2564b7e9f9b6c22e4de85af with 1 instance started
+2026-11-10 18:49:44.881 INFO  org.platformlambda.core.system.ObjectStreamIO:88 - Stream b0938ec3d2564b7e9f9b6c22e4de85af created with expiry of 1800 seconds
+2026-11-10 18:49:44.883 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=PUT /api/hello/world, service=hello.world, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.879Z, exec_time=3.892, from=http.request, id=5b2687143c98487bb7448b5a0fad10b3}, annotations={}
+2026-11-10 18:49:44.889 INFO  org.platformlambda.core.system.ServiceQueue:61 - PRIVATE stream.out.0484b5452c904d30a92022bdebb825b2 started
+2026-11-10 18:49:44.889 INFO  org.platformlambda.core.system.ServiceQueue:104 - stream.in.b0938ec3d2564b7e9f9b6c22e4de85af stopped
+2026-11-10 18:49:44.890 INFO  org.platformlambda.core.system.ServiceQueue:104 - stream.out.b0938ec3d2564b7e9f9b6c22e4de85af stopped
+2026-11-10 18:49:44.892 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE stream.in.0484b5452c904d30a92022bdebb825b2 with 1 instance started
+2026-11-10 18:49:44.892 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=PUT /api/hello/world, service=async.http.response, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.883Z, exec_time=7.606, from=hello.world, id=5b2687143c98487bb7448b5a0fad10b3}, annotations={}
+2026-11-10 18:49:44.894 INFO  org.platformlambda.core.system.ObjectStreamIO:88 - Stream 0484b5452c904d30a92022bdebb825b2 created with expiry of 1 seconds
+2026-11-10 18:49:44.900 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.10
+2026-11-10 18:49:44.905 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=v1.api.auth, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.903Z, exec_time=0.008, from=http.request, id=ce35daf9e47045fb8353aa5a03a88c11}, annotations={hello=world}
+2026-11-10 18:49:44.907 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=hello.world, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.907Z, exec_time=0.018, from=http.request, id=ce35daf9e47045fb8353aa5a03a88c11}, annotations={}
+2026-11-10 18:49:44.910 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=async.http.response, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.907Z, exec_time=0.445, from=hello.world, id=ce35daf9e47045fb8353aa5a03a88c11}, annotations={}
+2026-11-10 18:49:44.914 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.11
+2026-11-10 18:49:44.918 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=v1.api.auth, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.918Z, exec_time=0.008, from=http.request, id=843f21af8de242f29393bdcb508b50ce}, annotations={hello=world}
+2026-11-10 18:49:44.924 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=hello.world, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.923Z, exec_time=0.021, from=http.request, id=843f21af8de242f29393bdcb508b50ce}, annotations={}
+2026-11-10 18:49:44.927 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=async.http.response, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.923Z, exec_time=0.336, from=hello.world, id=843f21af8de242f29393bdcb508b50ce}, annotations={}
+2026-11-10 18:49:44.932 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.12
+2026-11-10 18:49:44.937 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=PUT /api/hello/world, service=v1.api.auth, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.935Z, exec_time=0.008, from=http.request, id=4abfd89deb144b6a9f71eb377ebfbf2d}, annotations={hello=world}
+2026-11-10 18:49:44.937 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=PUT /api/hello/world, service=hello.world, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.936Z, exec_time=0.024, from=http.request, id=4abfd89deb144b6a9f71eb377ebfbf2d}, annotations={}
+2026-11-10 18:49:44.938 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=PUT /api/hello/world, service=async.http.response, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.937Z, exec_time=0.242, from=hello.world, id=4abfd89deb144b6a9f71eb377ebfbf2d}, annotations={}
+2026-11-10 18:49:44.941 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.13
+2026-11-10 18:49:44.947 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.14
+2026-11-10 18:49:44.951 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=v1.api.auth, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.951Z, exec_time=0.008, from=http.request, id=b71c08338fd84d03981e4ebe6c0e523d}, annotations={hello=world}
+2026-11-10 18:49:44.952 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=hello.world, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.952Z, exec_time=0.015, from=http.request, id=b71c08338fd84d03981e4ebe6c0e523d}, annotations={}
+2026-11-10 18:49:44.953 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=async.http.response, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.952Z, exec_time=0.378, from=hello.world, id=b71c08338fd84d03981e4ebe6c0e523d}, annotations={}
+2026-11-10 18:49:44.956 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.15
+2026-11-10 18:49:44.961 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=v1.api.auth, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.960Z, exec_time=0.009, from=http.request, id=e1fee2a245e343c0b310098e4b1ff566}, annotations={hello=world}
+2026-11-10 18:49:44.964 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=hello.world, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.964Z, exec_time=0.013, from=http.request, id=e1fee2a245e343c0b310098e4b1ff566}, annotations={}
+2026-11-10 18:49:44.966 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=async.http.response, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:44.964Z, exec_time=0.452, from=hello.world, id=e1fee2a245e343c0b310098e4b1ff566}, annotations={}
+2026-11-10 18:49:44.968 INFO  org.platformlambda.core.system.ServiceQueue:61 - PRIVATE stream.out.befca9d4bb7c48dfa3f3312f3fffb6d1 started
+2026-11-10 18:49:44.969 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE stream.in.befca9d4bb7c48dfa3f3312f3fffb6d1 with 1 instance started
+2026-11-10 18:49:44.969 INFO  org.platformlambda.core.system.ObjectStreamIO:88 - Stream befca9d4bb7c48dfa3f3312f3fffb6d1 created with expiry of 1800 seconds
+2026-11-10 18:49:45.011 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.16
+2026-11-10 18:49:45.249 INFO  org.platformlambda.core.system.ServiceQueue:104 - stream.in.befca9d4bb7c48dfa3f3312f3fffb6d1 stopped
+2026-11-10 18:49:45.250 INFO  org.platformlambda.core.system.ServiceQueue:104 - stream.out.befca9d4bb7c48dfa3f3312f3fffb6d1 stopped
+2026-11-10 18:49:45.267 INFO  org.platformlambda.core.system.ServiceQueue:61 - PRIVATE stream.out.0bce405ab75e4b8ab6656ebf6aae4184 started
+2026-11-10 18:49:45.268 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE stream.in.0bce405ab75e4b8ab6656ebf6aae4184 with 1 instance started
+2026-11-10 18:49:45.268 INFO  org.platformlambda.core.system.ObjectStreamIO:88 - Stream 0bce405ab75e4b8ab6656ebf6aae4184 created with expiry of 15 seconds
+2026-11-10 18:49:45.292 INFO  org.platformlambda.core.system.ServiceQueue:61 - PRIVATE stream.out.ee834948b61447d68f70f171d2e75190 started
+2026-11-10 18:49:45.292 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE stream.in.ee834948b61447d68f70f171d2e75190 with 1 instance started
+2026-11-10 18:49:45.294 INFO  org.platformlambda.core.system.ObjectStreamIO:88 - Stream ee834948b61447d68f70f171d2e75190 created with expiry of 1800 seconds
+2026-11-10 18:49:45.306 INFO  org.platformlambda.core.system.ServiceQueue:104 - stream.in.ee834948b61447d68f70f171d2e75190 stopped
+2026-11-10 18:49:45.307 INFO  org.platformlambda.core.system.ServiceQueue:104 - stream.out.ee834948b61447d68f70f171d2e75190 stopped
+2026-11-10 18:49:45.312 INFO  org.platformlambda.core.system.ServiceQueue:61 - PRIVATE stream.out.f013bfb3020a4fbf83e302bd3f72ce67 started
+2026-11-10 18:49:45.314 INFO  org.platformlambda.core.system.ServiceQueue:71 - PRIVATE stream.in.f013bfb3020a4fbf83e302bd3f72ce67 with 1 instance started
+2026-11-10 18:49:45.314 INFO  org.platformlambda.core.system.ObjectStreamIO:88 - Stream f013bfb3020a4fbf83e302bd3f72ce67 created with expiry of 1 seconds
+2026-11-10 18:49:45.320 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.17
+2026-11-10 18:49:45.324 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=v1.api.auth, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:45.324Z, exec_time=0.008, from=http.request, id=32e2dba2248644068013044a96c9aca0}, annotations={hello=world}
+2026-11-10 18:49:45.331 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=hello.world, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:45.331Z, exec_time=0.02, from=http.request, id=32e2dba2248644068013044a96c9aca0}, annotations={}
+2026-11-10 18:49:45.332 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=POST /api/hello/world, service=async.http.response, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:45.332Z, exec_time=0.401, from=hello.world, id=32e2dba2248644068013044a96c9aca0}, annotations={}
+2026-11-10 18:49:45.336 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.18
+2026-11-10 18:49:45.339 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=HEAD /api/hello/world, service=hello.world, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:45.338Z, exec_time=0.104, from=http.request, id=20261110f74fa2a09cc540f684195bbfc5c534a1}, annotations={}
+2026-11-10 18:49:45.342 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=HEAD /api/hello/world, service=v1.api.auth, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:45.338Z, exec_time=0.008, from=http.request, id=20261110f74fa2a09cc540f684195bbfc5c534a1}, annotations={hello=world}
+2026-11-10 18:49:45.342 INFO  org.platformlambda.automation.http.HttpRelay:116 - Loaded HTTP factory regular.19
+2026-11-10 18:49:45.342 INFO  org.platformlambda.core.services.DistributedTrace:57 - trace={path=HEAD /api/hello/world, service=async.http.response, success=true, origin=202611105dbbafe40d434715992485f2101ae44d, start=2026-11-10T18:49:45.339Z, exec_time=0.164, from=hello.world, id=20261110f74fa2a09cc540f684195bbfc5c534a1}, annotations={}
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.24 s - in org.platformlambda.automation.tests.RestEndpointTests
+[INFO] Running org.platformlambda.automation.http.AdminEndpointTest
+[INFO] Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 s - in org.platformlambda.automation.http.AdminEndpointTest
+2026-11-10 18:49:45.493 INFO  org.platformlambda.automation.ws.WsRequestHandler:371 - Stopped
+2026-11-10 18:49:45.507 INFO  org.platformlambda.automation.util.AsyncTimeoutHandler:65 - Async HTTP timeout handler stopped
+2026-11-10 18:49:45.524 INFO  org.platformlambda.automation.ws.WsRequestHandler:271 - Session ws.67894709.1 closed
+2026-11-10 18:49:45.524 INFO  org.platformlambda.automation.tests.WebSocketTests:85 - GOT headers: {route=ws.client.in.73198.1, type=close, token=202611105dbbafe40d434715992485f2101ae44d} payload: null
+2026-11-10 18:49:45.525 INFO  org.platformlambda.core.system.ServiceQueue:104 - ws.67894709.1 stopped
+2026-11-10 18:49:45.527 INFO  org.platformlambda.automation.services.NotificationManager:205 - ws.67894709.1@202611105dbbafe40d434715992485f2101ae44d unsubscribed from another.channel
+2026-11-10 18:49:45.527 INFO  org.platformlambda.automation.services.NotificationManager:205 - ws.67894709.1@202611105dbbafe40d434715992485f2101ae44d unsubscribed from hello.world
+2026-11-10 18:49:45.527 INFO  org.platformlambda.automation.services.NotificationManager:220 - Notification topic another.channel cleared
+2026-11-10 18:49:45.527 INFO  org.platformlambda.automation.services.NotificationManager:220 - Notification topic hello.world cleared
+2026-11-10 18:49:45.525 INFO  org.platformlambda.core.websocket.client.SimpleClientEndpoint:139 - Session-0 ws.client.in.73198.1 closed (1001, Shutdown)
+2026-11-10 18:49:45.527 INFO  org.platformlambda.core.system.ServiceQueue:104 - ws.client.out.73198.1 stopped
+2026-11-10 18:49:45.528 INFO  org.platformlambda.core.system.ServiceQueue:104 - ws.client.in.73198.1 stopped
+2026-11-10 18:49:45.528 INFO  org.platformlambda.core.system.WsRegistry:129 - Session-0 (ws.client.in.73198.1, ws.client.out.73198.1) released
+2026-11-10 18:49:45.642 INFO  org.platformlambda.core.util.ManagedCache:197 - Stopped
+2026-11-10 18:49:45.887 INFO  org.platformlambda.core.util.ElasticQueue:401 - Commit log stopped - com.sleepycat.je.Database@77ebafb
+2026-11-10 18:49:45.918 INFO  org.platformlambda.core.util.ElasticQueue:166 - Holding area /tmp/reactive/rest-automation-202611105dbbafe40d434715992485f2101ae44d cleared
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   WebSocketTests.userChannelTest:128 expected:<true> but was:<null>
+[INFO] 
+[ERROR] Tests run: 54, Failures: 1, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Mercury core library 2.2.2:
+[INFO] 
+[INFO] Mercury core library ............................... SUCCESS [ 28.451 s]
+[INFO] rest-spring ........................................ SUCCESS [  9.303 s]
+[INFO] Cloud connector .................................... SUCCESS [  7.991 s]
+[INFO] Cloud connector for Kafka cluster .................. SUCCESS [  2.290 s]
+[INFO] Cloud connector for Hazelcast cluster .............. SUCCESS [  2.050 s]
+[INFO] REST automation library ............................ FAILURE [ 25.481 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:16 min
+[INFO] Finished at: 2026-11-10T18:49:46Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.2:test (default-test) on project rest-automation: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /tmp/tmp.cBXON4Pjpe/repo/extensions/rest-automation-lib/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :rest-automation

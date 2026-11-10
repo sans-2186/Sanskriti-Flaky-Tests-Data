@@ -1,0 +1,882 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Hive Storage API                                                   [jar]
+[INFO] Hive                                                               [pom]
+[INFO] Hive Classifications                                               [jar]
+[INFO] Hive Shims Common                                                  [jar]
+[INFO] Hive Shims 0.23                                                    [jar]
+[INFO] Hive Shims Scheduler                                               [jar]
+[INFO] Hive Shims                                                         [jar]
+[INFO] Hive Standalone Metastore                                          [pom]
+[INFO] Hive Standalone Metastore Common Code                              [jar]
+[INFO] Hive Common                                                        [jar]
+[INFO] Hive Service RPC                                                   [jar]
+[INFO] Hive Serde                                                         [jar]
+[INFO] Hive Llap Common                                                   [jar]
+[INFO] Hive Llap Client                                                   [jar]
+[INFO] Hive Llap Tez                                                      [jar]
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom (5.2 kB at 21 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom (7.2 kB at 184 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar (41 kB at 937 kB/s)
+[INFO] 
+[INFO] ------------------< org.apache.hive:hive-storage-api >------------------
+[INFO] Building Hive Storage API 2.7.3-SNAPSHOT                          [1/15]
+[INFO]   from storage-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ hive-storage-api >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ hive-storage-api ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hive-storage-api ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hive-storage-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/storage-api/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hive-storage-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hive-storage-api ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hive-storage-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ hive-storage-api <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ hive-storage-api ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom (3.4 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom (18 kB at 284 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom (2.2 kB at 55 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom (9.3 kB at 136 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom (8.3 kB at 230 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom (24 kB at 570 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom (4.0 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom (1.8 kB at 48 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom (2.6 kB at 61 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom (1.7 kB at 27 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom (1.5 kB at 36 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom (748 B at 18 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom (3.8 kB at 86 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom (22 kB at 414 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom (1.9 kB at 45 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom (2.1 kB at 52 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom (2.7 kB at 79 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom (4.2 kB at 55 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom (14 kB at 269 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom (2.6 kB at 73 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom (14 kB at 300 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom (3.1 kB at 60 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom (4.0 kB at 73 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom (1.8 kB at 35 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom (29 kB at 489 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom (2.0 kB at 45 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom (2.1 kB at 48 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom (3.4 kB at 82 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom (6.1 kB at 139 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom (7.3 kB at 44 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom (2.6 kB at 39 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom (20 kB at 560 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom (8.1 kB at 180 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/5/jvnet-parent-5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/5/jvnet-parent-5.pom (8.9 kB at 141 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom (4.9 kB at 91 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom (4.0 kB at 125 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom (1.5 kB at 38 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar (63 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar (12 kB at 162 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar (44 kB at 509 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar (43 kB at 426 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar (15 kB at 146 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar (10 kB at 79 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar (27 kB at 213 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar (638 kB at 4.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar (55 kB at 402 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar (177 kB at 1.2 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar (31 kB at 184 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar (67 kB at 391 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar (136 kB at 745 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar (173 kB at 930 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar (147 kB at 781 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar (205 kB at 921 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.jar (4.3 kB at 19 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar (424 kB at 1.8 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar (378 kB at 1.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar (62 kB at 254 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar (47 kB at 176 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar (2.1 kB at 7.7 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar (164 kB at 588 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar (35 kB at 116 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar (563 kB at 1.9 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar (128 kB at 419 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar (57 kB at 179 kB/s)
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_nGB23l8wuWxi1Ec6w0Ewe63PBSKcMNkqO8ILV2OEIws=
+nondexLogging=CONFIG
+test=
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.0.0-M4/surefire-junit-platform-3.0.0-M4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.0.0-M4/surefire-junit-platform-3.0.0-M4.jar (23 kB at 534 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.0.0-M4/surefire-junit-platform-3.0.0-M4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit-platform/3.0.0-M4/surefire-junit-platform-3.0.0-M4.pom (6.7 kB at 177 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M4/surefire-providers-3.0.0-M4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/3.0.0-M4/surefire-providers-3.0.0-M4.pom (2.5 kB at 79 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.pom (3.8 kB at 96 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.3.2/junit-platform-launcher-1.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.3.2/junit-platform-launcher-1.3.2.pom (2.2 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.3.2/junit-platform-engine-1.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.3.2/junit-platform-engine-1.3.2.pom (2.4 kB at 51 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.3.2/junit-platform-commons-1.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.3.2/junit-platform-commons-1.3.2.pom (2.0 kB at 59 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.pom (1.7 kB at 26 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.3.2/junit-jupiter-engine-5.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.3.2/junit-jupiter-engine-5.3.2.pom (2.4 kB at 70 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.3.2/junit-jupiter-api-5.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.3.2/junit-jupiter-api-5.3.2.pom (2.4 kB at 50 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.3.2/junit-jupiter-params-5.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.3.2/junit-jupiter-params-5.3.2.pom (2.2 kB at 69 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/2.27.0/mockito-core-2.27.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/2.27.0/mockito-core-2.27.0.pom (19 kB at 426 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.9.10/byte-buddy-1.9.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.9.10/byte-buddy-1.9.10.pom (10 kB at 295 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.9.10/byte-buddy-parent-1.9.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.9.10/byte-buddy-parent-1.9.10.pom (36 kB at 832 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.9.10/byte-buddy-agent-1.9.10.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.9.10/byte-buddy-agent-1.9.10.pom (6.0 kB at 99 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-reflect/2.0.4/powermock-reflect-2.0.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/powermock/powermock-reflect/2.0.4/powermock-reflect-2.0.4.pom (7.2 kB at 175 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.9.1/assertj-core-3.9.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.9.1/assertj-core-3.9.1.pom (10 kB at 83 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-parent-pom/2.1.9/assertj-parent-pom-2.1.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-parent-pom/2.1.9/assertj-parent-pom-2.1.9.pom (15 kB at 387 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom (820 B at 19 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-assert/1.4/fest-assert-1.4.pom (2.4 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.8/fest-1.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest/1.0.8/fest-1.0.8.pom (12 kB at 288 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.pom (1.6 kB at 17 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.3.2/junit-platform-launcher-1.3.2.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.3.2/junit-platform-engine-1.3.2.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.3.2/junit-platform-commons-1.3.2.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar (7.1 kB at 192 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.3.2/junit-platform-engine-1.3.2.jar (138 kB at 3.5 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.jar (33 kB at 776 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.3.2/junit-platform-launcher-1.3.2.jar (95 kB at 1.8 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.3.2/junit-platform-commons-1.3.2.jar (78 kB at 727 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.6.3/junit-platform-launcher-1.6.3.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.6.3/junit-platform-launcher-1.6.3.jar (122 kB at 2.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.6.3/junit-platform-launcher-1.6.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.6.3/junit-platform-launcher-1.6.3.pom (3.0 kB at 82 kB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.hadoop.hive.common.TestValidCompactorWriteIdList
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.hadoop.hive.common.TestValidCompactorWriteIdList
+[INFO] Running org.apache.hadoop.hive.common.TestValidReadTxnList
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 s - in org.apache.hadoop.hive.common.TestValidReadTxnList
+[INFO] Running org.apache.hadoop.hive.common.TestValidReaderWriteIdList
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.118 s - in org.apache.hadoop.hive.common.TestValidReaderWriteIdList
+[INFO] Running org.apache.hadoop.hive.common.io.TestDiskRangeList
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 0 end: 5 and range start: 4 end: 10; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 10}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 5 end: 11 and range start: 10 end: 15; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 11}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 3 end: 4 and range start: 5 end: 10; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 11}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 0 end: 5 and range start: 4 end: 6; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 11}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 10 end: 15 and range start: 14 end: 20; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 15 end: 21 and range start: 20 end: 25; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}, {range start: 20 end: 25}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 10 end: 15 and range start: 16 end: 20; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}, {range start: 20 end: 25}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 10 end: 15 and range start: 9 end: 11; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}, {range start: 20 end: 25}]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.hadoop.hive.common.io.TestDiskRangeList
+[INFO] Running org.apache.hadoop.hive.common.TestDatabaseName
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.hadoop.hive.common.TestDatabaseName
+[INFO] Running org.apache.hadoop.hive.common.type.TestHiveDecimal
+[INFO] Tests run: 87, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.87 s - in org.apache.hadoop.hive.common.type.TestHiveDecimal
+[INFO] Running org.apache.hadoop.hive.common.type.TestHiveDecimalVersion
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.apache.hadoop.hive.common.type.TestHiveDecimalVersion
+[INFO] Running org.apache.hadoop.hive.common.TestTableName
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.hadoop.hive.common.TestTableName
+[INFO] Running org.apache.hadoop.hive.ql.io.sarg.TestSearchArgumentFactory
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in org.apache.hadoop.hive.ql.io.sarg.TestSearchArgumentFactory
+[INFO] Running org.apache.hadoop.hive.ql.util.TestJavaDataModel
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.hadoop.hive.ql.util.TestJavaDataModel
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestUnionColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.hadoop.hive.ql.exec.vector.TestUnionColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestTimestampColumnVector
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.141 s - in org.apache.hadoop.hive.ql.exec.vector.TestTimestampColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestStructColumnVector
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.hadoop.hive.ql.exec.vector.TestStructColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestBytesColumnVector
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.993 s - in org.apache.hadoop.hive.ql.exec.vector.TestBytesColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestListColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.ql.exec.vector.TestListColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.expressions.TestStringExpr
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.ql.exec.vector.expressions.TestStringExpr
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestMapColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.ql.exec.vector.TestMapColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestDateColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.426 s - in org.apache.hadoop.hive.ql.exec.vector.TestDateColumnVector
+[INFO] Running org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritable
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritable
+[INFO] Running org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritableVersion
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritableVersion
+[INFO] Running org.apache.hive.common.util.TestBloomFilter
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.87 s - in org.apache.hive.common.util.TestBloomFilter
+[INFO] Running org.apache.hive.common.util.TestBloomKFilter
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.012 s - in org.apache.hive.common.util.TestBloomKFilter
+[INFO] Running org.apache.hive.common.util.TestMurmur3
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.242 s - in org.apache.hive.common.util.TestMurmur3
+[INFO] Running org.apache.hive.common.util.TestTxnIdUtils
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.hive.common.util.TestTxnIdUtils
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 209, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex
+nondexJarDir=/tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex
+nondexExecid=PyfdqdtQbDvOBkb7lA1oN4u3QmuoLcatZusEn5cimk=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.hadoop.hive.common.TestValidCompactorWriteIdList
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.hadoop.hive.common.TestValidCompactorWriteIdList
+[INFO] Running org.apache.hadoop.hive.common.TestValidReadTxnList
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 s - in org.apache.hadoop.hive.common.TestValidReadTxnList
+[INFO] Running org.apache.hadoop.hive.common.TestValidReaderWriteIdList
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 s - in org.apache.hadoop.hive.common.TestValidReaderWriteIdList
+[INFO] Running org.apache.hadoop.hive.common.io.TestDiskRangeList
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 0 end: 5 and range start: 4 end: 10; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 10}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 5 end: 11 and range start: 10 end: 15; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 11}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 3 end: 4 and range start: 5 end: 10; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 11}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 0 end: 5 and range start: 4 end: 6; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 11}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 10 end: 15 and range start: 14 end: 20; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 15 end: 21 and range start: 20 end: 25; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}, {range start: 20 end: 25}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 10 end: 15 and range start: 16 end: 20; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}, {range start: 20 end: 25}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 10 end: 15 and range start: 9 end: 11; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}, {range start: 20 end: 25}]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.hadoop.hive.common.io.TestDiskRangeList
+[INFO] Running org.apache.hadoop.hive.common.TestDatabaseName
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.hadoop.hive.common.TestDatabaseName
+[INFO] Running org.apache.hadoop.hive.common.type.TestHiveDecimal
+[INFO] Tests run: 87, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.471 s - in org.apache.hadoop.hive.common.type.TestHiveDecimal
+[INFO] Running org.apache.hadoop.hive.common.type.TestHiveDecimalVersion
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.hadoop.hive.common.type.TestHiveDecimalVersion
+[INFO] Running org.apache.hadoop.hive.common.TestTableName
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.common.TestTableName
+[INFO] Running org.apache.hadoop.hive.ql.io.sarg.TestSearchArgumentFactory
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in org.apache.hadoop.hive.ql.io.sarg.TestSearchArgumentFactory
+[INFO] Running org.apache.hadoop.hive.ql.util.TestJavaDataModel
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.hadoop.hive.ql.util.TestJavaDataModel
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestUnionColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.ql.exec.vector.TestUnionColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestTimestampColumnVector
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 s - in org.apache.hadoop.hive.ql.exec.vector.TestTimestampColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestStructColumnVector
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.hadoop.hive.ql.exec.vector.TestStructColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestBytesColumnVector
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.984 s - in org.apache.hadoop.hive.ql.exec.vector.TestBytesColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestListColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.hadoop.hive.ql.exec.vector.TestListColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.expressions.TestStringExpr
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.ql.exec.vector.expressions.TestStringExpr
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestMapColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.ql.exec.vector.TestMapColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestDateColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.398 s - in org.apache.hadoop.hive.ql.exec.vector.TestDateColumnVector
+[INFO] Running org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritable
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritable
+[INFO] Running org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritableVersion
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritableVersion
+[INFO] Running org.apache.hive.common.util.TestBloomFilter
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.816 s - in org.apache.hive.common.util.TestBloomFilter
+[INFO] Running org.apache.hive.common.util.TestBloomKFilter
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.893 s - in org.apache.hive.common.util.TestBloomKFilter
+[INFO] Running org.apache.hive.common.util.TestMurmur3
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 s - in org.apache.hive.common.util.TestMurmur3
+[INFO] Running org.apache.hive.common.util.TestTxnIdUtils
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hive.common.util.TestTxnIdUtils
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 209, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex
+nondexJarDir=/tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex
+nondexExecid=gW8l3dFsOaohRhyEHCXqRr2RqwfG+P8vXPgcFRsgA=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.hadoop.hive.common.TestValidCompactorWriteIdList
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.hadoop.hive.common.TestValidCompactorWriteIdList
+[INFO] Running org.apache.hadoop.hive.common.TestValidReadTxnList
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 s - in org.apache.hadoop.hive.common.TestValidReadTxnList
+[INFO] Running org.apache.hadoop.hive.common.TestValidReaderWriteIdList
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.11 s - in org.apache.hadoop.hive.common.TestValidReaderWriteIdList
+[INFO] Running org.apache.hadoop.hive.common.io.TestDiskRangeList
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 0 end: 5 and range start: 4 end: 10; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 10}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 5 end: 11 and range start: 10 end: 15; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 11}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 3 end: 4 and range start: 5 end: 10; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 11}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 0 end: 5 and range start: 4 end: 6; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 11}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 10 end: 15 and range start: 14 end: 20; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 15 end: 21 and range start: 20 end: 25; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}, {range start: 20 end: 25}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 10 end: 15 and range start: 16 end: 20; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}, {range start: 20 end: 25}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 10 end: 15 and range start: 9 end: 11; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}, {range start: 20 end: 25}]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.hadoop.hive.common.io.TestDiskRangeList
+[INFO] Running org.apache.hadoop.hive.common.TestDatabaseName
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.common.TestDatabaseName
+[INFO] Running org.apache.hadoop.hive.common.type.TestHiveDecimal
+[INFO] Tests run: 87, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.216 s - in org.apache.hadoop.hive.common.type.TestHiveDecimal
+[INFO] Running org.apache.hadoop.hive.common.type.TestHiveDecimalVersion
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.hadoop.hive.common.type.TestHiveDecimalVersion
+[INFO] Running org.apache.hadoop.hive.common.TestTableName
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.hadoop.hive.common.TestTableName
+[INFO] Running org.apache.hadoop.hive.ql.io.sarg.TestSearchArgumentFactory
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 s - in org.apache.hadoop.hive.ql.io.sarg.TestSearchArgumentFactory
+[INFO] Running org.apache.hadoop.hive.ql.util.TestJavaDataModel
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.hadoop.hive.ql.util.TestJavaDataModel
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestUnionColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.hadoop.hive.ql.exec.vector.TestUnionColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestTimestampColumnVector
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 s - in org.apache.hadoop.hive.ql.exec.vector.TestTimestampColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestStructColumnVector
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.hadoop.hive.ql.exec.vector.TestStructColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestBytesColumnVector
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.972 s - in org.apache.hadoop.hive.ql.exec.vector.TestBytesColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestListColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.ql.exec.vector.TestListColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.expressions.TestStringExpr
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.ql.exec.vector.expressions.TestStringExpr
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestMapColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.ql.exec.vector.TestMapColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestDateColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 s - in org.apache.hadoop.hive.ql.exec.vector.TestDateColumnVector
+[INFO] Running org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritable
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritable
+[INFO] Running org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritableVersion
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritableVersion
+[INFO] Running org.apache.hive.common.util.TestBloomFilter
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.777 s - in org.apache.hive.common.util.TestBloomFilter
+[INFO] Running org.apache.hive.common.util.TestBloomKFilter
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.866 s - in org.apache.hive.common.util.TestBloomKFilter
+[INFO] Running org.apache.hive.common.util.TestMurmur3
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.228 s - in org.apache.hive.common.util.TestMurmur3
+[INFO] Running org.apache.hive.common.util.TestTxnIdUtils
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hive.common.util.TestTxnIdUtils
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 209, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex
+nondexJarDir=/tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex
+nondexExecid=efMjRG+jJu8MNntH2KXxL3Q0JxrOU5pd3nX3wowR0=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.hadoop.hive.common.TestValidCompactorWriteIdList
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.hadoop.hive.common.TestValidCompactorWriteIdList
+[INFO] Running org.apache.hadoop.hive.common.TestValidReadTxnList
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.104 s - in org.apache.hadoop.hive.common.TestValidReadTxnList
+[INFO] Running org.apache.hadoop.hive.common.TestValidReaderWriteIdList
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 s - in org.apache.hadoop.hive.common.TestValidReaderWriteIdList
+[INFO] Running org.apache.hadoop.hive.common.io.TestDiskRangeList
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 0 end: 5 and range start: 4 end: 10; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 10}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 5 end: 11 and range start: 10 end: 15; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 11}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 3 end: 4 and range start: 5 end: 10; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 11}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 0 end: 5 and range start: 4 end: 6; trying to insert into [{range start: 0 end: 5}, {range start: 5 end: 11}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 10 end: 15 and range start: 14 end: 20; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 15 end: 21 and range start: 20 end: 25; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}, {range start: 20 end: 25}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 10 end: 15 and range start: 16 end: 20; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}, {range start: 20 end: 25}]
+[main] ERROR org.apache.hadoop.hive.common.io.DiskRangeList - Elements not in order range start: 10 end: 15 and range start: 9 end: 11; trying to insert into [{range start: 6 end: 10}, {range start: 10 end: 15}, {range start: 20 end: 25}]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.hadoop.hive.common.io.TestDiskRangeList
+[INFO] Running org.apache.hadoop.hive.common.TestDatabaseName
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.hadoop.hive.common.TestDatabaseName
+[INFO] Running org.apache.hadoop.hive.common.type.TestHiveDecimal
+[INFO] Tests run: 87, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.209 s - in org.apache.hadoop.hive.common.type.TestHiveDecimal
+[INFO] Running org.apache.hadoop.hive.common.type.TestHiveDecimalVersion
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in org.apache.hadoop.hive.common.type.TestHiveDecimalVersion
+[INFO] Running org.apache.hadoop.hive.common.TestTableName
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.common.TestTableName
+[INFO] Running org.apache.hadoop.hive.ql.io.sarg.TestSearchArgumentFactory
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s - in org.apache.hadoop.hive.ql.io.sarg.TestSearchArgumentFactory
+[INFO] Running org.apache.hadoop.hive.ql.util.TestJavaDataModel
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.hadoop.hive.ql.util.TestJavaDataModel
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestUnionColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.ql.exec.vector.TestUnionColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestTimestampColumnVector
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 s - in org.apache.hadoop.hive.ql.exec.vector.TestTimestampColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestStructColumnVector
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.hadoop.hive.ql.exec.vector.TestStructColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestBytesColumnVector
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.977 s - in org.apache.hadoop.hive.ql.exec.vector.TestBytesColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestListColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.hadoop.hive.ql.exec.vector.TestListColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.expressions.TestStringExpr
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.hadoop.hive.ql.exec.vector.expressions.TestStringExpr
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestMapColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.hadoop.hive.ql.exec.vector.TestMapColumnVector
+[INFO] Running org.apache.hadoop.hive.ql.exec.vector.TestDateColumnVector
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.406 s - in org.apache.hadoop.hive.ql.exec.vector.TestDateColumnVector
+[INFO] Running org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritable
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritable
+[INFO] Running org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritableVersion
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.apache.hadoop.hive.serde2.io.TestHiveDecimalWritableVersion
+[INFO] Running org.apache.hive.common.util.TestBloomFilter
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.794 s - in org.apache.hive.common.util.TestBloomFilter
+[INFO] Running org.apache.hive.common.util.TestBloomKFilter
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.924 s - in org.apache.hive.common.util.TestBloomKFilter
+[INFO] Running org.apache.hive.common.util.TestMurmur3
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.233 s - in org.apache.hive.common.util.TestMurmur3
+[INFO] Running org.apache.hive.common.util.TestTxnIdUtils
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.hive.common.util.TestTxnIdUtils
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 209, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex" -DnondexJarDir="/tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex" -DnondexExecid=PyfdqdtQbDvOBkb7lA1oN4u3QmuoLcatZusEn5cimk= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex" -DnondexJarDir="/tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex" -DnondexExecid=gW8l3dFsOaohRhyEHCXqRr2RqwfG+P8vXPgcFRsgA= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex" -DnondexJarDir="/tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex" -DnondexExecid=efMjRG+jJu8MNntH2KXxL3Q0JxrOU5pd3nX3wowR0= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.nL4RebYRUE/repo/storage-api/.nondex/PyfdqdtQbDvOBkb7lA1oN4u3QmuoLcatZusEn5cimk=/test_results.html
+[INFO] [NonDex] The id of this run is: PyfdqdtQbDvOBkb7lA1oN4u3QmuoLcatZusEn5cimk=
+[INFO] 
+[INFO] ------------------------< org.apache.hive:hive >------------------------
+[INFO] Building Hive 4.0.0-SNAPSHOT                                      [2/15]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ hive >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ hive ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-no-snapshots) @ hive ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-licenses) @ hive ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-logging) @ hive ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (check-banned-imports) @ hive ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hive ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- antrun:1.8:run (define-classpath) @ hive ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- apache-rat:0.13:check (default) @ hive ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- antrun:1.8:run (setup-test-dirs) @ hive ---
+[INFO] Executing tasks
+
+main:
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/target/tmp
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/target/testconf
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/target/tmp
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/target/testconf
+     [copy] Copying 24 files to /tmp/tmp.nL4RebYRUE/repo/target/testconf
+[INFO] Executed tasks
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ hive <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ hive ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.nL4RebYRUE/repo/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_kBNFk5f4Ai0h7Rc9PjPrNdpHtmhLxCQYYfAaig2w=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.nL4RebYRUE/repo/.nondex
+nondexJarDir=/tmp/tmp.nL4RebYRUE/repo/.nondex
+nondexExecid=c8LxRdcjDWzDZrnkTgV0sESA8dAb9QuARdKwb0gB6ys=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.nL4RebYRUE/repo/.nondex
+nondexJarDir=/tmp/tmp.nL4RebYRUE/repo/.nondex
+nondexExecid=4kvqlKc8Fcomd3+49gjB6LfsSW2CPMG23MSL5GympVk=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.nL4RebYRUE/repo/.nondex
+nondexJarDir=/tmp/tmp.nL4RebYRUE/repo/.nondex
+nondexExecid=xp28dMsVNvQvxlBnuBQU5+3PAOAwZBZ1JfyxOA+s6o=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.nL4RebYRUE/repo/.nondex" -DnondexJarDir="/tmp/tmp.nL4RebYRUE/repo/.nondex" -DnondexExecid=c8LxRdcjDWzDZrnkTgV0sESA8dAb9QuARdKwb0gB6ys= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.nL4RebYRUE/repo/.nondex" -DnondexJarDir="/tmp/tmp.nL4RebYRUE/repo/.nondex" -DnondexExecid=4kvqlKc8Fcomd3+49gjB6LfsSW2CPMG23MSL5GympVk= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.nL4RebYRUE/repo/.nondex" -DnondexJarDir="/tmp/tmp.nL4RebYRUE/repo/.nondex" -DnondexExecid=xp28dMsVNvQvxlBnuBQU5+3PAOAwZBZ1JfyxOA+s6o= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.nL4RebYRUE/repo/.nondex/c8LxRdcjDWzDZrnkTgV0sESA8dAb9QuARdKwb0gB6ys=/test_results.html
+[INFO] [NonDex] The id of this run is: c8LxRdcjDWzDZrnkTgV0sESA8dAb9QuARdKwb0gB6ys=
+[INFO] 
+[INFO] ----------------< org.apache.hive:hive-classification >-----------------
+[INFO] Building Hive Classifications 4.0.0-SNAPSHOT                      [3/15]
+[INFO]   from classification/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ hive-classification >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-maven-version) @ hive-classification ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-no-snapshots) @ hive-classification ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-licenses) @ hive-classification ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce-banned-dependencies-logging) @ hive-classification ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (check-banned-imports) @ hive-classification ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- remote-resources:1.7.0:process (process-resource-bundles) @ hive-classification ---
+[INFO] Preparing remote bundle org.apache:apache-jar-resource-bundle:1.4
+[INFO] Copying 3 resources from 1 bundle.
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ hive-classification ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/classification/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- antrun:1.8:run (define-classpath) @ hive-classification ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- apache-rat:0.13:check (default) @ hive-classification ---
+[INFO] RAT will not execute since it is configured to be skipped via system property 'rat.skip'.
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ hive-classification ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ hive-classification ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /tmp/tmp.nL4RebYRUE/repo/classification/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- antrun:1.8:run (setup-test-dirs) @ hive-classification ---
+[INFO] Executing tasks
+
+main:
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/classification/target/tmp
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/classification/target/testconf
+   [delete] Deleting directory /tmp/tmp.nL4RebYRUE/repo/classification/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/classification/target/tmp
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/classification/target/warehouse
+    [mkdir] Created dir: /tmp/tmp.nL4RebYRUE/repo/classification/target/testconf
+     [copy] Copying 24 files to /tmp/tmp.nL4RebYRUE/repo/classification/target/testconf
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ hive-classification ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ hive-classification <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ hive-classification ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.nL4RebYRUE/repo/classification/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_AZbTCY9VYHBh4MjOzoD7fA4cIcHUrFdn2QFGuEzrNo=
+nondexLogging=CONFIG
+test=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.nL4RebYRUE/repo/classification/.nondex
+nondexJarDir=/tmp/tmp.nL4RebYRUE/repo/classification/.nondex
+nondexExecid=qrNY5NbzlM0ZF5x56Duw2WdQeUdnblrg3B1yZDz7KZc=
+nondexLogging=CONFIG
+test=
+INFO: Surefire failed when running tests for qrNY5NbzlM0ZF5x56Duw2WdQeUdnblrg3B1yZDz7KZc=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.nL4RebYRUE/repo/classification/.nondex
+nondexJarDir=/tmp/tmp.nL4RebYRUE/repo/classification/.nondex
+nondexExecid=6KGg+bPkubpWN0L0IWU2aFSfDMt+FWPDsXGvXrwqGuM=
+nondexLogging=CONFIG
+test=
+INFO: Surefire failed when running tests for 6KGg+bPkubpWN0L0IWU2aFSfDMt+FWPDsXGvXrwqGuM=
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.nL4RebYRUE/repo/classification/.nondex
+nondexJarDir=/tmp/tmp.nL4RebYRUE/repo/classification/.nondex
+nondexExecid=oVA9DV2vdt5s1KNvXbIhA7ihEeLogJ+hT2+iz3ERmAk=
+nondexLogging=CONFIG
+test=
+INFO: Surefire failed when running tests for oVA9DV2vdt5s1KNvXbIhA7ihEeLogJ+hT2+iz3ERmAk=
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.nL4RebYRUE/repo/classification/.nondex" -DnondexJarDir="/tmp/tmp.nL4RebYRUE/repo/classification/.nondex" -DnondexExecid=qrNY5NbzlM0ZF5x56Duw2WdQeUdnblrg3B1yZDz7KZc= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.nL4RebYRUE/repo/classification/.nondex" -DnondexJarDir="/tmp/tmp.nL4RebYRUE/repo/classification/.nondex" -DnondexExecid=6KGg+bPkubpWN0L0IWU2aFSfDMt+FWPDsXGvXrwqGuM= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.nL4RebYRUE/repo/classification/.nondex" -DnondexJarDir="/tmp/tmp.nL4RebYRUE/repo/classification/.nondex" -DnondexExecid=oVA9DV2vdt5s1KNvXbIhA7ihEeLogJ+hT2+iz3ERmAk= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.nL4RebYRUE/repo/classification/.nondex/qrNY5NbzlM0ZF5x56Duw2WdQeUdnblrg3B1yZDz7KZc=/test_results.html
+[INFO] [NonDex] The id of this run is: qrNY5NbzlM0ZF5x56Duw2WdQeUdnblrg3B1yZDz7KZc=
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Hive Storage API 2.7.3-SNAPSHOT .................... SUCCESS [02:55 min]
+[INFO] Hive 4.0.0-SNAPSHOT ................................ SUCCESS [  0.476 s]
+[INFO] Hive Classifications 4.0.0-SNAPSHOT ................ FAILURE [  0.156 s]
+[INFO] Hive Shims Common 4.0.0-SNAPSHOT ................... SKIPPED
+[INFO] Hive Shims 0.23 4.0.0-SNAPSHOT ..................... SKIPPED
+[INFO] Hive Shims Scheduler 4.0.0-SNAPSHOT ................ SKIPPED
+[INFO] Hive Shims 4.0.0-SNAPSHOT .......................... SKIPPED
+[INFO] Hive Standalone Metastore 4.0.0-SNAPSHOT ........... SKIPPED
+[INFO] Hive Standalone Metastore Common Code 4.0.0-SNAPSHOT SKIPPED
+[INFO] Hive Common 4.0.0-SNAPSHOT ......................... SKIPPED
+[INFO] Hive Service RPC 4.0.0-SNAPSHOT .................... SKIPPED
+[INFO] Hive Serde 4.0.0-SNAPSHOT .......................... SKIPPED
+[INFO] Hive Llap Common 4.0.0-SNAPSHOT .................... SKIPPED
+[INFO] Hive Llap Client 4.0.0-SNAPSHOT .................... SKIPPED
+[INFO] Hive Llap Tez 4.0.0-SNAPSHOT ....................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:57 min
+[INFO] Finished at: 2026-11-10T19:16:09Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal edu.illinois:nondex-maven-plugin:2.2.1:nondex (default-cli) on project hive-classification: Unable to execute mojo: groups/excludedGroups require TestNG, JUnit48+ or JUnit 5 (a specific engine required on classpath) on project test classpath -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :hive-classification

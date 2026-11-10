@@ -1,0 +1,3 @@
+url=https://github.com/apache/ignite-3
+sha=5227513b0b7d317c4fd656372621bec409d45b28
+module=modules/storage-rocksdb

@@ -1,0 +1,3 @@
+url=https://github.com/apache/druid
+sha=4a594bb9f6ab89eabda5db654a9d215633340c66
+module=server

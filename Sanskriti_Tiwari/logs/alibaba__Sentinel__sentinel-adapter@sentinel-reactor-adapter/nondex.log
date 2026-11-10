@@ -1,0 +1,1429 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba.csp:sentinel-annotation-quarkus-adapter-deployment:jar:1.8.2
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: io.quarkus:quarkus-arc-deployment:jar -> duplicate declaration of version (?) @ line 47, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.alibaba.csp:sentinel-demo-log-logback:jar:1.8.2
+[WARNING] 'dependencies.dependency.version' for com.github.stefanbirkner:system-rules:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 40, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] sentinel-parent                                                    [pom]
+[INFO] sentinel-core                                                      [jar]
+[INFO] sentinel-adapter                                                   [pom]
+[INFO] sentinel-reactor-adapter                                           [jar]
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.pom (5.2 kB at 20 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex/2.2.1/nondex-2.2.1.pom (7.2 kB at 298 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-maven-plugin/2.2.1/nondex-maven-plugin-2.2.1.jar (41 kB at 1.3 MB/s)
+[INFO] 
+[INFO] ------------------< com.alibaba.csp:sentinel-parent >-------------------
+[INFO] Building sentinel-parent 1.8.2                                     [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ sentinel-parent >>>
+[INFO] 
+[INFO] --- jacoco:0.8.3:prepare-agent (default) @ sentinel-parent ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ sentinel-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ sentinel-parent ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.pom (3.4 kB at 129 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.19.1/surefire-2.19.1.pom (18 kB at 971 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom (40 kB at 1.9 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.pom (2.2 kB at 85 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor-parent/2.2.0/mojo-executor-parent-2.2.0.pom (9.3 kB at 441 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom (2.3 kB at 104 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.pom (8.3 kB at 377 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/3.3.9/maven-3.3.9.pom (24 kB at 247 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/27/maven-parent-27.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/27/maven-parent-27.pom (41 kB at 1.7 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/17/apache-17.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/17/apache-17.pom (16 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom (4.0 kB at 212 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.pom (1.8 kB at 76 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.pom (2.6 kB at 97 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.pom (1.7 kB at 79 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom (1.5 kB at 70 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.pom (1.9 kB at 79 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom (2.1 kB at 97 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom (2.7 kB at 134 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom (4.2 kB at 199 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-plexus/0.3.2/sisu-plexus-0.3.2.pom (14 kB at 597 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom (2.6 kB at 138 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/sisu-inject/0.3.2/sisu-inject-0.3.2.pom (14 kB at 720 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.pom (3.1 kB at 157 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.pom (5.7 kB at 354 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom (7.7 kB at 334 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.pom (4.0 kB at 224 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.pom (1.8 kB at 96 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.2.v20150114/aether-1.0.2.v20150114.pom (29 kB at 1.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.pom (2.0 kB at 99 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.pom (2.1 kB at 96 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.pom (3.4 kB at 153 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.pom (6.1 kB at 291 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/16.0.1/guava-parent-16.0.1.pom (7.3 kB at 408 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.pom (2.6 kB at 114 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom (20 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom (8.1 kB at 368 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/5/jvnet-parent-5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/5/jvnet-parent-5.pom (8.9 kB at 466 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom (4.9 kB at 259 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.0/all-1.2.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/activation/all/1.2.0/all-1.2.0.pom (18 kB at 780 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/1/jvnet-parent-1.pom (4.7 kB at 214 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.pom (4.0 kB at 200 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.pom (1.5 kB at 62 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-report-parser/2.19.1/surefire-report-parser-2.19.1.jar (63 kB at 2.6 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings-builder/3.3.9/maven-settings-builder-3.3.9.jar (43 kB at 1.3 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-repository-metadata/3.3.9/maven-repository-metadata-3.3.9.jar (27 kB at 515 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/twdata/maven/mojo-executor/2.2.0/mojo-executor-2.2.0.jar (12 kB at 192 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar (55 kB at 671 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-builder-support/3.3.9/maven-builder-support-3.3.9.jar (15 kB at 177 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-settings/3.3.9/maven-settings-3.3.9.jar (44 kB at 498 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/3.3.9/maven-core-3.3.9.jar (638 kB at 6.9 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model-builder/3.3.9/maven-model-builder-3.3.9.jar (177 kB at 1.9 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-aether-provider/3.3.9/maven-aether-provider-3.3.9.jar (67 kB at 643 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-spi/1.0.2.v20150114/aether-spi-1.0.2.v20150114.jar (31 kB at 267 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-impl/1.0.2.v20150114/aether-impl-1.0.2.v20150114.jar (173 kB at 1.5 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.2.v20150114/aether-api-1.0.2.v20150114.jar (136 kB at 1.1 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.2.v20150114/aether-util-1.0.2.v20150114.jar (147 kB at 1.0 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar (205 kB at 1.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar (378 kB at 2.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar (62 kB at 381 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar (47 kB at 286 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.0/guice-4.0-no_aop.jar (424 kB at 2.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar (164 kB at 911 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-common/2.2.1/nondex-common-2.2.1.jar (35 kB at 187 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-annotations/2.2.1/nondex-annotations-2.2.1.jar (2.1 kB at 11 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/edu/illinois/nondex-instrumentation/2.2.1/nondex-instrumentation-2.2.1.jar (563 kB at 2.8 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar (128 kB at 625 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar (57 kB at 271 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/18.0/guava-18.0.jar (2.3 MB at 10 MB/s)
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_tpx4YPxBbO0NxMhWNWACj8VohLr38eevnT1X5I0im0w=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/.nondex
+nondexJarDir=/tmp/tmp.FtqFieaPMD/repo/.nondex
+nondexExecid=RPtUqJEOHYNGvD0sXxJxfTLIqC9GVu2rx8PcY7SGo=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/.nondex
+nondexJarDir=/tmp/tmp.FtqFieaPMD/repo/.nondex
+nondexExecid=wGOgC0C0yQRYBNVS3inoXzujD0heVUljoyQo48h+L0g=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/.nondex
+nondexJarDir=/tmp/tmp.FtqFieaPMD/repo/.nondex
+nondexExecid=wLfuJthr2KvbFz2U2oqnZBIl87tYZ12lbcx3W93kltk=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.FtqFieaPMD/repo/.nondex" -DnondexJarDir="/tmp/tmp.FtqFieaPMD/repo/.nondex" -DnondexExecid=RPtUqJEOHYNGvD0sXxJxfTLIqC9GVu2rx8PcY7SGo= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.FtqFieaPMD/repo/.nondex" -DnondexJarDir="/tmp/tmp.FtqFieaPMD/repo/.nondex" -DnondexExecid=wGOgC0C0yQRYBNVS3inoXzujD0heVUljoyQo48h+L0g= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.FtqFieaPMD/repo/.nondex" -DnondexJarDir="/tmp/tmp.FtqFieaPMD/repo/.nondex" -DnondexExecid=wLfuJthr2KvbFz2U2oqnZBIl87tYZ12lbcx3W93kltk= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.FtqFieaPMD/repo/.nondex/RPtUqJEOHYNGvD0sXxJxfTLIqC9GVu2rx8PcY7SGo=/test_results.html
+[INFO] [NonDex] The id of this run is: RPtUqJEOHYNGvD0sXxJxfTLIqC9GVu2rx8PcY7SGo=
+[INFO] 
+[INFO] -------------------< com.alibaba.csp:sentinel-core >--------------------
+[INFO] Building sentinel-core 1.8.2                                       [2/4]
+[INFO]   from sentinel-core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ sentinel-core >>>
+[INFO] 
+[INFO] --- jacoco:0.8.3:prepare-agent (default) @ sentinel-core ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ sentinel-core ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ sentinel-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ sentinel-core ---
+[INFO] Copying 2 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ sentinel-core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ sentinel-core <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ sentinel-core ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_LTLfShwh5EV5MrW9It1vqDOpzuBwsSlOCVLGdiCFBFI=
+nondexLogging=CONFIG
+test=
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.pom (3.1 kB at 62 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.22.1/surefire-providers-2.22.1.pom (2.5 kB at 92 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.22.1/surefire-junit4-2.22.1.jar (85 kB at 2.0 MB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.alibaba.csp.sentinel.spi.SpiLoaderTest
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: /home/runner/logs/csp/
+INFO: Sentinel log name use pid is: false
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 s - in com.alibaba.csp.sentinel.spi.SpiLoaderTest
+[INFO] Running com.alibaba.csp.sentinel.context.ContextTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.449 s - in com.alibaba.csp.sentinel.context.ContextTest
+[INFO] Running com.alibaba.csp.sentinel.CtSphTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.609 s - in com.alibaba.csp.sentinel.CtSphTest
+[INFO] Running com.alibaba.csp.sentinel.AsyncEntryIntegrationTest
+abc: 1794336759698
+Async result: 666
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.568 s - in com.alibaba.csp.sentinel.AsyncEntryIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.TracerTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 s - in com.alibaba.csp.sentinel.TracerTest
+[INFO] Running com.alibaba.csp.sentinel.EntryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.325 s - in com.alibaba.csp.sentinel.EntryTest
+[INFO] Running com.alibaba.csp.sentinel.CtEntryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in com.alibaba.csp.sentinel.CtEntryTest
+[INFO] Running com.alibaba.csp.sentinel.SphUTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.alibaba.csp.sentinel.SphUTest
+[INFO] Running com.alibaba.csp.sentinel.node.ClusterNodeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in com.alibaba.csp.sentinel.node.ClusterNodeTest
+[INFO] Running com.alibaba.csp.sentinel.node.StatisticNodeTest
+[StatisticNodeTest] LongAdder totalCost : 3948ms
+[StatisticNodeTest] AtomicInteger totalCost : 2749ms
+[StatisticNodeTest] 2026-18-10 18:52:46 curThreadNum=15,passQps=22.0,successQps=22.0,maxSuccessQps=28.0,totalRequest=42,totalSuccess=27, avgRt=561.91, minRt=123.0
+[StatisticNodeTest] 2026-18-10 18:52:47 curThreadNum=11,passQps=24.0,successQps=28.0,maxSuccessQps=30.0,totalRequest=69,totalSuccess=58, avgRt=430.89, minRt=47.0
+[StatisticNodeTest] 2026-18-10 18:52:48 curThreadNum=14,passQps=24.0,successQps=24.0,maxSuccessQps=32.0,totalRequest=97,totalSuccess=83, avgRt=455.38, minRt=12.0
+[StatisticNodeTest] 2026-18-10 18:52:49 curThreadNum=12,passQps=24.0,successQps=23.0,maxSuccessQps=26.0,totalRequest=123,totalSuccess=111, avgRt=472.57, minRt=71.0
+[StatisticNodeTest] 2026-18-10 18:52:50 curThreadNum=14,passQps=25.0,successQps=21.0,maxSuccessQps=24.0,totalRequest=152,totalSuccess=138, avgRt=539.05, minRt=17.0
+[StatisticNodeTest] 2026-18-10 18:52:51 curThreadNum=13,passQps=24.0,successQps=25.0,maxSuccessQps=26.0,totalRequest=179,totalSuccess=166, avgRt=525.76, minRt=18.0
+[StatisticNodeTest] 2026-18-10 18:52:52 curThreadNum=9,passQps=18.0,successQps=22.0,maxSuccessQps=26.0,totalRequest=202,totalSuccess=193, avgRt=581.05, minRt=164.0
+[StatisticNodeTest] 2026-18-10 18:52:53 curThreadNum=6,passQps=14.0,successQps=22.0,maxSuccessQps=24.0,totalRequest=223,totalSuccess=217, avgRt=653.55, minRt=51.0
+[StatisticNodeTest] 2026-18-10 18:52:54 curThreadNum=6,passQps=10.0,successQps=11.0,maxSuccessQps=16.0,totalRequest=236,totalSuccess=230, avgRt=588.09, minRt=122.0
+[StatisticNodeTest] 2026-18-10 18:52:55 curThreadNum=6,passQps=17.0,successQps=16.0,maxSuccessQps=18.0,totalRequest=254,totalSuccess=248, avgRt=370.81, minRt=24.0
+[StatisticNodeTest] 2026-18-10 18:52:56 curThreadNum=7,passQps=15.0,successQps=13.0,maxSuccessQps=18.0,totalRequest=269,totalSuccess=262, avgRt=293.85, minRt=5.0
+[StatisticNodeTest] 2026-18-10 18:52:57 curThreadNum=4,passQps=9.0,successQps=13.0,maxSuccessQps=18.0,totalRequest=280,totalSuccess=276, avgRt=379.31, minRt=60.0
+[StatisticNodeTest] 2026-18-10 18:52:58 curThreadNum=4,passQps=8.0,successQps=10.0,maxSuccessQps=10.0,totalRequest=290,totalSuccess=286, avgRt=639.90, minRt=137.0
+[StatisticNodeTest] 2026-18-10 18:52:59 curThreadNum=3,passQps=8.0,successQps=10.0,maxSuccessQps=12.0,totalRequest=299,totalSuccess=296, avgRt=515.30, minRt=46.0
+[StatisticNodeTest] ====================================================
+[StatisticNodeTest] all biz task done, waiting 3 second to exit
+[StatisticNodeTest] 2026-18-10 18:53:00 curThreadNum=0,passQps=1.0,successQps=3.0,maxSuccessQps=6.0,totalRequest=300,totalSuccess=300, avgRt=514.33, minRt=248.0
+[StatisticNodeTest] 2026-18-10 18:53:01 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:02 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] ====================================================
+[StatisticNodeTest] testStatisticThreadNumAndQps done, cost 17937ms
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.015 s - in com.alibaba.csp.sentinel.node.StatisticNodeTest
+java.lang.InterruptedException: sleep interrupted
+[INFO] Running com.alibaba.csp.sentinel.node.metric.MetricNodeTest
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at java.base/java.lang.Thread.sleep(Thread.java:334)
+	at java.base/java.util.concurrent.TimeUnit.sleep(TimeUnit.java:446)
+	at com.alibaba.csp.sentinel.node.StatisticNodeTest.sleep(StatisticNodeTest.java:191)
+	at com.alibaba.csp.sentinel.node.StatisticNodeTest.access$200(StatisticNodeTest.java:46)
+	at com.alibaba.csp.sentinel.node.StatisticNodeTest$TickTask.run(StatisticNodeTest.java:179)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[StatisticNodeTest] 2026-18-10 18:53:03 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.node.metric.MetricNodeTest
+[INFO] Running com.alibaba.csp.sentinel.node.metric.MetricWriterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.node.metric.MetricWriterTest
+[INFO] Running com.alibaba.csp.sentinel.metric.extension.callback.MetricEntryCallbackTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in com.alibaba.csp.sentinel.metric.extension.callback.MetricEntryCallbackTest
+[INFO] Running com.alibaba.csp.sentinel.metric.extension.callback.MetricExitCallbackTest
+[StatisticNodeTest] 2026-18-10 18:53:04 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: /home/runner/logs/csp/
+INFO: Sentinel log name use pid is: false
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.085 s - in com.alibaba.csp.sentinel.metric.extension.callback.MetricExitCallbackTest
+[INFO] Running com.alibaba.csp.sentinel.RecordLogTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in com.alibaba.csp.sentinel.RecordLogTest
+[INFO] Running com.alibaba.csp.sentinel.SphOTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.alibaba.csp.sentinel.SphOTest
+[INFO] Running com.alibaba.csp.sentinel.util.VersionUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.VersionUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.function.Tuple2Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.util.function.Tuple2Test
+[INFO] Running com.alibaba.csp.sentinel.util.IdUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.IdUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.MethodUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.MethodUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.TimeUtilTest
+[StatisticNodeTest] 2026-18-10 18:53:05 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:06 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:07 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:08 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:09 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:10 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:11 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:12 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:13 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:14 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:15 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:16 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:17 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:18 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:19 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:20 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:21 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:22 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:23 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:53:24 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.019 s - in com.alibaba.csp.sentinel.util.TimeUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.ConfigUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.util.ConfigUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.StringUtilTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.StringUtilTest
+[INFO] Running com.alibaba.csp.sentinel.log.jul.ConsoleHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.log.jul.ConsoleHandlerTest
+[INFO] Running com.alibaba.csp.sentinel.config.SentinelConfigTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.alibaba.csp.sentinel.config.SentinelConfigTest
+[INFO] Running com.alibaba.csp.sentinel.AsyncEntryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.AsyncEntryTest
+[INFO] Running com.alibaba.csp.sentinel.eagleeye.TokenBucketTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.eagleeye.TokenBucketTest
+[INFO] Running com.alibaba.csp.sentinel.eagleeye.EagleEyeCoreUtilsTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.alibaba.csp.sentinel.eagleeye.EagleEyeCoreUtilsTest
+[INFO] Running com.alibaba.csp.sentinel.slots.DefaultSlotChainBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.DefaultSlotChainBuilderTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.ArrayMetricTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in com.alibaba.csp.sentinel.slots.statistic.metric.ArrayMetricTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.BucketLeapArrayTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.402 s - in com.alibaba.csp.sentinel.slots.statistic.metric.BucketLeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.FutureBucketLeapArrayTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.statistic.metric.FutureBucketLeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.OccupiableBucketLeapArrayTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.537 s - in com.alibaba.csp.sentinel.slots.statistic.metric.OccupiableBucketLeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.base.LeapArrayTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.517 s - in com.alibaba.csp.sentinel.slots.statistic.base.LeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.nodeselector.NodeSelectorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.nodeselector.NodeSelectorTest
+[INFO] Running com.alibaba.csp.sentinel.slots.clusterbuilder.ClusterNodeBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.clusterbuilder.ClusterNodeBuilderTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ResponseTimeCircuitBreakerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.61 s - in com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ResponseTimeCircuitBreakerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ExceptionCircuitBreakerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.709 s - in com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ExceptionCircuitBreakerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.CircuitBreakingIntegrationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.713 s - in com.alibaba.csp.sentinel.slots.block.degrade.CircuitBreakingIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleCheckerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleCheckerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.authority.AuthoritySlotTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.authority.AuthoritySlotTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.system.SystemRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in com.alibaba.csp.sentinel.slots.block.system.SystemRuleTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowSlotTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowSlotTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowRuleComparatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowRuleComparatorTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpRateLimiterControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpRateLimiterControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpControllerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.53 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.RateLimiterControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.RateLimiterControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowPartialIntegrationTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowPartialIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManagerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.181 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowRuleCheckerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowRuleCheckerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.system.SystemRuleManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.506 s - in com.alibaba.csp.sentinel.slots.system.SystemRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.logger.EagleEyeLogUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 s - in com.alibaba.csp.sentinel.slots.logger.EagleEyeLogUtilTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 200, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex
+nondexJarDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex
+nondexExecid=+4EaNokPuxpmEkAb2PbDxjT7iX3xYNOCgEa3dYQGqo=
+nondexLogging=CONFIG
+test=
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.22.1/surefire-junit47-2.22.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.22.1/surefire-junit47-2.22.1.pom (6.3 kB at 209 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.22.1/common-junit48-2.22.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.22.1/common-junit48-2.22.1.pom (3.2 kB at 120 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.22.1/common-junit4-2.22.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.22.1/common-junit4-2.22.1.pom (2.1 kB at 67 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.22.1/common-junit3-2.22.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.22.1/common-junit3-2.22.1.pom (1.6 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.1/common-java5-2.22.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.1/common-java5-2.22.1.pom (2.7 kB at 99 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.pom (6.2 kB at 259 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom (5.1 kB at 196 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/25/maven-parent-25.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/25/maven-parent-25.pom (37 kB at 1.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/15/apache-15.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/15/apache-15.pom (15 kB at 609 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.1/surefire-grouper-2.22.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.1/surefire-grouper-2.22.1.pom (2.6 kB at 115 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.22.1/common-junit4-2.22.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.22.1/common-junit48-2.22.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.22.1/surefire-junit47-2.22.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.22.1/common-junit3-2.22.1.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.1/common-java5-2.22.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit4/2.22.1/common-junit4-2.22.1.jar (28 kB at 1.4 MB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit3/2.22.1/common-junit3-2.22.1.jar (12 kB at 555 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.1/surefire-grouper-2.22.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-junit48/2.22.1/common-junit48-2.22.1.jar (22 kB at 844 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit47/2.22.1/surefire-junit47-2.22.1.jar (160 kB at 5.3 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/common-java5/2.22.1/common-java5-2.22.1.jar (51 kB at 1.6 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.9/maven-shared-utils-0.9.jar (172 kB at 7.5 MB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-grouper/2.22.1/surefire-grouper-2.22.1.jar (40 kB at 1.3 MB/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[WARNING] Couldn't load group class 'edu.illinois.NonDexIgnore' in Surefire|Failsafe plugin. The group class is ignored!
+[INFO] Running com.alibaba.csp.sentinel.spi.SpiLoaderTest
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: /home/runner/logs/csp/
+INFO: Sentinel log name use pid is: false
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s - in com.alibaba.csp.sentinel.spi.SpiLoaderTest
+[INFO] Running com.alibaba.csp.sentinel.context.ContextTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.457 s - in com.alibaba.csp.sentinel.context.ContextTest
+[INFO] Running com.alibaba.csp.sentinel.CtSphTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.825 s - in com.alibaba.csp.sentinel.CtSphTest
+[INFO] Running com.alibaba.csp.sentinel.AsyncEntryIntegrationTest
+abc: 1794336819563
+Async result: 666
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.55 s - in com.alibaba.csp.sentinel.AsyncEntryIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.TracerTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.143 s - in com.alibaba.csp.sentinel.TracerTest
+[INFO] Running com.alibaba.csp.sentinel.EntryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.329 s - in com.alibaba.csp.sentinel.EntryTest
+[INFO] Running com.alibaba.csp.sentinel.CtEntryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.052 s - in com.alibaba.csp.sentinel.CtEntryTest
+[INFO] Running com.alibaba.csp.sentinel.SphUTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.alibaba.csp.sentinel.SphUTest
+[INFO] Running com.alibaba.csp.sentinel.node.ClusterNodeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in com.alibaba.csp.sentinel.node.ClusterNodeTest
+[INFO] Running com.alibaba.csp.sentinel.node.StatisticNodeTest
+[StatisticNodeTest] LongAdder totalCost : 4836ms
+[StatisticNodeTest] AtomicInteger totalCost : 3627ms
+[StatisticNodeTest] 2026-18-10 18:53:46 curThreadNum=12,passQps=19.0,successQps=24.0,maxSuccessQps=32.0,totalRequest=42,totalSuccess=30, avgRt=454.79, minRt=5.0
+[StatisticNodeTest] 2026-18-10 18:53:47 curThreadNum=12,passQps=20.0,successQps=21.0,maxSuccessQps=28.0,totalRequest=67,totalSuccess=55, avgRt=534.71, minRt=76.0
+[StatisticNodeTest] 2026-18-10 18:53:48 curThreadNum=14,passQps=20.0,successQps=21.0,maxSuccessQps=26.0,totalRequest=98,totalSuccess=84, avgRt=486.24, minRt=1.0
+[StatisticNodeTest] 2026-18-10 18:53:49 curThreadNum=13,passQps=20.0,successQps=21.0,maxSuccessQps=30.0,totalRequest=127,totalSuccess=114, avgRt=449.62, minRt=11.0
+[StatisticNodeTest] 2026-18-10 18:53:50 curThreadNum=13,passQps=16.0,successQps=16.0,maxSuccessQps=20.0,totalRequest=150,totalSuccess=137, avgRt=591.50, minRt=121.0
+[StatisticNodeTest] 2026-18-10 18:53:51 curThreadNum=14,passQps=18.0,successQps=18.0,maxSuccessQps=24.0,totalRequest=180,totalSuccess=166, avgRt=376.78, minRt=21.0
+[StatisticNodeTest] 2026-18-10 18:53:52 curThreadNum=14,passQps=18.0,successQps=16.0,maxSuccessQps=22.0,totalRequest=206,totalSuccess=192, avgRt=544.88, minRt=76.0
+[StatisticNodeTest] 2026-18-10 18:53:53 curThreadNum=9,passQps=16.0,successQps=18.0,maxSuccessQps=24.0,totalRequest=225,totalSuccess=216, avgRt=516.17, minRt=7.0
+[StatisticNodeTest] 2026-18-10 18:53:54 curThreadNum=6,passQps=6.0,successQps=10.0,maxSuccessQps=12.0,totalRequest=236,totalSuccess=230, avgRt=627.20, minRt=343.0
+[StatisticNodeTest] 2026-18-10 18:53:55 curThreadNum=6,passQps=9.0,successQps=8.0,maxSuccessQps=10.0,totalRequest=247,totalSuccess=241, avgRt=474.00, minRt=191.0
+[StatisticNodeTest] 2026-18-10 18:53:56 curThreadNum=7,passQps=12.0,successQps=11.0,maxSuccessQps=20.0,totalRequest=264,totalSuccess=257, avgRt=399.55, minRt=10.0
+[StatisticNodeTest] 2026-18-10 18:53:57 curThreadNum=8,passQps=12.0,successQps=11.0,maxSuccessQps=16.0,totalRequest=280,totalSuccess=272, avgRt=444.36, minRt=72.0
+[StatisticNodeTest] 2026-18-10 18:53:58 curThreadNum=3,passQps=6.0,successQps=12.0,maxSuccessQps=14.0,totalRequest=289,totalSuccess=286, avgRt=590.00, minRt=94.0
+[StatisticNodeTest] 2026-18-10 18:53:59 curThreadNum=1,passQps=2.0,successQps=6.0,maxSuccessQps=10.0,totalRequest=295,totalSuccess=294, avgRt=607.83, minRt=254.0
+[StatisticNodeTest] 2026-18-10 18:54:00 curThreadNum=2,passQps=2.0,successQps=4.0,maxSuccessQps=4.0,totalRequest=300,totalSuccess=298, avgRt=728.25, minRt=328.0
+[StatisticNodeTest] 2026-18-10 18:54:01 curThreadNum=0,passQps=0.0,successQps=2.0,maxSuccessQps=4.0,totalRequest=300,totalSuccess=300, avgRt=935.00, minRt=871.0
+[StatisticNodeTest] ====================================================
+[StatisticNodeTest] all biz task done, waiting 3 second to exit
+[StatisticNodeTest] 2026-18-10 18:54:02 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:03 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:04 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] ====================================================
+[StatisticNodeTest] testStatisticThreadNumAndQps done, cost 19074ms
+java.lang.InterruptedException: sleep interrupted
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.156 s - in com.alibaba.csp.sentinel.node.StatisticNodeTest
+[INFO] Running com.alibaba.csp.sentinel.node.metric.MetricNodeTest
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at java.base/java.lang.Thread.sleep(Thread.java:334)
+	at java.base/java.util.concurrent.TimeUnit.sleep(TimeUnit.java:446)
+	at com.alibaba.csp.sentinel.node.StatisticNodeTest.sleep(StatisticNodeTest.java:191)
+	at com.alibaba.csp.sentinel.node.StatisticNodeTest.access$200(StatisticNodeTest.java:46)
+	at com.alibaba.csp.sentinel.node.StatisticNodeTest$TickTask.run(StatisticNodeTest.java:179)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.node.metric.MetricNodeTest
+[INFO] Running com.alibaba.csp.sentinel.node.metric.MetricWriterTest
+[StatisticNodeTest] 2026-18-10 18:54:04 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.node.metric.MetricWriterTest
+[INFO] Running com.alibaba.csp.sentinel.metric.extension.callback.MetricEntryCallbackTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.473 s - in com.alibaba.csp.sentinel.metric.extension.callback.MetricEntryCallbackTest
+[INFO] Running com.alibaba.csp.sentinel.metric.extension.callback.MetricExitCallbackTest
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: /home/runner/logs/csp/
+INFO: Sentinel log name use pid is: false
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 s - in com.alibaba.csp.sentinel.metric.extension.callback.MetricExitCallbackTest
+[INFO] Running com.alibaba.csp.sentinel.RecordLogTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.alibaba.csp.sentinel.RecordLogTest
+[INFO] Running com.alibaba.csp.sentinel.SphOTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.alibaba.csp.sentinel.SphOTest
+[INFO] Running com.alibaba.csp.sentinel.util.VersionUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.VersionUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.function.Tuple2Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.function.Tuple2Test
+[INFO] Running com.alibaba.csp.sentinel.util.IdUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.alibaba.csp.sentinel.util.IdUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.MethodUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.MethodUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.TimeUtilTest
+[StatisticNodeTest] 2026-18-10 18:54:05 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:06 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:07 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:08 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:09 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:10 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:11 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:12 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:13 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:14 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:15 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:16 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:17 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:18 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:19 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:20 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:21 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:22 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:23 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:54:24 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.016 s - in com.alibaba.csp.sentinel.util.TimeUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.ConfigUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.util.ConfigUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.StringUtilTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.StringUtilTest
+[INFO] Running com.alibaba.csp.sentinel.log.jul.ConsoleHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.log.jul.ConsoleHandlerTest
+[INFO] Running com.alibaba.csp.sentinel.config.SentinelConfigTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.config.SentinelConfigTest
+[INFO] Running com.alibaba.csp.sentinel.AsyncEntryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.AsyncEntryTest
+[INFO] Running com.alibaba.csp.sentinel.eagleeye.TokenBucketTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.eagleeye.TokenBucketTest
+[INFO] Running com.alibaba.csp.sentinel.eagleeye.EagleEyeCoreUtilsTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.alibaba.csp.sentinel.eagleeye.EagleEyeCoreUtilsTest
+[INFO] Running com.alibaba.csp.sentinel.slots.DefaultSlotChainBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.DefaultSlotChainBuilderTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.ArrayMetricTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in com.alibaba.csp.sentinel.slots.statistic.metric.ArrayMetricTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.BucketLeapArrayTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.402 s - in com.alibaba.csp.sentinel.slots.statistic.metric.BucketLeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.FutureBucketLeapArrayTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.418 s - in com.alibaba.csp.sentinel.slots.statistic.metric.FutureBucketLeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.OccupiableBucketLeapArrayTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.409 s - in com.alibaba.csp.sentinel.slots.statistic.metric.OccupiableBucketLeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.base.LeapArrayTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in com.alibaba.csp.sentinel.slots.statistic.base.LeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.nodeselector.NodeSelectorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.nodeselector.NodeSelectorTest
+[INFO] Running com.alibaba.csp.sentinel.slots.clusterbuilder.ClusterNodeBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.clusterbuilder.ClusterNodeBuilderTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.429 s - in com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ResponseTimeCircuitBreakerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.486 s - in com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ResponseTimeCircuitBreakerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ExceptionCircuitBreakerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ExceptionCircuitBreakerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.365 s - in com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.CircuitBreakingIntegrationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.172 s - in com.alibaba.csp.sentinel.slots.block.degrade.CircuitBreakingIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleCheckerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleCheckerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.authority.AuthoritySlotTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.authority.AuthoritySlotTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.system.SystemRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s - in com.alibaba.csp.sentinel.slots.block.system.SystemRuleTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowSlotTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowSlotTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowRuleComparatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowRuleComparatorTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpRateLimiterControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.369 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpRateLimiterControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpControllerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.RateLimiterControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.002 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.RateLimiterControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowPartialIntegrationTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowPartialIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManagerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.253 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowRuleCheckerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowRuleCheckerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.system.SystemRuleManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.502 s - in com.alibaba.csp.sentinel.slots.system.SystemRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.logger.EagleEyeLogUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 s - in com.alibaba.csp.sentinel.slots.logger.EagleEyeLogUtilTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 200, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex
+nondexJarDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex
+nondexExecid=SZqpz4owMkRvFixlb452PaU2gnTKppuuPQi09iDxy5I=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[WARNING] Couldn't load group class 'edu.illinois.NonDexIgnore' in Surefire|Failsafe plugin. The group class is ignored!
+[INFO] Running com.alibaba.csp.sentinel.spi.SpiLoaderTest
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: /home/runner/logs/csp/
+INFO: Sentinel log name use pid is: false
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.076 s - in com.alibaba.csp.sentinel.spi.SpiLoaderTest
+[INFO] Running com.alibaba.csp.sentinel.context.ContextTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.483 s - in com.alibaba.csp.sentinel.context.ContextTest
+[INFO] Running com.alibaba.csp.sentinel.CtSphTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.929 s - in com.alibaba.csp.sentinel.CtSphTest
+[INFO] Running com.alibaba.csp.sentinel.AsyncEntryIntegrationTest
+abc: 1794336879014
+Async result: 666
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.546 s - in com.alibaba.csp.sentinel.AsyncEntryIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.TracerTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 s - in com.alibaba.csp.sentinel.TracerTest
+[INFO] Running com.alibaba.csp.sentinel.EntryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.338 s - in com.alibaba.csp.sentinel.EntryTest
+[INFO] Running com.alibaba.csp.sentinel.CtEntryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in com.alibaba.csp.sentinel.CtEntryTest
+[INFO] Running com.alibaba.csp.sentinel.SphUTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.alibaba.csp.sentinel.SphUTest
+[INFO] Running com.alibaba.csp.sentinel.node.ClusterNodeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in com.alibaba.csp.sentinel.node.ClusterNodeTest
+[INFO] Running com.alibaba.csp.sentinel.node.StatisticNodeTest
+[StatisticNodeTest] LongAdder totalCost : 18120ms
+[StatisticNodeTest] AtomicInteger totalCost : 5729ms
+[StatisticNodeTest] 2026-18-10 18:54:46 curThreadNum=9,passQps=18.0,successQps=25.0,maxSuccessQps=32.0,totalRequest=40,totalSuccess=31, avgRt=429.52, minRt=22.0
+[StatisticNodeTest] 2026-18-10 18:54:47 curThreadNum=12,passQps=14.0,successQps=20.0,maxSuccessQps=20.0,totalRequest=66,totalSuccess=54, avgRt=545.20, minRt=163.0
+[StatisticNodeTest] 2026-18-10 18:54:48 curThreadNum=14,passQps=20.0,successQps=18.0,maxSuccessQps=26.0,totalRequest=94,totalSuccess=80, avgRt=471.22, minRt=132.0
+[StatisticNodeTest] 2026-18-10 18:54:49 curThreadNum=15,passQps=22.0,successQps=18.0,maxSuccessQps=24.0,totalRequest=125,totalSuccess=110, avgRt=442.22, minRt=85.0
+[StatisticNodeTest] 2026-18-10 18:54:50 curThreadNum=15,passQps=17.0,successQps=15.0,maxSuccessQps=22.0,totalRequest=149,totalSuccess=134, avgRt=554.13, minRt=216.0
+[StatisticNodeTest] 2026-18-10 18:54:51 curThreadNum=11,passQps=21.0,successQps=21.0,maxSuccessQps=22.0,totalRequest=176,totalSuccess=165, avgRt=509.10, minRt=136.0
+[StatisticNodeTest] 2026-18-10 18:54:52 curThreadNum=12,passQps=17.0,successQps=17.0,maxSuccessQps=20.0,totalRequest=198,totalSuccess=186, avgRt=543.65, minRt=13.0
+[StatisticNodeTest] 2026-18-10 18:54:53 curThreadNum=8,passQps=13.0,successQps=19.0,maxSuccessQps=28.0,totalRequest=221,totalSuccess=213, avgRt=547.53, minRt=121.0
+[StatisticNodeTest] 2026-18-10 18:54:54 curThreadNum=8,passQps=12.0,successQps=12.0,maxSuccessQps=20.0,totalRequest=238,totalSuccess=230, avgRt=372.50, minRt=44.0
+[StatisticNodeTest] 2026-18-10 18:54:55 curThreadNum=7,passQps=13.0,successQps=14.0,maxSuccessQps=24.0,totalRequest=254,totalSuccess=247, avgRt=484.86, minRt=1.0
+[StatisticNodeTest] 2026-18-10 18:54:56 curThreadNum=4,passQps=8.0,successQps=12.0,maxSuccessQps=16.0,totalRequest=265,totalSuccess=261, avgRt=496.42, minRt=105.0
+[StatisticNodeTest] 2026-18-10 18:54:57 curThreadNum=6,passQps=9.0,successQps=8.0,maxSuccessQps=12.0,totalRequest=279,totalSuccess=273, avgRt=421.50, minRt=113.0
+[StatisticNodeTest] 2026-18-10 18:54:58 curThreadNum=6,passQps=7.0,successQps=8.0,maxSuccessQps=10.0,totalRequest=291,totalSuccess=285, avgRt=629.88, minRt=188.0
+[StatisticNodeTest] 2026-18-10 18:54:59 curThreadNum=1,passQps=5.0,successQps=8.0,maxSuccessQps=12.0,totalRequest=297,totalSuccess=296, avgRt=394.63, minRt=131.0
+[StatisticNodeTest] 2026-18-10 18:55:00 curThreadNum=1,passQps=1.0,successQps=2.0,maxSuccessQps=4.0,totalRequest=300,totalSuccess=299, avgRt=470.50, minRt=323.0
+[StatisticNodeTest] ====================================================
+[StatisticNodeTest] all biz task done, waiting 3 second to exit
+[StatisticNodeTest] 2026-18-10 18:55:01 curThreadNum=0,passQps=0.0,successQps=1.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=817.00, minRt=817.0
+[StatisticNodeTest] 2026-18-10 18:55:02 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:03 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] ====================================================
+[StatisticNodeTest] testStatisticThreadNumAndQps done, cost 18665ms
+java.lang.InterruptedException: sleep interrupted
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.765 s - in com.alibaba.csp.sentinel.node.StatisticNodeTest
+[INFO] Running com.alibaba.csp.sentinel.node.metric.MetricNodeTest
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at java.base/java.lang.Thread.sleep(Thread.java:334)
+	at java.base/java.util.concurrent.TimeUnit.sleep(TimeUnit.java:446)
+	at com.alibaba.csp.sentinel.node.StatisticNodeTest.sleep(StatisticNodeTest.java:191)
+	at com.alibaba.csp.sentinel.node.StatisticNodeTest.access$200(StatisticNodeTest.java:46)
+	at com.alibaba.csp.sentinel.node.StatisticNodeTest$TickTask.run(StatisticNodeTest.java:179)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.node.metric.MetricNodeTest
+[INFO] Running com.alibaba.csp.sentinel.node.metric.MetricWriterTest
+[StatisticNodeTest] 2026-18-10 18:55:03 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.node.metric.MetricWriterTest
+[INFO] Running com.alibaba.csp.sentinel.metric.extension.callback.MetricEntryCallbackTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.513 s - in com.alibaba.csp.sentinel.metric.extension.callback.MetricEntryCallbackTest
+[INFO] Running com.alibaba.csp.sentinel.metric.extension.callback.MetricExitCallbackTest
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: /home/runner/logs/csp/
+INFO: Sentinel log name use pid is: false
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 s - in com.alibaba.csp.sentinel.metric.extension.callback.MetricExitCallbackTest
+[INFO] Running com.alibaba.csp.sentinel.RecordLogTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in com.alibaba.csp.sentinel.RecordLogTest
+[INFO] Running com.alibaba.csp.sentinel.SphOTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.alibaba.csp.sentinel.SphOTest
+[INFO] Running com.alibaba.csp.sentinel.util.VersionUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.VersionUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.function.Tuple2Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.util.function.Tuple2Test
+[INFO] Running com.alibaba.csp.sentinel.util.IdUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.IdUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.MethodUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.MethodUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.TimeUtilTest
+[StatisticNodeTest] 2026-18-10 18:55:04 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:05 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:06 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:07 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:08 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:09 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:10 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:11 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:12 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:13 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:14 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:15 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:16 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:17 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:18 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:19 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:20 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:21 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:22 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:55:23 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.015 s - in com.alibaba.csp.sentinel.util.TimeUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.ConfigUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.ConfigUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.StringUtilTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.util.StringUtilTest
+[INFO] Running com.alibaba.csp.sentinel.log.jul.ConsoleHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.log.jul.ConsoleHandlerTest
+[INFO] Running com.alibaba.csp.sentinel.config.SentinelConfigTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.config.SentinelConfigTest
+[INFO] Running com.alibaba.csp.sentinel.AsyncEntryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.AsyncEntryTest
+[INFO] Running com.alibaba.csp.sentinel.eagleeye.TokenBucketTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.eagleeye.TokenBucketTest
+[INFO] Running com.alibaba.csp.sentinel.eagleeye.EagleEyeCoreUtilsTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.alibaba.csp.sentinel.eagleeye.EagleEyeCoreUtilsTest
+[INFO] Running com.alibaba.csp.sentinel.slots.DefaultSlotChainBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.DefaultSlotChainBuilderTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.ArrayMetricTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in com.alibaba.csp.sentinel.slots.statistic.metric.ArrayMetricTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.BucketLeapArrayTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.403 s - in com.alibaba.csp.sentinel.slots.statistic.metric.BucketLeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.FutureBucketLeapArrayTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.526 s - in com.alibaba.csp.sentinel.slots.statistic.metric.FutureBucketLeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.OccupiableBucketLeapArrayTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.489 s - in com.alibaba.csp.sentinel.slots.statistic.metric.OccupiableBucketLeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.base.LeapArrayTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in com.alibaba.csp.sentinel.slots.statistic.base.LeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.nodeselector.NodeSelectorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.nodeselector.NodeSelectorTest
+[INFO] Running com.alibaba.csp.sentinel.slots.clusterbuilder.ClusterNodeBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.clusterbuilder.ClusterNodeBuilderTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.378 s - in com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ResponseTimeCircuitBreakerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.461 s - in com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ResponseTimeCircuitBreakerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ExceptionCircuitBreakerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s - in com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ExceptionCircuitBreakerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.433 s - in com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.CircuitBreakingIntegrationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.154 s - in com.alibaba.csp.sentinel.slots.block.degrade.CircuitBreakingIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleCheckerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleCheckerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.authority.AuthoritySlotTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.authority.AuthoritySlotTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.system.SystemRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s - in com.alibaba.csp.sentinel.slots.block.system.SystemRuleTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowSlotTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowSlotTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowRuleComparatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowRuleComparatorTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpRateLimiterControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.355 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpRateLimiterControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpControllerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.072 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.RateLimiterControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.001 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.RateLimiterControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowPartialIntegrationTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowPartialIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManagerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.248 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowRuleCheckerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowRuleCheckerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.system.SystemRuleManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.502 s - in com.alibaba.csp.sentinel.slots.system.SystemRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.logger.EagleEyeLogUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in com.alibaba.csp.sentinel.slots.logger.EagleEyeLogUtilTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 200, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex
+nondexJarDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex
+nondexExecid=Cu2J3cO9IxP0ekQ4sxT4XbLfNhyyj47VAbcNs+DNKM=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[WARNING] Couldn't load group class 'edu.illinois.NonDexIgnore' in Surefire|Failsafe plugin. The group class is ignored!
+[INFO] Running com.alibaba.csp.sentinel.spi.SpiLoaderTest
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: /home/runner/logs/csp/
+INFO: Sentinel log name use pid is: false
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.077 s - in com.alibaba.csp.sentinel.spi.SpiLoaderTest
+[INFO] Running com.alibaba.csp.sentinel.context.ContextTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.464 s - in com.alibaba.csp.sentinel.context.ContextTest
+[INFO] Running com.alibaba.csp.sentinel.CtSphTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.689 s - in com.alibaba.csp.sentinel.CtSphTest
+[INFO] Running com.alibaba.csp.sentinel.AsyncEntryIntegrationTest
+abc: 1794336938054
+Async result: 666
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.545 s - in com.alibaba.csp.sentinel.AsyncEntryIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.TracerTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 s - in com.alibaba.csp.sentinel.TracerTest
+[INFO] Running com.alibaba.csp.sentinel.EntryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.335 s - in com.alibaba.csp.sentinel.EntryTest
+[INFO] Running com.alibaba.csp.sentinel.CtEntryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.057 s - in com.alibaba.csp.sentinel.CtEntryTest
+[INFO] Running com.alibaba.csp.sentinel.SphUTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.alibaba.csp.sentinel.SphUTest
+[INFO] Running com.alibaba.csp.sentinel.node.ClusterNodeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s - in com.alibaba.csp.sentinel.node.ClusterNodeTest
+[INFO] Running com.alibaba.csp.sentinel.node.StatisticNodeTest
+[StatisticNodeTest] LongAdder totalCost : 2624ms
+[StatisticNodeTest] AtomicInteger totalCost : 2325ms
+[StatisticNodeTest] 2026-18-10 18:55:45 curThreadNum=10,passQps=16.0,successQps=23.0,maxSuccessQps=30.0,totalRequest=36,totalSuccess=26, avgRt=532.52, minRt=4.0
+[StatisticNodeTest] 2026-18-10 18:55:46 curThreadNum=12,passQps=19.0,successQps=20.0,maxSuccessQps=28.0,totalRequest=65,totalSuccess=53, avgRt=488.95, minRt=83.0
+[StatisticNodeTest] 2026-18-10 18:55:47 curThreadNum=15,passQps=18.0,successQps=17.0,maxSuccessQps=22.0,totalRequest=91,totalSuccess=76, avgRt=622.76, minRt=43.0
+[StatisticNodeTest] 2026-18-10 18:55:48 curThreadNum=12,passQps=14.0,successQps=16.0,maxSuccessQps=24.0,totalRequest=111,totalSuccess=99, avgRt=583.88, minRt=21.0
+[StatisticNodeTest] 2026-18-10 18:55:49 curThreadNum=16,passQps=21.0,successQps=19.0,maxSuccessQps=28.0,totalRequest=140,totalSuccess=124, avgRt=525.79, minRt=24.0
+[StatisticNodeTest] 2026-18-10 18:55:50 curThreadNum=16,passQps=16.0,successQps=15.0,maxSuccessQps=28.0,totalRequest=164,totalSuccess=148, avgRt=544.07, minRt=88.0
+[StatisticNodeTest] 2026-18-10 18:55:51 curThreadNum=15,passQps=22.0,successQps=23.0,maxSuccessQps=32.0,totalRequest=195,totalSuccess=180, avgRt=570.26, minRt=59.0
+[StatisticNodeTest] 2026-18-10 18:55:52 curThreadNum=11,passQps=18.0,successQps=18.0,maxSuccessQps=20.0,totalRequest=218,totalSuccess=207, avgRt=464.72, minRt=17.0
+[StatisticNodeTest] 2026-18-10 18:55:53 curThreadNum=8,passQps=16.0,successQps=19.0,maxSuccessQps=32.0,totalRequest=241,totalSuccess=233, avgRt=379.37, minRt=3.0
+[StatisticNodeTest] 2026-18-10 18:55:54 curThreadNum=7,passQps=11.0,successQps=13.0,maxSuccessQps=24.0,totalRequest=256,totalSuccess=249, avgRt=513.54, minRt=14.0
+[StatisticNodeTest] 2026-18-10 18:55:55 curThreadNum=9,passQps=9.0,successQps=8.0,maxSuccessQps=16.0,totalRequest=269,totalSuccess=260, avgRt=546.38, minRt=49.0
+[StatisticNodeTest] 2026-18-10 18:55:56 curThreadNum=6,passQps=10.0,successQps=8.0,maxSuccessQps=10.0,totalRequest=279,totalSuccess=273, avgRt=559.13, minRt=37.0
+[StatisticNodeTest] 2026-18-10 18:55:57 curThreadNum=7,passQps=7.0,successQps=6.0,maxSuccessQps=10.0,totalRequest=288,totalSuccess=281, avgRt=785.67, minRt=536.0
+[StatisticNodeTest] 2026-18-10 18:55:58 curThreadNum=5,passQps=6.0,successQps=6.0,maxSuccessQps=10.0,totalRequest=295,totalSuccess=290, avgRt=627.00, minRt=144.0
+[StatisticNodeTest] 2026-18-10 18:55:59 curThreadNum=0,passQps=4.0,successQps=7.0,maxSuccessQps=12.0,totalRequest=299,totalSuccess=299, avgRt=478.43, minRt=6.0
+[StatisticNodeTest] ====================================================
+[StatisticNodeTest] all biz task done, waiting 3 second to exit
+[StatisticNodeTest] 2026-18-10 18:56:00 curThreadNum=0,passQps=0.0,successQps=1.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=764.00, minRt=764.0
+[StatisticNodeTest] 2026-18-10 18:56:01 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:02 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] ====================================================
+[StatisticNodeTest] testStatisticThreadNumAndQps done, cost 18942ms
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.002 s - in com.alibaba.csp.sentinel.node.StatisticNodeTest
+[INFO] Running com.alibaba.csp.sentinel.node.metric.MetricNodeTest
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at java.base/java.lang.Thread.sleep(Thread.java:334)
+	at java.base/java.util.concurrent.TimeUnit.sleep(TimeUnit.java:446)
+	at com.alibaba.csp.sentinel.node.StatisticNodeTest.sleep(StatisticNodeTest.java:191)
+	at com.alibaba.csp.sentinel.node.StatisticNodeTest.access$200(StatisticNodeTest.java:46)[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.node.metric.MetricNodeTest
+
+[INFO] Running com.alibaba.csp.sentinel.node.metric.MetricWriterTest
+	at com.alibaba.csp.sentinel.node.StatisticNodeTest$TickTask.run(StatisticNodeTest.java:179)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[StatisticNodeTest] 2026-18-10 18:56:03 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.node.metric.MetricWriterTest
+[INFO] Running com.alibaba.csp.sentinel.metric.extension.callback.MetricEntryCallbackTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.515 s - in com.alibaba.csp.sentinel.metric.extension.callback.MetricEntryCallbackTest
+[INFO] Running com.alibaba.csp.sentinel.metric.extension.callback.MetricExitCallbackTest
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: /home/runner/logs/csp/
+INFO: Sentinel log name use pid is: false
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 s - in com.alibaba.csp.sentinel.metric.extension.callback.MetricExitCallbackTest
+[INFO] Running com.alibaba.csp.sentinel.RecordLogTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in com.alibaba.csp.sentinel.RecordLogTest
+[INFO] Running com.alibaba.csp.sentinel.SphOTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.alibaba.csp.sentinel.SphOTest
+[INFO] Running com.alibaba.csp.sentinel.util.VersionUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.VersionUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.function.Tuple2Test
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.function.Tuple2Test
+[INFO] Running com.alibaba.csp.sentinel.util.IdUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.IdUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.MethodUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.MethodUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.TimeUtilTest
+[StatisticNodeTest] 2026-18-10 18:56:04 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:05 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:06 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:07 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:08 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:09 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:10 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:11 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:12 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:13 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:14 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:15 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:16 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:17 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:18 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:19 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:20 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:21 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:22 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[StatisticNodeTest] 2026-18-10 18:56:23 curThreadNum=0,passQps=0.0,successQps=0.0,maxSuccessQps=2.0,totalRequest=300,totalSuccess=300, avgRt=0.00, minRt=5000.0
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.024 s - in com.alibaba.csp.sentinel.util.TimeUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.ConfigUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.util.ConfigUtilTest
+[INFO] Running com.alibaba.csp.sentinel.util.StringUtilTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.util.StringUtilTest
+[INFO] Running com.alibaba.csp.sentinel.log.jul.ConsoleHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.log.jul.ConsoleHandlerTest
+[INFO] Running com.alibaba.csp.sentinel.config.SentinelConfigTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.config.SentinelConfigTest
+[INFO] Running com.alibaba.csp.sentinel.AsyncEntryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.alibaba.csp.sentinel.AsyncEntryTest
+[INFO] Running com.alibaba.csp.sentinel.eagleeye.TokenBucketTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.eagleeye.TokenBucketTest
+[INFO] Running com.alibaba.csp.sentinel.eagleeye.EagleEyeCoreUtilsTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in com.alibaba.csp.sentinel.eagleeye.EagleEyeCoreUtilsTest
+[INFO] Running com.alibaba.csp.sentinel.slots.DefaultSlotChainBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.slots.DefaultSlotChainBuilderTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.ArrayMetricTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s - in com.alibaba.csp.sentinel.slots.statistic.metric.ArrayMetricTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.BucketLeapArrayTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.403 s - in com.alibaba.csp.sentinel.slots.statistic.metric.BucketLeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.FutureBucketLeapArrayTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.398 s - in com.alibaba.csp.sentinel.slots.statistic.metric.FutureBucketLeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.metric.OccupiableBucketLeapArrayTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.406 s - in com.alibaba.csp.sentinel.slots.statistic.metric.OccupiableBucketLeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.statistic.base.LeapArrayTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in com.alibaba.csp.sentinel.slots.statistic.base.LeapArrayTest
+[INFO] Running com.alibaba.csp.sentinel.slots.nodeselector.NodeSelectorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.nodeselector.NodeSelectorTest
+[INFO] Running com.alibaba.csp.sentinel.slots.clusterbuilder.ClusterNodeBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.clusterbuilder.ClusterNodeBuilderTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.382 s - in com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ResponseTimeCircuitBreakerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.575 s - in com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ResponseTimeCircuitBreakerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ExceptionCircuitBreakerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 s - in com.alibaba.csp.sentinel.slots.block.degrade.circuitbreaker.ExceptionCircuitBreakerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.4 s - in com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.degrade.CircuitBreakingIntegrationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 s - in com.alibaba.csp.sentinel.slots.block.degrade.CircuitBreakingIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleCheckerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.authority.AuthorityRuleCheckerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.authority.AuthoritySlotTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.slots.block.authority.AuthoritySlotTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.system.SystemRuleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in com.alibaba.csp.sentinel.slots.block.system.SystemRuleTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowSlotTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowSlotTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowRuleComparatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowRuleComparatorTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpRateLimiterControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.367 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpRateLimiterControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpControllerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.WarmUpControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.RateLimiterControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.001 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.RateLimiterControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultControllerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowPartialIntegrationTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowPartialIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManagerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.block.flow.FlowRuleCheckerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 s - in com.alibaba.csp.sentinel.slots.block.flow.FlowRuleCheckerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.system.SystemRuleManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.502 s - in com.alibaba.csp.sentinel.slots.system.SystemRuleManagerTest
+[INFO] Running com.alibaba.csp.sentinel.slots.logger.EagleEyeLogUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in com.alibaba.csp.sentinel.slots.logger.EagleEyeLogUtilTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 200, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex" -DnondexJarDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex" -DnondexExecid=+4EaNokPuxpmEkAb2PbDxjT7iX3xYNOCgEa3dYQGqo= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex" -DnondexJarDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex" -DnondexExecid=SZqpz4owMkRvFixlb452PaU2gnTKppuuPQi09iDxy5I= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex" -DnondexJarDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex" -DnondexExecid=Cu2J3cO9IxP0ekQ4sxT4XbLfNhyyj47VAbcNs+DNKM= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.FtqFieaPMD/repo/sentinel-core/.nondex/+4EaNokPuxpmEkAb2PbDxjT7iX3xYNOCgEa3dYQGqo=/test_results.html
+[INFO] [NonDex] The id of this run is: +4EaNokPuxpmEkAb2PbDxjT7iX3xYNOCgEa3dYQGqo=
+[INFO] 
+[INFO] ------------------< com.alibaba.csp:sentinel-adapter >------------------
+[INFO] Building sentinel-adapter 1.8.2                                    [3/4]
+[INFO]   from sentinel-adapter/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ sentinel-adapter >>>
+[INFO] 
+[INFO] --- jacoco:0.8.3:prepare-agent (default) @ sentinel-adapter ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ sentinel-adapter <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ sentinel-adapter ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_11HxRmYbYxNw23YVVdAZNo+z2fAuKHq15axC0icbuPw=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex
+nondexJarDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex
+nondexExecid=6HvkQre3BUphIIs49rkUU0uPDlCFs5Sw6b3bhhSLxY=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex
+nondexJarDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex
+nondexExecid=vdawox5fKxgiLDNrwjll7O+zAetjWD4WfUhPuqLwPYI=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex
+nondexJarDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex
+nondexExecid=m87KAiwXdRfhkoScGBdh06fantvLiJ5Wp0N8UOrc4=
+nondexLogging=CONFIG
+test=
+[INFO] No tests to run.
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex" -DnondexJarDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex" -DnondexExecid=6HvkQre3BUphIIs49rkUU0uPDlCFs5Sw6b3bhhSLxY= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex" -DnondexJarDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex" -DnondexExecid=vdawox5fKxgiLDNrwjll7O+zAetjWD4WfUhPuqLwPYI= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex" -DnondexJarDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex" -DnondexExecid=m87KAiwXdRfhkoScGBdh06fantvLiJ5Wp0N8UOrc4= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/.nondex/6HvkQre3BUphIIs49rkUU0uPDlCFs5Sw6b3bhhSLxY=/test_results.html
+[INFO] [NonDex] The id of this run is: 6HvkQre3BUphIIs49rkUU0uPDlCFs5Sw6b3bhhSLxY=
+[INFO] 
+[INFO] --------------< com.alibaba.csp:sentinel-reactor-adapter >--------------
+[INFO] Building sentinel-reactor-adapter 1.8.2                            [4/4]
+[INFO]   from sentinel-adapter/sentinel-reactor-adapter/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> nondex:2.2.1:nondex (default-cli) > test-compile @ sentinel-reactor-adapter >>>
+[INFO] 
+[INFO] --- jacoco:0.8.3:prepare-agent (default) @ sentinel-reactor-adapter ---
+[INFO] Skipping JaCoCo execution because property jacoco.skip is set.
+[INFO] argLine set to empty
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ sentinel-reactor-adapter ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ sentinel-reactor-adapter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.4.0:testResources (default-testResources) @ sentinel-reactor-adapter ---
+[INFO] skip non existing resourceDirectory /tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ sentinel-reactor-adapter ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< nondex:2.2.1:nondex (default-cli) < test-compile @ sentinel-reactor-adapter <<<
+[INFO] 
+[INFO] 
+[INFO] --- nondex:2.2.1:nondex (default-cli) @ sentinel-reactor-adapter ---
+INFO: The original argline is: 
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_gIljpzErfE8XjgFF7QqrjYP44Z8DAuDaLrus37bzVU=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.alibaba.csp.sentinel.adapter.reactor.ReactorSphUTest
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: /home/runner/logs/csp/
+INFO: Sentinel log name use pid is: false
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.263 s - in com.alibaba.csp.sentinel.adapter.reactor.ReactorSphUTest
+[INFO] Running com.alibaba.csp.sentinel.adapter.reactor.MonoSentinelOperatorIntegrationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.07 s - in com.alibaba.csp.sentinel.adapter.reactor.MonoSentinelOperatorIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.adapter.reactor.FluxSentinelOperatorTestIntegrationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.alibaba.csp.sentinel.adapter.reactor.FluxSentinelOperatorTestIntegrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex
+nondexJarDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex
+nondexExecid=Zh4hLJlAychU99QQwEaGcNbjq9vgZdxRdcsxnkxqB4=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[WARNING] Couldn't load group class 'edu.illinois.NonDexIgnore' in Surefire|Failsafe plugin. The group class is ignored!
+[INFO] Running com.alibaba.csp.sentinel.adapter.reactor.ReactorSphUTest
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: /home/runner/logs/csp/
+INFO: Sentinel log name use pid is: false
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 s - in com.alibaba.csp.sentinel.adapter.reactor.ReactorSphUTest
+[INFO] Running com.alibaba.csp.sentinel.adapter.reactor.MonoSentinelOperatorIntegrationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.071 s - in com.alibaba.csp.sentinel.adapter.reactor.MonoSentinelOperatorIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.adapter.reactor.FluxSentinelOperatorTestIntegrationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.alibaba.csp.sentinel.adapter.reactor.FluxSentinelOperatorTestIntegrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex
+nondexJarDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex
+nondexExecid=qVJvaLDeHG5kiGb4Xb4s5SvyZkLaNCjBnX+BObOdzw=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[WARNING] Couldn't load group class 'edu.illinois.NonDexIgnore' in Surefire|Failsafe plugin. The group class is ignored!
+[INFO] Running com.alibaba.csp.sentinel.adapter.reactor.ReactorSphUTest
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: /home/runner/logs/csp/
+INFO: Sentinel log name use pid is: false
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 s - in com.alibaba.csp.sentinel.adapter.reactor.ReactorSphUTest
+[INFO] Running com.alibaba.csp.sentinel.adapter.reactor.MonoSentinelOperatorIntegrationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.069 s - in com.alibaba.csp.sentinel.adapter.reactor.MonoSentinelOperatorIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.adapter.reactor.FluxSentinelOperatorTestIntegrationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in com.alibaba.csp.sentinel.adapter.reactor.FluxSentinelOperatorTestIntegrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+INFO: Adding excluded groups to newly created one
+INFO: Adding NonDex argLine to existing argLine specified by the project
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex
+nondexJarDir=/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex
+nondexExecid=3vudDeYJU5LQhCp6CnIsTxxiVayKHAgaK4eX8nYPc=
+nondexLogging=CONFIG
+test=
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[WARNING] Couldn't load group class 'edu.illinois.NonDexIgnore' in Surefire|Failsafe plugin. The group class is ignored!
+[INFO] Running com.alibaba.csp.sentinel.adapter.reactor.ReactorSphUTest
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: /home/runner/logs/csp/
+INFO: Sentinel log name use pid is: false
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 s - in com.alibaba.csp.sentinel.adapter.reactor.ReactorSphUTest
+[INFO] Running com.alibaba.csp.sentinel.adapter.reactor.MonoSentinelOperatorIntegrationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.06 s - in com.alibaba.csp.sentinel.adapter.reactor.MonoSentinelOperatorIntegrationTest
+[INFO] Running com.alibaba.csp.sentinel.adapter.reactor.FluxSentinelOperatorTestIntegrationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in com.alibaba.csp.sentinel.adapter.reactor.FluxSentinelOperatorTestIntegrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] NonDex SUMMARY:
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex" -DnondexJarDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex" -DnondexExecid=Zh4hLJlAychU99QQwEaGcNbjq9vgZdxRdcsxnkxqB4= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex" -DnondexJarDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex" -DnondexExecid=qVJvaLDeHG5kiGb4Xb4s5SvyZkLaNCjBnX+BObOdzw= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] *********
+[INFO] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex" -DnondexJarDir="/tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex" -DnondexExecid=3vudDeYJU5LQhCp6CnIsTxxiVayKHAgaK4eX8nYPc= -DnondexLogging=CONFIG
+[INFO] No Test Failed with this configuration.
+[INFO] *********
+[INFO] All tests pass without NonDex shuffling
+[INFO] ####################
+[INFO] Across all seeds:
+[INFO] Test results can be found at: 
+[INFO] file:///tmp/tmp.FtqFieaPMD/repo/sentinel-adapter/sentinel-reactor-adapter/.nondex/Zh4hLJlAychU99QQwEaGcNbjq9vgZdxRdcsxnkxqB4=/test_results.html
+[INFO] [NonDex] The id of this run is: Zh4hLJlAychU99QQwEaGcNbjq9vgZdxRdcsxnkxqB4=
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for sentinel-parent 1.8.2:
+[INFO] 
+[INFO] sentinel-parent .................................... SUCCESS [  2.275 s]
+[INFO] sentinel-core ...................................... SUCCESS [03:57 min]
+[INFO] sentinel-adapter ................................... SUCCESS [  0.073 s]
+[INFO] sentinel-reactor-adapter ........................... SUCCESS [  7.586 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:08 min
+[INFO] Finished at: 2026-11-10T18:56:41Z
+[INFO] ------------------------------------------------------------------------

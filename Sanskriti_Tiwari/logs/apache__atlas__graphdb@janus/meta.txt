@@ -1,0 +1,3 @@
+url=https://github.com/apache/atlas
+sha=c0700e436afccc04e7f77480d6fb8aed8e293db4
+module=graphdb/janus

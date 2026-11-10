@@ -1,0 +1,3 @@
+url=https://github.com/adobe/captivate-prime-aem-components
+sha=87a88b3e9fcd67f22577a5b549e25f8224b4a0c8
+module=core

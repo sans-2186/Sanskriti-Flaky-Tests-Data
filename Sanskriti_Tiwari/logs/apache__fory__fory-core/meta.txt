@@ -1,0 +1,3 @@
+url=https://github.com/apache/fory
+sha=5f9934e281fde3341c3e9db3b5d3981d08afd85a
+module=fory-core

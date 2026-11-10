@@ -1,0 +1,78 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Dropwizard Project                                                 [pom]
+[INFO] Dropwizard Utility Classes                                         [jar]
+[INFO] Dropwizard Jackson Support                                         [jar]
+[INFO] Dropwizard Validation Support                                      [jar]
+[INFO] Dropwizard Configuration Support                                   [jar]
+[INFO] Dropwizard Logging Support                                         [jar]
+[INFO] 
+[INFO] ------------------< io.dropwizard:dropwizard-parent >-------------------
+[INFO] Building Dropwizard Project 2.0.0-rc1-SNAPSHOT                     [1/6]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce) @ dropwizard-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle) @ dropwizard-parent ---
+[INFO] 
+[INFO] >>> source:3.0.1:jar (attach-sources) > generate-sources @ dropwizard-parent >>>
+[INFO] 
+[INFO] --- enforcer:1.4.1:enforce (enforce) @ dropwizard-parent ---
+[INFO] Skipping Rule Enforcement.
+[INFO] 
+[INFO] --- checkstyle:3.0.0:check (checkstyle) @ dropwizard-parent ---
+[INFO] 
+[INFO] <<< source:3.0.1:jar (attach-sources) < generate-sources @ dropwizard-parent <<<
+[INFO] 
+[INFO] 
+[INFO] --- source:3.0.1:jar (attach-sources) @ dropwizard-parent ---
+[INFO] Skipping source per configuration.
+[INFO] 
+[INFO] --- javadoc:3.0.1:jar (attach-javadocs) @ dropwizard-parent ---
+[INFO] Skipping javadoc generation
+[INFO] 
+[INFO] --- dependency-check:3.3.1:check (security-check) @ dropwizard-parent ---
+[INFO] Central analyzer disabled
+[INFO] Checking for updates
+[INFO] starting getUpdatesNeeded() ...
+[ERROR] IO Exception connecting to https://nvd.nist.gov/feeds/xml/cve/2.0/nvdcve-2.0-2007.xml.gz: HEAD request returned a non-200 status code: https://nvd.nist.gov/feeds/xml/cve/2.0/nvdcve-2.0-2007.xml.gz
+[ERROR] IO Exception connecting to https://nvd.nist.gov/feeds/xml/cve/2.0/nvdcve-2.0-2008.xml.gz: HEAD request returned a non-200 status code: https://nvd.nist.gov/feeds/xml/cve/2.0/nvdcve-2.0-2008.xml.gz
+[ERROR] IO Exception connecting to https://nvd.nist.gov/feeds/xml/cve/2.0/nvdcve-2.0-2026.xml.gz: HEAD request returned a non-200 status code: https://nvd.nist.gov/feeds/xml/cve/2.0/nvdcve-2.0-2026.xml.gz
+[ERROR] IO Exception connecting to https://nvd.nist.gov/feeds/xml/cve/2.0/nvdcve-2.0-2018.xml.gz: HEAD request returned a non-200 status code: https://nvd.nist.gov/feeds/xml/cve/2.0/nvdcve-2.0-2018.xml.gz
+[ERROR] IO Exception connecting to https://nvd.nist.gov/feeds/xml/cve/2.0/nvdcve-2.0-2025.xml.gz: HEAD request returned a non-200 status code: https://nvd.nist.gov/feeds/xml/cve/2.0/nvdcve-2.0-2025.xml.gz
+[ERROR] IO Exception connecting to https://nvd.nist.gov/feeds/xml/cve/2.0/nvdcve-2.0-2009.xml.gz: HEAD request returned a non-200 status code: https://nvd.nist.gov/feeds/xml/cve/2.0/nvdcve-2.0-2009.xml.gz
+[WARNING] Unable to download the NVD CVE data; the results may not include the most recent CPE/CVEs from the NVD.
+[INFO] If you are behind a proxy you may need to configure dependency-check to use the proxy.
+[WARNING] Unable to update Cached Web DataSource, using local data instead. Results may not include recent vulnerabilities.
+[ERROR] No documents exist
+
+Unable to continue dependency-check analysis.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Dropwizard Project 2.0.0-rc1-SNAPSHOT:
+[INFO] 
+[INFO] Dropwizard Project ................................. FAILURE [  3.945 s]
+[INFO] Dropwizard Utility Classes ......................... SKIPPED
+[INFO] Dropwizard Jackson Support ......................... SKIPPED
+[INFO] Dropwizard Validation Support ...................... SKIPPED
+[INFO] Dropwizard Configuration Support ................... SKIPPED
+[INFO] Dropwizard Logging Support ......................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.263 s
+[INFO] Finished at: 2026-11-10T18:56:13Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.owasp:dependency-check-maven:3.3.1:check (security-check) on project dropwizard-parent: Fatal exception(s) analyzing Dropwizard Project: Unable to continue dependency-check analysis.
+[ERROR] 	Unable to download the NVD CVE data.
+[ERROR] 	No documents exist
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

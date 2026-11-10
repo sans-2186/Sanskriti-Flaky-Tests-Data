@@ -1,0 +1,3 @@
+url=https://github.com/apache/commons-jxpath
+sha=75897943adb7f868df47ced0915b273af1af0272
+module=<root>
